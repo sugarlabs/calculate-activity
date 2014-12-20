@@ -36,7 +36,7 @@ from sugar.graphics.xocolor import XoColor
 from shareable_activity import ShareableActivity
 from layout import CalcLayout
 from mathlib import MathLib
-from astparser import AstParser, ParserError, RuntimeError
+from astparser import AstParser, ParserError, ParseError, RuntimeError
 from svgimage import SVGImage
 
 from decimal import Decimal
@@ -471,6 +471,19 @@ class Calculate(ShareableActivity):
                                      prepend=not prepend)
             self.last_eqn_textview = None
 
+        if eq.label is not None and len(eq.label) > 0:
+            w = self.create_var_textview(eq.label, eq.result)
+            if w is not None:
+                self.layout.add_variable(eq.label, w)
+
+            if tree is None:
+                tree = self.parser.parse(eq.equation)
+            try: self.parser.set_var(eq.label, tree)
+            except Exception, e:
+                eq.result = ParseError(e.message, 0, "")
+                self.set_error_equation(eq)
+                return
+
         own = (eq.owner == self.get_owner_id())
         w = eq.create_history_object()
         w.connect('button-press-event', lambda w,
@@ -485,15 +498,6 @@ class Calculate(ShareableActivity):
                 self.last_eqn_textview = w
         else:
             self.layout.add_equation(w, own, prepend=not prepend)
-
-        if eq.label is not None and len(eq.label) > 0:
-            w = self.create_var_textview(eq.label, eq.result)
-            if w is not None:
-                self.layout.add_variable(eq.label, w)
-
-            if tree is None:
-                tree = self.parser.parse(eq.equation)
-            self.parser.set_var(eq.label, tree)
 
     # FIXME: to be implemented
     def process_async(self, eqn):

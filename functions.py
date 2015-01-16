@@ -120,7 +120,10 @@ abs.__doc__ = _(
 
 
 def acos(x):
-    return _inv_scale_angle(math.acos(x))
+    if x > 1 or x < -1:
+        raise ValueError(_('acos(x) only defined for x E [-1,1]'))
+    else:
+        return _inv_scale_angle(math.acos(x))
 acos.__doc__ = _(
     'acos(x), return the arc cosine of x. This is the angle for which the cosine \
 is x. Defined for -1 <= x < 1')
@@ -148,9 +151,11 @@ add.__doc__ = _('add(x, y), return x + y')
 
 
 def asin(x):
+    if x > 1 or x < -1:
+        raise ValueError(_('asin(x) only defined for x E [-1,1]'))
     return _inv_scale_angle(math.asin(x))
 asin.__doc__ = _(
-    'asin(x), return the arc sine of x. This is the angle for which the sine is x. \
+    'asin(x), return the arc sine of x. This is the angle for which the sine is x.\
 Defined for -1 <= x <= 1')
 
 
@@ -251,8 +256,11 @@ exp.__doc__ = _('exp(x), return the natural exponent of x. Given by e^x')
 
 
 def factorial(n):
+    if n < 0:
+        raise ValueError(_('Factorial(x) is only defined for integers x>=0'))
+
     if type(n) not in (types.IntType, types.LongType):
-        raise ValueError(_('Factorial only defined for integers'))
+        raise ValueError(_('Factorial(x) is only defined for integers x>=0'))
 
     if n == 0:
         return 1
@@ -311,7 +319,9 @@ floor.__doc__ = _('floor(x), return the largest integer smaller than x.')
 
 
 def inv(x):
-    return 1 / x
+    if x == 0:
+        raise ValueError(_('Can not divide by zero'))
+    return div(1, x)
 inv.__doc__ = _('inv(x), return the inverse of x, which is 1 / x')
 
 
@@ -334,7 +344,7 @@ is_int.__doc__ = ('is_int(n), determine whether n is an integer.')
 
 def ln(x):
     if float(x) > 0:
-        return math.log(float(x))
+        return div(math.log(float(x)), math.log(math.e))
     else:
         raise ValueError(_('Logarithm(x) only defined for x > 0'))
 ln.__doc__ = _(

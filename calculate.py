@@ -146,7 +146,7 @@ class Equation:
             buf.insert_with_tags(buf.get_end_iter(), text[ofs:nextofs], *tags)
             nextofs2 = findchar(text, ENDSET, nextofs + 2)
             _logger.debug('nextofs2: %d, char=%c', nextofs2, text[nextofs2])
-            if nextofs2 == -1:
+            if nextofs2 == -1 or nextofs2 - nextofs == 2:
                 nextofs2 = len(text)
             buf.insert_with_tags(buf.get_end_iter(), text[nextofs+2:nextofs2],
                     tagsuper, *tags)

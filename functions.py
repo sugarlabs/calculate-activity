@@ -281,6 +281,16 @@ factorize.__doc__ = (
 'factorize(x), determine the prime factors that together form x. \
 For examples: 15 = 3 * 5.')
 
+def primality_test(x):
+    if n <= 3:
+        return n >= 2
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    for i in range(5, int(n ** 0.5) + 1, 6):
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+    return True
+
 
 def isprime(x):
     if not is_int(x):
@@ -289,10 +299,7 @@ def isprime(x):
         raise ValueError(_('Prime numbers is defined for natural numbers'))
     if x == 1:
         return "Neither Prime Nor Composite"
-    factors = []
-    fact = factorize(x)
-    factors = fact.split(" * ")
-    if len(factors) == 2:
+    if primality_test(x):
         return "Yes, It is a prime number"
     else:
         return "No, It is not a prime number"

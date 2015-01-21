@@ -52,6 +52,7 @@ _FUNCTIONS = [
     _('factorize'),
     _('floor'),
     _('inv'),
+    _('isprime'),
     _('is_int'),
     _('ln'),
     _('log10'),

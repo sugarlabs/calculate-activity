@@ -70,7 +70,7 @@ _FUNCTIONS = [
     _('tan'),
     _('tanh'),
     _('xor'),
-    ]	 
+    ]   
 
 def _d(val):
     '''Return a _Decimal object.'''

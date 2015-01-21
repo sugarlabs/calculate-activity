@@ -53,6 +53,7 @@ _FUNCTIONS = [
     _('floor'),
     _('inv'),
     _('is_int'),
+    _('isprime'),
     _('ln'),
     _('log10'),
     _('mul'),
@@ -69,7 +70,7 @@ _FUNCTIONS = [
     _('tan'),
     _('tanh'),
     _('xor'),
-    ]    
+    ]
 
 def _d(val):
     '''Return a _Decimal object.'''
@@ -111,7 +112,7 @@ abs.__doc__ = _(
 'abs(x), return absolute value of x, which means -x for x < 0')
 
 def acos(x):
-    if x > 1 or x < -1: 
+    if x > 1 or x < -1:
         raise ValueError(_('acos(x) only defined for x E [-1,1]'))
     else:
         return _inv_scale_angle(math.acos(x))
@@ -279,6 +280,25 @@ def factorize(x):
 factorize.__doc__ = (
 'factorize(x), determine the prime factors that together form x. \
 For examples: 15 = 3 * 5.')
+
+
+def isprime(x):
+    if not is_int(x):
+        raise ValueError(_('Argument should be int'))
+    if x <= 0:
+        raise ValueError(_('Prime numbers is defined for natural numbers'))
+    if x == 1:
+        return "Neither Prime Nor Composite"
+    factors = []
+    fact = factorize(x)
+    factors = fact.split(" * ")
+    if len(factors) == 2:
+        return "Yes, It is a prime number"
+    else:
+        return "No, It is not a prime number"
+isprime.__doc__ = ('isprime(x), Check if a number is a prime. \
+                   For examples: isprime(2).')
+
 
 def floor(x):
     return math.floor(float(x))

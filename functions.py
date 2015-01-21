@@ -53,7 +53,6 @@ _FUNCTIONS = [
     _('floor'),
     _('inv'),
     _('is_int'),
-    _('isprime'),
     _('ln'),
     _('log10'),
     _('mul'),
@@ -70,7 +69,7 @@ _FUNCTIONS = [
     _('tan'),
     _('tanh'),
     _('xor'),
-    ]   
+    ]    
 
 def _d(val):
     '''Return a _Decimal object.'''

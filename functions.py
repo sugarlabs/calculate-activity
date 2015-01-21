@@ -70,7 +70,7 @@ _FUNCTIONS = [
     _('tan'),
     _('tanh'),
     _('xor'),
-    ]
+    ]	 
 
 def _d(val):
     '''Return a _Decimal object.'''
@@ -112,7 +112,7 @@ abs.__doc__ = _(
 'abs(x), return absolute value of x, which means -x for x < 0')
 
 def acos(x):
-    if x > 1 or x < -1:
+    if x > 1 or x < -1: 
         raise ValueError(_('acos(x) only defined for x E [-1,1]'))
     else:
         return _inv_scale_angle(math.acos(x))

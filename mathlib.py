@@ -24,7 +24,7 @@ import math
 from decimal import Decimal
 from rational import Rational
 import random
-import re
+
 import logging
 _logger = logging.getLogger('MathLib')
 
@@ -155,10 +155,11 @@ class MathLib:
         return ret.rstrip('L')
 
     def format_decimal(self, n):
-        n_str = str(n)
-        a = re.split('e|E', n_str)
-        if len(a) == 1:
-            return n_str
+        a = int(n)
+        if a == n:
+            return str(n)
+        if self.chop_zeros:
+            n = n.normalize()
         (sign, digits, exp) = n.as_tuple()
         if len(digits) > self.digit_limit:
             exp += len(digits) - self.digit_limit

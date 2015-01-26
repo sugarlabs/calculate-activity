@@ -159,6 +159,8 @@ class MathLib:
         a = re.split('e|E', n_str)
         if len(a) == 1:
             return n_str
+        if self.chop_zeros:
+            n = n.normalize()
         (sign, digits, exp) = n.as_tuple()
         if len(digits) > self.digit_limit:
             exp += len(digits) - self.digit_limit

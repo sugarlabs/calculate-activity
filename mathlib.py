@@ -156,9 +156,19 @@ class MathLib:
 
     def format_decimal(self, n):
         n_str = str(n)
-        a = re.split('e|E', n_str)
+        a = re.split('\.', n_str)
         if len(a) == 1:
             return n_str
+        b = str(a[1])
+        flag = 0
+        for i in range(len(b)):
+            if b[i] != '0':
+                flag = 1
+                break
+        if flag == 0:
+            return a[0] + '.0'
+        if self.chop_zeros:
+            n = n.normalize()
         (sign, digits, exp) = n.as_tuple()
         if len(digits) > self.digit_limit:
             exp += len(digits) - self.digit_limit

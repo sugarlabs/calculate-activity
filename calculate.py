@@ -169,7 +169,7 @@ class Equation:
                             nextofs2 = findchar(text, ASET, i + 1)
                             break
                     elif text[i] == '-':
-		        if bracket_level == 0:
+                        if bracket_level == 0:
                             if i == nextofs + 2:
                                 nextofs2 = findchar(text, ASET, i + 1)
                                 break
@@ -337,6 +337,7 @@ class Calculate(ShareableActivity):
         'v': lambda o: o.text_paste(),
         'x': lambda o: o.text_cut(),
         'q': lambda o: o.close(),
+        'a': lambda o: o.text_select_all(),
     }
 
     SHIFT_KEYMAP = {
@@ -787,7 +788,11 @@ class Calculate(ShareableActivity):
  #       _logger.info('text_copy, sel: %r, str: %s', sel, str)
             if len(sel) == 2:
                 (start, end) = sel
-                self.clipboard.set_text(str[start:end])
+                self.clipboard.set_text(str[start:end], -1)
+
+    def text_select_all(self):
+        end = self.text_entry.get_text_length()
+        self.text_entry.select_region(0, end)
 
     def get_clipboard_text(self):
         text = self.clipboard.wait_for_text()

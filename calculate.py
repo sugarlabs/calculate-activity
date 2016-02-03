@@ -204,8 +204,10 @@ class Equation:
         eqnstr = '%s\n' % str(self.equation)
         if is_error:
             buf.insert_with_tags(buf.get_end_iter(), eqnstr, tagbignarrow)
-        else:
+        elif len(eqnstr) < 60:
             self.append_with_superscript_tags(buf, eqnstr, tagbignarrow)
+        else:
+            self.append_with_superscript_tags(buf, eqnstr, tagsmallnarrow)
 
         # Add result
         if type(self.result) in (types.StringType, types.UnicodeType):
@@ -221,8 +223,13 @@ class Equation:
             buf.apply_tag(tagred, eqnstart, eqnend)
         elif not isinstance(self.result, SVGImage):
             resstr = self.ml.format_number(self.result)
-            self.append_with_superscript_tags(buf, resstr, tagbigger,
-                                              tagjustright)
+
+            if len(resstr) < 30:
+                self.append_with_superscript_tags(buf, resstr, tagbigger,
+                                                  tagjustright)
+            else:
+                self.append_with_superscript_tags(buf, resstr, tagsmallnarrow,
+                                                  tagjustright)
 
         return buf
 

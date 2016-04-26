@@ -1,33 +1,26 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2011-01-20 05:19+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2015-09-25 23:00+0000\n"
+"Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.3\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1443222012.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
-msgstr "Calcula"
+msgstr "Càlcul"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
@@ -35,32 +28,41 @@ msgid ""
 "This is the place to get the answer to a quick problem, but that is not the "
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
+"Aquí podreu obtenir respostes a problemes senzills, però aquest no és el "
+"límit! També podeu explorar l'àlgebra, la trigonometria, els booleans i més "
+"coses!"
 
+# well-spelled: plot, eqn, var, a, b
 #: astparser.py:40
 msgid ""
 "plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
 "range from a to b"
 msgstr ""
-"plot(eqn, var=-a..b), traça l'equació 'eqn' amb la variable 'var' en el rang "
-"de a a b"
+"plot(eqn, var=-a..b), traça l'equació «eqn» amb la variable «var» en "
+"l'interval de «a» fins a «b»"
 
 #: astparser.py:59
 #, python-format
 msgid "Parse error at %d"
-msgstr ""
+msgstr "S'ha produït un error en analitzar %d"
 
 #: astparser.py:71 astparser.py:83
 #, python-format
 msgid "Error at %d"
 msgstr "Error a %d"
 
+# well-spelled: help
 #: astparser.py:94
 msgid "This is just a test topic, use help(index) for the index"
-msgstr "Aquest comentari és un test. Fes help(index) per anar a l'índex"
+msgstr ""
+"Això tan sols és un tema de proves, utilitzeu help(índex) per anar a l'índex"
 
+# well-spelled: help, test
 #: astparser.py:106
 msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr "Usa help(test) per ajuda sobre 'test', o help(index) per l'índex"
+msgstr ""
+"Utilitzeu help(test) per obtenir ajuda sobre «test», o help(index) per anar "
+"a l'índex"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:109
@@ -68,9 +70,8 @@ msgid "index"
 msgstr "índex"
 
 #: astparser.py:109
-#, fuzzy
 msgid "topics"
-msgstr "Temes"
+msgstr "temes"
 
 #: astparser.py:110
 msgid "Topics"
@@ -82,9 +83,8 @@ msgid "variables"
 msgstr "variables"
 
 #: astparser.py:119
-#, fuzzy
 msgid "Variables"
-msgstr "variables"
+msgstr "Variables"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:125
@@ -92,485 +92,582 @@ msgid "functions"
 msgstr "funcions"
 
 #: astparser.py:126
-#, fuzzy
 msgid "Functions"
-msgstr "funcions"
+msgstr "Funcions"
 
+# well-spelled: help
 #: astparser.py:135
 #, python-format
 msgid "No help about '%s' available, use help(index) for the index"
 msgstr ""
-"No hi ha ajuda disponible sobre '%s', fes help(index) per aner a l'índex"
+"No hi ha ajuda disponible sobre «%s», utilitzeu help(índex) per anar a "
+"l'índex"
 
 #: astparser.py:459
-#, fuzzy
 msgid "help"
-msgstr "Ajuda"
+msgstr "ajuda"
 
 #: astparser.py:466
 msgid "Recursion detected"
-msgstr ""
+msgstr "S'ha detectat recursivitat"
 
 #: astparser.py:490
 #, python-format
 msgid "Function '%s' not defined"
-msgstr "La funció '%s' no està definida"
+msgstr "Funció «%s» sense definir"
 
 #: astparser.py:492
 #, python-format
 msgid "Variable '%s' not defined"
-msgstr "Variable '%s' no definida"
+msgstr "Variable «%s» sense definir"
 
 #: astparser.py:502
 #, python-format
 msgid "Attribute '%s' does not exist"
-msgstr ""
+msgstr "No existeix l'atribut «%s»"
 
 #: astparser.py:596
 msgid "Parse error"
-msgstr "Filtre d'error"
+msgstr "Error d'anàlisi"
 
 #: astparser.py:601
 msgid "Multiple statements not supported"
-msgstr ""
+msgstr "No s'admeten les declaracions múltiples"
 
 #: astparser.py:625
 msgid "Internal error"
-msgstr ""
+msgstr "Error intern"
 
+# well-spelled: Equation, parse
 #: calculate.py:109
 #, python-format
 msgid "Equation.parse() string invalid (%s)"
-msgstr "Equation.parse() cadena invàlida (%s)"
+msgstr "Equation.parse() cadena no vàlida (%s)"
 
 #: calculate.py:483
 msgid "Can not assign label: will cause recursion"
-msgstr ""
+msgstr "No es pot assignar l'etiqueta: provocaria recursivitat"
 
 #: calculate.py:571
 #, python-format
 msgid "Writing to journal (%s)"
-msgstr "Escribint al Diari (%s)"
+msgstr "S'està escrivint al diari (%s)"
 
 #: calculate.py:865
 msgid "button_pressed(): invalid type"
-msgstr "button_pressed(): caràcter invàlid"
+msgstr "button_pressed(): tipus no vàlid"
 
 #: functions.py:35
 msgid "add"
-msgstr ""
+msgstr "sum"
 
+# well-spelled: abs
 #: functions.py:36
 msgid "abs"
-msgstr ""
+msgstr "abs"
 
+# well-spelled: arccos
 #: functions.py:37
 msgid "acos"
-msgstr "acos"
+msgstr "arccos"
 
+# well-spelled: ach
 #: functions.py:38
-#, fuzzy
 msgid "acosh"
-msgstr "acos"
+msgstr "ach"
 
+# well-spelled: arcsin
 #: functions.py:39
 msgid "asin"
-msgstr "asin"
+msgstr "arcsin"
 
+# well-spelled: ash
 #: functions.py:40
-#, fuzzy
 msgid "asinh"
-msgstr "asin"
+msgstr "ash"
 
+# well-spelled: arctg
 #: functions.py:41
 msgid "atan"
-msgstr "atg"
+msgstr "arctg"
 
+# well-spelled: ath
 #: functions.py:42
-#, fuzzy
 msgid "atanh"
-msgstr "atg"
+msgstr "ath"
 
+# well-spelled: and
 #: functions.py:43
 msgid "and"
-msgstr "i"
+msgstr "and"
 
+# well-spelled: b10bin
 #: functions.py:44
 msgid "b10bin"
-msgstr ""
+msgstr "b10bin"
 
+# well-spelled: ceil
 #: functions.py:45
 msgid "ceil"
-msgstr ""
+msgstr "ceil"
 
+# well-spelled: cos
 #: functions.py:46
 msgid "cos"
 msgstr "cos"
 
+# well-spelled: ch
 #: functions.py:47
 msgid "cosh"
-msgstr "cosh"
+msgstr "ch"
 
+# well-spelled: div
 #: functions.py:48
 msgid "div"
-msgstr ""
+msgstr "div"
 
+# well-spelled: mcd
 #: functions.py:49
 msgid "gcd"
-msgstr ""
+msgstr "mcd"
 
+# well-spelled: exp
 #: functions.py:50
 msgid "exp"
 msgstr "exp"
 
 #: functions.py:51
-#, fuzzy
 msgid "factorial"
-msgstr "Factorial"
+msgstr "factorial"
 
+# well-spelled: fac
 #: functions.py:52
 msgid "fac"
 msgstr "fac"
 
+# well-spelled: factoritzar
 #: functions.py:53
-#, fuzzy
 msgid "factorize"
-msgstr "Factorial"
+msgstr "factoritzar"
 
+# well-spelled: floor
 #: functions.py:54
 msgid "floor"
-msgstr ""
+msgstr "floor"
 
+# well-spelled: inv
 #: functions.py:55
 msgid "inv"
-msgstr ""
+msgstr "inv"
 
+# well-spelled: is_int
 #: functions.py:56
 msgid "is_int"
-msgstr ""
+msgstr "is_int"
 
+# well-spelled: ln
 #: functions.py:57
 msgid "ln"
 msgstr "ln"
 
+# well-spelled: lg
 #: functions.py:58
 msgid "log10"
-msgstr ""
+msgstr "lg"
 
+# well-spelled: mul
 #: functions.py:59
 msgid "mul"
-msgstr ""
+msgstr "mul"
 
+# well-spelled: or
 #: functions.py:60
 msgid "or"
-msgstr "o"
+msgstr "or"
 
+# well-spelled: rand_float
 #: functions.py:61
 msgid "rand_float"
-msgstr ""
+msgstr "rand_float"
 
+# well-spelled: rand_int
 #: functions.py:62
 msgid "rand_int"
-msgstr ""
+msgstr "rand_int"
 
+# well-spelled: round
 #: functions.py:63
 msgid "round"
-msgstr ""
+msgstr "round"
 
+# well-spelled: sin
 #: functions.py:64
 msgid "sin"
 msgstr "sin"
 
+# well-spelled: sh
 #: functions.py:65
 msgid "sinh"
-msgstr "sinh"
+msgstr "sh"
 
+# well-spelled: sinc
 #: functions.py:66
-#, fuzzy
 msgid "sinc"
-msgstr "sin"
+msgstr "sinc"
 
+# well-spelled: sqrt
 #: functions.py:67
 msgid "sqrt"
 msgstr "sqrt"
 
+# well-spelled: sub
 #: functions.py:68
 msgid "sub"
-msgstr ""
+msgstr "sub"
 
 #: functions.py:69
 msgid "square"
 msgstr "quadrat"
 
+# well-spelled: tg
 #: functions.py:70
 msgid "tan"
 msgstr "tg"
 
+# well-spelled: th
 #: functions.py:71
 msgid "tanh"
 msgstr "th"
 
+# well-spelled: xor
 #: functions.py:72
 msgid "xor"
 msgstr "xor"
 
+# well-spelled: abs, x
 #: functions.py:112
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
-msgstr ""
+msgstr "abs(x), retorna el valor absolut de x, que significa -x si x < 0"
 
+#  well-spelled: acos, x, arccosinus
 #: functions.py:117
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
 msgstr ""
-"acos(x), torna l'arc cosinus de x. Això és l'angle, el cosinus del qual és "
-"x. Està definit per -1 <= x < 1"
+"acos(x), retorna l'arccosinus de x. Això és l'angle, el cosinus del qual és "
+"x. La funció està definida per -1 <= x < 1"
 
+# well-spelled: acosh, x, y
 #: functions.py:123
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
 msgstr ""
+"acosh(x), retorna l'àrea del cosinus hiperbòlic de x. Aquest és el valor "
+"de y pel qual el cosinus hiperbòlic és x."
 
+# well-spelled: And, x, y, AND, True, False
 #: functions.py:129
-#, fuzzy
 msgid ""
 "And(x, y), logical and. Returns True if x and y are True, else returns False"
 msgstr ""
-"i(x, y), \"i\" lògic. Torna True (Veritable) si x i y són veritables, "
-"altrament torna False (Falç)"
+"And(x, y), la porta lògica AND. Retorna True (cert) si x i y són certs, "
+"altrament retorna False (fals)"
 
+# well-spelled: add, x, y
 #: functions.py:136
 msgid "add(x, y), return x + y"
-msgstr ""
+msgstr "add(x, y), retorna x + y"
 
+#  well-spelled: asin, x, arcsinus
 #: functions.py:141
-#, fuzzy
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
 msgstr ""
-"asin(x), torna l'arc sinus de x. Aquest és l'angle, el sinus del qual és x. "
-"Definit per -1 <= x <= 1"
+"asin(x), retorna l'arcsinus de x. Aquest és l'angle, el sinus del qual és x. "
+"La funció està definida per -1 <= x <= 1"
 
+# well-spelled: asinh, x, y
 #: functions.py:147
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
 msgstr ""
+"asinh(x), retorna l'àrea del sinus hiperbòlic de x. Aquest és el valor de "
+"y pel qual el sinus hiperbòlic és x."
 
+#  well-spelled: atan, x, arctangent
 #: functions.py:153
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
 msgstr ""
-"atg(x), torna l'arc tangent de x. Aquest és l'angle, la tangent del qual és "
-"x. Definit per tota x"
+"atan(x), retorna l'arctangent de x. Aquest és l'angle, la tangent del qual "
+"és x. La funció està definida per tota x"
 
+#  well-spelled: atanh, x, arctangent
 #: functions.py:159
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
 msgstr ""
+"atanh(x), retorna l'arctangent hiperbòlica de x. Aquest és el valor, la "
+"tangent hiperbòlica de la qual és x."
 
 #: functions.py:171
 msgid "Number does not look binary in base 10"
-msgstr ""
+msgstr "El número no sembla binari en base 10"
 
+# well-spelled: b10bin, x, p, ex, b, bin
 #: functions.py:178
 msgid ""
 "b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
 "(10111) = 23,"
 msgstr ""
+"b10bin(x), interpreta un número escrit en base 10 com binari, p. ex.: "
+"b10bin(10111) = 23,"
 
+# well-spelled: ceil, x
 #: functions.py:183
 msgid "ceil(x), return the smallest integer larger than x."
-msgstr ""
+msgstr "ceil(x), retorna el màxim enter més petit o igual que x."
 
+# well-spelled: cos, x
 #: functions.py:188
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr ""
-"cos(x), torna el cosinus de x. Aquesta és la coordenada x en el cercle "
-"d'unitats per l'angle x."
+"cos(x), retorna el cosinus de x. Aquesta és la coordenada x en el cercle "
+"d'unitats per l'angle x"
 
+# well-spelled: cosh, x, exp
 #: functions.py:194
 msgid ""
 "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
-"cosh(x), torna el cosinus hiperbòlic de x. Donat per (exp(x) + exp(-x)) / 2"
+"cosh(x), retorna el cosinus hiperbòlic de x. Aquesta funció ve donada per "
+"(exp(x) + exp(-x)) / 2"
 
 #: functions.py:198
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "No es pot dividir per 0"
 
 #: functions.py:219
 msgid "Invalid argument"
-msgstr ""
+msgstr "Argument no vàlid"
 
+# well-spelled: gcd, a, b
 #: functions.py:222
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
+"gcd(a, b), determina el màxim comú divisor de a i b. Per exemple, el factor "
+"més gran que comparteixen els números 15 i 18 és 3."
 
+# well-spelled: exp, x, e
 #: functions.py:227
 msgid "exp(x), return the natural exponent of x. Given by e^x"
-msgstr "exp(x), torna l'exponent natural de x. Donat per e^x"
+msgstr "exp(x), retorna l'exponencial de x. Aquesta funció ve donada per e^x"
 
 #: functions.py:231
 msgid "Factorial only defined for integers"
-msgstr ""
+msgstr "Factorial tan sols està definida per al conjunt dels nombres enters"
 
+# well-spelled: n
 #: functions.py:244
-#, fuzzy
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
-msgstr "fac(x), torna el factorial de x. Donat per x * (x - 1) * (x - 2) * ..."
+msgstr ""
+"factorial(n), retorna el factorial de n. Aquesta funció ve donada per n * (n "
+"- 1) * (n - 2) *..."
 
+# well-spelled: fac, x
 #: functions.py:250
 msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-msgstr "fac(x), torna el factorial de x. Donat per x * (x - 1) * (x - 2) * ..."
+msgstr ""
+"fac(x), retorna el factorial de x. Aquesta funció ve donada per x * (x - 1) *"
+" (x - 2) *..."
 
+# well-spelled: floor, x
 #: functions.py:283
 msgid "floor(x), return the largest integer smaller than x."
-msgstr ""
+msgstr "floor(x), retorna la part entera de x."
 
+# well-spelled: inv, x
 #: functions.py:287
 msgid "inv(x), return the inverse of x, which is 1 / x"
-msgstr ""
+msgstr "inv(x), retorna l'invers de x, que és 1 / x"
 
+# well-spelled: x
 #: functions.py:309 functions.py:318
 msgid "Logarithm(x) only defined for x > 0"
-msgstr ""
+msgstr "El logaritme(x) tan sols està definit per x > 0"
 
+# well-spelled: ln, x, exp
 #: functions.py:311
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
 msgstr ""
-"ln(x), torna el logaritme natural de x. L'exponent d'aquest valor és x. "
-"Definit per x >= 0."
+"ln(x), retorna el logaritme natural de x. L'exponent exp() d'aquest valor és "
+"x. La funció està definida per x >= 0."
 
+# well-spelled: log10, x, y
 #: functions.py:320
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
+"log10(x), retorna el logaritme en base 10 de x. Aquest és el valor pel qual "
+"10^y és igual que x. La funció està definida per x >= 0."
 
+# well-spelled: x
 #: functions.py:327
 msgid "Can only calculate x modulo <integer>"
-msgstr ""
+msgstr "Tan sols es pot calcular x modulo <integer>"
 
+# well-spelled: mod, x, y
 #: functions.py:329
 msgid ""
 "mod(x, y), return the modulus of x with respect to y. This is the remainder "
 "after dividing x by y."
 msgstr ""
+"mod(x, y), retorna el mòdul de x respecte a y. Aquest és el residu després "
+"de dividir x per y."
 
+# well-spelled: mul, x, y
 #: functions.py:337
 msgid "mul(x, y), return x * y"
-msgstr ""
+msgstr "mul(x, y), retorna x * y"
 
+# well-spelled: negate, x
 #: functions.py:341
 msgid "negate(x), return -x"
-msgstr ""
+msgstr "negate(x), retorna -x"
 
+# well-spelled: Or, x, y, OR, True, False
 #: functions.py:346
-#, fuzzy
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
-"or(x, y), \"o\" lògic. Torna True (Veritable) si x i/o y són True, altrament "
-"torna False (Falç)"
+"Or(x, y), la porta lògica OR. Retorna True (cert) si x i/o y són certs, "
+"altrament retorna False (fals)"
 
+# well-spelled: pow, x, y
 #: functions.py:361
 msgid "pow(x, y), return x to the power y (x**y)"
-msgstr ""
+msgstr "pow(x, y), retorna x elevat a y (x**y)"
 
+# well-spelled: rand_float
 #: functions.py:366
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
 msgstr ""
+"rand_float(), retorna un número aleatori en punt flotant entre 0,0 i 1,0"
 
+# well-spelled: rand_float
 #: functions.py:371
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
+"rand_float([<val_màx>]), retorna un número aleatori enter entre 0 i <val_màx>"
+". <val_màx> és un argument opcional, per defecte és 65535."
 
+# well-spelled: round, x
 #: functions.py:376
 msgid "round(x), return the integer nearest to x."
-msgstr ""
+msgstr "round(x), retorna l'enter més proper a x."
 
 #: functions.py:382 functions.py:390
 msgid "Bitwise operations only apply to integers"
-msgstr ""
+msgstr "Les operacions bit a bit només s'apliquen als nombres enters"
 
+# well-spelled: shift_left, x, y
 #: functions.py:384
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr ""
+"shift_left(x, y), desplaçament de x amb y bits a l'esquerra (cada bit "
+"multiplica per dos 2)"
 
+# well-spelled: shift_right, x, y
 #: functions.py:392
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr ""
+"shift_right(x, y), desplaçament de x amb y bits a la dreta (cada bit "
+"divideix per dos 2)"
 
+# well-spelled: sin, x, y
 #: functions.py:397
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
 msgstr ""
-"sin(x), Torna el sinus de x. Aquest és la coordenada y de les unitats del "
+"sin(x), retorna el sinus de x. Aquest és la coordenada y de les unitats del "
 "cercle per a l'angle x"
 
+# well-spelled: sinh, x, exp
 #: functions.py:403
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
-"sinh(x), torna el sinus hiperbòlic de x. Donat per (exp(x) - exp(-x)) / 2"
+"sinh(x), retorna el sinus hiperbòlic de x. Aquesta funció ve donada per "
+"(exp(x) - exp(-x)) / 2"
 
+# well-spelled: sinc, x, sin
 #: functions.py:410
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
-msgstr ""
+msgstr "sinc(x), retorna el sinc de x. Aquesta funció ve donada per sin(x) / x."
 
+# well-spelled: sqrt, x
 #: functions.py:415
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
 msgstr ""
-"sqrt(x), torna l'arrel quadrada de x. Aquest és el valor, el quadrat del "
-"qual és x. Definit per x >= 0."
+"sqrt(x), retorna l'arrel quadrada principal de x. Aquest és el valor, el "
+"quadrat del qual és x. La funció està definida per x >= 0."
 
+# well-spelled: square, x
 #: functions.py:420
 msgid "square(x), return x * x"
-msgstr ""
+msgstr "square(x), retorna x * x"
 
+# well-spelled: sub, x, y
 #: functions.py:427
 msgid "sub(x, y), return x - y"
-msgstr ""
+msgstr "sub(x, y), retorna x - y"
 
+# well-spelled: tan, x, sin, cos, ú
 #: functions.py:432
 msgid ""
 "tan(x), return the tangent of x. This is the slope of the line from the "
 "origin of the unit circle to the point on the unit circle defined by the "
 "angle x. Given by sin(x) / cos(x)"
 msgstr ""
-"tg(x), torna la tangent de x. Això es la pendent d'una línia que va des de "
-"l'origen d'un cercle de radi ú, fins al tall que l'angle x fa en el cercle. "
-"I ve donada per: sin(x) / cos(x)"
+"tan(x), retorna la tangent de x. Això és el pendent d'una línia que va des "
+"de l'origen d'un cercle de radi ú, fins al tall que l'angle x fa en el "
+"cercle. Aquesta funció ve donada per sin(x) / cos(x)"
 
+# well-spelled: tanh, x, sinh, cosh
 #: functions.py:439
-#, fuzzy
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
-msgstr "tgh(x), torna la tangent hiperbòlica de x. Donat per sinh(x) / cosh(x)"
+msgstr ""
+"tanh(x), retorna la tangent hiperbòlica de x. Aquesta funció ve donada per "
+"sinh(x) / cosh(x)"
 
+# well-spelled: xor, x, y, XOR, True, False
 #: functions.py:444
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
 msgstr ""
-"xor(x, y), xor lògic. Torna True si la x és True (i la y és False) o  si la "
-"y és True (i la x és False), altrament torna False"
+"xor(x, y), la porta lògica XOR o disjunció exclusiva. Retorna True (cert) si "
+"la x és cert i la y és falç, o si la y és cert i la x és fals, altrament "
+"retorna False (fals)"
 
 #: layout.py:75
 msgid "Clear"
@@ -578,7 +675,7 @@ msgstr "Neteja"
 
 #: layout.py:105 layout.py:145
 msgid "Edit"
-msgstr "Editar"
+msgstr "Edita"
 
 #: layout.py:110 layout.py:146
 msgid "Algebra"
@@ -594,7 +691,7 @@ msgstr "Booleà"
 
 #: layout.py:125 layout.py:149
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Miscel·lània"
 
 #: layout.py:178
 msgid "Label:"
@@ -602,30 +699,30 @@ msgstr "Etiqueta:"
 
 #: layout.py:223
 msgid "All equations"
-msgstr "Totes les eqüacions"
+msgstr "Totes les equacions"
 
 #: layout.py:224
 msgid "My equations"
-msgstr "Les meves eqüacions"
+msgstr "Les meves equacions"
 
 #: layout.py:225
 msgid "Show variables"
-msgstr "Mostra variables"
+msgstr "Mostra les variables"
 
 #. TRANS: multiplication symbol (default: '×')
 #: mathlib.py:82
 msgid "mul_sym"
-msgstr "*"
+msgstr "×"
 
 #. TRANS: division symbol (default: '÷')
 #: mathlib.py:87
 msgid "div_sym"
-msgstr "/"
+msgstr "÷"
 
 #. TRANS: equal symbol (default: '=')
 #: mathlib.py:92
 msgid "equ_sym"
-msgstr ""
+msgstr "="
 
 #: mathlib.py:216
 msgid "Undefined"
@@ -641,19 +738,21 @@ msgstr "Ajuda"
 
 #: toolbars.py:121
 msgid "Copy"
-msgstr "Còpia"
+msgstr "Copia"
 
+# well-spelled: c
 #: toolbars.py:122
 msgid "<ctrl>c"
-msgstr ""
+msgstr "<ctrl>c"
 
 #: toolbars.py:126
 msgid "Cut"
-msgstr "Talla"
+msgstr "Retalla"
 
+# well-spelled: x
 #: toolbars.py:129
 msgid "<ctrl>x"
-msgstr ""
+msgstr "<ctrl>x"
 
 #: toolbars.py:137
 msgid "Paste"
@@ -665,16 +764,18 @@ msgstr "Quadrat"
 
 #: toolbars.py:152
 msgid "Square root"
-msgstr "Arrel quadrada"
+msgstr "Arrel quadrada principal"
 
 #: toolbars.py:157
 msgid "Inverse"
 msgstr "Invers"
 
+# well-spelled: x
 #: toolbars.py:164
 msgid "e to the power x"
-msgstr "e elevat a x"
+msgstr "exponencial de x"
 
+# well-spelled: x, y
 #: toolbars.py:169
 msgid "x to the power y"
 msgstr "x elevat a y"
@@ -699,17 +800,20 @@ msgstr "Cosinus"
 msgid "Tangent"
 msgstr "Tangent"
 
+# well-spelled: Arcsinus
 #: toolbars.py:204
 msgid "Arc sine"
-msgstr "Arc sinus"
+msgstr "Arcsinus"
 
+# well-spelled: Arccosinus
 #: toolbars.py:208
 msgid "Arc cosine"
-msgstr "Arc cosinus"
+msgstr "Arccosinus"
 
+# well-spelled: Arctangent
 #: toolbars.py:212
 msgid "Arc tangent"
-msgstr "Arc tangent"
+msgstr "Arctangent"
 
 #: toolbars.py:218
 msgid "Hyperbolic sine"
@@ -723,42 +827,46 @@ msgstr "Cosinus hiperbòlic"
 msgid "Hyperbolic tangent"
 msgstr "Tangent hiperbòlica"
 
+# well-spelled: AND
 #: toolbars.py:236
 msgid "Logical and"
-msgstr "i lògic"
+msgstr "Conjunció lògica (porta lògica AND)"
 
+# well-spelled: OR
 #: toolbars.py:240
 msgid "Logical or"
-msgstr "o lògica"
+msgstr "Disjunció lògica (porta lògica OR)"
 
 #: toolbars.py:250
 msgid "Equals"
-msgstr "Iguals"
+msgstr "Igualtat"
 
 #: toolbars.py:253
 msgid "Not equals"
-msgstr "No iguals"
+msgstr "Desigualtat"
 
 #: toolbars.py:262
 msgid "Pi"
 msgstr "Pi"
 
+# Èpsilon
 #: toolbars.py:266
 msgid "e"
 msgstr "e"
 
+# well-spelled: γ
 #: toolbars.py:269
 msgid "γ"
-msgstr ""
+msgstr "γ"
 
+# well-spelled: φ
 #: toolbars.py:272
 msgid "φ"
-msgstr ""
+msgstr "φ"
 
 #: toolbars.py:279
-#, fuzzy
 msgid "Plot"
-msgstr "plot"
+msgstr "Traça"
 
 #: toolbars.py:286
 msgid "Degrees"
@@ -769,111 +877,17 @@ msgid "Radians"
 msgstr "Radians"
 
 #: toolbars.py:291
-#, fuzzy
 msgid "Degrees / Radians"
 msgstr "Graus / radians"
 
 #: toolbars.py:300
 msgid "Exponent / Scientific notation"
-msgstr ""
+msgstr "Notació científica / exponencial"
 
 #: toolbars.py:310
 msgid "Number of shown digits"
-msgstr ""
+msgstr "Nombre de dígits a mostrar"
 
 #: toolbars.py:320
 msgid "Integer formatting base"
-msgstr ""
-
-#~ msgid "Show history"
-#~ msgstr "Mostra històric"
-
-#~ msgid "Enter"
-#~ msgstr "Entra"
-
-#~ msgid "Available functions:"
-#~ msgstr "Funcions disponibles:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "nivell: %d, de %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "Número d'arguments invàlid (%d en comptes de %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "la funció pren %d arguments"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "No es pot analitzar l'argument %d: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "Funció error: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "Hi ha un parèntesi dret inesperat"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "Error analitzant (parèntesi dret)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "Parèntesi dret inesperat"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "Error analitzant (parèntesi dret, no hi ha valor a l'esquerra)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "Error de filtre (hi ha un parèntesi dret, que mai no s'obra)"
-
-#~ msgid "Number not expected"
-#~ msgstr "Número inesperat"
-
-#~ msgid "Operator not expected"
-#~ msgstr "Operador inesperat"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "Error de filtre: número o variable esperada"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "Número o variable esperada"
-
-#~ msgid "Invalid operator"
-#~ msgstr "Operador invàlid"
-
-#~ msgid "Operator expected"
-#~ msgstr "Operador esperat"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): no torna res"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "functions(), torna el llistat de totes les funcions definides"
-
-#~ msgid "operators"
-#~ msgstr "operadors"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "operators(), torna la llista dels operadors definits"
-
-#~ msgid "plot"
-#~ msgstr "plot"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr "square(x), torna el quadrat de x. Donat per x * x"
-
-#~ msgid "test"
-#~ msgstr "test"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr ""
-#~ "variables(), torna una llista de les variable que estan definides ara mateix"
-
-#~ msgid "Constants"
-#~ msgstr "Constants"
-
-#~ msgid "Format"
-#~ msgstr "Format"
+msgstr "Base (aritmètica)"

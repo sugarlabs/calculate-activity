@@ -25,13 +25,9 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.0.3\n"
 
-# NJcCbY  <a href="http://keyfvqbjmhsq.com/">keyfvqbjmhsq</a>, [url=http://uvdumgpprbwm.com/]uvdumgpprbwm[/url], [link=http://cbmuguwncuyi.com/]cbmuguwncuyi[/link], http://dbzewtvdcbuj.com/
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
 msgstr ""
-"NJcCbY  <a href=\"http://keyfvqbjmhsq.com/\">keyfvqbjmhsq</a>, "
-"[url=http://uvdumgpprbwm.com/]uvdumgpprbwm[/url], "
-"[link=http://cbmuguwncuyi.com/]cbmuguwncuyi[/link], http://dbzewtvdcbuj.com/"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file

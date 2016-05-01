@@ -551,14 +551,10 @@ msgstr ""
 "tan(x), retounen tanjant x. Sa se pant liy lan soti nan orijin sèk inite-a "
 "rive pwen sou sèk inite defini pa ang x la. ke sin(x) / cos(x) bay la"
 
-# vgYNE4  <a href="http://gxpgrmqnnyka.com/">gxpgrmqnnyka</a>, [url=http://uginbyoubxts.com/]uginbyoubxts[/url], [link=http://dcflidnouvfp.com/]dcflidnouvfp[/link], http://vvyapovksxrm.com/
 #: functions.py:439
 #, fuzzy
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr ""
-"vgYNE4  <a href=\"http://gxpgrmqnnyka.com/\">gxpgrmqnnyka</a>, "
-"[url=http://uginbyoubxts.com/]uginbyoubxts[/url], "
-"[link=http://dcflidnouvfp.com/]dcflidnouvfp[/link], http://vvyapovksxrm.com/"
 
 #: functions.py:444
 msgid ""

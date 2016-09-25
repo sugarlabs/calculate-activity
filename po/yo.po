@@ -10,24 +10,25 @@
 # Copyright (C) 2007
 # This file is distributed under the same license as the Calculate package.
 # Reinier Heeres <reinier@heeres.eu>, 2007
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-09-16 03:26+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: yo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1473996417.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
-msgstr ""
+msgstr "Iṣiro"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
@@ -35,482 +36,528 @@ msgid ""
 "This is the place to get the answer to a quick problem, but that is not the "
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
+"Eleyi jẹ ibi lati gba awọn idahun si awọn ọna kan isoro, ṣugbọn ti o ni ko "
+"ni iye! O tun le Ye dawa, Trigonometry, Bolianu ati siwaju sii!"
 
 #: astparser.py:40
 msgid ""
 "plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
 "range from a to b"
 msgstr ""
+"idite (eqn, var =-a..b), nrò idogba 'eqn' pẹlu awọn ayípadà 'var' ni ibiti o "
+"lati kan to b"
 
 #: astparser.py:59
 #, python-format
 msgid "Parse error at %d"
-msgstr ""
+msgstr "Parse aṣiṣe ni %d"
 
 #: astparser.py:71 astparser.py:83
 #, python-format
 msgid "Error at %d"
-msgstr ""
+msgstr "Aṣiṣe ni %d"
 
 #: astparser.py:94
 msgid "This is just a test topic, use help(index) for the index"
-msgstr ""
+msgstr "Yi ni o kan kan igbeyewo koko, lilo iranlọwọ(atọka) fun awọn Ìwé"
 
 #: astparser.py:106
 msgid "Use help(test) for help about 'test', or help(index) for the index"
 msgstr ""
+"Lo iranlọwọ (igbeyewo) fun iranlọwọ nipa 'igbeyewo', tabi iranlọwọ(atọka) "
+"fun awọn Ìwé"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:109
 msgid "index"
-msgstr ""
+msgstr "Ìwé"
 
 #: astparser.py:109
 msgid "topics"
-msgstr ""
+msgstr "ero"
 
 #: astparser.py:110
 msgid "Topics"
-msgstr ""
+msgstr "ero"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:118
 msgid "variables"
-msgstr ""
+msgstr "oniyipada"
 
 #: astparser.py:119
 msgid "Variables"
-msgstr ""
+msgstr "Oniyipada"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:125
 msgid "functions"
-msgstr ""
+msgstr "awọn iṣẹ"
 
 #: astparser.py:126
 msgid "Functions"
-msgstr ""
+msgstr "Awọn iṣẹ"
 
 #: astparser.py:135
 #, python-format
 msgid "No help about '%s' available, use help(index) for the index"
-msgstr ""
+msgstr "Ko si iranlọwọ nipa '%s' wa, lilo iranlọwọ (atọka) fun awọn Ìwé"
 
 #: astparser.py:459
 msgid "help"
-msgstr ""
+msgstr "egba mi o"
 
 #: astparser.py:466
 msgid "Recursion detected"
-msgstr ""
+msgstr "Recursion-ri"
 
 #: astparser.py:490
 #, python-format
 msgid "Function '%s' not defined"
-msgstr ""
+msgstr "Iṣẹ '%s' ko telẹ"
 
 #: astparser.py:492
 #, python-format
 msgid "Variable '%s' not defined"
-msgstr ""
+msgstr "Ayípadà '%s' ko telẹ"
 
 #: astparser.py:502
 #, python-format
 msgid "Attribute '%s' does not exist"
-msgstr ""
+msgstr "Ro pe '%s' ko ni tẹlẹ"
 
 #: astparser.py:596
 msgid "Parse error"
-msgstr ""
+msgstr "Parse aṣiṣe"
 
 #: astparser.py:601
 msgid "Multiple statements not supported"
-msgstr ""
+msgstr "Ọpọ gbólóhùn ko ni atilẹyin"
 
 #: astparser.py:625
 msgid "Internal error"
-msgstr ""
+msgstr "Ti abẹnu aṣiṣe"
 
 #: calculate.py:109
 #, python-format
 msgid "Equation.parse() string invalid (%s)"
-msgstr ""
+msgstr "Equation.parse() okun invalid (%s)"
 
 #: calculate.py:483
 msgid "Can not assign label: will cause recursion"
-msgstr ""
+msgstr "Ko le fi aami: o si mu ki recursion"
 
 #: calculate.py:571
 #, python-format
 msgid "Writing to journal (%s)"
-msgstr ""
+msgstr "Kikọ si akosile (%s)"
 
 #: calculate.py:865
 msgid "button_pressed(): invalid type"
-msgstr ""
+msgstr "button_pressed(): invalid iru"
 
 #: functions.py:35
 msgid "add"
-msgstr ""
+msgstr "fi"
 
 #: functions.py:36
 msgid "abs"
-msgstr ""
+msgstr "abs"
 
 #: functions.py:37
 msgid "acos"
-msgstr ""
+msgstr "acos"
 
 #: functions.py:38
 msgid "acosh"
-msgstr ""
+msgstr "acosh"
 
 #: functions.py:39
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 #: functions.py:40
 msgid "asinh"
-msgstr ""
+msgstr "asinh"
 
 #: functions.py:41
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 #: functions.py:42
 msgid "atanh"
-msgstr ""
+msgstr "atanh"
 
 #: functions.py:43
 msgid "and"
-msgstr ""
+msgstr "ati"
 
 #: functions.py:44
 msgid "b10bin"
-msgstr ""
+msgstr "b10bin"
 
 #: functions.py:45
 msgid "ceil"
-msgstr ""
+msgstr "ceil"
 
 #: functions.py:46
 msgid "cos"
-msgstr ""
+msgstr "cos"
 
 #: functions.py:47
 msgid "cosh"
-msgstr ""
+msgstr "cosh"
 
 #: functions.py:48
 msgid "div"
-msgstr ""
+msgstr "div"
 
 #: functions.py:49
 msgid "gcd"
-msgstr ""
+msgstr "gcd"
 
 #: functions.py:50
 msgid "exp"
-msgstr ""
+msgstr "exp"
 
 #: functions.py:51
 msgid "factorial"
-msgstr ""
+msgstr "factorial"
 
 #: functions.py:52
 msgid "fac"
-msgstr ""
+msgstr "fac"
 
 #: functions.py:53
 msgid "factorize"
-msgstr ""
+msgstr "factorize"
 
 #: functions.py:54
 msgid "floor"
-msgstr ""
+msgstr "floor"
 
 #: functions.py:55
 msgid "inv"
-msgstr ""
+msgstr "inv"
 
 #: functions.py:56
 msgid "is_int"
-msgstr ""
+msgstr "is_int"
 
 #: functions.py:57
 msgid "ln"
-msgstr ""
+msgstr "ln"
 
 #: functions.py:58
 msgid "log10"
-msgstr ""
+msgstr "log10"
 
 #: functions.py:59
 msgid "mul"
-msgstr ""
+msgstr "mul"
 
 #: functions.py:60
 msgid "or"
-msgstr ""
+msgstr "tabi"
 
 #: functions.py:61
 msgid "rand_float"
-msgstr ""
+msgstr "rand_float"
 
 #: functions.py:62
 msgid "rand_int"
-msgstr ""
+msgstr "rand_int"
 
 #: functions.py:63
 msgid "round"
-msgstr ""
+msgstr "yika"
 
 #: functions.py:64
 msgid "sin"
-msgstr ""
+msgstr "sin"
 
 #: functions.py:65
 msgid "sinh"
-msgstr ""
+msgstr "sinh"
 
 #: functions.py:66
 msgid "sinc"
-msgstr ""
+msgstr "sinc"
 
 #: functions.py:67
 msgid "sqrt"
-msgstr ""
+msgstr "sqrt"
 
 #: functions.py:68
 msgid "sub"
-msgstr ""
+msgstr "sub"
 
 #: functions.py:69
 msgid "square"
-msgstr ""
+msgstr "square"
 
 #: functions.py:70
 msgid "tan"
-msgstr ""
+msgstr "tan"
 
 #: functions.py:71
 msgid "tanh"
-msgstr ""
+msgstr "tanh"
 
 #: functions.py:72
 msgid "xor"
-msgstr ""
+msgstr "xor"
 
 #: functions.py:112
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
-msgstr ""
+msgstr "abs(x), pada idi iye ti x, eyi ti o tumo -x fun x < 0"
 
 #: functions.py:117
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
 msgstr ""
+"acos(x), pada awọn aaki cosine ti x. Eleyi ni awọn igun fun eyi ti awọn "
+"cosine jẹ x. Telẹ fun -1 <= x < 1"
 
 #: functions.py:123
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
 msgstr ""
+"acosh (x), pada awọn aaki hyperbolic cosine ti x. Eleyi jẹ iye y fun eyi ti "
+"awọn hyperbolic cosine je egbe x."
 
 #: functions.py:129
 msgid ""
 "And(x, y), logical and. Returns True if x and y are True, else returns False"
 msgstr ""
+"Ati (x, y), mogbonwa ati ki o. Pada Otitọ ti o ba ti x ati y ni o wa Otitọ, "
+"miran pada Eke"
 
 #: functions.py:136
 msgid "add(x, y), return x + y"
-msgstr ""
+msgstr "fi (x, y), pada x + y"
 
 #: functions.py:141
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
 msgstr ""
+"Asin (x), pada awọn aaki lai ti x. Eleyi ni awọn igun fun eyi ti awọn lai ni "
+"x. Telẹ fun -1 <= x <= 1"
 
 #: functions.py:147
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
 msgstr ""
+"asinh (x), pada awọn aaki hyperbolic lai ti x. Eleyi jẹ iye y fun eyi ti "
+"awọn hyperbolic lai je egbe x."
 
 #: functions.py:153
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
 msgstr ""
+"Atan (x), pada awọn aaki tangent ti x. Eleyi ni awọn igun fun eyi ti awọn "
+"tangent ni x. Telẹ fun gbogbo x"
 
 #: functions.py:159
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
 msgstr ""
+"atanh (x), pada awọn aaki hyperbolic tangent ti x. Eleyi jẹ iye y fun eyi ti "
+"awọn hyperbolic tangent je egbe x."
 
 #: functions.py:171
 msgid "Number does not look binary in base 10"
-msgstr ""
+msgstr "Number ko ni wo alakomeji ni mimọ 10"
 
 #: functions.py:178
 msgid ""
 "b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
 "(10111) = 23,"
 msgstr ""
+"b10bin (x), itumọ nọmba kan kọ ni mimọ 10 bi alakomeji, eg: b10bin(10111) = "
+"23,"
 
 #: functions.py:183
 msgid "ceil(x), return the smallest integer larger than x."
-msgstr ""
+msgstr "ceil (x), pada awọn kere odidi o tobi ju x."
 
 #: functions.py:188
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr ""
+"nitori(x), pada awọn cosine ti x. Eleyi jẹ awọn x-ipoidojuko lori kuro "
+"circle ni igun x"
 
 #: functions.py:194
 msgid ""
 "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
+"cosh (x), pada awọn hyperbolic cosine ti x. Fun nipasẹ (exp (x) + exp (-x)) /"
+" 2"
 
 #: functions.py:198
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "Ko le pin nipa odo"
 
 #: functions.py:219
 msgid "Invalid argument"
-msgstr ""
+msgstr "Invalid ariyanjiyan"
 
 #: functions.py:222
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
+"gcd (a, b), mọ awọn ti o tobi wọpọ iyeida kan ti a ti ati b. Fun apẹẹrẹ, "
+"awọn tobi ifosiwewe ti wa ni pín nipasẹ awọn nọmba 15 ati 18 ti wa ni 3."
 
 #: functions.py:227
 msgid "exp(x), return the natural exponent of x. Given by e^x"
-msgstr ""
+msgstr "exp(x), pada awọn adayeba agbènọmbàga ti x. Fun nipasẹ e^x"
 
 #: functions.py:231
 msgid "Factorial only defined for integers"
-msgstr ""
+msgstr "Factorial nikan telẹ fun odidi"
 
 #: functions.py:244
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr ""
+"factorial (n), pada awọn factorial ti n. Fun nipasẹ n * (n - 1) * (n - 2) * "
+"..."
 
 #: functions.py:250
 msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-msgstr ""
+msgstr "Ṣe(x), pada awọn factorial ti x. Fun nipasẹ x * (x - 1) * (x - 2) * ..."
 
 #: functions.py:283
 msgid "floor(x), return the largest integer smaller than x."
-msgstr ""
+msgstr "pakà (x), pada awọn ti odidi kere ju x."
 
 #: functions.py:287
 msgid "inv(x), return the inverse of x, which is 1 / x"
-msgstr ""
+msgstr "inv (x), pada awọn onidakeji ti x, ti o jẹ 1 / x"
 
 #: functions.py:309 functions.py:318
 msgid "Logarithm(x) only defined for x > 0"
-msgstr ""
+msgstr "Logarithm (x) nikan telẹ fun x> 0"
 
 #: functions.py:311
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
 msgstr ""
+"ln(x), pada awọn adayeba logarithm ti x. Eleyi jẹ iye fun eyi ti awọn "
+"agbènọmbàga exp() je egbe x. Telẹ fun x >= 0."
 
 #: functions.py:320
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
+"log10(x), pada awọn mimọ 10 logarithm ti x. Eleyi jẹ iye y fun eyi ti 10^y "
+"je egbe x. Telẹ fun x >= 0."
 
 #: functions.py:327
 msgid "Can only calculate x modulo <integer>"
-msgstr ""
+msgstr "Le nikan iṣiro x ìfiwọn <odidi>"
 
 #: functions.py:329
 msgid ""
 "mod(x, y), return the modulus of x with respect to y. This is the remainder "
 "after dividing x by y."
 msgstr ""
+"moodi (x, y), pada awọn modulus ti x pẹlu ọwọ lati y. Eleyi jẹ awọn ku lẹhin "
+"ti pin x nipa y."
 
 #: functions.py:337
 msgid "mul(x, y), return x * y"
-msgstr ""
+msgstr "mul (x, y), pada x * y"
 
 #: functions.py:341
 msgid "negate(x), return -x"
-msgstr ""
+msgstr "negate (x), pada -x"
 
 #: functions.py:346
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
+"Tabi (x, y), mogbonwa tabi. Pada Otitọ ti o ba ti x tabi y ni Otitọ, miran "
+"pada Eke"
 
 #: functions.py:361
 msgid "pow(x, y), return x to the power y (x**y)"
-msgstr ""
+msgstr "pow (x, y), pada x to agbara y (x**y)"
 
 #: functions.py:366
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
-msgstr ""
+msgstr "rand_float(), pada a ID lilefoofo ojuami nọmba laarin awọn 0,0 ati 1.0"
 
 #: functions.py:371
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
+"rand_int ([<maxval>]), pada a ID odidi laarin 0 ati <maxval>. <maxval> jẹ "
+"ẹya iyan ariyanjiyan ati ki o ti ṣeto si 65535 nipa aiyipada."
 
 #: functions.py:376
 msgid "round(x), return the integer nearest to x."
-msgstr ""
+msgstr "yika (x), pada odidi sunmọ to x."
 
 #: functions.py:382 functions.py:390
 msgid "Bitwise operations only apply to integers"
-msgstr ""
+msgstr "Bitwise mosi nikan waye si odidi"
 
 #: functions.py:384
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr ""
+"shift_left (x, y), naficula x nipa y die-die si osi (isodipupo nipa 2 fun "
+"bit)"
 
 #: functions.py:392
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr ""
+"shift_right (x, y), naficula x nipa y die-die si ọtun (pin nipa 2 fun bit)"
 
 #: functions.py:397
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
-msgstr ""
+msgstr "ese (x), pada lai ti x. Yi ni y-ipoidojuko lori kuro circle ni igun x"
 
 #: functions.py:403
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
+"sinh (x), pada awọn hyperbolic lai ti x. Fun nipasẹ (exp (x) - exp (-x)) / 2"
 
 #: functions.py:410
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
-msgstr ""
+msgstr "sinc (x), pada awọn sinc ti x. Eyi ni a fun nipasẹ ese (x) / x."
 
 #: functions.py:415
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
 msgstr ""
+"sqrt(x), pada awọn square root of x. Eleyi jẹ iye fun eyi ti awọn square je "
+"egbe x. Telẹ fun x >= 0."
 
 #: functions.py:420
 msgid "square(x), return x * x"
-msgstr ""
+msgstr "square (x), pada x * x"
 
 #: functions.py:427
 msgid "sub(x, y), return x - y"
-msgstr ""
+msgstr "iha (x, y), pada x - y"
 
 #: functions.py:432
 msgid ""
@@ -518,224 +565,230 @@ msgid ""
 "origin of the unit circle to the point on the unit circle defined by the "
 "angle x. Given by sin(x) / cos(x)"
 msgstr ""
+"Tan (x), pada awọn tangent ti x. Yi ni ite ti ila lati awọn Oti ti kuro "
+"Circle si ojuami lori kuro Circle asọye nipa awọn igun x. Fun nipasẹ ese (x) "
+"/ nitori (x)"
 
 #: functions.py:439
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr ""
+"tanh (x), pada awọn hyperbolic tangent ti x. Fun nipasẹ sinh (x) / cosh (x)"
 
 #: functions.py:444
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
 msgstr ""
+"xor (x, y), mogbonwa xor. Pada Otitọ ti o ba ti boya x jẹ Otitọ (ati y jẹ "
+"Eke) tabi y jẹ Otitọ (ati x jẹ Eke), miran pada Eke"
 
 #: layout.py:75
 msgid "Clear"
-msgstr ""
+msgstr "Parẹ́"
 
 #: layout.py:105 layout.py:145
 msgid "Edit"
-msgstr ""
+msgstr "Ṣatunkọ"
 
 #: layout.py:110 layout.py:146
 msgid "Algebra"
-msgstr ""
+msgstr "Aljebra"
 
 #: layout.py:115 layout.py:147
 msgid "Trigonometry"
-msgstr ""
+msgstr "Trigonometry"
 
 #: layout.py:120 layout.py:148
 msgid "Boolean"
-msgstr ""
+msgstr "Bolianu"
 
 #: layout.py:125 layout.py:149
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Oriṣiriṣi"
 
 #: layout.py:178
 msgid "Label:"
-msgstr ""
+msgstr "Aami:"
 
 #: layout.py:223
 msgid "All equations"
-msgstr ""
+msgstr "Gbogbo idogba"
 
 #: layout.py:224
 msgid "My equations"
-msgstr ""
+msgstr "Mi idogba"
 
 #: layout.py:225
 msgid "Show variables"
-msgstr ""
+msgstr "Show oniyipada"
 
 #. TRANS: multiplication symbol (default: '×')
 #: mathlib.py:82
 msgid "mul_sym"
-msgstr ""
+msgstr "*"
 
 #. TRANS: division symbol (default: '÷')
 #: mathlib.py:87
 msgid "div_sym"
-msgstr ""
+msgstr "÷"
 
 #. TRANS: equal symbol (default: '=')
 #: mathlib.py:92
 msgid "equ_sym"
-msgstr ""
+msgstr "="
 
 #: mathlib.py:216
 msgid "Undefined"
-msgstr ""
+msgstr "Aisọye"
 
 #: mathlib.py:226
 msgid "Error: unsupported type"
-msgstr ""
+msgstr "Aṣiṣe: unsupported iru"
 
 #: toolbars.py:53
 msgid "Help"
-msgstr ""
+msgstr "Egba mi o"
 
 #: toolbars.py:121
 msgid "Copy"
-msgstr ""
+msgstr "Ẹda-iwe"
 
 #: toolbars.py:122
 msgid "<ctrl>c"
-msgstr ""
+msgstr "<ctrl> c"
 
 #: toolbars.py:126
 msgid "Cut"
-msgstr ""
+msgstr "Gé"
 
 #: toolbars.py:129
 msgid "<ctrl>x"
-msgstr ""
+msgstr "<ctrl>x"
 
 #: toolbars.py:137
 msgid "Paste"
-msgstr ""
+msgstr "Lẹ"
 
 #: toolbars.py:147
 msgid "Square"
-msgstr ""
+msgstr "Square"
 
 #: toolbars.py:152
 msgid "Square root"
-msgstr ""
+msgstr "Square root"
 
 #: toolbars.py:157
 msgid "Inverse"
-msgstr ""
+msgstr "Onidakeji"
 
 #: toolbars.py:164
 msgid "e to the power x"
-msgstr ""
+msgstr "e to agbara x"
 
 #: toolbars.py:169
 msgid "x to the power y"
-msgstr ""
+msgstr "x to agbara y"
 
 #: toolbars.py:174
 msgid "Natural logarithm"
-msgstr ""
+msgstr "Adayeba logarithm"
 
 #: toolbars.py:180
 msgid "Factorial"
-msgstr ""
+msgstr "Factorial"
 
 #: toolbars.py:190
 msgid "Sine"
-msgstr ""
+msgstr "Lai"
 
 #: toolbars.py:194
 msgid "Cosine"
-msgstr ""
+msgstr "Cosine"
 
 #: toolbars.py:198
 msgid "Tangent"
-msgstr ""
+msgstr "Tangent"
 
 #: toolbars.py:204
 msgid "Arc sine"
-msgstr ""
+msgstr "Arc sine"
 
 #: toolbars.py:208
 msgid "Arc cosine"
-msgstr ""
+msgstr "Arc cosine"
 
 #: toolbars.py:212
 msgid "Arc tangent"
-msgstr ""
+msgstr "Arc tanget"
 
 #: toolbars.py:218
 msgid "Hyperbolic sine"
-msgstr ""
+msgstr "Hyperbolic sine"
 
 #: toolbars.py:222
 msgid "Hyperbolic cosine"
-msgstr ""
+msgstr "Hyperbolic cosine"
 
 #: toolbars.py:226
 msgid "Hyperbolic tangent"
-msgstr ""
+msgstr "Hyperbolic tangent"
 
 #: toolbars.py:236
 msgid "Logical and"
-msgstr ""
+msgstr "Mogbonwa ati"
 
 #: toolbars.py:240
 msgid "Logical or"
-msgstr ""
+msgstr "Mogbonwa tabi"
 
 #: toolbars.py:250
 msgid "Equals"
-msgstr ""
+msgstr "Je egbe"
 
 #: toolbars.py:253
 msgid "Not equals"
-msgstr ""
+msgstr "Ko je egbe"
 
 #: toolbars.py:262
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
 #: toolbars.py:266
 msgid "e"
-msgstr ""
+msgstr "e"
 
 #: toolbars.py:269
 msgid "γ"
-msgstr ""
+msgstr "γ"
 
 #: toolbars.py:272
 msgid "φ"
-msgstr ""
+msgstr "φ"
 
 #: toolbars.py:279
 msgid "Plot"
-msgstr ""
+msgstr "Idite"
 
 #: toolbars.py:286
 msgid "Degrees"
-msgstr ""
+msgstr "Iwọn"
 
 #: toolbars.py:287
 msgid "Radians"
-msgstr ""
+msgstr "Radians"
 
 #: toolbars.py:291
 msgid "Degrees / Radians"
-msgstr ""
+msgstr "Iwọn / Radians"
 
 #: toolbars.py:300
 msgid "Exponent / Scientific notation"
-msgstr ""
+msgstr "Agbènọmbàga / Scientific amiakosile"
 
 #: toolbars.py:310
 msgid "Number of shown digits"
-msgstr ""
+msgstr "Nọmba ti o han awọn nọmba"
 
 #: toolbars.py:320
 msgid "Integer formatting base"
-msgstr ""
+msgstr "Odidi akoonu mimọ"

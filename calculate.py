@@ -210,10 +210,12 @@ class Equation:
         # Add result
         if type(self.result) in (types.StringType, types.UnicodeType):
             resstr = str(self.result)
+            resstr = resstr.rstrip('0').rstrip('.') if '.' in resstr else resstr
             buf.insert_with_tags(buf.get_end_iter(), resstr,
                                  tagsmallnarrow, tagjustright)
         elif is_error:
             resstr = str(self.result)
+            resstr = resstr.rstrip('0').rstrip('.') if '.' in resstr else resstr
             buf.insert_with_tags(buf.get_end_iter(), resstr, tagsmallnarrow)
             range = self.result.get_range()
             eqnstart = buf.get_iter_at_offset(eqnoffset + range[0])
@@ -221,6 +223,7 @@ class Equation:
             buf.apply_tag(tagred, eqnstart, eqnend)
         elif not isinstance(self.result, SVGImage):
             resstr = self.ml.format_number(self.result)
+            resstr = str(resstr).rstrip('0').rstrip('.') if '.' in resstr else resstr
             self.append_with_superscript_tags(buf, resstr, tagbigger,
                                               tagjustright)
 
@@ -273,6 +276,7 @@ class Equation:
         self.append_with_superscript_tags(buf, eqnstr, tagsmall)
 
         resstr = self.ml.format_number(self.result)
+        resstr = str(resstr).rstrip('0').rstrip('.') if '.' in resstr else resstr
         if len(resstr) > 30:
             restag = tagsmall
         else:
@@ -412,6 +416,7 @@ class Calculate(ShareableActivity):
                 text = ''
             else:
                 text = self.parser.ml.format_number(eqn.result)
+                text = text.rstrip('0').rstrip('.') if '.' in text else text
 
         self.button_pressed(self.TYPE_TEXT, text)
         return True

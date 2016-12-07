@@ -354,15 +354,14 @@ class MiscToolbar(gtk.Toolbar):
             _('Exponent / Scientific notation'))
 
         el = [
-            {'icon': 'digits-9', 'html': '9'},
-            {'icon': 'digits-12', 'html': '12'},
-            {'icon': 'digits-15', 'html': '15'},
             {'icon': 'digits-6', 'html': '6'},
+            {'icon': 'digits-9', 'html': '9'},
+            {'icon': 'digits-3', 'html': '3'},
         ]
         self._digits_button = IconToggleToolButton(
             el,
             lambda x: self.update_digits(x, calc),
-            _('Number of shown digits'))
+            _('Number of digits shown after decimal point'))
 
         el = [
             {'icon': 'base-10', 'html': '10'},

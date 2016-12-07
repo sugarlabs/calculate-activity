@@ -4,7 +4,7 @@
 	<defs>
 		<mask id="Mask" maskUnits="userSpaceOnUse" x="0" y="0" width="55" height="55">
 			<path d="M 3 3 L 53 3 L 53 53 L 3 53 z" stroke-width="3.5" fill="white" stroke="white"/>
-			<text x="2" y="41" font-size="36"  font-family="Bitstream Vera Sans" font-weight="bold" fill="black" stroke="none">15</text>
+			<text x="15" y="41" font-size="36"  font-family="Bitstream Vera Sans" font-weight="bold" fill="black" stroke="none">3</text>
 		</mask>
 	</defs>
 	<path d="M 3 12 Q 3 3 12 3 L 43 3 Q 53 3 53 12 L 53 43 Q 53 53 43 53 L 12 53 Q 3 53 3 43 z" fill="&fill_color;" stroke="&fill_color;" stroke-width="3.5" mask="url(#Mask)"/>

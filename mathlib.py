@@ -61,7 +61,7 @@ class MathLib:
 
     def __init__(self):
         self.set_format_type(self.FORMAT_SCIENTIFIC)
-        self.set_digit_limit(9)
+        self.set_digit_limit(6)
         self.set_chop_zeros(True)
         self.set_integer_base(10)
 
@@ -156,62 +156,23 @@ class MathLib:
     def format_decimal(self, n):
         a = int(n)
         if a == n:
-            return str(n)
+            if n.as_tuple().exponent == 0:
+                return str(a)
+            return str(a) + '.0'
         if self.chop_zeros:
             n = n.normalize()
         (sign, digits, exp) = n.as_tuple()
-        if len(digits) > self.digit_limit:
-            exp += len(digits) - self.digit_limit
-            digits = digits[:self.digit_limit]
-        if len(digits) < self.digit_limit:
-            exp -= self.digit_limit - len(digits)
-            digits += (0,) * (self.digit_limit - len(digits))
-            print exp, digits
-        if sign:
-            res = "-"
-        else:
-            res = ""
-        int_len = len(digits) + exp
-
-        if int_len == 0:
-            if exp < -self.digit_limit:
-                disp_exp = exp + len(digits)
+        if abs(exp) >= self.digit_limit:
+            n = n.quantize(Decimal(10) ** -(self.digit_limit))
+            a == int(n)
+	    if n == a:
+                return str(a) 
             else:
-                disp_exp = 0
-        elif -self.digit_limit < int_len < self.digit_limit:
-            disp_exp = 0
-        else:
-            disp_exp = int_len - 1
-
-        dot_pos = int_len - disp_exp
-
-# _logger.debug('len(digits) %d, exp: %d, int_len: %d, disp_exp: %d,
-# dot_pos: %d', len(digits), exp, int_len, disp_exp, dot_pos)
-
-        if dot_pos < 0:
-            res = '0' + self.fraction_sep
-            for i in xrange(dot_pos, 0):
-                res += '0'
-
-        for i in xrange(len(digits)):
-            if i == dot_pos:
-                if i == 0:
-                    res += '0' + self.fraction_sep
-                else:
-                    res += self.fraction_sep
-            res += str(digits[i])
-
-        if int_len > 0 and len(digits) < dot_pos:
-            for i in xrange(len(digits), dot_pos):
-                res += '0'
-
-        if disp_exp != 0:
-            if self.format_type == self.FORMAT_EXPONENT:
-                res = res + 'e%d' % disp_exp
-            elif self.format_type == self.FORMAT_SCIENTIFIC:
-                res = res + u'×10**%d' % disp_exp
-
-        return res
+                if n == -0:
+                    return '0'
+                return str(n)
+	else:
+            return str(n)
 
     def format_number(self, n):
         if isinstance(n, bool):

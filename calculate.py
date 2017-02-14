@@ -25,13 +25,14 @@ from gettext import gettext as _
 import logging
 _logger = logging.getLogger('Calculate')
 
-import pygtk
-pygtk.require('2.0')
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from gi.repository import Gdk
 import base64
 
-import sugar.profile
-from sugar.graphics.xocolor import XoColor
+import sugar3.profile
+from sugar3.graphics.xocolor import XoColor
 
 from shareable_activity import ShareableActivity
 from layout import CalcLayout
@@ -63,8 +64,8 @@ def findchar(text, chars, ofs=0):
 
 def _textview_realize_cb(widget):
     '''Change textview properties once window is created.'''
-    win = widget.get_window(gtk.TEXT_WINDOW_TEXT)
-    win.set_cursor(gtk.gdk.Cursor(gtk.gdk.HAND1))
+    win = widget.get_window(Gtk.TextWindowType.TEXT)
+    win.set_cursor(Gdk.Cursor.new(Gdk.CursorType.HAND1))
     return False
 
 
@@ -131,7 +132,7 @@ class Equation:
         return size
 
     def append_with_superscript_tags(self, buf, text, *tags):
-        '''Add a text to a gtk.TextBuffer with superscript tags.'''
+        '''Add a text to a Gtk.TextBuffer with superscript tags.'''
         fontsize = self.determine_font_size(*tags)
         _logger.debug('font-size: %d', fontsize)
         tagsuper = buf.create_tag(rise=fontsize / 2)
@@ -184,16 +185,16 @@ class Equation:
 
     def create_lasteq_textbuf(self):
         '''
-        Return a gtk.TextBuffer properly formatted for last equation
-        gtk.TextView.
+        Return a Gtk.TextBuffer properly formatted for last equation
+        Gtk.TextView.
         '''
 
         is_error = isinstance(self.result, ParserError)
-        buf = gtk.TextBuffer()
+        buf = Gtk.TextBuffer()
         tagsmallnarrow = buf.create_tag(font=CalcLayout.FONT_SMALL_NARROW)
         tagbignarrow = buf.create_tag(font=CalcLayout.FONT_BIG_NARROW)
         tagbigger = buf.create_tag(font=CalcLayout.FONT_BIGGER)
-        tagjustright = buf.create_tag(justification=gtk.JUSTIFY_RIGHT)
+        tagjustright = buf.create_tag(justification=Gtk.Justification.RIGHT)
         tagred = buf.create_tag(foreground='#FF0000')
 
         # Add label and equation
@@ -233,39 +234,39 @@ class Equation:
         """
         Create a history object for this equation.
         In case of an SVG result this will be the image, otherwise it will
-        return a properly formatted gtk.TextView.
+        return a properly formatted Gtk.TextView.
         """
 
         if isinstance(self.result, SVGImage):
             return self.result.get_image()
 
-        w = gtk.TextView()
+        w = Gtk.TextView()
         w.modify_base(
-            gtk.STATE_NORMAL, gtk.gdk.color_parse(self.color.get_fill_color()))
+            Gtk.StateType.NORMAL, Gdk.color_parse(self.color.get_fill_color()))
         w.modify_bg(
-            gtk.STATE_NORMAL,
-            gtk.gdk.color_parse(self.color.get_stroke_color()))
-        w.set_wrap_mode(gtk.WRAP_WORD_CHAR)
-        w.set_border_window_size(gtk.TEXT_WINDOW_LEFT, 4)
-        w.set_border_window_size(gtk.TEXT_WINDOW_RIGHT, 4)
-        w.set_border_window_size(gtk.TEXT_WINDOW_TOP, 4)
-        w.set_border_window_size(gtk.TEXT_WINDOW_BOTTOM, 4)
+            Gtk.StateType.NORMAL,
+            Gdk.color_parse(self.color.get_stroke_color()))
+        w.set_wrap_mode(Gtk.WrapMode.WORD_CHAR)
+        w.set_border_window_size(Gtk.TextWindowType.LEFT, 4)
+        w.set_border_window_size(Gtk.TextWindowType.RIGHT, 4)
+        w.set_border_window_size(Gtk.TextWindowType.TOP, 4)
+        w.set_border_window_size(Gtk.TextWindowType.BOTTOM, 4)
         w.connect('realize', _textview_realize_cb)
         buf = w.get_buffer()
 
         tagsmall = buf.create_tag(font=CalcLayout.FONT_SMALL)
         tagsmallnarrow = buf.create_tag(font=CalcLayout.FONT_SMALL_NARROW)
         tagbig = buf.create_tag(font=CalcLayout.FONT_BIG,
-                                justification=gtk.JUSTIFY_RIGHT)
+                                justification=Gtk.Justification.RIGHT)
         # TODO Fix for old Sugar 0.82 builds, red_float not available
         bright = (
-            gtk.gdk.color_parse(self.color.get_fill_color()).red_float +
-            gtk.gdk.color_parse(self.color.get_fill_color()).green_float +
-            gtk.gdk.color_parse(self.color.get_fill_color()).blue_float) / 3.0
+            Gdk.color_parse(self.color.get_fill_color()).red_float +
+            Gdk.color_parse(self.color.get_fill_color()).green_float +
+            Gdk.color_parse(self.color.get_fill_color()).blue_float) / 3.0
         if bright < 0.5:
-            col = gtk.gdk.color_parse('white')
+            col = Gdk.color_parse('white')
         else:
-            col = gtk.gdk.color_parse('black')
+            col = Gdk.color_parse('black')
         tagcolor = buf.create_tag(foreground=col)
 
         # Add label, equation and result
@@ -371,7 +372,7 @@ class Calculate(ShareableActivity):
         self.KEYMAP['divide'] = self.ml.div_sym
         self.KEYMAP['equal'] = self.ml.equ_sym
 
-        self.clipboard = gtk.Clipboard()
+        self.clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         self.select_reason = self.SELECT_SELECT
         self.buffer = u""
         self.showing_version = 0
@@ -381,7 +382,7 @@ class Calculate(ShareableActivity):
 
         self.connect("key_press_event", self.keypress_cb)
         self.connect("destroy", self.cleanup_cb)
-        self.color = sugar.profile.get_color()
+        self.color = sugar3.profile.get_color()
 
         self.layout = CalcLayout(self)
         self.label_entry = self.layout.label_entry
@@ -565,34 +566,34 @@ class Calculate(ShareableActivity):
         return res is not None
 
     def create_var_textview(self, name, value):
-        """Create a gtk.TextView for a variable"""
+        """Create a Gtk.TextView for a variable"""
 
         reserved = ["Ans", "LastEqn", "help"]
         if name in reserved:
             return None
-        w = gtk.TextView()
+        w = Gtk.TextView()
         w.modify_base(
-            gtk.STATE_NORMAL, gtk.gdk.color_parse(self.color.get_fill_color()))
+            Gtk.StateType.NORMAL, Gdk.color_parse(self.color.get_fill_color()))
         w.modify_bg(
-            gtk.STATE_NORMAL,
-            gtk.gdk.color_parse(self.color.get_stroke_color()))
-        w.set_wrap_mode(gtk.WRAP_WORD_CHAR)
-        w.set_border_window_size(gtk.TEXT_WINDOW_LEFT, 4)
-        w.set_border_window_size(gtk.TEXT_WINDOW_RIGHT, 4)
-        w.set_border_window_size(gtk.TEXT_WINDOW_TOP, 4)
-        w.set_border_window_size(gtk.TEXT_WINDOW_BOTTOM, 4)
+            Gtk.StateType.NORMAL,
+            Gdk.color_parse(self.color.get_stroke_color()))
+        w.set_wrap_mode(Gtk.WrapMode.WORD_CHAR)
+        w.set_border_window_size(Gtk.TextWindowType.LEFT, 4)
+        w.set_border_window_size(Gtk.TextWindowType.RIGHT, 4)
+        w.set_border_window_size(Gtk.TextWindowType.TOP, 4)
+        w.set_border_window_size(Gtk.TextWindowType.BOTTOM, 4)
         w.connect('realize', _textview_realize_cb)
         buf = w.get_buffer()
 
         # TODO Fix for old Sugar 0.82 builds, red_float not available
         bright = (
-            gtk.gdk.color_parse(self.color.get_fill_color()).red_float +
-            gtk.gdk.color_parse(self.color.get_fill_color()).green_float +
-            gtk.gdk.color_parse(self.color.get_fill_color()).blue_float) / 3.0
+            Gdk.color_parse(self.color.get_fill_color()).red_float +
+            Gdk.color_parse(self.color.get_fill_color()).green_float +
+            Gdk.color_parse(self.color.get_fill_color()).blue_float) / 3.0
         if bright < 0.5:
-            col = gtk.gdk.color_parse('white')
+            col = Gdk.color_parse('white')
         else:
-            col = gtk.gdk.color_parse('black')
+            col = Gdk.color_parse('black')
 
         tag = buf.create_tag(font=CalcLayout.FONT_SMALL_NARROW,
                              foreground=col)
@@ -789,7 +790,7 @@ class Calculate(ShareableActivity):
     def text_copy(self):
         if self.layout.graph_selected is not None:
             self.clipboard.set_image(
-                self.layout.graph_selected.child.get_pixbuf())
+                self.layout.graph_selected.get_child().get_pixbuf())
             self.layout.toggle_select_graph(self.layout.graph_selected)
         else:
             str = self.text_entry.get_text()
@@ -821,20 +822,20 @@ class Calculate(ShareableActivity):
         if not self.text_entry.is_focus():
             return
 
-        key = gtk.gdk.keyval_name(event.keyval)
+        key = Gdk.keyval_name(event.keyval)
         if event.hardware_keycode == 219:
-            if (event.state & gtk.gdk.SHIFT_MASK):
+            if (event.get_state() & Gdk.ModifierType.SHIFT_MASK):
                 key = 'divide'
             else:
                 key = 'multiply'
         _logger.debug('Key: %s (%r, %r)', key,
                       event.keyval, event.hardware_keycode)
 
-        if event.state & gtk.gdk.CONTROL_MASK:
+        if event.get_state() & Gdk.ModifierType.CONTROL_MASK:
             if key in self.CTRL_KEYMAP:
                 f = self.CTRL_KEYMAP[key]
                 return f(self)
-        elif (event.state & gtk.gdk.SHIFT_MASK) and key in self.SHIFT_KEYMAP:
+        elif (event.get_state() & Gdk.ModifierType.SHIFT_MASK) and key in self.SHIFT_KEYMAP:
             f = self.SHIFT_KEYMAP[key]
             return f(self)
         elif unicode(key) in self.IDENTIFIER_CHARS:
@@ -969,9 +970,9 @@ class Calculate(ShareableActivity):
 
 
 def main():
-    win = gtk.Window(gtk.WINDOW_TOPLEVEL)
+    win = Gtk.Window(Gtk.WindowType.TOPLEVEL)
     t = Calculate(win)
-    gtk.main()
+    Gtk.main()
     return 0
 
 if __name__ == "__main__":

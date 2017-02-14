@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
 # toolbars.py, see CalcActivity.py for info
 
-import pygtk
-pygtk.require('2.0')
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from gi.repository import Gdk
 from mathlib import MathLib
 
-from sugar.graphics.palette import Palette
-from sugar.graphics.menuitem import MenuItem
-from sugar.graphics.toolbutton import ToolButton
-from sugar.graphics.toggletoolbutton import ToggleToolButton
-from sugar.graphics.style import GRID_CELL_SIZE
+from sugar3.graphics.palette import Palette
+from sugar3.graphics.menuitem import MenuItem
+from sugar3.graphics.toolbutton import ToolButton
+from sugar3.graphics.toggletoolbutton import ToggleToolButton
+from sugar3.graphics.style import GRID_CELL_SIZE
 
 import logging
 _logger = logging.getLogger('calc-activity')
@@ -22,7 +23,7 @@ def _icon_exists(name):
     if name == '':
         return False
 
-    theme = gtk.icon_theme_get_default()
+    theme = Gtk.IconTheme.get_default()
     info = theme.lookup_icon(name, 0, 0)
     if info:
         return True
@@ -36,12 +37,12 @@ class IconToolButton(ToolButton):
         ToolButton.__init__(self)
 
         if _icon_exists(icon_name):
-            self.set_icon(icon_name)
+            self.props.icon_name = icon_name
         else:
             if alt_html == '':
                 alt_html = icon_name
 
-            label = gtk.Label()
+            label = Gtk.Label()
             label.set_markup(alt_html)
             label.show()
             self.set_label_widget(label)
@@ -68,7 +69,7 @@ class IconToggleToolButton(ToggleToolButton):
         ToggleToolButton.__init__(self)
         self.items = items
         if 'icon' in items[0] and _icon_exists(items[0]['icon']):
-            self.set_named_icon(items[0]['icon'])
+            self.props.icon_name = items[0]['icon']
         elif 'html' in items[0]:
             self.set_label(items[0]['html'])
 #        self.set_tooltip(items[0][1])
@@ -81,7 +82,7 @@ class IconToggleToolButton(ToggleToolButton):
         self.selected = (self.selected + 1) % len(self.items)
         but = self.items[self.selected]
         if 'icon' in but and _icon_exists(but['icon']):
-            self.set_named_icon(but['icon'])
+            self.props.icon_name = but['icon']
         elif 'html' in but:
             _logger.info('Setting html: %s', but['html'])
             self.set_label(but['html'])
@@ -93,10 +94,10 @@ class IconToggleToolButton(ToggleToolButton):
                 self.callback(but)
 
 
-class TextToggleToolButton(gtk.ToggleToolButton):
+class TextToggleToolButton(Gtk.ToggleToolButton):
 
     def __init__(self, items, cb, desc, index=False):
-        gtk.ToggleToolButton.__init__(self)
+        Gtk.ToggleToolButton.__init__(self)
         self.items = items
         self.set_label(items[0])
         self.selected = 0
@@ -116,17 +117,17 @@ class TextToggleToolButton(gtk.ToggleToolButton):
                 self.callback(but)
 
 
-class LineSeparator(gtk.SeparatorToolItem):
+class LineSeparator(Gtk.SeparatorToolItem):
 
     def __init__(self):
-        gtk.SeparatorToolItem.__init__(self)
+        Gtk.SeparatorToolItem.__init__(self)
         self.set_draw(True)
 
 
-class EditToolbar(gtk.Toolbar):
+class EditToolbar(Gtk.Toolbar):
 
     def __init__(self, calc):
-        gtk.Toolbar.__init__(self)
+        Gtk.Toolbar.__init__(self)
 
         copy_tool = ToolButton('edit-copy')
         copy_tool.set_tooltip(_('Copy'))
@@ -152,10 +153,10 @@ class EditToolbar(gtk.Toolbar):
         self.show_all()
 
 
-class AlgebraToolbar(gtk.Toolbar):
+class AlgebraToolbar(Gtk.Toolbar):
 
     def __init__(self, calc):
-        gtk.Toolbar.__init__(self)
+        Gtk.Toolbar.__init__(self)
 
         self.insert(IconToolButton('algebra-square', _('Square'),
                                    lambda x: calc.button_pressed(
@@ -211,10 +212,10 @@ class AlgebraToolbar(gtk.Toolbar):
         self.show_all()
 
 
-class TrigonometryToolbar(gtk.Toolbar):
+class TrigonometryToolbar(Gtk.Toolbar):
 
     def __init__(self, calc):
-        gtk.Toolbar.__init__(self)
+        Gtk.Toolbar.__init__(self)
 
         self.insert(IconToolButton(
             'trigonometry-sin', _('Sine'),
@@ -268,10 +269,10 @@ class TrigonometryToolbar(gtk.Toolbar):
         self.show_all()
 
 
-class BooleanToolbar(gtk.Toolbar):
+class BooleanToolbar(Gtk.Toolbar):
 
     def __init__(self, calc):
-        gtk.Toolbar.__init__(self)
+        Gtk.Toolbar.__init__(self)
 
         self.insert(IconToolButton(
             'boolean-and', _('Logical and'),
@@ -300,12 +301,12 @@ class BooleanToolbar(gtk.Toolbar):
         self.show_all()
 
 
-class MiscToolbar(gtk.Toolbar):
+class MiscToolbar(Gtk.Toolbar):
 
     def __init__(self, calc, target_toolbar=None):
         self._target_toolbar = target_toolbar
 
-        gtk.Toolbar.__init__(self)
+        Gtk.Toolbar.__init__(self)
 
         self.insert(IconToolButton('constants-pi', _('Pi'),
                                    lambda x: calc.button_pressed(
@@ -381,7 +382,7 @@ class MiscToolbar(gtk.Toolbar):
         self.show_all()
 
     def update_layout(self):
-        if gtk.gdk.screen_width() < 14 * GRID_CELL_SIZE or \
+        if Gdk.Screen.width() < 14 * GRID_CELL_SIZE or \
                 self._target_toolbar is None:
             target_toolbar = self
             if self._target_toolbar is not None:

@@ -20,8 +20,8 @@
 import logging
 _logger = logging.getLogger('SVGImage')
 
-import gtk
-import rsvg
+from gi.repository import Gtk
+from gi.repository import Rsvg
 
 
 class SVGImage:
@@ -39,9 +39,9 @@ class SVGImage:
         return self._svg_data
 
     def render_svg(self):
-        self._handle = rsvg.Handle(data=self._svg_data)
+        self._handle = Rsvg.Handle.new_from_data(self._svg_data)
         self._pixbuf = self._handle.get_pixbuf()
-        self._image = gtk.Image()
+        self._image = Gtk.Image()
         self._image.set_from_pixbuf(self._pixbuf)
         self._image.set_alignment(0.5, 0)
         return self._image

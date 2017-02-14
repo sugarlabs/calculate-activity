@@ -1,10 +1,10 @@
 import dbus
-import gobject
+from gi.repository import GObject
 import telepathy
 
-from sugar.activity import activity
-from sugar.presence import presenceservice
-from sugar.presence.sugartubeconn import SugarTubeConnection
+from sugar3.activity import activity
+from sugar3.presence import presenceservice
+from sugar3.presence.sugartubeconn import SugarTubeConnection
 
 import logging
 _logger = logging.getLogger('ShareableActivity')
@@ -258,7 +258,7 @@ class ShareableActivity(activity.Activity):
             return
 
         self._syncreq_buddy = 0
-        self._sync_hid = gobject.timeout_add(2000, self._request_sync_cb)
+        self._sync_hid = GObject.timeout_add(2000, self._request_sync_cb)
         self._request_sync_cb()
 
     def _request_sync_cb(self):

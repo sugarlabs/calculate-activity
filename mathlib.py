@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+# -*- coding: utf-8 -*-
 # mathlib.py, generic math library wrapper
 # by Reinier Heeres <reinier@heeres.eu>
 #

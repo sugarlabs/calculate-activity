@@ -800,12 +800,3 @@ msgstr "Te tau o ngā mati kei te whakaaturia"
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr "Pūtake whakahōputu tau tōpū"
-
-#~ msgid "Change view between own and all equations"
-#~ msgstr "Huri tirohanga i waenga i tāu ake me ngā whārite katoa"
-
-#~ msgid "Show history"
-#~ msgstr "Whakaatu hītori"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "Huri tirohanga i waenga i te hītori me ngā tāupe"

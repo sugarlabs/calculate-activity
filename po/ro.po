@@ -1,11 +1,3 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # POT file for the Calculate activity
 # Copyright (C) 2007
 # This file is distributed under the same license as the Calculate package.
@@ -15,16 +7,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2011-01-15 23:12+0200\n"
-"Last-Translator: Sebastian Nitu <sebastian.nitu@live.com>\n"
+"PO-Revision-Date: 2017-03-16 05:06+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Pootle 2.0.3\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1489640776.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -36,17 +29,21 @@ msgid ""
 "This is the place to get the answer to a quick problem, but that is not the "
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
+"Poți găsi aici răspunsul pentru o problemă simplă, dar nu doar atât! Poți să "
+"explorezi și algebra, trigonometria, logica binară și multe altele!"
 
 #: astparser.py:40
 msgid ""
 "plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
 "range from a to b"
 msgstr ""
+"plot(eqn, var=-a..b), afișează graficul ecuației 'eqn' cu variabila 'var' "
+"având valori între a și b"
 
 #: astparser.py:59
 #, python-format
 msgid "Parse error at %d"
-msgstr ""
+msgstr "Eroare de analiză la %d"
 
 #: astparser.py:71 astparser.py:83
 #, python-format
@@ -56,45 +53,43 @@ msgstr "Eroare la %d"
 #: astparser.py:94
 msgid "This is just a test topic, use help(index) for the index"
 msgstr ""
+"Acesta este doar un subiect de test, utilizeaza help (index) pentru indice"
 
 #: astparser.py:106
-#, fuzzy
 msgid "Use help(test) for help about 'test', or help(index) for the index"
 msgstr ""
-"Folosiţi help(test) pentru ajutor despre „test”, sau help(index) pentru "
-"cuprinsul ajutorului"
+"Folosiţi help(test) pentru ajutor despre „test”, sau help(index) pentru index"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:109
 msgid "index"
-msgstr ""
+msgstr "index"
 
 #: astparser.py:109
-#, fuzzy
 msgid "topics"
 msgstr "Subiecte"
 
 #: astparser.py:110
 msgid "Topics"
-msgstr "Subiecte"
+msgstr "Categorii"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:118
 msgid "variables"
-msgstr ""
+msgstr "variabile"
 
 #: astparser.py:119
 msgid "Variables"
-msgstr ""
+msgstr "Variabile"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:125
 msgid "functions"
-msgstr ""
+msgstr "funcții"
 
 #: astparser.py:126
 msgid "Functions"
-msgstr ""
+msgstr "Funcții"
 
 #: astparser.py:135
 #, python-format
@@ -104,11 +99,11 @@ msgstr ""
 
 #: astparser.py:459
 msgid "help"
-msgstr ""
+msgstr "ajutor"
 
 #: astparser.py:466
 msgid "Recursion detected"
-msgstr ""
+msgstr "S-a detectat un apel recursiv"
 
 #: astparser.py:490
 #, python-format
@@ -118,12 +113,12 @@ msgstr "Funcția '%s' nu este definită"
 #: astparser.py:492
 #, python-format
 msgid "Variable '%s' not defined"
-msgstr "Variabila  '%s'  nu este definită"
+msgstr "Variabila '%s' nu este definită"
 
 #: astparser.py:502
 #, python-format
 msgid "Attribute '%s' does not exist"
-msgstr ""
+msgstr "Atributul '%s' inexistent"
 
 #: astparser.py:596
 msgid "Parse error"
@@ -131,20 +126,20 @@ msgstr "Eroare de analiză"
 
 #: astparser.py:601
 msgid "Multiple statements not supported"
-msgstr ""
+msgstr "Nu sunt permise declarații multiple"
 
 #: astparser.py:625
 msgid "Internal error"
-msgstr ""
+msgstr "Eroare internă"
 
 #: calculate.py:109
 #, python-format
 msgid "Equation.parse() string invalid (%s)"
-msgstr ""
+msgstr "Equation.parse() șir de caractere invalid (%s)"
 
 #: calculate.py:483
 msgid "Can not assign label: will cause recursion"
-msgstr ""
+msgstr "Nu se poate asigna eticheta: va genera recursivitate"
 
 #: calculate.py:571
 #, python-format
@@ -153,15 +148,15 @@ msgstr "Se scrie în jurnal (%s)"
 
 #: calculate.py:865
 msgid "button_pressed(): invalid type"
-msgstr ""
+msgstr "button_pressed(): tip invalid"
 
 #: functions.py:35
 msgid "add"
-msgstr ""
+msgstr "adaugă"
 
 #: functions.py:36
 msgid "abs"
-msgstr ""
+msgstr "abs"
 
 # TRANS: It is possible to translate commands. However, I would highly
 # recommend NOT doing so for mathematical functions like cos(). help(),
@@ -174,160 +169,156 @@ msgstr "acos"
 # recommend NOT doing so for mathematical functions like cos(). help(),
 # functions() etc should be translated.
 #: functions.py:38
-#, fuzzy
 msgid "acosh"
-msgstr "acos"
+msgstr "acosh"
 
 #: functions.py:39
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 #: functions.py:40
 msgid "asinh"
-msgstr ""
+msgstr "asinh"
 
 #: functions.py:41
-#, fuzzy
 msgid "atan"
-msgstr "tan"
+msgstr "atan"
 
 #: functions.py:42
-#, fuzzy
 msgid "atanh"
-msgstr "tan"
+msgstr "atanh"
 
 #: functions.py:43
 msgid "and"
-msgstr ""
+msgstr "and"
 
 #: functions.py:44
 msgid "b10bin"
-msgstr ""
+msgstr "b10bin"
 
 #: functions.py:45
 msgid "ceil"
-msgstr ""
+msgstr "plafon"
 
 # TRANS: It is possible to translate commands. However, I would highly
 # recommend NOT doing so for mathematical functions like cos(). help(),
 # functions() etc should be translated.
 #: functions.py:46
-#, fuzzy
 msgid "cos"
-msgstr "acos"
+msgstr "cos"
 
 # TRANS: It is possible to translate commands. However, I would highly
 # recommend NOT doing so for mathematical functions like cos(). help(),
 # functions() etc should be translated.
 #: functions.py:47
-#, fuzzy
 msgid "cosh"
-msgstr "acos"
+msgstr "cosh"
 
 #: functions.py:48
 msgid "div"
-msgstr ""
+msgstr "div"
 
 #: functions.py:49
 msgid "gcd"
-msgstr ""
+msgstr "cmmdc"
 
 #: functions.py:50
 msgid "exp"
-msgstr ""
+msgstr "exp(x)"
 
 #: functions.py:51
 msgid "factorial"
-msgstr ""
+msgstr "factorial"
 
 #: functions.py:52
 msgid "fac"
-msgstr ""
+msgstr "fac"
 
 #: functions.py:53
 msgid "factorize"
-msgstr ""
+msgstr "factorizează"
 
 #: functions.py:54
 msgid "floor"
-msgstr ""
+msgstr "Podea"
 
 #: functions.py:55
 msgid "inv"
-msgstr ""
+msgstr "inv"
 
 #: functions.py:56
 msgid "is_int"
-msgstr ""
+msgstr "is_int"
 
 #: functions.py:57
 msgid "ln"
-msgstr ""
+msgstr "ln"
 
 #: functions.py:58
 msgid "log10"
-msgstr ""
+msgstr "log10"
 
 #: functions.py:59
 msgid "mul"
-msgstr ""
+msgstr "mul"
 
 #: functions.py:60
 msgid "or"
-msgstr ""
+msgstr "sau"
 
 #: functions.py:61
 msgid "rand_float"
-msgstr ""
+msgstr "Rand_float"
 
 #: functions.py:62
 msgid "rand_int"
-msgstr ""
+msgstr "rand_int"
 
 #: functions.py:63
 msgid "round"
-msgstr ""
+msgstr "rotunjire"
 
 #: functions.py:64
 msgid "sin"
-msgstr ""
+msgstr "sin"
 
 #: functions.py:65
 msgid "sinh"
-msgstr ""
+msgstr "sinh"
 
 #: functions.py:66
 msgid "sinc"
-msgstr ""
+msgstr "sinc"
 
 #: functions.py:67
 msgid "sqrt"
-msgstr ""
+msgstr "sqrt"
 
 #: functions.py:68
 msgid "sub"
-msgstr ""
+msgstr "sub"
 
 #: functions.py:69
 msgid "square"
-msgstr ""
+msgstr "Pătrat"
 
 #: functions.py:70
 msgid "tan"
 msgstr "tan"
 
 #: functions.py:71
-#, fuzzy
 msgid "tanh"
-msgstr "tan"
+msgstr "tanh"
 
 #: functions.py:72
 msgid "xor"
-msgstr ""
+msgstr "xor"
 
 #: functions.py:112
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
 msgstr ""
+"abs (x) returnează valoarea absolută a lui x, ceea ce înseamnă că, dacă -x "
+"pentru x <0"
 
 #: functions.py:117
 msgid ""
@@ -342,21 +333,21 @@ msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
 msgstr ""
+"ACOSH (x) returnează arccosinusul hiperbolic al lui x. Aceasta este valoarea "
+"lui y pentru care cosinusul hiperbolic este x."
 
 #: functions.py:129
-#, fuzzy
 msgid ""
 "And(x, y), logical and. Returns True if x and y are True, else returns False"
 msgstr ""
-"and(x, y), ŞI logic. Returnează advăvar x şi y sunt adevărate, altfel "
+"and(x, y), ŞI logic. Returnează adevărat dacă x şi y sunt adevărate, altfel "
 "returnează fals"
 
 #: functions.py:136
 msgid "add(x, y), return x + y"
-msgstr ""
+msgstr "Suma (x, y), întoarcere x + y"
 
 #: functions.py:141
-#, fuzzy
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
@@ -369,9 +360,10 @@ msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
 msgstr ""
+"ASINH (x), returnează arcsinusul hiperbolic al lui x. Aceasta este valoarea "
+"lui y pentru care sinusul hiperbolic este x."
 
 #: functions.py:153
-#, fuzzy
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
@@ -384,74 +376,87 @@ msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
 msgstr ""
+"tanh (x), returnează arctangenta hiperbolică al lui x. Aceasta este valoarea "
+"lui y pentru care tangenta hiperbolică este x."
 
 #: functions.py:171
 msgid "Number does not look binary in base 10"
-msgstr ""
+msgstr "Numărul nu pare binar de bază 10"
 
 #: functions.py:178
 msgid ""
 "b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
 "(10111) = 23,"
 msgstr ""
+"b10bin (x), joacă un număr scris în baza 10 ca binar, de exemplu:. b10bin "
+"(10111) = 23,"
 
 #: functions.py:183
 msgid "ceil(x), return the smallest integer larger than x."
-msgstr ""
+msgstr "ceil (x) returnează cel mai mic întreg mai mare decât x"
 
 #: functions.py:188
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr ""
+"cos (x) întoarce cosinusul lui x. Aceasta este coordonata X de pe unitatea "
+"de cerc cu un unghi x"
 
 #: functions.py:194
 msgid ""
 "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
+"cosh (x) întoarce cosinusul hiperbolic al lui x. Dată de (exp (x) + exp (-x))"
+" / 2"
 
 #: functions.py:198
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "Nu puteți diviza la zero"
 
 #: functions.py:219
 msgid "Invalid argument"
-msgstr ""
+msgstr "Argument nevalid"
 
 #: functions.py:222
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
+"GCD (a, b) determină cel mai mare divizor comun între a și b. De exemplu, "
+"cel mai mare factor care împarte numerele 15 și 18 este 3."
 
 #: functions.py:227
 msgid "exp(x), return the natural exponent of x. Given by e^x"
-msgstr ""
+msgstr "exp (x), returnează exponent natural al x. Dat de e ^ x"
 
 #: functions.py:231
 msgid "Factorial only defined for integers"
-msgstr ""
+msgstr "Factorial este definit numai pentru numere întregi"
 
 #: functions.py:244
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr ""
+"factorială (x) returneaza factorialul lui x. Dat de x * (x - 1) * (x - 2) * "
+"..."
 
 #: functions.py:250
 msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
 msgstr ""
+"fac (x) returneaza factorialul lui x. Dat de x * (x - 1) * (x - 2) * ..."
 
 #: functions.py:283
 msgid "floor(x), return the largest integer smaller than x."
-msgstr ""
+msgstr "podea (x) returnează cel mai mare întreg mai mic decât x."
 
 #: functions.py:287
 msgid "inv(x), return the inverse of x, which is 1 / x"
-msgstr ""
+msgstr "inv (x) returneaza inversul lui x, care este de 1 / x"
 
 #: functions.py:309 functions.py:318
 msgid "Logarithm(x) only defined for x > 0"
-msgstr ""
+msgstr "Logaritm (x) definit numai pentru x> 0"
 
 #: functions.py:311
 msgid ""
@@ -466,91 +471,107 @@ msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
+"log10 (x) returnează logaritmul în baza 10 x. Aceasta este valoarea pentru "
+"care 10 ^ și este egal cu x. Definite pentru x> = 0."
 
 #: functions.py:327
 msgid "Can only calculate x modulo <integer>"
-msgstr ""
+msgstr "Puteți calcula numai x modulul <INTEGER>"
 
 #: functions.py:329
 msgid ""
 "mod(x, y), return the modulus of x with respect to y. This is the remainder "
 "after dividing x by y."
 msgstr ""
+"mod (x, y) returnează modulul x cu respect la y. Aceasta este restul "
+"împărțirii x cu y."
 
 #: functions.py:337
 msgid "mul(x, y), return x * y"
-msgstr ""
+msgstr "Mul (x, y), întoarce x * y"
 
 #: functions.py:341
 msgid "negate(x), return -x"
-msgstr ""
+msgstr "Negate (x), întoarce -X"
 
 #: functions.py:346
-#, fuzzy
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
-"and(x, y), ŞI logic. Returnează advăvar x şi y sunt adevărate, altfel "
-"returnează fals"
+"Sau (x, y), \"sau\" logic, returnează true dacă x / y este adevărat, altfel "
+"returnează False"
 
 #: functions.py:361
 msgid "pow(x, y), return x to the power y (x**y)"
-msgstr ""
+msgstr "pow (x, y), întoarce x la puterea y (x ** y)"
 
 #: functions.py:366
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
-msgstr ""
+msgstr "rand_float () returnează un număr de punct aleator între 0,0 și 1,0"
 
 #: functions.py:371
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
+"int rand ([<MAXVALUE>]), returnează un număr întreg aleator între 0 și "
+"<maxval>. <Maxval> este un argument opțional și are ca valore implicită "
+"65535 ."
 
 #: functions.py:376
 msgid "round(x), return the integer nearest to x."
-msgstr ""
+msgstr "round (x) returneaza cel mai apropiat întreg la x."
 
 #: functions.py:382 functions.py:390
 msgid "Bitwise operations only apply to integers"
-msgstr ""
+msgstr "Operațiuni de bit se aplică numai la întregi"
 
 #: functions.py:384
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr ""
+"shift_left (x, y), mută la stânga pe x pentru y biți (înmulțeste cu 2 "
+"fiecare bit)"
 
 #: functions.py:392
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr ""
+"shift_right (x, y), mută la dreapta pe x cu y biți (împărțiti la 2 fiecare "
+"bit)"
 
 #: functions.py:397
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
 msgstr ""
+"sin (x) întoarce sinusul lui x. Aceasta este coordonata y in cercul unitar "
+"in unghiul x"
 
 #: functions.py:403
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
+"Sinh (x), întoarce sinusul hiperbolic al lui x. Dat de (exp (x) - exp (-x)) /"
+" 2"
 
 #: functions.py:410
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
-msgstr ""
+msgstr "sinc (x) întoarce sinusul cardinal al lui x. Dat de sin (x) / x."
 
 #: functions.py:415
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
 msgstr ""
+"sqrt (x) Returnează rădăcina pătrată a lui x. Aceasta este valoarea pentru "
+"care pătratul este egal cu x. Definite pentru x> = 0."
 
 #: functions.py:420
 msgid "square(x), return x * x"
-msgstr ""
+msgstr "pătrat (x) returneaza x * x"
 
 #: functions.py:427
 msgid "sub(x, y), return x - y"
-msgstr ""
+msgstr "Sub (x, y), întoarce x - y"
 
 #: functions.py:432
 msgid ""
@@ -558,29 +579,34 @@ msgid ""
 "origin of the unit circle to the point on the unit circle defined by the "
 "angle x. Given by sin(x) / cos(x)"
 msgstr ""
+"tan (x) Returnează tangenta lui x. Aceasta este panta liniei de la originea "
+"unității circulare pana la punctul de pe cercul definit de unghiul x. Dat de "
+"sin (x) / cos (x)"
 
 #: functions.py:439
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr ""
+"tanh (x), întoarce tangenta hiperbolică al lui x. Dat de Sinh (x) / cosh (x)"
 
 #: functions.py:444
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
 msgstr ""
+"XOR (xy), XOR logic. Returnează true dacă x este adevărat (și y este False) "
+"sau dacă y este adevărat (și X este fals), în caz contrar se returnează False"
 
 #: layout.py:75
-#, fuzzy
 msgid "Clear"
-msgstr "curăţă"
+msgstr "Şterge"
 
 #: layout.py:105 layout.py:145
 msgid "Edit"
-msgstr "Modifică"
+msgstr "Editează"
 
 #: layout.py:110 layout.py:146
 msgid "Algebra"
-msgstr "Algegră"
+msgstr "Algebră"
 
 #: layout.py:115 layout.py:147
 msgid "Trigonometry"
@@ -588,15 +614,15 @@ msgstr "Trigonometrie"
 
 #: layout.py:120 layout.py:148
 msgid "Boolean"
-msgstr "Logică"
+msgstr "Boolean"
 
 #: layout.py:125 layout.py:149
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Diverse"
 
 #: layout.py:178
 msgid "Label:"
-msgstr "Eticheta:"
+msgstr "Etichetă:"
 
 #: layout.py:223
 msgid "All equations"
@@ -613,21 +639,21 @@ msgstr "Afişează variabilele"
 #. TRANS: multiplication symbol (default: '×')
 #: mathlib.py:82
 msgid "mul_sym"
-msgstr "*"
+msgstr "x"
 
 #. TRANS: division symbol (default: '÷')
 #: mathlib.py:87
 msgid "div_sym"
-msgstr "/"
+msgstr "÷"
 
 #. TRANS: equal symbol (default: '=')
 #: mathlib.py:92
 msgid "equ_sym"
-msgstr ""
+msgstr "="
 
 #: mathlib.py:216
 msgid "Undefined"
-msgstr ""
+msgstr "Nedefinit"
 
 #: mathlib.py:226
 msgid "Error: unsupported type"
@@ -635,7 +661,7 @@ msgstr "Eroare: tip nesuportat"
 
 #: toolbars.py:53
 msgid "Help"
-msgstr ""
+msgstr "Ajutor"
 
 #: toolbars.py:121
 msgid "Copy"
@@ -643,273 +669,140 @@ msgstr "Copiază"
 
 #: toolbars.py:122
 msgid "<ctrl>c"
-msgstr ""
+msgstr "<ctrl>c"
 
 #: toolbars.py:126
 msgid "Cut"
-msgstr "Taie"
+msgstr "Tăiere"
 
 #: toolbars.py:129
 msgid "<ctrl>x"
-msgstr ""
+msgstr "<ctrl>x"
 
 #: toolbars.py:137
 msgid "Paste"
-msgstr "Lipeşte"
+msgstr "Lipire"
 
 #: toolbars.py:147
 msgid "Square"
-msgstr ""
+msgstr "Pătrat"
 
 #: toolbars.py:152
 msgid "Square root"
-msgstr ""
+msgstr "Rădăcină pătrată"
 
 #: toolbars.py:157
 msgid "Inverse"
-msgstr ""
+msgstr "Inversare"
 
 #: toolbars.py:164
 msgid "e to the power x"
-msgstr ""
+msgstr "e la puterea x"
 
 #: toolbars.py:169
 msgid "x to the power y"
-msgstr ""
+msgstr "x la puterea y"
 
 #: toolbars.py:174
 msgid "Natural logarithm"
-msgstr ""
+msgstr "Logaritm natural"
 
 #: toolbars.py:180
 msgid "Factorial"
-msgstr ""
+msgstr "Factorial"
 
 #: toolbars.py:190
 msgid "Sine"
-msgstr ""
+msgstr "Sinus"
 
 #: toolbars.py:194
 msgid "Cosine"
-msgstr ""
+msgstr "Cosinus"
 
 #: toolbars.py:198
 msgid "Tangent"
-msgstr ""
+msgstr "Tangentă"
 
 #: toolbars.py:204
 msgid "Arc sine"
-msgstr ""
+msgstr "Arcsinus"
 
 #: toolbars.py:208
 msgid "Arc cosine"
-msgstr ""
+msgstr "Arccosinus"
 
 #: toolbars.py:212
 msgid "Arc tangent"
-msgstr ""
+msgstr "Arctangentă"
 
 #: toolbars.py:218
 msgid "Hyperbolic sine"
-msgstr ""
+msgstr "Sinus hiperbolic"
 
 #: toolbars.py:222
 msgid "Hyperbolic cosine"
-msgstr ""
+msgstr "Cosinus hiperbolic"
 
 #: toolbars.py:226
 msgid "Hyperbolic tangent"
-msgstr ""
+msgstr "Tangentă hiperbolică"
 
 #: toolbars.py:236
 msgid "Logical and"
-msgstr ""
+msgstr "Logică și"
 
 #: toolbars.py:240
 msgid "Logical or"
-msgstr ""
+msgstr "Logică sau"
 
 #: toolbars.py:250
 msgid "Equals"
-msgstr ""
+msgstr "Egal"
 
 #: toolbars.py:253
 msgid "Not equals"
-msgstr ""
+msgstr "Non-egal"
 
 #: toolbars.py:262
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
 #: toolbars.py:266
 msgid "e"
-msgstr ""
+msgstr "e"
 
 #: toolbars.py:269
 msgid "γ"
-msgstr ""
+msgstr "Y"
 
 #: toolbars.py:272
 msgid "φ"
-msgstr ""
+msgstr "φ"
 
 #: toolbars.py:279
 msgid "Plot"
-msgstr ""
+msgstr "Grafic"
 
 #: toolbars.py:286
 msgid "Degrees"
-msgstr ""
+msgstr "Grade"
 
 #: toolbars.py:287
 msgid "Radians"
-msgstr ""
+msgstr "Radiani"
 
 #: toolbars.py:291
 msgid "Degrees / Radians"
-msgstr ""
+msgstr "Grade/Radiani"
 
 #: toolbars.py:300
 msgid "Exponent / Scientific notation"
-msgstr ""
+msgstr "Exponent / Notație științifică"
 
 #: toolbars.py:310
 msgid "Number of shown digits"
-msgstr ""
+msgstr "Număr de cifre vizibile"
 
 #: toolbars.py:320
 msgid "Integer formatting base"
-msgstr ""
-
-#~ msgid "Show history"
-#~ msgstr "Afişează istoria"
-
-#, fuzzy
-#~ msgid "Enter"
-#~ msgstr "calculează"
-
-#~ msgid "Available functions:"
-#~ msgstr "Funcții disponibile:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "nivel: %d, din %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "Număr nevalid de argumente (%d în loc de %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "funcţia are %d argumente"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "Nu am putut analiza argumentul %d: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "Eroare în funcţie: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "Se aştepta o paranteză stânga"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "Eroare la analiza textului (paranteza închisă)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "Nu se aştepta o paranteză închisă"
-
-#, fuzzy
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "Eroare de analiză (paranteza dreapta, nu există valoare_stânga)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "Eroare de analiză (paranteza dreapta, nu se poate închide)"
-
-#~ msgid "Number not expected"
-#~ msgstr "Nu se aştepta un număr"
-
-#~ msgid "Operator not expected"
-#~ msgstr "Nu se aştepta un operator"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "Eroare analiză: se aştepta număr sau variabilă"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "Se aştepta un număr sau o variabilă"
-
-#~ msgid "Invalid operator"
-#~ msgstr "Operator nevalid"
-
-#~ msgid "Operator expected"
-#~ msgstr "Se aştepta un operator"
-
-#, fuzzy
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): a returnat Nimic"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "functions(), return o listă cu toate funcţiile definite"
-
-#~ msgid "operators"
-#~ msgstr "operatori"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "operators(), returnează o listă cu operatorii definiţi"
-
-#~ msgid "Constants"
-#~ msgstr "Constante"
-
-#~ msgid "Format"
-#~ msgstr "Unitate de măsură"
-
-#-----------------------------------------
-# End of help topics
-#~ msgid "Topics: "
-#~ msgstr "Subiecte: "
-
-#~ msgid "Type error"
-#~ msgstr "Eroare la tip"
-
-#, python-format
-#~ msgid "variable %s not defined"
-#~ msgstr "variabila %s nu este definită"
-
-#, python-format
-#~ msgid "Function '%s' returned %s"
-#~ msgstr "Funcţia '%s' a returnat %s"
-
-#, python-format
-#~ msgid "Variable '%s' undefined"
-#~ msgstr "Variabila '%s' nu este definită"
-
-#~ msgid "Parse error: ')' expected"
-#~ msgstr "Eroare de analiză: se aştepta „)”"
-
-#~ msgid "Error"
-#~ msgstr "Eroare"
-
-#~ msgid "Unable to parse range"
-#~ msgstr "Nu am putut analiza intervalul"
-
-#, python-format
-#~ msgid "Reading from journal (%s)"
-#~ msgstr "Se citeşte din jurnal (%s)"
-
-#~ msgid "Unable to determine version"
-#~ msgstr "Nu s-a putut determina versiunea"
-
-#, python-format
-#~ msgid "Reading journal entry (version %s)"
-#~ msgstr "Se citeşte intrarea din jurnal (veriunea %s)"
-
-#, python-format
-#~ msgid "Unable to read journal entry, unknown version (%s)"
-#~ msgstr "Nu s-a putut citi intrarea din jurnal, versiune necunoscută (%s)"
-
-#~ msgid "thousand_sep"
-#~ msgstr "."
-
-#~ msgid "fraction_sep"
-#~ msgstr ","
+msgstr "Rădăcină"

@@ -1,11 +1,4 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # translation of calculate-activity.po to Norsk bokmål
 # Kent Dahl <kentda@pvv.org>, 2008.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -741,28 +734,3 @@ msgstr ""
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr ""
-
-#~ msgid "Available functions:"
-#~ msgstr "Tilgjengelige funksjoner:"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "Ugylding antall argumenter (%d i stedet for %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "funsksjon tar %d argumenter"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "Kunne ikke tolke argument %d: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "Funksjonsfeil: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "Venstre parentes uventet"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "Høyre parentes uventet"

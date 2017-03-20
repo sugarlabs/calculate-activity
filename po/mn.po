@@ -2,28 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2012-04-27 08:10+0200\n"
-"Last-Translator: Bulgantamir  <ar_uul_us@yahoo.com>\n"
+"PO-Revision-Date: 2016-10-22 20:47+0000\n"
+"Last-Translator: anderson861 <anderson861@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: mn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1477169269.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -100,9 +93,8 @@ msgid "No help about '%s' available, use help(index) for the index"
 msgstr "'%s' тухай лавлагаа олдсонгүй. help(index)-ийг ашиглан оролдоно уу"
 
 #: astparser.py:459
-#, fuzzy
 msgid "help"
-msgstr "Тусламж"
+msgstr "тусламж"
 
 #: astparser.py:466
 msgid "Recursion detected"
@@ -395,7 +387,7 @@ msgstr ""
 
 #: functions.py:219
 msgid "Invalid argument"
-msgstr ""
+msgstr "Буруу аргумент"
 
 #: functions.py:222
 msgid ""
@@ -529,9 +521,8 @@ msgid "square(x), return x * x"
 msgstr ""
 
 #: functions.py:427
-#, fuzzy
 msgid "sub(x, y), return x - y"
-msgstr "add(x,y) нь х, у-н нийлбэр олно"
+msgstr "sub(x,y) нь х, у-н ялгавар олно"
 
 #: functions.py:432
 msgid ""
@@ -578,7 +569,7 @@ msgstr "Булийн"
 
 #: layout.py:125 layout.py:149
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Янз бүрийн зүйлс"
 
 #: layout.py:178
 msgid "Label:"
@@ -768,95 +759,3 @@ msgstr ""
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr ""
-
-#~ msgid "Show history"
-#~ msgstr "Түүх үзэх"
-
-#~ msgid "Available functions:"
-#~ msgstr "Боломжит функцүүд:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "түвшин: %d, ofs %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "Аргументын тоо буруу (%d-ын оронд %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "функц %d хувьсагч авна"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "%d хувьсагчыг задлах боломжгүй: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "Функцийн алдаа: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "Зүүн хаалтын тэмдэг шаардлагагүй"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "Задлан шинжлэлийн алдаа (баруун хаалтын тэмдэг)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "Баруун хаалтын тэмдэг шаардлагагүй"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "Задлан шинжлэлийн алдаа (баруун хаалтын тэмдэг, зүүн_тоо байхгүй)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "Задлан шинжлэлийн алдаа (баруун хаалтын тэмдэг, хаах түвшин байхгүй)"
-
-#~ msgid "Number not expected"
-#~ msgstr "Тоо шаардлагагүй"
-
-#~ msgid "Operator not expected"
-#~ msgstr "Логик холбоос шаардлагагүй"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "Задлан шинжлэлийн алдаа: тоо эсвэл хувьсах хэмжигдэхүүн шаардлагатай"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "Тоо эсвэл хувьсах хэмжигдэхүүн шаардлагатай"
-
-#~ msgid "Invalid operator"
-#~ msgstr "Буруу логик холбоос"
-
-#~ msgid "Operator expected"
-#~ msgstr "Логик холбоос шаардлагатай"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_задлан шинжлэл(): None-ийг буцаана"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "функцүүд(), тодорхойлогдсон бүх функцүүдийн жагсаалтыг хариулах"
-
-#~ msgid "operators"
-#~ msgstr "Үйлдлүүд"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "operators() нь тодорхойлогдсон бүх операторуудын жагсаалтыг өгдөг"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr "square(x) нь х-н квадрат зэргийн утгыг гаргана. x*x тай адил"
-
-#~ msgid "sinh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
-#~ msgstr "х-н гиперболик синус нь sinh(x)."
-
-#~ msgid "test"
-#~ msgstr "туршилт"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr "хувьсагч()-р одоо хэрэглэж байгаа хувьсагчдын жагсаалтыг харж болно"
-
-#~ msgid "Enter"
-#~ msgstr "Оруулах"
-
-#~ msgid "Constants"
-#~ msgstr "Тогтмолууд"
-
-#~ msgid "Format"
-#~ msgstr "Хэлбэр"

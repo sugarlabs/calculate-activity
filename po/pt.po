@@ -1,11 +1,3 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # POT file for the Calculate activity
 # Copyright (C) 2007
 # This file is distributed under the same license as the Calculate package.
@@ -15,15 +7,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2012-03-27 15:24+0200\n"
-"Last-Translator: Eduardo H. <hoboprimate@gmail.com>\n"
+"PO-Revision-Date: 2016-12-17 00:13+0000\n"
+"Last-Translator: unkuiri <unkuiri@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1481933635.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -35,6 +28,9 @@ msgid ""
 "This is the place to get the answer to a quick problem, but that is not the "
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
+"Este é o lugar para obter respostas para um problema rápido, contudo esse "
+"não é o limite. Também podes explorar Álgebra, Trigonometria, Booleanos e "
+"mais!"
 
 #: astparser.py:40
 msgid ""
@@ -798,111 +794,3 @@ msgstr "Número de dígitos exibidos"
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr "Base de formatação dos números inteiros"
-
-#~ msgid "Change view between own and all equations"
-#~ msgstr "Mudar a vista entre as tuas equações e todas as equações"
-
-#~ msgid "Show history"
-#~ msgstr "Mostrar histórico"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "Mudar a vista entre o histórico e as variáveis"
-
-#~ msgid "Enter"
-#~ msgstr "Introduzir"
-
-#~ msgid "Available functions:"
-#~ msgstr "Funções disponíveis:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "nível: %d, ofs %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "Número inválido de argumentos (%d em vez de %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "função leva %d args"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "Incapaz de avaliar argumento %d: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "Erro de função: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "Parêntesis esquerdo inesperado"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "Erro de avaliação (parêntesis direito)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "Parêntesis direito inesperado"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "Erro de avaliação (parêntesis direito, nenhum val_esq)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "Erro de avaliação (parêntesis direito, sem nível que feche)"
-
-#~ msgid "Number not expected"
-#~ msgstr "Número não esperado"
-
-#~ msgid "Operator not expected"
-#~ msgstr "Operador não esperado"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "Erro de avaliação: número ou variável esperados"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "Número ou variável esperados"
-
-#~ msgid "Invalid operator"
-#~ msgstr "Operador inválido"
-
-#~ msgid "Operator expected"
-#~ msgstr "Operador esperado"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): devolvendo Nenhum"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "funções(), devolve a lista de todas as funções que estão definidas"
-
-#~ msgid "operators"
-#~ msgstr "operadores"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "operadores(), devolve uma lista dos operadores que estão definidos"
-
-#~ msgid "plot"
-#~ msgstr "plot"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr "square(x), devolve o quadrado (elevado a 2) de x. Obtido por x * x"
-
-#~ msgid "test"
-#~ msgstr "teste"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr ""
-#~ "variáveis(), devolve uma lista das variáveis que estão de momento definidas"
-
-#~ msgid "Constants"
-#~ msgstr "Constantes"
-
-#~ msgid "Format"
-#~ msgstr "Formato"
-
-#~ msgid "help_test"
-#~ msgstr "ajuda_teste"
-
-#~ msgid "help_variables"
-#~ msgstr "ajuda_variáveis"
-
-#~ msgid "Topics: "
-#~ msgstr "Tópicos: "

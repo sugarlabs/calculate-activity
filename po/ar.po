@@ -1,7 +1,3 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # POT file for the Calculate activity
 # Copyright (C) 2007
 # This file is distributed under the same license as the Calculate package.
@@ -11,16 +7,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2011-09-23 11:37+0200\n"
-"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"PO-Revision-Date: 2017-03-14 05:06+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.0.5\n"
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1489468017.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -32,6 +29,8 @@ msgid ""
 "This is the place to get the answer to a quick problem, but that is not the "
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
+"هذا المكان للحصول على إجابة للمسائل السريعة، و لكن ليس هذا هو الحد! تستطيع "
+"أيضاً أن تستكشف الجبر، حساب المثلثات، الجبر البوليني و المزيد!"
 
 #: astparser.py:40
 msgid ""
@@ -43,7 +42,7 @@ msgstr ""
 #: astparser.py:59
 #, python-format
 msgid "Parse error at %d"
-msgstr ""
+msgstr "خطأ في تحليل %d"
 
 #: astparser.py:71 astparser.py:83
 #, python-format
@@ -57,6 +56,8 @@ msgstr "هذا فقط موضوع اختباري, استخدم مساعدة(رق�
 #: astparser.py:106
 msgid "Use help(test) for help about 'test', or help(index) for the index"
 msgstr ""
+"إستخدم مساعدة(إختبار) للمساعدة بخصوص 'الإختبار'، أو مساعدة(رقم) للمساعدة "
+"بخصوص الرقم المطلوب"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:109
@@ -104,7 +105,7 @@ msgstr "مساعدة"
 
 #: astparser.py:466
 msgid "Recursion detected"
-msgstr ""
+msgstr "تم الكشف عن استدعاء ذاتي"
 
 #: astparser.py:490
 #, python-format
@@ -119,19 +120,20 @@ msgstr "المتغير '%s' غير معرف"
 #: astparser.py:502
 #, python-format
 msgid "Attribute '%s' does not exist"
-msgstr ""
+msgstr "السمة '%s' غير موجودة"
 
 #: astparser.py:596
 msgid "Parse error"
 msgstr "خطأ تحليلي"
 
+# الجمل المتعددة غير مدعومة
 #: astparser.py:601
 msgid "Multiple statements not supported"
-msgstr ""
+msgstr "التصريحات المتعددة غير مدعومة"
 
 #: astparser.py:625
 msgid "Internal error"
-msgstr ""
+msgstr "خطأ داخلي"
 
 #: calculate.py:109
 #, python-format
@@ -140,7 +142,7 @@ msgstr "Equation.parse() جملة غير صحيحة (%s)"
 
 #: calculate.py:483
 msgid "Can not assign label: will cause recursion"
-msgstr ""
+msgstr "لا يمكن تعين التسمية: ستسبب استدعاء ذاتي"
 
 #: calculate.py:571
 #, python-format
@@ -182,7 +184,6 @@ msgid "atan"
 msgstr "ظتا"
 
 #: functions.py:42
-#, fuzzy
 msgid "atanh"
 msgstr "ظتا"
 
@@ -228,14 +229,15 @@ msgstr "مضروب"
 msgid "fac"
 msgstr "مضروب"
 
+# حلل إلى عوامل 
 #: functions.py:53
 #, fuzzy
 msgid "factorize"
-msgstr "مضروب"
+msgstr "اضرب"
 
 #: functions.py:54
 msgid "floor"
-msgstr ""
+msgstr "الأرضية"
 
 #: functions.py:55
 msgid "inv"
@@ -776,91 +778,3 @@ msgstr ""
 msgid "Integer formatting base"
 msgstr ""
 
-#~ msgid "Show history"
-#~ msgstr "اظهر التاريخ"
-
-#~ msgid "Available functions:"
-#~ msgstr "الدوال المتاحة:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "مستوى: %d من %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "عدد العوامل غير صحيح (%d بدلاً من %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "الدالة تأخذ %d عوامل"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "غير قادر على تحليل العامل %d: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "خطأ في الدالة: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "قوس أيسر غير متوقع"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "خطأ تحليلي (قوس أيمن)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "قوس أيمن غير متوقع"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "خطأ تحليلي (قوس أيمن, لا يوجد قيمة على اليسار)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "خطأ تحليلي (قوس أيمن, لا يوجد مستوى للإغلاق)"
-
-#~ msgid "Number not expected"
-#~ msgstr "رقم غير متوقع"
-
-#~ msgid "Operator not expected"
-#~ msgstr "إشارة غير متوقعة"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "خطأ تحليلي: رقم أو متغير متوقع"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "رقم أو متغير متوقع"
-
-#~ msgid "Invalid operator"
-#~ msgstr "إشارة غير صحيحة"
-
-#~ msgid "Operator expected"
-#~ msgstr "إشارة متوقعة"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): تعيد None"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "الدالات(), يعمل على إرجاع جميع الدالات المعرفة"
-
-#~ msgid "operators"
-#~ msgstr "الإشارات"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "الإشارات(), يعمل على ارجاع جميع الإشارات المعرفة"
-
-#~ msgid "plot"
-#~ msgstr "ارسم"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr "مربع(س), تعمل على إرجاع مربع س, معطى بالمعادلة س*س"
-
-#~ msgid "test"
-#~ msgstr "تجربة"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr "المتغيرات(), تعمل على إرجاع قائمة بالمتغيرات المعرفة حالياً بالبرنامج "
-
-#~ msgid "Constants"
-#~ msgstr "الثوابت"
-
-#~ msgid "Format"
-#~ msgstr "التصميم"

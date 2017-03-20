@@ -1,12 +1,3 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
@@ -15,15 +6,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2011-10-27 06:18+0200\n"
-"Last-Translator: Thangamani <thangam.arunx@gmail.com>\n"
+"PO-Revision-Date: 2017-03-17 12:20+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1489753236.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -329,7 +321,7 @@ msgstr ""
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
-msgstr "acosh(x), arc hyperbolic கோசைன்x க்கு திரும்பும். இது தான் "
+msgstr "acosh(x), arc hyperbolic கோசைன்x க்கு திரும்பும். இது தான்"
 
 #: functions.py:129
 msgid ""
@@ -355,7 +347,7 @@ msgstr ""
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
-msgstr "acosh(x), arc hyperbolic கோசைன்x க்கு திரும்பும். இது தான் "
+msgstr "acosh(x), arc hyperbolic கோசைன்x க்கு திரும்பும். இது தான்"
 
 #: functions.py:153
 msgid ""
@@ -370,7 +362,7 @@ msgstr ""
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
-msgstr "acosh(x), arc hyperbolic கோசைன்x க்கு திரும்பும். இது தான் "
+msgstr "acosh(x), arc hyperbolic கோசைன்x க்கு திரும்பும். இது தான்"
 
 #: functions.py:171
 msgid "Number does not look binary in base 10"
@@ -790,107 +782,3 @@ msgstr "காட்டப்பட்டுள்ள எண்ணிலக்�
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr "மாறிலிகளின் அடிப்படை வடிவாக்கம்"
-
-#~ msgid "Change view between own and all equations"
-#~ msgstr "சொந்த மற்றும் அனைத்து சமன்பாடுகளுக்கும் பார்வையை மாற்று"
-
-#~ msgid "Show history"
-#~ msgstr "வரலாற்றைக் காட்டு"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "வரலாறு மற்றும் மாறிலிகளுக்கு இடைப்பட்ட பார்வையை மாற்று"
-
-#~ msgid "Enter"
-#~ msgstr "பதிக"
-
-#~ msgid "Available functions:"
-#~ msgstr "கிடைக்கக் கூடிய செயற்பாடுகள்:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "மட்டம்: %d, ofs %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "பொருத்தமற்ற தர்க்கங்கள் (%d க்கு பதிலாக %d):"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "%d விவாதங்களை செயற்பாடு எடுத்துக் கொள்கிறது"
-
-#, python-format, 
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "%d அலகைவிவாதிக்கமுடியவில்லை: '%s' "
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "செயற்பாட்டில் தவறு: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "எதிர்பாராத இடது மேற்கோள் குறிகள்"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "சொல் பகுப்பானில் தவறு (வலது மேற்கோள் குறி)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "எதிர்பாராத வலது மேற்கோள் குறிகள்"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "சொல் பகுப்பானில் தவறு (வலது மேற்கோள் குறி,இடதுஇல்லை"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "சொல் பகுப்பானில் தவறு (வலது மேற்கோள் குறி, மூடுவதற்கான மட்டம் இல்லை)"
-
-#~ msgid "Number not expected"
-#~ msgstr "எண் எதிர்பார்க்கப் படவில்லை"
-
-#~ msgid "Operator not expected"
-#~ msgstr "இயக்கு குறி எதிர்பார்க்கப்படுகிறதுஇல்லை"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "சொல் பகுப்பானில் தவறு: எண் அல்லது மாறி எதிர்பார்க்கப் படுகிறது"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "எண் அல்லது மாறி எதிர்பார்க்கப்படுகிறது"
-
-#~ msgid "Invalid operator"
-#~ msgstr "பொருத்தமற்ற இயக்கு குறி"
-
-#~ msgid "Operator expected"
-#~ msgstr "இயக்கு குறி எதிர்பார்க்கப்படுகிறது"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "அலகு திரும்பவில்லை"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr ""
-#~ "தொழிற்பாடுகள்()  வரையறுக்கப்பட்டுள்ள அனைத்து தொழிற்பாடுகளை பட்டியல் "
-#~ "படுத்தும்"
-
-#~ msgid "operators"
-#~ msgstr "இயக்கு குறிகள்"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr ""
-#~ "இயக்கு குறி(), வரையறுக்கப்பட்டுள்ள அனைத்து  இயக்கு குறிகளைப்  பட்டியல் "
-#~ "படுத்தும்"
-
-#~ msgid "plot"
-#~ msgstr "புள்ளி"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr ""
-#~ "square(x),  square of x இனை விளைவாகக் கொண்டு வரும்.  x * x ஆல் தரப்படுகிறது"
-
-#~ msgid "test"
-#~ msgstr "பரீட்சித்தல்"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr ""
-#~ "மாறிகள்(), தற்போது நிர்ணயிக்கப்பட்ட மாறிகளின் பட்டியல் ஒன்று திரும்புகிறது"
-
-#~ msgid "Constants"
-#~ msgstr "மாறிலிகள்"
-
-#~ msgid "Format"
-#~ msgstr "வடிவமைப்பு"

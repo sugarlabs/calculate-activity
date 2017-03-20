@@ -2,14 +2,6 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -746,75 +738,3 @@ msgstr "Število številčnih mest"
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr "Osnova celega števila"
-
-#~ msgid "Show history"
-#~ msgstr "Pokaži zgodovino"
-
-#~ msgid "Enter"
-#~ msgstr "Vnesi"
-
-#~ msgid "Available functions:"
-#~ msgstr "Funkcije na voljo:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "stopnja: %d, od s%d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "Napačno število argumentov (%d namesto %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "funkcija vzame %d argumente"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "Analiza formule %d: '%s' ni možna"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "Napaka funkcije: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "Levi oklepaj ni pričakovan"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "Napaka pri analizi (desni oklepaj)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "Desni oklepaj ni pričakovan"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "Napaka pri analizi (desni oklepaj, brez left_val)"
-
-#, fuzzy
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "Napaka pri analizi (desni oklepaj, brez ravni za zapiranje)"
-
-#~ msgid "Number not expected"
-#~ msgstr "Številka ni pričakovana"
-
-#~ msgid "Operator not expected"
-#~ msgstr "Operator ni pričakovan"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "Napaka pri analizi: pričakovana številka ali spremenljivka"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "Pričakovano je število ali spremenljivka"
-
-#~ msgid "Invalid operator"
-#~ msgstr "Napačen operator"
-
-#~ msgid "Operator expected"
-#~ msgstr "Pričakovan operator"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): rezultat nič"
-
-#~ msgid "Constants"
-#~ msgstr "Konstante"
-
-#~ msgid "Format"
-#~ msgstr "Format"

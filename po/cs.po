@@ -2,28 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2012-07-02 13:01+0200\n"
-"Last-Translator: jui <appukonrad@gmail.com>\n"
+"PO-Revision-Date: 2015-12-30 14:13+0000\n"
+"Last-Translator: pbo <pavel.borecki@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1451484817.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -83,7 +76,6 @@ msgid "variables"
 msgstr "proměnné"
 
 #: astparser.py:119
-#, fuzzy
 msgid "Variables"
 msgstr "Proměnné"
 
@@ -161,7 +153,7 @@ msgstr "button_pressed(): neplatný typ"
 
 #: functions.py:35
 msgid "add"
-msgstr ""
+msgstr "přidat"
 
 #: functions.py:36
 msgid "abs"
@@ -227,18 +219,16 @@ msgid "exp"
 msgstr "exp"
 
 #: functions.py:51
-#, fuzzy
 msgid "factorial"
-msgstr "Fakulta"
+msgstr "faktoriál"
 
 #: functions.py:52
 msgid "fac"
 msgstr "fac"
 
 #: functions.py:53
-#, fuzzy
 msgid "factorize"
-msgstr "Fakulta"
+msgstr "faktorizovat"
 
 #: functions.py:54
 msgid "floor"
@@ -401,11 +391,11 @@ msgstr ""
 
 #: functions.py:198
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "Dělení nulou není definováno"
 
 #: functions.py:219
 msgid "Invalid argument"
-msgstr ""
+msgstr "Neplatný argument"
 
 #: functions.py:222
 msgid ""
@@ -765,20 +755,3 @@ msgstr ""
 msgid "Integer formatting base"
 msgstr ""
 
-#~ msgid "Show history"
-#~ msgstr "Zobrazit historii"
-
-#~ msgid "Enter"
-#~ msgstr "potvrdit"
-
-#~ msgid "operators"
-#~ msgstr "operátoři"
-
-#~ msgid "test"
-#~ msgstr "test"
-
-#~ msgid "Constants"
-#~ msgstr "Konstanty"
-
-#~ msgid "Format"
-#~ msgstr "Formát"

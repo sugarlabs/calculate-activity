@@ -17,15 +17,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#  [ES] "Calcular"
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
 msgstr "Yupaychay"
 
-#  [ES] ""
-#  [ES] "Este es el lugar para obtener respuestas para un problema rápido, pero ese "
-#  [ES] "no es el límite. También puedes explorar Álgebra, Trigonometría, Booleanos y "
-#  [ES] "más."
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid ""
@@ -36,9 +31,6 @@ msgstr ""
 "Hinallataq Algebramanta, Trigonometriamanta, Booleanokunamantapas "
 "yachallawaqpuni."
 
-#  [ES] ""
-#  [ES] "plot(eqn, var=-a..b), grafica de la ecuación 'eqn' con la variable 'var' en "
-#  [ES] "el rango de a hasta b"
 #: astparser.py:40
 msgid ""
 "plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
@@ -47,7 +39,6 @@ msgstr ""
 "plot(eqn, var=-a..b), ecuaciónpa siq'ichaynin 'eqn' kay variablewantaq 'var' "
 "kallantaq a nisqamanta b nisqakama"
 
-#  [ES] "Error de procesamiento en %d"
 #: astparser.py:59
 #, python-format
 msgid "Parse error at %d"

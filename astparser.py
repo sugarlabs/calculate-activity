@@ -314,7 +314,7 @@ class AstParser:
             if name.startswith('_') or isinstance(item, types.ModuleType):
                 continue
 
-            self.set_var(name, item)
+            self.set_var(name, item, True)
             if type(item) in (types.FunctionType, types.ClassType):
                 if item.__doc__ is not None:
                     self._helper.add_help(name, item.__doc__)
@@ -349,6 +349,7 @@ class AstParser:
         '''Set variable <name> to <value>, which could be a function too.'''
         name = unicode(name)
         if name in self._immutable_vars:
+            raise Exception, "Cannot redefine a constant"
             return False
         self._namespace[unicode(name)] = value
         if immutable:

@@ -2,28 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2009-12-20 05:22-0400\n"
-"Last-Translator: dharan p deepak <nextdoornerd@gmail.com>\n"
+"PO-Revision-Date: 2016-01-10 10:47+0000\n"
+"Last-Translator: lanevo <melvingeorge@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ml\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1452422828.000000\n"
 
 # I use Mozhi Scheme to translate to malayalam (http://varamozhi.wikia.com/wiki/Help:Contents/Mozhi)
 #. TRANS: "name" option from activity.info file
@@ -51,7 +44,7 @@ msgstr ""
 #: astparser.py:71 astparser.py:83
 #, python-format
 msgid "Error at %d"
-msgstr ""
+msgstr "%d -ൽ പിശക് സംഭവിച്ചിരിക്കുന്നു"
 
 #: astparser.py:94
 msgid "This is just a test topic, use help(index) for the index"
@@ -68,29 +61,29 @@ msgstr ""
 
 #: astparser.py:109
 msgid "topics"
-msgstr ""
+msgstr "വിഷയങ്ങള്‍"
 
 #: astparser.py:110
 msgid "Topics"
-msgstr ""
+msgstr "വിഷയങ്ങള്‍"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:118
 msgid "variables"
-msgstr ""
+msgstr "വേരിയബിളുകള്‍"
 
 #: astparser.py:119
 msgid "Variables"
-msgstr ""
+msgstr "വേരിയബിളുകള്‍"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:125
 msgid "functions"
-msgstr ""
+msgstr "ഫംഗ്ഷനുകള്‍"
 
 #: astparser.py:126
 msgid "Functions"
-msgstr ""
+msgstr "ഫംഗ്ഷനുകള്‍"
 
 #: astparser.py:135
 #, python-format
@@ -99,7 +92,7 @@ msgstr ""
 
 #: astparser.py:459
 msgid "help"
-msgstr ""
+msgstr "സഹായം"
 
 #: astparser.py:466
 msgid "Recursion detected"
@@ -108,12 +101,12 @@ msgstr ""
 #: astparser.py:490
 #, python-format
 msgid "Function '%s' not defined"
-msgstr ""
+msgstr "'%s' എന്ന ഫംഗ്ഷന്‍ അപരിചിതം"
 
 #: astparser.py:492
 #, python-format
 msgid "Variable '%s' not defined"
-msgstr ""
+msgstr "'%s' എന്ന വേരിയബിൾ അപരിചിതം"
 
 #: astparser.py:502
 #, python-format
@@ -144,7 +137,7 @@ msgstr ""
 #: calculate.py:571
 #, python-format
 msgid "Writing to journal (%s)"
-msgstr ""
+msgstr "ജേർണലിലേക്ക് എഴുതുന്നു (%s)"
 
 #: calculate.py:865
 msgid "button_pressed(): invalid type"
@@ -152,7 +145,7 @@ msgstr ""
 
 #: functions.py:35
 msgid "add"
-msgstr ""
+msgstr "കൂട്ടുക"
 
 #: functions.py:36
 msgid "abs"
@@ -204,7 +197,7 @@ msgstr ""
 
 #: functions.py:48
 msgid "div"
-msgstr ""
+msgstr "ഹരിക്കുക"
 
 #: functions.py:49
 msgid "gcd"
@@ -248,7 +241,7 @@ msgstr ""
 
 #: functions.py:59
 msgid "mul"
-msgstr ""
+msgstr "ഗുണിക്കുക"
 
 #: functions.py:60
 msgid "or"
@@ -284,7 +277,7 @@ msgstr ""
 
 #: functions.py:68
 msgid "sub"
-msgstr ""
+msgstr "കുറയ്ക്കുക"
 
 #: functions.py:69
 msgid "square"
@@ -378,7 +371,7 @@ msgstr ""
 
 #: functions.py:198
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "പൂജ്യം കൊണ്ടു ഹരിക്കുക സാധ്യമല്ല"
 
 #: functions.py:219
 msgid "Invalid argument"
@@ -532,43 +525,43 @@ msgstr ""
 
 #: layout.py:75
 msgid "Clear"
-msgstr ""
+msgstr "മായ്ച്ചു കളയുക"
 
 #: layout.py:105 layout.py:145
 msgid "Edit"
-msgstr ""
+msgstr "തിരുത്തുക"
 
 #: layout.py:110 layout.py:146
 msgid "Algebra"
-msgstr ""
+msgstr "ആൽജെബ്ര"
 
 #: layout.py:115 layout.py:147
 msgid "Trigonometry"
-msgstr ""
+msgstr "ട്രിഗോണോമെറ്റ്രി"
 
 #: layout.py:120 layout.py:148
 msgid "Boolean"
-msgstr ""
+msgstr "ബൂളിയൻ"
 
 #: layout.py:125 layout.py:149
 msgid "Miscellaneous"
-msgstr ""
+msgstr "മറ്റുള്ളവ"
 
 #: layout.py:178
 msgid "Label:"
-msgstr ""
+msgstr "ലേബൽ:"
 
 #: layout.py:223
 msgid "All equations"
-msgstr ""
+msgstr "എല്ലാ സമവാക്യങ്ങളും"
 
 #: layout.py:224
 msgid "My equations"
-msgstr ""
+msgstr "എൻറെ സമവാക്യങ്ങൾ"
 
 #: layout.py:225
 msgid "Show variables"
-msgstr ""
+msgstr "വേരിയബിളുകൾ കാണിക്കുക"
 
 #. TRANS: multiplication symbol (default: '×')
 #: mathlib.py:82
@@ -587,35 +580,35 @@ msgstr ""
 
 #: mathlib.py:216
 msgid "Undefined"
-msgstr ""
+msgstr "നിര്‍വചിക്കപ്പെടാത്തത്"
 
 #: mathlib.py:226
 msgid "Error: unsupported type"
-msgstr ""
+msgstr "പിശക്: സ്വീകാര്യമല്ലാത്ത ഇനം"
 
 #: toolbars.py:53
 msgid "Help"
-msgstr ""
+msgstr "സഹായം"
 
 #: toolbars.py:121
 msgid "Copy"
-msgstr ""
+msgstr "പകര്‍ത്തുക"
 
 #: toolbars.py:122
 msgid "<ctrl>c"
-msgstr ""
+msgstr "<ctrl>c (സി)"
 
 #: toolbars.py:126
 msgid "Cut"
-msgstr ""
+msgstr "മുറിച്ചെടുക്കുക"
 
 #: toolbars.py:129
 msgid "<ctrl>x"
-msgstr ""
+msgstr "<ctrl>x (എക്സ്)"
 
 #: toolbars.py:137
 msgid "Paste"
-msgstr ""
+msgstr "വയ്ക്കുക"
 
 #: toolbars.py:147
 msgid "Square"
@@ -691,11 +684,11 @@ msgstr ""
 
 #: toolbars.py:250
 msgid "Equals"
-msgstr ""
+msgstr "തുല്യം"
 
 #: toolbars.py:253
 msgid "Not equals"
-msgstr ""
+msgstr "സമം അല്ല"
 
 #: toolbars.py:262
 msgid "Pi"
@@ -715,7 +708,7 @@ msgstr ""
 
 #: toolbars.py:279
 msgid "Plot"
-msgstr ""
+msgstr "വരയ്ക്കുക"
 
 #: toolbars.py:286
 msgid "Degrees"
@@ -735,7 +728,7 @@ msgstr ""
 
 #: toolbars.py:310
 msgid "Number of shown digits"
-msgstr ""
+msgstr "കാണിക്കേണ്ട അക്കങ്ങളുടെ എണ്ണം"
 
 #: toolbars.py:320
 msgid "Integer formatting base"

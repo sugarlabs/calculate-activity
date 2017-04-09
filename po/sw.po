@@ -2,28 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2011-10-04 04:27+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2017-03-17 12:17+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: sw\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1489753020.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -311,7 +304,7 @@ msgid ""
 "is x. Defined for -1 <= x < 1"
 msgstr ""
 "acos(x), kurudi ni arc cosine ya x, Hii ni kwa angle ambayo cosine ni x. "
-"Hufafanuliwa kwa        -1 <= x <1"
+"Hufafanuliwa kwa  -1 <= x <1"
 
 #: functions.py:123
 msgid ""
@@ -319,7 +312,7 @@ msgid ""
 "which the hyperbolic cosine equals x."
 msgstr ""
 "acosh(x), kurudi ni hyperbolic cosine ya x, Hii inamaanisha kwa y ambayo "
-"hyperbolic cosine ni sawa na x"
+"hyperbolic cosine ni sawa na x."
 
 #: functions.py:129
 msgid ""
@@ -345,7 +338,7 @@ msgid ""
 "the hyperbolic sine equals x."
 msgstr ""
 "asinh(x), kurudi hyperbolic arc ya sin ya x. Hii thamani ya y kwenye "
-"hyperbolic sine iko x"
+"hyperbolic sine iko x."
 
 #: functions.py:153
 msgid ""
@@ -353,7 +346,7 @@ msgid ""
 "tangent is x. Defined for all x"
 msgstr ""
 "atan(x), kurudi arc tangent wa x, Hii ni angle kwenye tangent iko x. "
-"hufafanuliwa kwa x yoye."
+"hufafanuliwa kwa x yoye"
 
 #: functions.py:159
 msgid ""
@@ -361,7 +354,7 @@ msgid ""
 "which the hyperbolic tangent equals x."
 msgstr ""
 "atanh(x), kurudi hyperbolic arc ya tangent wa x. Hii thamani ya y kwenye "
-"hyperbolic tangent iko x"
+"hyperbolic tangent iko x."
 
 #: functions.py:171
 msgid "Number does not look binary in base 10"
@@ -453,7 +446,7 @@ msgid ""
 "10^y equals x. Defined for x >= 0."
 msgstr ""
 "log10 (x), kurudi msingi 10 logarithm ya x. Hii ni y thamani ambayo ni sawa "
-"na 10 ^ y x. Hufafanuliwa kwa x> = 0"
+"na 10 ^ y x. Hufafanuliwa kwa x> = 0."
 
 #: functions.py:327
 msgid "Can only calculate x modulo <integer>"
@@ -535,7 +528,7 @@ msgstr ""
 
 #: functions.py:410
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
-msgstr "sinc (x), kurudi sinc ya x. Hii ni kutokana na dhambi (x) / x"
+msgstr "sinc (x), kurudi sinc ya x. Hii ni kutokana na dhambi (x) / x."
 
 #: functions.py:415
 msgid ""
@@ -602,7 +595,7 @@ msgstr "Miscellaneous"
 
 #: layout.py:178
 msgid "Label:"
-msgstr "studio"
+msgstr "Lebo:"
 
 #: layout.py:223
 msgid "All equations"
@@ -800,15 +793,3 @@ msgstr ""
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr ""
-
-#~ msgid "Change view between own and all equations"
-#~ msgstr "badilisha maoni kati ya equations ya mwenyewe na ya wote"
-
-#~ msgid "Show history"
-#~ msgstr "Onyesha historia"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "badilisha maoni kati ya historia na vigezo"
-
-#~ msgid "Enter"
-#~ msgstr "kuingia"

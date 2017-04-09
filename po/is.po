@@ -1,11 +1,3 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # POT file for the Calculate activity
 # Copyright (C) 2007
 # This file is distributed under the same license as the Calculate package.
@@ -15,15 +7,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2011-03-27 14:21+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2017-01-02 18:09+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1483380553.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -66,31 +59,30 @@ msgid "index"
 msgstr ""
 
 #: astparser.py:109
-#, fuzzy
 msgid "topics"
-msgstr "Efni"
+msgstr "umfjöllunarefni"
 
 #: astparser.py:110
 msgid "Topics"
-msgstr "Efni"
+msgstr "Umfjöllunarefni"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:118
 msgid "variables"
-msgstr ""
+msgstr "breytur"
 
 #: astparser.py:119
 msgid "Variables"
-msgstr ""
+msgstr "Breytur"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:125
 msgid "functions"
-msgstr ""
+msgstr "föll"
 
 #: astparser.py:126
 msgid "Functions"
-msgstr ""
+msgstr "Föll"
 
 #: astparser.py:135
 #, python-format
@@ -99,7 +91,7 @@ msgstr "Engin hjálp um '%s' í boði, nota help(index) fyrir efnisyfirlit"
 
 #: astparser.py:459
 msgid "help"
-msgstr ""
+msgstr "hjálp"
 
 #: astparser.py:466
 msgid "Recursion detected"
@@ -122,7 +114,7 @@ msgstr ""
 
 #: astparser.py:596
 msgid "Parse error"
-msgstr ""
+msgstr "Þáttunarvilla"
 
 #: astparser.py:601
 msgid "Multiple statements not supported"
@@ -130,7 +122,7 @@ msgstr ""
 
 #: astparser.py:625
 msgid "Internal error"
-msgstr ""
+msgstr "Innri villa"
 
 #: calculate.py:109
 #, python-format
@@ -152,15 +144,15 @@ msgstr ""
 
 #: functions.py:35
 msgid "add"
-msgstr ""
+msgstr "bæta við"
 
 #: functions.py:36
 msgid "abs"
-msgstr ""
+msgstr "abs"
 
 #: functions.py:37
 msgid "acos"
-msgstr ""
+msgstr "acos"
 
 #: functions.py:38
 msgid "acosh"
@@ -168,7 +160,7 @@ msgstr ""
 
 #: functions.py:39
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 #: functions.py:40
 msgid "asinh"
@@ -176,7 +168,7 @@ msgstr ""
 
 #: functions.py:41
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 #: functions.py:42
 msgid "atanh"
@@ -184,7 +176,7 @@ msgstr ""
 
 #: functions.py:43
 msgid "and"
-msgstr ""
+msgstr "og"
 
 #: functions.py:44
 msgid "b10bin"
@@ -196,7 +188,7 @@ msgstr ""
 
 #: functions.py:46
 msgid "cos"
-msgstr ""
+msgstr "cos"
 
 #: functions.py:47
 msgid "cosh"
@@ -204,7 +196,7 @@ msgstr ""
 
 #: functions.py:48
 msgid "div"
-msgstr ""
+msgstr "div"
 
 #: functions.py:49
 msgid "gcd"
@@ -240,11 +232,11 @@ msgstr ""
 
 #: functions.py:57
 msgid "ln"
-msgstr ""
+msgstr "ln"
 
 #: functions.py:58
 msgid "log10"
-msgstr ""
+msgstr "log10"
 
 #: functions.py:59
 msgid "mul"
@@ -252,7 +244,7 @@ msgstr ""
 
 #: functions.py:60
 msgid "or"
-msgstr ""
+msgstr "eða"
 
 #: functions.py:61
 msgid "rand_float"
@@ -264,11 +256,11 @@ msgstr ""
 
 #: functions.py:63
 msgid "round"
-msgstr ""
+msgstr "rúnna"
 
 #: functions.py:64
 msgid "sin"
-msgstr ""
+msgstr "sin"
 
 #: functions.py:65
 msgid "sinh"
@@ -280,7 +272,7 @@ msgstr ""
 
 #: functions.py:67
 msgid "sqrt"
-msgstr ""
+msgstr "sqrt"
 
 #: functions.py:68
 msgid "sub"
@@ -292,7 +284,7 @@ msgstr ""
 
 #: functions.py:70
 msgid "tan"
-msgstr ""
+msgstr "tan"
 
 #: functions.py:71
 msgid "tanh"
@@ -300,7 +292,7 @@ msgstr ""
 
 #: functions.py:72
 msgid "xor"
-msgstr ""
+msgstr "xor"
 
 #: functions.py:112
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
@@ -378,11 +370,11 @@ msgstr ""
 
 #: functions.py:198
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "Ekki er hægt að deila með núlli"
 
 #: functions.py:219
 msgid "Invalid argument"
-msgstr ""
+msgstr "Ógilt frumgildi"
 
 #: functions.py:222
 msgid ""
@@ -532,7 +524,7 @@ msgstr ""
 
 #: layout.py:75
 msgid "Clear"
-msgstr ""
+msgstr "Hreinsa"
 
 #: layout.py:105 layout.py:145
 msgid "Edit"
@@ -548,11 +540,11 @@ msgstr "Hornafræði"
 
 #: layout.py:120 layout.py:148
 msgid "Boolean"
-msgstr ""
+msgstr "Booleanskt"
 
 #: layout.py:125 layout.py:149
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Ýmislegt"
 
 #: layout.py:178
 msgid "Label:"
@@ -573,21 +565,21 @@ msgstr "Sýna breytur"
 #. TRANS: multiplication symbol (default: '×')
 #: mathlib.py:82
 msgid "mul_sym"
-msgstr "*"
+msgstr "×"
 
 #. TRANS: division symbol (default: '÷')
 #: mathlib.py:87
 msgid "div_sym"
-msgstr "/"
+msgstr "÷"
 
 #. TRANS: equal symbol (default: '=')
 #: mathlib.py:92
 msgid "equ_sym"
-msgstr ""
+msgstr "="
 
 #: mathlib.py:216
 msgid "Undefined"
-msgstr ""
+msgstr "Óskilgreint"
 
 #: mathlib.py:226
 msgid "Error: unsupported type"
@@ -595,7 +587,7 @@ msgstr "Villa: óstudd gerð"
 
 #: toolbars.py:53
 msgid "Help"
-msgstr ""
+msgstr "Hjálp"
 
 #: toolbars.py:121
 msgid "Copy"
@@ -603,7 +595,7 @@ msgstr "Afrita"
 
 #: toolbars.py:122
 msgid "<ctrl>c"
-msgstr ""
+msgstr "<ctrl>c"
 
 #: toolbars.py:126
 msgid "Cut"
@@ -611,7 +603,7 @@ msgstr "Klippa"
 
 #: toolbars.py:129
 msgid "<ctrl>x"
-msgstr ""
+msgstr "<ctrl>x"
 
 #: toolbars.py:137
 msgid "Paste"
@@ -683,19 +675,19 @@ msgstr ""
 
 #: toolbars.py:236
 msgid "Logical and"
-msgstr ""
+msgstr "Röklegt OG"
 
 #: toolbars.py:240
 msgid "Logical or"
-msgstr ""
+msgstr "Röklegt EÐA"
 
 #: toolbars.py:250
 msgid "Equals"
-msgstr ""
+msgstr "Er jafnt og"
 
 #: toolbars.py:253
 msgid "Not equals"
-msgstr ""
+msgstr "Er ekki jafnt og"
 
 #: toolbars.py:262
 msgid "Pi"
@@ -703,15 +695,15 @@ msgstr ""
 
 #: toolbars.py:266
 msgid "e"
-msgstr ""
+msgstr "e"
 
 #: toolbars.py:269
 msgid "γ"
-msgstr ""
+msgstr "γ"
 
 #: toolbars.py:272
 msgid "φ"
-msgstr ""
+msgstr "φ"
 
 #: toolbars.py:279
 msgid "Plot"
@@ -719,11 +711,11 @@ msgstr ""
 
 #: toolbars.py:286
 msgid "Degrees"
-msgstr ""
+msgstr "Gráður"
 
 #: toolbars.py:287
 msgid "Radians"
-msgstr ""
+msgstr "Radíanar"
 
 #: toolbars.py:291
 msgid "Degrees / Radians"
@@ -740,57 +732,3 @@ msgstr ""
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr ""
-
-#~ msgid "Show history"
-#~ msgstr "Sýna sögu"
-
-#~ msgid "Available functions:"
-#~ msgstr "Föll í boði:"
-
-#, python-format
-#, fuzzy
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "Ólöglegur fjöldi "
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "fallið tekur %d "
-
-#, python-format
-#, fuzzy
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "Gat ekki skilið "
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "Fall villa: %s"
-
-#~ msgid "Number not expected"
-#~ msgstr "Bjóst ekki við tölu"
-
-#~ msgid "Constants"
-#~ msgstr "Fastar"
-
-#~ msgid "Format"
-#~ msgstr "Snið"
-
-#, python-format
-#~ msgid "Reading from journal (%s)"
-#~ msgstr "Les frá dagbók (%s)"
-
-#~ msgid "Unable to determine version"
-#~ msgstr "Gat ekki komist að útgáfu"
-
-#, python-format
-#~ msgid "Reading journal entry (version %s)"
-#~ msgstr "Les dagbókar færslu (útgáfu %s)"
-
-#, python-format
-#~ msgid "Unable to read journal entry, unknown version (%s)"
-#~ msgstr "Gat ekki lesið dagbókar færslu, óþekkt útgáfa (%s)"
-
-#~ msgid "thousand_sep"
-#~ msgstr "."
-
-#~ msgid "fraction_sep"
-#~ msgstr ","

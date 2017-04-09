@@ -773,12 +773,3 @@ msgstr "rabe'en lichja'aun keich'"
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr "kimbia' se nde'ets rabe'en"
-
-#~ msgid "Change view between own and all equations"
-#~ msgstr "Mavaun' kale me'ei mapajaú mi'ia re rabe'en me'ei malejeiñ"
-
-#~ msgid "Show history"
-#~ msgstr "Nda'u'up peuk nan'ia kutejeiñ"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "mavaun' se me'ei mapajau' se nan'ia kutejeiñ maiñ se valeima ndavaí"

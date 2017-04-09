@@ -2,28 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2012-09-06 00:01+0200\n"
-"Last-Translator: arosella <arosella@yahoo.com>\n"
+"PO-Revision-Date: 2016-07-11 03:56+0000\n"
+"Last-Translator: andretna <sugarlabs@fiore.eu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1468209364.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -31,10 +24,14 @@ msgstr "Calcola"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
+#, fuzzy
 msgid ""
 "This is the place to get the answer to a quick problem, but that is not the "
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
+"Questo è il luogo per trovare una risposta ad un piccolo problema, ma non "
+"solo! Puoi anche esplorare Algebra, Trigonometria, algebra di Bool e tanto "
+"altro!"
 
 #: astparser.py:40
 msgid ""
@@ -45,9 +42,9 @@ msgstr ""
 "compresa fra a e b"
 
 #: astparser.py:59
-#, python-format
+#, fuzzy, python-format
 msgid "Parse error at %d"
-msgstr ""
+msgstr "Errore di elaborazione vicino a %d"
 
 #: astparser.py:71 astparser.py:83
 #, python-format
@@ -105,8 +102,9 @@ msgid "help"
 msgstr "aiuto"
 
 #: astparser.py:466
+#, fuzzy
 msgid "Recursion detected"
-msgstr ""
+msgstr "Trovata ricorsione"
 
 #: astparser.py:490
 #, python-format
@@ -119,9 +117,9 @@ msgid "Variable '%s' not defined"
 msgstr "La variabile '%s' non è definita"
 
 #: astparser.py:502
-#, python-format
+#, fuzzy, python-format
 msgid "Attribute '%s' does not exist"
-msgstr ""
+msgstr "L'attributo '%s' non esiste"
 
 #: astparser.py:596
 msgid "Parse error"
@@ -133,7 +131,7 @@ msgstr ""
 
 #: astparser.py:625
 msgid "Internal error"
-msgstr ""
+msgstr "Errore interno"
 
 #: calculate.py:109
 #, python-format
@@ -141,8 +139,9 @@ msgid "Equation.parse() string invalid (%s)"
 msgstr "Equation.parse() stringa non valida (%s)"
 
 #: calculate.py:483
+#, fuzzy
 msgid "Can not assign label: will cause recursion"
-msgstr ""
+msgstr "Impossibile assegnare etichetta: causerebbe una ricorsione"
 
 #: calculate.py:571
 #, python-format
@@ -159,7 +158,7 @@ msgstr "Aggiungi"
 
 #: functions.py:36
 msgid "abs"
-msgstr ""
+msgstr "abs"
 
 #: functions.py:37
 msgid "acos"
@@ -775,105 +774,3 @@ msgstr "Numero di decimali visuaizzati"
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr "Base di formattazione dell'intero"
-
-#~ msgid "Change view between own and all equations"
-#~ msgstr "Cambia vista: mostra tutte le equazioni o solo le proprie"
-
-#~ msgid "Show history"
-#~ msgstr "Mostra storico"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "Scambia visualizzazione storico/variabili"
-
-#~ msgid "Enter"
-#~ msgstr "Invio"
-
-#~ msgid "Available functions:"
-#~ msgstr "Funzioni disponibili:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "livello: %d, di %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "Numero di parametri errato (%d invece di %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "la funzione vuole %d parametri"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "Impossibile interpretare il %d parametro: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "Errore della funzione: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "Parentesi aperta inattesa"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "Errore di interpretazione (parentesi destra)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "Parentesi chiusa inattesa"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr ""
-#~ "Errore di interpretazione (parentesi chiusa, manca valore a sinistra della "
-#~ "parentesi)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr ""
-#~ "Errore di interpretazione (parentesi chiusa, non esiste un livello "
-#~ "equivalente da chiudere)"
-
-#~ msgid "Number not expected"
-#~ msgstr "Numero non previsto"
-
-#~ msgid "Operator not expected"
-#~ msgstr "Operatore non previsto"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "Errore di scansione: atteso numero o variabile"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "Atteso numero o variabile"
-
-#~ msgid "Invalid operator"
-#~ msgstr "Operatore non valido"
-
-#~ msgid "Operator expected"
-#~ msgstr "Atteso operatore"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): ritorna None"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "funzioni(), ritorna una lista di tutte le funzioni che sono definite"
-
-#~ msgid "operators"
-#~ msgstr "operatori"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "operatori(), ritorna la lista degli operatori che risultano definiti"
-
-#~ msgid "plot"
-#~ msgstr "plot"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr "square(x), ritorna il quadrato di x. Dato da x * x"
-
-#~ msgid "test"
-#~ msgstr "test"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr "variables(), ritorna la lista delle variabili che sono state definite"
-
-#~ msgid "Constants"
-#~ msgstr "Costanti"
-
-#~ msgid "Format"
-#~ msgstr "Formato"

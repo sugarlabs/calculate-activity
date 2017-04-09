@@ -1,19 +1,7 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# POT file for the Calculate activity
 # translation of calculate-activity.po to Hindi
 # Reinier Heeres <reinier@heeres.eu>, 2007.
 # G Karunakar <karunakar@indlinux.org>, 2007.
-# POT file for the Calculate activity
 # Copyright (C) 2007
 # This file is distributed under the same license as the Calculate package.
 msgid ""
@@ -21,15 +9,16 @@ msgstr ""
 "Project-Id-Version: calculate-activity\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2011-11-30 16:32+0200\n"
-"Last-Translator: satyaakam goswami <satyaakam@gmail.com>\n"
+"PO-Revision-Date: 2016-03-13 20:49+0000\n"
+"Last-Translator: iamutkarshtiwari <iamutkarshtiwari@gmail.com>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1457902145.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -41,6 +30,8 @@ msgid ""
 "This is the place to get the answer to a quick problem, but that is not the "
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
+"यह एक त्वरित समस्या का जवाब पाने की जगह है, लेकिन सिर्फ यही नही ! आप बीजगणि"
+"त, त्रिकोणमिति, बूलियन और अधिक का पता भी लगा सकते हैं!"
 
 #: astparser.py:40
 msgid ""
@@ -76,13 +67,11 @@ msgstr ""
 msgid "index"
 msgstr "अनुक्रमणिका"
 
-# -----------------------------------------
 # End of help topics
 #: astparser.py:109
 msgid "topics"
 msgstr "विषय"
 
-# -----------------------------------------
 # End of help topics
 #: astparser.py:110
 msgid "Topics"
@@ -637,12 +626,12 @@ msgstr "mul_sym"
 #. TRANS: division symbol (default: '÷')
 #: mathlib.py:87
 msgid "div_sym"
-msgstr "div_sym"
+msgstr "विभाजन प्रतीक"
 
 #. TRANS: equal symbol (default: '=')
 #: mathlib.py:92
 msgid "equ_sym"
-msgstr ""
+msgstr "बराबर प्रतीक"
 
 #: mathlib.py:216
 msgid "Undefined"
@@ -799,131 +788,3 @@ msgstr "दिए गए अंकों की संख्या"
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr "पूर्णांक स्वरूपण आधार"
-
-#~ msgid "Change view between own and all equations"
-#~ msgstr "खुद के और सब समीकरणों के बीच परिवर्तन देखे"
-
-#~ msgid "Show history"
-#~ msgstr "इतिहास दिखाएँ"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "इतिहास और चर के बीच परिवर्तन देखे"
-
-#~ msgid "Enter"
-#~ msgstr "एंटर"
-
-#~ msgid "Available functions:"
-#~ msgstr "उपलब्ध फंक्शन:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "स्तर: %d, ofs %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "तर्क की अवैध संख्या (%d इसके स्थान पर: %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "कार्य %d तर्क लेता है"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "तर्क %d पार्स नही कर सका: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "कार्य त्रुटि: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "बायाँ कोष्ठक अवांछित"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "पार्स त्रुटि (दायाँ कोष्ठक)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "दायाँ कोष्ठक अवांछित"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "पार्स त्रुटि (दायाँ कोष्ठक,  left_val नहीं है)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "पार्स त्रुटि (दाया कोष्ठक, बंद करने के लिए स्तर नहीं है)"
-
-#~ msgid "Number not expected"
-#~ msgstr "संख्या वांछित नहीं"
-
-#~ msgid "Operator not expected"
-#~ msgstr "ऑपरेटर वांछित नहीं"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "पार्स त्रुटि: संख्या अथवा चर वांछित"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "संख्या अथवा चर वांछित"
-
-#~ msgid "Invalid operator"
-#~ msgstr "अवैध ऑपरेटर"
-
-#~ msgid "Operator expected"
-#~ msgstr "ऑपरेटर वांछित है"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): लौटाया कुछ नहीं"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "functions(), पारिभाषित किए गये फंक्शनों की सूची बताता है"
-
-#~ msgid "operators"
-#~ msgstr "operators"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "operators(),परिभाषित किए गये आपरेटर की सूची को वापस देता है"
-
-#~ msgid "plot"
-#~ msgstr "plot"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr "square(x), x का वर्ग लौटाता है. जो x * x  द्वारा मिलता है"
-
-#~ msgid "test"
-#~ msgstr "जांच"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr "variables(), वर्तमान में पारिभाषित किए गये चरों की सूची लौटाता है"
-
-#~ msgid "Constants"
-#~ msgstr "स्थिरांक"
-
-#~ msgid "Format"
-#~ msgstr "फॉर्मेट"
-
-# ----------------------------------------
-# The help system uses topic msgid's that should be translated here.
-# ----------------------------------------
-# -----------------------------------------
-#~ msgid "help_acos"
-#~ msgstr "कोटिज्या सहायता"
-
-#~ msgid "help_sqrt"
-#~ msgstr "वर्गमूल सहायता"
-
-#~ msgid "help_test"
-#~ msgstr "परीक्षण सहायता"
-
-#~ msgid "help_variables"
-#~ msgstr "चर सहायता"
-
-#~ msgid "help_usage"
-#~ msgstr "उपयोग सहायता"
-
-# -----------------------------------------
-# End of help topics
-#~ msgid "Topics: "
-#~ msgstr "विषय:"
-
-#~ msgid "Type error"
-#~ msgstr "टाइप त्रुटि"
-
-#~ msgid "Error"
-#~ msgstr "त्रुटि"

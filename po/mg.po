@@ -2,28 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2011-02-14 18:53+0200\n"
-"Last-Translator: Zafimamy Gabriella Ralaivao <gabriella@intnet.mu>\n"
+"PO-Revision-Date: 2017-03-16 04:44+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: mg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1489639496.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -631,7 +624,7 @@ msgstr "x"
 #. TRANS: division symbol (default: '÷')
 #: mathlib.py:87
 msgid "div_sym"
-msgstr ":"
+msgstr ""
 
 #. TRANS: equal symbol (default: '=')
 #: mathlib.py:92
@@ -794,102 +787,3 @@ msgstr "Isan'ny tarehimarika aseho"
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr "Fototra mandrafitra isa natoraly"
-
-#~ msgid "Change view between own and all equations"
-#~ msgstr "Ovao ny seho manelanelana ny lefy rehetra sy ny ahy"
-
-#~ msgid "Show history"
-#~ msgstr "Asehoy ny diary"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "Ovao ny seho manelanelana ny diary sy ireo ova"
-
-#~ msgid "Enter"
-#~ msgstr "Ampidiro"
-
-#~ msgid "Available functions:"
-#~ msgstr "Ireo lefa misy:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "vita parisa: %d, ofs %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "Tsy mety ny isan'ny arogimanta (%d raha tokony ho %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "Maka arogimanta %d ny lefa"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "Tsy afaka manaparisa arogimanta %d: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "Lefa diso: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "Fonosana ankavia tsy ampoizina hisy"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "Parisa diso (fonosana ankavanana)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "Fonosana ankavanana tsy ampoizina hisy"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "Parisa diso (fonosana ankavanana, tsy misy vadiny ankavia)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "Fahadisoan'ny parisa (fonosana ankavanana, tsy misy akatona)"
-
-#~ msgid "Number not expected"
-#~ msgstr "Tarehimarika tsy ampoizina hisy"
-
-#~ msgid "Operator not expected"
-#~ msgstr "Operatera tsy ampoizina hisy"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "Parisa diso: tarehimarika na ova ampoizina hisy"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "Tarehimarika na ova ampoizina hisy"
-
-#~ msgid "Invalid operator"
-#~ msgstr "Operatera tsy mety"
-
-#~ msgid "Operator expected"
-#~ msgstr "Operatera ampoizina hisy"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parisa(): tsy misy valiny"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "functions(), manome ny lisitr'ireo lefa rehetra izay voafaritra"
-
-#~ msgid "operators"
-#~ msgstr "operatera"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "operators(), manome ny lisitr'ireo operatera izay voafaritra"
-
-#~ msgid "plot"
-#~ msgstr "plot"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr "square(x), manome ny toradroan'i x. Azo avy amin'ny x * x"
-
-#~ msgid "test"
-#~ msgstr "test"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr ""
-#~ "variables(), mamerina lisitra iray misy ireo ova izay voafaritra amin'izao"
-
-#~ msgid "Constants"
-#~ msgstr "Konstanta"
-
-#~ msgid "Format"
-#~ msgstr "Endrika"

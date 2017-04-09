@@ -7,15 +7,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2012-07-01 06:21+0200\n"
-"Last-Translator: Jasmine <udea_jasmine@yahoo.com>\n"
+"PO-Revision-Date: 2017-03-14 05:12+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1489468342.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -27,6 +28,9 @@ msgid ""
 "This is the place to get the answer to a quick problem, but that is not the "
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
+"Սա այն տեղն է, որտեղ կարելի խնդրին արագ պատասխան ստանալ, սակայն սա դեռ "
+"սահմանը չէ: Կարելի է նաև հետազոտել Հանրահաշիվ, Եռանկյունաչափություն, Բուլյան "
+"համակարգը և շատ ավելին:"
 
 #: astparser.py:40
 msgid ""
@@ -323,7 +327,7 @@ msgstr "xor"
 #: functions.py:112
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
 msgstr ""
-"abs(x) վերականգնում է x -ի բացարձակ արժեքը, ինչը նշանակում է -x, երբ x < 0:"
+"abs(x) վերականգնում է x -ի բացարձակ արժեքը, ինչը նշանակում է -x, երբ x < 0"
 
 # acos(x) -arc cosine x - արկկոսինուս x,
 #: functions.py:117
@@ -521,8 +525,7 @@ msgstr "pow(x, y), վերականգնում է x -ի արժեքն y -ի հանդ
 #: functions.py:366
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
 msgstr ""
-"rand_float(), պատահական  տատանման ցուցանիշ թիվը դարձնում է 0.0 -ի և 1.0-ի "
-"միջև"
+"rand_float(), պատահական տատանման ցուցանիշ թիվը դարձնում է 0.0 -ի և 1.0-ի միջև"
 
 # rand_int( - պատահական ամբողջ
 #: functions.py:371
@@ -830,12 +833,3 @@ msgstr "Ցույց տրված թվերի քանակը"
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr "Ամբողջական թվի ձեւավորման հիմքը"
-
-#~ msgid "Change view between own and all equations"
-#~ msgstr "Փոփոխել տեսարանն իմ սեփական, եւ բոլոր հավասարումների միջեւ"
-
-#~ msgid "Show history"
-#~ msgstr "Ցույց տալ պատմությունը"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "Փոփոխել տեսարանը պատմության եւ փոփոխականների միջեւ"

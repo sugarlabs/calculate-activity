@@ -732,5 +732,3 @@ msgstr ""
 msgid "Integer formatting base"
 msgstr ""
 
-#~ msgid "Enter"
-#~ msgstr "Enankañ"

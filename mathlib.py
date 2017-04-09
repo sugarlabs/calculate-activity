@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+# -*- coding: utf-8 -*-
 # mathlib.py, generic math library wrapper
 # by Reinier Heeres <reinier@heeres.eu>
 #
@@ -189,7 +189,7 @@ class MathLib:
 # dot_pos: %d', len(digits), exp, int_len, disp_exp, dot_pos)
 
         if dot_pos < 0:
-            res = '0' + self.fraction_sep
+            res += '0' + self.fraction_sep
             for i in xrange(dot_pos, 0):
                 res += '0'
 

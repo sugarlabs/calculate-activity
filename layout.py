@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+# -*- coding: utf-8 -*-
 # layout.py, sugar calculator, by:
 #   Reinier Heeres <reinier@heeres.eu>
 #   Miguel Alvarez <miguel@laptop.org>

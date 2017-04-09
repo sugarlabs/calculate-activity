@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+# -*- coding: utf-8 -*-
 # astparser.py, equation parser based on python Abstract Syntax Trees (ast)
 # Reinier Heeres <reinier@heeres.eu>
 # Copyright (C) 2012 Aneesh Dogra <lionaneesh@gmail.com>

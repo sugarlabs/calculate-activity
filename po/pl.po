@@ -1,11 +1,3 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # Polish translation of calculate-activity
 # Copyright (C) FSF
 # This file is distributed under the same license as the calculate-activity.
@@ -15,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2012-02-07 19:00+0200\n"
-"Last-Translator: Marcin <ulinski.marcin@gmail.com>\n"
+"PO-Revision-Date: 2017-03-16 04:58+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1489640307.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -36,6 +29,9 @@ msgid ""
 "This is the place to get the answer to a quick problem, but that is not the "
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
+"To jest miejsce, gdzie można uzyskać odpowiedź na szybki problem bez żadnego "
+"limitu! Możesz także odkrywać algebrę, trygonometrię, model Boolean-Poisson "
+"i nie tylko!"
 
 #: astparser.py:40
 msgid ""
@@ -309,7 +305,7 @@ msgstr "xor"
 #: functions.py:112
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
 msgstr ""
-"abs(x), zwraca wartość bezwzględną z x, to jest -x dla x<0 lub x dla x>=0"
+"abs(x), zwraca wartość bezwzględną z x, to jest -x dla x < 0 lub x dla x >= 0"
 
 #: functions.py:117
 msgid ""
@@ -801,101 +797,3 @@ msgstr "Liczba pokazywanych cyfr"
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr "Podstawa liczb całkowitych"
-
-#~ msgid "Change view between own and all equations"
-#~ msgstr "Zmień widok między moimi a wszystkimi równaniami"
-
-#~ msgid "Show history"
-#~ msgstr "Pokaż historię"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "Zmień widok między historą a zmiennymi"
-
-#~ msgid "Enter"
-#~ msgstr "Zatwierdź"
-
-#~ msgid "Available functions:"
-#~ msgstr "Dostępne funkcje:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "poziom: %d, z %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "Zła liczba argumentów (%d zamiast %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "funkcja wymaga %d argumentów"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "Nie można rozpoznać argumentu %d: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "Błąd funkcji: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "Niespodziewane wystąpienie lewego nawiasu"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "Błąd składni (prawy nawias)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "Niespodziewane wystąpienie prawego nawiasu"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "Błąd składni (prawy nawias, brak lewostronnej wartości)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "Błąd składni (za dużo prawych nawiasów)"
-
-#~ msgid "Number not expected"
-#~ msgstr "Niespodziewane wystąpienie liczby"
-
-#~ msgid "Operator not expected"
-#~ msgstr "Niespodziewane wystąpienie operatora"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "Błąd składni: wymagana jest liczba lub zmienna"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "Wymagana jest liczba lub zmienna"
-
-#~ msgid "Invalid operator"
-#~ msgstr "Niepoprawny operator"
-
-#~ msgid "Operator expected"
-#~ msgstr "Wymagany jest operator"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): zwraca nic (returning None)"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "functions(), zwraca listę wszystkich funkcji, które są dostępne"
-
-#~ msgid "operators"
-#~ msgstr "oparators"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "operators(), zwraca listę wszystkich operatorów, które są dostępne"
-
-#~ msgid "plot"
-#~ msgstr "plot"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr "square(x), zwraca x podniesione do kwadratu. Zdefiniowane jako x * x"
-
-#~ msgid "test"
-#~ msgstr "test"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr "variables(), zwraca listę zmiennych, które są obecnie zdefiniowane"
-
-#~ msgid "Constants"
-#~ msgstr "Stałe"
-
-#~ msgid "Format"
-#~ msgstr "Format"

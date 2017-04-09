@@ -2,14 +2,6 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -777,92 +769,3 @@ msgstr ""
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr ""
-
-#~ msgid "Show history"
-#~ msgstr "हिस्टरी दाखवा"
-
-#~ msgid "Available functions:"
-#~ msgstr "मिळण्याजोगा साधन"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "स्तर: %d, ofs %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "सारांशाची संख्या अमान्य (%d चा जागी %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "फंकषण %d सारांश घेतो"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "%d सारांश पार्स करू शकत नाही: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "फंकषण चुक: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "डावा कोष्ठक अविचारित आहे"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "पार्स चुक (उजवा कोष्ठक)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "उजवा कोष्ठक अविचारित आहे"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "पार्स चुक (उजवा कोष्ठक, left_val नाही)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "पार्स चुक (उजवा कोष्ठक, बंद करण्यासाठी स्तर नाही)"
-
-#~ msgid "Number not expected"
-#~ msgstr "संख्या अविचारित आहे"
-
-#~ msgid "Operator not expected"
-#~ msgstr "सूचक अविचारित आहे"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "पार्स चुक: संख्या किंवा वेरियबल आल पाहिजे"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "संख्या किंवा वेरियबल आल पाहिजे"
-
-#~ msgid "Invalid operator"
-#~ msgstr "सूचक मान्य नाही"
-
-#~ msgid "Operator expected"
-#~ msgstr "सूचक आल पाहिजे"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): रिटर्निंग नन"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "functions(), पारिभाषित फंकशन्सची यादी परत करतो"
-
-#~ msgid "operators"
-#~ msgstr "सूचक"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "operators(), पारिभाषित सूचकांची यदि परत करतो."
-
-#~ msgid "plot"
-#~ msgstr "plot"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr "square(x), x चा स्क्वेर परत करतो. x*x चा कडून"
-
-#~ msgid "test"
-#~ msgstr "test"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr "variables(), सध्या पारिभाषित वेरियबल्स ची यदि परत करतो."
-
-#~ msgid "Constants"
-#~ msgstr "कांस्टान्ट्स"
-
-#~ msgid "Format"
-#~ msgstr "पद्धत"

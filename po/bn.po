@@ -2,14 +2,6 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: xo-bundled\n"
@@ -780,86 +772,3 @@ msgstr ""
 msgid "Integer formatting base"
 msgstr ""
 
-#~ msgid "Show history"
-#~ msgstr "ইতিহাস দেখাও"
-
-#~ msgid "Available functions:"
-#~ msgstr "বিদ্যমান ফাংশন:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "স্তর: %d, ofs %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "অকার্যকর সংখ্যক আর্গুমেন্ট (%d, %d এর পরিবর্তে)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "ফাংশন %d আর্গুমেন্ট নেয়"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "আর্গুমেন্ট পার্স করতে অক্ষম %d: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "ফাংশন ত্রুটি: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "বাম বন্ধনী অপ্রত্যাশিত"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "পার্স ত্রুটি (ডান বন্ধনী)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "ডান বন্ধনী অপ্রত্যাশিত"
-
-#, fuzzy
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "পার্স ত্রুটি (ডান বন্ধনী, left_val নয়)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "পার্স ত্রুটি (ডান বন্ধনী, বন্ধ করার জন্য কোনো স্তর নেই)"
-
-#~ msgid "Number not expected"
-#~ msgstr "সংখ্যাটি প্রত্যাশিত নয়"
-
-#~ msgid "Operator not expected"
-#~ msgstr "অপারেটর প্রত্যাশিত নয়"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "পার্স ত্রুটি: সংখ্যা অথবা চলক প্রত্যাশিত"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "সংখ্যা অথবা চলক প্রত্যাশিত"
-
-#~ msgid "Invalid operator"
-#~ msgstr "অকার্যকর অপারেটর"
-
-#~ msgid "Operator expected"
-#~ msgstr "অপারেটর প্রত্যাশিত"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "functions(), নির্ধারিত সব ফাংশনের তালিকা রিটার্ন করে"
-
-#~ msgid "operators"
-#~ msgstr "অপারেটর"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "operators(), নির্ধারিত অপারেটরের তালিকা রিটার্ন করে"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr "square(x), x এর বর্গমূল রিটার্ন করে। x * x"
-
-#~ msgid "test"
-#~ msgstr "পরীক্ষন"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr "variables(), বর্তমানে নির্ধারিত চলকের একটি তালিকা রিটার্ন করে"
-
-#~ msgid "Constants"
-#~ msgstr "ধ্রুবক"
-
-#~ msgid "Format"
-#~ msgstr "বিন্যাস"

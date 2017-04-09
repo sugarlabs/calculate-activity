@@ -1,29 +1,27 @@
-# Bulgarian translation of PACKAGE.
-# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Alexander Todorov <atodorov@redhat.com>, 2008.
-# , fuzzy
-# 
-# 
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2017-03-14 05:26+0000\n"
+"PO-Revision-Date: 2017-03-16 04:27+0000\n"
 "Last-Translator: Chris <cjl@sugarlabs.org>\n"
-"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
-"Language: bg\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: gug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1489469214.000000\n"
+"X-POOTLE-MTIME: 1489638467.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
-msgstr "Калкулатор"
+msgstr "Calcular (Papa)"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
@@ -31,145 +29,137 @@ msgid ""
 "This is the place to get the answer to a quick problem, but that is not the "
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
+"Koa peteĩ tenda etopa haguã mbohovái tesapara pe guarã, katu ndaha'ei "
+"tembe'y. Ikatu avei ehecha Álgebra, Trigonometría, Booleanos avei"
 
 #: astparser.py:40
 msgid ""
 "plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
 "range from a to b"
 msgstr ""
-"plot(EQN, VAR=-a..b), изчертава графиката на функцията EQN в интервала от a "
-"до b"
+"plot(eqn, var=-a..b), grafica de la ecuación 'eqn' con la variable 'var' en "
+"el rango de a hasta b"
 
 #: astparser.py:59
 #, python-format
 msgid "Parse error at %d"
-msgstr ""
+msgstr "Error de procesamiento en %d"
 
 #: astparser.py:71 astparser.py:83
 #, python-format
 msgid "Error at %d"
-msgstr "Грешка в %d"
+msgstr "Javy %d pe"
 
 #: astparser.py:94
 msgid "This is just a test topic, use help(index) for the index"
-msgstr ""
-"Това е пробен текст, използвайте help(ключ), за да получите информация за "
-"ключа"
+msgstr "Este es solo un topico de prueba, use help(indice) para el indice"
 
 #: astparser.py:106
 msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr "Използвайте help(test) за помощ относно 'test' или help(index) за index"
+msgstr ""
+"Use help(test) para ayuda acerca de 'test', o help(indice) para el indice"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:109
 msgid "index"
-msgstr "index"
+msgstr "Rysýi"
 
 #: astparser.py:109
 msgid "topics"
-msgstr "теми"
+msgstr "Ñe'erãkuéra"
 
 #: astparser.py:110
 msgid "Topics"
-msgstr "Теми"
+msgstr "Ñe'erãkuéra"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:118
 msgid "variables"
-msgstr "променливи"
+msgstr "Hendave'ỹ"
 
 #: astparser.py:119
 msgid "Variables"
-msgstr "Променливи"
+msgstr "Hendave'ỹ"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:125
-#, fuzzy
 msgid "functions"
-msgstr "Функции"
+msgstr "Mba'e apopeguarã"
 
 #: astparser.py:126
 msgid "Functions"
-msgstr "Функции"
+msgstr "Mba'e apopeguarã"
 
 #: astparser.py:135
 #, python-format
 msgid "No help about '%s' available, use help(index) for the index"
-msgstr "Не е намерена помощ относно '%s', използвайте help(index) за index"
+msgstr "Ndaipóri ñepytyvõ '%s' rehe, eipuru ñepytyvõ rysýipe guarã"
 
 #: astparser.py:459
-#, fuzzy
 msgid "help"
-msgstr "Помощ"
+msgstr "Ñepytyvõ"
 
 #: astparser.py:466
 msgid "Recursion detected"
-msgstr ""
+msgstr "Recursión detectada"
 
 #: astparser.py:490
 #, python-format
 msgid "Function '%s' not defined"
-msgstr "Функцията '%s' не е дефинирана"
+msgstr "La función '%s' no está definida"
 
 #: astparser.py:492
 #, python-format
 msgid "Variable '%s' not defined"
-msgstr "Променливата '%s' не е дефинирана"
+msgstr "Hendave'ỹ '%s' ndoje myesakãi"
 
 #: astparser.py:502
 #, python-format
 msgid "Attribute '%s' does not exist"
-msgstr ""
+msgstr "Teko '%s' ndaipóri"
 
 #: astparser.py:596
 msgid "Parse error"
-msgstr "Грешка при обработка на текста"
+msgstr "Error de procesamiento"
 
 #: astparser.py:601
 msgid "Multiple statements not supported"
-msgstr ""
+msgstr "Ndikatúi heta emombe'u"
 
 #: astparser.py:625
 msgid "Internal error"
-msgstr "Вътрешна грешка"
+msgstr "Jejavy pypegua"
 
 #: calculate.py:109
 #, python-format
 msgid "Equation.parse() string invalid (%s)"
-msgstr "Невалиден низ (%s)"
+msgstr "Equation.parse() cadena no válida (%s)"
 
 #: calculate.py:483
 msgid "Can not assign label: will cause recursion"
-msgstr ""
+msgstr "Ndaikatúi embohéra tererendápe, causará recursión"
 
 #: calculate.py:571
 #, python-format
 msgid "Writing to journal (%s)"
-msgstr "Записване в дневника (%s)"
+msgstr "Ehaí tapiaguávape (%s)"
 
 #: calculate.py:865
 msgid "button_pressed(): invalid type"
-msgstr "button_pressed(): невалиден тип"
+msgstr "button_pressed(): tipo invalido"
 
 #: functions.py:35
-#, fuzzy
 msgid "add"
-msgstr "Добавяне"
+msgstr "Sum"
 
 #: functions.py:36
 msgid "abs"
-msgstr ""
+msgstr "abs"
 
-# TRANS: It is possible to translate commands. However, I would highly
-# recommend NOT doing so for mathematical functions like cos(). help(),
-# functions() etc should be translated.
 #: functions.py:37
 msgid "acos"
 msgstr "acos"
 
-# TRANS: It is possible to translate commands. However, I would highly
-# recommend NOT doing so for mathematical functions like cos(). help(),
-# functions() etc should be translated.
 #: functions.py:38
 msgid "acosh"
 msgstr "acosh"
@@ -192,15 +182,15 @@ msgstr "atanh"
 
 #: functions.py:43
 msgid "and"
-msgstr "and"
+msgstr "ha"
 
 #: functions.py:44
 msgid "b10bin"
-msgstr ""
+msgstr "b10bin"
 
 #: functions.py:45
 msgid "ceil"
-msgstr ""
+msgstr "cell"
 
 #: functions.py:46
 msgid "cos"
@@ -212,53 +202,51 @@ msgstr "cosh"
 
 #: functions.py:48
 msgid "div"
-msgstr ""
+msgstr "div"
 
 #: functions.py:49
 msgid "gcd"
-msgstr ""
+msgstr "mcd"
 
 #: functions.py:50
 msgid "exp"
 msgstr "exp"
 
 #: functions.py:51
-#, fuzzy
 msgid "factorial"
-msgstr "Факториел"
+msgstr "factorial"
 
 #: functions.py:52
 msgid "fac"
 msgstr "fac"
 
 #: functions.py:53
-#, fuzzy
 msgid "factorize"
-msgstr "Факториел"
+msgstr "factorizar"
 
 #: functions.py:54
 msgid "floor"
-msgstr ""
+msgstr "Yvy atã"
 
 #: functions.py:55
 msgid "inv"
-msgstr ""
+msgstr "inv"
 
 #: functions.py:56
 msgid "is_int"
-msgstr ""
+msgstr "is_int"
 
 #: functions.py:57
 msgid "ln"
-msgstr "ln"
+msgstr "In"
 
 #: functions.py:58
 msgid "log10"
-msgstr ""
+msgstr "log10"
 
 #: functions.py:59
 msgid "mul"
-msgstr ""
+msgstr "mul"
 
 #: functions.py:60
 msgid "or"
@@ -266,15 +254,15 @@ msgstr "or"
 
 #: functions.py:61
 msgid "rand_float"
-msgstr ""
+msgstr "rand_float"
 
 #: functions.py:62
 msgid "rand_int"
-msgstr ""
+msgstr "rand_int"
 
 #: functions.py:63
 msgid "round"
-msgstr ""
+msgstr "redondeo (mboapu'a)"
 
 #: functions.py:64
 msgid "sin"
@@ -294,11 +282,11 @@ msgstr "sqrt"
 
 #: functions.py:68
 msgid "sub"
-msgstr ""
+msgstr "sub"
 
 #: functions.py:69
 msgid "square"
-msgstr "square"
+msgstr "cuadrado"
 
 #: functions.py:70
 msgid "tan"
@@ -314,240 +302,258 @@ msgstr "xor"
 
 #: functions.py:112
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
-msgstr ""
+msgstr "abs(x), devuelve el valor absoluto de x, que significa -x si x < 0"
 
 #: functions.py:117
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
 msgstr ""
-"acos(X), връща аркус косинус от X. Това е ъгълът, чийто косинус е равен на "
-"X.Дефиниционен интервал: -1 <= X < 1"
+"acos(x), devuelve el arco coseno de x. Este es el ángulo para el cual el "
+"coseno es x. Definido para -1 <= x < 1"
 
 #: functions.py:123
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
 msgstr ""
+"acosh(x), devuelve el arco coseno hiperbólico de x. Este es el valor de y "
+"para el cual el coseno hiperbólico es x."
 
 #: functions.py:129
-#, fuzzy
 msgid ""
 "And(x, y), logical and. Returns True if x and y are True, else returns False"
 msgstr ""
-"and(X, Y), логическо и. Връща Истина ако X и Y са Истина.В противен случай "
-"връща Лъжа"
+"And(x, y), and logico, Devuelve Verdadero si x e y son verdaderos, de lo "
+"contrario retorna Falso"
 
 #: functions.py:136
 msgid "add(x, y), return x + y"
-msgstr ""
+msgstr "sum(x, y), devuelta x + y"
 
 #: functions.py:141
-#, fuzzy
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
 msgstr ""
-"asin(X), връща аркус синуса от X. Това е ъгълът, чийто синус е "
-"X.Дефиниционен интервал:-1 <= X <= 1"
+"asin(x), Devuelve el arco seno de x. Este es el ángulo para el cual el seno "
+"es x. Definido para -1<=x<=1"
 
 #: functions.py:147
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
 msgstr ""
+"asinh(x), devuelve el arco ceno hiperbólico de x. Este es el valor de y para "
+"el cual el seno hiperbólico es x."
 
 #: functions.py:153
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
 msgstr ""
-"atan(X), връща аркус тангенса от X. Това е ъгълът, чийто тангенс е "
-"X.Дефиниционно множество: за всяко X"
+"atan(x), Devuelve el arco tangente de x. Este es el ángulo para el cual la "
+"tangente es x. Definido para todas las x"
 
 #: functions.py:159
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
 msgstr ""
+"atanh(x), devuelve el arco tangente hiperbólico de x. Este es el valor de y "
+"para el cual el tangente hiperbólico es x."
 
 #: functions.py:171
 msgid "Number does not look binary in base 10"
-msgstr ""
+msgstr "El número no parece binario en base 10"
 
 #: functions.py:178
 msgid ""
 "b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
 "(10111) = 23,"
 msgstr ""
+"b10bin(x), interpreta un número escrito en base 10 como binario, ej.: "
+"b10bin(10111) = 23,"
 
 #: functions.py:183
 msgid "ceil(x), return the smallest integer larger than x."
-msgstr ""
+msgstr "ceil(x), devuelve el menor entero mayor que x."
 
 #: functions.py:188
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr ""
-"cos(X), връща косинуса на X. Това е координатата по абцисната осв точката на "
-"пресичане на единичната окръжност и ъгъла X"
+"cos(x), devuelve el coseno de x. Esta es la coordenada x en el círculo "
+"unitario con ángulo x"
 
 #: functions.py:194
 msgid ""
 "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
-"cosh(X), връща хиперболичен косинус от X.Дефиниран с израза: (exp(X) + "
-"exp(-X)) / 2"
+"cosh(x), devuelve el coseno hiperbólico de x. Dado por (exp(x) + exp(-x)) / 2"
 
 #: functions.py:198
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "No se puede dividir por cero"
 
 #: functions.py:219
 msgid "Invalid argument"
-msgstr ""
+msgstr "Argumento no válido"
 
 #: functions.py:222
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
+"gcd(a, b), determina el máximo común divisor entre a y b. Por ejemplo, el "
+"factor más grande que divide a los números 15 y 18 es 3."
 
 #: functions.py:227
 msgid "exp(x), return the natural exponent of x. Given by e^x"
-msgstr "exp(X), връща логаритъм от X при основа натуралното число"
+msgstr "exp(x), devuelve el exponente natural de x. Dado por e^x"
 
 #: functions.py:231
 msgid "Factorial only defined for integers"
-msgstr ""
+msgstr "Factorial solo esta definido para enteros"
 
 #: functions.py:244
-#, fuzzy
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
-msgstr "fac(X), връща факториел от X"
+msgstr ""
+"factorial(x), devuelve el factorial de x. Dado por x * (x - 1) * (x - 2) * "
+"..."
 
 #: functions.py:250
 msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-msgstr "fac(X), връща факториел от X"
+msgstr ""
+"fac(x), devuelve el factorial de x. Dado por x * (x - 1) * (x - 2) * ..."
 
 #: functions.py:283
 msgid "floor(x), return the largest integer smaller than x."
-msgstr ""
+msgstr "floor(x), devuelve el mayor entero menor que x."
 
 #: functions.py:287
 msgid "inv(x), return the inverse of x, which is 1 / x"
-msgstr ""
+msgstr "inv(x), devuelve el inverso de x, que es 1 / x"
 
 #: functions.py:309 functions.py:318
 msgid "Logarithm(x) only defined for x > 0"
-msgstr ""
+msgstr "Logarithm(x) solo definido para x > 0"
 
 #: functions.py:311
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
 msgstr ""
-"ln(X) - връща натурален логаритъм от X. Това е стойността,за която "
-"експонентата exp() е равна на X.Дефиниционнен интервал: X >= 0."
+"ln(x), devuelve el algoritmo natural de x. Este es el valor para el cual el "
+"exponente exp() es igual a x. Definido para x >= 0."
 
 #: functions.py:320
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
+"log10(x), devuelve el logaritmo en base 10 de x. Este es el valor para el "
+"cual 10^y es igual a x. Definido para x >= 0."
 
 #: functions.py:327
 msgid "Can only calculate x modulo <integer>"
-msgstr ""
+msgstr "Solo se puede calcular x módulo <integer>"
 
 #: functions.py:329
 msgid ""
 "mod(x, y), return the modulus of x with respect to y. This is the remainder "
 "after dividing x by y."
 msgstr ""
+"mod(x, y), devuelve el módulo de x respecto a y. Esto es el resto de dividir "
+"x entre y."
 
 #: functions.py:337
 msgid "mul(x, y), return x * y"
-msgstr ""
+msgstr "mul(x, y), devuelve x * y"
 
 #: functions.py:341
 msgid "negate(x), return -x"
-msgstr ""
+msgstr "negate(x), devuelve -x"
 
 #: functions.py:346
-#, fuzzy
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
-"or(X, Y), логическо или. Връща Истина ако X и/или Y е Истина.В противен "
-"случай връща Лъжа"
+"Or(x, y), 'o' logico, Devuelve Verdadero si x y/o y es verdadero, de lo "
+"contrario devuelve Falso"
 
 #: functions.py:361
 msgid "pow(x, y), return x to the power y (x**y)"
-msgstr ""
+msgstr "pow(x, y), devuelve x a la potencia y (x**y)"
 
 #: functions.py:366
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
 msgstr ""
+"rand_float(), retorna un numero de punto flotante aleatorio entre 0.0 y 1.0"
 
 #: functions.py:371
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
+"rand_int([<maxval>]), retorna un valor entero aleatorio entre 0 y <maxval>. "
+"<maxval> is un argumento opcional y tiene valor 65535 por defecto."
 
 #: functions.py:376
 msgid "round(x), return the integer nearest to x."
-msgstr ""
+msgstr "round(x), retorna el entero mas cercano a x."
 
 #: functions.py:382 functions.py:390
 msgid "Bitwise operations only apply to integers"
-msgstr ""
+msgstr "Operaciones sobre bits solo se aplican a enteros"
 
 #: functions.py:384
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr ""
+"shift_left(x, y), desplaza a la izquierda x por y bits (multiplica por 2 por "
+"cada bit)"
 
 #: functions.py:392
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr ""
+"shift_right(x, y), desplaza a la derecha x por y bits (divide por 2 por cada "
+"bit)"
 
 #: functions.py:397
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
 msgstr ""
-"sin(X), връща синус от X. Това е координатата по ординатната осв точката на "
-"пресичане на единичната окръжност и ъгъла X"
+"sin(x), devuelve el seno de x. Esta es la coordinada y en el circulo "
+"unitario en el angulo x"
 
 #: functions.py:403
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
-"sinh(X), връща хиперболичен синус от X.Дефиниран с израза "
-"(exp(X)·-·exp(-X))·/·2"
+"sinh(x), devuelve el seno hiperbolico de x. Dado por (exp(x) - exp(-x)) / 2"
 
 #: functions.py:410
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
-msgstr ""
+msgstr "sinc(x), devuelve el seno cardinal de x. Dado por sin(x) / x."
 
 #: functions.py:415
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
 msgstr ""
-"sqrt(X), връща квадратен корен от X. Това е стойността, която повдигнатана "
-"втора степен е равна на X. Дефиниционен интервал: X >= 0."
+"sqrt(x), Devuelve la raiz cuadrada de x. Este es el valor para el cual el "
+"cuadrado equivale a x. Definido para x >= 0."
 
 #: functions.py:420
 msgid "square(x), return x * x"
-msgstr ""
+msgstr "cuadrado(x), devuelve x * x"
 
 #: functions.py:427
 msgid "sub(x, y), return x - y"
-msgstr ""
+msgstr "sub(x, y), devuelve x - y"
 
 #: functions.py:432
 msgid ""
@@ -555,234 +561,230 @@ msgid ""
 "origin of the unit circle to the point on the unit circle defined by the "
 "angle x. Given by sin(x) / cos(x)"
 msgstr ""
-"tan(X), връща тангенс от X. *ДЕФИНИЦИЯ*Дефиниран с израза: sin(X) / cos (X)"
+"tan(x), Devuelve la tangente de x. Esta es la pendiente de la línea desde el "
+"origen del circulo unitario hasta el punto en el circulo definido por el "
+"angulo x. Dado por sin(x) / cos(x)"
 
 #: functions.py:439
-#, fuzzy
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr ""
-"tanh(X), връща хиперболичен тангенс от X.Дефиниран с израза: sinh(X) / "
-"cosh(X)"
+"tanh(x), devuelve la tangente hiperbolica de x. Dado por sinh(x) / cosh(x)"
 
 #: functions.py:444
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
 msgstr ""
-"xor(X, Y), логическо изключващо или. Връща Истина ако X е Истина (Y - Лъжа) "
-"илиY е Истина (X - Лъжа). В противен случай връща Лъжа"
+"xor(x, y), xor logico. Devuelve Verdadero si x es verdadero (y y es Falso) o "
+"si y es Verdadero (y X es Falso), de lo contrario devuelve Falso"
 
 #: layout.py:75
 msgid "Clear"
-msgstr ""
+msgstr "Monandi"
 
 #: layout.py:105 layout.py:145
 msgid "Edit"
-msgstr "Редактиране"
+msgstr "Ñemoambue"
 
 #: layout.py:110 layout.py:146
 msgid "Algebra"
-msgstr "Алгебра"
+msgstr "Álgebra"
 
 #: layout.py:115 layout.py:147
 msgid "Trigonometry"
-msgstr "Тригонометрия"
+msgstr "Trigonometría"
 
 #: layout.py:120 layout.py:148
 msgid "Boolean"
-msgstr "Логически функции"
+msgstr "Booleano"
 
 #: layout.py:125 layout.py:149
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Misceláneos"
 
 #: layout.py:178
 msgid "Label:"
-msgstr "Етикет:"
+msgstr "Terarenda:"
 
 #: layout.py:223
 msgid "All equations"
-msgstr "Всички уравнения"
+msgstr "Todas las ecuaciones"
 
 #: layout.py:224
 msgid "My equations"
-msgstr "Моите уравнения"
+msgstr "Mis ecuaciones"
 
 #: layout.py:225
 msgid "Show variables"
-msgstr "Променливи"
+msgstr "Hechauka hendave'ỹ"
 
 #. TRANS: multiplication symbol (default: '×')
 #: mathlib.py:82
 msgid "mul_sym"
-msgstr "*"
+msgstr "×"
 
 #. TRANS: division symbol (default: '÷')
 #: mathlib.py:87
 msgid "div_sym"
-msgstr "/"
+msgstr "÷"
 
 #. TRANS: equal symbol (default: '=')
 #: mathlib.py:92
 msgid "equ_sym"
-msgstr ""
+msgstr "equ_sym"
 
 #: mathlib.py:216
 msgid "Undefined"
-msgstr "Недефиниран"
+msgstr "Myesakã'yva"
 
 #: mathlib.py:226
 msgid "Error: unsupported type"
-msgstr "Грешка: непознат тип"
+msgstr "Error: tipo no soportado"
 
 #: toolbars.py:53
 msgid "Help"
-msgstr "Помощ"
+msgstr "Ñepytyvõ"
 
 #: toolbars.py:121
 msgid "Copy"
-msgstr "Копиране"
+msgstr "Mbohesegua"
 
 #: toolbars.py:122
 msgid "<ctrl>c"
-msgstr ""
+msgstr "<ctrl>c"
 
 #: toolbars.py:126
 msgid "Cut"
-msgstr "Изрязване"
+msgstr "Kytĩ"
 
 #: toolbars.py:129
 msgid "<ctrl>x"
-msgstr ""
+msgstr "<ctrl>x"
 
 #: toolbars.py:137
 msgid "Paste"
-msgstr "Поставяне"
+msgstr "Mboja"
 
 #: toolbars.py:147
 msgid "Square"
-msgstr "Повдигане на втора степен"
+msgstr "Cuadrado"
 
 #: toolbars.py:152
 msgid "Square root"
-msgstr "Квадратен корен"
+msgstr "Raíz cuadrada"
 
 #: toolbars.py:157
-#, fuzzy
 msgid "Inverse"
-msgstr "Обръщане"
+msgstr "Inversa"
 
 #: toolbars.py:164
 msgid "e to the power x"
-msgstr "e на степен X"
+msgstr "e a la potencia x"
 
 #: toolbars.py:169
 msgid "x to the power y"
-msgstr "x на степен y"
+msgstr "x a la potencia y"
 
 #: toolbars.py:174
 msgid "Natural logarithm"
-msgstr "Натурален логаритъм"
+msgstr "Logaritmo natural"
 
 #: toolbars.py:180
 msgid "Factorial"
-msgstr "Факториел"
+msgstr "Factorial"
 
 #: toolbars.py:190
 msgid "Sine"
-msgstr "Синус"
+msgstr "Seno"
 
 #: toolbars.py:194
 msgid "Cosine"
-msgstr "Косинус"
+msgstr "Coseno"
 
 #: toolbars.py:198
 msgid "Tangent"
-msgstr "Тангенс"
+msgstr "Tangente"
 
 #: toolbars.py:204
 msgid "Arc sine"
-msgstr "Аркус синус"
+msgstr "Arcoseno"
 
 #: toolbars.py:208
 msgid "Arc cosine"
-msgstr "Аркус косинус"
+msgstr "Arcocoseno"
 
 #: toolbars.py:212
 msgid "Arc tangent"
-msgstr "Аркус тангенс"
+msgstr "Arcotangente"
 
 #: toolbars.py:218
 msgid "Hyperbolic sine"
-msgstr "Хиперболичен синус"
+msgstr "Seno hiperbólico"
 
 #: toolbars.py:222
 msgid "Hyperbolic cosine"
-msgstr "Хиперболичен косинус"
+msgstr "Coseno hiperbólico"
 
 #: toolbars.py:226
 msgid "Hyperbolic tangent"
-msgstr "Хиперболичен тангенс"
+msgstr "Tangente hiperbólica"
 
 #: toolbars.py:236
 msgid "Logical and"
-msgstr "Логическо и"
+msgstr "Y lógico"
 
 #: toolbars.py:240
 msgid "Logical or"
-msgstr "Логическо или"
+msgstr "O lógico"
 
 #: toolbars.py:250
 msgid "Equals"
-msgstr "равно"
+msgstr "Ha'ete"
 
 #: toolbars.py:253
 msgid "Not equals"
-msgstr "различно"
+msgstr "nda ha'etei"
 
 #: toolbars.py:262
 msgid "Pi"
-msgstr "пи"
+msgstr "Pi"
 
 #: toolbars.py:266
 msgid "e"
-msgstr "е"
+msgstr "e"
 
 #: toolbars.py:269
 msgid "γ"
-msgstr ""
+msgstr "Y"
 
 #: toolbars.py:272
 msgid "φ"
-msgstr ""
+msgstr "φ"
 
 #: toolbars.py:279
-#, fuzzy
 msgid "Plot"
-msgstr "plot"
+msgstr "Moha'anga"
 
 #: toolbars.py:286
 msgid "Degrees"
-msgstr "градуси"
+msgstr "Grados"
 
 #: toolbars.py:287
 msgid "Radians"
-msgstr "радиани"
+msgstr "Radianes"
 
 #: toolbars.py:291
-#, fuzzy
 msgid "Degrees / Radians"
-msgstr "Градуси / радиани"
+msgstr "Grados / Radianes"
 
 #: toolbars.py:300
 msgid "Exponent / Scientific notation"
-msgstr ""
+msgstr "Exponente / Notación científica"
 
 #: toolbars.py:310
 msgid "Number of shown digits"
-msgstr ""
+msgstr "Número de dígitos visibles"
 
 #: toolbars.py:320
 msgid "Integer formatting base"
-msgstr ""
-
+msgstr "Base numérica"

@@ -17,8 +17,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-# ajixtaláb=número. Ajum ajixtaláb=Lector de números=Calculadora. La palabra original del ingles significa "Calcular" no "Calculadora". (Zurik)
-# Tsalpanchixtaláb=calcular
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
 msgstr "Tsalpanchixtaláb"
@@ -38,8 +36,6 @@ msgstr ""
 "plot(eqn, var=-a..b), in t'ipoyal an ecuación 'eqn' k'al an bijláb 'var' tin "
 "áy an a ma ti b"
 
-# Error de procesamiento en %d
-# parse=procesamiento, análisis
 #: astparser.py:59
 #, python-format
 #, python-format, ,
@@ -676,7 +672,6 @@ msgstr "÷"
 msgid "equ_sym"
 msgstr "="
 
-# No definido = yab elan, yab dhuchadh
 #: mathlib.py:216
 msgid "Undefined"
 msgstr "Yab elan"
@@ -854,110 +849,3 @@ msgstr "Ajixtaláb ti tejwa' dhuche'-ajixtaláb"
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr "In aknixtal an ajixtaláb"
-
-# wal = vista
-#~ msgid "Change view between own and all equations"
-#~ msgstr "Ka jaluw in wal ti al patal an ecuaciones ani xi a k'al"
-
-# Historial = T'ilab k'al jita'
-#~ msgid "Show history"
-#~ msgstr "Itej met'adh"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "Ka jaluw in wal ti xi itej met'adh ani an bijlábchik"
-
-#~ msgid "Enter"
-#~ msgstr "Otskan"
-
-# Jolat T'ajnél = Funciones disponíbles
-#~ msgid "Available functions:"
-#~ msgstr "Jolat t'ajnél:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "t'ek'ém: %d, ofs %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "An yantolom ódhaxtaláb k'ibtsodh (pelak %d ani elan %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "an t'ajnél in ayendhál %d i odhaxtaláb"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "Yab ka ejtow ka t'aja' an áyláb ti ódhaxtaláb %d: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "K'ibts'odh t'ajnél: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "Yab ayábak jún i k'watbéj maplab"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "K'ibts'ontaláb ti al an áynaxtaláb (winab maplab)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "Yab ayábak jún i winbej maplab"
-
-# winab=derecho
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "K'ibts'ontaláb ti áynaxtaláb (winab maplab, yab k'al i left_val)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr ""
-#~ "K'ibts'ontaláb ti aynaxtaláb (winab maplab, manij jún in t'ek'ém abal ka "
-#~ "mapuyat)"
-
-#~ msgid "Number not expected"
-#~ msgstr "Yab aychidh ajixtaláb"
-
-#~ msgid "Operator not expected"
-#~ msgstr "Yab aychidh t'iplab"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "K'ibts'ontaláb ti aynaxtaláb: ayabak juni ajixtaláb o juni bijláb"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "Ayabak juni ajixtaláb o juni bijláb"
-
-#~ msgid "Invalid operator"
-#~ msgstr "Yab bats'udh t'iplab"
-
-#~ msgid "Operator expected"
-#~ msgstr "Áychidh t'iplab"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): wichbom Yab jant'oj"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "functions(), in wichbál jún k'elab i t'ajnél a xi k'wajat lejkidh"
-
-#~ msgid "operators"
-#~ msgstr "t'iplab"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "operators(), in wichbál jun k'elab i t'iplabchik a xi k'wajat lejkidh"
-
-#~ msgid "plot"
-#~ msgstr "plot"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr ""
-#~ "square(x), in wichbál an tsabchíl punk'uxtaláb xin k'al x. Ejtidh jant'odha' "
-#~ "x * x"
-
-#~ msgid "test"
-#~ msgstr "takaxtaláb"
-
-# k'elab = lista, menú
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr "variables(), in wichbál jún i k'elab i bijilábchik a xi elnének xók'ij"
-
-#~ msgid "Constants"
-#~ msgstr "Junini' in éy"
-
-#~ msgid "Format"
-#~ msgstr "T'ipodhtaláb"

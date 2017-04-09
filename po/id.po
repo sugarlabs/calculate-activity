@@ -2,28 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2012-06-25 19:22+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2016-04-16 10:52+0000\n"
+"Last-Translator: andika <andika@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1460803967.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -35,6 +28,9 @@ msgid ""
 "This is the place to get the answer to a quick problem, but that is not the "
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
+"Ini adalah tempat untuk memperoleh jawaban dari masalah cepat, tapi itu "
+"bukan batas! Anda juga dapat mengeksplorasi Aljabar, Trigonometri, Boolean, "
+"dan lebih banyak lagi!"
 
 #: astparser.py:40
 msgid ""
@@ -800,82 +796,3 @@ msgstr "Cacah dijit yang ditampilkan"
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr "Basis pemformatan bilangan bulat"
-
-#~ msgid "Change view between own and all equations"
-#~ msgstr "Ubah tilikan antara persamaan milikku dan semua"
-
-#~ msgid "Show history"
-#~ msgstr "Tampilkan riwayat"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "Ubah tilikan antara riwayat dan variabel"
-
-#~ msgid "Available functions:"
-#~ msgstr "Fungsi-fungsi tersedia:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "Tingkat: %d, dari %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "Jumlah argumen tidak benar (%d seharusnya %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "fungsi memerlukan %d argumen"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "Tidak dapat menguraikan argumen %d: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "Kesalahan fungsi: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "Kurung kiri tidak diperlukan"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "Kesalahan saat menguraikan (tanda kurung kanan)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "Tanda kurung kanan tidak diperlukan"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr ""
-#~ "Kesalahan saat menguraikan (tanda kurung kanan, tidak memiliki left_val)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr ""
-#~ "Kesalahan saat penerjemahan (tanda kurung kanan, tidak ada tingkatan yang "
-#~ "ditutup)"
-
-#~ msgid "Number not expected"
-#~ msgstr "Angka tidak diperlukan"
-
-#~ msgid "Operator not expected"
-#~ msgstr "Operator tidak diperlukan"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "Kesalahan menguraikan: diperlukan angka atau variabel"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "Diperlukan angka atau variabel"
-
-#~ msgid "Invalid operator"
-#~ msgstr "Operator tidak dikenal"
-
-#~ msgid "Operator expected"
-#~ msgstr "Diperlukan operator"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): tidak mendapatkan hasil"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr ""
-#~ "functions(), mengembalikan daftar seluruh fungsi-fungsi yang telah "
-#~ "didefinisikan"
-
-#~ msgid "operators"
-#~ msgstr "operator"

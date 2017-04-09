@@ -2,28 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2011-08-26 09:06+0200\n"
-"Last-Translator: korakurider <korakurider@gmail.com>\n"
+"PO-Revision-Date: 2015-12-15 13:10+0000\n"
+"Last-Translator: sujiniku <qqke6wd9k@apricot.ocn.ne.jp>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1450185034.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -247,7 +240,7 @@ msgstr "ln"
 
 #: functions.py:58
 msgid "log10"
-msgstr ""
+msgstr "log10"
 
 #: functions.py:59
 msgid "mul"
@@ -754,227 +747,3 @@ msgstr ""
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr ""
-
-#~ msgid "Show history"
-#~ msgstr "履歴を表示"
-
-#~ msgid "Enter"
-#~ msgstr "入力"
-
-#~ msgid "Available functions:"
-#~ msgstr "利用可能な関数："
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "レベル: %d, ofs %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "引数の数が違います(正しくは%dで、%dは間違いです。）"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "この関数は%d個の引数をとります。"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "%dに与えられた右の引数に問題があります。: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "関数のエラー: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "余計な左カッコがあります。"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "文法チェックエラー（右カッコ）"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "余計な右カッコがあります。"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "文法チェックエラー（右カッコ、左辺値なし）"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "文法チェックエラー（右カッコ、あるいは閉じる対象のレベル無し）"
-
-#~ msgid "Number not expected"
-#~ msgstr "数値が現れてはいけません。"
-
-#~ msgid "Operator not expected"
-#~ msgstr "演算子は指定できません。"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "文法エラー：数値もしくは変数を指定してください。"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "数値もしくは変数を指定してください。"
-
-#~ msgid "Invalid operator"
-#~ msgstr "無効な演算子です"
-
-#~ msgid "Operator expected"
-#~ msgstr "演算子を指定してください。"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): 返す値がありません"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "関数functions()は定義されている全ての関数のリストを返します。"
-
-#~ msgid "operators"
-#~ msgstr "operators"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "関数operators()は、定義済み演算子のリストを返します。"
-
-#~ msgid "plot"
-#~ msgstr "plot"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr "関数square(x)は、xの二乗を返します。これはx*xで与えられます。"
-
-#~ msgid "test"
-#~ msgstr "test"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr "関数variables()は現在定義されている変数群をリストで返します。"
-
-#~ msgid "Constants"
-#~ msgstr "定数"
-
-#~ msgid "Format"
-#~ msgstr "書式"
-
-#, python-format
-#, fuzzy
-#~ msgid "Reading from journal (%s)"
-#~ msgstr "ジャーナルから読み込み中(%s)"
-
-#, fuzzy
-#~ msgid "Unable to determine version"
-#~ msgstr "バージョンが識別できません"
-
-#, python-format
-#, fuzzy
-#~ msgid "Reading journal entry (version %s)"
-#~ msgstr "ジャーナルのエントリを読み込み中(version %s)"
-
-#, python-format
-#, fuzzy
-#~ msgid "State line invalid (%s)"
-#~ msgstr "入力行の内容が不適切です（%s）"
-
-#, python-format
-#, fuzzy
-#~ msgid "Unable to read journal entry, unknown version (%s)"
-#~ msgstr "ジャーナル上のエントリが読み込めません。不明のバージョンです(%s)"
-
-#, fuzzy
-#~ msgid "help_var"
-#~ msgstr "help_var"
-
-#, fuzzy
-#~ msgid "help_acos"
-#~ msgstr "help_acos"
-
-#, fuzzy
-#~ msgid "help_and"
-#~ msgstr "help_and"
-
-#, fuzzy
-#~ msgid "help_asin"
-#~ msgstr "help_asin"
-
-#, fuzzy
-#~ msgid "help_atan"
-#~ msgstr "help_atan"
-
-#, fuzzy
-#~ msgid "help_cos"
-#~ msgstr "help_cos"
-
-#, fuzzy
-#~ msgid "help_cosh"
-#~ msgstr "help_cosh"
-
-#, fuzzy
-#~ msgid "help_exp"
-#~ msgstr "help_exp"
-
-#, fuzzy
-#~ msgid "help_fac"
-#~ msgstr "help_fac"
-
-#, fuzzy
-#~ msgid "help_functions"
-#~ msgstr "help_functions"
-
-#, fuzzy
-#~ msgid "help_ln"
-#~ msgstr "help_ln"
-
-#, fuzzy
-#~ msgid "help_operators"
-#~ msgstr "help_operators"
-
-#, fuzzy
-#~ msgid "help_or"
-#~ msgstr "help_or"
-
-#, fuzzy
-#~ msgid "help_plot"
-#~ msgstr "help_plot"
-
-#, fuzzy
-#~ msgid "help_sin"
-#~ msgstr "help_sin"
-
-#, fuzzy
-#~ msgid "help_sinh"
-#~ msgstr "help_sinh"
-
-#, fuzzy
-#~ msgid "help_sqrt"
-#~ msgstr "help_sqrt"
-
-#, fuzzy
-#~ msgid "help_square"
-#~ msgstr "help_square"
-
-#, fuzzy
-#~ msgid "help_tan"
-#~ msgstr "help_tan"
-
-#, fuzzy
-#~ msgid "help_tanh"
-#~ msgstr "help_tanh"
-
-#, fuzzy
-#~ msgid "help_test"
-#~ msgstr "help_test"
-
-#, fuzzy
-#~ msgid "help_variables"
-#~ msgstr "help_variables"
-
-#, fuzzy
-#~ msgid "help_xor"
-#~ msgstr "help_xor"
-
-#, fuzzy
-#~ msgid "help_usage"
-#~ msgstr "help_usage"
-
-#, fuzzy
-#~ msgid "thousand_sep"
-#~ msgstr "thousand_sep"
-
-#, fuzzy
-#~ msgid "fraction_sep"
-#~ msgstr "fraction_sep"
-
-#, fuzzy
-#~ msgid "Logical xor"
-#~ msgstr "排他的論理和（XOR）"

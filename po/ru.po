@@ -1,11 +1,3 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # POT file for the Calculate activity
 # Copyright (C) 2007
 # This file is distributed under the same license as the Calculate package.
@@ -15,16 +7,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2011-07-12 21:05+0200\n"
-"Last-Translator: <alex.olpc@gmail.com>\n"
+"PO-Revision-Date: 2017-03-16 05:07+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.0.1\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1489640821.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Calculate"
@@ -36,6 +29,8 @@ msgid ""
 "This is the place to get the answer to a quick problem, but that is not the "
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
+"Здесь можно получить решение быстрой задачи, но это не предел! Вы также "
+"можете изучать Алгебру, Тригонометрию, Булеву алгебру и больше!"
 
 #: astparser.py:40
 msgid ""
@@ -64,7 +59,7 @@ msgstr ""
 #: astparser.py:106
 msgid "Use help(test) for help about 'test', or help(index) for the index"
 msgstr ""
-"Используйте help(test) для получения справки о  'test', или help(index) для "
+"Используйте help(test) для получения справки о 'test', или help(index) для "
 "получения индекса"
 
 #. TRANS: This command is descriptive, so can be translated
@@ -73,9 +68,8 @@ msgid "index"
 msgstr "index"
 
 #: astparser.py:109
-#, fuzzy
 msgid "topics"
-msgstr "Разделы"
+msgstr "Темы"
 
 #: astparser.py:110
 msgid "Topics"
@@ -87,9 +81,8 @@ msgid "variables"
 msgstr "variables"
 
 #: astparser.py:119
-#, fuzzy
 msgid "Variables"
-msgstr "variables"
+msgstr "Переменные"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:125
@@ -97,9 +90,8 @@ msgid "functions"
 msgstr "functions"
 
 #: astparser.py:126
-#, fuzzy
 msgid "Functions"
-msgstr "functions"
+msgstr "Функции"
 
 #: astparser.py:135
 #, python-format
@@ -109,13 +101,12 @@ msgstr ""
 "индексом help(index)"
 
 #: astparser.py:459
-#, fuzzy
 msgid "help"
 msgstr "Справка"
 
 #: astparser.py:466
 msgid "Recursion detected"
-msgstr ""
+msgstr "Обнаружена рекурсия"
 
 #: astparser.py:490
 #, python-format
@@ -130,7 +121,7 @@ msgstr "Переменная '%s' не определена"
 #: astparser.py:502
 #, python-format
 msgid "Attribute '%s' does not exist"
-msgstr ""
+msgstr "Атрибута '%s' не существует"
 
 #: astparser.py:596
 msgid "Parse error"
@@ -142,7 +133,7 @@ msgstr ""
 
 #: astparser.py:625
 msgid "Internal error"
-msgstr ""
+msgstr "Внутренняя ошибка"
 
 #: calculate.py:109
 #, python-format
@@ -164,7 +155,7 @@ msgstr "button_pressed(): неправильный тип"
 
 #: functions.py:35
 msgid "add"
-msgstr ""
+msgstr "добавить"
 
 #: functions.py:36
 msgid "abs"
@@ -175,27 +166,24 @@ msgid "acos"
 msgstr "acos"
 
 #: functions.py:38
-#, fuzzy
 msgid "acosh"
-msgstr "acos"
+msgstr "acosh"
 
 #: functions.py:39
 msgid "asin"
 msgstr "asin"
 
 #: functions.py:40
-#, fuzzy
 msgid "asinh"
-msgstr "asin"
+msgstr "asinh"
 
 #: functions.py:41
 msgid "atan"
 msgstr "atan"
 
 #: functions.py:42
-#, fuzzy
 msgid "atanh"
-msgstr "atan"
+msgstr "atanh"
 
 #: functions.py:43
 msgid "and"
@@ -281,7 +269,7 @@ msgstr ""
 
 #: functions.py:63
 msgid "round"
-msgstr ""
+msgstr "округлить"
 
 #: functions.py:64
 msgid "sin"
@@ -292,9 +280,8 @@ msgid "sinh"
 msgstr "sinh"
 
 #: functions.py:66
-#, fuzzy
 msgid "sinc"
-msgstr "sin"
+msgstr "sinc"
 
 #: functions.py:67
 msgid "sqrt"
@@ -322,7 +309,7 @@ msgstr "xor"
 
 #: functions.py:112
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
-msgstr ""
+msgstr "abs(x), вернуть абсолютное значение x, которое является -x для x < 0"
 
 #: functions.py:117
 msgid ""
@@ -339,12 +326,11 @@ msgid ""
 msgstr ""
 
 #: functions.py:129
-#, fuzzy
 msgid ""
 "And(x, y), logical and. Returns True if x and y are True, else returns False"
 msgstr ""
-"and(x, y), логическое И. Возвращает True если x и y равны True, в противном "
-"случае возвращает False"
+"And(x, y), логическое \"И\". Возвращает True, если x и y равны True, в "
+"противном случае возвращает False"
 
 #: functions.py:136
 msgid "add(x, y), return x + y"
@@ -391,7 +377,7 @@ msgstr ""
 
 #: functions.py:183
 msgid "ceil(x), return the smallest integer larger than x."
-msgstr ""
+msgstr "ceil(x), возвращает наименьшее число больше x."
 
 #: functions.py:188
 msgid ""
@@ -409,11 +395,11 @@ msgstr ""
 
 #: functions.py:198
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "Нельзя делить на 0."
 
 #: functions.py:219
 msgid "Invalid argument"
-msgstr ""
+msgstr "Недопустимый аргумент"
 
 #: functions.py:222
 msgid ""
@@ -443,7 +429,7 @@ msgstr ""
 
 #: functions.py:283
 msgid "floor(x), return the largest integer smaller than x."
-msgstr ""
+msgstr "floor(x), возвращает наибольшее целое число меньше x"
 
 #: functions.py:287
 msgid "inv(x), return the inverse of x, which is 1 / x"
@@ -486,20 +472,20 @@ msgid "negate(x), return -x"
 msgstr ""
 
 #: functions.py:346
-#, fuzzy
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
-"or(x, y), логическое ИЛИ. Возвращает True если x и/или y равны True, в "
+"Or(x, y), логическое \"ИЛИ\". Возвращает True, если x и/или y равны True, в "
 "противном случае False"
 
 #: functions.py:361
 msgid "pow(x, y), return x to the power y (x**y)"
-msgstr ""
+msgstr "pow(x, y), возвращает x в степени y (x**y)"
 
 #: functions.py:366
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
 msgstr ""
+"rand_float(), возвращает случайное число с плавающей точкой от 0.0 до 1.0"
 
 #: functions.py:371
 msgid ""
@@ -509,11 +495,11 @@ msgstr ""
 
 #: functions.py:376
 msgid "round(x), return the integer nearest to x."
-msgstr ""
+msgstr "round(x), возвращает целое число, наиболее близкое к x."
 
 #: functions.py:382 functions.py:390
 msgid "Bitwise operations only apply to integers"
-msgstr ""
+msgstr "Побитовые операции применяются только к целым числам"
 
 #: functions.py:384
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
@@ -556,7 +542,7 @@ msgstr ""
 
 #: functions.py:427
 msgid "sub(x, y), return x - y"
-msgstr ""
+msgstr "sub(x, y), возвращает x - y"
 
 #: functions.py:432
 msgid ""
@@ -657,7 +643,7 @@ msgstr "Копировать"
 
 #: toolbars.py:122
 msgid "<ctrl>c"
-msgstr ""
+msgstr "<ctrl>c"
 
 #: toolbars.py:126
 msgid "Cut"
@@ -665,7 +651,7 @@ msgstr "Вырезать"
 
 #: toolbars.py:129
 msgid "<ctrl>x"
-msgstr ""
+msgstr "<ctrl>x"
 
 #: toolbars.py:137
 msgid "Paste"
@@ -680,9 +666,8 @@ msgid "Square root"
 msgstr "Квадратный корень"
 
 #: toolbars.py:157
-#, fuzzy
 msgid "Inverse"
-msgstr "Обратный"
+msgstr "Инверсия"
 
 #: toolbars.py:164
 msgid "e to the power x"
@@ -762,16 +747,15 @@ msgstr "e"
 
 #: toolbars.py:269
 msgid "γ"
-msgstr ""
+msgstr "y"
 
 #: toolbars.py:272
 msgid "φ"
-msgstr ""
+msgstr "φ"
 
 #: toolbars.py:279
-#, fuzzy
 msgid "Plot"
-msgstr "Нанести на график"
+msgstr "Построить график"
 
 #: toolbars.py:286
 msgid "Degrees"
@@ -782,13 +766,12 @@ msgid "Radians"
 msgstr "Радианы"
 
 #: toolbars.py:291
-#, fuzzy
 msgid "Degrees / Radians"
-msgstr "Градусы / радианы"
+msgstr "Градусы / Радианы"
 
 #: toolbars.py:300
 msgid "Exponent / Scientific notation"
-msgstr ""
+msgstr "Экспонента / Научное обозначение"
 
 #: toolbars.py:310
 msgid "Number of shown digits"
@@ -797,151 +780,3 @@ msgstr "Количество показываемых знаков"
 #: toolbars.py:320
 msgid "Integer formatting base"
 msgstr ""
-
-#~ msgid "Change view between own and all equations"
-#~ msgstr "Сменить вид между своими и всеми уравнениями"
-
-#~ msgid "Show history"
-#~ msgstr "Показать историю"
-
-#~ msgid "Change view between history and variables"
-#~ msgstr "Сменить вид между историей и переменными"
-
-#~ msgid "Enter"
-#~ msgstr "Ввести"
-
-#~ msgid "Available functions:"
-#~ msgstr "Доступные функции:"
-
-#, python-format
-#~ msgid "level: %d, ofs %d"
-#~ msgstr "уровень: %d, отступ %d"
-
-#, python-format
-#~ msgid "Invalid number of arguments (%d instead of %d)"
-#~ msgstr "Неверное количество аргументов функции (%d вместо %d)"
-
-#, python-format
-#~ msgid "function takes %d args"
-#~ msgstr "функция требует %d аргументов"
-
-#, python-format
-#~ msgid "Unable to parse argument %d: '%s'"
-#~ msgstr "Не могу применить аргумент %d: '%s'"
-
-#, python-format
-#~ msgid "Function error: %s"
-#~ msgstr "Ошибка функции: %s"
-
-#~ msgid "Left parenthesis unexpected"
-#~ msgstr "Лишняя левая скобка"
-
-#~ msgid "Parse error (right parenthesis)"
-#~ msgstr "Ошибка чтения (нет правой скобки)"
-
-#~ msgid "Right parenthesis unexpected"
-#~ msgstr "Лишняя закрывающая скобка"
-
-#~ msgid "Parse error (right parenthesis, no left_val)"
-#~ msgstr "Ошибка чтения (правая скобка, нет left_val)"
-
-#~ msgid "Parse error (right parenthesis, no level to close)"
-#~ msgstr "Ошибка чтения (лишняя закрывающая скобка)"
-
-#, fuzzy
-#~ msgid "Number not expected"
-#~ msgstr "Число не ожидалось"
-
-#~ msgid "Operator not expected"
-#~ msgstr "Неверный оператор"
-
-#~ msgid "Parse error: number or variable expected"
-#~ msgstr "Ошибка разбора: ожидается число или переменная"
-
-#~ msgid "Number or variable expected"
-#~ msgstr "Ожидалось число или переменная"
-
-#~ msgid "Invalid operator"
-#~ msgstr "Неверный оператор"
-
-#~ msgid "Operator expected"
-#~ msgstr "Оператор пропущен"
-
-#~ msgid "_parse(): returning None"
-#~ msgstr "_parse(): возвращаю None"
-
-#~ msgid "functions(), return a list of all the functions that are defined"
-#~ msgstr "functions(), возвращает список всех определенных функций"
-
-#~ msgid "operators"
-#~ msgstr "operators"
-
-#~ msgid "operators(), return a list of the operators that are defined"
-#~ msgstr "operators(), возвращает список всех определенных операторов"
-
-#~ msgid "plot"
-#~ msgstr "plot"
-
-#~ msgid "square(x), return the square of x. Given by x * x"
-#~ msgstr "square(x), возвращает квадрат x. Вычисляется как x * x"
-
-#~ msgid "test"
-#~ msgstr "test"
-
-#~ msgid "variables(), return a list of the variables that are currently defined"
-#~ msgstr "variables(), возвращает список определенных переменных"
-
-#~ msgid "Constants"
-#~ msgstr "Константы"
-
-#~ msgid "Format"
-#~ msgstr "Формат"
-
-#~ msgid "Type error"
-#~ msgstr "Ошибка типа"
-
-#, python-format
-#~ msgid "variable %s not defined"
-#~ msgstr "переменная %s неопределена"
-
-#, python-format
-#~ msgid "Function '%s' returned %s"
-#~ msgstr "Функция '%s' вернула %s"
-
-#, python-format
-#~ msgid "Variable '%s' undefined"
-#~ msgstr "Переменная '%s' неопределена"
-
-#~ msgid "Parse error: ')' expected"
-#~ msgstr "Ошибка чтения: ожидалась ')'"
-
-#~ msgid "Error"
-#~ msgstr "Ошибка"
-
-#~ msgid "Unable to parse range"
-#~ msgstr "Не могу определить интервал"
-
-#, python-format
-#~ msgid "Reading from journal (%s)"
-#~ msgstr "Чтение из журнала (%s)"
-
-#~ msgid "Unable to determine version"
-#~ msgstr "Не могу определить версию"
-
-#, python-format
-#~ msgid "Reading journal entry (version %s)"
-#~ msgstr "Чтение записи из журнала (версия %s)"
-
-#, python-format
-#~ msgid "State line invalid (%s)"
-#~ msgstr "Неправильная строка состояния (%s)"
-
-#, python-format
-#~ msgid "Unable to read journal entry, unknown version (%s)"
-#~ msgstr "Не могу прочитать запись из журнала, неизвестная версия (%s)"
-
-#~ msgid "thousand_sep"
-#~ msgstr "."
-
-#~ msgid "fraction_sep"
-#~ msgstr ","

@@ -1,3 +1,14 @@
+44
+
+* License changes (Gonzalo Odiard, Aneesh Dogra),
+* Remove suspicious code (Robert Antoni Buj Gelonch),
+* Remove deprecated MANIFEST (James Cameron),
+* New and updated translations (Chris Leonard et al),
+* Remove insignificant zeros in result (Tymon Radzik),
+* Fix missing sign of result less than zero #4936 (Lam Nguyen),
+* Block redefinition of constants #2698 (Ezequiel Pereira Lopez),
+* Port to GTK+ 3 (György Balló),
+
 31
 
 * Improve toolbar design (Gary C. Martin)

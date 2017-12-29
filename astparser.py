@@ -17,9 +17,11 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
+import sys
 import types
 import re
 import inspect
+import importlib
 import copy
 import logging
 import decimal
@@ -323,9 +325,9 @@ class AstParser:
         plugins = ('functions', 'constants')
         for plugin in plugins:
             try:
-                exec('import %s' % plugin)
-                exec('_mod = %s' % plugin)
-                items = inspect.getmembers(_mod)
+                print >>sys.stderr, 'importing ' + plugin
+                items = inspect.getmembers(importlib.import_module(plugin))
+                print >>sys.stderr, 'imported ' + plugin
                 self._load_plugin_items(items)
 
             except Exception, e:

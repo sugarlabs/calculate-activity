@@ -138,7 +138,7 @@ class MathLib:
                 return int(d)
             else:
                 return Decimal(s)
-        except Exception, inst:
+        except Exception:
             return None
 
     _BASE_FUNC_MAP = {

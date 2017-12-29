@@ -126,7 +126,7 @@ class ShareableActivity(activity.Activity):
 
     def _sa_shared_cb(self, activity):
         self._setup_shared_activity()
-        id = self._tubes_chan[telepathy.CHANNEL_TYPE_TUBES].OfferDBusTube(
+        self._tubes_chan[telepathy.CHANNEL_TYPE_TUBES].OfferDBusTube(
             IFACE, {})
 
     def _sa_joined_cb(self, activity):

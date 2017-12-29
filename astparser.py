@@ -17,7 +17,6 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-import sys
 import types
 import re
 import inspect
@@ -325,9 +324,7 @@ class AstParser:
         plugins = ('functions', 'constants')
         for plugin in plugins:
             try:
-                print >>sys.stderr, 'importing ' + plugin
                 items = inspect.getmembers(importlib.import_module(plugin))
-                print >>sys.stderr, 'imported ' + plugin
                 self._load_plugin_items(items)
 
             except Exception, e:
@@ -351,7 +348,7 @@ class AstParser:
         '''Set variable <name> to <value>, which could be a function too.'''
         name = unicode(name)
         if name in self._immutable_vars:
-            raise Exception, "Cannot redefine a constant"
+            raise Exception("Cannot redefine a constant")
             return False
         self._namespace[unicode(name)] = value
         if immutable:

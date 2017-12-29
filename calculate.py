@@ -117,7 +117,7 @@ class Equation:
         else:
             try:
                 l[2] = Decimal(l[2])
-            except Exception, inst:
+            except Exception:
                 pass
 
         self.set(l[0], l[1], l[2], XoColor(color_string=l[3]), l[4])
@@ -211,12 +211,14 @@ class Equation:
         # Add result
         if type(self.result) in (types.StringType, types.UnicodeType):
             resstr = str(self.result)
-            resstr = resstr.rstrip('0').rstrip('.') if '.' in resstr else resstr
+            resstr = resstr.rstrip('0').rstrip('.') \
+                if '.' in resstr else resstr
             buf.insert_with_tags(buf.get_end_iter(), resstr,
                                  tagsmallnarrow, tagjustright)
         elif is_error:
             resstr = str(self.result)
-            resstr = resstr.rstrip('0').rstrip('.') if '.' in resstr else resstr
+            resstr = resstr.rstrip('0').rstrip('.') \
+                if '.' in resstr else resstr
             buf.insert_with_tags(buf.get_end_iter(), resstr, tagsmallnarrow)
             range = self.result.get_range()
             eqnstart = buf.get_iter_at_offset(eqnoffset + range[0])
@@ -224,7 +226,8 @@ class Equation:
             buf.apply_tag(tagred, eqnstart, eqnend)
         elif not isinstance(self.result, SVGImage):
             resstr = self.ml.format_number(self.result)
-            resstr = str(resstr).rstrip('0').rstrip('.') if '.' in resstr else resstr
+            resstr = str(resstr).rstrip('0').rstrip('.') \
+                if '.' in resstr else resstr
             self.append_with_superscript_tags(buf, resstr, tagbigger,
                                               tagjustright)
 
@@ -277,7 +280,8 @@ class Equation:
         self.append_with_superscript_tags(buf, eqnstr, tagsmall)
 
         resstr = self.ml.format_number(self.result)
-        resstr = str(resstr).rstrip('0').rstrip('.') if '.' in resstr else resstr
+        resstr = str(resstr).rstrip('0').rstrip('.') \
+            if '.' in resstr else resstr
         if len(resstr) > 30:
             restag = tagsmall
         else:
@@ -479,7 +483,8 @@ class Calculate(ShareableActivity):
 
             if tree is None:
                 tree = self.parser.parse(eq.equation)
-            try: self.parser.set_var(eq.label, tree)
+            try:
+                self.parser.set_var(eq.label, tree)
             except Exception, e:
                 eq.result = ParseError(e.message, 0, "")
                 self.set_error_equation(eq)
@@ -684,7 +689,6 @@ class Calculate(ShareableActivity):
 
     def remove_character(self, dir):
         pos = self.text_entry.get_position()
-        str = self.text_entry.get_text()
         sel = self.text_entry.get_selection_bounds()
         if len(sel) == 0:
             if pos + dir <= len(self.text_entry.get_text()) and pos + dir >= 0:
@@ -835,7 +839,8 @@ class Calculate(ShareableActivity):
             if key in self.CTRL_KEYMAP:
                 f = self.CTRL_KEYMAP[key]
                 return f(self)
-        elif (event.get_state() & Gdk.ModifierType.SHIFT_MASK) and key in self.SHIFT_KEYMAP:
+        elif (event.get_state() & Gdk.ModifierType.SHIFT_MASK) and \
+                key in self.SHIFT_KEYMAP:
             f = self.SHIFT_KEYMAP[key]
             return f(self)
         elif unicode(key) in self.IDENTIFIER_CHARS:
@@ -949,7 +954,6 @@ class Calculate(ShareableActivity):
                 data.append(str(eq))
             self.send_message("sync", value=data)
         elif msg == "sync":
-            tmp = []
             self.clear_equations()
             for eq_str in value:
                 _logger.debug('receive_message: %s', str(eq_str))
@@ -971,7 +975,7 @@ class Calculate(ShareableActivity):
 
 def main():
     win = Gtk.Window(Gtk.WindowType.TOPLEVEL)
-    t = Calculate(win)
+    Calculate(win)
     Gtk.main()
     return 0
 

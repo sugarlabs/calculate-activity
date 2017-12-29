@@ -24,7 +24,6 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 from gi.repository import Gdk
 from gi.repository import Pango
-from sugar3.activity import activity
 import sugar3.profile
 from sugar3.graphics.combobox import ComboBox
 from toolbars import EditToolbar
@@ -66,7 +65,7 @@ class CalcLayout:
 
     def create_color(self, rf, gf, bf):
         return Gdk.Color(int(rf * 0xFFFF), int(gf * 0xFFFF),
-                             int(bf * 0xFFFF))
+                         int(bf * 0xFFFF))
 
     def create_button_data(self):
         """Create a list with button information. We need to do that here
@@ -138,6 +137,7 @@ class CalcLayout:
         self._toolbar_box = ToolbarBox()
         activity_button = ActivityToolbarButton(self._parent)
         self._toolbar_box.toolbar.insert(activity_button, 0)
+
         def append(icon_name, label, page, position):
             toolbar_button = ToolbarButton()
             toolbar_button.props.page = page
@@ -189,7 +189,7 @@ class CalcLayout:
 
 # Big - Table, 16 rows, 10 columns, homogeneously divided
         self.grid = Gtk.Grid()
-        self.grid.set_column_homogeneous (True)
+        self.grid.set_column_homogeneous(True)
         self.grid.set_row_spacing(0)
         self.grid.set_column_spacing(4)
 
@@ -233,7 +233,7 @@ class CalcLayout:
 
 # Left part: buttons
         self.pad = Gtk.Grid()
-        self.pad.set_column_homogeneous (True)
+        self.pad.set_column_homogeneous(True)
         self.pad.set_row_spacing(6)
         self.pad.set_column_spacing(6)
         self.create_button_data()
@@ -290,7 +290,8 @@ class CalcLayout:
 
 # Right part: history
         scrolled_window = Gtk.ScrolledWindow()
-        scrolled_window.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
+        scrolled_window.set_policy(Gtk.PolicyType.NEVER,
+                                   Gtk.PolicyType.AUTOMATIC)
 
         self.history_vbox = Gtk.VBox()
         self.history_vbox.set_homogeneous(False)
@@ -309,7 +310,7 @@ class CalcLayout:
         self.grid.attach(scrolled_window, 7, 7, 4, 19)
 
         Gdk.Screen.get_default().connect('size-changed',
-                                             self._configure_cb)
+                                         self._configure_cb)
 
     def _configure_cb(self, event):
         # Maybe redo layout

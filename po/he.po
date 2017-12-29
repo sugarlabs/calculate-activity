@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2016-11-21 07:38+0000\n"
+"POT-Creation-Date: 2017-03-24 17:39+1100\n"
+"PO-Revision-Date: 2017-04-23 20:13+0000\n"
 "Last-Translator: Yaron <sh.yaron@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: he\n"
@@ -16,351 +16,220 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1479713880.000000\n"
+"X-POOTLE-MTIME: 1492978420.000000\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Calculate"
 msgstr "חישוב"
 
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid ""
-"This is the place to get the answer to a quick problem, but that is not the "
-"limit! You can also explore Algebra, Trigonometry, Boolean and more!"
-msgstr ""
-"זה המקום לקבל בו תשובה לבעיה פשוטה, אבל זה לא נגמר שם! ניתן גם לחקור אלגברה, "
-"טריגונומטריה, בוליאנים ועוד!"
-
-#: astparser.py:40
-msgid ""
-"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
-"range from a to b"
-msgstr ""
-"שרטוט(משוואה, משתנים=-א..ב), שרטוט המשוואה עם המשתנה בטווח שבין א׳ לבין ב׳"
-
-#: astparser.py:59
-#, python-format
-msgid "Parse error at %d"
-msgstr "שגיאת פענוח ב־%d"
-
-#: astparser.py:71 astparser.py:83
-#, python-format
-msgid "Error at %d"
-msgstr "שגיאה ב־%d"
-
-#: astparser.py:94
-msgid "This is just a test topic, use help(index) for the index"
-msgstr "זה הוא רק נושא לדוגמה, יש להשתמש בפקודה עזרה(מפתח) כדי לקבל מפתח"
-
-#: astparser.py:106
-msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr ""
-"ניתן להשתמש בפקודה עזרה(בדיקה)‎ לקבלת עזרה על ‚בדיקה‘, או בפקודה עזרה(מפתח)‎ "
-"לקבלת המפתח"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:109
-msgid "index"
-msgstr "מפתח"
-
-#: astparser.py:109
-msgid "topics"
-msgstr "נושאים"
-
-#: astparser.py:110
-msgid "Topics"
-msgstr "נושאים"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:118
-msgid "variables"
-msgstr "משתנים"
-
-#: astparser.py:119
-msgid "Variables"
-msgstr "משתנים"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:125
-msgid "functions"
-msgstr "פונקציות"
-
-#: astparser.py:126
-msgid "Functions"
-msgstr "פונקציות"
-
-#: astparser.py:135
-#, python-format
-msgid "No help about '%s' available, use help(index) for the index"
-msgstr "אין מסמך עזרה לגבי ‚%s‘, יש להשתמש בפקודה עזרה(מפתח) כדי לקבל מפתח"
-
-#: astparser.py:459
-msgid "help"
-msgstr "עזרה"
-
-#: astparser.py:466
-msgid "Recursion detected"
-msgstr "התגלתה רקורסיה"
-
-#: astparser.py:490
-#, python-format
-msgid "Function '%s' not defined"
-msgstr "הפונקציה ‚%s‘ אינה מוגדרת"
-
-#: astparser.py:492
-#, python-format
-msgid "Variable '%s' not defined"
-msgstr "המשתנה ‚%s‘ אינו מוגדר"
-
-#: astparser.py:502
-#, python-format
-msgid "Attribute '%s' does not exist"
-msgstr "המאפיין ‚%s‘ אינו קיים"
-
-#: astparser.py:596
-msgid "Parse error"
-msgstr "שגיאת פענוח"
-
-#: astparser.py:601
-msgid "Multiple statements not supported"
-msgstr "אין תמיכה בריבוי ביטויים"
-
-#: astparser.py:625
-msgid "Internal error"
-msgstr "שגיאה פנימית"
-
-#: calculate.py:109
-#, python-format
-msgid "Equation.parse() string invalid (%s)"
-msgstr "Equation.parse()‎ מחרוזת שגויה (%s)"
-
-#: calculate.py:483
-msgid "Can not assign label: will cause recursion"
-msgstr "לא ניתן להקצות תווית: עשוי לגרום לרקורסיה"
-
-#: calculate.py:571
-#, python-format
-msgid "Writing to journal (%s)"
-msgstr "כתיבה ליומן (%s)"
-
-#: calculate.py:865
-msgid "button_pressed(): invalid type"
-msgstr "button_pressed()‎: סוג שגוי"
-
 #: functions.py:35
 msgid "add"
-msgstr "הוספה"
+msgstr "add"
 
 #: functions.py:36
 msgid "abs"
-msgstr "ערך מוחלט"
+msgstr "abs"
 
 #: functions.py:37
-#, fuzzy
 msgid "acos"
 msgstr "acos"
 
 #: functions.py:38
-#, fuzzy
 msgid "acosh"
 msgstr "acosh"
 
 #: functions.py:39
-#, fuzzy
 msgid "asin"
 msgstr "asin"
 
 #: functions.py:40
-#, fuzzy
 msgid "asinh"
 msgstr "asinh"
 
 #: functions.py:41
-#, fuzzy
 msgid "atan"
 msgstr "atan"
 
 #: functions.py:42
-#, fuzzy
 msgid "atanh"
 msgstr "atanh"
 
 #: functions.py:43
 msgid "and"
-msgstr ""
+msgstr "and"
 
 #: functions.py:44
 msgid "b10bin"
-msgstr ""
+msgstr "b10bin"
 
 #: functions.py:45
 msgid "ceil"
-msgstr ""
+msgstr "ceil"
 
 #: functions.py:46
-#, fuzzy
 msgid "cos"
 msgstr "cos"
 
 #: functions.py:47
-#, fuzzy
 msgid "cosh"
 msgstr "cosh"
 
 #: functions.py:48
 msgid "div"
-msgstr "חילוק"
+msgstr "div"
 
 #: functions.py:49
 msgid "gcd"
-msgstr ""
+msgstr "gcd"
 
 #: functions.py:50
-#, fuzzy
 msgid "exp"
 msgstr "exp"
 
 #: functions.py:51
-#, fuzzy
 msgid "factorial"
-msgstr "עצרת"
+msgstr "factorial"
 
 #: functions.py:52
-#, fuzzy
-msgid "fac"
-msgstr "fac"
+msgid "factorize"
+msgstr "factorize"
 
 #: functions.py:53
-#, fuzzy
-msgid "factorize"
-msgstr "עצרת"
+msgid "floor"
+msgstr "floor"
 
 #: functions.py:54
-msgid "floor"
-msgstr ""
+msgid "inv"
+msgstr "inv"
 
 #: functions.py:55
-msgid "inv"
-msgstr ""
+msgid "is_int"
+msgstr "is_int"
 
 #: functions.py:56
-msgid "is_int"
-msgstr ""
+msgid "is_prime"
+msgstr "is_prime"
 
 #: functions.py:57
 msgid "ln"
-msgstr ""
+msgstr "ln"
 
 #: functions.py:58
 msgid "log10"
-msgstr ""
+msgstr "log10"
 
 #: functions.py:59
 msgid "mul"
-msgstr ""
+msgstr "mul"
 
 #: functions.py:60
 msgid "or"
-msgstr ""
+msgstr "or"
 
 #: functions.py:61
 msgid "rand_float"
-msgstr ""
+msgstr "rand_float"
 
 #: functions.py:62
 msgid "rand_int"
-msgstr ""
+msgstr "rand_int"
 
 #: functions.py:63
 msgid "round"
-msgstr ""
+msgstr "round"
 
 #: functions.py:64
-#, fuzzy
 msgid "sin"
 msgstr "sin"
 
 #: functions.py:65
-#, fuzzy
 msgid "sinh"
 msgstr "sinh"
 
 #: functions.py:66
-#, fuzzy
 msgid "sinc"
 msgstr "sinc"
 
 #: functions.py:67
 msgid "sqrt"
-msgstr "שורש ריבועי"
+msgstr "sqrt"
 
 #: functions.py:68
 msgid "sub"
-msgstr ""
+msgstr "sub"
 
 #: functions.py:69
-#, fuzzy
 msgid "square"
-msgstr "ריבוע"
+msgstr "square"
 
 #: functions.py:70
-#, fuzzy
 msgid "tan"
 msgstr "tan"
 
 #: functions.py:71
-#, fuzzy
 msgid "tanh"
 msgstr "tanh"
 
 #: functions.py:72
 msgid "xor"
-msgstr ""
+msgstr "xor"
 
-#: functions.py:112
+#: functions.py:119
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
-msgstr "מחזיר את הערך המוחלט של x, כלומר הערך בסימן חיובי עבור מספרים שליליים"
+msgstr ""
+"abs(x), מחזירה את הערך המוחלט של x, כלומר הערך בסימן חיובי עבור מספרים "
+"שליליים"
 
-#: functions.py:117
-#, fuzzy
+#: functions.py:124
+msgid "acos(x) only defined for x E [-1,1]"
+msgstr "acos(x) מוגדרת רק עבור x בטווח [-1,1]"
+
+#: functions.py:128
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
 msgstr ""
-"asin(x), החזר את הארקסינוס של x. זהו הזוית עבורו ערך הסינוס הוא x. מוגדר "
-"עבור -1 <= x <= 1"
+"asin(x), מחזירה את הארקוסינוס של x. זו הזוית עבורה ערך הקוסינוס הוא x. מוגדר "
+"עבור ‎-1 <= x < 1"
 
-#: functions.py:123
+#: functions.py:135
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
 msgstr ""
+"acosh(x), מחזירה את הארקסינוס ההיפרבולי של x. זהו ערך ה־y שעבורו הקוסינוס "
+"ההיפרבולי הוא x."
 
-#: functions.py:129
+#: functions.py:142
 msgid ""
-"And(x, y), logical and. Returns True if x and y are True, else returns False"
+"And(x, y), logical and. Returns True if x and y are True,else returns False"
 msgstr ""
+"And(x, y), פעולת וגם לוגית. מחזירה True אם x ו־y הם ביטויי True, אחרת מחזירה "
+"False"
 
-#: functions.py:136
+#: functions.py:151
 msgid "add(x, y), return x + y"
-msgstr ""
+msgstr "add(x, y), מחזירה x + y"
 
-#: functions.py:141
-#, fuzzy
+#: functions.py:156
+msgid "asin(x) only defined for x E [-1,1]"
+msgstr "asin(x) מוגדרת רק עבור x בטווח [-1,1]"
+
+#: functions.py:159
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
 msgstr ""
-"asin(x), החזר את הארקסינוס של x. זהו הזוית עבורו ערך הסינוס הוא x. מוגדר "
-"עבור -1 <= x <= 1"
+"asin(x), מחזירה את הארקסינוס של x. זו הזווית שעבורה הסינוס הוא x. מוגדרת "
+"עבור ‎-1 <= x <= 1"
 
-#: functions.py:147
+#: functions.py:166
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
 msgstr ""
 
-#: functions.py:153
+#: functions.py:173
 #, fuzzy
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
@@ -369,151 +238,156 @@ msgstr ""
 "atan(x), החזר את ערך הארק-טנגנס של x. זהו הזוית עבורו ערך הטנגנס הוא x. "
 "מוגדר לכל x."
 
-#: functions.py:159
+#: functions.py:180
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
 msgstr ""
 
-#: functions.py:171
-msgid "Number does not look binary in base 10"
-msgstr ""
+#: functions.py:191
+msgid "Number does not look binary."
+msgstr "המספר לא נראה בינרי."
 
-#: functions.py:178
+#: functions.py:199
 msgid ""
-"b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
-"(10111) = 23,"
+"b10bin(x), interpret a number written in base 10 as binary, e.g.: "
+"b10bin(10111) = 23,"
 msgstr ""
 
-#: functions.py:183
+#: functions.py:205
 msgid "ceil(x), return the smallest integer larger than x."
 msgstr ""
 
-#: functions.py:188
+#: functions.py:211
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr ""
-"cos(x), החזר את ערך הקוסינוס של x. זהו קואורדינטת ה-x על מעגל היחידה בזוית "
-"x."
+"cos(x), החזר את ערך הקוסינוס של x. זהו קואורדינטת ה-x על מעגל היחידה בזוית x."
 
-#: functions.py:194
-#, fuzzy
+#: functions.py:218
 msgid ""
-"cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+"cosh(x), return the hyperbolic cosine of x.Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
-"cosh(x), החזר את הקוסינוס היפרבולי של X. נתון על ידי (exp(x) + exp(-x)) / 2"
 
-#: functions.py:198
+#: functions.py:224 functions.py:319
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "אי אפשר לחלק באפס"
 
-#: functions.py:219
+#: functions.py:247
 msgid "Invalid argument"
 msgstr "ארגומנט שגוי"
 
-#: functions.py:222
+#: functions.py:250
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
 
-#: functions.py:227
+#: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
-msgstr ""
+msgstr "exp(x), מחזירה את המעריך הטבעי של x. מתוארת בתור e^x"
 
-#: functions.py:231
+#: functions.py:262
+msgid "Factorial(x) is only defined for integers x>=0"
+msgstr "Factorial(x) מוגדרת רק עבור מספרים שלמים וחיוביים x>=0"
+
+#: functions.py:265
 msgid "Factorial only defined for integers"
-msgstr ""
+msgstr "עצרת מוגדרת רק למספרים שלמים וחיוביים"
 
-#: functions.py:244
-#, fuzzy
+#: functions.py:278
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
-msgstr "fac(x), החזר את הערך של x עצרת. נתון על ידי x * (x - 1) * (x - 2) * ..."
+msgstr ""
+"factorial(n), מחזירה את העצרת של n. מתוארת בתור n * (n - 1) * (n - 2) * ...‎"
 
-#: functions.py:250
-msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-msgstr "fac(x), החזר את הערך של x עצרת. נתון על ידי x * (x - 1) * (x - 2) * ..."
-
-#: functions.py:283
+#: functions.py:314
 msgid "floor(x), return the largest integer smaller than x."
-msgstr ""
+msgstr "floor(x), מחזירה את המספר החיובי השלם הגדול ביותר שקטן מ־x."
 
-#: functions.py:287
+#: functions.py:321
 msgid "inv(x), return the inverse of x, which is 1 / x"
-msgstr ""
+msgstr "inv(x), מחזירה את ההופכי של x, שהוא 1 / x"
 
-#: functions.py:309 functions.py:318
+#: functions.py:356
+msgid "Argument must be int"
+msgstr "הארגומנט חייב להיות שלם וחיובי"
+
+#: functions.py:358
+msgid "Prime numbers is defined for natural numbers"
+msgstr "מספרים ראשוניים מוגדרים למספרים טבעיים"
+
+#: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
-msgstr ""
+msgstr "Logarithm(x) מוגדר רק עבור x > 0"
 
-#: functions.py:311
+#: functions.py:370
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
 msgstr ""
 
-#: functions.py:320
+#: functions.py:380
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
 
-#: functions.py:327
+#: functions.py:388
 msgid "Can only calculate x modulo <integer>"
 msgstr ""
 
-#: functions.py:329
+#: functions.py:390
 msgid ""
-"mod(x, y), return the modulus of x with respect to y. This is the remainder "
+"mod(x, y), return the modulus of x with respect to y.This is the remainder "
 "after dividing x by y."
 msgstr ""
 
-#: functions.py:337
+#: functions.py:399
 msgid "mul(x, y), return x * y"
-msgstr ""
+msgstr "mul(x, y), מחזירה x * y"
 
-#: functions.py:341
+#: functions.py:404
 msgid "negate(x), return -x"
-msgstr ""
+msgstr "negate(x), מחזירה ‎-x"
 
-#: functions.py:346
+#: functions.py:410
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
 
-#: functions.py:361
+#: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
 msgstr ""
 
-#: functions.py:366
+#: functions.py:433
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
 msgstr ""
 
-#: functions.py:371
+#: functions.py:439
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
 
-#: functions.py:376
+#: functions.py:445
 msgid "round(x), return the integer nearest to x."
 msgstr ""
 
-#: functions.py:382 functions.py:390
+#: functions.py:452 functions.py:461
 msgid "Bitwise operations only apply to integers"
 msgstr ""
 
-#: functions.py:384
+#: functions.py:454
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr ""
 
-#: functions.py:392
+#: functions.py:463
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr ""
 
-#: functions.py:397
+#: functions.py:469
 #, fuzzy
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
@@ -521,298 +395,416 @@ msgid ""
 msgstr ""
 "sin(x), החזר את ערך הסינוס של x. זהו קואורדינטת ה-y על מעגל היחדיה בזוית x."
 
-#: functions.py:403
+#: functions.py:476
 #, fuzzy
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
 "sinh(x), החזר את הסינוס היפרבולי של x. נתון על ידי (exp(x) - exp(-x)) / 2"
 
-#: functions.py:410
+#: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
 msgstr ""
 
-#: functions.py:415
+#: functions.py:491
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
 msgstr ""
 
-#: functions.py:420
+#: functions.py:497
 msgid "square(x), return x * x"
 msgstr ""
 
-#: functions.py:427
+#: functions.py:505
 msgid "sub(x, y), return x - y"
 msgstr ""
 
-#: functions.py:432
+#: functions.py:511
 msgid ""
 "tan(x), return the tangent of x. This is the slope of the line from the "
 "origin of the unit circle to the point on the unit circle defined by the "
 "angle x. Given by sin(x) / cos(x)"
 msgstr ""
 
-#: functions.py:439
+#: functions.py:519
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr ""
 
-#: functions.py:444
+#: functions.py:525
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
 msgstr ""
 
-#: layout.py:75
-#, fuzzy
-msgid "Clear"
-msgstr "נקה"
+#: toolbars.py:57
+msgid "Help"
+msgstr "עזרה"
 
-#: layout.py:105 layout.py:145
-#, fuzzy
-msgid "Edit"
-msgstr "עריכה"
+#: toolbars.py:132
+msgid "Copy"
+msgstr "העתקה"
 
-#: layout.py:110 layout.py:146
-#, fuzzy
-msgid "Algebra"
-msgstr "אלגברה"
+#: toolbars.py:133
+msgid "<ctrl>c"
+msgstr ""
 
-#: layout.py:115 layout.py:147
-#, fuzzy
-msgid "Trigonometry"
-msgstr "טריגונומטריה"
+#: toolbars.py:137
+msgid "Cut"
+msgstr "גזירה"
 
-#: layout.py:120 layout.py:148
-#, fuzzy
-msgid "Boolean"
-msgstr "לוגיקה בוליאנית"
+#: toolbars.py:140
+msgid "<ctrl>x"
+msgstr ""
 
-#: layout.py:125 layout.py:149
-#, fuzzy
-msgid "Miscellaneous"
-msgstr "שונות"
+#: toolbars.py:148
+msgid "Paste"
+msgstr "הדבקה"
 
-#: layout.py:178
-#, fuzzy
-msgid "Label:"
-msgstr "תווית:"
+#: toolbars.py:160
+msgid "Square"
+msgstr "ריבוע"
 
-#: layout.py:223
-#, fuzzy
-msgid "All equations"
-msgstr "כל המשוואות"
+#: toolbars.py:167
+msgid "Square root"
+msgstr "שורש ריבועי"
 
-#: layout.py:224
-#, fuzzy
-msgid "My equations"
-msgstr "המשוואות שלי"
+#: toolbars.py:174
+msgid "Inverse"
+msgstr ""
 
-#: layout.py:225
-#, fuzzy
-msgid "Show variables"
-msgstr "הראה משתנים"
+#: toolbars.py:183
+msgid "e to the power x"
+msgstr "e בחזקת x"
+
+#: toolbars.py:190
+msgid "x to the power y"
+msgstr "x בחזקת y"
+
+#: toolbars.py:197
+msgid "Natural logarithm"
+msgstr "לוגריתם טבעי"
+
+#: toolbars.py:206
+msgid "Factorial"
+msgstr "עצרת"
+
+#: toolbars.py:220
+msgid "Sine"
+msgstr "סינוס"
+
+#: toolbars.py:225
+msgid "Cosine"
+msgstr "קוסינוס"
+
+#: toolbars.py:230
+msgid "Tangent"
+msgstr "טנגנס"
+
+#: toolbars.py:237
+msgid "Arc sine"
+msgstr "סינוס הופכי"
+
+#: toolbars.py:242
+msgid "Arc cosine"
+msgstr "קוסינוס הופכי"
+
+#: toolbars.py:247
+msgid "Arc tangent"
+msgstr "טנגנס הופכי"
+
+#: toolbars.py:254
+msgid "Hyperbolic sine"
+msgstr "סינוס היפרבולי"
+
+#: toolbars.py:259
+msgid "Hyperbolic cosine"
+msgstr "קוסינוס היפרבולי"
+
+#: toolbars.py:264
+msgid "Hyperbolic tangent"
+msgstr "טנגנס היפרבולי"
+
+#: toolbars.py:277
+msgid "Logical and"
+msgstr "וגם לוגי"
+
+#: toolbars.py:282
+msgid "Logical or"
+msgstr "או לוגי"
+
+#: toolbars.py:293
+msgid "Equals"
+msgstr "שווה"
+
+#: toolbars.py:297
+msgid "Not equals"
+msgstr "לא שווה"
+
+#: toolbars.py:310
+msgid "Pi"
+msgstr "Pi"
+
+#: toolbars.py:316
+msgid "e"
+msgstr "e"
+
+#: toolbars.py:320
+msgid "γ"
+msgstr "γ"
+
+#: toolbars.py:325
+msgid "φ"
+msgstr "φ"
+
+#: toolbars.py:333
+msgid "Plot"
+msgstr "שרטוט"
+
+#: toolbars.py:338
+msgid "Degrees"
+msgstr "מעלות"
+
+#: toolbars.py:339
+msgid "Radians"
+msgstr "רדיאנים"
+
+#: toolbars.py:344
+msgid "Degrees / Radians"
+msgstr "מעלות / רדיאנים"
+
+#: toolbars.py:354
+msgid "Exponent / Scientific notation"
+msgstr ""
+
+#: toolbars.py:365
+msgid "Number of shown digits"
+msgstr "מספר הספרות שמופיעות"
+
+#: toolbars.py:377
+msgid "Integer formatting base"
+msgstr ""
+
+#: astparser.py:39
+msgid ""
+"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
+"range from a to b"
+msgstr ""
+"שרטוט(משוואה, משתנים=-א..ב), שרטוט המשוואה עם המשתנה בטווח שבין א׳ לבין ב׳"
+
+#: astparser.py:61
+#, python-format
+msgid "Parse error at %d"
+msgstr "שגיאת פענוח ב־%d"
+
+#: astparser.py:75 astparser.py:109
+#, python-format
+msgid "Error at '%s', position: %d"
+msgstr ""
+
+#: astparser.py:88
+msgid "Syntax Error."
+msgstr "שגיאת תחביר."
+
+#: astparser.py:95
+msgid "Syntax Error!"
+msgstr "שגיאת תחביר!"
+
+#: astparser.py:135
+msgid "This is just a test topic, use help(index) for the index"
+msgstr "זה הוא רק נושא לדוגמה, יש להשתמש בפקודה עזרה(מפתח) כדי לקבל מפתח"
+
+#: astparser.py:148
+msgid "Use help(test) for help about 'test', or help(index) for the index"
+msgstr ""
+"ניתן להשתמש בפקודה עזרה(בדיקה)‎ לקבלת עזרה על ‚בדיקה‘, או בפקודה עזרה(מפתח)‎ "
+"לקבלת המפתח"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:152
+msgid "index"
+msgstr "מפתח"
+
+#: astparser.py:152
+msgid "topics"
+msgstr "נושאים"
+
+#: astparser.py:153
+msgid "Topics"
+msgstr "נושאים"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:161
+msgid "variables"
+msgstr "משתנים"
+
+#: astparser.py:162
+msgid "Variables"
+msgstr "משתנים"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:168
+msgid "functions"
+msgstr "פונקציות"
+
+#: astparser.py:169
+msgid "Functions"
+msgstr "פונקציות"
+
+#: astparser.py:178
+#, python-format
+msgid "No help about '%s' available, use help(index) for the index"
+msgstr "אין מסמך עזרה לגבי ‚%s‘, יש להשתמש בפקודה עזרה(מפתח) כדי לקבל מפתח"
+
+#: astparser.py:508
+msgid "help"
+msgstr "עזרה"
+
+#: astparser.py:515
+msgid "Recursion detected"
+msgstr "התגלתה רקורסיה"
+
+#: astparser.py:539
+#, python-format
+msgid "Function '%s' not defined"
+msgstr "הפונקציה ‚%s‘ אינה מוגדרת"
+
+#: astparser.py:541
+#, python-format
+msgid "Variable '%s' not defined"
+msgstr "המשתנה ‚%s‘ אינו מוגדר"
+
+#: astparser.py:551
+#, python-format
+msgid "Attribute '%s' does not exist"
+msgstr "המאפיין ‚%s‘ אינו קיים"
+
+#: astparser.py:654
+msgid "Parse error"
+msgstr "שגיאת פענוח"
+
+#: astparser.py:659
+msgid "Multiple statements not supported"
+msgstr "אין תמיכה בריבוי ביטויים"
+
+#: astparser.py:683
+msgid "Internal error"
+msgstr "שגיאה פנימית"
 
 #. TRANS: multiplication symbol (default: '×')
-#: mathlib.py:82
+#: mathlib.py:84
 #, fuzzy
 msgid "mul_sym"
 msgstr "*"
 
 #. TRANS: division symbol (default: '÷')
-#: mathlib.py:87
+#: mathlib.py:89
 #, fuzzy
 msgid "div_sym"
 msgstr "/"
 
 #. TRANS: equal symbol (default: '=')
-#: mathlib.py:92
+#: mathlib.py:94
 msgid "equ_sym"
 msgstr ""
 
-#: mathlib.py:216
+#: mathlib.py:227
 #, fuzzy
 msgid "Undefined"
 msgstr "לא מוגדר"
 
-#: mathlib.py:226
+#: mathlib.py:237
 #, fuzzy
 msgid "Error: unsupported type"
 msgstr "שגיאה: סוג משתנה לא נתמך"
 
-#: toolbars.py:53
+#: layout.py:113
 #, fuzzy
-msgid "Help"
-msgstr "עזרה"
+msgid "Clear"
+msgstr "נקה"
 
-#: toolbars.py:121
+#: layout.py:151 layout.py:195
 #, fuzzy
-msgid "Copy"
-msgstr "העתק"
+msgid "Edit"
+msgstr "עריכה"
 
-#: toolbars.py:122
-msgid "<ctrl>c"
-msgstr ""
+#: layout.py:156 layout.py:196
+msgid "Algebra"
+msgstr "אלגברה"
 
-#: toolbars.py:126
+#: layout.py:161 layout.py:198
+msgid "Trigonometry"
+msgstr "טריגונומטריה"
+
+#: layout.py:166 layout.py:199
 #, fuzzy
-msgid "Cut"
-msgstr "גזור"
+msgid "Boolean"
+msgstr "לוגיקה בוליאנית"
 
-#: toolbars.py:129
-msgid "<ctrl>x"
-msgstr ""
+#: layout.py:175 layout.py:200
+msgid "Miscellaneous"
+msgstr "שונות"
 
-#: toolbars.py:137
+#: layout.py:229
+msgid "Label:"
+msgstr "תווית:"
+
+#: layout.py:278
 #, fuzzy
-msgid "Paste"
-msgstr "הדבק"
+msgid "All equations"
+msgstr "כל המשוואות"
 
-#: toolbars.py:147
+#: layout.py:279
 #, fuzzy
-msgid "Square"
-msgstr "ריבוע"
+msgid "My equations"
+msgstr "המשוואות שלי"
 
-#: toolbars.py:152
+#: layout.py:280
 #, fuzzy
-msgid "Square root"
-msgstr "שורש ריבועי"
+msgid "Show variables"
+msgstr "הראה משתנים"
 
-#: toolbars.py:157
-msgid "Inverse"
-msgstr ""
+#: calculate.py:109
+#, python-format
+msgid "Equation.parse() string invalid (%s)"
+msgstr "Equation.parse()‎ מחרוזת שגויה (%s)"
 
-#: toolbars.py:164
-msgid "e to the power x"
-msgstr "e בחזקת x"
+#: calculate.py:525
+msgid "Can not assign label: will cause recursion"
+msgstr "לא ניתן להקצות תווית: עשוי לגרום לרקורסיה"
 
-#: toolbars.py:169
-msgid "x to the power y"
-msgstr "x בחזקת y"
+#: calculate.py:620
+#, python-format
+msgid "Writing to journal (%s)"
+msgstr "כתיבה ליומן (%s)"
 
-#: toolbars.py:174
+#: calculate.py:932
+msgid "button_pressed(): invalid type"
+msgstr "button_pressed()‎: סוג שגוי"
+
+#~ msgid ""
+#~ "This is the place to get the answer to a quick problem, but that is not the "
+#~ "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
+#~ msgstr ""
+#~ "זה המקום לקבל בו תשובה לבעיה פשוטה, אבל זה לא נגמר שם! ניתן גם לחקור אלגברה, "
+#~ "טריגונומטריה, בוליאנים ועוד!"
+
+#, python-format
+#~ msgid "Error at %d"
+#~ msgstr "שגיאה ב־%d"
+
 #, fuzzy
-msgid "Natural logarithm"
-msgstr "לוגריתם טבעי"
+#~ msgid "fac"
+#~ msgstr "fac"
 
-#: toolbars.py:180
 #, fuzzy
-msgid "Factorial"
-msgstr "עצרת"
+#~ msgid ""
+#~ "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+#~ msgstr ""
+#~ "cosh(x), החזר את הקוסינוס היפרבולי של X. נתון על ידי (exp(x) + exp(-x)) / 2"
 
-#: toolbars.py:190
-#, fuzzy
-msgid "Sine"
-msgstr "סינוס"
-
-#: toolbars.py:194
-#, fuzzy
-msgid "Cosine"
-msgstr "קוסינוס"
-
-#: toolbars.py:198
-#, fuzzy
-msgid "Tangent"
-msgstr "טנגנס"
-
-#: toolbars.py:204
-#, fuzzy
-msgid "Arc sine"
-msgstr "סינוס הופכי"
-
-#: toolbars.py:208
-#, fuzzy
-msgid "Arc cosine"
-msgstr "קוסינוס הופכי"
-
-#: toolbars.py:212
-#, fuzzy
-msgid "Arc tangent"
-msgstr "טנגנס הופכי"
-
-#: toolbars.py:218
-#, fuzzy
-msgid "Hyperbolic sine"
-msgstr "סינוס היפרבולי"
-
-#: toolbars.py:222
-#, fuzzy
-msgid "Hyperbolic cosine"
-msgstr "קוסינוס היפרבולי"
-
-#: toolbars.py:226
-#, fuzzy
-msgid "Hyperbolic tangent"
-msgstr "טנגנס היפרבולי"
-
-#: toolbars.py:236
-#, fuzzy
-msgid "Logical and"
-msgstr "גם לוגי"
-
-#: toolbars.py:240
-#, fuzzy
-msgid "Logical or"
-msgstr "או לוגי"
-
-#: toolbars.py:250
-#, fuzzy
-msgid "Equals"
-msgstr "שווה"
-
-#: toolbars.py:253
-#, fuzzy
-msgid "Not equals"
-msgstr "לא שווה"
-
-#: toolbars.py:262
-#, fuzzy
-msgid "Pi"
-msgstr "Pi"
-
-#: toolbars.py:266
-#, fuzzy
-msgid "e"
-msgstr "e"
-
-#: toolbars.py:269
-msgid "γ"
-msgstr ""
-
-#: toolbars.py:272
-msgid "φ"
-msgstr ""
-
-#: toolbars.py:279
-msgid "Plot"
-msgstr ""
-
-#: toolbars.py:286
-#, fuzzy
-msgid "Degrees"
-msgstr "מעלות"
-
-#: toolbars.py:287
-#, fuzzy
-msgid "Radians"
-msgstr "רדיאנים"
-
-#: toolbars.py:291
-#, fuzzy
-msgid "Degrees / Radians"
-msgstr "במעלות / ברדיאנים"
-
-#: toolbars.py:300
-msgid "Exponent / Scientific notation"
-msgstr ""
-
-#: toolbars.py:310
-msgid "Number of shown digits"
-msgstr ""
-
-#: toolbars.py:320
-msgid "Integer formatting base"
-msgstr ""
+#~ msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
+#~ msgstr "fac(x), החזר את הערך של x עצרת. נתון על ידי x * (x - 1) * (x - 2) * ..."
 
 #, fuzzy
 #~ msgid "Show history"

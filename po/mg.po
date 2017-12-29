@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-08 00:33-0400\n"
+"POT-Creation-Date: 2017-03-24 17:39+1100\n"
 "PO-Revision-Date: 2017-03-16 04:44+0000\n"
 "Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,142 +18,9 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1489639496.000000\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Calculate"
 msgstr "Kajio"
-
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid ""
-"This is the place to get the answer to a quick problem, but that is not the "
-"limit! You can also explore Algebra, Trigonometry, Boolean and more!"
-msgstr ""
-
-#: astparser.py:40
-msgid ""
-"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
-"range from a to b"
-msgstr ""
-"plot(eqn, var=-a..b), manoritra ny fimira 'eqn' misy ova 'var' eo amin'ny "
-"lalaka manomboka amin'ny a ka hatramin'ny b"
-
-#: astparser.py:59
-#, python-format
-msgid "Parse error at %d"
-msgstr ""
-
-#: astparser.py:71 astparser.py:83
-#, python-format
-msgid "Error at %d"
-msgstr "Diso ao amin'ny %d"
-
-#: astparser.py:94
-msgid "This is just a test topic, use help(index) for the index"
-msgstr ""
-"Io dia lohateny andrana fotsiny, ampiasao ny fanampiana(fanondro) ho an'ny "
-"fanondro"
-
-#: astparser.py:106
-msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr ""
-"Ampiasao ny torohevitra(andrana) hahazoana torohevitra momba ny 'andrana', "
-"na torohevitra(fanondro) ho an'ny fanondro"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:109
-msgid "index"
-msgstr "fanondro"
-
-#: astparser.py:109
-#, fuzzy
-msgid "topics"
-msgstr "Ireo lohateny"
-
-#: astparser.py:110
-msgid "Topics"
-msgstr "Ireo lohateny"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:118
-msgid "variables"
-msgstr "ireo ova"
-
-#: astparser.py:119
-#, fuzzy
-msgid "Variables"
-msgstr "ireo ova"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:125
-msgid "functions"
-msgstr "Ireo lefa"
-
-#: astparser.py:126
-#, fuzzy
-msgid "Functions"
-msgstr "Ireo lefa"
-
-#: astparser.py:135
-#, python-format
-msgid "No help about '%s' available, use help(index) for the index"
-msgstr ""
-"Tsy misy fanampiana mommba ny ova '%s', ampiasao ny fanampiana(fanondro) ho "
-"an'ny fanondro"
-
-#: astparser.py:459
-#, fuzzy
-msgid "help"
-msgstr "Fanampiana"
-
-#: astparser.py:466
-msgid "Recursion detected"
-msgstr ""
-
-#: astparser.py:490
-#, python-format
-msgid "Function '%s' not defined"
-msgstr "Lefa '%s' tsy voafaritra"
-
-#: astparser.py:492
-#, python-format
-msgid "Variable '%s' not defined"
-msgstr "Ova '%s' tsy voafaritra"
-
-#: astparser.py:502
-#, python-format
-msgid "Attribute '%s' does not exist"
-msgstr ""
-
-#: astparser.py:596
-msgid "Parse error"
-msgstr "Parisa diso"
-
-#: astparser.py:601
-msgid "Multiple statements not supported"
-msgstr ""
-
-#: astparser.py:625
-msgid "Internal error"
-msgstr ""
-
-# string = chaîne = tandava
-#: calculate.py:109
-#, python-format
-msgid "Equation.parse() string invalid (%s)"
-msgstr "Fimira.parisa() tohitohy tsy mety (%s)"
-
-#: calculate.py:483
-msgid "Can not assign label: will cause recursion"
-msgstr ""
-
-#: calculate.py:571
-#, python-format
-msgid "Writing to journal (%s)"
-msgstr "Manoratra amin'ny firaketana (%s)"
-
-#: calculate.py:865
-msgid "button_pressed(): invalid type"
-msgstr "bokotra_tsindriana(): karazana tsy mety"
 
 #: functions.py:35
 msgid "add"
@@ -228,24 +95,24 @@ msgid "factorial"
 msgstr "Factoriel"
 
 #: functions.py:52
-msgid "fac"
-msgstr "fac"
-
-#: functions.py:53
 #, fuzzy
 msgid "factorize"
 msgstr "Factoriel"
 
-#: functions.py:54
+#: functions.py:53
 msgid "floor"
 msgstr ""
 
-#: functions.py:55
+#: functions.py:54
 msgid "inv"
 msgstr ""
 
-#: functions.py:56
+#: functions.py:55
 msgid "is_int"
+msgstr ""
+
+#: functions.py:56
+msgid "is_prime"
 msgstr ""
 
 #: functions.py:57
@@ -313,11 +180,15 @@ msgstr "tanh"
 msgid "xor"
 msgstr "xor"
 
-#: functions.py:112
+#: functions.py:119
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
 msgstr ""
 
-#: functions.py:117
+#: functions.py:124
+msgid "acos(x) only defined for x E [-1,1]"
+msgstr ""
+
+#: functions.py:128
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
@@ -325,25 +196,26 @@ msgstr ""
 "acos(x), manome ny arika kosinan'i x. Io dia ilay zoro manana kosina x. "
 "Voafaritra ho an'ny -1 <= x < 1"
 
-#: functions.py:123
+#: functions.py:135
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
 msgstr ""
 
-#: functions.py:129
-#, fuzzy
+#: functions.py:142
 msgid ""
-"And(x, y), logical and. Returns True if x and y are True, else returns False"
+"And(x, y), logical and. Returns True if x and y are True,else returns False"
 msgstr ""
-"and(x, y), and laojika. Manome valiny Marina raha marina x sy y, raha tsy "
-"izany dia manome valiny Diso"
 
-#: functions.py:136
+#: functions.py:151
 msgid "add(x, y), return x + y"
 msgstr ""
 
-#: functions.py:141
+#: functions.py:156
+msgid "asin(x) only defined for x E [-1,1]"
+msgstr ""
+
+#: functions.py:159
 #, fuzzy
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
@@ -352,13 +224,13 @@ msgstr ""
 "asin(x), manome ny arika sinan'i x. Io dia ilay zoro manana sina x. "
 "Voafaritra ho an'ny -1 <= x <= 1"
 
-#: functions.py:147
+#: functions.py:166
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
 msgstr ""
 
-#: functions.py:153
+#: functions.py:173
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
@@ -366,27 +238,27 @@ msgstr ""
 "atan(x), manome ny arika tanzantin'i x. Io dia ilay zoro manana tanzanty x. "
 "Voafaritra ho an'ny x rehetra"
 
-#: functions.py:159
+#: functions.py:180
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
 msgstr ""
 
-#: functions.py:171
-msgid "Number does not look binary in base 10"
+#: functions.py:191
+msgid "Number does not look binary."
 msgstr ""
 
-#: functions.py:178
+#: functions.py:199
 msgid ""
-"b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
-"(10111) = 23,"
+"b10bin(x), interpret a number written in base 10 as binary, e.g.: "
+"b10bin(10111) = 23,"
 msgstr ""
 
-#: functions.py:183
+#: functions.py:205
 msgid "ceil(x), return the smallest integer larger than x."
 msgstr ""
 
-#: functions.py:188
+#: functions.py:211
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
@@ -394,60 +266,65 @@ msgstr ""
 "cos(x), manome ny kosinan'i x. Io dia ilay fangitra x eo amin'ny ventim-"
 "paribolana amin'ny zoro x"
 
-#: functions.py:194
+#: functions.py:218
 msgid ""
-"cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+"cosh(x), return the hyperbolic cosine of x.Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
-"cosh(x), manome ny kosina hiperibaolikan'i x. Azo avy amin'ny (exp(x) + "
-"exp(-x)) / 2"
 
-#: functions.py:198
+#: functions.py:224 functions.py:319
 msgid "Can not divide by zero"
 msgstr ""
 
-#: functions.py:219
+#: functions.py:247
 msgid "Invalid argument"
 msgstr ""
 
-#: functions.py:222
+#: functions.py:250
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
 
-#: functions.py:227
+#: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
 msgstr "exp(x), manome ny fanatorahana natoralin'i x. Azo avy amin'ny e^x"
 
-#: functions.py:231
+#: functions.py:262
+msgid "Factorial(x) is only defined for integers x>=0"
+msgstr ""
+
+#: functions.py:265
 msgid "Factorial only defined for integers"
 msgstr ""
 
-#: functions.py:244
+#: functions.py:278
 #, fuzzy
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr ""
 "fac(x), manome ny fananon'i x. Azo avy amin'ny x * (x - 1) * (x - 2) * ..."
 
-#: functions.py:250
-msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-msgstr ""
-"fac(x), manome ny fananon'i x. Azo avy amin'ny x * (x - 1) * (x - 2) * ..."
-
-#: functions.py:283
+#: functions.py:314
 msgid "floor(x), return the largest integer smaller than x."
 msgstr ""
 
-#: functions.py:287
+#: functions.py:321
 msgid "inv(x), return the inverse of x, which is 1 / x"
 msgstr ""
 
-#: functions.py:309 functions.py:318
+#: functions.py:356
+msgid "Argument must be int"
+msgstr ""
+
+#: functions.py:358
+msgid "Prime numbers is defined for natural numbers"
+msgstr ""
+
+#: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
 msgstr ""
 
-#: functions.py:311
+#: functions.py:370
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
@@ -455,31 +332,31 @@ msgstr ""
 "ln(x), manome ny laogaritima natoralin'i x. Io dia ilay sanda manana "
 "fanatorahana exp() mira x. Voafaritra ho an'i x >= 0."
 
-#: functions.py:320
+#: functions.py:380
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
 
-#: functions.py:327
+#: functions.py:388
 msgid "Can only calculate x modulo <integer>"
 msgstr ""
 
-#: functions.py:329
+#: functions.py:390
 msgid ""
-"mod(x, y), return the modulus of x with respect to y. This is the remainder "
+"mod(x, y), return the modulus of x with respect to y.This is the remainder "
 "after dividing x by y."
 msgstr ""
 
-#: functions.py:337
+#: functions.py:399
 msgid "mul(x, y), return x * y"
 msgstr ""
 
-#: functions.py:341
+#: functions.py:404
 msgid "negate(x), return -x"
 msgstr ""
 
-#: functions.py:346
+#: functions.py:410
 #, fuzzy
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
@@ -487,37 +364,37 @@ msgstr ""
 "or(x, y), or laojika. Manome valiny Marina raha Marina x na/sy y, raha tsy "
 "izany dia manome valiny Diso"
 
-#: functions.py:361
+#: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
 msgstr ""
 
-#: functions.py:366
+#: functions.py:433
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
 msgstr ""
 
-#: functions.py:371
+#: functions.py:439
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
 
-#: functions.py:376
+#: functions.py:445
 msgid "round(x), return the integer nearest to x."
 msgstr ""
 
-#: functions.py:382 functions.py:390
+#: functions.py:452 functions.py:461
 msgid "Bitwise operations only apply to integers"
 msgstr ""
 
-#: functions.py:384
+#: functions.py:454
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr ""
 
-#: functions.py:392
+#: functions.py:463
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr ""
 
-#: functions.py:397
+#: functions.py:469
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
@@ -525,18 +402,18 @@ msgstr ""
 "sin(x), manome ny sinan'i x. Io dia ilay fangitra y amin'ny ventim-"
 "paribolana eo amin'ny zoro x"
 
-#: functions.py:403
+#: functions.py:476
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
 "sinh(x), manome ny sina hiperibaolikan'i x. Azo avy amin'ny (exp(x) - "
 "exp(-x)) / 2"
 
-#: functions.py:410
+#: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
 msgstr ""
 
-#: functions.py:415
+#: functions.py:491
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
@@ -544,15 +421,15 @@ msgstr ""
 "sqrt(x), manome ny faka toradroan'i x. Io ilay sanda manana toradroa mira x. "
 "Voafaritra ho an'ny x >= 0."
 
-#: functions.py:420
+#: functions.py:497
 msgid "square(x), return x * x"
 msgstr ""
 
-#: functions.py:427
+#: functions.py:505
 msgid "sub(x, y), return x - y"
 msgstr ""
 
-#: functions.py:432
+#: functions.py:511
 msgid ""
 "tan(x), return the tangent of x. This is the slope of the line from the "
 "origin of the unit circle to the point on the unit circle defined by the "
@@ -562,13 +439,13 @@ msgstr ""
 "fiandohan'ny faribolan'ny vaingan'isa hatramin'ny teboka eo amin'ny "
 "faribolan'ny vaingas'isa voafaritry ny zoro x. Omen'ny sin(x) / cos(x)"
 
-#: functions.py:439
+#: functions.py:519
 #, fuzzy
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr ""
 "sinh(x), mamerina ny tanzanty hiperibaolikan'i x. Omen'ny sinh(x) / cosh(x)"
 
-#: functions.py:444
+#: functions.py:525
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
@@ -576,214 +453,372 @@ msgstr ""
 "xor(x, y), logical xor. Miverina ho Marina raha toa ka Marina x (ary Diso y) "
 "na Marina y (ary Diso x), raha tsy izany dia miverina ho Diso"
 
-#: layout.py:75
-msgid "Clear"
-msgstr "Fafao"
-
-#: layout.py:105 layout.py:145
-msgid "Edit"
-msgstr "Amboary"
-
-#: layout.py:110 layout.py:146
-msgid "Algebra"
-msgstr "Aljebra"
-
-#: layout.py:115 layout.py:147
-msgid "Trigonometry"
-msgstr "Trigonometria"
-
-#: layout.py:120 layout.py:148
-msgid "Boolean"
-msgstr "Booleana"
-
-#: layout.py:125 layout.py:149
-msgid "Miscellaneous"
-msgstr "Tsy voasokajy"
-
-#: layout.py:178
-msgid "Label:"
-msgstr "Marika:"
-
-#: layout.py:223
-msgid "All equations"
-msgstr "Ireo lefa"
-
-#: layout.py:224
-msgid "My equations"
-msgstr "Ireo lefako"
-
-#: layout.py:225
-msgid "Show variables"
-msgstr "Asehoy ireo ova"
-
-#. TRANS: multiplication symbol (default: '×')
-#: mathlib.py:82
-msgid "mul_sym"
-msgstr "x"
-
-#. TRANS: division symbol (default: '÷')
-#: mathlib.py:87
-msgid "div_sym"
-msgstr ""
-
-#. TRANS: equal symbol (default: '=')
-#: mathlib.py:92
-msgid "equ_sym"
-msgstr ""
-
-#: mathlib.py:216
-msgid "Undefined"
-msgstr "Tsy voafaritra"
-
-#: mathlib.py:226
-msgid "Error: unsupported type"
-msgstr "Olana: karazana tsy zaka"
-
-#: toolbars.py:53
+#: toolbars.py:57
 msgid "Help"
 msgstr "Fanampiana"
 
-#: toolbars.py:121
+#: toolbars.py:132
 msgid "Copy"
 msgstr "Adikao"
 
-#: toolbars.py:122
+#: toolbars.py:133
 msgid "<ctrl>c"
 msgstr ""
 
-#: toolbars.py:126
+#: toolbars.py:137
 msgid "Cut"
 msgstr "Hetezo"
 
-#: toolbars.py:129
+#: toolbars.py:140
 msgid "<ctrl>x"
 msgstr ""
 
-#: toolbars.py:137
+#: toolbars.py:148
 msgid "Paste"
 msgstr "Apetaho"
 
-#: toolbars.py:147
+#: toolbars.py:160
 msgid "Square"
 msgstr "Carré"
 
-#: toolbars.py:152
+#: toolbars.py:167
 msgid "Square root"
 msgstr "Racine carrée"
 
-#: toolbars.py:157
+#: toolbars.py:174
 msgid "Inverse"
 msgstr "Ivohony"
 
-#: toolbars.py:164
+#: toolbars.py:183
 msgid "e to the power x"
 msgstr "e ho an'ny tanjaka x"
 
-#: toolbars.py:169
+#: toolbars.py:190
 msgid "x to the power y"
 msgstr "x ho an'ny tanjaka y"
 
-#: toolbars.py:174
+#: toolbars.py:197
 msgid "Natural logarithm"
 msgstr "Logaritma natoraly"
 
-#: toolbars.py:180
+#: toolbars.py:206
 msgid "Factorial"
 msgstr "Factoriel"
 
-#: toolbars.py:190
+#: toolbars.py:220
 msgid "Sine"
 msgstr "Sina"
 
-#: toolbars.py:194
+#: toolbars.py:225
 msgid "Cosine"
 msgstr "Kosina"
 
-#: toolbars.py:198
+#: toolbars.py:230
 msgid "Tangent"
 msgstr "Tanzanty"
 
-#: toolbars.py:204
+#: toolbars.py:237
 msgid "Arc sine"
 msgstr "Arika sina"
 
-#: toolbars.py:208
+#: toolbars.py:242
 msgid "Arc cosine"
 msgstr "Arika kosina"
 
-#: toolbars.py:212
+#: toolbars.py:247
 msgid "Arc tangent"
 msgstr "Arika tanzanty"
 
-#: toolbars.py:218
+#: toolbars.py:254
 msgid "Hyperbolic sine"
 msgstr "Sina hiperibaolika"
 
-#: toolbars.py:222
+#: toolbars.py:259
 msgid "Hyperbolic cosine"
 msgstr "Kosina hiperibaolika"
 
-#: toolbars.py:226
+#: toolbars.py:264
 msgid "Hyperbolic tangent"
 msgstr "Tazanty hiperibaolika"
 
-#: toolbars.py:236
+#: toolbars.py:277
 msgid "Logical and"
 msgstr "And laojika"
 
-#: toolbars.py:240
+#: toolbars.py:282
 msgid "Logical or"
 msgstr "Or laojika"
 
-#: toolbars.py:250
+#: toolbars.py:293
 msgid "Equals"
 msgstr "Mira"
 
-#: toolbars.py:253
+#: toolbars.py:297
 msgid "Not equals"
 msgstr "Tsy mira"
 
-#: toolbars.py:262
+#: toolbars.py:310
 msgid "Pi"
 msgstr "Pi"
 
-#: toolbars.py:266
+#: toolbars.py:316
 msgid "e"
 msgstr "e"
 
-#: toolbars.py:269
+#: toolbars.py:320
 msgid "γ"
 msgstr ""
 
-#: toolbars.py:272
+#: toolbars.py:325
 msgid "φ"
 msgstr ""
 
-#: toolbars.py:279
+#: toolbars.py:333
 msgid "Plot"
 msgstr "Sorito"
 
-#: toolbars.py:286
+#: toolbars.py:338
 msgid "Degrees"
 msgstr "Degire"
 
-#: toolbars.py:287
+#: toolbars.py:339
 msgid "Radians"
 msgstr "Radiana"
 
-#: toolbars.py:291
+#: toolbars.py:344
 #, fuzzy
 msgid "Degrees / Radians"
 msgstr "Degire / radiana"
 
-#: toolbars.py:300
+#: toolbars.py:354
 msgid "Exponent / Scientific notation"
 msgstr "Fanatorahana / fanamarihana siantifika"
 
-#: toolbars.py:310
+#: toolbars.py:365
 msgid "Number of shown digits"
 msgstr "Isan'ny tarehimarika aseho"
 
-#: toolbars.py:320
+#: toolbars.py:377
 msgid "Integer formatting base"
 msgstr "Fototra mandrafitra isa natoraly"
+
+#: astparser.py:39
+msgid ""
+"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
+"range from a to b"
+msgstr ""
+"plot(eqn, var=-a..b), manoritra ny fimira 'eqn' misy ova 'var' eo amin'ny "
+"lalaka manomboka amin'ny a ka hatramin'ny b"
+
+#: astparser.py:61
+#, python-format
+msgid "Parse error at %d"
+msgstr ""
+
+#: astparser.py:75 astparser.py:109
+#, python-format
+msgid "Error at '%s', position: %d"
+msgstr ""
+
+#: astparser.py:88
+msgid "Syntax Error."
+msgstr ""
+
+#: astparser.py:95
+msgid "Syntax Error!"
+msgstr ""
+
+#: astparser.py:135
+msgid "This is just a test topic, use help(index) for the index"
+msgstr ""
+"Io dia lohateny andrana fotsiny, ampiasao ny fanampiana(fanondro) ho an'ny "
+"fanondro"
+
+#: astparser.py:148
+msgid "Use help(test) for help about 'test', or help(index) for the index"
+msgstr ""
+"Ampiasao ny torohevitra(andrana) hahazoana torohevitra momba ny 'andrana', "
+"na torohevitra(fanondro) ho an'ny fanondro"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:152
+msgid "index"
+msgstr "fanondro"
+
+#: astparser.py:152
+#, fuzzy
+msgid "topics"
+msgstr "Ireo lohateny"
+
+#: astparser.py:153
+msgid "Topics"
+msgstr "Ireo lohateny"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:161
+msgid "variables"
+msgstr "ireo ova"
+
+#: astparser.py:162
+#, fuzzy
+msgid "Variables"
+msgstr "ireo ova"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:168
+msgid "functions"
+msgstr "Ireo lefa"
+
+#: astparser.py:169
+#, fuzzy
+msgid "Functions"
+msgstr "Ireo lefa"
+
+#: astparser.py:178
+#, python-format
+msgid "No help about '%s' available, use help(index) for the index"
+msgstr ""
+"Tsy misy fanampiana mommba ny ova '%s', ampiasao ny fanampiana(fanondro) ho "
+"an'ny fanondro"
+
+#: astparser.py:508
+#, fuzzy
+msgid "help"
+msgstr "Fanampiana"
+
+#: astparser.py:515
+msgid "Recursion detected"
+msgstr ""
+
+#: astparser.py:539
+#, python-format
+msgid "Function '%s' not defined"
+msgstr "Lefa '%s' tsy voafaritra"
+
+#: astparser.py:541
+#, python-format
+msgid "Variable '%s' not defined"
+msgstr "Ova '%s' tsy voafaritra"
+
+#: astparser.py:551
+#, python-format
+msgid "Attribute '%s' does not exist"
+msgstr ""
+
+#: astparser.py:654
+msgid "Parse error"
+msgstr "Parisa diso"
+
+#: astparser.py:659
+msgid "Multiple statements not supported"
+msgstr ""
+
+#: astparser.py:683
+msgid "Internal error"
+msgstr ""
+
+#. TRANS: multiplication symbol (default: '×')
+#: mathlib.py:84
+msgid "mul_sym"
+msgstr "x"
+
+#. TRANS: division symbol (default: '÷')
+#: mathlib.py:89
+msgid "div_sym"
+msgstr ""
+
+#. TRANS: equal symbol (default: '=')
+#: mathlib.py:94
+msgid "equ_sym"
+msgstr ""
+
+#: mathlib.py:227
+msgid "Undefined"
+msgstr "Tsy voafaritra"
+
+#: mathlib.py:237
+msgid "Error: unsupported type"
+msgstr "Olana: karazana tsy zaka"
+
+#: layout.py:113
+msgid "Clear"
+msgstr "Fafao"
+
+#: layout.py:151 layout.py:195
+msgid "Edit"
+msgstr "Amboary"
+
+#: layout.py:156 layout.py:196
+msgid "Algebra"
+msgstr "Aljebra"
+
+#: layout.py:161 layout.py:198
+msgid "Trigonometry"
+msgstr "Trigonometria"
+
+#: layout.py:166 layout.py:199
+msgid "Boolean"
+msgstr "Booleana"
+
+#: layout.py:175 layout.py:200
+msgid "Miscellaneous"
+msgstr "Tsy voasokajy"
+
+#: layout.py:229
+msgid "Label:"
+msgstr "Marika:"
+
+#: layout.py:278
+msgid "All equations"
+msgstr "Ireo lefa"
+
+#: layout.py:279
+msgid "My equations"
+msgstr "Ireo lefako"
+
+#: layout.py:280
+msgid "Show variables"
+msgstr "Asehoy ireo ova"
+
+# string = chaîne = tandava
+#: calculate.py:109
+#, python-format
+msgid "Equation.parse() string invalid (%s)"
+msgstr "Fimira.parisa() tohitohy tsy mety (%s)"
+
+#: calculate.py:525
+msgid "Can not assign label: will cause recursion"
+msgstr ""
+
+#: calculate.py:620
+#, python-format
+msgid "Writing to journal (%s)"
+msgstr "Manoratra amin'ny firaketana (%s)"
+
+#: calculate.py:932
+msgid "button_pressed(): invalid type"
+msgstr "bokotra_tsindriana(): karazana tsy mety"
+
+#, python-format
+#~ msgid "Error at %d"
+#~ msgstr "Diso ao amin'ny %d"
+
+#~ msgid "fac"
+#~ msgstr "fac"
+
+#, fuzzy
+#~ msgid ""
+#~ "And(x, y), logical and. Returns True if x and y are True, else returns False"
+#~ msgstr ""
+#~ "and(x, y), and laojika. Manome valiny Marina raha marina x sy y, raha tsy "
+#~ "izany dia manome valiny Diso"
+
+#~ msgid ""
+#~ "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+#~ msgstr ""
+#~ "cosh(x), manome ny kosina hiperibaolikan'i x. Azo avy amin'ny (exp(x) + "
+#~ "exp(-x)) / 2"
+
+#~ msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
+#~ msgstr ""
+#~ "fac(x), manome ny fananon'i x. Azo avy amin'ny x * (x - 1) * (x - 2) * ..."

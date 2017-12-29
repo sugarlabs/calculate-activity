@@ -1,38 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the Calculate package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Calculate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 17:39+1100\n"
-"PO-Revision-Date: 2017-03-17 12:20+0000\n"
+"PO-Revision-Date: 2017-09-05 02:21+0000\n"
 "Last-Translator: Chris <cjl@sugarlabs.org>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: ta\n"
+"Language-Team: LL@li.org\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1489753236.000000\n"
+"X-POOTLE-MTIME: 1504578065.000000\n"
 
 #: activity/activity.info:2
 msgid "Calculate"
-msgstr "கணி"
+msgstr "Računamo"
 
 #: functions.py:35
 msgid "add"
-msgstr "சேர்"
+msgstr "add"
 
 #: functions.py:36
 msgid "abs"
 msgstr "abs"
 
+# TRANS: It is possible to translate commands. However, I would highly
+# recommend NOT doing so for mathematical functions like cos(). help(),
+# functions() etc should be translated.
 #: functions.py:37
 msgid "acos"
 msgstr "acos"
 
+# TRANS: It is possible to translate commands. However, I would highly
+# recommend NOT doing so for mathematical functions like cos(). help(),
+# functions() etc should be translated.
 #: functions.py:38
 msgid "acosh"
 msgstr "acosh"
@@ -55,7 +63,7 @@ msgstr "atanh"
 
 #: functions.py:43
 msgid "and"
-msgstr "உடன்"
+msgstr "and"
 
 #: functions.py:44
 msgid "b10bin"
@@ -77,6 +85,7 @@ msgstr "cosh"
 msgid "div"
 msgstr "div"
 
+# najveći zajednički djelitelj
 #: functions.py:49
 msgid "gcd"
 msgstr "gcd"
@@ -87,16 +96,18 @@ msgstr "exp"
 
 #: functions.py:51
 msgid "factorial"
-msgstr "வகுக்கும் காரணி"
+msgstr "faktorijel"
 
+# rastavljanje na proste djelitelje
 #: functions.py:52
 msgid "factorize"
-msgstr "வகுக்ககூடியதாக்கு"
+msgstr "factorize"
 
 #: functions.py:53
 msgid "floor"
-msgstr "தரைதளம்"
+msgstr "floor"
 
+# http://dama.math.hr/hnm/index.php?title=Inverzni_element
 #: functions.py:54
 msgid "inv"
 msgstr "inv"
@@ -107,7 +118,7 @@ msgstr "is_int"
 
 #: functions.py:56
 msgid "is_prime"
-msgstr ""
+msgstr "is_prime"
 
 #: functions.py:57
 msgid "ln"
@@ -135,7 +146,7 @@ msgstr "rand_int"
 
 #: functions.py:63
 msgid "round"
-msgstr "முழுமையான"
+msgstr "round"
 
 #: functions.py:64
 msgid "sin"
@@ -147,7 +158,7 @@ msgstr "sinh"
 
 #: functions.py:66
 msgid "sinc"
-msgstr "sin"
+msgstr "sinc"
 
 #: functions.py:67
 msgid "sqrt"
@@ -159,7 +170,7 @@ msgstr "sub"
 
 #: functions.py:69
 msgid "square"
-msgstr "சதுரம்"
+msgstr "square"
 
 #: functions.py:70
 msgid "tan"
@@ -176,257 +187,268 @@ msgstr "xor"
 #: functions.py:119
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
 msgstr ""
-"abs(x), மிகச்சரியான x ன் மதிப்பாகும், அதன் பொருள் என்னவென்றால் x < 0 க்கான "
-"-x"
+"abs(x) vrati apsolutnu vrijednost od broja x, a to je udaljenost broja x od "
+"nule na brojevnom pravcu"
 
 #: functions.py:124
 msgid "acos(x) only defined for x E [-1,1]"
-msgstr ""
+msgstr "acos(x) definiran je za x E [-1,1]"
 
 #: functions.py:128
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
 msgstr ""
-"acos(x),arcகோசைனுக்குதிரும்பவும் எந்தகோணத்தின்பெறுமானம்கோசைன்x.-1 <= x < 1 "
-"நிர்ணயிக்கப்பட்டுள்ளது"
+"acos(x) vrati kut čiji je kosinus jednak x; definiran je za -1 <= x <= 1"
 
 #: functions.py:135
-#, fuzzy
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
-msgstr "acosh(x), arc hyperbolic கோசைன்x க்கு திரும்பும். இது தான்"
+msgstr ""
+"acosh(x) vrati vrijednost y kojoj je kosinus hiperbolni jednak x; x = "
+"cosh(y)."
 
 #: functions.py:142
 msgid ""
 "And(x, y), logical and. Returns True if x and y are True,else returns False"
 msgstr ""
+"And(x, y), konjunkcija I; ishod je Istina samo ako su oba x i y Istina, inače "
+"ishod je Laž"
 
 #: functions.py:151
 msgid "add(x, y), return x + y"
-msgstr "add(x, y), x + y ஐக் கொடு"
+msgstr "add(x, y) vrati zbroj x + y"
 
 #: functions.py:156
 msgid "asin(x) only defined for x E [-1,1]"
-msgstr ""
+msgstr "asin(x) definiran je za x E [-1,1]"
 
 #: functions.py:159
 msgid ""
-"asin(x), return the arc sine of x. This is the angle for which the sine is "
-"x. Defined for -1 <= x <= 1"
+"asin(x), return the arc sine of x. This is the angle for which the sine is x. "
+"Defined for -1 <= x <= 1"
 msgstr ""
-"asin(x), arc sine of x இன் விளைவைக் கொடுக்கும். இது sine x ஆக இருக்கும் "
-"போதுள்ள கோணமாகும். -1 <= x <= 1 க்காக வரையறுக்கப்பட்டுள்ளது"
+"asin(x) vrati kut y čiji je sinus jednak x; definiran je za -1 <= x <= 1"
 
 #: functions.py:166
-#, fuzzy
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
-msgstr "acosh(x), arc hyperbolic கோசைன்x க்கு திரும்பும். இது தான்"
+msgstr ""
+"asinh(x) vrati vrijednost y kojoj je sinus hiperbolni jednak x; x = sinh(y)."
 
 #: functions.py:173
 msgid ""
-"atan(x), return the arc tangent of x. This is the angle for which the "
-"tangent is x. Defined for all x"
-msgstr ""
-"atan(x), arc tangent of x இன் விளைவைக் கொண்டு வரும். இது tangent x ஆக "
-"இருக்கும் போதுள்ள கோணமாகும். அனைத்து x க்கும் வரையறுக்கப்பட்டுள்ளது"
+"atan(x), return the arc tangent of x. This is the angle for which the tangent "
+"is x. Defined for all x"
+msgstr "atan(x) vrati kut čiji je tangens jednak x; definiran je za svaki x"
 
 #: functions.py:180
-#, fuzzy
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
-msgstr "acosh(x), arc hyperbolic கோசைன்x க்கு திரும்பும். இது தான்"
+msgstr ""
+"atanh(x) vrati vrijednost y kojoj je tangens hiperbolni jednak x; x = tanh(y)."
 
 #: functions.py:191
 msgid "Number does not look binary."
-msgstr ""
+msgstr "Broj ne izgleda kao binarni."
 
 #: functions.py:199
 msgid ""
 "b10bin(x), interpret a number written in base 10 as binary, e.g.: "
 "b10bin(10111) = 23,"
 msgstr ""
+"b10bin(x) pretvori binarni broj x u dekadski broj; primjer: b10bin(10111) = 23"
 
 #: functions.py:205
 msgid "ceil(x), return the smallest integer larger than x."
 msgstr ""
+"ceil(x) vrati najmanji cijeli broj veći od x; strop(x); primjer: ceil(4.45) = "
+"5"
 
 #: functions.py:211
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr ""
-"cos(x),இது x இன் cosine விளைவைக் கொண்டு வரும். இது x கோணத்தின் பகுதி "
-"வளையத்தின் x ஒருங்கிணைப்பாகும்."
+"cos(x) vrati vrijednost kosinusa od kuta x; to je apscisa točke jedinične "
+"kružnice određena kutom x"
 
 #: functions.py:218
 msgid ""
 "cosh(x), return the hyperbolic cosine of x.Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
+"cosh(x) vrati kosinus hiperbolni od x; definiran je izrazom (exp(x) + exp(-"
+"x))/2"
 
 #: functions.py:224 functions.py:319
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "Dijeljenje s nulom nije moguće"
 
 #: functions.py:247
 msgid "Invalid argument"
-msgstr ""
+msgstr "Neispravan argument"
 
 #: functions.py:250
 msgid ""
-"gcd(a, b), determine the greatest common denominator of a and b. For "
-"example, the biggest factor that is shared by the numbers 15 and 18 is 3."
+"gcd(a, b), determine the greatest common denominator of a and b. For example, "
+"the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
+"gcd(a, b) vrati broj koji je najveći zajednički djelitelj od a i b; primjer: "
+"najveći zajednički djelitelj brojeva 15 i 18 je broj 3."
 
 #: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
 msgstr ""
-"natural exponent of x ஐ ,exp(x) விளைவாகக் கொண்டு வரும். e^x ஆல் "
-"தரப்படுகின்றது."
+"exp(x) vrati prirodnu eksponencijalnu funkciju s eksponentom x; definirana je "
+"s izrazom e^x; e je baza, x je eksponent"
 
 #: functions.py:262
 msgid "Factorial(x) is only defined for integers x>=0"
-msgstr ""
+msgstr "Factorial(x), faktorijel je definiran za cijele brojeve x >= 0"
 
 #: functions.py:265
 msgid "Factorial only defined for integers"
-msgstr ""
+msgstr "Faktorijel je definiran samo za prirodne brojeve i nulu"
 
 #: functions.py:278
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr ""
-"factorial(n), factorial of n விளைவாகக் கொடுக்கும். n * (n - 1) * (n - 2) *"
-"... மூலம் தரப்படுகின்றது."
+"factorial(n) vrati faktorijel od n, definiran izrazom n * (n - 1) * (n - 2) "
+"* ..."
 
 #: functions.py:314
 msgid "floor(x), return the largest integer smaller than x."
 msgstr ""
+"floor(x) vrati najveći cijeli broj manji od x; pod(x); primjer: floor(4.45) = "
+"4"
 
 #: functions.py:321
 msgid "inv(x), return the inverse of x, which is 1 / x"
-msgstr ""
+msgstr "inv(x) vrati recipročnu vrijednost od x, to jest 1/x"
 
 #: functions.py:356
 msgid "Argument must be int"
-msgstr ""
+msgstr "Argument mora biti cijeli broj"
 
 #: functions.py:358
 msgid "Prime numbers is defined for natural numbers"
-msgstr ""
+msgstr "Prosti brojevi moraju biti prirodni brojevi"
 
 #: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
-msgstr ""
+msgstr "Logaritam od x definiran je za x > 0"
 
 #: functions.py:370
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
 msgstr ""
-"n(x), x இன் இயற்கைமடக்கையில் விளைவைக் கொண்டு வரும். இது exponent exp() "
-"equals x இன் பெறுமானமாகும். x >= 0 க்கு வரையறுக்கப்படுள்ளது."
+"ln(x) vrati prirodni logaritam od x; to je vrijednost y za koju vrijedi x = "
+"exp(y); definiran je za x > 0."
 
 #: functions.py:380
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
+"log10(x) vrati logaritam (s bazom 10) od x; to je vrijednost y za koju "
+"vrijedi x jednako 10 na y; x = 10^y; definiran je za x > 0."
 
 #: functions.py:388
 msgid "Can only calculate x modulo <integer>"
-msgstr ""
+msgstr "Moguće je samo računati x modulo <cijeli broj>"
 
 #: functions.py:390
 msgid ""
 "mod(x, y), return the modulus of x with respect to y.This is the remainder "
 "after dividing x by y."
 msgstr ""
+"mod(x, y) vrati ostatak dijeljenja x/y; y mora biti cijeli broj; primjer: "
+"mod(13, 3) = 1 (13/3 = 4, ostatak = 1)"
 
 #: functions.py:399
-#, fuzzy
 msgid "mul(x, y), return x * y"
-msgstr "sub(x, y), x - y ஐக் கொடுக்கும்."
+msgstr "mul(x, y) vrati umnožak x * y"
 
 #: functions.py:404
 msgid "negate(x), return -x"
-msgstr ""
+msgstr "negate(x) vrati -x"
 
 #: functions.py:410
-msgid ""
-"Or(x, y), logical or. Returns True if x or y is True, else returns False"
+msgid "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
-"Or(x, y), logical or. என்பது x அல்லது y உண்மையானால், உண்மையென்றும், "
-"இல்லையாயின் பொய் என்றும் விளைவைக் கொடுக்கும்"
+"Or(x, y), disjunkcija ILI. Ishod je Istina ako je x ILI y Istina, inače ishod "
+"je Laž"
 
 #: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
-msgstr ""
+msgstr "pow(x, y) vrati potenciju od x na y; (x**y)"
 
 #: functions.py:433
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
-msgstr ""
+msgstr "rand_float() vrati slučajni decimalni broj između 0.0 and 1.0"
 
 #: functions.py:439
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
+"rand_int([<maxval>]) vrati slučajni cijeli broj između 0 and <maxval>. "
+"<maxval> je neobvezni argument, a postavljen je početno na 65535."
 
 #: functions.py:445
 msgid "round(x), return the integer nearest to x."
-msgstr ""
+msgstr "round(x) vrati cijeli broj najbliži broju x."
 
 #: functions.py:452 functions.py:461
 msgid "Bitwise operations only apply to integers"
-msgstr ""
+msgstr "Bitovna operacija moguća je samo na cijelim brojevima"
 
 #: functions.py:454
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
-msgstr ""
+msgstr "shift_left(x, y) pomakne x za y bitova na lijevo (množi s 2 po bitu)"
 
 #: functions.py:463
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
-msgstr ""
+msgstr "shift_rigth(x, y) pomakne x za y bitova na desno (dijeli s 2 po bitu)"
 
 #: functions.py:469
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
 msgstr ""
-"sin (x),இது x இன் sin விளைவைக் கொண்டு வரும். இது x கோணத்தின் பகுதி வளையத்தின்"
-" y ஒருங்கிணைப்பாகும்."
+"sin(x) vrati vrijednost sinusa od kuta x; to je ordinata točke jedinične "
+"kružnice određena kutom x"
 
 #: functions.py:476
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
-"sinh(x) hyperbolic sine of x. இன் விளைவைக் கொண்டு வரும். (exp(x) - exp(-x)) /"
-" 2 ஆல் தரப்படுகின்றது."
+"sinh(x) vrati sinus hiperbolni od x; definiran je izrazom (exp(x) - exp(-x))/2"
 
 #: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
-msgstr ""
+msgstr "sinc(x) vrati sinc od x; definiran je izrazom sin(x) / x."
 
 #: functions.py:491
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
 msgstr ""
-"sqrt(x), x யின் வர்க்கமூலத்ததை விளைவாகக் கொண்டு வரும். இது square equals x "
-"இன் பெறுமானமாகும். x >= 0 ஆக வரையறுக்கப்பட்டுள்ளது"
+"sqrt(x) vrati drugi korijen od x; to je vrijednost y za koju vrijedi x "
+"jednako y na kvadrat, y**2; definiran je za x >= 0."
 
 #: functions.py:497
 msgid "square(x), return x * x"
-msgstr "square(x), x * x ஐக் கொடுக்கும்."
+msgstr "square(x) vrati x na kvadrat; (x*x)"
 
 #: functions.py:505
 msgid "sub(x, y), return x - y"
-msgstr "sub(x, y), x - y ஐக் கொடுக்கும்."
+msgstr "sub(x, y) vrati razliku x - y"
 
 #: functions.py:511
 msgid ""
@@ -434,386 +456,353 @@ msgid ""
 "origin of the unit circle to the point on the unit circle defined by the "
 "angle x. Given by sin(x) / cos(x)"
 msgstr ""
-"tan(x),திரும்பியதை xஇனால் தொடு.இது கோட்டினுடைய சரிவு வட்ட அலகின் x "
-"பக்கத்தினூடாக அடையாளப்படுத்து.கொடுக்கப்பட்ட sin(x) / cos(x)"
+"tan(x) vrati vrijednost tangensa od x; to je nagib linije povučene iz "
+"ishodišta jedinične kružnice kroz točku na kružnici definiranu kutom x; "
+"definiran je izrazom sin(x)/cos(x)"
 
-# error in original string, should be tanh
 #: functions.py:519
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr ""
-"tanh(x), x உடன் அதிபரவலய சாய்வானகோட்டிற்கு திரும்பு. sinh(x) / cosh(x) மூலம் "
-"பெறப்பட்டது"
+"tanh(x) vrati tangens hiperbolni od x; definiran je izrazom sinh(x)/cosh(x)"
 
 #: functions.py:525
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
 msgstr ""
-"xor(x, y),தர்க்கித்த xor. x உண்மையானால் மீண்டும் திரும்புதலுடன் உண்மை(and y "
-"is False)/y உண்மையானால் (and x is False),மீண்டும் பிழை"
+"xor(x, y) eksluzivna disjunkcija ILI. Ishod je Istina ako je ili x je Istina "
+"(a y je Laž), ili y je Istina (a x je Laž), inače ishod je Laž"
 
 #: toolbars.py:57
 msgid "Help"
-msgstr "உதவி"
+msgstr "Pomoć"
 
 #: toolbars.py:132
 msgid "Copy"
-msgstr "பிரதி செய்"
+msgstr "Kopiraj"
 
 #: toolbars.py:133
 msgid "<ctrl>c"
-msgstr ""
+msgstr "<ctrl>c"
 
 #: toolbars.py:137
 msgid "Cut"
-msgstr "வெட்டு"
+msgstr "Izreži"
 
 #: toolbars.py:140
 msgid "<ctrl>x"
-msgstr ""
+msgstr "<ctrl>x"
 
 #: toolbars.py:148
 msgid "Paste"
-msgstr "ஒட்டு"
+msgstr "Zalijepi"
 
 #: toolbars.py:160
 msgid "Square"
-msgstr "சதுரம்"
+msgstr "Kvadrat"
 
 #: toolbars.py:167
 msgid "Square root"
-msgstr "வர்க்கமூலம்"
+msgstr "Kvadratni korijen"
 
 #: toolbars.py:174
 msgid "Inverse"
-msgstr "தழைகீழ்"
+msgstr "Recipročna vrijednost"
 
 #: toolbars.py:183
 msgid "e to the power x"
-msgstr "e இனது வலு x"
+msgstr "e na x"
 
 #: toolbars.py:190
 msgid "x to the power y"
-msgstr "x இனது வலு y"
+msgstr "x na y"
 
 #: toolbars.py:197
 msgid "Natural logarithm"
-msgstr "இயற்கை மடக்கை"
+msgstr "Prirodni logaritam"
 
 #: toolbars.py:206
 msgid "Factorial"
-msgstr "வணிகப்பேராள்"
+msgstr "Faktorijel"
 
 #: toolbars.py:220
 msgid "Sine"
-msgstr "சைன்"
+msgstr "Sinus"
 
 #: toolbars.py:225
 msgid "Cosine"
-msgstr "கொசைன்"
+msgstr "Kosinus"
 
 #: toolbars.py:230
 msgid "Tangent"
-msgstr "தான்சைன்"
+msgstr "Tangens"
 
 #: toolbars.py:237
 msgid "Arc sine"
-msgstr "சைன்கோணம்"
+msgstr "Arkus sinus"
 
 #: toolbars.py:242
 msgid "Arc cosine"
-msgstr "கொசைன் கோணம்"
+msgstr "Arkus kosinus"
 
 #: toolbars.py:247
 msgid "Arc tangent"
-msgstr "தான்சைன்கோணம்"
+msgstr "Arkus tangens"
 
 #: toolbars.py:254
 msgid "Hyperbolic sine"
-msgstr "ஹைப்பபோலிக் சைன்"
+msgstr "Sinus hiperbolni"
 
 #: toolbars.py:259
 msgid "Hyperbolic cosine"
-msgstr "ஹைப்பபோலிக் கோசைன்"
+msgstr "Kosinus hiperbolni"
 
 #: toolbars.py:264
 msgid "Hyperbolic tangent"
-msgstr "ஹைப்பபோலிக் தான்சைன்கோணம்"
+msgstr "Tangens hiperbolni"
 
 #: toolbars.py:277
 msgid "Logical and"
-msgstr "தர்க்கித்தலுடன்"
+msgstr "Logički I"
 
 #: toolbars.py:282
 msgid "Logical or"
-msgstr "தர்க்கித்தல் அல்லது"
+msgstr "Logički ILI"
 
 #: toolbars.py:293
 msgid "Equals"
-msgstr "சமம்"
+msgstr "Jednako"
 
 #: toolbars.py:297
 msgid "Not equals"
-msgstr "சமம்இல்லை"
+msgstr "Nije jednako"
 
 #: toolbars.py:310
 msgid "Pi"
-msgstr "பை"
+msgstr "Pi"
 
 #: toolbars.py:316
 msgid "e"
-msgstr "இ"
+msgstr "e"
 
 #: toolbars.py:320
 msgid "γ"
-msgstr ""
+msgstr "γ"
 
 #: toolbars.py:325
 msgid "φ"
-msgstr ""
+msgstr "φ"
 
 #: toolbars.py:333
 msgid "Plot"
-msgstr "வரை"
+msgstr "Grafički prikaz"
 
 #: toolbars.py:338
 msgid "Degrees"
-msgstr "நிலை"
+msgstr "Stupnjevi"
 
 #: toolbars.py:339
 msgid "Radians"
-msgstr "ஒளிக்கதிர்கள்"
+msgstr "Radijani"
 
 #: toolbars.py:344
-#, fuzzy
 msgid "Degrees / Radians"
-msgstr "கோணங்கள்/கோணளவு"
+msgstr "Stupnjevi/Radijani"
 
 #: toolbars.py:354
 msgid "Exponent / Scientific notation"
-msgstr "எக்ஸ்போனன்ட் / அறிவியல் குறிப்பு"
+msgstr "Eksponent/Znanstvena"
 
 #: toolbars.py:365
 msgid "Number of shown digits"
-msgstr "காட்டப்பட்டுள்ள எண்ணிலக்கங்கள்"
+msgstr "Broj prikazanih znamenki"
 
 #: toolbars.py:377
 msgid "Integer formatting base"
-msgstr "மாறிலிகளின் அடிப்படை வடிவாக்கம்"
+msgstr "Baza za formatiranje cijelih brojeva"
 
 #: astparser.py:39
 msgid ""
 "plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
 "range from a to b"
 msgstr ""
-"புள்ளி(eqn, var=-a..b), என்பது சமன்பாடு 'eqn' ஐ, a..b வரையுள்ள வீச்சிலுள்ள "
-"மாறி 'var' யுடன் plot செய்யும்"
+"plot(eqn, var=-a..b), grafički prikaz jednadžbe ‘eqn’ s varijablom ‘var’ u "
+"rasponu od a do b"
 
 #: astparser.py:61
 #, python-format
 msgid "Parse error at %d"
-msgstr ""
+msgstr "Greška raščlanjivanja pri` %d"
 
 #: astparser.py:75 astparser.py:109
 #, python-format
 msgid "Error at '%s', position: %d"
-msgstr ""
+msgstr "Greška pri „%s“, pozicija: %d"
 
 #: astparser.py:88
 msgid "Syntax Error."
-msgstr ""
+msgstr "Greška sintakse."
 
 #: astparser.py:95
 msgid "Syntax Error!"
-msgstr ""
+msgstr "Greška sintakse!"
 
 #: astparser.py:135
 msgid "This is just a test topic, use help(index) for the index"
-msgstr "இது ஒரு பரீட்சித்தல் விடயம்.உதவிக்காக அடையாளத்தை உபயோகி"
+msgstr "Ovo je samo proba, rabi help(index) za indeks"
 
 #: astparser.py:148
 msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr "உதவி தேவைப்படுவதற்கான பரீட்சித்தலில் அல்லது அடையாளத்திற்கான உதவி"
+msgstr "Rabi help(test) za pokus, ili help(index) za indeks"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:152
 msgid "index"
-msgstr "அடையாளம்"
+msgstr "indeks"
 
 #: astparser.py:152
-#, fuzzy
 msgid "topics"
-msgstr "விடயம்"
+msgstr "teme"
 
 #: astparser.py:153
 msgid "Topics"
-msgstr "விடயம்"
+msgstr "Teme"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:161
 msgid "variables"
-msgstr "மாறிகள்"
+msgstr "varijable"
 
 #: astparser.py:162
-#, fuzzy
 msgid "Variables"
-msgstr "மாறிகள்"
+msgstr "Varijable"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:168
 msgid "functions"
-msgstr "தொழிற்பாடுகள்"
+msgstr "funkcije"
 
 #: astparser.py:169
-#, fuzzy
 msgid "Functions"
-msgstr "தொழிற்பாடுகள்"
+msgstr "Funkcije"
 
 #: astparser.py:178
 #, python-format
 msgid "No help about '%s' available, use help(index) for the index"
-msgstr "'%s' இதற்கான உதவி கிடைக்கவில்லை.உதவிக்கு அடையாளத்தை உபயோகி."
+msgstr "Pomoć za „%s“ nije dostupna, rabi help(index) za indeks"
 
 #: astparser.py:508
-#, fuzzy
 msgid "help"
-msgstr "உதவி"
+msgstr "pomoć"
 
 #: astparser.py:515
 msgid "Recursion detected"
-msgstr ""
+msgstr "Otkrivena je rekurzija"
 
 #: astparser.py:539
 #, python-format
-#, python-format,
 msgid "Function '%s' not defined"
-msgstr "செயற்பாடு '%s' வரையறுக்கப்படவில்லை"
+msgstr "Funkcija „%s“ nije definirana"
 
 #: astparser.py:541
 #, python-format
 msgid "Variable '%s' not defined"
-msgstr "மாறி '%s' வரையறுக்கப்படவில்லை"
+msgstr "Varijabla „%s“ nije definirana"
 
 #: astparser.py:551
 #, python-format
 msgid "Attribute '%s' does not exist"
-msgstr ""
+msgstr "Atribut „%s“ ne postoji"
 
 #: astparser.py:654
 msgid "Parse error"
-msgstr "தவறான அலகு"
+msgstr "Greška u raščlanjivanju"
 
 #: astparser.py:659
 msgid "Multiple statements not supported"
-msgstr ""
+msgstr "Višestruki unosi nisu podržani"
 
 #: astparser.py:683
 msgid "Internal error"
-msgstr ""
+msgstr "Interna greška"
 
 #. TRANS: multiplication symbol (default: '×')
 #: mathlib.py:84
 msgid "mul_sym"
-msgstr "mul_sym"
+msgstr "*"
 
 #. TRANS: division symbol (default: '÷')
 #: mathlib.py:89
 msgid "div_sym"
-msgstr "div_sym"
+msgstr "/"
 
 #. TRANS: equal symbol (default: '=')
 #: mathlib.py:94
 msgid "equ_sym"
-msgstr ""
+msgstr "="
 
 #: mathlib.py:227
 msgid "Undefined"
-msgstr "தடையற்ற"
+msgstr "Nije definirano"
 
 #: mathlib.py:237
 msgid "Error: unsupported type"
-msgstr "தவறு ஒத்துழைப்பில்லாத வகை"
+msgstr "Greška: vrsta nije podržana"
 
 #: layout.py:113
 msgid "Clear"
-msgstr "நீக்கு"
+msgstr "Počisti"
 
 #: layout.py:151 layout.py:195
 msgid "Edit"
-msgstr "திருத்து"
+msgstr "Uredi"
 
 #: layout.py:156 layout.py:196
 msgid "Algebra"
-msgstr "அட்சரகணிதம்"
+msgstr "Algebra"
 
 #: layout.py:161 layout.py:198
 msgid "Trigonometry"
-msgstr "திரிகோணகணிதம்"
+msgstr "Trigonometrija"
 
 #: layout.py:166 layout.py:199
 msgid "Boolean"
-msgstr "பூழியன்"
+msgstr "Logika"
 
 #: layout.py:175 layout.py:200
 msgid "Miscellaneous"
-msgstr "மற்றவை"
+msgstr "Razno"
 
 #: layout.py:229
 msgid "Label:"
-msgstr "பெயர்ச்சீட்டு"
+msgstr "Natpis:"
 
 #: layout.py:278
 msgid "All equations"
-msgstr "அனைத்து சமன்பாடுகளும்"
+msgstr "Sve jednadžbe"
 
 #: layout.py:279
 msgid "My equations"
-msgstr "எனதுசமன்பாடுகள்"
+msgstr "Moje jednadžbe"
 
 #: layout.py:280
 msgid "Show variables"
-msgstr "மாறிகளைக்காட்டு"
+msgstr "Varijable"
 
 #: calculate.py:109
 #, python-format
-#, python-format,
 msgid "Equation.parse() string invalid (%s)"
-msgstr "சமன்பாடு.பிரித்துப்பார்த்தல்() சரியான வரி இல்லை (%s)"
+msgstr "Equation.parse() neispravan string (%s)"
 
 #: calculate.py:525
 msgid "Can not assign label: will cause recursion"
-msgstr ""
+msgstr "Natpis nije moguće dodijeliti: došlo bi do rekurzije"
 
 #: calculate.py:620
 #, python-format
-#, python-format,
 msgid "Writing to journal (%s)"
-msgstr "சஞ்சிகைக்கு பதியப்படுகிறது (%s)"
+msgstr "Zapisivanje u dnevnik (%s)"
 
 #: calculate.py:932
 msgid "button_pressed(): invalid type"
-msgstr "பொருத்தமற்ற முறையில் பொத்தான் அழுத்தப்பட்டுள்ளது"
-
-#, python-format
-#~ msgid "Error at %d"
-#~ msgstr "தவறுat %d"
-
-#~ msgid "fac"
-#~ msgstr "fac"
-
-#~ msgid ""
-#~ "And(x, y), logical and. Returns True if x and y are True, else returns False"
-#~ msgstr ""
-#~ "And(x, y), logical and. என்பது x உம் y உம் உண்மையானால், உண்மையென்றும் "
-#~ "இல்லையாயின் பொய் என்ற விளைவைக் கொண்டு வரும்"
-
-#~ msgid ""
-#~ "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
-#~ msgstr ""
-#~ "cosh(x) hyperbolic cosine of x. இன் விளைவைக் கொண்டு வரும். (exp(x) + "
-#~ "exp(-x)) / 2 ஆல் தரப்படுகின்றது."
-
-#~ msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-#~ msgstr ""
-#~ "factorial of x ஐ ,fac(x) விளைவாகக் கொண்டு வரும். x * (x - 1) * (x - 2) * ... "
-#~ "ஆல் தரப்படுகின்றது."
+msgstr "button_pressed(): neispravna vrsta"

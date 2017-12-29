@@ -6,151 +6,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2017-03-19 04:43+0000\n"
-"Last-Translator: Chris <cjl@sugarlabs.org>\n"
+"POT-Creation-Date: 2017-03-24 17:39+1100\n"
+"PO-Revision-Date: 2017-10-02 09:54+0000\n"
+"Last-Translator: Olot <agwanta2004@yahoo.co.uk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ach\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1489898611.000000\n"
+"X-POOTLE-MTIME: 1506938088.000000\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Calculate"
-msgstr "To cura mere"
-
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid ""
-"This is the place to get the answer to a quick problem, but that is not the "
-"limit! You can also explore Algebra, Trigonometry, Boolean and more!"
-msgstr ""
-"Man kanwongo anca me peko me oyoto, ento mano pe me agiki! Itwero bebea iyi "
-"Algebra, Trigonometry, Boolean kwede en mapol mukeme!"
-
-#: astparser.py:40
-msgid ""
-"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
-"range from a to b"
-msgstr ""
-"cicio(eqn, var= a..b), cicio ka ma turyo weng rorom 'eqn' ma tye kwede jami "
-"mere alokere 'var' cakere a tunu i b"
-
-#: astparser.py:59
-#, python-format
-msgid "Parse error at %d"
-msgstr "Bal kikome i %d"
-
-#: astparser.py:71 astparser.py:83
-#, python-format
-msgid "Error at %d"
-msgstr "Bal i %d"
-
-#: astparser.py:94
-msgid "This is just a test topic, use help(index) for the index"
-msgstr ""
-"Man obedo keken tetemo gipwonyere, ti kede kony(rye iyore) pi ryeyo iyoreyore"
-
-#: astparser.py:106
-msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr ""
-"To kwede kony(temi) pi kony me 'atema', onyo kony(rye iyoreyore) pi ryeyo "
-"iyoreyore"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:109
-#, fuzzy
-msgid "index"
-msgstr "ryeyo iyoreyore"
-
-#: astparser.py:109
-msgid "topics"
-msgstr "dul kop"
-
-#: astparser.py:110
-msgid "Topics"
-msgstr "Dule kop"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:118
-msgid "variables"
-msgstr "maloke"
-
-#: astparser.py:119
-msgid "Variables"
-msgstr "Maloke"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:125
-#, fuzzy
-msgid "functions"
-msgstr "matye katime"
-
-#: astparser.py:126
-msgid "Functions"
-msgstr "Matye katime"
-
-#: astparser.py:135
-#, python-format
-msgid "No help about '%s' available, use help(index) for the index"
-msgstr ""
-"Pe tye kony mo ikom '%s' matye, ti kwede kony(rye iyore) pi ryeyo iyoreyore"
-
-#: astparser.py:459
-msgid "help"
-msgstr "kony"
-
-#: astparser.py:466
-msgid "Recursion detected"
-msgstr "Nwoyo onen oko"
-
-#: astparser.py:490
-#, python-format
-msgid "Function '%s' not defined"
-msgstr "Tica '%s' pe tye ngecoro iye"
-
-#: astparser.py:492
-#, python-format
-msgid "Variable '%s' not defined"
-msgstr "Mamio alokaloka '%s' pe tye ngecoro iye"
-
-#: astparser.py:502
-#, python-format
-msgid "Attribute '%s' does not exist"
-msgstr "Nucu mere '%s' pe atwal"
-
-#: astparser.py:596
-msgid "Parse error"
-msgstr "Bal ilok"
-
-#: astparser.py:601
-msgid "Multiple statements not supported"
-msgstr "Lok mapolpola mapapat pe giye"
-
-#: astparser.py:625
-msgid "Internal error"
-msgstr "Bal me yie"
-
-#: calculate.py:109
-#, python-format
-msgid "Equation.parse() string invalid (%s)"
-msgstr "Nwongo gin ape ongeo.dul lok() ka kubo pe tye atira (%s)"
-
-#: calculate.py:483
-msgid "Can not assign label: will cause recursion"
-msgstr "Pe romo keto alama mere: bikelo nwoyo"
-
-#: calculate.py:571
-#, python-format
-msgid "Writing to journal (%s)"
-msgstr "Coyo me janol (%s)"
-
-#: calculate.py:865
-msgid "button_pressed(): invalid type"
-msgstr "mapeca_odio(): kite pe atira"
+msgstr "Ti cura"
 
 #: functions.py:35
 msgid "add"
@@ -221,37 +91,36 @@ msgid "factorial"
 msgstr "ngidengide"
 
 #: functions.py:52
-msgid "fac"
-msgstr "fac"
-
-#: functions.py:53
 msgid "factorize"
 msgstr "nwong ngidengide"
 
-#: functions.py:54
+#: functions.py:53
 msgid "floor"
-msgstr "di ot"
+msgstr "diot"
 
-#: functions.py:55
+#: functions.py:54
 msgid "inv"
 msgstr "inv"
 
-#: functions.py:56
+#: functions.py:55
 msgid "is_int"
 msgstr "is_int"
 
+#: functions.py:56
+msgid "is_prime"
+msgstr "is_prime"
+
 #: functions.py:57
 msgid "ln"
-msgstr "Iyie"
+msgstr "In"
 
 #: functions.py:58
 msgid "log10"
 msgstr "log10"
 
 #: functions.py:59
-#, fuzzy
 msgid "mul"
-msgstr "Nyayo"
+msgstr "mul"
 
 #: functions.py:60
 msgid "or"
@@ -291,7 +160,7 @@ msgstr "adwol"
 
 #: functions.py:69
 msgid "square"
-msgstr "matwoke angwen weng rorom"
+msgstr "Cikwea"
 
 #: functions.py:70
 msgid "tan"
@@ -305,11 +174,15 @@ msgstr "tanh"
 msgid "xor"
 msgstr "xor"
 
-#: functions.py:112
+#: functions.py:119
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
 msgstr "abs(x), dwogo dwonga x kikome, teloke ni -x pi x < 0"
 
-#: functions.py:117
+#: functions.py:124
+msgid "acos(x) only defined for x E [-1,1]"
+msgstr "acos(x) omio telokere keken pi x E [-1,1]"
+
+#: functions.py:128
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
@@ -317,7 +190,7 @@ msgstr ""
 "acos(x), dwogo arc cosine me x. Man obedo yi akina ame cosine mere obedo x. "
 "Makwako -1<= x < 1"
 
-#: functions.py:123
+#: functions.py:135
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
@@ -325,18 +198,21 @@ msgstr ""
 "acosh(x), dwogo arc hyperbolic cosine me x. Man obedo dit a y me hyperbolic "
 "cosine rorom i x."
 
-#: functions.py:129
+#: functions.py:142
 msgid ""
-"And(x, y), logical and. Returns True if x and y are True, else returns False"
+"And(x, y), logical and. Returns True if x and y are True,else returns False"
 msgstr ""
-"Kede(x,y), tam atut kede Dwogo Ateni ka x kede y tye Ateni onyo kape dwogo "
-"Pe ateni"
+"Kede(x, y), tam atut kede Dwogo Ateni ka x kede y tye Ateni,onyo dwogo Goba"
 
-#: functions.py:136
+#: functions.py:151
 msgid "add(x, y), return x + y"
 msgstr "medi(x,y), dwogo x+ y"
 
-#: functions.py:141
+#: functions.py:156
+msgid "asin(x) only defined for x E [-1,1]"
+msgstr "asin(x) ogonyo telokere keken pi x E [-1,1]"
+
+#: functions.py:159
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
@@ -344,7 +220,7 @@ msgstr ""
 "asin(x), dwogo arc sine me x. Man obedo yi akina amio sine bedo x. Acung pi -"
 "x <= x <= 1"
 
-#: functions.py:147
+#: functions.py:166
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
@@ -352,406 +228,609 @@ msgstr ""
 "asinh(x), dwogo arc hyperbolic sine me x. Man obedo dita y amio hyperbolic "
 "sine rorom kede x."
 
-#: functions.py:153
+#: functions.py:173
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
 msgstr ""
+"atan(x), dwogo arc tangent me x. Man obedo yi akina amio tangent bedo x. Man "
+"cung pi x ducu"
 
-#: functions.py:159
+#: functions.py:180
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
 msgstr ""
+"atanh(x), dwogo arc hyperbolic tangent me x. Man obedo Rita y amio "
+"hyperbolic tangent rorom ki x."
 
-#: functions.py:171
-msgid "Number does not look binary in base 10"
-msgstr "Namba pe nen dul me aryo iyi nucunucu me apar"
+#: functions.py:191
+msgid "Number does not look binary."
+msgstr "Namba iloki pe obedo dul aryoaryo."
 
-#: functions.py:178
+#: functions.py:199
 msgid ""
-"b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
-"(10111) = 23,"
+"b10bin(x), interpret a number written in base 10 as binary, e.g.: "
+"b10bin(10111) = 23,"
 msgstr ""
 "b10bin(x), gonyo namba me oco inucunucu me apar acalo dul me aryo, aporere: "
 "b10bin(10111) =23."
 
-#: functions.py:183
+#: functions.py:205
 msgid "ceil(x), return the smallest integer larger than x."
-msgstr ""
+msgstr "Ceil(x), dwogo mamba matidi maloyo ento makato x"
 
-#: functions.py:188
+#: functions.py:211
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr ""
+"cos(x), dwogo cosine me x. Man obedo ari me piny me x ikom caikol iyi akina "
+"me x"
 
-#: functions.py:194
+#: functions.py:218
 msgid ""
-"cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
-msgstr ""
+"cosh(x), return the hyperbolic cosine of x.Given by (exp(x) + exp(-x)) / 2"
+msgstr "cosh(x), dwogo hyperbolic cosine me x. Omio kede (exp(x) + exp(-x)) / 2"
 
-#: functions.py:198
+#: functions.py:224 functions.py:319
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "Pe romo pokere kede jiro"
 
-#: functions.py:219
+#: functions.py:247
 msgid "Invalid argument"
-msgstr ""
+msgstr "Pyem nononono"
 
-#: functions.py:222
+#: functions.py:250
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
+"gcd(a, b), moko namba madite maromrom poko a ki b. macalo apore, namba "
+"madite ma noto 15 ki 18 obedo 3."
 
-#: functions.py:227
+#: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
-msgstr ""
+msgstr "exp(x), dwogo namba ikome iwi x. Nwonge ki e^x"
 
-#: functions.py:231
+#: functions.py:262
+msgid "Factorial(x) is only defined for integers x>=0"
+msgstr "Nyayo kom(x) oyiko pi namba x>=0 keken"
+
+#: functions.py:265
 msgid "Factorial only defined for integers"
-msgstr ""
+msgstr "Lakwan ducu ikom namba mooni oyubo pi kwon namba keken"
 
-#: functions.py:244
+#: functions.py:278
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr ""
+"Lakwan ikom namba(n), dwogo lakwan me n. Gimio kwede n*(n -1) * (n - 2) * ..."
 
-#: functions.py:250
-msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-msgstr ""
-
-#: functions.py:283
+#: functions.py:314
 msgid "floor(x), return the largest integer smaller than x."
-msgstr ""
+msgstr "Do ot(x), dwogo namba ikome maloyo ducu ento matidi ite x."
 
-#: functions.py:287
+#: functions.py:321
 msgid "inv(x), return the inverse of x, which is 1 / x"
-msgstr ""
+msgstr "inv(x), dwogo acel me x, ame obedo 1 / x"
 
-#: functions.py:309 functions.py:318
+#: functions.py:356
+msgid "Argument must be int"
+msgstr "Laro kopere myero bed int"
+
+#: functions.py:358
+msgid "Prime numbers is defined for natural numbers"
+msgstr "Namba atye prime ogonyo telokere pi namba ame otio kede karalung"
+
+#: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
-msgstr ""
+msgstr "Log me(x) otio kwede keken ikom x > 0"
 
-#: functions.py:311
+#: functions.py:370
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
 msgstr ""
+"In(x), dwogo log me x.Man obedo dit ame namba imalo me wie exp() rorom kede "
+"x. Oyiko pi x >= 0"
 
-#: functions.py:320
+#: functions.py:380
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
+"log 10(x), dwogo piny me log 10 me x.Man obedo dita y mamio 10^y rorom kede "
+"x. Matye pi x >= 0."
 
-#: functions.py:327
+#: functions.py:388
 msgid "Can only calculate x modulo <integer>"
-msgstr ""
+msgstr "Twero keken tiyo cura me x modulo <integer>"
 
-#: functions.py:329
+#: functions.py:390
 msgid ""
-"mod(x, y), return the modulus of x with respect to y. This is the remainder "
+"mod(x, y), return the modulus of x with respect to y.This is the remainder "
 "after dividing x by y."
 msgstr ""
+"mod(x, y), dwogo modulac me x alubere kit a y tye kede. Man obedo en adong "
+"iyonge poko x kede y"
 
-#: functions.py:337
+#: functions.py:399
 msgid "mul(x, y), return x * y"
-msgstr ""
+msgstr "mul(x, y), dwogo x * y"
 
-#: functions.py:341
+#: functions.py:404
 msgid "negate(x), return -x"
-msgstr ""
+msgstr "dok tucam(x), dwogo -x"
 
-#: functions.py:346
+#: functions.py:410
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
+"Or(x, y), tam atut or. Dwogo Ateni ka x onyo y obedo Ateni, kape dwogo Goba"
 
-#: functions.py:361
+#: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
-msgstr ""
+msgstr "pow(x, y), dwogo x malo iwi y (x**y"
 
-#: functions.py:366
+#: functions.py:433
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
-msgstr ""
+msgstr "rand_float(), dwogo namba me poin matye kakwang iyi akina 0.0 kede 1.0"
 
-#: functions.py:371
+#: functions.py:439
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
+"rand_int([<maxval>]), dwogo namba ame ikwanya akwanya matye iyi akina 0 kede "
+"<maxval> .<maxval> obedo tam alara ame pe me dic dang dok cung pi 65535."
 
-#: functions.py:376
+#: functions.py:445
 msgid "round(x), return the integer nearest to x."
-msgstr ""
+msgstr "macocok kede(x), dwogo namba macego kwede x."
 
-#: functions.py:382 functions.py:390
+#: functions.py:452 functions.py:461
 msgid "Bitwise operations only apply to integers"
-msgstr ""
+msgstr "Tic ki bit oyiko keken pi namba ikome"
 
-#: functions.py:384
+#: functions.py:454
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr ""
+"shift_left(x, y), cwalo x kede bit y tutung cam (kwan kede 2 pi bit acelacel)"
 
-#: functions.py:392
+#: functions.py:463
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr ""
+"shift_right(x, y), cwalo x kede bite y tutung cem (pok ki 2 pi bit acelacel)"
 
-#: functions.py:397
+#: functions.py:469
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
 msgstr ""
+"sin(x,), dwogo sine me x. Man obedo lain ipiny y ikom caikol ame dyeredyere "
+"mere tye x"
 
-#: functions.py:403
+#: functions.py:476
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
-msgstr ""
+msgstr "sing(x), dwogo hyperbolic sine me x. Omio ki (exp(x) - exp(-x)) / 2"
 
-#: functions.py:410
+#: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
-msgstr ""
+msgstr "since(x), dwogo sinc me x. Man ginwongo ki sin(x) / x"
 
-#: functions.py:415
+#: functions.py:491
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
 msgstr ""
+"sqrt(x), dwogo namba ma ka gikwano ki en kene bedo x. Man obedo ngo aya "
+"ikwano namba no kekene tyelo aryo mamio x. Giyiko pi x >= 0"
 
-#: functions.py:420
+#: functions.py:497
 msgid "square(x), return x * x"
-msgstr ""
+msgstr "Nya kene tyelo aryo(x), dwogo x * x"
 
-#: functions.py:427
+#: functions.py:505
 msgid "sub(x, y), return x - y"
-msgstr ""
+msgstr "sub(x, y), dwogo x - y"
 
-#: functions.py:432
+#: functions.py:511
 msgid ""
 "tan(x), return the tangent of x. This is the slope of the line from the "
 "origin of the unit circle to the point on the unit circle defined by the "
 "angle x. Given by sin(x) / cos(x)"
 msgstr ""
+"tan(x), dwogo tangent me x. Man obedo tingere me lain icake ikom acaki me "
+"caikol itunu ipoin moni ikom caikol malube ki dyeredyere aromo x. Nwongere "
+"ki sin(x) / cos(x)"
 
-#: functions.py:439
+#: functions.py:519
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
-msgstr ""
+msgstr "tanh(x), dwogo hyperbolic tangent me x. Nwongere ki sinh(x) / cosh(x)"
 
-#: functions.py:444
+#: functions.py:525
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
 msgstr ""
+"xor(x , y), tam atut xor. Dwogo Ateni ka onyo x obedo Ateni (kede y obedo "
+"Goba) onyo y obedo Ateni (eka x obedo Goba), kape dwogo Goba"
 
-#: layout.py:75
-msgid "Clear"
-msgstr ""
-
-#: layout.py:105 layout.py:145
-msgid "Edit"
-msgstr ""
-
-#: layout.py:110 layout.py:146
-msgid "Algebra"
-msgstr ""
-
-#: layout.py:115 layout.py:147
-msgid "Trigonometry"
-msgstr ""
-
-#: layout.py:120 layout.py:148
-msgid "Boolean"
-msgstr ""
-
-#: layout.py:125 layout.py:149
-msgid "Miscellaneous"
-msgstr ""
-
-#: layout.py:178
-msgid "Label:"
-msgstr ""
-
-#: layout.py:223
-msgid "All equations"
-msgstr ""
-
-#: layout.py:224
-msgid "My equations"
-msgstr ""
-
-#: layout.py:225
-msgid "Show variables"
-msgstr ""
-
-#. TRANS: multiplication symbol (default: '×')
-#: mathlib.py:82
-msgid "mul_sym"
-msgstr ""
-
-#. TRANS: division symbol (default: '÷')
-#: mathlib.py:87
-msgid "div_sym"
-msgstr ""
-
-#. TRANS: equal symbol (default: '=')
-#: mathlib.py:92
-msgid "equ_sym"
-msgstr ""
-
-#: mathlib.py:216
-msgid "Undefined"
-msgstr ""
-
-#: mathlib.py:226
-msgid "Error: unsupported type"
-msgstr ""
-
-#: toolbars.py:53
+#: toolbars.py:57
 msgid "Help"
-msgstr ""
+msgstr "Konyi"
 
-#: toolbars.py:121
+#: toolbars.py:132
 msgid "Copy"
-msgstr ""
+msgstr "Loki"
 
-#: toolbars.py:122
+#: toolbars.py:133
 msgid "<ctrl>c"
-msgstr ""
-
-#: toolbars.py:126
-msgid "Cut"
-msgstr ""
-
-#: toolbars.py:129
-msgid "<ctrl>x"
-msgstr ""
+msgstr "<ctrl>c"
 
 #: toolbars.py:137
+msgid "Cut"
+msgstr "Ngoli"
+
+#: toolbars.py:140
+msgid "<ctrl>x"
+msgstr "<ctrl>x"
+
+#: toolbars.py:148
 msgid "Paste"
-msgstr ""
+msgstr "Dani"
 
-#: toolbars.py:147
+#: toolbars.py:160
 msgid "Square"
-msgstr ""
+msgstr "Square"
 
-#: toolbars.py:152
+#: toolbars.py:167
 msgid "Square root"
-msgstr ""
-
-#: toolbars.py:157
-msgid "Inverse"
-msgstr ""
-
-#: toolbars.py:164
-msgid "e to the power x"
-msgstr ""
-
-#: toolbars.py:169
-msgid "x to the power y"
-msgstr ""
+msgstr "Square root"
 
 #: toolbars.py:174
-msgid "Natural logarithm"
-msgstr ""
+msgid "Inverse"
+msgstr "acel pok ki namba mooni"
 
-#: toolbars.py:180
-msgid "Factorial"
-msgstr ""
+#: toolbars.py:183
+msgid "e to the power x"
+msgstr "e inamba me wie x"
 
 #: toolbars.py:190
+msgid "x to the power y"
+msgstr "x inamba me wie y"
+
+#: toolbars.py:197
+msgid "Natural logarithm"
+msgstr "log mapeloke"
+
+#: toolbars.py:206
+msgid "Factorial"
+msgstr "Lanya namba mo"
+
+#: toolbars.py:220
 msgid "Sine"
-msgstr ""
+msgstr "Sine"
 
-#: toolbars.py:194
+#: toolbars.py:225
 msgid "Cosine"
-msgstr ""
+msgstr "Cosine"
 
-#: toolbars.py:198
+#: toolbars.py:230
 msgid "Tangent"
-msgstr ""
+msgstr "Tangent"
 
-#: toolbars.py:204
+#: toolbars.py:237
 msgid "Arc sine"
-msgstr ""
+msgstr "Arc sine"
 
-#: toolbars.py:208
+#: toolbars.py:242
 msgid "Arc cosine"
-msgstr ""
+msgstr "Arc cosine"
 
-#: toolbars.py:212
+#: toolbars.py:247
 msgid "Arc tangent"
-msgstr ""
+msgstr "Arc tangent"
 
-#: toolbars.py:218
+#: toolbars.py:254
 msgid "Hyperbolic sine"
-msgstr ""
+msgstr "Hyperbolic sine"
 
-#: toolbars.py:222
+#: toolbars.py:259
 msgid "Hyperbolic cosine"
-msgstr ""
+msgstr "Hyperbolic cosine"
 
-#: toolbars.py:226
+#: toolbars.py:264
 msgid "Hyperbolic tangent"
-msgstr ""
+msgstr "Hyperbolic tangent"
 
-#: toolbars.py:236
+#: toolbars.py:277
 msgid "Logical and"
-msgstr ""
+msgstr "Tam matut kwede"
 
-#: toolbars.py:240
+#: toolbars.py:282
 msgid "Logical or"
-msgstr ""
+msgstr "Tam matut nyo"
 
-#: toolbars.py:250
+#: toolbars.py:293
 msgid "Equals"
-msgstr ""
+msgstr "Romrom kwede"
 
-#: toolbars.py:253
+#: toolbars.py:297
 msgid "Not equals"
-msgstr ""
-
-#: toolbars.py:262
-msgid "Pi"
-msgstr ""
-
-#: toolbars.py:266
-msgid "e"
-msgstr ""
-
-#: toolbars.py:269
-msgid "γ"
-msgstr ""
-
-#: toolbars.py:272
-msgid "φ"
-msgstr ""
-
-#: toolbars.py:279
-msgid "Plot"
-msgstr ""
-
-#: toolbars.py:286
-msgid "Degrees"
-msgstr ""
-
-#: toolbars.py:287
-msgid "Radians"
-msgstr ""
-
-#: toolbars.py:291
-msgid "Degrees / Radians"
-msgstr ""
-
-#: toolbars.py:300
-msgid "Exponent / Scientific notation"
-msgstr ""
+msgstr "Pe romrom kwede"
 
 #: toolbars.py:310
-msgid "Number of shown digits"
-msgstr ""
+msgid "Pi"
+msgstr "Pi"
+
+#: toolbars.py:316
+msgid "e"
+msgstr "e"
 
 #: toolbars.py:320
+msgid "γ"
+msgstr "Y"
+
+#: toolbars.py:325
+msgid "φ"
+msgstr "φ"
+
+#: toolbars.py:333
+msgid "Plot"
+msgstr "Plot"
+
+#: toolbars.py:338
+msgid "Degrees"
+msgstr "Digri apol"
+
+#: toolbars.py:339
+msgid "Radians"
+msgstr "Radians"
+
+#: toolbars.py:344
+msgid "Degrees / Radians"
+msgstr "Digri apol/ Radians"
+
+#: toolbars.py:354
+msgid "Exponent / Scientific notation"
+msgstr "Anya me cura / coc me cayany"
+
+#: toolbars.py:365
+msgid "Number of shown digits"
+msgstr "Namba ma kinyutu"
+
+#: toolbars.py:377
 msgid "Integer formatting base"
+msgstr "Ka yiko namba me cura"
+
+#: astparser.py:39
+msgid ""
+"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
+"range from a to b"
 msgstr ""
+"Ci(eqn, var=-a..b), ci kan ame turyo weng rorom 'eqn' kede jami ame kelo "
+"alokaloka 'var' icakere a tunu b"
+
+#: astparser.py:61
+#, python-format
+msgid "Parse error at %d"
+msgstr "Bal paci i %d"
+
+#: astparser.py:75 astparser.py:109
+#, python-format
+msgid "Error at '%s', position: %d"
+msgstr "Bal i '%s', kaka: %d"
+
+#: astparser.py:88
+msgid "Syntax Error."
+msgstr "Bal ileb me coc."
+
+#: astparser.py:95
+msgid "Syntax Error!"
+msgstr "Bal ileb me coc!"
+
+#: astparser.py:135
+msgid "This is just a test topic, use help(index) for the index"
+msgstr ""
+"Man obedo keken gipwonye me atema, ti ki kony(lic me gipwonye) pi lic me "
+"gipwonye"
+
+#: astparser.py:148
+msgid "Use help(test) for help about 'test', or help(index) for the index"
+msgstr ""
+"To kwede kony(temi) pi kony me 'atema', onyo kony(rye iyore kiyore) pi ryeyo "
+"iyore kiyore"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:152
+msgid "index"
+msgstr "gipwonye iyoreyore"
+
+#: astparser.py:152
+msgid "topics"
+msgstr "dule me kop"
+
+#: astparser.py:153
+msgid "Topics"
+msgstr " Dule me kop"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:161
+msgid "variables"
+msgstr "akel alokaloka"
+
+#: astparser.py:162
+msgid "Variables"
+msgstr "Jami maloke"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:168
+msgid "functions"
+msgstr "Matime"
+
+#: astparser.py:169
+msgid "Functions"
+msgstr "Atime"
+
+#: astparser.py:178
+#, python-format
+msgid "No help about '%s' available, use help(index) for the index"
+msgstr ""
+"Pe tye kony mo ikom '%s' matye, ti kwede kony(rye iyore) pi ryeyo iyoreyore"
+
+#: astparser.py:508
+msgid "help"
+msgstr "kony"
+
+#: astparser.py:515
+msgid "Recursion detected"
+msgstr "Nwoyo onen oko"
+
+#: astparser.py:539
+#, python-format
+msgid "Function '%s' not defined"
+msgstr "Tica '%s' pe tye ngec moo ie"
+
+#: astparser.py:541
+#, python-format
+msgid "Variable '%s' not defined"
+msgstr "Mamio alokaloka '%s' pe tye ngec moo ie"
+
+#: astparser.py:551
+#, python-format
+msgid "Attribute '%s' does not exist"
+msgstr "Nucu ne '%s' pe matwal"
+
+#: astparser.py:654
+msgid "Parse error"
+msgstr "Bal ilok"
+
+#: astparser.py:659
+msgid "Multiple statements not supported"
+msgstr "Pe giye lok mapolapola"
+
+#: astparser.py:683
+msgid "Internal error"
+msgstr "Bal me ie"
+
+#. TRANS: multiplication symbol (default: '×')
+#: mathlib.py:84
+msgid "mul_sym"
+msgstr "mul_sym"
+
+#. TRANS: division symbol (default: '÷')
+#: mathlib.py:89
+msgid "div_sym"
+msgstr "div_sym"
+
+#. TRANS: equal symbol (default: '=')
+#: mathlib.py:94
+msgid "equ_sym"
+msgstr "equ_sym"
+
+#: mathlib.py:227
+msgid "Undefined"
+msgstr "Mape gipoko kite"
+
+#: mathlib.py:237
+msgid "Error: unsupported type"
+msgstr "Bal: kite ma pe gicwako"
+
+#: layout.py:113
+msgid "Clear"
+msgstr "Ruc woko"
+
+#: layout.py:151 layout.py:195
+msgid "Edit"
+msgstr "Yik maber"
+
+#: layout.py:156 layout.py:196
+msgid "Algebra"
+msgstr "Algebra"
+
+#: layout.py:161 layout.py:198
+msgid "Trigonometry"
+msgstr "Trigonometry"
+
+#: layout.py:166 layout.py:199
+msgid "Boolean"
+msgstr "Boolean"
+
+#: layout.py:175 layout.py:200
+msgid "Miscellaneous"
+msgstr "Onywak"
+
+#: layout.py:229
+msgid "Label:"
+msgstr "Alama ma ikome:"
+
+#: layout.py:278
+msgid "All equations"
+msgstr "Maromrom weng"
+
+#: layout.py:279
+msgid "My equations"
+msgstr "Maromrom mamega"
+
+#: layout.py:280
+msgid "Show variables"
+msgstr "Nyut makelo alokaloka"
+
+#: calculate.py:109
+#, python-format
+msgid "Equation.parse() string invalid (%s)"
+msgstr "Nwongo gin ape ongeo.dul lok() ka kubo pe tye atira (%s)"
+
+#: calculate.py:525
+msgid "Can not assign label: will cause recursion"
+msgstr "Pe twero keto alama ne: bikelo nwoyo"
+
+#: calculate.py:620
+#, python-format
+msgid "Writing to journal (%s)"
+msgstr "Coyo pi janol (%s)"
+
+#: calculate.py:932
+msgid "button_pressed(): invalid type"
+msgstr "mapeca_odio(): kite pe atir"
+
+#~ msgid ""
+#~ "This is the place to get the answer to a quick problem, but that is not the "
+#~ "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
+#~ msgstr ""
+#~ "Man kanwongo anca me peko me oyoto, ento mano pe me agiki! Itwero bebea iyi "
+#~ "Algebra, Trigonometry, Boolean kwede en mapol mukeme!"
+
+#, python-format
+#~ msgid "Error at %d"
+#~ msgstr "Bal i %d"
+
+#~ msgid "fac"
+#~ msgstr "fac"
+
+#~ msgid ""
+#~ "And(x, y), logical and. Returns True if x and y are True, else returns False"
+#~ msgstr ""
+#~ "Kede(x,y), tam atut kede Dwogo Ateni ka x kede y tye Ateni onyo kape dwogo "
+#~ "Pe ateni"
+
+#~ msgid "Number does not look binary in base 10"
+#~ msgstr "Namba pe nen dul me aryo iyi nucunucu me apar"
+
+#~ msgid ""
+#~ "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+#~ msgstr ""
+#~ "cosh(x), dwogo hyperbolic cosine me x. Nwongere iya (exp(x) + exp(-x)) / 2"
+
+#~ msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
+#~ msgstr "fac(x), dwogo lakwan me x. Gimio kede x * (x -1) * (x - 2) * ..."
+
+#~ msgid ""
+#~ "mod(x, y), return the modulus of x with respect to y. This is the remainder "
+#~ "after dividing x by y."
+#~ msgstr ""
+#~ "mod(x, y), dwogo modulus me x alubo kita y tye kede. Man obedo en odong "
+#~ "iyonge poko x kede y."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-08 00:33-0400\n"
+"POT-Creation-Date: 2017-03-24 17:39+1100\n"
 "PO-Revision-Date: 2015-06-29 15:00+0000\n"
 "Last-Translator: EdgarQuispeChambi <equispe7@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,140 +18,9 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1435590022.000000\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Calculate"
 msgstr "Jakhsuña"
-
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid ""
-"This is the place to get the answer to a quick problem, but that is not the "
-"limit! You can also explore Algebra, Trigonometry, Boolean and more!"
-msgstr ""
-"Aka chiqawa jani walt'äwi chiqachañatakixa, ukata janiwa uka mayakïkiti. "
-"Algebra wakichata thaqarakismawa. Trigonometría, Booleanos, ukata "
-"yaqhanakampi"
-
-#: astparser.py:40
-msgid ""
-"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
-"range from a to b"
-msgstr ""
-"plot(eqn, var=-a..b), 'eqn' jakhjaña apsuña uka 'var' sata wakisiri "
-"mayjt'ayirinakampi, ukata 'a' ukata 'b' wakichatkama"
-
-#: astparser.py:59
-#, python-format
-msgid "Parse error at %d"
-msgstr "Wakichatanaka apsuñana pantjata %d"
-
-#: astparser.py:71 astparser.py:83
-#, python-format
-msgid "Error at %d"
-msgstr "Pantjata %d"
-
-#: astparser.py:94
-msgid "This is just a test topic, use help(index) for the index"
-msgstr ""
-"Akawa yant'äwina maya yatxataña wakichataxa, yanapt'äwi (qalltaña) wakichata "
-"apnaqasa qalltma"
-
-#: astparser.py:106
-msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr ""
-"Yanaptäwi (jiskht'äwinaka) apnaqama uka jiskht'äwinaka tuqita yanapañataki, "
-"jani ukaxa yanapt'äwi (qalltaña) apnaqasa wakichatanakampi qalltañataki"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:109
-msgid "index"
-msgstr "qalltäwi"
-
-#: astparser.py:109
-msgid "topics"
-msgstr "amtäwinaka"
-
-#: astparser.py:110
-msgid "Topics"
-msgstr "Amuytäwinaka"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:118
-msgid "variables"
-msgstr "mayjt'ayirinaka"
-
-#: astparser.py:119
-msgid "Variables"
-msgstr "Mayjt'ayirinaka"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:125
-msgid "functions"
-msgstr "wakisirinaka"
-
-#: astparser.py:126
-msgid "Functions"
-msgstr "Wakisirinaka"
-
-#: astparser.py:135
-#, python-format
-msgid "No help about '%s' available, use help(index) for the index"
-msgstr ""
-"Uka tuqita janiwa yanapt'axa utjiti '%s', yanapt'iri (qalltaña) apnaqma "
-"wakichatanakampi qalltañataki"
-
-#: astparser.py:459
-msgid "help"
-msgstr "yanapt'äwi"
-
-#: astparser.py:466
-msgid "Recursion detected"
-msgstr "T'aqaqtäwi katjaña"
-
-#: astparser.py:490
-#, python-format
-msgid "Function '%s' not defined"
-msgstr "Uka wakisirixa '%s' jukha chaniru jani qhanstayiti"
-
-#: astparser.py:492
-#, python-format
-msgid "Variable '%s' not defined"
-msgstr "Mayjt'ayirixa '%s' jukha chaniru jani qhanstayiti"
-
-#: astparser.py:502
-#, python-format
-msgid "Attribute '%s' does not exist"
-msgstr "Ch'amanchiri '%s' janiwa qhanstiti"
-
-#: astparser.py:596
-msgid "Parse error"
-msgstr "Wakichäwinaka pantjata"
-
-#: astparser.py:601
-msgid "Multiple statements not supported"
-msgstr "Kunaymana amuyunakaxa janiwa suma katuqatati"
-
-#: astparser.py:625
-msgid "Internal error"
-msgstr "Wakichäwi taypina pantjata"
-
-#: calculate.py:109
-#, python-format
-msgid "Equation.parse() string invalid (%s)"
-msgstr "Equation.parse() sata wakichäwi saräwi sayt'ayata (%s)"
-
-#: calculate.py:483
-msgid "Can not assign label: will cause recursion"
-msgstr "Sutiyaña chimpu janiwa uchayasiti: T'aqasïwimpiwa sayt'ani"
-
-#: calculate.py:571
-#, python-format
-msgid "Writing to journal (%s)"
-msgstr "Sapüru wakichäwinaka qillqthapisa (%s)"
-
-#: calculate.py:865
-msgid "button_pressed(): invalid type"
-msgstr "button_pressed(): sata wakichata sayt'ayata"
 
 #: functions.py:35
 msgid "add"
@@ -222,24 +91,24 @@ msgid "factorial"
 msgstr "'factorial' sata wakichata"
 
 #: functions.py:52
-msgid "fac"
-msgstr "'fac' sata wakichatanaka"
-
-#: functions.py:53
 msgid "factorize"
 msgstr "jaljayaña"
 
-#: functions.py:54
+#: functions.py:53
 msgid "floor"
 msgstr "uraqi"
 
-#: functions.py:55
+#: functions.py:54
 msgid "inv"
 msgstr "'inv' sata wakichata"
 
-#: functions.py:56
+#: functions.py:55
 msgid "is_int"
 msgstr "'is_int' sata wakichata"
+
+#: functions.py:56
+msgid "is_prime"
+msgstr ""
 
 #: functions.py:57
 msgid "ln"
@@ -305,13 +174,17 @@ msgstr "'tanh' sata wakichata"
 msgid "xor"
 msgstr "'xor' sata wakichata"
 
-#: functions.py:112
+#: functions.py:119
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
 msgstr ""
 "abs(x), wakichataxa uka 'x' wakisiriru chanipa kuttayi, ukasti -x ukaxa x < "
 "0 uka saña muni"
 
-#: functions.py:117
+#: functions.py:124
+msgid "acos(x) only defined for x E [-1,1]"
+msgstr ""
+
+#: functions.py:128
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
@@ -319,7 +192,7 @@ msgstr ""
 "acos(x), wakichataxa uka 'x' wakisiriru arco coseno wakisiripa kuttayi. "
 "Ukapi coseno wakisiri chanipa uka 'x'. Ukasti akïriraki -1 <= x < 1"
 
-#: functions.py:123
+#: functions.py:135
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
@@ -327,19 +200,20 @@ msgstr ""
 "acosh(x), arco coseno hiperbólico 'x' wakisiriru kuttayi. Ukapi uka 'y' "
 "wakisirina chanipaxa ukatpi coseno hiperbólico chanixa 'x' wakisiparaki."
 
-#: functions.py:129
+#: functions.py:142
 msgid ""
-"And(x, y), logical and. Returns True if x and y are True, else returns False"
+"And(x, y), logical and. Returns True if x and y are True,else returns False"
 msgstr ""
-"And(x, y), ukasti chiqapawa. Chiqapa kuttayiwa kunapachatixa 'x' ukata 'y' "
-"wakisirinakapa chiqapipana, jani ukhamipana uka Jani chiqapa wakichatawa "
-"kutinispa"
 
-#: functions.py:136
+#: functions.py:151
 msgid "add(x, y), return x + y"
 msgstr "jakhuxataña(x, y), kutsuyaña x + y"
 
-#: functions.py:141
+#: functions.py:156
+msgid "asin(x) only defined for x E [-1,1]"
+msgstr ""
+
+#: functions.py:159
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
@@ -348,7 +222,7 @@ msgstr ""
 "chanipawa, ukatakisti seno ukaxa x wakisiripawa. Ukasti qhananchasirakiwa -1 "
 "<= x <= 1"
 
-#: functions.py:147
+#: functions.py:166
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
@@ -357,7 +231,7 @@ msgstr ""
 "y wakisiripa chanipawa, ukatakisti uka seno hiperbólico wakisiri x "
 "wakichatawa."
 
-#: functions.py:153
+#: functions.py:173
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
@@ -366,7 +240,7 @@ msgstr ""
 "chanipawa uka tangete x ukataki wakichata. Ukasti qhananchasirakiwa taqi x "
 "wakichatataki"
 
-#: functions.py:159
+#: functions.py:180
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
@@ -375,25 +249,25 @@ msgstr ""
 "y wakisiripa chanipawa, ukatakiisti tangente hiperbólico x wakichatana "
 "wakisiripawa."
 
-#: functions.py:171
-msgid "Number does not look binary in base 10"
-msgstr "Uka jakhuxa base 10 wakisiripana janiwa payachasiti"
+#: functions.py:191
+msgid "Number does not look binary."
+msgstr ""
 
-#: functions.py:178
+#: functions.py:199
 msgid ""
-"b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
-"(10111) = 23,"
+"b10bin(x), interpret a number written in base 10 as binary, e.g.: "
+"b10bin(10111) = 23,"
 msgstr ""
 "b10bin(x), wakichataxa base 10 wakisiripana jakhu qillqata qhananchi, "
 "payachatjama, akhama: b10bin(10111) = 23,"
 
-#: functions.py:183
+#: functions.py:205
 msgid "ceil(x), return the smallest integer larger than x."
 msgstr ""
 "ceil(x), wakichataxa x chanipa jila phuqata jakhuta sipana pisi jakhu "
 "phuqata kuttayi."
 
-#: functions.py:188
+#: functions.py:211
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
@@ -401,22 +275,20 @@ msgstr ""
 "cos(x), wakichataxa x coseno wakisiri chanipa kuttayi. Ukasti x cordenada "
 "katupawa uka x maya k'uchu chanini maya sapa muyu taypina utji"
 
-#: functions.py:194
+#: functions.py:218
 msgid ""
-"cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+"cosh(x), return the hyperbolic cosine of x.Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
-"cosh(x), x katuru coseno hiperbólico chanipa kuttayi. Ukasti akhamawa(exp(x) "
-"+ exp(-x)) / 2"
 
-#: functions.py:198
+#: functions.py:224 functions.py:319
 msgid "Can not divide by zero"
 msgstr "Jani kunani wakichataxa janiwa jaljayañjamati"
 
-#: functions.py:219
+#: functions.py:247
 msgid "Invalid argument"
 msgstr "Jani wakisiri qhanancha"
 
-#: functions.py:222
+#: functions.py:250
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
@@ -424,42 +296,48 @@ msgstr ""
 "gcd(a, b), uka wakichataxa a ukata b chaninakapampi máximo común divisor "
 "chanipa apsuraki. Sañäni, 15 ukata 18 jakhunakaru 3 jilïri jakuwa jaljtayi."
 
-#: functions.py:227
+#: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
 msgstr "exp(x), uka wakichataxa x chaniparu wakisiri exponente natural kuttayi"
 
-#: functions.py:231
+#: functions.py:262
+msgid "Factorial(x) is only defined for integers x>=0"
+msgstr ""
+
+#: functions.py:265
 msgid "Factorial only defined for integers"
 msgstr "Factorial wakichataxa phuqata jakhunakataki wakichatawa"
 
-#: functions.py:244
+#: functions.py:278
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr ""
 "factorial(x), uka wakichataxa x factorial chanipa kuttayi. Ukasti akhamata "
 "phuqasiraki x * (x - 1) * (x - 2) * ..."
 
-#: functions.py:250
-msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-msgstr ""
-"fac(x), uka wakichataxa x factorial chanipa kuttayi. Ukasti akhamata "
-"phuqasiraki x * (x - 1) * (x - 2) * ..."
-
-#: functions.py:283
+#: functions.py:314
 msgid "floor(x), return the largest integer smaller than x."
 msgstr ""
 "floor(x), uka wakichataxa x chanipa arkirita jila jakhu phuqata kuttayi."
 
-#: functions.py:287
+#: functions.py:321
 msgid "inv(x), return the inverse of x, which is 1 / x"
 msgstr ""
 "inv(x), uka wakichataxa x chanipa maynipa kuttayi, ukasti akhamata 1 / x"
 
-#: functions.py:309 functions.py:318
+#: functions.py:356
+msgid "Argument must be int"
+msgstr ""
+
+#: functions.py:358
+msgid "Prime numbers is defined for natural numbers"
+msgstr ""
+
+#: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
 msgstr "Logarithm(x) uka wakichataxa akhmataki wakichatawa x > 0"
 
-#: functions.py:311
+#: functions.py:370
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
@@ -468,7 +346,7 @@ msgstr ""
 "uka exponente exp() chanipaxa x chanipa khuskhakiwa. Ukasti akhamata "
 "phuqasiraki x >= 0."
 
-#: functions.py:320
+#: functions.py:380
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
@@ -477,44 +355,42 @@ msgstr ""
 "kuttayi. Uka chanitakixa 10^y chanipaxa x chanipa khuskhakiwa. Ukasti "
 "akhamataki x>=0."
 
-#: functions.py:327
+#: functions.py:388
 msgid "Can only calculate x modulo <integer>"
 msgstr "Ukasti x módulo wakichatampikiwa chanichasispa <integer>"
 
-#: functions.py:329
+#: functions.py:390
 msgid ""
-"mod(x, y), return the modulus of x with respect to y. This is the remainder "
+"mod(x, y), return the modulus of x with respect to y.This is the remainder "
 "after dividing x by y."
 msgstr ""
-"mod(x, y), uka wakichataxa x módulo wakichata chani uka y chanipata sipana "
-"kuttayi. Ukasti misturakiwa x chanimpi y chanimpi jaljayasa."
 
-#: functions.py:337
+#: functions.py:399
 msgid "mul(x, y), return x * y"
 msgstr "mul(x, y), uka wakichataxa x * y chanipa kuttayi"
 
-#: functions.py:341
+#: functions.py:404
 msgid "negate(x), return -x"
 msgstr "negate(x), uka wakichataxa -x chani kuttayani"
 
-#: functions.py:346
+#: functions.py:410
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
 "Or(x, y), 'o' logico, uka wakichataxa niyaki x jani/ukaxa y chiqapipana "
 "chiqpacha kuttayani. Jani ukhamipana Jani chiqapa kuttayani"
 
-#: functions.py:361
+#: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
 msgstr "pow(x, y), uka wakichataxa x chani y chani payachasawa (x**y) kuttayi"
 
-#: functions.py:366
+#: functions.py:433
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
 msgstr ""
 "rand_float(), uka wakichataxa 0.0 wakisiriru punti flotante aleatorio jakhu "
 "chanipa kuttayi ukata 1.0"
 
-#: functions.py:371
+#: functions.py:439
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
@@ -523,27 +399,27 @@ msgstr ""
 "ukasti wakisiri qhananchatarjama, ukana chanipaxa 65535, akatjamata "
 "uñasitapata."
 
-#: functions.py:376
+#: functions.py:445
 msgid "round(x), return the integer nearest to x."
 msgstr "round(x), uka wakichataxa x chani jak'ankiri phuqata jakhu kuttayi."
 
-#: functions.py:382 functions.py:390
+#: functions.py:452 functions.py:461
 msgid "Bitwise operations only apply to integers"
 msgstr "Uka bits chanichañanakaxa parisa jakhunakampikiwa phuqasi"
 
-#: functions.py:384
+#: functions.py:454
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr ""
 "shift_left(x, y), uka wakichataxa x chaniru y chanipampiwa ch'iqaru "
 "jithjtayi (sapa bit chaniru 2 jakhumpi jakhsuma)"
 
-#: functions.py:392
+#: functions.py:463
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr ""
 "shift_right(x, y), uka wakichataxa x chaniru y chanipampiwa ch'iqaru "
 "jithjtayi (sapa bit chaniru 2 jakhumpi jaljtayma)"
 
-#: functions.py:397
+#: functions.py:469
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
@@ -551,18 +427,18 @@ msgstr ""
 "sin(x), uka wakichataxa x chaniru seno chani kuttayi. Ukawa y chanina "
 "coordinada chanipaxa ukasti maya sapa muyuna x k'uchuna"
 
-#: functions.py:403
+#: functions.py:476
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
 "inh(x), kutiyiwa x ukata seno hiperbolico. (exp(x) - exp(-x)) / 2 ukampi "
 "churata"
 
-#: functions.py:410
+#: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
 msgstr "sinc(x), kutiyiwa seno cardinal x ukata. sin(x) / x ukampi churata."
 
-#: functions.py:415
+#: functions.py:491
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
@@ -570,15 +446,15 @@ msgstr ""
 "sqrt(x) kituyiwa x raiz cuadrada chanipa. axa Aka chanixa Kikipakiwa x "
 "ukampi.x >= 0 ukatakiwa."
 
-#: functions.py:420
+#: functions.py:497
 msgid "square(x), return x * x"
 msgstr "cuadrado(x), kutiyiwa x * x"
 
-#: functions.py:427
+#: functions.py:505
 msgid "sub(x, y), return x - y"
 msgstr "sub(x, y), kutiyiwa x - y"
 
-#: functions.py:432
+#: functions.py:511
 msgid ""
 "tan(x), return the tangent of x. This is the slope of the line from the "
 "origin of the unit circle to the point on the unit circle defined by the "
@@ -587,230 +463,401 @@ msgstr ""
 "tan(x), kutiyaniwa tangente x chanipa. akaxa Chiqaru amsta sapa muyu "
 "qalltuta x k'uchuta muyu chanich'atkama. sin(x) / cos(x) ukampi churata"
 
-#: functions.py:439
+#: functions.py:519
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr ""
 "tanh(x), kutiyaniwa tangente hiperbolica x chanita. sinh(x) / cosh(x) ukampi "
 "churata"
 
-#: functions.py:444
+#: functions.py:525
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
 msgstr ""
-"xor(x, y), xor logico. chiqapa kutiyaniniwa x chani chiqapipana (y "
-"k'aripana) jani ukasti y chiqapipana ( x es k'aripana), jani ukasti "
-"kutiyaniniwa k'ari"
+"xor(x, y), xor logico. chiqapa kutiyaniniwa x chani chiqapipana (y k'aripana)"
+" jani ukasti y chiqapipana ( x es k'aripana), jani ukasti kutiyaniniwa k'ari"
 
-#: layout.py:75
-msgid "Clear"
-msgstr "Pichsuña"
+#: toolbars.py:57
+msgid "Help"
+msgstr "Yanapt'awi"
 
-#: layout.py:105 layout.py:145
-msgid "Edit"
-msgstr "Chiqachaña"
+#: toolbars.py:132
+msgid "Copy"
+msgstr "Talliqaña"
 
-#: layout.py:110 layout.py:146
-msgid "Algebra"
-msgstr "Algebra"
+#: toolbars.py:133
+msgid "<ctrl>c"
+msgstr "<ctrl>c"
 
-#: layout.py:115 layout.py:147
-msgid "Trigonometry"
-msgstr "Trigonometría"
+#: toolbars.py:137
+msgid "Cut"
+msgstr "Apaqaña"
 
-#: layout.py:120 layout.py:148
-msgid "Boolean"
-msgstr "Booleano wakichata"
+#: toolbars.py:140
+msgid "<ctrl>x"
+msgstr "<ctrl>x"
 
-#: layout.py:125 layout.py:149
-msgid "Miscellaneous"
-msgstr "Kunaymana"
+#: toolbars.py:148
+msgid "Paste"
+msgstr "Lip'iyaña"
 
-#: layout.py:178
-msgid "Label:"
-msgstr "Chimpunaka:"
+#: toolbars.py:160
+msgid "Square"
+msgstr "Payanchaña"
 
-#: layout.py:223
-msgid "All equations"
-msgstr "Qawayata ecuaciones"
+#: toolbars.py:167
+msgid "Square root"
+msgstr "Raíz cuadrada"
 
-#: layout.py:224
-msgid "My equations"
-msgstr "Nayana wakichata ecuaciones"
+#: toolbars.py:174
+msgid "Inverse"
+msgstr "Maysapa"
 
-#: layout.py:225
-msgid "Show variables"
-msgstr "Variable Uñachayaña"
+#: toolbars.py:183
+msgid "e to the power x"
+msgstr "e piq'inchaña x ukaru"
+
+#: toolbars.py:190
+msgid "x to the power y"
+msgstr "x piq'inchaña y ukaru"
+
+#: toolbars.py:197
+msgid "Natural logarithm"
+msgstr "Logaritmo wakichata"
+
+#: toolbars.py:206
+msgid "Factorial"
+msgstr "Factorial"
+
+#: toolbars.py:220
+msgid "Sine"
+msgstr "Seno wakichata"
+
+#: toolbars.py:225
+msgid "Cosine"
+msgstr "Coseno wakichata"
+
+#: toolbars.py:230
+msgid "Tangent"
+msgstr "Tangente wakichata"
+
+#: toolbars.py:237
+msgid "Arc sine"
+msgstr "Arcoseno wakichata"
+
+#: toolbars.py:242
+msgid "Arc cosine"
+msgstr "Arcocoseno wakichata"
+
+#: toolbars.py:247
+msgid "Arc tangent"
+msgstr "Arcotangente wakichata"
+
+#: toolbars.py:254
+msgid "Hyperbolic sine"
+msgstr "Seno hiperbólico wakichata"
+
+#: toolbars.py:259
+msgid "Hyperbolic cosine"
+msgstr "Coseno hiperbólico wakichata"
+
+#: toolbars.py:264
+msgid "Hyperbolic tangent"
+msgstr "Tangente hiperbólica wakichata"
+
+#: toolbars.py:277
+msgid "Logical and"
+msgstr "Y lógico wakichata"
+
+#: toolbars.py:282
+msgid "Logical or"
+msgstr "O lógico wakichata"
+
+#: toolbars.py:293
+msgid "Equals"
+msgstr "Kikipa"
+
+#: toolbars.py:297
+msgid "Not equals"
+msgstr "Mayja"
+
+#: toolbars.py:310
+msgid "Pi"
+msgstr "Pi chimpu"
+
+#: toolbars.py:316
+msgid "e"
+msgstr "e chimpu"
+
+#: toolbars.py:320
+msgid "γ"
+msgstr "γ chimpu"
+
+#: toolbars.py:325
+msgid "φ"
+msgstr "φ chimpu"
+
+#: toolbars.py:333
+msgid "Plot"
+msgstr "Jirsüwi"
+
+#: toolbars.py:338
+msgid "Degrees"
+msgstr "Grados wakichata"
+
+#: toolbars.py:339
+msgid "Radians"
+msgstr "Radianes wakichata"
+
+#: toolbars.py:344
+msgid "Degrees / Radians"
+msgstr "Grados / Radianes wakichata"
+
+#: toolbars.py:354
+msgid "Exponent / Scientific notation"
+msgstr "Exponente / Notación científica wakichata"
+
+#: toolbars.py:365
+msgid "Number of shown digits"
+msgstr "Jakhunakana jakhupa uñachayata"
+
+#: toolbars.py:377
+msgid "Integer formatting base"
+msgstr "Jhakhunaka kayuncha"
+
+#: astparser.py:39
+msgid ""
+"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
+"range from a to b"
+msgstr ""
+"plot(eqn, var=-a..b), 'eqn' jakhjaña apsuña uka 'var' sata wakisiri "
+"mayjt'ayirinakampi, ukata 'a' ukata 'b' wakichatkama"
+
+#: astparser.py:61
+#, python-format
+msgid "Parse error at %d"
+msgstr "Wakichatanaka apsuñana pantjata %d"
+
+#: astparser.py:75 astparser.py:109
+#, python-format
+msgid "Error at '%s', position: %d"
+msgstr ""
+
+#: astparser.py:88
+msgid "Syntax Error."
+msgstr ""
+
+#: astparser.py:95
+msgid "Syntax Error!"
+msgstr ""
+
+#: astparser.py:135
+msgid "This is just a test topic, use help(index) for the index"
+msgstr ""
+"Akawa yant'äwina maya yatxataña wakichataxa, yanapt'äwi (qalltaña) wakichata "
+"apnaqasa qalltma"
+
+#: astparser.py:148
+msgid "Use help(test) for help about 'test', or help(index) for the index"
+msgstr ""
+"Yanaptäwi (jiskht'äwinaka) apnaqama uka jiskht'äwinaka tuqita yanapañataki, "
+"jani ukaxa yanapt'äwi (qalltaña) apnaqasa wakichatanakampi qalltañataki"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:152
+msgid "index"
+msgstr "qalltäwi"
+
+#: astparser.py:152
+msgid "topics"
+msgstr "amtäwinaka"
+
+#: astparser.py:153
+msgid "Topics"
+msgstr "Amuytäwinaka"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:161
+msgid "variables"
+msgstr "mayjt'ayirinaka"
+
+#: astparser.py:162
+msgid "Variables"
+msgstr "Mayjt'ayirinaka"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:168
+msgid "functions"
+msgstr "wakisirinaka"
+
+#: astparser.py:169
+msgid "Functions"
+msgstr "Wakisirinaka"
+
+#: astparser.py:178
+#, python-format
+msgid "No help about '%s' available, use help(index) for the index"
+msgstr ""
+"Uka tuqita janiwa yanapt'axa utjiti '%s', yanapt'iri (qalltaña) apnaqma "
+"wakichatanakampi qalltañataki"
+
+#: astparser.py:508
+msgid "help"
+msgstr "yanapt'äwi"
+
+#: astparser.py:515
+msgid "Recursion detected"
+msgstr "T'aqaqtäwi katjaña"
+
+#: astparser.py:539
+#, python-format
+msgid "Function '%s' not defined"
+msgstr "Uka wakisirixa '%s' jukha chaniru jani qhanstayiti"
+
+#: astparser.py:541
+#, python-format
+msgid "Variable '%s' not defined"
+msgstr "Mayjt'ayirixa '%s' jukha chaniru jani qhanstayiti"
+
+#: astparser.py:551
+#, python-format
+msgid "Attribute '%s' does not exist"
+msgstr "Ch'amanchiri '%s' janiwa qhanstiti"
+
+#: astparser.py:654
+msgid "Parse error"
+msgstr "Wakichäwinaka pantjata"
+
+#: astparser.py:659
+msgid "Multiple statements not supported"
+msgstr "Kunaymana amuyunakaxa janiwa suma katuqatati"
+
+#: astparser.py:683
+msgid "Internal error"
+msgstr "Wakichäwi taypina pantjata"
 
 #  "×"
 #. TRANS: multiplication symbol (default: '×')
-#: mathlib.py:82
+#: mathlib.py:84
 msgid "mul_sym"
 msgstr "\"×\" chimpu"
 
 #  "÷"
 #. TRANS: division symbol (default: '÷')
-#: mathlib.py:87
+#: mathlib.py:89
 msgid "div_sym"
 msgstr "\"÷\" chimpu"
 
 #. TRANS: equal symbol (default: '=')
-#: mathlib.py:92
+#: mathlib.py:94
 msgid "equ_sym"
 msgstr "\"=\""
 
-#: mathlib.py:216
+#: mathlib.py:227
 msgid "Undefined"
 msgstr "Jani amuyata"
 
-#: mathlib.py:226
+#: mathlib.py:237
 msgid "Error: unsupported type"
 msgstr "Pantjata: kut'ayata casta"
 
-#: toolbars.py:53
-msgid "Help"
-msgstr "Yanapt'awi"
+#: layout.py:113
+msgid "Clear"
+msgstr "Pichsuña"
 
-#: toolbars.py:121
-msgid "Copy"
-msgstr "Talliqaña"
+#: layout.py:151 layout.py:195
+msgid "Edit"
+msgstr "Chiqachaña"
 
-#: toolbars.py:122
-msgid "<ctrl>c"
-msgstr "<ctrl>c"
+#: layout.py:156 layout.py:196
+msgid "Algebra"
+msgstr "Algebra"
 
-#: toolbars.py:126
-msgid "Cut"
-msgstr "Apaqaña"
+#: layout.py:161 layout.py:198
+msgid "Trigonometry"
+msgstr "Trigonometría"
 
-#: toolbars.py:129
-msgid "<ctrl>x"
-msgstr "<ctrl>x"
+#: layout.py:166 layout.py:199
+msgid "Boolean"
+msgstr "Booleano wakichata"
 
-#: toolbars.py:137
-msgid "Paste"
-msgstr "Lip'iyaña"
+#: layout.py:175 layout.py:200
+msgid "Miscellaneous"
+msgstr "Kunaymana"
 
-#: toolbars.py:147
-msgid "Square"
-msgstr "Payanchaña"
+#: layout.py:229
+msgid "Label:"
+msgstr "Chimpunaka:"
 
-#: toolbars.py:152
-msgid "Square root"
-msgstr "Raíz cuadrada"
+#: layout.py:278
+msgid "All equations"
+msgstr "Qawayata ecuaciones"
 
-#: toolbars.py:157
-msgid "Inverse"
-msgstr "Maysapa"
+#: layout.py:279
+msgid "My equations"
+msgstr "Nayana wakichata ecuaciones"
 
-#: toolbars.py:164
-msgid "e to the power x"
-msgstr "e piq'inchaña x ukaru"
+#: layout.py:280
+msgid "Show variables"
+msgstr "Variable Uñachayaña"
 
-#: toolbars.py:169
-msgid "x to the power y"
-msgstr "x piq'inchaña y ukaru"
+#: calculate.py:109
+#, python-format
+msgid "Equation.parse() string invalid (%s)"
+msgstr "Equation.parse() sata wakichäwi saräwi sayt'ayata (%s)"
 
-#: toolbars.py:174
-msgid "Natural logarithm"
-msgstr "Logaritmo wakichata"
+#: calculate.py:525
+msgid "Can not assign label: will cause recursion"
+msgstr "Sutiyaña chimpu janiwa uchayasiti: T'aqasïwimpiwa sayt'ani"
 
-#: toolbars.py:180
-msgid "Factorial"
-msgstr "Factorial"
+#: calculate.py:620
+#, python-format
+msgid "Writing to journal (%s)"
+msgstr "Sapüru wakichäwinaka qillqthapisa (%s)"
 
-#: toolbars.py:190
-msgid "Sine"
-msgstr "Seno wakichata"
+#: calculate.py:932
+msgid "button_pressed(): invalid type"
+msgstr "button_pressed(): sata wakichata sayt'ayata"
 
-#: toolbars.py:194
-msgid "Cosine"
-msgstr "Coseno wakichata"
+#~ msgid ""
+#~ "This is the place to get the answer to a quick problem, but that is not the "
+#~ "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
+#~ msgstr ""
+#~ "Aka chiqawa jani walt'äwi chiqachañatakixa, ukata janiwa uka mayakïkiti. "
+#~ "Algebra wakichata thaqarakismawa. Trigonometría, Booleanos, ukata "
+#~ "yaqhanakampi"
 
-#: toolbars.py:198
-msgid "Tangent"
-msgstr "Tangente wakichata"
+#, python-format
+#~ msgid "Error at %d"
+#~ msgstr "Pantjata %d"
 
-#: toolbars.py:204
-msgid "Arc sine"
-msgstr "Arcoseno wakichata"
+#~ msgid "fac"
+#~ msgstr "'fac' sata wakichatanaka"
 
-#: toolbars.py:208
-msgid "Arc cosine"
-msgstr "Arcocoseno wakichata"
+#~ msgid ""
+#~ "And(x, y), logical and. Returns True if x and y are True, else returns False"
+#~ msgstr ""
+#~ "And(x, y), ukasti chiqapawa. Chiqapa kuttayiwa kunapachatixa 'x' ukata 'y' "
+#~ "wakisirinakapa chiqapipana, jani ukhamipana uka Jani chiqapa wakichatawa "
+#~ "kutinispa"
 
-#: toolbars.py:212
-msgid "Arc tangent"
-msgstr "Arcotangente wakichata"
+#~ msgid "Number does not look binary in base 10"
+#~ msgstr "Uka jakhuxa base 10 wakisiripana janiwa payachasiti"
 
-#: toolbars.py:218
-msgid "Hyperbolic sine"
-msgstr "Seno hiperbólico wakichata"
+#~ msgid ""
+#~ "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+#~ msgstr ""
+#~ "cosh(x), x katuru coseno hiperbólico chanipa kuttayi. Ukasti akhamawa(exp(x) "
+#~ "+ exp(-x)) / 2"
 
-#: toolbars.py:222
-msgid "Hyperbolic cosine"
-msgstr "Coseno hiperbólico wakichata"
+#~ msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
+#~ msgstr ""
+#~ "fac(x), uka wakichataxa x factorial chanipa kuttayi. Ukasti akhamata "
+#~ "phuqasiraki x * (x - 1) * (x - 2) * ..."
 
-#: toolbars.py:226
-msgid "Hyperbolic tangent"
-msgstr "Tangente hiperbólica wakichata"
-
-#: toolbars.py:236
-msgid "Logical and"
-msgstr "Y lógico wakichata"
-
-#: toolbars.py:240
-msgid "Logical or"
-msgstr "O lógico wakichata"
-
-#: toolbars.py:250
-msgid "Equals"
-msgstr "Kikipa"
-
-#: toolbars.py:253
-msgid "Not equals"
-msgstr "Mayja"
-
-#: toolbars.py:262
-msgid "Pi"
-msgstr "Pi chimpu"
-
-#: toolbars.py:266
-msgid "e"
-msgstr "e chimpu"
-
-#: toolbars.py:269
-msgid "γ"
-msgstr "γ chimpu"
-
-#: toolbars.py:272
-msgid "φ"
-msgstr "φ chimpu"
-
-#: toolbars.py:279
-msgid "Plot"
-msgstr "Jirsüwi"
-
-#: toolbars.py:286
-msgid "Degrees"
-msgstr "Grados wakichata"
-
-#: toolbars.py:287
-msgid "Radians"
-msgstr "Radianes wakichata"
-
-#: toolbars.py:291
-msgid "Degrees / Radians"
-msgstr "Grados / Radianes wakichata"
-
-#: toolbars.py:300
-msgid "Exponent / Scientific notation"
-msgstr "Exponente / Notación científica wakichata"
-
-#: toolbars.py:310
-msgid "Number of shown digits"
-msgstr "Jakhunakana jakhupa uñachayata"
-
-#: toolbars.py:320
-msgid "Integer formatting base"
-msgstr "Jhakhunaka kayuncha"
+#~ msgid ""
+#~ "mod(x, y), return the modulus of x with respect to y. This is the remainder "
+#~ "after dividing x by y."
+#~ msgstr ""
+#~ "mod(x, y), uka wakichataxa x módulo wakichata chani uka y chanipata sipana "
+#~ "kuttayi. Ukasti misturakiwa x chanimpi y chanimpi jaljayasa."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calculate-activity\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-08 00:33-0400\n"
+"POT-Creation-Date: 2017-03-24 17:39+1100\n"
 "PO-Revision-Date: 2016-03-13 20:49+0000\n"
 "Last-Translator: iamutkarshtiwari <iamutkarshtiwari@gmail.com>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
@@ -20,140 +20,9 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1457902145.000000\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Calculate"
 msgstr "गणना"
-
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid ""
-"This is the place to get the answer to a quick problem, but that is not the "
-"limit! You can also explore Algebra, Trigonometry, Boolean and more!"
-msgstr ""
-"यह एक त्वरित समस्या का जवाब पाने की जगह है, लेकिन सिर्फ यही नही ! आप बीजगणि"
-"त, त्रिकोणमिति, बूलियन और अधिक का पता भी लगा सकते हैं!"
-
-#: astparser.py:40
-msgid ""
-"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
-"range from a to b"
-msgstr ""
-"plot(eqn, var=-a..b), समीकरण 'eqn' को चर 'var' की सीमा a से b में प्लाट करता "
-"है"
-
-#: astparser.py:59
-#, python-format
-msgid "Parse error at %d"
-msgstr "%d पार्स त्रुटि घ"
-
-#: astparser.py:71 astparser.py:83
-#, python-format
-msgid "Error at %d"
-msgstr "%d पर त्रुटि"
-
-#: astparser.py:94
-msgid "This is just a test topic, use help(index) for the index"
-msgstr ""
-"यह केवल जाँच विषय है. अनुक्रमणिका के लिए मदद(अनुक्रमणिका) का प्रयोग करें"
-
-#: astparser.py:106
-msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr ""
-"'जांच' से संबंधित मदद के लिए help(test) का प्रयोग करें, अथवा अनुक्रमणिका के "
-"लिए help(index)"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:109
-msgid "index"
-msgstr "अनुक्रमणिका"
-
-# End of help topics
-#: astparser.py:109
-msgid "topics"
-msgstr "विषय"
-
-# End of help topics
-#: astparser.py:110
-msgid "Topics"
-msgstr "विषय"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:118
-msgid "variables"
-msgstr "चर"
-
-#: astparser.py:119
-msgid "Variables"
-msgstr "चर"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:125
-msgid "functions"
-msgstr "प्रकार्य"
-
-#: astparser.py:126
-msgid "Functions"
-msgstr "प्रकार्य"
-
-#: astparser.py:135
-#, python-format
-msgid "No help about '%s' available, use help(index) for the index"
-msgstr ""
-"'%s' के लिए मदद उपलब्ध नाह्न है, अनुक्रमणिका के लिए help(index) का उपयोग "
-"कीजिए"
-
-#: astparser.py:459
-msgid "help"
-msgstr "मदद"
-
-#: astparser.py:466
-msgid "Recursion detected"
-msgstr "recursion का पता चला"
-
-#: astparser.py:490
-#, python-format
-msgid "Function '%s' not defined"
-msgstr "कार्य '%s' पारिभाषित नहीं है"
-
-#: astparser.py:492
-#, python-format
-msgid "Variable '%s' not defined"
-msgstr "चर '%s' पारिभाषित नहीं है"
-
-#: astparser.py:502
-#, python-format
-msgid "Attribute '%s' does not exist"
-msgstr "गुण '%s' मौजूद नहीं है"
-
-#: astparser.py:596
-msgid "Parse error"
-msgstr "पार्स त्रुटि"
-
-#: astparser.py:601
-msgid "Multiple statements not supported"
-msgstr "एकाधिक बयान नहीं समर्थित"
-
-#: astparser.py:625
-msgid "Internal error"
-msgstr "आंतरिक त्रुटि"
-
-#: calculate.py:109
-#, python-format
-msgid "Equation.parse() string invalid (%s)"
-msgstr "Equation.parse() स्ट्रिंग अवैध (%s)"
-
-#: calculate.py:483
-msgid "Can not assign label: will cause recursion"
-msgstr "लेबल असाइन नहीं कर सकते हैं: recursion का कारण होगा"
-
-#: calculate.py:571
-#, python-format
-msgid "Writing to journal (%s)"
-msgstr "दैनिकी मैं लिखा जा रहा है (%s)"
-
-#: calculate.py:865
-msgid "button_pressed(): invalid type"
-msgstr "button_pressed(): अवैध किस्म"
 
 #: functions.py:35
 msgid "add"
@@ -224,24 +93,24 @@ msgid "factorial"
 msgstr "फॅक्टोरियल"
 
 #: functions.py:52
-msgid "fac"
-msgstr "fac"
-
-#: functions.py:53
 msgid "factorize"
 msgstr "फॅक्टोरियल"
 
-#: functions.py:54
+#: functions.py:53
 msgid "floor"
 msgstr "मंजिल"
 
-#: functions.py:55
+#: functions.py:54
 msgid "inv"
 msgstr "inv"
 
-#: functions.py:56
+#: functions.py:55
 msgid "is_int"
 msgstr "is_int"
+
+#: functions.py:56
+msgid "is_prime"
+msgstr ""
 
 #: functions.py:57
 msgid "ln"
@@ -307,54 +176,62 @@ msgstr "tanh"
 msgid "xor"
 msgstr "xor"
 
-#: functions.py:112
+#: functions.py:119
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
 msgstr ""
-"abs(x),x का आर्क कोज्या बताता है. यह वह कोण है जिसका कोज्या x है, -x x < 1 "
-"के लिए पारिभाषित"
+"abs(x),x का आर्क कोज्या बताता है. यह वह कोण है जिसका कोज्या x है, -x x < 1 के"
+" लिए पारिभाषित"
 
-#: functions.py:117
+#: functions.py:124
+msgid "acos(x) only defined for x E [-1,1]"
+msgstr ""
+
+#: functions.py:128
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
 msgstr ""
-"acos(x), x का आर्क कोज्या बताता है. यह वह कोण है जिसका कोज्या x है. -1 <= x "
-"< 1 के लिए पारिभाषित"
+"acos(x), x का आर्क कोज्या बताता है. यह वह कोण है जिसका कोज्या x है. -1 <= x <"
+" 1 के लिए पारिभाषित"
 
-#: functions.py:123
+#: functions.py:135
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
 msgstr ""
-"ACOSH (x), एक्स के आर्क अतिपरवलयिक कोज्या वापसी यह मान y जिसके लिए "
-"अतिपरवलयिक कोज्या एक्स के बराबर होती है."
+"ACOSH (x), एक्स के आर्क अतिपरवलयिक कोज्या वापसी यह मान y जिसके लिए अतिपरवलयि"
+"क कोज्या एक्स के बराबर होती है."
 
-#: functions.py:129
+#: functions.py:142
 msgid ""
-"And(x, y), logical and. Returns True if x and y are True, else returns False"
-msgstr "and(x,y), लॉजिकल and. x और y सही होने पर सही अथवा ग़लत बताता है"
+"And(x, y), logical and. Returns True if x and y are True,else returns False"
+msgstr ""
 
-#: functions.py:136
+#: functions.py:151
 msgid "add(x, y), return x + y"
 msgstr "जोड़ (x, y), x + y वापसी"
 
-#: functions.py:141
+#: functions.py:156
+msgid "asin(x) only defined for x E [-1,1]"
+msgstr ""
+
+#: functions.py:159
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
 msgstr ""
-"asin(x), x का आर्क ज्या बताता है. यह वह कोण है जिसके लिए ज्या x है. -1 <= x "
-"< 1 के लिए पारिभाषित"
+"asin(x), x का आर्क ज्या बताता है. यह वह कोण है जिसके लिए ज्या x है. -1 <= x <"
+" 1 के लिए पारिभाषित"
 
-#: functions.py:147
+#: functions.py:166
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
 msgstr ""
-"ASINH (x), एक्स के आर्क अतिपरवलयिक ज्या वापसी यह मान y है जिसके लिए "
-"अतिपरवलयिक ज्या एक्स के बराबर होती है."
+"ASINH (x), एक्स के आर्क अतिपरवलयिक ज्या वापसी यह मान y है जिसके लिए अतिपरवलयि"
+"क ज्या एक्स के बराबर होती है."
 
-#: functions.py:153
+#: functions.py:173
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
@@ -362,7 +239,7 @@ msgstr ""
 "atan(x), x का आर्क स्पर्शज्या बताता है. यह वह कोण है जिसके लिए स्पर्शज्या x "
 "है. x के सभी मूल्यों के लिए पारिभाषित है"
 
-#: functions.py:159
+#: functions.py:180
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
@@ -370,42 +247,40 @@ msgstr ""
 "ATANH (x), एक्स के आर्क अतिपरवलयिक स्पर्शरेखा वापस यह मान y है जिसके लिए "
 "अतिपरवलयिक स्पर्शरेखा एक्स बराबर होती है."
 
-#: functions.py:171
-msgid "Number does not look binary in base 10"
-msgstr "संख्या द्विआधारी आधार 10 में नहीं लगती है"
+#: functions.py:191
+msgid "Number does not look binary."
+msgstr ""
 
-#: functions.py:178
+#: functions.py:199
 msgid ""
-"b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
-"(10111) = 23,"
+"b10bin(x), interpret a number written in base 10 as binary, e.g.: "
+"b10bin(10111) = 23,"
 msgstr "प्लस्तर लगाना (एक्स), छोटी पूर्णांक वापसी एक्स की तुलना में बड़ा"
 
-#: functions.py:183
+#: functions.py:205
 msgid "ceil(x), return the smallest integer larger than x."
 msgstr "ceil(x),छोटी पूर्णांक वापसी एक्स की तुलना में बड़ा."
 
-#: functions.py:188
+#: functions.py:211
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr "cos(x), x का कोज्या बताता है. यह एकक वृत्त के x कोण पर x-अक्षांश है"
 
-#: functions.py:194
+#: functions.py:218
 msgid ""
-"cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+"cosh(x), return the hyperbolic cosine of x.Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
-"cosh(x), x का हाइपरबॉलिक कोज्या बताता है. (exp(x) + exp(-x)) / 2 द्वारा "
-"मिलता है"
 
-#: functions.py:198
+#: functions.py:224 functions.py:319
 msgid "Can not divide by zero"
 msgstr "शून्य से विभाजित नहीं कर सकते"
 
-#: functions.py:219
+#: functions.py:247
 msgid "Invalid argument"
 msgstr "अमान्य तर्क"
 
-#: functions.py:222
+#: functions.py:250
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
@@ -413,41 +288,46 @@ msgstr ""
 "gcd (क, ख), एक के सबसे बड़ा आम भाजक और ज. निर्धारित उदाहरण के लिए, सबसे बड़ा "
 "कारक है कि संख्या 15 और 18 के द्वारा साझा किया जाता है 3 है."
 
-#: functions.py:227
+#: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
 msgstr "exp(x), x का नॅचुरल एक्सपोनेंट बताता है. e^x द्वारा दिया जाता है"
 
-#: functions.py:231
+#: functions.py:262
+msgid "Factorial(x) is only defined for integers x>=0"
+msgstr ""
+
+#: functions.py:265
 msgid "Factorial only defined for integers"
 msgstr "क्रमगुणित केवल पूर्णांकों के लिए परिभाषित"
 
-#: functions.py:244
+#: functions.py:278
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr ""
-"fac(x), x का फॅक्टोरियल बताता है. x * (x - 1) * (x - 2) * द्वारा मिलता है "
-"..."
+"fac(x), x का फॅक्टोरियल बताता है. x * (x - 1) * (x - 2) * द्वारा मिलता है ..."
 
-#: functions.py:250
-msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-msgstr ""
-"fac(x), x का फॅक्टोरियल बताता है. x * (x - 1) * (x - 2) * द्वारा मिलता है "
-"..."
-
-#: functions.py:283
+#: functions.py:314
 msgid "floor(x), return the largest integer smaller than x."
 msgstr "मंजिल (एक्स), एक्स की तुलना में सबसे बड़ा छोटे पूर्णांक वापस."
 
-#: functions.py:287
+#: functions.py:321
 msgid "inv(x), return the inverse of x, which is 1 / x"
 msgstr ""
 "निवेश संबंधी निर्णय निर्माताओं (एक्स), एक्स, जो 1 / एक्स का प्रतिलोम वापसी"
 
-#: functions.py:309 functions.py:318
+#: functions.py:356
+msgid "Argument must be int"
+msgstr ""
+
+#: functions.py:358
+msgid "Prime numbers is defined for natural numbers"
+msgstr ""
+
+#: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
 msgstr "लघुगणक (x) x> 0 के लिए केवल परिभाषित"
 
-#: functions.py:311
+#: functions.py:370
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
@@ -455,48 +335,46 @@ msgstr ""
 "ln(x), x का नॅचुरल लॉगरिद्म बताता है. यह वह मान है जहाँ एक्सपोनेंट exp() के "
 "बराबर x है. x >= 0 के लिए पारिभाषित."
 
-#: functions.py:320
+#: functions.py:380
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
-"log10 (एक्स), एक्स के आधार 10 लघुगणक वापसी यह मान y जिसके लिए 10 ^ y एक्स "
-"बराबर होती है X> = 0 के लिए निर्धारित है."
+"log10 (एक्स), एक्स के आधार 10 लघुगणक वापसी यह मान y जिसके लिए 10 ^ y एक्स बरा"
+"बर होती है X> = 0 के लिए निर्धारित है."
 
-#: functions.py:327
+#: functions.py:388
 msgid "Can only calculate x modulo <integer>"
 msgstr "X केवल modulo <integer> गणना कर सकते हैं"
 
-#: functions.py:329
+#: functions.py:390
 msgid ""
-"mod(x, y), return the modulus of x with respect to y. This is the remainder "
+"mod(x, y), return the modulus of x with respect to y.This is the remainder "
 "after dividing x by y."
 msgstr ""
-"आधुनिक (एक्स, वाई), वाई के लिए सम्मान के साथ एक्स के मापांक वापसी यह वाई के "
-"द्वारा एक्स विभाजन के बाद शेष है."
 
-#: functions.py:337
+#: functions.py:399
 msgid "mul(x, y), return x * y"
 msgstr "एमयूएल (एक्स, वाई), एक्स * y वापसी"
 
-#: functions.py:341
+#: functions.py:404
 msgid "negate(x), return -x"
 msgstr "(एक्स), वापसी एक्स नकारना"
 
-#: functions.py:346
+#: functions.py:410
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr "or(x,y), लॉजिकल or. x और/अथवा y सही होने पर सही अथवा गलत बताता है"
 
-#: functions.py:361
+#: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
 msgstr "pow(एक्स, वाई), power (x, y **) y , x वापसी"
 
-#: functions.py:366
+#: functions.py:433
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
 msgstr "(rand_float), 0.0 और 1.0 के बीच एक यादृच्छिक चल बिन्दु संख्या वापसी"
 
-#: functions.py:371
+#: functions.py:439
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
@@ -504,42 +382,42 @@ msgstr ""
 "rand_int ([<maxval>]), 0 और <maxval> के बीच एक यादृच्छिक पूर्णांक वापस. "
 "<maxval> एक वैकल्पिक तर्क है और डिफ़ॉल्ट रूप से 65535 करने के लिए सेट है."
 
-#: functions.py:376
+#: functions.py:445
 msgid "round(x), return the integer nearest to x."
 msgstr "round(x), x पूर्णांक निकटतम वापसी."
 
-#: functions.py:382 functions.py:390
+#: functions.py:452 functions.py:461
 msgid "Bitwise operations only apply to integers"
 msgstr "बिटवाइस आपरेशन केवल पूर्णांकों लागू"
 
-#: functions.py:384
+#: functions.py:454
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr "y बिट्स द्वारा shift_left (x, y), पाली एक्स बाएँ (बिट प्रति 2 से गुणा)"
 
-#: functions.py:392
+#: functions.py:463
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr ""
 "shift_right (x, y) y बिट्स द्वारा सही करने के लिए पाली (x 2 द्वारा बिट प्रति "
 "डिवाइड)"
 
-#: functions.py:397
+#: functions.py:469
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
 msgstr "sin(x), x का ज्या वापस देता है. यह एकक वृत्त के x कोण पर y अक्षांश है"
 
-#: functions.py:403
+#: functions.py:476
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
 "sinh(x), x का हाइपरबॉलिक ज्या लौटाता है. (exp(x) - exp(-x)) / 2 द्वारा मिलता "
 "है"
 
-#: functions.py:410
+#: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
 msgstr "sinc(x),x का ज्या वापस देता है.Sin(x)/x द्वारा मिलता है."
 
-#: functions.py:415
+#: functions.py:491
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
@@ -547,15 +425,15 @@ msgstr ""
 "sqrt(x), x का वर्गमूल लौटाता है. यह वह मूल्य है जिसका वर्ग x के बराबर है. x "
 ">= 0 के लिए पारिभाषित है."
 
-#: functions.py:420
+#: functions.py:497
 msgid "square(x), return x * x"
 msgstr "वर्ग (एक्स), एक्स * एक्स वापसी"
 
-#: functions.py:427
+#: functions.py:505
 msgid "sub(x, y), return x - y"
 msgstr "उप (एक्स, वाई), एक्स वापसी - y"
 
-#: functions.py:432
+#: functions.py:511
 msgid ""
 "tan(x), return the tangent of x. This is the slope of the line from the "
 "origin of the unit circle to the point on the unit circle defined by the "
@@ -565,12 +443,12 @@ msgstr ""
 "बिन्दु तक जाती हुई x अंश से पारिभाषित लकीर का झुकाव है. जो ज्या(x) / "
 "कोज्या(x) द्वारा मिलता है"
 
-#: functions.py:439
+#: functions.py:519
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr ""
 "sinh(x), x का हाइपरबॉलिक ज्या बताता है. sinh(x) / cosh(x) द्वारा मिलता है"
 
-#: functions.py:444
+#: functions.py:525
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
@@ -578,213 +456,382 @@ msgstr ""
 "xor(x, y), लॉजिकल xor. यदि x सही (और y ग़लत ) अथवा y सही (और x ग़लत ) होने "
 "पर ट्रू वापस देता है अथवा फॉल्स लौटाता है"
 
-#: layout.py:75
-msgid "Clear"
-msgstr "साफ करें"
+#: toolbars.py:57
+msgid "Help"
+msgstr "मदद"
 
-#: layout.py:105 layout.py:145
-msgid "Edit"
-msgstr "संपादन"
+#: toolbars.py:132
+msgid "Copy"
+msgstr "नक़ल"
 
-#: layout.py:110 layout.py:146
-msgid "Algebra"
-msgstr "बीजगणित"
+#: toolbars.py:133
+msgid "<ctrl>c"
+msgstr "<ctrl>c"
 
-#: layout.py:115 layout.py:147
-msgid "Trigonometry"
-msgstr "त्रिकोणमिति"
+#: toolbars.py:137
+msgid "Cut"
+msgstr "काटें"
 
-#: layout.py:120 layout.py:148
-msgid "Boolean"
-msgstr "बूलीयन"
+#: toolbars.py:140
+msgid "<ctrl>x"
+msgstr "<ctrl>x"
 
-#: layout.py:125 layout.py:149
-msgid "Miscellaneous"
-msgstr "विविध"
+#: toolbars.py:148
+msgid "Paste"
+msgstr "चिपकाएँ"
 
-#: layout.py:178
-msgid "Label:"
-msgstr "लेबल:"
+#: toolbars.py:160
+msgid "Square"
+msgstr "वर्ग"
 
-#: layout.py:223
-msgid "All equations"
-msgstr "सभी समीकरण"
+#: toolbars.py:167
+msgid "Square root"
+msgstr "वर्ग मूल"
 
-#: layout.py:224
-msgid "My equations"
-msgstr "मेरे समीकरण"
+#: toolbars.py:174
+msgid "Inverse"
+msgstr "उलटा"
 
-#: layout.py:225
-msgid "Show variables"
-msgstr "चर दिखाएँ"
+#: toolbars.py:183
+msgid "e to the power x"
+msgstr "e का घात x"
+
+#: toolbars.py:190
+msgid "x to the power y"
+msgstr "x का घात y"
+
+#: toolbars.py:197
+msgid "Natural logarithm"
+msgstr "नेचुरल लॉगरिद्म"
+
+#: toolbars.py:206
+msgid "Factorial"
+msgstr "फॅक्टोरियल"
+
+#: toolbars.py:220
+msgid "Sine"
+msgstr "ज्या"
+
+#: toolbars.py:225
+msgid "Cosine"
+msgstr "कोज्या"
+
+#: toolbars.py:230
+msgid "Tangent"
+msgstr "स्पर्शज्या"
+
+#: toolbars.py:237
+msgid "Arc sine"
+msgstr "आर्क ज्या"
+
+#: toolbars.py:242
+msgid "Arc cosine"
+msgstr "आर्क कोज्या"
+
+#: toolbars.py:247
+msgid "Arc tangent"
+msgstr "आर्क स्पर्शज्या"
+
+#: toolbars.py:254
+msgid "Hyperbolic sine"
+msgstr "हाइपरबोलिक ज्या"
+
+#: toolbars.py:259
+msgid "Hyperbolic cosine"
+msgstr "हाइपरबोलिक कोज्या"
+
+#: toolbars.py:264
+msgid "Hyperbolic tangent"
+msgstr "हाइपरबोलिक स्पर्शज्या"
+
+#: toolbars.py:277
+msgid "Logical and"
+msgstr "लॉजिकल and"
+
+#: toolbars.py:282
+msgid "Logical or"
+msgstr "लॉजिकल or"
+
+#: toolbars.py:293
+msgid "Equals"
+msgstr "समान"
+
+#: toolbars.py:297
+msgid "Not equals"
+msgstr "असमान"
+
+#: toolbars.py:310
+msgid "Pi"
+msgstr "पाई"
+
+#: toolbars.py:316
+msgid "e"
+msgstr "e"
+
+#: toolbars.py:320
+msgid "γ"
+msgstr "y"
+
+#: toolbars.py:325
+msgid "φ"
+msgstr "φ"
+
+#: toolbars.py:333
+msgid "Plot"
+msgstr "चित्र बनायें"
+
+#: toolbars.py:338
+msgid "Degrees"
+msgstr "आंश"
+
+#: toolbars.py:339
+msgid "Radians"
+msgstr "रेडियन्स"
+
+#: toolbars.py:344
+msgid "Degrees / Radians"
+msgstr "आंश/रेडियन्स"
+
+#: toolbars.py:354
+msgid "Exponent / Scientific notation"
+msgstr "घातीय / वैज्ञानिक नोटेशन"
+
+#: toolbars.py:365
+msgid "Number of shown digits"
+msgstr "दिए गए अंकों की संख्या"
+
+#: toolbars.py:377
+msgid "Integer formatting base"
+msgstr "पूर्णांक स्वरूपण आधार"
+
+#: astparser.py:39
+msgid ""
+"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
+"range from a to b"
+msgstr ""
+"plot(eqn, var=-a..b), समीकरण 'eqn' को चर 'var' की सीमा a से b में प्लाट करता "
+"है"
+
+#: astparser.py:61
+#, python-format
+msgid "Parse error at %d"
+msgstr "%d पार्स त्रुटि घ"
+
+#: astparser.py:75 astparser.py:109
+#, python-format
+msgid "Error at '%s', position: %d"
+msgstr ""
+
+#: astparser.py:88
+msgid "Syntax Error."
+msgstr ""
+
+#: astparser.py:95
+msgid "Syntax Error!"
+msgstr ""
+
+#: astparser.py:135
+msgid "This is just a test topic, use help(index) for the index"
+msgstr ""
+"यह केवल जाँच विषय है. अनुक्रमणिका के लिए मदद(अनुक्रमणिका) का प्रयोग करें"
+
+#: astparser.py:148
+msgid "Use help(test) for help about 'test', or help(index) for the index"
+msgstr ""
+"'जांच' से संबंधित मदद के लिए help(test) का प्रयोग करें, अथवा अनुक्रमणिका के "
+"लिए help(index)"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:152
+msgid "index"
+msgstr "अनुक्रमणिका"
+
+# End of help topics
+#: astparser.py:152
+msgid "topics"
+msgstr "विषय"
+
+# End of help topics
+#: astparser.py:153
+msgid "Topics"
+msgstr "विषय"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:161
+msgid "variables"
+msgstr "चर"
+
+#: astparser.py:162
+msgid "Variables"
+msgstr "चर"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:168
+msgid "functions"
+msgstr "प्रकार्य"
+
+#: astparser.py:169
+msgid "Functions"
+msgstr "प्रकार्य"
+
+#: astparser.py:178
+#, python-format
+msgid "No help about '%s' available, use help(index) for the index"
+msgstr ""
+"'%s' के लिए मदद उपलब्ध नाह्न है, अनुक्रमणिका के लिए help(index) का उपयोग "
+"कीजिए"
+
+#: astparser.py:508
+msgid "help"
+msgstr "मदद"
+
+#: astparser.py:515
+msgid "Recursion detected"
+msgstr "recursion का पता चला"
+
+#: astparser.py:539
+#, python-format
+msgid "Function '%s' not defined"
+msgstr "कार्य '%s' पारिभाषित नहीं है"
+
+#: astparser.py:541
+#, python-format
+msgid "Variable '%s' not defined"
+msgstr "चर '%s' पारिभाषित नहीं है"
+
+#: astparser.py:551
+#, python-format
+msgid "Attribute '%s' does not exist"
+msgstr "गुण '%s' मौजूद नहीं है"
+
+#: astparser.py:654
+msgid "Parse error"
+msgstr "पार्स त्रुटि"
+
+#: astparser.py:659
+msgid "Multiple statements not supported"
+msgstr "एकाधिक बयान नहीं समर्थित"
+
+#: astparser.py:683
+msgid "Internal error"
+msgstr "आंतरिक त्रुटि"
 
 #. TRANS: multiplication symbol (default: '×')
-#: mathlib.py:82
+#: mathlib.py:84
 msgid "mul_sym"
 msgstr "mul_sym"
 
 #. TRANS: division symbol (default: '÷')
-#: mathlib.py:87
+#: mathlib.py:89
 msgid "div_sym"
 msgstr "विभाजन प्रतीक"
 
 #. TRANS: equal symbol (default: '=')
-#: mathlib.py:92
+#: mathlib.py:94
 msgid "equ_sym"
 msgstr "बराबर प्रतीक"
 
-#: mathlib.py:216
+#: mathlib.py:227
 msgid "Undefined"
 msgstr "अपरिभाषित"
 
-#: mathlib.py:226
+#: mathlib.py:237
 msgid "Error: unsupported type"
 msgstr "त्रुटि: असमर्थित क़िस्म"
 
-#: toolbars.py:53
-msgid "Help"
-msgstr "मदद"
+#: layout.py:113
+msgid "Clear"
+msgstr "साफ करें"
 
-#: toolbars.py:121
-msgid "Copy"
-msgstr "नक़ल"
+#: layout.py:151 layout.py:195
+msgid "Edit"
+msgstr "संपादन"
 
-#: toolbars.py:122
-msgid "<ctrl>c"
-msgstr "<ctrl>c"
+#: layout.py:156 layout.py:196
+msgid "Algebra"
+msgstr "बीजगणित"
 
-#: toolbars.py:126
-msgid "Cut"
-msgstr "काटें"
+#: layout.py:161 layout.py:198
+msgid "Trigonometry"
+msgstr "त्रिकोणमिति"
 
-#: toolbars.py:129
-msgid "<ctrl>x"
-msgstr "<ctrl>x"
+#: layout.py:166 layout.py:199
+msgid "Boolean"
+msgstr "बूलीयन"
 
-#: toolbars.py:137
-msgid "Paste"
-msgstr "चिपकाएँ"
+#: layout.py:175 layout.py:200
+msgid "Miscellaneous"
+msgstr "विविध"
 
-#: toolbars.py:147
-msgid "Square"
-msgstr "वर्ग"
+#: layout.py:229
+msgid "Label:"
+msgstr "लेबल:"
 
-#: toolbars.py:152
-msgid "Square root"
-msgstr "वर्ग मूल"
+#: layout.py:278
+msgid "All equations"
+msgstr "सभी समीकरण"
 
-#: toolbars.py:157
-msgid "Inverse"
-msgstr "उलटा"
+#: layout.py:279
+msgid "My equations"
+msgstr "मेरे समीकरण"
 
-#: toolbars.py:164
-msgid "e to the power x"
-msgstr "e का घात x"
+#: layout.py:280
+msgid "Show variables"
+msgstr "चर दिखाएँ"
 
-#: toolbars.py:169
-msgid "x to the power y"
-msgstr "x का घात y"
+#: calculate.py:109
+#, python-format
+msgid "Equation.parse() string invalid (%s)"
+msgstr "Equation.parse() स्ट्रिंग अवैध (%s)"
 
-#: toolbars.py:174
-msgid "Natural logarithm"
-msgstr "नेचुरल लॉगरिद्म"
+#: calculate.py:525
+msgid "Can not assign label: will cause recursion"
+msgstr "लेबल असाइन नहीं कर सकते हैं: recursion का कारण होगा"
 
-#: toolbars.py:180
-msgid "Factorial"
-msgstr "फॅक्टोरियल"
+#: calculate.py:620
+#, python-format
+msgid "Writing to journal (%s)"
+msgstr "दैनिकी मैं लिखा जा रहा है (%s)"
 
-#: toolbars.py:190
-msgid "Sine"
-msgstr "ज्या"
+#: calculate.py:932
+msgid "button_pressed(): invalid type"
+msgstr "button_pressed(): अवैध किस्म"
 
-#: toolbars.py:194
-msgid "Cosine"
-msgstr "कोज्या"
+#~ msgid ""
+#~ "This is the place to get the answer to a quick problem, but that is not the "
+#~ "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
+#~ msgstr ""
+#~ "यह एक त्वरित समस्या का जवाब पाने की जगह है, लेकिन सिर्फ यही नही ! आप बीजगणि"
+#~ "त, त्रिकोणमिति, बूलियन और अधिक का पता भी लगा सकते हैं!"
 
-#: toolbars.py:198
-msgid "Tangent"
-msgstr "स्पर्शज्या"
+#, python-format
+#~ msgid "Error at %d"
+#~ msgstr "%d पर त्रुटि"
 
-#: toolbars.py:204
-msgid "Arc sine"
-msgstr "आर्क ज्या"
+#~ msgid "fac"
+#~ msgstr "fac"
 
-#: toolbars.py:208
-msgid "Arc cosine"
-msgstr "आर्क कोज्या"
+#~ msgid ""
+#~ "And(x, y), logical and. Returns True if x and y are True, else returns False"
+#~ msgstr "and(x,y), लॉजिकल and. x और y सही होने पर सही अथवा ग़लत बताता है"
 
-#: toolbars.py:212
-msgid "Arc tangent"
-msgstr "आर्क स्पर्शज्या"
+#~ msgid "Number does not look binary in base 10"
+#~ msgstr "संख्या द्विआधारी आधार 10 में नहीं लगती है"
 
-#: toolbars.py:218
-msgid "Hyperbolic sine"
-msgstr "हाइपरबोलिक ज्या"
+#~ msgid ""
+#~ "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+#~ msgstr ""
+#~ "cosh(x), x का हाइपरबॉलिक कोज्या बताता है. (exp(x) + exp(-x)) / 2 द्वारा "
+#~ "मिलता है"
 
-#: toolbars.py:222
-msgid "Hyperbolic cosine"
-msgstr "हाइपरबोलिक कोज्या"
+#~ msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
+#~ msgstr ""
+#~ "fac(x), x का फॅक्टोरियल बताता है. x * (x - 1) * (x - 2) * द्वारा मिलता है "
+#~ "..."
 
-#: toolbars.py:226
-msgid "Hyperbolic tangent"
-msgstr "हाइपरबोलिक स्पर्शज्या"
-
-#: toolbars.py:236
-msgid "Logical and"
-msgstr "लॉजिकल and"
-
-#: toolbars.py:240
-msgid "Logical or"
-msgstr "लॉजिकल or"
-
-#: toolbars.py:250
-msgid "Equals"
-msgstr "समान"
-
-#: toolbars.py:253
-msgid "Not equals"
-msgstr "असमान"
-
-#: toolbars.py:262
-msgid "Pi"
-msgstr "पाई"
-
-#: toolbars.py:266
-msgid "e"
-msgstr "e"
-
-#: toolbars.py:269
-msgid "γ"
-msgstr "y"
-
-#: toolbars.py:272
-msgid "φ"
-msgstr "φ"
-
-#: toolbars.py:279
-msgid "Plot"
-msgstr "चित्र बनायें"
-
-#: toolbars.py:286
-msgid "Degrees"
-msgstr "आंश"
-
-#: toolbars.py:287
-msgid "Radians"
-msgstr "रेडियन्स"
-
-#: toolbars.py:291
-msgid "Degrees / Radians"
-msgstr "आंश/रेडियन्स"
-
-#: toolbars.py:300
-msgid "Exponent / Scientific notation"
-msgstr "घातीय / वैज्ञानिक नोटेशन"
-
-#: toolbars.py:310
-msgid "Number of shown digits"
-msgstr "दिए गए अंकों की संख्या"
-
-#: toolbars.py:320
-msgid "Integer formatting base"
-msgstr "पूर्णांक स्वरूपण आधार"
+#~ msgid ""
+#~ "mod(x, y), return the modulus of x with respect to y. This is the remainder "
+#~ "after dividing x by y."
+#~ msgstr ""
+#~ "आधुनिक (एक्स, वाई), वाई के लिए सम्मान के साथ एक्स के मापांक वापसी यह वाई के "
+#~ "द्वारा एक्स विभाजन के बाद शेष है."

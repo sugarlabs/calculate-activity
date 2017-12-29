@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-08 00:33-0400\n"
+"POT-Creation-Date: 2017-03-24 17:39+1100\n"
 "PO-Revision-Date: 2012-09-21 10:35+0200\n"
 "Last-Translator: hariru <hariruroa@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,137 +17,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Calculate"
 msgstr "Tatauria"
-
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid ""
-"This is the place to get the answer to a quick problem, but that is not the "
-"limit! You can also explore Algebra, Trigonometry, Boolean and more!"
-msgstr ""
-
-#: astparser.py:40
-msgid ""
-"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
-"range from a to b"
-msgstr ""
-"tā(eqn, var=-a..b), tāngia te ine 'eqn' me te tāupe 'var' ki roto i te awhe "
-"a ki te b"
-
-#: astparser.py:59
-#, python-format
-msgid "Parse error at %d"
-msgstr "Hapa poroporo ki %d"
-
-#: astparser.py:71 astparser.py:83
-#, python-format
-msgid "Error at %d"
-msgstr "Hapa ki %d"
-
-#: astparser.py:94
-msgid "This is just a test topic, use help(index) for the index"
-msgstr ""
-"He kaupapa whakamātau noa iho tēnei, whakamahia te āwhina(index) mō te taupū"
-
-#: astparser.py:106
-msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr ""
-"Whakamahia te āwhina(test) mō te āwhina 'test', te āwhina(index) rānei mō te "
-"taupū"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:109
-msgid "index"
-msgstr "rārangi"
-
-#: astparser.py:109
-msgid "topics"
-msgstr "ngā kaupapa"
-
-#: astparser.py:110
-msgid "Topics"
-msgstr "Kaupapa"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:118
-msgid "variables"
-msgstr "ngā tāupe"
-
-#: astparser.py:119
-msgid "Variables"
-msgstr "Ngā Tāupe"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:125
-msgid "functions"
-msgstr "ngā taumahi"
-
-#: astparser.py:126
-msgid "Functions"
-msgstr "Ngā Taumahi"
-
-#: astparser.py:135
-#, python-format
-msgid "No help about '%s' available, use help(index) for the index"
-msgstr ""
-"Kāore he āwhina mō '%s' e wātea ana, whakamahi i te āwhina(index) mō te "
-"taupū"
-
-#: astparser.py:459
-msgid "help"
-msgstr "āwhina"
-
-#: astparser.py:466
-msgid "Recursion detected"
-msgstr "Kua kitea te tāruaruatanga"
-
-#: astparser.py:490
-#, python-format
-msgid "Function '%s' not defined"
-msgstr "Kāore i tautuhi te taumahi '%s'"
-
-#: astparser.py:492
-#, python-format
-msgid "Variable '%s' not defined"
-msgstr "Kāore i tautuhi te tāupe '%s'"
-
-#: astparser.py:502
-#, python-format
-msgid "Attribute '%s' does not exist"
-msgstr "Kāore he huanga '%s'"
-
-#: astparser.py:596
-msgid "Parse error"
-msgstr "Hapa poroporo"
-
-#: astparser.py:601
-msgid "Multiple statements not supported"
-msgstr "Tauākī maha kāore i te tautokoria"
-
-#: astparser.py:625
-msgid "Internal error"
-msgstr "Hapa ā-roto"
-
-#: calculate.py:109
-#, python-format
-#, python-format,
-msgid "Equation.parse() string invalid (%s)"
-msgstr "Ine.poroporo() aho muhu (%s)"
-
-#: calculate.py:483
-msgid "Can not assign label: will cause recursion"
-msgstr "Kāore e taea te tautapa tapanga: ka whakaputa te tāruaruatanga"
-
-#: calculate.py:571
-#, python-format
-msgid "Writing to journal (%s)"
-msgstr "Kei te tuhi ki te tuhitaka (%s)"
-
-#: calculate.py:865
-msgid "button_pressed(): invalid type"
-msgstr "pāwhiritia_pātene(): momo muhu"
 
 #: functions.py:35
 msgid "add"
@@ -218,24 +90,24 @@ msgid "factorial"
 msgstr "tauwehenga"
 
 #: functions.py:52
-msgid "fac"
-msgstr "fac"
-
-#: functions.py:53
 msgid "factorize"
 msgstr "tauwehe"
 
-#: functions.py:54
+#: functions.py:53
 msgid "floor"
 msgstr "papa"
 
-#: functions.py:55
+#: functions.py:54
 msgid "inv"
 msgstr "inv"
 
-#: functions.py:56
+#: functions.py:55
 msgid "is_int"
 msgstr "is_int"
+
+#: functions.py:56
+msgid "is_prime"
+msgstr ""
 
 #: functions.py:57
 msgid "ln"
@@ -302,11 +174,15 @@ msgstr "tanh"
 msgid "xor"
 msgstr "xor"
 
-#: functions.py:112
+#: functions.py:119
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
 msgstr "abs(x), whakahokia te uara tūturu o x, arā ko te -x mō x < 0"
 
-#: functions.py:117
+#: functions.py:124
+msgid "acos(x) only defined for x E [-1,1]"
+msgstr ""
+
+#: functions.py:128
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
@@ -314,7 +190,7 @@ msgstr ""
 "acos(x), whakahokia te whenua pewa o x. Koinei te koki, he whenu x. Tautuhia "
 "mō -1 <= x < 1"
 
-#: functions.py:123
+#: functions.py:135
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
@@ -322,26 +198,28 @@ msgstr ""
 "acosh(x), whakahokia te whenu hyperbolic koki o x. Koinei te uara y, arā ka "
 "ōrite te whenu hyperbolic ki te x."
 
-#: functions.py:129
+#: functions.py:142
 msgid ""
-"And(x, y), logical and. Returns True if x and y are True, else returns False"
+"And(x, y), logical and. Returns True if x and y are True,else returns False"
 msgstr ""
-"Ā(x,y), logical and. Ka whakahoki Tika mēnā kei te tika te x me te y, atu i "
-"tēnā ka whakahoki Hē"
 
-#: functions.py:136
+#: functions.py:151
 msgid "add(x, y), return x + y"
 msgstr "tāpiri(x, y), whakahokia te x + y"
 
-#: functions.py:141
+#: functions.py:156
+msgid "asin(x) only defined for x E [-1,1]"
+msgstr ""
+
+#: functions.py:159
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
 msgstr ""
-"asin(x), whakahokia te aho koki o x. Koinei te koki, he aho x. Tautuhia mō "
-"-1 <= x <= 1"
+"asin(x), whakahokia te aho koki o x. Koinei te koki, he aho x. Tautuhia mō -"
+"1 <= x <= 1"
 
-#: functions.py:147
+#: functions.py:166
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
@@ -349,7 +227,7 @@ msgstr ""
 "asinh(x), whakahokia te aho pūwerewere koki o x. Koinei te uara y, arā ka "
 "ōrite te aho pūwerewere ki te x."
 
-#: functions.py:153
+#: functions.py:173
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
@@ -357,7 +235,7 @@ msgstr ""
 "atan(x), whakahokia te pākākā pewa o x. Koinei te koki, he pākākā x. "
 "Tautuhia mō ngā x katoa"
 
-#: functions.py:159
+#: functions.py:180
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
@@ -365,23 +243,23 @@ msgstr ""
 "atanh(x), whakahokia te pākākā pūwerewere koki o x. Koinei te uara y, arā ka "
 "ōrite te pākākā pūwerewere ki te x."
 
-#: functions.py:171
-msgid "Number does not look binary in base 10"
-msgstr "Te tirohanga kāore te tau i te ā-rua hei pūtake 10"
+#: functions.py:191
+msgid "Number does not look binary."
+msgstr ""
 
-#: functions.py:178
+#: functions.py:199
 msgid ""
-"b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
-"(10111) = 23,"
+"b10bin(x), interpret a number written in base 10 as binary, e.g.: "
+"b10bin(10111) = 23,"
 msgstr ""
 "b10bin(x), pānuitia te tau kua tuhia hei pūtake 10 kia ā-rua, hei tauira.: "
 "b10bin(10111) = 23,"
 
-#: functions.py:183
+#: functions.py:205
 msgid "ceil(x), return the smallest integer larger than x."
 msgstr "ceil(x), whakahokia te itinga o ngā tau tōpū nui ake i te x."
 
-#: functions.py:188
+#: functions.py:211
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
@@ -389,22 +267,20 @@ msgstr ""
 "cos(x), whakahokia te whenu o x. Koinei te taururuku-x kei runga i te "
 "porohita wae kei te koki x"
 
-#: functions.py:194
+#: functions.py:218
 msgid ""
-"cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+"cosh(x), return the hyperbolic cosine of x.Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
-"cosh(x), whakahokia te whenu pūwerewere o x. Kua hoatu e (exp(x) + exp(-x)) "
-"/ 2"
 
-#: functions.py:198
+#: functions.py:224 functions.py:319
 msgid "Can not divide by zero"
 msgstr "Kāore e taea te wehe mā te kore"
 
-#: functions.py:219
+#: functions.py:247
 msgid "Invalid argument"
 msgstr "He tohenga muhu"
 
-#: functions.py:222
+#: functions.py:250
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
@@ -412,40 +288,46 @@ msgstr ""
 "gcd(a, b), whakatauria te tau hauraro pātahi o a me b. Hei tauira, ko te tau "
 "rahi ōrite mō ngā tau 15 me te 18 ko te 3."
 
-#: functions.py:227
+#: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
 msgstr "exp(x), whakahokia te taupū aunoa o x. Tautuhia e e^x"
 
-#: functions.py:231
+#: functions.py:262
+msgid "Factorial(x) is only defined for integers x>=0"
+msgstr ""
+
+#: functions.py:265
 msgid "Factorial only defined for integers"
 msgstr "Tauwehenga ka tautuhia mō ngā tau tōpū anake"
 
-#: functions.py:244
+#: functions.py:278
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr ""
 "tauwehenga(n), whakahokia te tauwehenga o n. Kua hoatu e n * (n - 1) * (n - "
 "2) * ..."
 
-#: functions.py:250
-msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-msgstr ""
-"fac(x), whakahokia te tauwehenga o x. Kua hoatu e x * (x - 1) * (x - 2) * "
-"..."
-
-#: functions.py:283
+#: functions.py:314
 msgid "floor(x), return the largest integer smaller than x."
 msgstr "papa(x), whakahokia te rahinga o ngā tau tōpū iti ake i te x."
 
-#: functions.py:287
+#: functions.py:321
 msgid "inv(x), return the inverse of x, which is 1 / x"
 msgstr "inv(x), whakahokia te kōaro o te x, arā ko te 1 / x"
 
-#: functions.py:309 functions.py:318
+#: functions.py:356
+msgid "Argument must be int"
+msgstr ""
+
+#: functions.py:358
+msgid "Prime numbers is defined for natural numbers"
+msgstr ""
+
+#: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
 msgstr "Taupū Kōaro(x) kua tautuhia mō x > 0"
 
-#: functions.py:311
+#: functions.py:370
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
@@ -453,7 +335,7 @@ msgstr ""
 "ln(x), whakahokia te taupū kōaro aunoa o x. Koinei te uara, arā ka ōrite te "
 "taupū() ki te x. Tautuhia mō x >= 0."
 
-#: functions.py:320
+#: functions.py:380
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
@@ -461,44 +343,42 @@ msgstr ""
 "log10(x), whakahokia te taupū kōaro pūtake 10 o x. Koinei te uara y, ka "
 "ōrite te 10^y ki te x. Tautuhia mō x >= 0."
 
-#: functions.py:327
+#: functions.py:388
 msgid "Can only calculate x modulo <integer>"
 msgstr "Ka taea anake te tātai x tauritekore <integer>"
 
-#: functions.py:329
+#: functions.py:390
 msgid ""
-"mod(x, y), return the modulus of x with respect to y. This is the remainder "
+"mod(x, y), return the modulus of x with respect to y.This is the remainder "
 "after dividing x by y."
 msgstr ""
-"mod(x, y), whakahokia te tau motuhake o x e ai ki y. Koinei te toenga i muri "
-"i te tauwehe te x, e y."
 
-#: functions.py:337
+#: functions.py:399
 msgid "mul(x, y), return x * y"
 msgstr "mul(x, y), whakahokia x * y"
 
-#: functions.py:341
+#: functions.py:404
 msgid "negate(x), return -x"
 msgstr "whakakāhore(x), whakahokia -x"
 
-#: functions.py:346
+#: functions.py:410
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
 "Rānei(x,y), logical or. Ka whakahoki Tika mēnā kei te tika te x me te y, atu "
 "i tērā ka whakahoki Hē"
 
-#: functions.py:361
+#: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
 msgstr "pow(x, y), whakahokia te x ki te pū y (x**y)"
 
-#: functions.py:366
+#: functions.py:433
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
 msgstr ""
 "rand_float(), whakahokia tētahi tau ira māngi tupurangi i waenga i te 0.0 me "
 "te 1.0"
 
-#: functions.py:371
+#: functions.py:439
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
@@ -507,27 +387,27 @@ msgstr ""
 "me te <maxval>. Ko te <maxval> tētahi tohenga kōwhiri kua tautuhia ki te "
 "65535 hei taunoa."
 
-#: functions.py:376
+#: functions.py:445
 msgid "round(x), return the integer nearest to x."
 msgstr "whakaawhiwhi(x), whakahokia te tau tōpū pātata ki te x."
 
-#: functions.py:382 functions.py:390
+#: functions.py:452 functions.py:461
 msgid "Bitwise operations only apply to integers"
 msgstr "Ka hoatu ngā mahi mokarite ki ngā tau tōpū anake"
 
-#: functions.py:384
+#: functions.py:454
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr ""
 "shift_left(x, y), nekehia te x mā ngā moka y ki te taha mauī (whakarau i te "
 "2 ia moka)"
 
-#: functions.py:392
+#: functions.py:463
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr ""
 "shift_right(x, y), nekehia te x mā ngā moka y ki te taha matau (whakawehe i "
 "te 2 ia moka)"
 
-#: functions.py:397
+#: functions.py:469
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
@@ -535,18 +415,17 @@ msgstr ""
 "sin(x), whakahokia te aho o x. Koinei te taururuku-y kei runga i te porohita "
 "wae kei te koki x"
 
-#: functions.py:403
+#: functions.py:476
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
-"sinh(x), whakahokia te aho pūwerewere o x. Kua hoatu e (exp(x) - exp(-x)) / "
-"2"
+"sinh(x), whakahokia te aho pūwerewere o x. Kua hoatu e (exp(x) - exp(-x)) / 2"
 
-#: functions.py:410
+#: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
 msgstr "sinc(x), whakahokia te whakataurite o x. Kua hoatu e sin(x) / x."
 
-#: functions.py:415
+#: functions.py:491
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
@@ -554,15 +433,15 @@ msgstr ""
 "sqrt(x), whakahokia te pūtake rua o x. Koinei te uara, arā ka ōrite te "
 "pūtake rua ki te x. Tautuhia mō x >= 0."
 
-#: functions.py:420
+#: functions.py:497
 msgid "square(x), return x * x"
 msgstr "square(x), whakahoki x*x"
 
-#: functions.py:427
+#: functions.py:505
 msgid "sub(x, y), return x - y"
 msgstr "sub(x, y), whakahokia x - y"
 
-#: functions.py:432
+#: functions.py:511
 msgid ""
 "tan(x), return the tangent of x. This is the slope of the line from the "
 "origin of the unit circle to the point on the unit circle defined by the "
@@ -572,13 +451,13 @@ msgstr ""
 "pūtake o te porohita wae tae atu ki te wāhi o te porohita wae kua tautuhia e "
 "te koki x. Kua hoatu e sin(x) / cos(x)"
 
-#: functions.py:439
+#: functions.py:519
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr ""
 "tanh(x), whakahokia te pākākā pūwerewere o x. Kua tautuhia e sinh(x) / "
 "cosh(x)"
 
-#: functions.py:444
+#: functions.py:525
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
@@ -587,216 +466,378 @@ msgstr ""
 "Hē hoki te y), kei Tika y (kei te Hē hoki te x) rānei, ki te kore ka "
 "whakahoki Hē"
 
-#: layout.py:75
-msgid "Clear"
-msgstr "Ūkui"
-
-#: layout.py:105 layout.py:145
-msgid "Edit"
-msgstr "Whakatika"
-
-#: layout.py:110 layout.py:146
-msgid "Algebra"
-msgstr "Taurangi"
-
-#: layout.py:115 layout.py:147
-msgid "Trigonometry"
-msgstr "Pākoke"
-
-#: layout.py:120 layout.py:148
-msgid "Boolean"
-msgstr "Pūreana"
-
-#: layout.py:125 layout.py:149
-msgid "Miscellaneous"
-msgstr "Ahanoa"
-
-#: layout.py:178
-msgid "Label:"
-msgstr "Tapanga:"
-
-#: layout.py:223
-msgid "All equations"
-msgstr "Ngā whārite katoa"
-
-#: layout.py:224
-msgid "My equations"
-msgstr "Aku whārite"
-
-#: layout.py:225
-msgid "Show variables"
-msgstr "Whakaaturia ngā tāupe"
-
-#. TRANS: multiplication symbol (default: '×')
-#: mathlib.py:82
-msgid "mul_sym"
-msgstr "×"
-
-#. TRANS: division symbol (default: '÷')
-#: mathlib.py:87
-msgid "div_sym"
-msgstr "÷"
-
-#. TRANS: equal symbol (default: '=')
-#: mathlib.py:92
-msgid "equ_sym"
-msgstr "="
-
-#: mathlib.py:216
-msgid "Undefined"
-msgstr "Kāore i tautuhia"
-
-#: mathlib.py:226
-msgid "Error: unsupported type"
-msgstr "Hapa: momo kāore i te tautokoria"
-
-#: toolbars.py:53
+#: toolbars.py:57
 msgid "Help"
 msgstr "Āwhina"
 
-#: toolbars.py:121
+#: toolbars.py:132
 msgid "Copy"
 msgstr "Tārua"
 
-#: toolbars.py:122
+#: toolbars.py:133
 msgid "<ctrl>c"
 msgstr "<ctrl>c"
 
-#: toolbars.py:126
+#: toolbars.py:137
 msgid "Cut"
 msgstr "Tapahi"
 
-#: toolbars.py:129
+#: toolbars.py:140
 msgid "<ctrl>x"
 msgstr "<ctrl>x"
 
-#: toolbars.py:137
+#: toolbars.py:148
 msgid "Paste"
 msgstr "Whakapiri"
 
-#: toolbars.py:147
+#: toolbars.py:160
 msgid "Square"
 msgstr "Pūtake rua"
 
-#: toolbars.py:152
+#: toolbars.py:167
 msgid "Square root"
 msgstr "Pūtake rua"
 
-#: toolbars.py:157
+#: toolbars.py:174
 msgid "Inverse"
 msgstr "Kōaro"
 
-#: toolbars.py:164
+#: toolbars.py:183
 msgid "e to the power x"
 msgstr "e taupū x"
 
-#: toolbars.py:169
+#: toolbars.py:190
 msgid "x to the power y"
 msgstr "x taupū y"
 
-#: toolbars.py:174
+#: toolbars.py:197
 msgid "Natural logarithm"
 msgstr "Taupū kōaro tūturu"
 
-#: toolbars.py:180
+#: toolbars.py:206
 msgid "Factorial"
 msgstr "Tauwehenga"
 
-#: toolbars.py:190
+#: toolbars.py:220
 msgid "Sine"
 msgstr "Aho"
 
-#: toolbars.py:194
+#: toolbars.py:225
 msgid "Cosine"
 msgstr "Whenu"
 
-#: toolbars.py:198
+#: toolbars.py:230
 msgid "Tangent"
 msgstr "Pātapa"
 
-#: toolbars.py:204
+#: toolbars.py:237
 msgid "Arc sine"
 msgstr "Aho pewa"
 
-#: toolbars.py:208
+#: toolbars.py:242
 msgid "Arc cosine"
 msgstr "Whenu pewa"
 
-#: toolbars.py:212
+#: toolbars.py:247
 msgid "Arc tangent"
 msgstr "Pātapa pewa"
 
 # Not familiar with hyperbolic
-#: toolbars.py:218
+#: toolbars.py:254
 msgid "Hyperbolic sine"
 msgstr "Aho hyperbolic"
 
-#: toolbars.py:222
+#: toolbars.py:259
 msgid "Hyperbolic cosine"
 msgstr "Whenu hyperbolic"
 
-#: toolbars.py:226
+#: toolbars.py:264
 msgid "Hyperbolic tangent"
 msgstr "Pātapa hyperbolic"
 
 # Need some context
-#: toolbars.py:236
+#: toolbars.py:277
 msgid "Logical and"
 msgstr "Logical me"
 
 # need context
-#: toolbars.py:240
+#: toolbars.py:282
 msgid "Logical or"
 msgstr "Logical rānei"
 
-#: toolbars.py:250
+#: toolbars.py:293
 msgid "Equals"
 msgstr "Ka"
 
-#: toolbars.py:253
+#: toolbars.py:297
 msgid "Not equals"
 msgstr "Ka kore e"
 
-#: toolbars.py:262
+#: toolbars.py:310
 msgid "Pi"
 msgstr "Pāi"
 
-#: toolbars.py:266
+#: toolbars.py:316
 msgid "e"
 msgstr "e"
 
-#: toolbars.py:269
+#: toolbars.py:320
 msgid "γ"
 msgstr "Y"
 
-#: toolbars.py:272
+#: toolbars.py:325
 msgid "φ"
 msgstr "φ"
 
-#: toolbars.py:279
+#: toolbars.py:333
 msgid "Plot"
 msgstr "Tā"
 
-#: toolbars.py:286
+#: toolbars.py:338
 msgid "Degrees"
 msgstr "Tohurua"
 
-#: toolbars.py:287
+#: toolbars.py:339
 msgid "Radians"
 msgstr "Pūtoro"
 
-#: toolbars.py:291
+#: toolbars.py:344
 msgid "Degrees / Radians"
 msgstr "Tohurua / Pūtoro"
 
-#: toolbars.py:300
+#: toolbars.py:354
 msgid "Exponent / Scientific notation"
 msgstr "Taupū / Momotuhi Pūtaiao"
 
-#: toolbars.py:310
+#: toolbars.py:365
 msgid "Number of shown digits"
 msgstr "Te tau o ngā mati kei te whakaaturia"
 
-#: toolbars.py:320
+#: toolbars.py:377
 msgid "Integer formatting base"
 msgstr "Pūtake whakahōputu tau tōpū"
+
+#: astparser.py:39
+msgid ""
+"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
+"range from a to b"
+msgstr ""
+"tā(eqn, var=-a..b), tāngia te ine 'eqn' me te tāupe 'var' ki roto i te awhe "
+"a ki te b"
+
+#: astparser.py:61
+#, python-format
+msgid "Parse error at %d"
+msgstr "Hapa poroporo ki %d"
+
+#: astparser.py:75 astparser.py:109
+#, python-format
+msgid "Error at '%s', position: %d"
+msgstr ""
+
+#: astparser.py:88
+msgid "Syntax Error."
+msgstr ""
+
+#: astparser.py:95
+msgid "Syntax Error!"
+msgstr ""
+
+#: astparser.py:135
+msgid "This is just a test topic, use help(index) for the index"
+msgstr ""
+"He kaupapa whakamātau noa iho tēnei, whakamahia te āwhina(index) mō te taupū"
+
+#: astparser.py:148
+msgid "Use help(test) for help about 'test', or help(index) for the index"
+msgstr ""
+"Whakamahia te āwhina(test) mō te āwhina 'test', te āwhina(index) rānei mō te "
+"taupū"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:152
+msgid "index"
+msgstr "rārangi"
+
+#: astparser.py:152
+msgid "topics"
+msgstr "ngā kaupapa"
+
+#: astparser.py:153
+msgid "Topics"
+msgstr "Kaupapa"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:161
+msgid "variables"
+msgstr "ngā tāupe"
+
+#: astparser.py:162
+msgid "Variables"
+msgstr "Ngā Tāupe"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:168
+msgid "functions"
+msgstr "ngā taumahi"
+
+#: astparser.py:169
+msgid "Functions"
+msgstr "Ngā Taumahi"
+
+#: astparser.py:178
+#, python-format
+msgid "No help about '%s' available, use help(index) for the index"
+msgstr ""
+"Kāore he āwhina mō '%s' e wātea ana, whakamahi i te āwhina(index) mō te taupū"
+
+#: astparser.py:508
+msgid "help"
+msgstr "āwhina"
+
+#: astparser.py:515
+msgid "Recursion detected"
+msgstr "Kua kitea te tāruaruatanga"
+
+#: astparser.py:539
+#, python-format
+msgid "Function '%s' not defined"
+msgstr "Kāore i tautuhi te taumahi '%s'"
+
+#: astparser.py:541
+#, python-format
+msgid "Variable '%s' not defined"
+msgstr "Kāore i tautuhi te tāupe '%s'"
+
+#: astparser.py:551
+#, python-format
+msgid "Attribute '%s' does not exist"
+msgstr "Kāore he huanga '%s'"
+
+#: astparser.py:654
+msgid "Parse error"
+msgstr "Hapa poroporo"
+
+#: astparser.py:659
+msgid "Multiple statements not supported"
+msgstr "Tauākī maha kāore i te tautokoria"
+
+#: astparser.py:683
+msgid "Internal error"
+msgstr "Hapa ā-roto"
+
+#. TRANS: multiplication symbol (default: '×')
+#: mathlib.py:84
+msgid "mul_sym"
+msgstr "×"
+
+#. TRANS: division symbol (default: '÷')
+#: mathlib.py:89
+msgid "div_sym"
+msgstr "÷"
+
+#. TRANS: equal symbol (default: '=')
+#: mathlib.py:94
+msgid "equ_sym"
+msgstr "="
+
+#: mathlib.py:227
+msgid "Undefined"
+msgstr "Kāore i tautuhia"
+
+#: mathlib.py:237
+msgid "Error: unsupported type"
+msgstr "Hapa: momo kāore i te tautokoria"
+
+#: layout.py:113
+msgid "Clear"
+msgstr "Ūkui"
+
+#: layout.py:151 layout.py:195
+msgid "Edit"
+msgstr "Whakatika"
+
+#: layout.py:156 layout.py:196
+msgid "Algebra"
+msgstr "Taurangi"
+
+#: layout.py:161 layout.py:198
+msgid "Trigonometry"
+msgstr "Pākoke"
+
+#: layout.py:166 layout.py:199
+msgid "Boolean"
+msgstr "Pūreana"
+
+#: layout.py:175 layout.py:200
+msgid "Miscellaneous"
+msgstr "Ahanoa"
+
+#: layout.py:229
+msgid "Label:"
+msgstr "Tapanga:"
+
+#: layout.py:278
+msgid "All equations"
+msgstr "Ngā whārite katoa"
+
+#: layout.py:279
+msgid "My equations"
+msgstr "Aku whārite"
+
+#: layout.py:280
+msgid "Show variables"
+msgstr "Whakaaturia ngā tāupe"
+
+#: calculate.py:109
+#, python-format
+#, python-format,
+msgid "Equation.parse() string invalid (%s)"
+msgstr "Ine.poroporo() aho muhu (%s)"
+
+#: calculate.py:525
+msgid "Can not assign label: will cause recursion"
+msgstr "Kāore e taea te tautapa tapanga: ka whakaputa te tāruaruatanga"
+
+#: calculate.py:620
+#, python-format
+msgid "Writing to journal (%s)"
+msgstr "Kei te tuhi ki te tuhitaka (%s)"
+
+#: calculate.py:932
+msgid "button_pressed(): invalid type"
+msgstr "pāwhiritia_pātene(): momo muhu"
+
+#, python-format
+#~ msgid "Error at %d"
+#~ msgstr "Hapa ki %d"
+
+#~ msgid "fac"
+#~ msgstr "fac"
+
+#~ msgid ""
+#~ "And(x, y), logical and. Returns True if x and y are True, else returns False"
+#~ msgstr ""
+#~ "Ā(x,y), logical and. Ka whakahoki Tika mēnā kei te tika te x me te y, atu i "
+#~ "tēnā ka whakahoki Hē"
+
+#~ msgid "Number does not look binary in base 10"
+#~ msgstr "Te tirohanga kāore te tau i te ā-rua hei pūtake 10"
+
+#~ msgid ""
+#~ "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+#~ msgstr ""
+#~ "cosh(x), whakahokia te whenu pūwerewere o x. Kua hoatu e (exp(x) + exp(-x)) "
+#~ "/ 2"
+
+#~ msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
+#~ msgstr ""
+#~ "fac(x), whakahokia te tauwehenga o x. Kua hoatu e x * (x - 1) * (x - 2) * "
+#~ "..."
+
+#~ msgid ""
+#~ "mod(x, y), return the modulus of x with respect to y. This is the remainder "
+#~ "after dividing x by y."
+#~ msgstr ""
+#~ "mod(x, y), whakahokia te tau motuhake o x e ai ki y. Koinei te toenga i muri "
+#~ "i te tauwehe te x, e y."

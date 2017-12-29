@@ -1,3 +1,4 @@
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
@@ -6,104 +7,105 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 17:39+1100\n"
-"PO-Revision-Date: 2017-03-17 12:20+0000\n"
-"Last-Translator: Chris <cjl@sugarlabs.org>\n"
+"PO-Revision-Date: 2017-11-10 22:06+0000\n"
+"Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: ta\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1489753236.000000\n"
+"X-POOTLE-MTIME: 1510351576.000000\n"
 
 #: activity/activity.info:2
 msgid "Calculate"
-msgstr "கணி"
+msgstr "Skaičiuoti"
 
 #: functions.py:35
 msgid "add"
-msgstr "சேர்"
+msgstr ""
 
 #: functions.py:36
 msgid "abs"
-msgstr "abs"
+msgstr ""
 
 #: functions.py:37
 msgid "acos"
-msgstr "acos"
+msgstr ""
 
 #: functions.py:38
 msgid "acosh"
-msgstr "acosh"
+msgstr ""
 
 #: functions.py:39
 msgid "asin"
-msgstr "asin"
+msgstr ""
 
 #: functions.py:40
 msgid "asinh"
-msgstr "asinh"
+msgstr ""
 
 #: functions.py:41
 msgid "atan"
-msgstr "atan"
+msgstr ""
 
 #: functions.py:42
 msgid "atanh"
-msgstr "atanh"
+msgstr ""
 
 #: functions.py:43
 msgid "and"
-msgstr "உடன்"
+msgstr ""
 
 #: functions.py:44
 msgid "b10bin"
-msgstr "b10bin"
+msgstr ""
 
 #: functions.py:45
 msgid "ceil"
-msgstr "ceil"
+msgstr ""
 
 #: functions.py:46
 msgid "cos"
-msgstr "cos"
+msgstr ""
 
 #: functions.py:47
 msgid "cosh"
-msgstr "cosh"
+msgstr ""
 
 #: functions.py:48
 msgid "div"
-msgstr "div"
+msgstr ""
 
 #: functions.py:49
 msgid "gcd"
-msgstr "gcd"
+msgstr ""
 
 #: functions.py:50
 msgid "exp"
-msgstr "exp"
+msgstr ""
 
 #: functions.py:51
 msgid "factorial"
-msgstr "வகுக்கும் காரணி"
+msgstr ""
 
 #: functions.py:52
 msgid "factorize"
-msgstr "வகுக்ககூடியதாக்கு"
+msgstr ""
 
 #: functions.py:53
 msgid "floor"
-msgstr "தரைதளம்"
+msgstr ""
 
 #: functions.py:54
 msgid "inv"
-msgstr "inv"
+msgstr ""
 
 #: functions.py:55
 msgid "is_int"
-msgstr "is_int"
+msgstr ""
 
 #: functions.py:56
 msgid "is_prime"
@@ -111,73 +113,71 @@ msgstr ""
 
 #: functions.py:57
 msgid "ln"
-msgstr "ln"
+msgstr ""
 
 #: functions.py:58
 msgid "log10"
-msgstr "log10"
+msgstr ""
 
 #: functions.py:59
 msgid "mul"
-msgstr "mul"
+msgstr ""
 
 #: functions.py:60
 msgid "or"
-msgstr "or"
+msgstr ""
 
 #: functions.py:61
 msgid "rand_float"
-msgstr "rand_float"
+msgstr ""
 
 #: functions.py:62
 msgid "rand_int"
-msgstr "rand_int"
+msgstr ""
 
 #: functions.py:63
 msgid "round"
-msgstr "முழுமையான"
+msgstr ""
 
 #: functions.py:64
 msgid "sin"
-msgstr "sin"
+msgstr ""
 
 #: functions.py:65
 msgid "sinh"
-msgstr "sinh"
+msgstr ""
 
 #: functions.py:66
 msgid "sinc"
-msgstr "sin"
+msgstr ""
 
 #: functions.py:67
 msgid "sqrt"
-msgstr "sqrt"
+msgstr ""
 
 #: functions.py:68
 msgid "sub"
-msgstr "sub"
+msgstr ""
 
 #: functions.py:69
 msgid "square"
-msgstr "சதுரம்"
+msgstr ""
 
 #: functions.py:70
 msgid "tan"
-msgstr "tan"
+msgstr ""
 
 #: functions.py:71
 msgid "tanh"
-msgstr "tanh"
+msgstr ""
 
 #: functions.py:72
 msgid "xor"
-msgstr "xor"
+msgstr ""
 
 #: functions.py:119
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
 msgstr ""
-"abs(x), மிகச்சரியான x ன் மதிப்பாகும், அதன் பொருள் என்னவென்றால் x < 0 க்கான "
-"-x"
 
 #: functions.py:124
 msgid "acos(x) only defined for x E [-1,1]"
@@ -188,15 +188,12 @@ msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
 msgstr ""
-"acos(x),arcகோசைனுக்குதிரும்பவும் எந்தகோணத்தின்பெறுமானம்கோசைன்x.-1 <= x < 1 "
-"நிர்ணயிக்கப்பட்டுள்ளது"
 
 #: functions.py:135
-#, fuzzy
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
-msgstr "acosh(x), arc hyperbolic கோசைன்x க்கு திரும்பும். இது தான்"
+msgstr ""
 
 #: functions.py:142
 msgid ""
@@ -205,7 +202,7 @@ msgstr ""
 
 #: functions.py:151
 msgid "add(x, y), return x + y"
-msgstr "add(x, y), x + y ஐக் கொடு"
+msgstr ""
 
 #: functions.py:156
 msgid "asin(x) only defined for x E [-1,1]"
@@ -216,30 +213,24 @@ msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
 msgstr ""
-"asin(x), arc sine of x இன் விளைவைக் கொடுக்கும். இது sine x ஆக இருக்கும் "
-"போதுள்ள கோணமாகும். -1 <= x <= 1 க்காக வரையறுக்கப்பட்டுள்ளது"
 
 #: functions.py:166
-#, fuzzy
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
-msgstr "acosh(x), arc hyperbolic கோசைன்x க்கு திரும்பும். இது தான்"
+msgstr ""
 
 #: functions.py:173
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
 msgstr ""
-"atan(x), arc tangent of x இன் விளைவைக் கொண்டு வரும். இது tangent x ஆக "
-"இருக்கும் போதுள்ள கோணமாகும். அனைத்து x க்கும் வரையறுக்கப்பட்டுள்ளது"
 
 #: functions.py:180
-#, fuzzy
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
-msgstr "acosh(x), arc hyperbolic கோசைன்x க்கு திரும்பும். இது தான்"
+msgstr ""
 
 #: functions.py:191
 msgid "Number does not look binary."
@@ -260,8 +251,6 @@ msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr ""
-"cos(x),இது x இன் cosine விளைவைக் கொண்டு வரும். இது x கோணத்தின் பகுதி "
-"வளையத்தின் x ஒருங்கிணைப்பாகும்."
 
 #: functions.py:218
 msgid ""
@@ -270,11 +259,11 @@ msgstr ""
 
 #: functions.py:224 functions.py:319
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "Negalima dalinti iš nulio"
 
 #: functions.py:247
 msgid "Invalid argument"
-msgstr ""
+msgstr "Neteisingas argumentas"
 
 #: functions.py:250
 msgid ""
@@ -285,8 +274,6 @@ msgstr ""
 #: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
 msgstr ""
-"natural exponent of x ஐ ,exp(x) விளைவாகக் கொண்டு வரும். e^x ஆல் "
-"தரப்படுகின்றது."
 
 #: functions.py:262
 msgid "Factorial(x) is only defined for integers x>=0"
@@ -300,8 +287,6 @@ msgstr ""
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr ""
-"factorial(n), factorial of n விளைவாகக் கொடுக்கும். n * (n - 1) * (n - 2) *"
-"... மூலம் தரப்படுகின்றது."
 
 #: functions.py:314
 msgid "floor(x), return the largest integer smaller than x."
@@ -328,8 +313,6 @@ msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
 msgstr ""
-"n(x), x இன் இயற்கைமடக்கையில் விளைவைக் கொண்டு வரும். இது exponent exp() "
-"equals x இன் பெறுமானமாகும். x >= 0 க்கு வரையறுக்கப்படுள்ளது."
 
 #: functions.py:380
 msgid ""
@@ -348,9 +331,8 @@ msgid ""
 msgstr ""
 
 #: functions.py:399
-#, fuzzy
 msgid "mul(x, y), return x * y"
-msgstr "sub(x, y), x - y ஐக் கொடுக்கும்."
+msgstr ""
 
 #: functions.py:404
 msgid "negate(x), return -x"
@@ -360,8 +342,6 @@ msgstr ""
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
-"Or(x, y), logical or. என்பது x அல்லது y உண்மையானால், உண்மையென்றும், "
-"இல்லையாயின் பொய் என்றும் விளைவைக் கொடுக்கும்"
 
 #: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
@@ -398,15 +378,11 @@ msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
 msgstr ""
-"sin (x),இது x இன் sin விளைவைக் கொண்டு வரும். இது x கோணத்தின் பகுதி வளையத்தின்"
-" y ஒருங்கிணைப்பாகும்."
 
 #: functions.py:476
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
-"sinh(x) hyperbolic sine of x. இன் விளைவைக் கொண்டு வரும். (exp(x) - exp(-x)) /"
-" 2 ஆல் தரப்படுகின்றது."
 
 #: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
@@ -417,16 +393,14 @@ msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
 msgstr ""
-"sqrt(x), x யின் வர்க்கமூலத்ததை விளைவாகக் கொண்டு வரும். இது square equals x "
-"இன் பெறுமானமாகும். x >= 0 ஆக வரையறுக்கப்பட்டுள்ளது"
 
 #: functions.py:497
 msgid "square(x), return x * x"
-msgstr "square(x), x * x ஐக் கொடுக்கும்."
+msgstr ""
 
 #: functions.py:505
 msgid "sub(x, y), return x - y"
-msgstr "sub(x, y), x - y ஐக் கொடுக்கும்."
+msgstr ""
 
 #: functions.py:511
 msgid ""
@@ -434,31 +408,24 @@ msgid ""
 "origin of the unit circle to the point on the unit circle defined by the "
 "angle x. Given by sin(x) / cos(x)"
 msgstr ""
-"tan(x),திரும்பியதை xஇனால் தொடு.இது கோட்டினுடைய சரிவு வட்ட அலகின் x "
-"பக்கத்தினூடாக அடையாளப்படுத்து.கொடுக்கப்பட்ட sin(x) / cos(x)"
 
-# error in original string, should be tanh
 #: functions.py:519
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr ""
-"tanh(x), x உடன் அதிபரவலய சாய்வானகோட்டிற்கு திரும்பு. sinh(x) / cosh(x) மூலம் "
-"பெறப்பட்டது"
 
 #: functions.py:525
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
 msgstr ""
-"xor(x, y),தர்க்கித்த xor. x உண்மையானால் மீண்டும் திரும்புதலுடன் உண்மை(and y "
-"is False)/y உண்மையானால் (and x is False),மீண்டும் பிழை"
 
 #: toolbars.py:57
 msgid "Help"
-msgstr "உதவி"
+msgstr ""
 
 #: toolbars.py:132
 msgid "Copy"
-msgstr "பிரதி செய்"
+msgstr "Kopijuoti"
 
 #: toolbars.py:133
 msgid "<ctrl>c"
@@ -466,7 +433,7 @@ msgstr ""
 
 #: toolbars.py:137
 msgid "Cut"
-msgstr "வெட்டு"
+msgstr "Iškirpti"
 
 #: toolbars.py:140
 msgid "<ctrl>x"
@@ -474,95 +441,95 @@ msgstr ""
 
 #: toolbars.py:148
 msgid "Paste"
-msgstr "ஒட்டு"
+msgstr "Įdėti"
 
 #: toolbars.py:160
 msgid "Square"
-msgstr "சதுரம்"
+msgstr ""
 
 #: toolbars.py:167
 msgid "Square root"
-msgstr "வர்க்கமூலம்"
+msgstr ""
 
 #: toolbars.py:174
 msgid "Inverse"
-msgstr "தழைகீழ்"
+msgstr ""
 
 #: toolbars.py:183
 msgid "e to the power x"
-msgstr "e இனது வலு x"
+msgstr ""
 
 #: toolbars.py:190
 msgid "x to the power y"
-msgstr "x இனது வலு y"
+msgstr ""
 
 #: toolbars.py:197
 msgid "Natural logarithm"
-msgstr "இயற்கை மடக்கை"
+msgstr ""
 
 #: toolbars.py:206
 msgid "Factorial"
-msgstr "வணிகப்பேராள்"
+msgstr ""
 
 #: toolbars.py:220
 msgid "Sine"
-msgstr "சைன்"
+msgstr ""
 
 #: toolbars.py:225
 msgid "Cosine"
-msgstr "கொசைன்"
+msgstr ""
 
 #: toolbars.py:230
 msgid "Tangent"
-msgstr "தான்சைன்"
+msgstr ""
 
 #: toolbars.py:237
 msgid "Arc sine"
-msgstr "சைன்கோணம்"
+msgstr ""
 
 #: toolbars.py:242
 msgid "Arc cosine"
-msgstr "கொசைன் கோணம்"
+msgstr ""
 
 #: toolbars.py:247
 msgid "Arc tangent"
-msgstr "தான்சைன்கோணம்"
+msgstr ""
 
 #: toolbars.py:254
 msgid "Hyperbolic sine"
-msgstr "ஹைப்பபோலிக் சைன்"
+msgstr ""
 
 #: toolbars.py:259
 msgid "Hyperbolic cosine"
-msgstr "ஹைப்பபோலிக் கோசைன்"
+msgstr ""
 
 #: toolbars.py:264
 msgid "Hyperbolic tangent"
-msgstr "ஹைப்பபோலிக் தான்சைன்கோணம்"
+msgstr ""
 
 #: toolbars.py:277
 msgid "Logical and"
-msgstr "தர்க்கித்தலுடன்"
+msgstr ""
 
 #: toolbars.py:282
 msgid "Logical or"
-msgstr "தர்க்கித்தல் அல்லது"
+msgstr ""
 
 #: toolbars.py:293
 msgid "Equals"
-msgstr "சமம்"
+msgstr ""
 
 #: toolbars.py:297
 msgid "Not equals"
-msgstr "சமம்இல்லை"
+msgstr ""
 
 #: toolbars.py:310
 msgid "Pi"
-msgstr "பை"
+msgstr ""
 
 #: toolbars.py:316
 msgid "e"
-msgstr "இ"
+msgstr ""
 
 #: toolbars.py:320
 msgid "γ"
@@ -574,40 +541,37 @@ msgstr ""
 
 #: toolbars.py:333
 msgid "Plot"
-msgstr "வரை"
+msgstr ""
 
 #: toolbars.py:338
 msgid "Degrees"
-msgstr "நிலை"
+msgstr ""
 
 #: toolbars.py:339
 msgid "Radians"
-msgstr "ஒளிக்கதிர்கள்"
+msgstr ""
 
 #: toolbars.py:344
-#, fuzzy
 msgid "Degrees / Radians"
-msgstr "கோணங்கள்/கோணளவு"
+msgstr ""
 
 #: toolbars.py:354
 msgid "Exponent / Scientific notation"
-msgstr "எக்ஸ்போனன்ட் / அறிவியல் குறிப்பு"
+msgstr ""
 
 #: toolbars.py:365
 msgid "Number of shown digits"
-msgstr "காட்டப்பட்டுள்ள எண்ணிலக்கங்கள்"
+msgstr ""
 
 #: toolbars.py:377
 msgid "Integer formatting base"
-msgstr "மாறிலிகளின் அடிப்படை வடிவாக்கம்"
+msgstr ""
 
 #: astparser.py:39
 msgid ""
 "plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
 "range from a to b"
 msgstr ""
-"புள்ளி(eqn, var=-a..b), என்பது சமன்பாடு 'eqn' ஐ, a..b வரையுள்ள வீச்சிலுள்ள "
-"மாறி 'var' யுடன் plot செய்யும்"
 
 #: astparser.py:61
 #, python-format
@@ -629,55 +593,51 @@ msgstr ""
 
 #: astparser.py:135
 msgid "This is just a test topic, use help(index) for the index"
-msgstr "இது ஒரு பரீட்சித்தல் விடயம்.உதவிக்காக அடையாளத்தை உபயோகி"
+msgstr ""
 
 #: astparser.py:148
 msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr "உதவி தேவைப்படுவதற்கான பரீட்சித்தலில் அல்லது அடையாளத்திற்கான உதவி"
+msgstr ""
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:152
 msgid "index"
-msgstr "அடையாளம்"
+msgstr ""
 
 #: astparser.py:152
-#, fuzzy
 msgid "topics"
-msgstr "விடயம்"
+msgstr ""
 
 #: astparser.py:153
 msgid "Topics"
-msgstr "விடயம்"
+msgstr ""
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:161
 msgid "variables"
-msgstr "மாறிகள்"
+msgstr ""
 
 #: astparser.py:162
-#, fuzzy
 msgid "Variables"
-msgstr "மாறிகள்"
+msgstr ""
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:168
 msgid "functions"
-msgstr "தொழிற்பாடுகள்"
+msgstr ""
 
 #: astparser.py:169
-#, fuzzy
 msgid "Functions"
-msgstr "தொழிற்பாடுகள்"
+msgstr ""
 
 #: astparser.py:178
 #, python-format
 msgid "No help about '%s' available, use help(index) for the index"
-msgstr "'%s' இதற்கான உதவி கிடைக்கவில்லை.உதவிக்கு அடையாளத்தை உபயோகி."
+msgstr ""
 
 #: astparser.py:508
-#, fuzzy
 msgid "help"
-msgstr "உதவி"
+msgstr ""
 
 #: astparser.py:515
 msgid "Recursion detected"
@@ -685,14 +645,13 @@ msgstr ""
 
 #: astparser.py:539
 #, python-format
-#, python-format,
 msgid "Function '%s' not defined"
-msgstr "செயற்பாடு '%s' வரையறுக்கப்படவில்லை"
+msgstr ""
 
 #: astparser.py:541
 #, python-format
 msgid "Variable '%s' not defined"
-msgstr "மாறி '%s' வரையறுக்கப்படவில்லை"
+msgstr ""
 
 #: astparser.py:551
 #, python-format
@@ -701,7 +660,7 @@ msgstr ""
 
 #: astparser.py:654
 msgid "Parse error"
-msgstr "தவறான அலகு"
+msgstr ""
 
 #: astparser.py:659
 msgid "Multiple statements not supported"
@@ -714,12 +673,12 @@ msgstr ""
 #. TRANS: multiplication symbol (default: '×')
 #: mathlib.py:84
 msgid "mul_sym"
-msgstr "mul_sym"
+msgstr ""
 
 #. TRANS: division symbol (default: '÷')
 #: mathlib.py:89
 msgid "div_sym"
-msgstr "div_sym"
+msgstr ""
 
 #. TRANS: equal symbol (default: '=')
 #: mathlib.py:94
@@ -728,57 +687,56 @@ msgstr ""
 
 #: mathlib.py:227
 msgid "Undefined"
-msgstr "தடையற்ற"
+msgstr ""
 
 #: mathlib.py:237
 msgid "Error: unsupported type"
-msgstr "தவறு ஒத்துழைப்பில்லாத வகை"
+msgstr ""
 
 #: layout.py:113
 msgid "Clear"
-msgstr "நீக்கு"
+msgstr ""
 
 #: layout.py:151 layout.py:195
 msgid "Edit"
-msgstr "திருத்து"
+msgstr ""
 
 #: layout.py:156 layout.py:196
 msgid "Algebra"
-msgstr "அட்சரகணிதம்"
+msgstr ""
 
 #: layout.py:161 layout.py:198
 msgid "Trigonometry"
-msgstr "திரிகோணகணிதம்"
+msgstr ""
 
 #: layout.py:166 layout.py:199
 msgid "Boolean"
-msgstr "பூழியன்"
+msgstr ""
 
 #: layout.py:175 layout.py:200
 msgid "Miscellaneous"
-msgstr "மற்றவை"
+msgstr ""
 
 #: layout.py:229
 msgid "Label:"
-msgstr "பெயர்ச்சீட்டு"
+msgstr ""
 
 #: layout.py:278
 msgid "All equations"
-msgstr "அனைத்து சமன்பாடுகளும்"
+msgstr ""
 
 #: layout.py:279
 msgid "My equations"
-msgstr "எனதுசமன்பாடுகள்"
+msgstr ""
 
 #: layout.py:280
 msgid "Show variables"
-msgstr "மாறிகளைக்காட்டு"
+msgstr ""
 
 #: calculate.py:109
 #, python-format
-#, python-format,
 msgid "Equation.parse() string invalid (%s)"
-msgstr "சமன்பாடு.பிரித்துப்பார்த்தல்() சரியான வரி இல்லை (%s)"
+msgstr ""
 
 #: calculate.py:525
 msgid "Can not assign label: will cause recursion"
@@ -786,34 +744,9 @@ msgstr ""
 
 #: calculate.py:620
 #, python-format
-#, python-format,
 msgid "Writing to journal (%s)"
-msgstr "சஞ்சிகைக்கு பதியப்படுகிறது (%s)"
+msgstr ""
 
 #: calculate.py:932
 msgid "button_pressed(): invalid type"
-msgstr "பொருத்தமற்ற முறையில் பொத்தான் அழுத்தப்பட்டுள்ளது"
-
-#, python-format
-#~ msgid "Error at %d"
-#~ msgstr "தவறுat %d"
-
-#~ msgid "fac"
-#~ msgstr "fac"
-
-#~ msgid ""
-#~ "And(x, y), logical and. Returns True if x and y are True, else returns False"
-#~ msgstr ""
-#~ "And(x, y), logical and. என்பது x உம் y உம் உண்மையானால், உண்மையென்றும் "
-#~ "இல்லையாயின் பொய் என்ற விளைவைக் கொண்டு வரும்"
-
-#~ msgid ""
-#~ "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
-#~ msgstr ""
-#~ "cosh(x) hyperbolic cosine of x. இன் விளைவைக் கொண்டு வரும். (exp(x) + "
-#~ "exp(-x)) / 2 ஆல் தரப்படுகின்றது."
-
-#~ msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-#~ msgstr ""
-#~ "factorial of x ஐ ,fac(x) விளைவாகக் கொண்டு வரும். x * (x - 1) * (x - 2) * ... "
-#~ "ஆல் தரப்படுகின்றது."
+msgstr ""

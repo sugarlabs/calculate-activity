@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2017-03-17 12:18+0000\n"
+"POT-Creation-Date: 2017-03-24 17:39+1100\n"
+"PO-Revision-Date: 2017-09-05 02:13+0000\n"
 "Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv\n"
@@ -16,176 +16,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1489753083.000000\n"
+"X-POOTLE-MTIME: 1504577634.000000\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Calculate"
 msgstr "Beräkna"
 
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid ""
-"This is the place to get the answer to a quick problem, but that is not the "
-"limit! You can also explore Algebra, Trigonometry, Boolean and more!"
-msgstr ""
-
-#: astparser.py:40
-msgid ""
-"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
-"range from a to b"
-msgstr ""
-"plot(ekvation, var=-a..b), ritar upp ekvationen 'ekvation' med variablerna "
-"'var' inom området [a, b]"
-
-#: astparser.py:59
-#, python-format
-msgid "Parse error at %d"
-msgstr ""
-
-#: astparser.py:71 astparser.py:83
-#, python-format
-msgid "Error at %d"
-msgstr "Fel vid %d"
-
-#: astparser.py:94
-msgid "This is just a test topic, use help(index) for the index"
-msgstr "Detta är bara ett testämne, använd help(index) för att nå indexet"
-
-#: astparser.py:106
-msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr ""
-"Skriv help(test) för att få hjälp om ämnet 'test'm, eller skriv help(index) "
-"för att se vilka ämnen som finns tillgängliga"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:109
-msgid "index"
-msgstr "lista"
-
-#: astparser.py:109
-#, fuzzy
-msgid "topics"
-msgstr "Ämnen"
-
-#: astparser.py:110
-msgid "Topics"
-msgstr "Ämnen"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:118
-msgid "variables"
-msgstr "variabler"
-
-#: astparser.py:119
-#, fuzzy
-msgid "Variables"
-msgstr "variabler"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:125
-msgid "functions"
-msgstr "funktioner"
-
-#: astparser.py:126
-#, fuzzy
-msgid "Functions"
-msgstr "funktioner"
-
-#: astparser.py:135
-#, python-format
-msgid "No help about '%s' available, use help(index) for the index"
-msgstr ""
-"Tyvärr finns det ingen hjälp att få om ämnet '%s'. Använd help(index) för "
-"att se vilka ämnen som finns tillgängliga."
-
-#: astparser.py:459
-#, fuzzy
-msgid "help"
-msgstr "Hjälp"
-
-#: astparser.py:466
-msgid "Recursion detected"
-msgstr ""
-
-#: astparser.py:490
-#, python-format
-msgid "Function '%s' not defined"
-msgstr "Funktionen '%s' är inte definierad"
-
-#: astparser.py:492
-#, python-format
-msgid "Variable '%s' not defined"
-msgstr "Variabeln '%s' är inte definierad"
-
-#: astparser.py:502
-#, python-format
-msgid "Attribute '%s' does not exist"
-msgstr ""
-
-#: astparser.py:596
-msgid "Parse error"
-msgstr "Tolkningsfel"
-
-#: astparser.py:601
-msgid "Multiple statements not supported"
-msgstr ""
-
-#: astparser.py:625
-msgid "Internal error"
-msgstr ""
-
-#: calculate.py:109
-#, python-format
-msgid "Equation.parse() string invalid (%s)"
-msgstr "Equation.parse() ogiltig sträng (%s)"
-
-#: calculate.py:483
-msgid "Can not assign label: will cause recursion"
-msgstr ""
-
-#: calculate.py:571
-#, python-format
-msgid "Writing to journal (%s)"
-msgstr "Skriver in i Dagboken (%s)"
-
-#: calculate.py:865
-msgid "button_pressed(): invalid type"
-msgstr "button_pressed(): ogiltig typ"
-
 #: functions.py:35
 msgid "add"
-msgstr ""
+msgstr "add"
 
 #: functions.py:36
 msgid "abs"
-msgstr ""
+msgstr "abs"
 
 #: functions.py:37
 msgid "acos"
 msgstr "acos"
 
 #: functions.py:38
-#, fuzzy
 msgid "acosh"
-msgstr "acos"
+msgstr "acosh"
 
 #: functions.py:39
 msgid "asin"
 msgstr "asin"
 
 #: functions.py:40
-#, fuzzy
 msgid "asinh"
-msgstr "asin"
+msgstr "asinh"
 
 #: functions.py:41
 msgid "atan"
 msgstr "atan"
 
 #: functions.py:42
-#, fuzzy
 msgid "atanh"
-msgstr "atan"
+msgstr "atanh"
 
 #: functions.py:43
 msgid "and"
@@ -193,11 +60,11 @@ msgstr "och"
 
 #: functions.py:44
 msgid "b10bin"
-msgstr ""
+msgstr "b10bin"
 
 #: functions.py:45
 msgid "ceil"
-msgstr ""
+msgstr "tak"
 
 #: functions.py:46
 msgid "cos"
@@ -209,40 +76,38 @@ msgstr "cosh"
 
 #: functions.py:48
 msgid "div"
-msgstr ""
+msgstr "div"
 
 #: functions.py:49
 msgid "gcd"
-msgstr ""
+msgstr "sgd"
 
 #: functions.py:50
 msgid "exp"
 msgstr "exp"
 
 #: functions.py:51
-#, fuzzy
 msgid "factorial"
-msgstr "Fakultet"
+msgstr "fakultet"
 
 #: functions.py:52
-msgid "fac"
-msgstr "fac"
+msgid "factorize"
+msgstr "faktorisera"
 
 #: functions.py:53
-#, fuzzy
-msgid "factorize"
-msgstr "Fakultet"
+msgid "floor"
+msgstr "golv"
 
 #: functions.py:54
-msgid "floor"
-msgstr ""
+msgid "inv"
+msgstr "inv"
 
 #: functions.py:55
-msgid "inv"
+msgid "is_int"
 msgstr ""
 
 #: functions.py:56
-msgid "is_int"
+msgid "is_prime"
 msgstr ""
 
 #: functions.py:57
@@ -251,13 +116,14 @@ msgstr "ln"
 
 #: functions.py:58
 msgid "log10"
-msgstr ""
+msgstr "log10"
 
 #: functions.py:59
 msgid "mul"
-msgstr ""
+msgstr "mul"
 
 #: functions.py:60
+#, fuzzy
 msgid "or"
 msgstr "or"
 
@@ -282,9 +148,8 @@ msgid "sinh"
 msgstr "sinh"
 
 #: functions.py:66
-#, fuzzy
 msgid "sinc"
-msgstr "sin"
+msgstr "sinc"
 
 #: functions.py:67
 msgid "sqrt"
@@ -310,52 +175,63 @@ msgstr "tanh"
 msgid "xor"
 msgstr "xor"
 
-#: functions.py:112
+#: functions.py:119
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
-msgstr ""
+msgstr "abs(x), returnera absolutbelopp för x, vilket betyder -x för x < 0"
 
-#: functions.py:117
+#: functions.py:124
+msgid "acos(x) only defined for x E [-1,1]"
+msgstr "acos(x) endast definierad för x E [-1,1]"
+
+# TODO: should be -1 <= x <= 1
+#: functions.py:128
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
 msgstr ""
-"acos(x) returnerar arkus consinus av x Alltså den vinkel för vilken "
-"cos(vinkel) = x. X definieras som -1 <= x <= 1"
+"acos(x) returnerar arkus cosinus av x. Alltså den vinkel för vilken "
+"cos(vinkel) = x. Definierad för -1 <= x <= 1"
 
-#: functions.py:123
+#: functions.py:135
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
 msgstr ""
+"acosh(x), returnera arcus hyperbolisk cosinus av x. Detta är värdet y för "
+"vilket hyperbolisk cosinus är lika med x."
 
-#: functions.py:129
-#, fuzzy
+#: functions.py:142
 msgid ""
-"And(x, y), logical and. Returns True if x and y are True, else returns False"
+"And(x, y), logical and. Returns True if x and y are True,else returns False"
 msgstr ""
-"och(x, y), logiskt och. Returnerar Sant om x och y är båda sanna, annars "
-"returnerar den Falskt"
+"And(x, y), logiskt och. Returnerar True om x och y är true, annars "
+"returneras False"
 
-#: functions.py:136
+#: functions.py:151
 msgid "add(x, y), return x + y"
-msgstr ""
+msgstr "add(x, y), returnera x + y"
 
-#: functions.py:141
-#, fuzzy
+#: functions.py:156
+msgid "asin(x) only defined for x E [-1,1]"
+msgstr "asin(x) endast definierad för x E [-1,1]"
+
+#: functions.py:159
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
 msgstr ""
-"asin(x) returnerar arksinus av x. Alltså den vinkel för vilken sin(vinkel) = "
-"x. X devifieras som -1 <= x <= 1"
+"asin(x) returnerar arcus sinus av x. Alltså den vinkel för vilken sinus = x. "
+"Definierad för -1 <= x <= 1"
 
-#: functions.py:147
+#: functions.py:166
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
 msgstr ""
+"asinh(x), returnera arcus hyperbolisk sinus av x. Detta är värdet y för "
+"vilket hyperbolisk sinus är lika med x."
 
-#: functions.py:153
+#: functions.py:173
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
@@ -363,27 +239,31 @@ msgstr ""
 "atan(x) returnerar arktangens av x. Alltså den vinkel för vilken tan(vinkel) "
 "= x. Alla värden på x är giltiga"
 
-#: functions.py:159
+#: functions.py:180
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
 msgstr ""
+"atanh(x), returner arkus hyperbolisk tangens av x. Detta är värdet y för "
+"vilket hyperbolisk tangens är lika med x."
 
-#: functions.py:171
-msgid "Number does not look binary in base 10"
-msgstr ""
+#: functions.py:191
+msgid "Number does not look binary."
+msgstr "Tal ser inte ut att vara binärt."
 
-#: functions.py:178
+#: functions.py:199
 msgid ""
-"b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
-"(10111) = 23,"
+"b10bin(x), interpret a number written in base 10 as binary, e.g.: "
+"b10bin(10111) = 23,"
 msgstr ""
+"b10bin(x), tolka ett tal skrivet i basen 10 som binärt, t.ex.: b10bin(10111) "
+"= 23,"
 
-#: functions.py:183
+#: functions.py:205
 msgid "ceil(x), return the smallest integer larger than x."
-msgstr ""
+msgstr "tak(x), returnera det minsta heltal som är större än x."
 
-#: functions.py:188
+#: functions.py:211
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
@@ -391,60 +271,67 @@ msgstr ""
 "cos(x), returnerar cosinus av x. Alltså x-koordinaten på enhetscirkeln för "
 "vinkeln x"
 
-#: functions.py:194
+#: functions.py:218
 msgid ""
-"cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+"cosh(x), return the hyperbolic cosine of x.Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
-"cosh(x), returnerar cosinus hyperbolikus av x. Ges av formeln: (exp(x) + "
-"exp(-x)) / 2"
+"cosh(x), returnera hyperbolisk cosinus av x. Givet av (exp(x) + exp(-x)) / 2"
 
-#: functions.py:198
+#: functions.py:224 functions.py:319
 msgid "Can not divide by zero"
-msgstr ""
+msgstr "Kan inte dividera med noll"
 
-#: functions.py:219
+#: functions.py:247
 msgid "Invalid argument"
-msgstr ""
+msgstr "Ogiltigt argument"
 
-#: functions.py:222
+#: functions.py:250
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
+"sgd(a, b), avgör den största gemensamma delaren av a och b. Till exempel är "
+"3 den största faktorn som delar 15 och 18."
 
-#: functions.py:227
+#: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
 msgstr "exp(x) returnerar den naturliga exponenten av x. Ges av e^x"
 
-#: functions.py:231
-msgid "Factorial only defined for integers"
-msgstr ""
+#: functions.py:262
+msgid "Factorial(x) is only defined for integers x>=0"
+msgstr "Fakultet(x) är endast definierat för heltal x>=0"
 
-#: functions.py:244
-#, fuzzy
+#: functions.py:265
+msgid "Factorial only defined for integers"
+msgstr "Fakultet är endast definierad för heltal"
+
+#: functions.py:278
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr ""
-"fac(x), returnerar fakulteten av x. Ges av x! =  x * (x - 1) * (x - 2) * ..."
+"fakultet(n), returnerar fakulteten av n. Ges av n * (n - 1) * (n - 2) * ..."
 
-#: functions.py:250
-msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-msgstr ""
-"fac(x), returnerar fakulteten av x. Ges av x! = x * (x - 1) * (x - 2) * ..."
-
-#: functions.py:283
+#: functions.py:314
 msgid "floor(x), return the largest integer smaller than x."
-msgstr ""
+msgstr "golv(x), returnera det största heltal som är mindre än x."
 
-#: functions.py:287
+#: functions.py:321
 msgid "inv(x), return the inverse of x, which is 1 / x"
-msgstr ""
+msgstr "inv(x), returnera inversen av x, vilken är 1 / x"
 
-#: functions.py:309 functions.py:318
+#: functions.py:356
+msgid "Argument must be int"
+msgstr "Argument måste vara heltal"
+
+#: functions.py:358
+msgid "Prime numbers is defined for natural numbers"
+msgstr "Primtal är definierade för naturliga tal"
+
+#: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
-msgstr ""
+msgstr "Logarithm(x) endast definierad för x > 0"
 
-#: functions.py:311
+#: functions.py:370
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
@@ -452,31 +339,35 @@ msgstr ""
 "ln(x) returnerar den naturliga logaritmen av x. Det är det värde för vilket "
 "exp(värde) = x. Är endast definierad för positiva x."
 
-#: functions.py:320
+#: functions.py:380
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
+"log10(x), returnera bas 10-logaritmen av x. Detta är värdet y för vilket 10^"
+"y är lika med x. Definierad för x >= 0."
 
-#: functions.py:327
+#: functions.py:388
 msgid "Can only calculate x modulo <integer>"
-msgstr ""
+msgstr "Kan endast beräkna x mod <heltal>"
 
-#: functions.py:329
+#: functions.py:390
 msgid ""
-"mod(x, y), return the modulus of x with respect to y. This is the remainder "
+"mod(x, y), return the modulus of x with respect to y.This is the remainder "
 "after dividing x by y."
 msgstr ""
+"mod(x, y), returnera modulo för x med avseende på y. Detta är resten efter "
+"att dela x med y."
 
-#: functions.py:337
+#: functions.py:399
 msgid "mul(x, y), return x * y"
-msgstr ""
+msgstr "mul(x, y), returnera x * y"
 
-#: functions.py:341
+#: functions.py:404
 msgid "negate(x), return -x"
-msgstr ""
+msgstr "negate(x), returnera -x"
 
-#: functions.py:346
+#: functions.py:410
 #, fuzzy
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
@@ -484,37 +375,40 @@ msgstr ""
 "or(x, y), logiskt eller. Returnerar sant om någon av x eller y är sanna. Om "
 "båda är falska returneras falskt"
 
-#: functions.py:361
+#: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
-msgstr ""
+msgstr "power(x, y), returnera x upphöjt till y (x**y)"
 
-#: functions.py:366
+#: functions.py:433
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
-msgstr ""
+msgstr "rand_float(), returnera ett slumpmässigt flyttal mellan 0.0 och 1.0"
 
-#: functions.py:371
+#: functions.py:439
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
+"rand_int([<maxmal>]), returnera ett slumpmässigt heltal mellan 0 och <maxval>"
+". <maxval> är ett valfritt argument och sätts till 65535 som standard."
 
-#: functions.py:376
+#: functions.py:445
 msgid "round(x), return the integer nearest to x."
-msgstr ""
+msgstr "round(x), returnera heltalet närmast x."
 
-#: functions.py:382 functions.py:390
+#: functions.py:452 functions.py:461
 msgid "Bitwise operations only apply to integers"
-msgstr ""
+msgstr "Bitvisa operationer kan endas tillämpas på heltal"
 
-#: functions.py:384
+#: functions.py:454
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr ""
+"shift_left(x, y), skifta x y bitar åt vänster (multiplicera med 2 per bit)"
 
-#: functions.py:392
+#: functions.py:463
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
-msgstr ""
+msgstr "shift_right(x, y), skifta x y bitar åt höger (dividera med 2 per bit)"
 
-#: functions.py:397
+#: functions.py:469
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
@@ -522,18 +416,18 @@ msgstr ""
 "sin(x) returnerar sinus av x. Detta är y-koordinaten på enhetscirkeln vid "
 "vinkel x"
 
-#: functions.py:403
+#: functions.py:476
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
-"sinh(x) returnerar sinus hyperbolikus av x. Ges av formeln (exp(x) - "
-"exp(-x)) / 2"
+"sinh(x) returnerar sinus hyperbolikus av x. Ges av formeln (exp(x) - exp(-x))"
+" / 2"
 
-#: functions.py:410
+#: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
-msgstr ""
+msgstr "sinc(x), returnera sinc-funktionen av x. Detta ges av sin(x) / x."
 
-#: functions.py:415
+#: functions.py:491
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
@@ -541,15 +435,15 @@ msgstr ""
 "sqrt(x) returnerar kvadratorten av x. Detta är värdet för vilken svaret i "
 "kvadrat är likamed x."
 
-#: functions.py:420
+#: functions.py:497
 msgid "square(x), return x * x"
-msgstr ""
+msgstr "square(x), returnera x * x"
 
-#: functions.py:427
+#: functions.py:505
 msgid "sub(x, y), return x - y"
-msgstr ""
+msgstr "sub(x, y), returnera x - y"
 
-#: functions.py:432
+#: functions.py:511
 msgid ""
 "tan(x), return the tangent of x. This is the slope of the line from the "
 "origin of the unit circle to the point on the unit circle defined by the "
@@ -559,11 +453,11 @@ msgstr ""
 "från origo på enhetscirkeln och genom den punkt som bestäms av vinkel x. Ges "
 "av sin(x)/cos(x)"
 
-#: functions.py:439
+#: functions.py:519
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr "tanh(x) returnerar tangens hyperbolikus av x. Ges av sinh(x) / cosh(x)"
 
-#: functions.py:444
+#: functions.py:525
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
@@ -572,215 +466,368 @@ msgstr ""
 "betraktar som eller, dvs returnerar sant om antingen x eller y är sant. "
 "Annars returnerar falskt"
 
-#: layout.py:75
-msgid "Clear"
-msgstr "Rensa"
-
-#: layout.py:105 layout.py:145
-msgid "Edit"
-msgstr "Redigera"
-
-#: layout.py:110 layout.py:146
-msgid "Algebra"
-msgstr "Algebra"
-
-#: layout.py:115 layout.py:147
-msgid "Trigonometry"
-msgstr "Trigonometri"
-
-#: layout.py:120 layout.py:148
-msgid "Boolean"
-msgstr "Boolsk"
-
-#: layout.py:125 layout.py:149
-msgid "Miscellaneous"
-msgstr ""
-
-#: layout.py:178
-msgid "Label:"
-msgstr "Etikett:"
-
-#: layout.py:223
-msgid "All equations"
-msgstr "Alla ekvationer"
-
-#: layout.py:224
-msgid "My equations"
-msgstr "Mina ekvationer"
-
-#: layout.py:225
-msgid "Show variables"
-msgstr "Visa variabler"
-
-#. TRANS: multiplication symbol (default: '×')
-#: mathlib.py:82
-msgid "mul_sym"
-msgstr "*"
-
-#. TRANS: division symbol (default: '÷')
-#: mathlib.py:87
-msgid "div_sym"
-msgstr "/"
-
-#. TRANS: equal symbol (default: '=')
-#: mathlib.py:92
-msgid "equ_sym"
-msgstr ""
-
-#: mathlib.py:216
-msgid "Undefined"
-msgstr "Inte definierad"
-
-#: mathlib.py:226
-msgid "Error: unsupported type"
-msgstr "Fel: Stödjer inte den typen"
-
-#: toolbars.py:53
+#: toolbars.py:57
 msgid "Help"
 msgstr "Hjälp"
 
-#: toolbars.py:121
+#: toolbars.py:132
 msgid "Copy"
 msgstr "Kopiera"
 
-#: toolbars.py:122
+#: toolbars.py:133
 msgid "<ctrl>c"
-msgstr ""
+msgstr "<ctrl>c"
 
-#: toolbars.py:126
+#: toolbars.py:137
 msgid "Cut"
 msgstr "Klipp ut"
 
-#: toolbars.py:129
+#: toolbars.py:140
 msgid "<ctrl>x"
-msgstr ""
+msgstr "<ctrl>x"
 
-#: toolbars.py:137
+#: toolbars.py:148
 msgid "Paste"
 msgstr "Klistra in"
 
-#: toolbars.py:147
+#: toolbars.py:160
 msgid "Square"
 msgstr "Kvadrat"
 
-#: toolbars.py:152
+#: toolbars.py:167
 msgid "Square root"
 msgstr "Kvadratrot"
 
-#: toolbars.py:157
+#: toolbars.py:174
 msgid "Inverse"
 msgstr "Invers"
 
-#: toolbars.py:164
+#: toolbars.py:183
 msgid "e to the power x"
 msgstr "e upphöjt i x"
 
-#: toolbars.py:169
+#: toolbars.py:190
 msgid "x to the power y"
 msgstr "x upphöjt i y"
 
-#: toolbars.py:174
+#: toolbars.py:197
 msgid "Natural logarithm"
 msgstr "Naturliga logaritmen"
 
-#: toolbars.py:180
+#: toolbars.py:206
 msgid "Factorial"
 msgstr "Fakultet"
 
-#: toolbars.py:190
+#: toolbars.py:220
 msgid "Sine"
 msgstr "Sinus"
 
-#: toolbars.py:194
+#: toolbars.py:225
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: toolbars.py:198
+#: toolbars.py:230
 msgid "Tangent"
 msgstr "Tangens"
 
-#: toolbars.py:204
+#: toolbars.py:237
 msgid "Arc sine"
-msgstr "arksinus"
+msgstr "Arksinus"
 
-#: toolbars.py:208
+#: toolbars.py:242
 msgid "Arc cosine"
 msgstr "Arkus cosinus"
 
-#: toolbars.py:212
+#: toolbars.py:247
 msgid "Arc tangent"
 msgstr "Arkus tangens"
 
-#: toolbars.py:218
+#: toolbars.py:254
 msgid "Hyperbolic sine"
 msgstr "Sinus hyperbolikus"
 
-#: toolbars.py:222
+#: toolbars.py:259
 msgid "Hyperbolic cosine"
 msgstr "Cosinus hyperbolikus"
 
-#: toolbars.py:226
+#: toolbars.py:264
 msgid "Hyperbolic tangent"
 msgstr "Tangens hyperbolikus"
 
-#: toolbars.py:236
+#: toolbars.py:277
 msgid "Logical and"
 msgstr "Logiskt och"
 
-#: toolbars.py:240
+#: toolbars.py:282
 msgid "Logical or"
 msgstr "Logiskt eller"
 
-#: toolbars.py:250
+#: toolbars.py:293
 msgid "Equals"
 msgstr "Lika med"
 
-#: toolbars.py:253
+#: toolbars.py:297
 msgid "Not equals"
 msgstr "Inte lika med"
 
-#: toolbars.py:262
+#: toolbars.py:310
 msgid "Pi"
 msgstr "Pi"
 
-#: toolbars.py:266
+#: toolbars.py:316
 msgid "e"
 msgstr "e"
 
-#: toolbars.py:269
+#: toolbars.py:320
 msgid "γ"
-msgstr ""
+msgstr "Gamma"
 
-#: toolbars.py:272
+#: toolbars.py:325
 msgid "φ"
-msgstr ""
+msgstr "Phi"
 
-#: toolbars.py:279
+#: toolbars.py:333
 #, fuzzy
 msgid "Plot"
 msgstr "plot"
 
-#: toolbars.py:286
+#: toolbars.py:338
 msgid "Degrees"
 msgstr "Grader"
 
-#: toolbars.py:287
+#: toolbars.py:339
 msgid "Radians"
 msgstr "Radianer"
 
-#: toolbars.py:291
-#, fuzzy
+#: toolbars.py:344
 msgid "Degrees / Radians"
 msgstr "Grader / Radianer"
 
-#: toolbars.py:300
+#: toolbars.py:354
 msgid "Exponent / Scientific notation"
-msgstr ""
+msgstr "Exponent / vetenskaplig notation"
 
-#: toolbars.py:310
+#: toolbars.py:365
 msgid "Number of shown digits"
-msgstr ""
+msgstr "Antal visade siffror"
 
-#: toolbars.py:320
+#: toolbars.py:377
 msgid "Integer formatting base"
 msgstr ""
+
+#: astparser.py:39
+msgid ""
+"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
+"range from a to b"
+msgstr ""
+"plot(ekvation, var=-a..b), ritar upp ekvationen 'ekvation' med variablerna "
+"'var' inom området [a, b]"
+
+#: astparser.py:61
+#, python-format
+msgid "Parse error at %d"
+msgstr "Tolkningsfel vid %d"
+
+#: astparser.py:75 astparser.py:109
+#, python-format
+msgid "Error at '%s', position: %d"
+msgstr "Fel vid '%s', position: %d"
+
+#: astparser.py:88
+msgid "Syntax Error."
+msgstr "Syntaxfel."
+
+#: astparser.py:95
+msgid "Syntax Error!"
+msgstr "Syntaxfel!"
+
+#: astparser.py:135
+msgid "This is just a test topic, use help(index) for the index"
+msgstr "Detta är bara ett testämne, använd help(index) för att nå indexet"
+
+#: astparser.py:148
+msgid "Use help(test) for help about 'test', or help(index) for the index"
+msgstr ""
+"Skriv help(test) för att få hjälp om ämnet 'test'm, eller skriv help(index) "
+"för att se vilka ämnen som finns tillgängliga"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:152
+msgid "index"
+msgstr "lista"
+
+#: astparser.py:152
+#, fuzzy
+msgid "topics"
+msgstr "ämnen"
+
+#: astparser.py:153
+msgid "Topics"
+msgstr "Ämnen"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:161
+msgid "variables"
+msgstr "variabler"
+
+#: astparser.py:162
+msgid "Variables"
+msgstr "Variabler"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:168
+msgid "functions"
+msgstr "funktioner"
+
+#: astparser.py:169
+msgid "Functions"
+msgstr "Funktioner"
+
+#: astparser.py:178
+#, python-format
+msgid "No help about '%s' available, use help(index) for the index"
+msgstr ""
+"Tyvärr finns det ingen hjälp att få om ämnet '%s'. Använd help(index) för "
+"att se vilka ämnen som finns tillgängliga"
+
+#: astparser.py:508
+msgid "help"
+msgstr "hjälp"
+
+#: astparser.py:515
+msgid "Recursion detected"
+msgstr "Rekursion upptäckt"
+
+#: astparser.py:539
+#, python-format
+msgid "Function '%s' not defined"
+msgstr "Funktionen '%s' är inte definierad"
+
+#: astparser.py:541
+#, python-format
+msgid "Variable '%s' not defined"
+msgstr "Variabeln '%s' är inte definierad"
+
+#: astparser.py:551
+#, python-format
+msgid "Attribute '%s' does not exist"
+msgstr "Attributet '%s' finns inte"
+
+#: astparser.py:654
+msgid "Parse error"
+msgstr "Tolkningsfel"
+
+#: astparser.py:659
+#, fuzzy
+msgid "Multiple statements not supported"
+msgstr "Flera satser stöds inte"
+
+#: astparser.py:683
+msgid "Internal error"
+msgstr "Internt fel"
+
+#. TRANS: multiplication symbol (default: '×')
+#: mathlib.py:84
+msgid "mul_sym"
+msgstr "*"
+
+#. TRANS: division symbol (default: '÷')
+#: mathlib.py:89
+msgid "div_sym"
+msgstr "/"
+
+#. TRANS: equal symbol (default: '=')
+#: mathlib.py:94
+#, fuzzy
+msgid "equ_sym"
+msgstr "="
+
+#: mathlib.py:227
+msgid "Undefined"
+msgstr "Inte definierad"
+
+#: mathlib.py:237
+msgid "Error: unsupported type"
+msgstr "Fel: Stödjer inte den typen"
+
+#: layout.py:113
+msgid "Clear"
+msgstr "Rensa"
+
+#: layout.py:151 layout.py:195
+msgid "Edit"
+msgstr "Redigera"
+
+#: layout.py:156 layout.py:196
+msgid "Algebra"
+msgstr "Algebra"
+
+#: layout.py:161 layout.py:198
+msgid "Trigonometry"
+msgstr "Trigonometri"
+
+#: layout.py:166 layout.py:199
+msgid "Boolean"
+msgstr "Boolesk"
+
+#: layout.py:175 layout.py:200
+msgid "Miscellaneous"
+msgstr "Diverse"
+
+#: layout.py:229
+msgid "Label:"
+msgstr "Etikett:"
+
+#: layout.py:278
+msgid "All equations"
+msgstr "Alla ekvationer"
+
+#: layout.py:279
+msgid "My equations"
+msgstr "Mina ekvationer"
+
+#: layout.py:280
+msgid "Show variables"
+msgstr "Visa variabler"
+
+#: calculate.py:109
+#, python-format
+msgid "Equation.parse() string invalid (%s)"
+msgstr "Equation.parse() ogiltig sträng (%s)"
+
+#: calculate.py:525
+msgid "Can not assign label: will cause recursion"
+msgstr "Kan inte tilldela etikett: kommer att orsaka rekursion"
+
+#: calculate.py:620
+#, python-format
+msgid "Writing to journal (%s)"
+msgstr "Skriver in i dagboken (%s)"
+
+#: calculate.py:932
+msgid "button_pressed(): invalid type"
+msgstr "button_pressed(): ogiltig typ"
+
+#, python-format
+#~ msgid "Error at %d"
+#~ msgstr "Fel vid %d"
+
+#~ msgid "fac"
+#~ msgstr "fac"
+
+#, fuzzy
+#~ msgid ""
+#~ "And(x, y), logical and. Returns True if x and y are True, else returns False"
+#~ msgstr ""
+#~ "och(x, y), logiskt och. Returnerar Sant om x och y är båda sanna, annars "
+#~ "returnerar den Falskt"
+
+#~ msgid ""
+#~ "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+#~ msgstr ""
+#~ "cosh(x), returnerar cosinus hyperbolikus av x. Ges av formeln: (exp(x) + "
+#~ "exp(-x)) / 2"
+
+#~ msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
+#~ msgstr ""
+#~ "fac(x), returnerar fakulteten av x. Ges av x! = x * (x - 1) * (x - 2) * ..."

@@ -6,150 +6,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-08 00:33-0400\n"
-"PO-Revision-Date: 2011-12-31 17:35+0200\n"
-"Last-Translator: pandafriendly312 <phuongle19@vanlanguni.vn>\n"
+"POT-Creation-Date: 2017-03-24 17:39+1100\n"
+"PO-Revision-Date: 2017-04-10 02:48+0000\n"
+"Last-Translator: thuyn <thuy.hispvietnam@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1491792538.000000\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Calculate"
 msgstr "Tính"
 
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid ""
-"This is the place to get the answer to a quick problem, but that is not the "
-"limit! You can also explore Algebra, Trigonometry, Boolean and more!"
-msgstr ""
-
-#: astparser.py:40
-msgid ""
-"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
-"range from a to b"
-msgstr ""
-"Đồ thị (eqn, var=-a..b), vẽ đồ thị của phương trình « eqn » với biến « var » "
-"trong phạm vi từ a đến b"
-
-#: astparser.py:59
-#, python-format
-msgid "Parse error at %d"
-msgstr "Phân tích bị lỗi ở %d"
-
-#: astparser.py:71 astparser.py:83
-#, python-format
-msgid "Error at %d"
-msgstr "Lỗi ở %d"
-
-#: astparser.py:94
-msgid "This is just a test topic, use help(index) for the index"
-msgstr ""
-"Đây chỉ là một chủ đề để thử nghiệm, hãy dùng trợ giúp(mục lục) để hiển thị "
-"mục lục"
-
-#: astparser.py:106
-msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr ""
-"Dùng trợ giúp(kiểm tra) để thấy trợ giúp về 'kiểm tra', hay trợ giúp(mục "
-"lục) để hiển thị mục lục"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:109
-msgid "index"
-msgstr "mục lục"
-
-#: astparser.py:109
-msgid "topics"
-msgstr "chủ đề"
-
-#: astparser.py:110
-msgid "Topics"
-msgstr "Chủ đề"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:118
-msgid "variables"
-msgstr "biến"
-
-#: astparser.py:119
-msgid "Variables"
-msgstr "Biến"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:125
-msgid "functions"
-msgstr "các hàm"
-
-#: astparser.py:126
-msgid "Functions"
-msgstr "Các hàm"
-
-#: astparser.py:135
-#, python-format
-msgid "No help about '%s' available, use help(index) for the index"
-msgstr "Không có trợ giúp về « %s », dùng trợ giúp(mục lục) để hiển thị mục lục"
-
-#: astparser.py:459
-msgid "help"
-msgstr "trợ giúp"
-
-#: astparser.py:466
-msgid "Recursion detected"
-msgstr "Phát hiện đệ quy"
-
-#: astparser.py:490
-#, python-format
-msgid "Function '%s' not defined"
-msgstr "Chưa xác định hàm « %s »"
-
-#: astparser.py:492
-#, python-format
-msgid "Variable '%s' not defined"
-msgstr "Chưa xác định biến « %s »"
-
-#: astparser.py:502
-#, python-format
-msgid "Attribute '%s' does not exist"
-msgstr "Thuộc tính '%s' không tồn tại"
-
-#: astparser.py:596
-msgid "Parse error"
-msgstr "Lỗi phân tích cú pháp"
-
-#: astparser.py:601
-msgid "Multiple statements not supported"
-msgstr "Nhập liệu nhiều dòng không được hỗ trợ"
-
-#: astparser.py:625
-msgid "Internal error"
-msgstr "Lỗi bên trong"
-
-#: calculate.py:109
-#, python-format
-msgid "Equation.parse() string invalid (%s)"
-msgstr "Equation.parse() chuỗi không hợp lệ (%s)"
-
-#: calculate.py:483
-msgid "Can not assign label: will cause recursion"
-msgstr "Không thể gán nhãn: sẽ gây ra đệ quy"
-
-#: calculate.py:571
-#, python-format
-msgid "Writing to journal (%s)"
-msgstr "Đang ghi vào nhật ký (%s)"
-
-#: calculate.py:865
-msgid "button_pressed(): invalid type"
-msgstr "button_pressed(): loại không hợp lệ"
-
 #: functions.py:35
 msgid "add"
-msgstr ""
+msgstr "cộng"
 
 #: functions.py:36
 msgid "abs"
@@ -185,11 +60,11 @@ msgstr "và"
 
 #: functions.py:44
 msgid "b10bin"
-msgstr ""
+msgstr "b10bin"
 
 #: functions.py:45
 msgid "ceil"
-msgstr ""
+msgstr "số nguyên lớn nhất"
 
 #: functions.py:46
 msgid "cos"
@@ -201,41 +76,39 @@ msgstr "cosh"
 
 #: functions.py:48
 msgid "div"
-msgstr ""
+msgstr "chia"
 
 #: functions.py:49
 msgid "gcd"
-msgstr ""
+msgstr "ước số chung lớn nhất"
 
 #: functions.py:50
 msgid "exp"
 msgstr "exp"
 
 #: functions.py:51
-#, fuzzy
 msgid "factorial"
 msgstr "Thừa số"
 
 #: functions.py:52
-msgid "fac"
-msgstr "fac"
-
-#: functions.py:53
-#, fuzzy
 msgid "factorize"
 msgstr "Thừa số"
 
-#: functions.py:54
+#: functions.py:53
 msgid "floor"
-msgstr ""
+msgstr "số nguyên nhỏ nhất"
+
+#: functions.py:54
+msgid "inv"
+msgstr "ma trận nghịch đảo"
 
 #: functions.py:55
-msgid "inv"
-msgstr ""
+msgid "is_int"
+msgstr "is_int (hàm kiểm tra số nguyên)"
 
 #: functions.py:56
-msgid "is_int"
-msgstr ""
+msgid "is_prime"
+msgstr "is_prime (hàm kiểm tra số nguyên tố)"
 
 #: functions.py:57
 msgid "ln"
@@ -247,7 +120,7 @@ msgstr "logarit cơ số 10"
 
 #: functions.py:59
 msgid "mul"
-msgstr ""
+msgstr "nhân"
 
 #: functions.py:60
 msgid "or"
@@ -263,7 +136,7 @@ msgstr ""
 
 #: functions.py:63
 msgid "round"
-msgstr ""
+msgstr "làm tròn"
 
 #: functions.py:64
 msgid "sin"
@@ -283,7 +156,7 @@ msgstr "căn bậc hai"
 
 #: functions.py:68
 msgid "sub"
-msgstr ""
+msgstr "trừ"
 
 #: functions.py:69
 msgid "square"
@@ -301,52 +174,62 @@ msgstr "tanh"
 msgid "xor"
 msgstr "xor"
 
-#: functions.py:112
+#: functions.py:119
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
-msgstr ""
+msgstr "abs(x), trả về chính xác giá trị x, nghĩa là -x nếu x < 0"
 
-#: functions.py:117
+#: functions.py:124
+msgid "acos(x) only defined for x E [-1,1]"
+msgstr "acos(x) chỉ định nghĩa cho x E [-1,1]"
+
+#: functions.py:128
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
 msgstr ""
-"acos(x), trả lại arc cosin của x. Đây là góc cho đó cosin là x. Xác định cho "
-"-1 ≤ x < 1"
+"acos(x), trả lại arc cosin của x. Đây là góc mà có cosin là x. Xác định cho -"
+"1 ≤ x < 1"
 
-#: functions.py:123
+#: functions.py:135
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
 msgstr ""
+"acosh(x), trả về arc cosin hypebon của x. Đây là giá trị y mà có cosin "
+"hypebon bằng x"
 
-#: functions.py:129
-#, fuzzy
+#: functions.py:142
 msgid ""
-"And(x, y), logical and. Returns True if x and y are True, else returns False"
+"And(x, y), logical and. Returns True if x and y are True,else returns False"
 msgstr ""
-"and(x, y), « và » hợp lý. Trả lại Đúng nếu cả x lẫn y đều là Đúng, không thì "
-"trả lại Sai"
+"And(x,y), logic và. Trả về giá trị Đúng nếu x và y đều Đúng, ngược lại trả "
+"về Sai."
 
-#: functions.py:136
+#: functions.py:151
 msgid "add(x, y), return x + y"
-msgstr "add(x,y), trả lại giá trị x + y"
+msgstr "add(x,y), trả về giá trị x + y"
 
-#: functions.py:141
-#, fuzzy
+#: functions.py:156
+msgid "asin(x) only defined for x E [-1,1]"
+msgstr "asin(x) chỉ định nghĩa cho x E [-1,1]"
+
+#: functions.py:159
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
 msgstr ""
-"asin(x), trả lại arc sin của x. Đây là góc cho đó sin là x. Xác định cho "
-"phạm vi -1 ≤ x ≤ 1"
+"asin(x), trả lại arc sin của x. Đây là góc có sin là x. Xác định cho phạm vi "
+"-1 ≤ x ≤ 1"
 
-#: functions.py:147
+#: functions.py:166
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
 msgstr ""
+"asinh(x), trả về arc sin hypebon của x. Đây là giá trị y mà sin hypebon bằng "
+"x."
 
-#: functions.py:153
+#: functions.py:173
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
@@ -354,85 +237,96 @@ msgstr ""
 "atan(x), trả lại arc tang của x. Đây là góc cho đó tang là x. Xác định cho "
 "toàn bộ x"
 
-#: functions.py:159
+#: functions.py:180
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
 msgstr ""
+"atanh(x), arc tang hypebon của x. Đây là giá trị y có tang hypebon bằng x"
 
-#: functions.py:171
-msgid "Number does not look binary in base 10"
-msgstr ""
+#: functions.py:191
+msgid "Number does not look binary."
+msgstr "Số không thuộc hệ nhị phân"
 
-#: functions.py:178
+#: functions.py:199
 msgid ""
-"b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
-"(10111) = 23,"
+"b10bin(x), interpret a number written in base 10 as binary, e.g.: "
+"b10bin(10111) = 23,"
 msgstr ""
+"b10bin(x), chuyển một số từ hệ nhị phân sang hệ thập phân, ví dụ : "
+"b10bin(10111) = 23"
 
-#: functions.py:183
+#: functions.py:205
 msgid "ceil(x), return the smallest integer larger than x."
 msgstr "ceil(x), trả lại số nguyên nhỏ nhất lớn hơn x"
 
-#: functions.py:188
+#: functions.py:211
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr ""
 "cos(x), trả lại cosin của x. Đây là toạ độ x trên hình tròn đơn vị ở góc x"
 
-#: functions.py:194
+#: functions.py:218
 msgid ""
-"cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
-msgstr ""
-"cosh(x), trả lại cosin hyperbol của x. Đưa ra bởi (exp(x) + exp(-x)) / 2"
+"cosh(x), return the hyperbolic cosine of x.Given by (exp(x) + exp(-x)) / 2"
+msgstr "cosh(x), cosin hypebon của x. Được tính theo (exp(x) + exp(-x))/2"
 
-#: functions.py:198
+#: functions.py:224 functions.py:319
 msgid "Can not divide by zero"
 msgstr "Không thể chia cho 0"
 
-#: functions.py:219
+#: functions.py:247
 msgid "Invalid argument"
-msgstr ""
+msgstr "Tham số không hợp lệ"
 
-#: functions.py:222
+#: functions.py:250
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
+"gcd(a,b), ước chung lớn nhất của a và b. Ví dụ thừa số lớn nhất được chia "
+"hết bởi 15 và 18 là 3"
 
-#: functions.py:227
+#: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
 msgstr "exp(x), trả lại số mũ tự nhiên của x. Đưa ra bởi e^x"
 
-#: functions.py:231
-msgid "Factorial only defined for integers"
-msgstr ""
+#: functions.py:262
+msgid "Factorial(x) is only defined for integers x>=0"
+msgstr "Factorial(x) chỉ định nghĩa cho số nguyên x>=0"
 
-#: functions.py:244
+#: functions.py:265
+msgid "Factorial only defined for integers"
+msgstr "Factorial chỉ định nghĩa cho số nguyên"
+
+#: functions.py:278
 #, fuzzy
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr "fac(x), trả lại thừa số của x. Đưa ra bởi x * (x - 1) * (x - 2) * ..."
 
-#: functions.py:250
-msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-msgstr "fac(x), trả lại thừa số của x. Đưa ra bởi x * (x - 1) * (x - 2) * ..."
-
-#: functions.py:283
-#, fuzzy
+#: functions.py:314
 msgid "floor(x), return the largest integer smaller than x."
-msgstr "ceil(x), trả lại số nguyên nhỏ nhất lớn hơn x"
+msgstr "floor(x), trả lại số nguyên lớn nhất nhỏ hơn x"
 
-#: functions.py:287
+#: functions.py:321
 msgid "inv(x), return the inverse of x, which is 1 / x"
-msgstr ""
+msgstr "inv(x), nghịch đảo của x, là 1/x"
 
-#: functions.py:309 functions.py:318
+#: functions.py:356
+msgid "Argument must be int"
+msgstr "Tham số phải là số nguyên (int)"
+
+#: functions.py:358
+msgid "Prime numbers is defined for natural numbers"
+msgstr "Số nguyên tố được định nghĩa cho số tự nhiên"
+
+#: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
 msgstr "Logarithm(x) chỉ xác định với x > 0"
 
-#: functions.py:311
+#: functions.py:370
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
@@ -440,86 +334,91 @@ msgstr ""
 "ln(x), trả lại lôgarit tự nhiên của x. Đây là giá trị cho đó số mũ exp() "
 "bằng x. Xác định cho phạm vi x ≥ 0."
 
-#: functions.py:320
+#: functions.py:380
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
+"log10(x), trả về logarit cơ số 10 của x. Đây là giá trị y mà 10 mũ y bằng x "
+"(10^y = x). Với x >=0."
 
-#: functions.py:327
+#: functions.py:388
 msgid "Can only calculate x modulo <integer>"
-msgstr ""
+msgstr "Chỉ có thể tính số dư của x chia cho <integer>"
 
-#: functions.py:329
+#: functions.py:390
 msgid ""
-"mod(x, y), return the modulus of x with respect to y. This is the remainder "
+"mod(x, y), return the modulus of x with respect to y.This is the remainder "
 "after dividing x by y."
 msgstr ""
+"mod(x,y), trả lại số dư của x chia y. Đây là số dư sau khi chia x cho y."
 
-#: functions.py:337
+#: functions.py:399
 msgid "mul(x, y), return x * y"
-msgstr "mul(x,y), trả lại giá trị x * y"
+msgstr "mul(x,y), trả lại giá trị x nhân y"
 
-#: functions.py:341
+#: functions.py:404
 msgid "negate(x), return -x"
-msgstr ""
+msgstr "negate(x), trả về -x"
 
-#: functions.py:346
+#: functions.py:410
 #, fuzzy
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
-"or(x, y), « hoặc » hợp lý. Trả lại Đúng nếu x và/hay y cũng Đúng, không thì "
-"trả lại Sai"
+"or(x, y), « hoặc » lô gic. Là Đúng nếu x Đúng và/hay y Đúng. Nếu cả x Sai và "
+"y Sai thì trả lại Sai."
 
-#: functions.py:361
+#: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
 msgstr "pow(x,y), trả lại giá trị x luỹ thừa y (hay x mũ y)"
 
-#: functions.py:366
+#: functions.py:433
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
 msgstr "rand_float(), trả lại giá trị ngẫu nhiên giữa 0 và 1.0"
 
-#: functions.py:371
+#: functions.py:439
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
+"rand_int([<maxval>]), trả lại giá trị ngẫu nhiên giữa 0 và <maxval>. <maxval>"
+" là một tham số tùy chọn và được đặt là 65535 theo mặc định."
 
-#: functions.py:376
+#: functions.py:445
 msgid "round(x), return the integer nearest to x."
 msgstr "round(x), trả lại giá trị nguyên gần nhất với x"
 
-#: functions.py:382 functions.py:390
+#: functions.py:452 functions.py:461
 msgid "Bitwise operations only apply to integers"
-msgstr ""
+msgstr "Phép toán thao tác bit chỉ áp dụng cho các số nguyên"
 
-#: functions.py:384
+#: functions.py:454
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr "shift_left(x, y), dich x sang bên trái y bit (nhân 2 cho mỗi bit dịch)"
 
-#: functions.py:392
+#: functions.py:463
 #, fuzzy
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr "shift_left(x, y), dich x sang bên trái y bit (nhân 2 cho mỗi bit dịch)"
 
-#: functions.py:397
+#: functions.py:469
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
 msgstr ""
 "sin(x), trả lại sin của x. Đây là toạ độ y trên hình tròn đơn vị ở góc x"
 
-#: functions.py:403
+#: functions.py:476
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr "sinh(x), trả lại sin hyperbol của x. Đưa ra bởi (exp(x) - exp(-x)) / 2"
 
-#: functions.py:410
+#: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
 msgstr ""
 
-#: functions.py:415
+#: functions.py:491
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
@@ -527,16 +426,16 @@ msgstr ""
 "sqrt(x), trả lại căn bậc hai của x. Đây là giá trị cho đó bình phương bằng "
 "x. Xác định cho phạm vi x ≥ 0."
 
-#: functions.py:420
+#: functions.py:497
 msgid "square(x), return x * x"
 msgstr "square(x), trả lại giá trị x * x"
 
-#: functions.py:427
+#: functions.py:505
 #, fuzzy
 msgid "sub(x, y), return x - y"
 msgstr "mul(x,y), trả lại giá trị x * y"
 
-#: functions.py:432
+#: functions.py:511
 msgid ""
 "tan(x), return the tangent of x. This is the slope of the line from the "
 "origin of the unit circle to the point on the unit circle defined by the "
@@ -546,12 +445,12 @@ msgstr ""
 "đến điểm trên hình tròn đơn vị xác định theo góc x. Đưa ra bởi sin(x) / "
 "cos(x)"
 
-#: functions.py:439
+#: functions.py:519
 #, fuzzy
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr "sinh(x), trả lại tang hyperbol của x. Đưa ra bởi sinh(x) / cosh(x)"
 
-#: functions.py:444
+#: functions.py:525
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
@@ -559,213 +458,362 @@ msgstr ""
 "xor(x, y), xor hợp lý. Trả lại Đúng nếu X là đúng (và y là Sai) hoặc y là "
 "Đúng (và x là Sai), không thì trả lại Sai"
 
-#: layout.py:75
-msgid "Clear"
-msgstr "Xoá sạch"
+#: toolbars.py:57
+msgid "Help"
+msgstr "Trợ giúp"
 
-#: layout.py:105 layout.py:145
-msgid "Edit"
-msgstr "Sửa"
+#: toolbars.py:132
+msgid "Copy"
+msgstr "Sao chép"
 
-#: layout.py:110 layout.py:146
-msgid "Algebra"
-msgstr "Đại số"
+#: toolbars.py:133
+msgid "<ctrl>c"
+msgstr "<ctrl>c"
 
-#: layout.py:115 layout.py:147
-msgid "Trigonometry"
-msgstr "Lượng giác"
+#: toolbars.py:137
+msgid "Cut"
+msgstr "Cắt"
 
-#: layout.py:120 layout.py:148
-msgid "Boolean"
-msgstr "Luận lý"
+#: toolbars.py:140
+msgid "<ctrl>x"
+msgstr "<ctrl>x"
 
-#: layout.py:125 layout.py:149
-msgid "Miscellaneous"
+#: toolbars.py:148
+msgid "Paste"
+msgstr "Dán"
+
+#: toolbars.py:160
+msgid "Square"
+msgstr "Bình phương"
+
+#: toolbars.py:167
+msgid "Square root"
+msgstr "Căn bậc hai"
+
+#: toolbars.py:174
+msgid "Inverse"
+msgstr "Nghịch đảo"
+
+#: toolbars.py:183
+msgid "e to the power x"
+msgstr "e luỹ thừa x"
+
+#: toolbars.py:190
+msgid "x to the power y"
+msgstr "x luỹ thừa y"
+
+#: toolbars.py:197
+msgid "Natural logarithm"
+msgstr "Lôgarit tự nhiên"
+
+#: toolbars.py:206
+msgid "Factorial"
+msgstr "Thừa số"
+
+#: toolbars.py:220
+msgid "Sine"
+msgstr "Sin"
+
+#: toolbars.py:225
+msgid "Cosine"
+msgstr "Cosin"
+
+#: toolbars.py:230
+msgid "Tangent"
+msgstr "Tang"
+
+#: toolbars.py:237
+msgid "Arc sine"
+msgstr "Arc sin"
+
+#: toolbars.py:242
+msgid "Arc cosine"
+msgstr "Arc cosin"
+
+#: toolbars.py:247
+msgid "Arc tangent"
+msgstr "Arc tang"
+
+#: toolbars.py:254
+msgid "Hyperbolic sine"
+msgstr "Sin hyperbol"
+
+#: toolbars.py:259
+msgid "Hyperbolic cosine"
+msgstr "Cosin hyperbol"
+
+#: toolbars.py:264
+msgid "Hyperbolic tangent"
+msgstr "Tang hyperbol"
+
+#: toolbars.py:277
+msgid "Logical and"
+msgstr "« và » hợp lý"
+
+#: toolbars.py:282
+msgid "Logical or"
+msgstr "« hoặc » hợp lý"
+
+#: toolbars.py:293
+msgid "Equals"
+msgstr "Bằng"
+
+#: toolbars.py:297
+msgid "Not equals"
+msgstr "Không bằng"
+
+#: toolbars.py:310
+msgid "Pi"
+msgstr "Pi"
+
+#: toolbars.py:316
+msgid "e"
+msgstr "e"
+
+#: toolbars.py:320
+msgid "γ"
+msgstr "Y"
+
+#: toolbars.py:325
+msgid "φ"
+msgstr "φ"
+
+#: toolbars.py:333
+msgid "Plot"
+msgstr "Đồ thị"
+
+#: toolbars.py:338
+msgid "Degrees"
+msgstr "Độ"
+
+#: toolbars.py:339
+msgid "Radians"
+msgstr "Radian"
+
+#: toolbars.py:344
+msgid "Degrees / Radians"
+msgstr "Độ/ Radian"
+
+#: toolbars.py:354
+msgid "Exponent / Scientific notation"
+msgstr "Số mũ/ ký hiệu khoa học"
+
+#: toolbars.py:365
+msgid "Number of shown digits"
+msgstr "Chữ số được hiển thị"
+
+#: toolbars.py:377
+msgid "Integer formatting base"
+msgstr "Định dạng cơ bản kiểu Integer"
+
+#: astparser.py:39
+msgid ""
+"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
+"range from a to b"
+msgstr ""
+"Đồ thị (eqn, var=-a..b), vẽ đồ thị của phương trình « eqn » với biến « var » "
+"trong phạm vi từ a đến b"
+
+#: astparser.py:61
+#, python-format
+msgid "Parse error at %d"
+msgstr "Phân tích bị lỗi ở %d"
+
+#: astparser.py:75 astparser.py:109
+#, python-format
+msgid "Error at '%s', position: %d"
+msgstr "Lỗi tại '%s', vị trí: %d"
+
+#: astparser.py:88
+msgid "Syntax Error."
+msgstr "Lỗi cú pháp."
+
+#: astparser.py:95
+msgid "Syntax Error!"
 msgstr ""
 
-#: layout.py:178
-msgid "Label:"
-msgstr "Nhãn:"
+#: astparser.py:135
+msgid "This is just a test topic, use help(index) for the index"
+msgstr ""
+"Đây chỉ là một chủ đề để thử nghiệm, hãy dùng trợ giúp(mục lục) để hiển thị "
+"mục lục"
 
-#: layout.py:223
-msgid "All equations"
-msgstr "Mọi phương trình"
+#: astparser.py:148
+msgid "Use help(test) for help about 'test', or help(index) for the index"
+msgstr ""
+"Dùng trợ giúp(kiểm tra) để thấy trợ giúp về 'kiểm tra', hay trợ giúp(mục lục)"
+" để hiển thị mục lục"
 
-#: layout.py:224
-msgid "My equations"
-msgstr "Phương trình của mình"
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:152
+msgid "index"
+msgstr "mục lục"
 
-#: layout.py:225
-msgid "Show variables"
-msgstr "Hiện các biến"
+#: astparser.py:152
+msgid "topics"
+msgstr "chủ đề"
+
+#: astparser.py:153
+msgid "Topics"
+msgstr "Chủ đề"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:161
+msgid "variables"
+msgstr "biến"
+
+#: astparser.py:162
+msgid "Variables"
+msgstr "Biến"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:168
+msgid "functions"
+msgstr "các hàm"
+
+#: astparser.py:169
+msgid "Functions"
+msgstr "Các hàm"
+
+#: astparser.py:178
+#, python-format
+msgid "No help about '%s' available, use help(index) for the index"
+msgstr "Không có trợ giúp về '%s', dùng trợ giúp(mục lục) để hiển thị mục lục"
+
+#: astparser.py:508
+msgid "help"
+msgstr "trợ giúp"
+
+#: astparser.py:515
+msgid "Recursion detected"
+msgstr "Phát hiện đệ quy"
+
+#: astparser.py:539
+#, python-format
+msgid "Function '%s' not defined"
+msgstr "Chưa xác định hàm '%s'"
+
+#: astparser.py:541
+#, python-format
+msgid "Variable '%s' not defined"
+msgstr "Chưa xác định biến '%s'"
+
+#: astparser.py:551
+#, python-format
+msgid "Attribute '%s' does not exist"
+msgstr "Thuộc tính '%s' không tồn tại"
+
+#: astparser.py:654
+msgid "Parse error"
+msgstr "Lỗi phân tích cú pháp"
+
+#: astparser.py:659
+msgid "Multiple statements not supported"
+msgstr "Nhập liệu nhiều dòng không được hỗ trợ"
+
+#: astparser.py:683
+msgid "Internal error"
+msgstr "Lỗi nội bộ"
 
 #. TRANS: multiplication symbol (default: '×')
-#: mathlib.py:82
+#: mathlib.py:84
 msgid "mul_sym"
 msgstr "*"
 
 #. TRANS: division symbol (default: '÷')
-#: mathlib.py:87
+#: mathlib.py:89
 msgid "div_sym"
 msgstr "/"
 
 #. TRANS: equal symbol (default: '=')
-#: mathlib.py:92
+#: mathlib.py:94
 msgid "equ_sym"
 msgstr ""
 
-#: mathlib.py:216
+#: mathlib.py:227
 msgid "Undefined"
 msgstr "Không xác định"
 
-#: mathlib.py:226
+#: mathlib.py:237
 msgid "Error: unsupported type"
 msgstr "Lỗi: loại không được hỗ trợ"
 
-#: toolbars.py:53
-msgid "Help"
-msgstr "Trợ giúp"
+#: layout.py:113
+msgid "Clear"
+msgstr "Xoá sạch"
 
-#: toolbars.py:121
-msgid "Copy"
-msgstr "Sao chép"
+#: layout.py:151 layout.py:195
+msgid "Edit"
+msgstr "Sửa"
 
-#: toolbars.py:122
-msgid "<ctrl>c"
-msgstr "<ctrl>c"
+#: layout.py:156 layout.py:196
+msgid "Algebra"
+msgstr "Đại số"
 
-#: toolbars.py:126
-msgid "Cut"
-msgstr "Cắt"
+#: layout.py:161 layout.py:198
+msgid "Trigonometry"
+msgstr "Lượng giác"
 
-#: toolbars.py:129
-msgid "<ctrl>x"
-msgstr "<ctrl>x"
+#: layout.py:166 layout.py:199
+msgid "Boolean"
+msgstr "Luận lý"
 
-#: toolbars.py:137
-msgid "Paste"
-msgstr "Dán"
+#: layout.py:175 layout.py:200
+msgid "Miscellaneous"
+msgstr "Hỗn hợp"
 
-#: toolbars.py:147
-msgid "Square"
-msgstr "Bình phương"
+#: layout.py:229
+msgid "Label:"
+msgstr "Nhãn:"
 
-#: toolbars.py:152
-msgid "Square root"
-msgstr "Căn bậc hai"
+#: layout.py:278
+msgid "All equations"
+msgstr "Mọi phương trình"
 
-#: toolbars.py:157
-msgid "Inverse"
-msgstr "Nghịch đảo"
+#: layout.py:279
+msgid "My equations"
+msgstr "Phương trình của tôi"
 
-#: toolbars.py:164
-msgid "e to the power x"
-msgstr "e luỹ thừa x"
+#: layout.py:280
+msgid "Show variables"
+msgstr "Hiện các biến"
 
-#: toolbars.py:169
-msgid "x to the power y"
-msgstr "x luỹ thừa y"
+#: calculate.py:109
+#, python-format
+msgid "Equation.parse() string invalid (%s)"
+msgstr "Equation.parse() chuỗi không hợp lệ (%s)"
 
-#: toolbars.py:174
-msgid "Natural logarithm"
-msgstr "Lôgarit tự nhiên"
+#: calculate.py:525
+msgid "Can not assign label: will cause recursion"
+msgstr "Không thể gán nhãn: sẽ gây ra đệ quy"
 
-#: toolbars.py:180
-msgid "Factorial"
-msgstr "Thừa số"
+#: calculate.py:620
+#, python-format
+msgid "Writing to journal (%s)"
+msgstr "Đang ghi vào nhật ký (%s)"
 
-#: toolbars.py:190
-msgid "Sine"
-msgstr "Sin"
+#: calculate.py:932
+msgid "button_pressed(): invalid type"
+msgstr "button_pressed(): loại không hợp lệ"
 
-#: toolbars.py:194
-msgid "Cosine"
-msgstr "Cosin"
+#, python-format
+#~ msgid "Error at %d"
+#~ msgstr "Lỗi ở %d"
 
-#: toolbars.py:198
-msgid "Tangent"
-msgstr "Tang"
+#~ msgid "fac"
+#~ msgstr "fac"
 
-#: toolbars.py:204
-msgid "Arc sine"
-msgstr "Arc sin"
+#, fuzzy
+#~ msgid ""
+#~ "And(x, y), logical and. Returns True if x and y are True, else returns False"
+#~ msgstr ""
+#~ "and(x, y), « và » hợp lý. Trả lại Đúng nếu cả x lẫn y đều là Đúng, không thì "
+#~ "trả lại Sai"
 
-#: toolbars.py:208
-msgid "Arc cosine"
-msgstr "Arc cosin"
+#~ msgid ""
+#~ "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+#~ msgstr ""
+#~ "cosh(x), trả lại cosin hyperbol của x. Đưa ra bởi (exp(x) + exp(-x)) / 2"
 
-#: toolbars.py:212
-msgid "Arc tangent"
-msgstr "Arc tang"
-
-#: toolbars.py:218
-msgid "Hyperbolic sine"
-msgstr "Sin hyperbol"
-
-#: toolbars.py:222
-msgid "Hyperbolic cosine"
-msgstr "Cosin hyperbol"
-
-#: toolbars.py:226
-msgid "Hyperbolic tangent"
-msgstr "Tang hyperbol"
-
-#: toolbars.py:236
-msgid "Logical and"
-msgstr "« và » hợp lý"
-
-#: toolbars.py:240
-msgid "Logical or"
-msgstr "« hoặc » hợp lý"
-
-#: toolbars.py:250
-msgid "Equals"
-msgstr "Bằng"
-
-#: toolbars.py:253
-msgid "Not equals"
-msgstr "Không bằng"
-
-#: toolbars.py:262
-msgid "Pi"
-msgstr "Pi"
-
-#: toolbars.py:266
-msgid "e"
-msgstr "e"
-
-#: toolbars.py:269
-msgid "γ"
-msgstr "Y"
-
-#: toolbars.py:272
-msgid "φ"
-msgstr "φ"
-
-#: toolbars.py:279
-msgid "Plot"
-msgstr "Đồ thị"
-
-#: toolbars.py:286
-msgid "Degrees"
-msgstr "Độ"
-
-#: toolbars.py:287
-msgid "Radians"
-msgstr "Radian"
-
-#: toolbars.py:291
-msgid "Degrees / Radians"
-msgstr "Độ/ Radian"
-
-#: toolbars.py:300
-msgid "Exponent / Scientific notation"
-msgstr "Số mũ/ ký hiệu khoa học"
-
-#: toolbars.py:310
-msgid "Number of shown digits"
-msgstr "Chữ số được hiển thị"
-
-#: toolbars.py:320
-msgid "Integer formatting base"
-msgstr "Định dạng cơ bản kiểu Integer"
+#~ msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
+#~ msgstr "fac(x), trả lại thừa số của x. Đưa ra bởi x * (x - 1) * (x - 2) * ..."

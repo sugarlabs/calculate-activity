@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-08 00:33-0400\n"
+"POT-Creation-Date: 2017-03-24 17:39+1100\n"
 "PO-Revision-Date: 2011-02-16 02:43+0200\n"
 "Last-Translator: <arslanilker@windowslive.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,137 +17,9 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.0.1\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Calculate"
 msgstr "Hesap Makinesi"
-
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid ""
-"This is the place to get the answer to a quick problem, but that is not the "
-"limit! You can also explore Algebra, Trigonometry, Boolean and more!"
-msgstr ""
-
-#: astparser.py:40
-msgid ""
-"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
-"range from a to b"
-msgstr ""
-"plot(eqn, var=-a..b), 'eqn' eşitliğini 'var' değişkeniyle a'dan b'ye çizer"
-
-#: astparser.py:59
-#, python-format
-msgid "Parse error at %d"
-msgstr ""
-
-#: astparser.py:71 astparser.py:83
-#, python-format
-msgid "Error at %d"
-msgstr "%d'de hata vardır."
-
-#: astparser.py:94
-msgid "This is just a test topic, use help(index) for the index"
-msgstr "bu sadece bir deneme konusudur, içerik için yardım(içerik)'i kullanın"
-
-#: astparser.py:106
-msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr ""
-"'test'ler hakkında yardım için yardım(test)i kullanın ya da içerik için "
-"yardım(içerik)i kullanın."
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:109
-msgid "index"
-msgstr "içerik"
-
-#: astparser.py:109
-#, fuzzy
-msgid "topics"
-msgstr "konular"
-
-#: astparser.py:110
-msgid "Topics"
-msgstr "konular"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:118
-msgid "variables"
-msgstr "değişkenler"
-
-#: astparser.py:119
-#, fuzzy
-msgid "Variables"
-msgstr "değişkenler"
-
-#. TRANS: This command is descriptive, so can be translated
-#: astparser.py:125
-msgid "functions"
-msgstr "kuvvetleri"
-
-#: astparser.py:126
-#, fuzzy
-msgid "Functions"
-msgstr "kuvvetleri"
-
-#: astparser.py:135
-#, python-format
-msgid "No help about '%s' available, use help(index) for the index"
-msgstr ""
-"'%s' hakkında yardım mevcut değil, içerik için yardım(içerik)'i kullanın."
-
-#: astparser.py:459
-#, fuzzy
-msgid "help"
-msgstr "yardım"
-
-#: astparser.py:466
-msgid "Recursion detected"
-msgstr ""
-
-#: astparser.py:490
-#, python-format
-msgid "Function '%s' not defined"
-msgstr "'%s' fonksiyonu tanımlı değildir."
-
-#: astparser.py:492
-#, python-format
-msgid "Variable '%s' not defined"
-msgstr "'%s' değişkeni tanımlanamıyor."
-
-#: astparser.py:502
-#, python-format
-msgid "Attribute '%s' does not exist"
-msgstr ""
-
-#: astparser.py:596
-msgid "Parse error"
-msgstr "ayrım hatası"
-
-#: astparser.py:601
-msgid "Multiple statements not supported"
-msgstr ""
-
-#: astparser.py:625
-msgid "Internal error"
-msgstr ""
-
-#: calculate.py:109
-#, python-format
-msgid "Equation.parse() string invalid (%s)"
-msgstr "eşitlik.ayırma() dizi geçerli değildir (%s)."
-
-#: calculate.py:483
-msgid "Can not assign label: will cause recursion"
-msgstr ""
-
-#: calculate.py:571
-#, python-format
-msgid "Writing to journal (%s)"
-msgstr "günlüğe yazınız (%s)."
-
-#: calculate.py:865
-msgid "button_pressed(): invalid type"
-msgstr "basılan tuş: geçersiz türdür."
 
 #: functions.py:35
 msgid "add"
@@ -222,24 +94,24 @@ msgid "factorial"
 msgstr "çarpım"
 
 #: functions.py:52
-msgid "fac"
-msgstr "çarpan"
-
-#: functions.py:53
 #, fuzzy
 msgid "factorize"
 msgstr "çarpım"
 
-#: functions.py:54
+#: functions.py:53
 msgid "floor"
 msgstr ""
 
-#: functions.py:55
+#: functions.py:54
 msgid "inv"
 msgstr ""
 
-#: functions.py:56
+#: functions.py:55
 msgid "is_int"
+msgstr ""
+
+#: functions.py:56
+msgid "is_prime"
 msgstr ""
 
 #: functions.py:57
@@ -307,48 +179,53 @@ msgstr "tanh"
 msgid "xor"
 msgstr "xor"
 
-#: functions.py:112
+#: functions.py:119
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
 msgstr ""
 
-#: functions.py:117
+#: functions.py:124
+msgid "acos(x) only defined for x E [-1,1]"
+msgstr ""
+
+#: functions.py:128
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
 msgstr "acos(x) arc kosinüs(x)'e dönüyor. bu açı için kosinüs x'tir. -1 <=x< 1"
 
-#: functions.py:123
+#: functions.py:135
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
 msgstr ""
 
-#: functions.py:129
-#, fuzzy
+#: functions.py:142
 msgid ""
-"And(x, y), logical and. Returns True if x and y are True, else returns False"
+"And(x, y), logical and. Returns True if x and y are True,else returns False"
 msgstr ""
-"ve(x,y), mantıksal doğrulamadır. x ve y doğruysa sonuç doğrudur, değilse "
-"sonuç yanlıştır."
 
-#: functions.py:136
+#: functions.py:151
 msgid "add(x, y), return x + y"
 msgstr ""
 
-#: functions.py:141
+#: functions.py:156
+msgid "asin(x) only defined for x E [-1,1]"
+msgstr ""
+
+#: functions.py:159
 #, fuzzy
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
 msgstr "asin(x), arc sinüs x oluyor. bu açı için sinüs x'tir. -1 <=x <=1"
 
-#: functions.py:147
+#: functions.py:166
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
 msgstr ""
 
-#: functions.py:153
+#: functions.py:173
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
@@ -356,83 +233,91 @@ msgstr ""
 "atan(x), arc tanjant x oluyor. bu açı için tanjant x'tir.tüm x'ler için "
 "geçerlidir"
 
-#: functions.py:159
+#: functions.py:180
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
 msgstr ""
 
-#: functions.py:171
-msgid "Number does not look binary in base 10"
+#: functions.py:191
+msgid "Number does not look binary."
 msgstr ""
 
-#: functions.py:178
+#: functions.py:199
 msgid ""
-"b10bin(x), interpret a number written in base 10 as binary, e.g.: b10bin"
-"(10111) = 23,"
+"b10bin(x), interpret a number written in base 10 as binary, e.g.: "
+"b10bin(10111) = 23,"
 msgstr ""
 
-#: functions.py:183
+#: functions.py:205
 msgid "ceil(x), return the smallest integer larger than x."
 msgstr ""
 
-#: functions.py:188
+#: functions.py:211
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr ""
 "cos(x), kosinüs x oluyor. bu, birim çemberde x açısında x-doğrusu oluyor."
 
-#: functions.py:194
+#: functions.py:218
 msgid ""
-"cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
-msgstr "cosh(x), hiperbol kosinüs x oluyor. (exp(x) + exp(-x)) /2 verir."
+"cosh(x), return the hyperbolic cosine of x.Given by (exp(x) + exp(-x)) / 2"
+msgstr ""
 
-#: functions.py:198
+#: functions.py:224 functions.py:319
 msgid "Can not divide by zero"
 msgstr ""
 
-#: functions.py:219
+#: functions.py:247
 msgid "Invalid argument"
 msgstr ""
 
-#: functions.py:222
+#: functions.py:250
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
 
-#: functions.py:227
+#: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
 msgstr "exp(x) x'in doğal üssüdür. e^x verir."
 
-#: functions.py:231
+#: functions.py:262
+msgid "Factorial(x) is only defined for integers x>=0"
+msgstr ""
+
+#: functions.py:265
 msgid "Factorial only defined for integers"
 msgstr ""
 
-#: functions.py:244
+#: functions.py:278
 #, fuzzy
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr "fac(x), x'in faktörüdür. x*(x-1) * (x-2) *... verir."
 
-#: functions.py:250
-msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
-msgstr "fac(x), x'in faktörüdür. x*(x-1) * (x-2) *... verir."
-
-#: functions.py:283
+#: functions.py:314
 msgid "floor(x), return the largest integer smaller than x."
 msgstr ""
 
-#: functions.py:287
+#: functions.py:321
 msgid "inv(x), return the inverse of x, which is 1 / x"
 msgstr ""
 
-#: functions.py:309 functions.py:318
+#: functions.py:356
+msgid "Argument must be int"
+msgstr ""
+
+#: functions.py:358
+msgid "Prime numbers is defined for natural numbers"
+msgstr ""
+
+#: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
 msgstr ""
 
-#: functions.py:311
+#: functions.py:370
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
@@ -440,31 +325,31 @@ msgstr ""
 "ln(x), x'in doğal logaritmasını verir. bu değer için exp() üssü x'e eşittir. "
 "x >=0"
 
-#: functions.py:320
+#: functions.py:380
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
 
-#: functions.py:327
+#: functions.py:388
 msgid "Can only calculate x modulo <integer>"
 msgstr ""
 
-#: functions.py:329
+#: functions.py:390
 msgid ""
-"mod(x, y), return the modulus of x with respect to y. This is the remainder "
+"mod(x, y), return the modulus of x with respect to y.This is the remainder "
 "after dividing x by y."
 msgstr ""
 
-#: functions.py:337
+#: functions.py:399
 msgid "mul(x, y), return x * y"
 msgstr ""
 
-#: functions.py:341
+#: functions.py:404
 msgid "negate(x), return -x"
 msgstr ""
 
-#: functions.py:346
+#: functions.py:410
 #, fuzzy
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
@@ -472,52 +357,52 @@ msgstr ""
 "seçenek(x,y), mantıksal seçeneklemedir. x ve/veya y doğruysa doğrudur, "
 "değilse yanlıştır"
 
-#: functions.py:361
+#: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
 msgstr ""
 
-#: functions.py:366
+#: functions.py:433
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
 msgstr ""
 
-#: functions.py:371
+#: functions.py:439
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
 
-#: functions.py:376
+#: functions.py:445
 msgid "round(x), return the integer nearest to x."
 msgstr ""
 
-#: functions.py:382 functions.py:390
+#: functions.py:452 functions.py:461
 msgid "Bitwise operations only apply to integers"
 msgstr ""
 
-#: functions.py:384
+#: functions.py:454
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr ""
 
-#: functions.py:392
+#: functions.py:463
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr ""
 
-#: functions.py:397
+#: functions.py:469
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
 msgstr "sin(x) sinüs x'i verir. birim çemberde x açısında y-doğrusudur."
 
-#: functions.py:403
+#: functions.py:476
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr "sinh(x), hyperbolic sinüs x'i verir. (exp(x) - exp(-x)) /2 verir"
 
-#: functions.py:410
+#: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
 msgstr ""
 
-#: functions.py:415
+#: functions.py:491
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
@@ -525,15 +410,15 @@ msgstr ""
 "sqrt(x), karekök x'i verir. bu değer için kare x'e eşittir. x>=0 için "
 "tanımlıdır."
 
-#: functions.py:420
+#: functions.py:497
 msgid "square(x), return x * x"
 msgstr ""
 
-#: functions.py:427
+#: functions.py:505
 msgid "sub(x, y), return x - y"
 msgstr ""
 
-#: functions.py:432
+#: functions.py:511
 msgid ""
 "tan(x), return the tangent of x. This is the slope of the line from the "
 "origin of the unit circle to the point on the unit circle defined by the "
@@ -543,12 +428,12 @@ msgstr ""
 "birim çember üzerinde x açısıyla belirlenmiş bir noktanın arasında kalan "
 "doğrunun eğimini verir. sin(x) / cos(x) ile gösterilir"
 
-#: functions.py:439
+#: functions.py:519
 #, fuzzy
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr "tanh(x), hiperbolik tanjant x'i verir. sinh(x) / cosh(x) ile gösterilir"
 
-#: functions.py:444
+#: functions.py:525
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
@@ -556,214 +441,364 @@ msgstr ""
 "xor(x,y) mantıksal xor'dur. x doğru (ve y yanlışsa)veya y doğru ( ve x "
 "yanlışsa) ise doğrudur, değilse yanlıştır."
 
-#: layout.py:75
-msgid "Clear"
-msgstr "Temizleyiniz"
-
-#: layout.py:105 layout.py:145
-msgid "Edit"
-msgstr "düzenleyiniz."
-
-#: layout.py:110 layout.py:146
-msgid "Algebra"
-msgstr "cebir"
-
-#: layout.py:115 layout.py:147
-msgid "Trigonometry"
-msgstr "trigonometri"
-
-#: layout.py:120 layout.py:148
-msgid "Boolean"
-msgstr "doğru ve yanlış değer alan"
-
-#: layout.py:125 layout.py:149
-msgid "Miscellaneous"
-msgstr "Çeşitli"
-
-#: layout.py:178
-msgid "Label:"
-msgstr "etiket"
-
-#: layout.py:223
-msgid "All equations"
-msgstr "tüm eşitlikler"
-
-#: layout.py:224
-msgid "My equations"
-msgstr "eşitliklerim"
-
-#: layout.py:225
-msgid "Show variables"
-msgstr "değişkenleri gösteriniz."
-
-#. TRANS: multiplication symbol (default: '×')
-#: mathlib.py:82
-msgid "mul_sym"
-msgstr "çarpma sembolü '*'"
-
-#. TRANS: division symbol (default: '÷')
-#: mathlib.py:87
-msgid "div_sym"
-msgstr "bölme sembolü '/'"
-
-#. TRANS: equal symbol (default: '=')
-#: mathlib.py:92
-msgid "equ_sym"
-msgstr ""
-
-#: mathlib.py:216
-msgid "Undefined"
-msgstr "tanımsız"
-
-#: mathlib.py:226
-msgid "Error: unsupported type"
-msgstr "hata: desteklenmeyen tür"
-
-#: toolbars.py:53
+#: toolbars.py:57
 msgid "Help"
 msgstr "yardım"
 
-#: toolbars.py:121
+#: toolbars.py:132
 msgid "Copy"
 msgstr "kopyalayınız."
 
-#: toolbars.py:122
+#: toolbars.py:133
 msgid "<ctrl>c"
 msgstr ""
 
-#: toolbars.py:126
+#: toolbars.py:137
 msgid "Cut"
 msgstr "kesiniz."
 
-#: toolbars.py:129
+#: toolbars.py:140
 msgid "<ctrl>x"
 msgstr ""
 
-#: toolbars.py:137
+#: toolbars.py:148
 msgid "Paste"
 msgstr "yapıştırınız."
 
-#: toolbars.py:147
+#: toolbars.py:160
 msgid "Square"
 msgstr "kare"
 
-#: toolbars.py:152
+#: toolbars.py:167
 msgid "Square root"
 msgstr "karekök"
 
-#: toolbars.py:157
+#: toolbars.py:174
 msgid "Inverse"
 msgstr "ters"
 
-#: toolbars.py:164
+#: toolbars.py:183
 msgid "e to the power x"
 msgstr "e üssü x"
 
-#: toolbars.py:169
+#: toolbars.py:190
 msgid "x to the power y"
 msgstr "x üssü y"
 
-#: toolbars.py:174
+#: toolbars.py:197
 msgid "Natural logarithm"
 msgstr "doğal logaritma"
 
-#: toolbars.py:180
+#: toolbars.py:206
 msgid "Factorial"
 msgstr "çarpım"
 
-#: toolbars.py:190
+#: toolbars.py:220
 msgid "Sine"
 msgstr "sine"
 
-#: toolbars.py:194
+#: toolbars.py:225
 msgid "Cosine"
 msgstr "cosine"
 
-#: toolbars.py:198
+#: toolbars.py:230
 msgid "Tangent"
 msgstr "tanjant"
 
-#: toolbars.py:204
+#: toolbars.py:237
 msgid "Arc sine"
 msgstr "Arc sine"
 
-#: toolbars.py:208
+#: toolbars.py:242
 msgid "Arc cosine"
 msgstr "Arc cosine"
 
-#: toolbars.py:212
+#: toolbars.py:247
 msgid "Arc tangent"
 msgstr "Arc tanjant"
 
-#: toolbars.py:218
+#: toolbars.py:254
 msgid "Hyperbolic sine"
 msgstr "hiperbolik sine"
 
-#: toolbars.py:222
+#: toolbars.py:259
 msgid "Hyperbolic cosine"
 msgstr "hiperbolik cosine"
 
-#: toolbars.py:226
+#: toolbars.py:264
 msgid "Hyperbolic tangent"
 msgstr "hiperbolik tanjant"
 
-#: toolbars.py:236
+#: toolbars.py:277
 msgid "Logical and"
 msgstr "mantıksal doğrulama"
 
-#: toolbars.py:240
+#: toolbars.py:282
 msgid "Logical or"
 msgstr "mantıksal seçenekleme"
 
-#: toolbars.py:250
+#: toolbars.py:293
 msgid "Equals"
 msgstr "eşit"
 
-#: toolbars.py:253
+#: toolbars.py:297
 msgid "Not equals"
 msgstr "eşit değil"
 
-#: toolbars.py:262
+#: toolbars.py:310
 msgid "Pi"
 msgstr "pi"
 
-#: toolbars.py:266
+#: toolbars.py:316
 msgid "e"
 msgstr "e"
 
-#: toolbars.py:269
+#: toolbars.py:320
 msgid "γ"
 msgstr ""
 
-#: toolbars.py:272
+#: toolbars.py:325
 msgid "φ"
 msgstr ""
 
-#: toolbars.py:279
+#: toolbars.py:333
 msgid "Plot"
 msgstr "Grafik çiz"
 
-#: toolbars.py:286
+#: toolbars.py:338
 msgid "Degrees"
 msgstr "derece"
 
-#: toolbars.py:287
+#: toolbars.py:339
 msgid "Radians"
 msgstr "radyan"
 
-#: toolbars.py:291
+#: toolbars.py:344
 #, fuzzy
 msgid "Degrees / Radians"
 msgstr "radyan derecesi"
 
-#: toolbars.py:300
+#: toolbars.py:354
 msgid "Exponent / Scientific notation"
 msgstr "Üslü / Bilimsel gösterim"
 
-#: toolbars.py:310
+#: toolbars.py:365
 msgid "Number of shown digits"
 msgstr "Gösterilen hane sayısı"
 
-#: toolbars.py:320
+#: toolbars.py:377
 msgid "Integer formatting base"
 msgstr ""
+
+#: astparser.py:39
+msgid ""
+"plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
+"range from a to b"
+msgstr ""
+"plot(eqn, var=-a..b), 'eqn' eşitliğini 'var' değişkeniyle a'dan b'ye çizer"
+
+#: astparser.py:61
+#, python-format
+msgid "Parse error at %d"
+msgstr ""
+
+#: astparser.py:75 astparser.py:109
+#, python-format
+msgid "Error at '%s', position: %d"
+msgstr ""
+
+#: astparser.py:88
+msgid "Syntax Error."
+msgstr ""
+
+#: astparser.py:95
+msgid "Syntax Error!"
+msgstr ""
+
+#: astparser.py:135
+msgid "This is just a test topic, use help(index) for the index"
+msgstr "bu sadece bir deneme konusudur, içerik için yardım(içerik)'i kullanın"
+
+#: astparser.py:148
+msgid "Use help(test) for help about 'test', or help(index) for the index"
+msgstr ""
+"'test'ler hakkında yardım için yardım(test)i kullanın ya da içerik için "
+"yardım(içerik)i kullanın."
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:152
+msgid "index"
+msgstr "içerik"
+
+#: astparser.py:152
+#, fuzzy
+msgid "topics"
+msgstr "konular"
+
+#: astparser.py:153
+msgid "Topics"
+msgstr "konular"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:161
+msgid "variables"
+msgstr "değişkenler"
+
+#: astparser.py:162
+#, fuzzy
+msgid "Variables"
+msgstr "değişkenler"
+
+#. TRANS: This command is descriptive, so can be translated
+#: astparser.py:168
+msgid "functions"
+msgstr "kuvvetleri"
+
+#: astparser.py:169
+#, fuzzy
+msgid "Functions"
+msgstr "kuvvetleri"
+
+#: astparser.py:178
+#, python-format
+msgid "No help about '%s' available, use help(index) for the index"
+msgstr ""
+"'%s' hakkında yardım mevcut değil, içerik için yardım(içerik)'i kullanın."
+
+#: astparser.py:508
+#, fuzzy
+msgid "help"
+msgstr "yardım"
+
+#: astparser.py:515
+msgid "Recursion detected"
+msgstr ""
+
+#: astparser.py:539
+#, python-format
+msgid "Function '%s' not defined"
+msgstr "'%s' fonksiyonu tanımlı değildir."
+
+#: astparser.py:541
+#, python-format
+msgid "Variable '%s' not defined"
+msgstr "'%s' değişkeni tanımlanamıyor."
+
+#: astparser.py:551
+#, python-format
+msgid "Attribute '%s' does not exist"
+msgstr ""
+
+#: astparser.py:654
+msgid "Parse error"
+msgstr "ayrım hatası"
+
+#: astparser.py:659
+msgid "Multiple statements not supported"
+msgstr ""
+
+#: astparser.py:683
+msgid "Internal error"
+msgstr ""
+
+#. TRANS: multiplication symbol (default: '×')
+#: mathlib.py:84
+msgid "mul_sym"
+msgstr "çarpma sembolü '*'"
+
+#. TRANS: division symbol (default: '÷')
+#: mathlib.py:89
+msgid "div_sym"
+msgstr "bölme sembolü '/'"
+
+#. TRANS: equal symbol (default: '=')
+#: mathlib.py:94
+msgid "equ_sym"
+msgstr ""
+
+#: mathlib.py:227
+msgid "Undefined"
+msgstr "tanımsız"
+
+#: mathlib.py:237
+msgid "Error: unsupported type"
+msgstr "hata: desteklenmeyen tür"
+
+#: layout.py:113
+msgid "Clear"
+msgstr "Temizleyiniz"
+
+#: layout.py:151 layout.py:195
+msgid "Edit"
+msgstr "düzenleyiniz."
+
+#: layout.py:156 layout.py:196
+msgid "Algebra"
+msgstr "cebir"
+
+#: layout.py:161 layout.py:198
+msgid "Trigonometry"
+msgstr "trigonometri"
+
+#: layout.py:166 layout.py:199
+msgid "Boolean"
+msgstr "doğru ve yanlış değer alan"
+
+#: layout.py:175 layout.py:200
+msgid "Miscellaneous"
+msgstr "Çeşitli"
+
+#: layout.py:229
+msgid "Label:"
+msgstr "etiket"
+
+#: layout.py:278
+msgid "All equations"
+msgstr "tüm eşitlikler"
+
+#: layout.py:279
+msgid "My equations"
+msgstr "eşitliklerim"
+
+#: layout.py:280
+msgid "Show variables"
+msgstr "değişkenleri gösteriniz."
+
+#: calculate.py:109
+#, python-format
+msgid "Equation.parse() string invalid (%s)"
+msgstr "eşitlik.ayırma() dizi geçerli değildir (%s)."
+
+#: calculate.py:525
+msgid "Can not assign label: will cause recursion"
+msgstr ""
+
+#: calculate.py:620
+#, python-format
+msgid "Writing to journal (%s)"
+msgstr "günlüğe yazınız (%s)."
+
+#: calculate.py:932
+msgid "button_pressed(): invalid type"
+msgstr "basılan tuş: geçersiz türdür."
+
+#, python-format
+#~ msgid "Error at %d"
+#~ msgstr "%d'de hata vardır."
+
+#~ msgid "fac"
+#~ msgstr "çarpan"
+
+#, fuzzy
+#~ msgid ""
+#~ "And(x, y), logical and. Returns True if x and y are True, else returns False"
+#~ msgstr ""
+#~ "ve(x,y), mantıksal doğrulamadır. x ve y doğruysa sonuç doğrudur, değilse "
+#~ "sonuç yanlıştır."
+
+#~ msgid ""
+#~ "cosh(x), return the hyperbolic cosine of x. Given by (exp(x) + exp(-x)) / 2"
+#~ msgstr "cosh(x), hiperbol kosinüs x oluyor. (exp(x) + exp(-x)) /2 verir."
+
+#~ msgid "fac(x), return the factorial of x. Given by x * (x - 1) * (x - 2) * ..."
+#~ msgstr "fac(x), x'in faktörüdür. x*(x-1) * (x-2) *... verir."

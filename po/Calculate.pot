@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-29 15:44+1000\n"
+"POT-Creation-Date: 2017-12-29 17:19+1100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -544,6 +544,46 @@ msgid ""
 "y is True (and x is False), else returns False"
 msgstr ""
 
+#: layout.py:113
+msgid "Clear"
+msgstr ""
+
+#: layout.py:151 layout.py:195
+msgid "Edit"
+msgstr ""
+
+#: layout.py:156 layout.py:196
+msgid "Algebra"
+msgstr ""
+
+#: layout.py:161 layout.py:198
+msgid "Trigonometry"
+msgstr ""
+
+#: layout.py:166 layout.py:199
+msgid "Boolean"
+msgstr ""
+
+#: layout.py:175 layout.py:200
+msgid "Miscellaneous"
+msgstr ""
+
+#: layout.py:229
+msgid "Label:"
+msgstr ""
+
+#: layout.py:278
+msgid "All equations"
+msgstr ""
+
+#: layout.py:279
+msgid "My equations"
+msgstr ""
+
+#: layout.py:280
+msgid "Show variables"
+msgstr ""
+
 #. TRANS: multiplication symbol (default: '×')
 #: mathlib.py:84
 msgid "mul_sym"
@@ -713,44 +753,4 @@ msgstr ""
 
 #: toolbars.py:378
 msgid "Integer formatting base"
-msgstr ""
-
-#: layout.py:114
-msgid "Clear"
-msgstr ""
-
-#: layout.py:148
-msgid "Edit"
-msgstr ""
-
-#: layout.py:152
-msgid "Algebra"
-msgstr ""
-
-#: layout.py:156
-msgid "Trigonometry"
-msgstr ""
-
-#: layout.py:160
-msgid "Boolean"
-msgstr ""
-
-#: layout.py:167
-msgid "Miscellaneous"
-msgstr ""
-
-#: layout.py:206
-msgid "Label:"
-msgstr ""
-
-#: layout.py:255
-msgid "All equations"
-msgstr ""
-
-#: layout.py:256
-msgid "My equations"
-msgstr ""
-
-#: layout.py:257
-msgid "Show variables"
 msgstr ""

@@ -389,14 +389,10 @@ class MiscToolbar(Gtk.Toolbar):
                 self._remove_buttons(self._target_toolbar)
         else:
             target_toolbar = self._target_toolbar
-            self._remove_buttons(self)
 
         target_toolbar.insert(self._line_separator1, -1)
-
         target_toolbar.insert(self._plot_button, -1)
-
         target_toolbar.insert(self._line_separator2, -1)
-
         target_toolbar.insert(self._angle_button, -1)
         target_toolbar.insert(self._format_button, -1)
         target_toolbar.insert(self._digits_button, -1)

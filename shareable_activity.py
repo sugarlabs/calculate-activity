@@ -1,6 +1,9 @@
+import gi
+
 import dbus
+gi.require_version('TelepathyGLib', '0.12')
 from gi.repository import GObject
-import telepathy
+from gi.repository import TelepathyGLib
 
 from sugar3.activity import activity
 from sugar3.presence import presenceservice
@@ -121,12 +124,12 @@ class ShareableActivity(activity.Activity):
         self._tubes_chan = sa.telepathy_tubes_chan
         self._text_chan = sa.telepathy_text_chan
 
-        self._tubes_chan[telepathy.CHANNEL_TYPE_TUBES].connect_to_signal(
+        self._tubes_chan[TelepathyGLib.IFACE_CHANNEL_TYPE_TUBES].connect_to_signal(
             'NewTube', self._new_tube_cb)
 
     def _sa_shared_cb(self, activity):
         self._setup_shared_activity()
-        self._tubes_chan[telepathy.CHANNEL_TYPE_TUBES].OfferDBusTube(
+        self._tubes_chan[TelepathyGLib.IFACE_CHANNEL_TYPE_TUBES].OfferDBusTube(
             IFACE, {})
 
     def _sa_joined_cb(self, activity):
@@ -136,7 +139,7 @@ class ShareableActivity(activity.Activity):
         self._request_sync = True
         self._setup_shared_activity()
 
-        self._tubes_chan[telepathy.CHANNEL_TYPE_TUBES].ListTubes(
+        self._tubes_chan[TelepathyGLib.IFACE_CHANNEL_TYPE_TUBES].ListTubes(
             reply_handler=self._list_tubes_reply_cb,
             error_handler=self._list_tubes_error_cb)
 
@@ -154,16 +157,16 @@ class ShareableActivity(activity.Activity):
                       'params=%r state=%d', id, initiator, type, service,
                       params, state)
 
-        if (type == telepathy.TUBE_TYPE_DBUS and service == IFACE):
-            if state == telepathy.TUBE_STATE_LOCAL_PENDING:
+        if (type == TelepathyGLib.TubeType.DBUS and service == IFACE):
+            if state == TelepathyGLib.TubeState.LOCAL_PENDING:
                 self._tubes_chan[
-                    telepathy.CHANNEL_TYPE_TUBES].AcceptDBusTube(id)
+                    TelepathyGLib.IFACE_CHANNEL_TYPE_TUBES].AcceptDBusTube(id)
 
             self._tube_conn = SugarTubeConnection(
                 self._connection, self._tubes_chan[
-                    telepathy.CHANNEL_TYPE_TUBES],
+                    TelepathyGLib.IFACE_CHANNEL_TYPE_TUBES],
                 id, group_iface=self._text_chan[
-                    telepathy.CHANNEL_INTERFACE_GROUP])
+                    TelepathyGLib.IFACE_CHANNEL_INTERFACE_GROUP])
 
             self._tube_conn.add_signal_receiver(
                 self._send_message_cb,

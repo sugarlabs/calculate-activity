@@ -117,7 +117,7 @@ class MathLib:
     def d(self, val):
         if isinstance(val, Decimal):
             return val
-        elif type(val) in (types.IntType, types.LongType):
+        elif type(val) in (int, int):
             return Decimal(val)
         elif isinstance(val, str):
             d = Decimal(val)
@@ -150,7 +150,7 @@ class MathLib:
     def format_int(self, n, base=None):
         if base is None:
             base = self.integer_base
-        ret = self._BASE_FUNC_MAP[base](long(n))
+        ret = self._BASE_FUNC_MAP[base](int(n))
         return ret.rstrip('L')
 
     def format_decimal(self, n):
@@ -166,7 +166,7 @@ class MathLib:
         if len(digits) < self.digit_limit:
             exp -= self.digit_limit - len(digits)
             digits += (0,) * (self.digit_limit - len(digits))
-            print exp, digits
+            print(exp, digits)
         if sign:
             res = "-"
         else:
@@ -190,10 +190,10 @@ class MathLib:
 
         if dot_pos < 0:
             res += '0' + self.fraction_sep
-            for i in xrange(dot_pos, 0):
+            for i in range(dot_pos, 0):
                 res += '0'
 
-        for i in xrange(len(digits)):
+        for i in range(len(digits)):
             if i == dot_pos:
                 if i == 0:
                     res += '0' + self.fraction_sep
@@ -202,14 +202,14 @@ class MathLib:
             res += str(digits[i])
 
         if int_len > 0 and len(digits) < dot_pos:
-            for i in xrange(len(digits), dot_pos):
+            for i in range(len(digits), dot_pos):
                 res += '0'
 
         if disp_exp != 0:
             if self.format_type == self.FORMAT_EXPONENT:
                 res = res + 'e%d' % disp_exp
             elif self.format_type == self.FORMAT_SCIENTIFIC:
-                res = res + u'×10**%d' % disp_exp
+                res = res + '×10**%d' % disp_exp
 
         return res
 
@@ -221,7 +221,7 @@ class MathLib:
                 return 'False'
         elif isinstance(n, str):
             return n
-        elif isinstance(n, unicode):
+        elif isinstance(n, str):
             return n
         elif isinstance(n, str):
             return _('Undefined')
@@ -229,7 +229,7 @@ class MathLib:
             n = self.d(n)
         elif isinstance(n, float):
             n = self.d(n)
-        elif isinstance(n, long):
+        elif isinstance(n, int):
             n = self.d(n)
         elif isinstance(n, Rational):
             n = self.d(Decimal(n.n) / Decimal(n.d))
@@ -248,7 +248,7 @@ class MathLib:
         return ret
 
     def is_int(self, n):
-        if isinstance(n, int) or isinstance(n, long):
+        if isinstance(n, int) or isinstance(n, int):
             return True
 
         if not isinstance(n, Decimal):
@@ -262,15 +262,15 @@ class MathLib:
 if __name__ == "__main__":
     ml = MathLib()
     val = 0.99999999999999878
-    print 'is_int(%.18e): %s' % (val, ml.is_int(val))
+    print('is_int(%.18e): %s' % (val, ml.is_int(val)))
     # Beyond float precision
     val = 0.999999999999999999
-    print 'is_int(%.18e): %s' % (val, ml.is_int(val))
+    print('is_int(%.18e): %s' % (val, ml.is_int(val)))
     val = ml.d(0.99999999999999878) ** 2
-    print 'is_int(%s): %s' % (val, ml.is_int(val))
+    print('is_int(%s): %s' % (val, ml.is_int(val)))
     vals = ('0.1230', '12.340', '0.0123', '1230', '123.0', '1.230e17')
     for valstr in vals:
         val = Decimal(valstr)
-        print 'Formatted value: %s (from %s)' % (ml.format_number(val), valstr)
+        print('Formatted value: %s (from %s)' % (ml.format_number(val), valstr))
     for base in (2, 8, 16):
-        print 'Format 252 in base %d: %s' % (base, ml.format_int(252, base))
+        print('Format 252 in base %d: %s' % (base, ml.format_int(252, base)))

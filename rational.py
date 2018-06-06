@@ -35,12 +35,12 @@ class Rational:
 
     def set(self, n, d=None):
         if d is not None:
-            self.n = long(n)
-            self.d = long(d)
-        elif isinstance(n, types.TupleType) or isinstance(n, types.ListType):
-            self.n = long(n[0])
-            self.d = long(n[1])
-        elif isinstance(n, types.StringType):
+            self.n = int(n)
+            self.d = int(d)
+        elif isinstance(n, tuple) or isinstance(n, list):
+            self.n = int(n[0])
+            self.d = int(n[1])
+        elif isinstance(n, bytes):
             return
 
         self._simplify()
@@ -65,8 +65,8 @@ class Rational:
             return
 
         if self.n == self.d:
-            self.n = long(1)
-            self.d = long(1)
+            self.n = int(1)
+            self.d = int(1)
         else:
             gcd = self.gcd(self.n, self.d)
             self.n /= gcd
@@ -75,8 +75,8 @@ class Rational:
     def __add__(self, rval):
         if isinstance(rval, Rational):
             ret = Rational(self.n * rval.d + self.d * rval.n, self.d * rval.d)
-        elif isinstance(rval, types.IntType) or isinstance(rval,
-                                                           types.LongType):
+        elif isinstance(rval, int) or isinstance(rval,
+                                                           int):
             ret = Rational(self.n + self.d * rval, self.d)
         else:
             ret = float(self) + rval
@@ -88,8 +88,8 @@ class Rational:
     def __sub__(self, rval):
         if isinstance(rval, Rational):
             ret = Rational(self.n * rval.d - self.d * rval.n, self.d * rval.d)
-        elif isinstance(rval, types.IntType) or isinstance(rval,
-                                                           types.LongType):
+        elif isinstance(rval, int) or isinstance(rval,
+                                                           int):
             ret = Rational(self.n - self.d * rval, self.d)
         else:
             ret = float(self) - rval
@@ -101,8 +101,8 @@ class Rational:
     def __mul__(self, rval):
         if isinstance(rval, Rational):
             ret = Rational(self.n * rval.n, self.d * rval.d)
-        elif isinstance(rval, types.IntType) or isinstance(rval,
-                                                           types.LongType):
+        elif isinstance(rval, int) or isinstance(rval,
+                                                           int):
             ret = Rational(self.n * rval, self.d)
         elif isinstance(rval, Decimal):
             ret = rval * Decimal(str(float(self)))
@@ -116,8 +116,8 @@ class Rational:
     def __div__(self, rval):
         if isinstance(rval, Rational):
             ret = Rational(self.n * rval.d, self.d * rval.n)
-        elif isinstance(rval, types.IntType) or isinstance(rval,
-                                                           types.LongType):
+        elif isinstance(rval, int) or isinstance(rval,
+                                                           int):
             ret = Rational(self.n, self.d * rval)
         else:
             ret = float(self) / rval
@@ -134,7 +134,7 @@ class Rational:
         self.d = abs(self.d)
 
     def __pow__(self, rval):
-        if isinstance(rval, types.IntType) or isinstance(rval, types.LongType):
+        if isinstance(rval, int) or isinstance(rval, int):
             ret = Rational(self.n ** rval, self.d ** rval)
         else:
             ret = float(self.n) ** rval / float(self.d) ** rval

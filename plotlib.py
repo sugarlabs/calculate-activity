@@ -48,7 +48,7 @@ class _PlotBase:
     def evaluate(self, eqn, var, range, points=100):
         x_old = self.parser.get_var(var)
 
-        if type(eqn) in (types.StringType, types.UnicodeType):
+        if type(eqn) in (bytes, str):
             eqn = self.parser.parse(eqn)
 
         res = []
@@ -98,7 +98,7 @@ class _PlotBase:
             _logger.error('Too many variables specified')
             return None
 
-        for var, range in kwargs.iteritems():
+        for var, range in kwargs.items():
             _logger.info('Plot range for var %s: %r', var, range)
 
         vals = self.evaluate(eqn, var, range, points=points)
@@ -108,7 +108,7 @@ class _PlotBase:
         self.set_svg(svg)
 
 #        self.export_plot("/tmp/calculate_graph.svg")
-        if isinstance(svg, unicode):
+        if isinstance(svg, str):
             return svg.encode('utf-8')
         else:
             return svg
@@ -152,7 +152,7 @@ class CustomPlot(_PlotBase):
         self.svg_data += '" />\n'
 
     def add_text(self, c, text, rotate=0):
-        if isinstance(text, unicode):
+        if isinstance(text, str):
             text = text.encode('utf-8')
         c = self.rcoords_to_coords(c)
 
@@ -305,7 +305,7 @@ if USE_MPL:
         import matplotlib as mpl
         mpl.use('svg')
         from matplotlib import pylab
-        import StringIO
+        import io
         Plot = MPLPlot
         _logger.debug('Using matplotlib as plotting back-end')
     except ImportError:

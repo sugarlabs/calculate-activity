@@ -209,7 +209,7 @@ class Equation:
             self.append_with_superscript_tags(buf, eqnstr, tagbignarrow)
 
         # Add result
-        if type(self.result) in (types.StringType, types.UnicodeType):
+        if type(self.result) in (bytes, str):
             resstr = str(self.result)
             resstr = resstr.rstrip('0').rstrip('.') \
                 if '.' in resstr else resstr
@@ -354,7 +354,7 @@ class Calculate(ShareableActivity):
     }
 
     IDENTIFIER_CHARS = \
-        u"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_ "
+        "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_ "
 
     def __init__(self, handle):
         ShareableActivity.__init__(self, handle)
@@ -378,7 +378,7 @@ class Calculate(ShareableActivity):
 
         self.clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         self.select_reason = self.SELECT_SELECT
-        self.buffer = u""
+        self.buffer = ""
         self.showing_version = 0
         self.showing_error = False
         self.ans_inserted = False
@@ -417,7 +417,7 @@ class Calculate(ShareableActivity):
             text = eqn.label
         else:
             # don't insert plain text
-            if type(eqn.result) in (types.StringType, types.UnicodeType):
+            if type(eqn.result) in (bytes, str):
                 text = ''
             else:
                 text = self.parser.ml.format_number(eqn.result)
@@ -485,7 +485,7 @@ class Calculate(ShareableActivity):
                 tree = self.parser.parse(eq.equation)
             try:
                 self.parser.set_var(eq.label, tree)
-            except Exception, e:
+            except Exception as e:
                 eq.result = ParseError(e.message, 0, "")
                 self.set_error_equation(eq)
                 return
@@ -512,13 +512,13 @@ class Calculate(ShareableActivity):
     def process(self):
         """Parse the equation entered and show the result."""
 
-        s = unicode(self.text_entry.get_text())
-        label = unicode(self.label_entry.get_text())
+        s = str(self.text_entry.get_text())
+        label = str(self.label_entry.get_text())
         _logger.debug('process(): parsing %r, label: %r', s, label)
         try:
             tree = self.parser.parse(s)
             res = self.parser.evaluate(tree)
-        except ParserError, e:
+        except ParserError as e:
             res = e
             self.showing_error = True
 
@@ -565,8 +565,8 @@ class Calculate(ShareableActivity):
 
             self.showing_error = False
             self.ans_inserted = False
-            self.text_entry.set_text(u'')
-            self.label_entry.set_text(u'')
+            self.text_entry.set_text('')
+            self.label_entry.set_text('')
 
         return res is not None
 
@@ -612,7 +612,7 @@ class Calculate(ShareableActivity):
         return w
 
     def clear(self):
-        self.text_entry.set_text(u'')
+        self.text_entry.set_text('')
         self.text_entry.grab_focus()
         return True
 
@@ -843,12 +843,12 @@ class Calculate(ShareableActivity):
                 key in self.SHIFT_KEYMAP:
             f = self.SHIFT_KEYMAP[key]
             return f(self)
-        elif unicode(key) in self.IDENTIFIER_CHARS:
+        elif str(key) in self.IDENTIFIER_CHARS:
             self.button_pressed(self.TYPE_TEXT, key)
         elif key in self.KEYMAP:
             f = self.KEYMAP[key]
             if isinstance(f, str) or \
-                    isinstance(f, unicode):
+                    isinstance(f, str):
                 self.button_pressed(self.TYPE_TEXT, f)
             else:
                 return f(self)

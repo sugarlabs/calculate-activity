@@ -95,7 +95,7 @@ class ClassValue:
 
     """
     Class to share a value with the outside world.
-    This is required because plain floats / integers are not asigned by
+    This is required because plain floats / integers are not assigned by
     reference, and can therefore not easily be changed in a different place.
     """
 

@@ -408,7 +408,7 @@ class Calculate(ShareableActivity):
         _logger.debug('Cleaning up...')
 
     def equation_pressed_cb(self, eqn):
-        """Callback for when an equation box is clicked"""
+        """Callback for when an equation box is clicked."""
 
         if isinstance(eqn.result, SVGImage):
             return True
@@ -427,7 +427,7 @@ class Calculate(ShareableActivity):
         return True
 
     def set_last_equation(self, eqn):
-        """Set the 'last equation' TextView"""
+        """Set the 'last equation' TextView."""
 
         if self.last_eq_sig is not None:
             self.layout.last_eq.disconnect(self.last_eq_sig)
@@ -510,7 +510,7 @@ class Calculate(ShareableActivity):
         """Parse and process an equation asynchronously."""
 
     def process(self):
-        """Parse the equation entered and show the result"""
+        """Parse the equation entered and show the result."""
 
         s = unicode(self.text_entry.get_text())
         label = unicode(self.label_entry.get_text())
@@ -571,7 +571,7 @@ class Calculate(ShareableActivity):
         return res is not None
 
     def create_var_textview(self, name, value):
-        """Create a Gtk.TextView for a variable"""
+        """Create a Gtk.TextView for a variable."""
 
         reserved = ["Ans", "LastEqn", "help"]
         if name in reserved:

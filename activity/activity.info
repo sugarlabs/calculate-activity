@@ -1,12 +1,13 @@
 [Activity]
 name = Calculate
-summary = This is the place to get the answer to a quick problem, but that is not the limit! You can also explore Algebra, Trigonometry, Boolean and more!
 bundle_id = org.laptop.Calculate
 icon = calculate
 exec = sugar-activity calculate.Calculate -s
 activity_version = 44
-host_version = 1
 show_launcher = yes
 license = GPLv2+
 max_participants = 10
-repository = https://github.com/sugarlabs/sugarlabs-calculate.git sugar-0.94
+summary = This is the place to get the answer to a quick problem, but that is not the limit! You can also explore Algebra, Trigonometry, Boolean and more!
+repository = https://github.com/sugarlabs/sugarlabs-calculate
+url = https://help.sugarlabs.org/calculate.html
+tags = Maths;Utilities

@@ -1,3 +1,17 @@
+45
+
+* Regenerate POT file (James Cameron),
+* New translations (Chris Leonard et al),
+* Port from exec to importlib (James Cameron),
+* Fix flake8 errors and warnings (James Cameron),
+* Fix Gtk-CRITICAL error gtk_toolbar_remove (Yash Agrawal),
+* Port Telepathy static binding to PyGObject binding (Rahul Bothra),
+* Add README source repository documentation (Rudra Sadhu),
+* Fix typo and unify docstrongs (Eli Chung),
+* Add .gitgnore and change metadata (Vipul Gupta),
+* Use named arguments for translatable strings (James Cameron),
+* Add a screenshot (James Cameron),
+
 44
 
 * License changes (Gonzalo Odiard, Aneesh Dogra),

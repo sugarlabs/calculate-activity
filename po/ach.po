@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 17:39+1100\n"
-"PO-Revision-Date: 2017-10-02 09:54+0000\n"
+"PO-Revision-Date: 2018-03-19 11:52+0000\n"
 "Last-Translator: Olot <agwanta2004@yahoo.co.uk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ach\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1506938088.000000\n"
+"X-POOTLE-MTIME: 1521460336.000000\n"
 
 #: activity/activity.info:2
 msgid "Calculate"
-msgstr "Ti cura"
+msgstr "Nwong welere"
 
 #: functions.py:35
 msgid "add"
@@ -611,8 +611,8 @@ msgid ""
 "plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
 "range from a to b"
 msgstr ""
-"Ci(eqn, var=-a..b), ci kan ame turyo weng rorom 'eqn' kede jami ame kelo "
-"alokaloka 'var' icakere a tunu b"
+"giri(eqn, var=-a..b), giri kan ame rorom 'eqn' ki alokere 'var' icakere a "
+"tunu b"
 
 #: astparser.py:61
 #, python-format
@@ -635,8 +635,8 @@ msgstr "Bal ileb me coc!"
 #: astparser.py:135
 msgid "This is just a test topic, use help(index) for the index"
 msgstr ""
-"Man obedo keken gipwonye me atema, ti ki kony(lic me gipwonye) pi lic me "
-"gipwonye"
+"Man obedo keken atema me dulkop adit, ti ki gikonye(lic me dulkop ducu) pi "
+"lic me dulkop ducu"
 
 #: astparser.py:148
 msgid "Use help(test) for help about 'test', or help(index) for the index"
@@ -647,7 +647,7 @@ msgstr ""
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:152
 msgid "index"
-msgstr "gipwonye iyoreyore"
+msgstr "lic me dulkop ducu"
 
 #: astparser.py:152
 msgid "topics"
@@ -660,11 +660,11 @@ msgstr " Dule me kop"
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:161
 msgid "variables"
-msgstr "akel alokaloka"
+msgstr "alokere"
 
 #: astparser.py:162
 msgid "Variables"
-msgstr "Jami maloke"
+msgstr "Alokere"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:168
@@ -673,7 +673,7 @@ msgstr "Matime"
 
 #: astparser.py:169
 msgid "Functions"
-msgstr "Atime"
+msgstr "Ticere ducu"
 
 #: astparser.py:178
 #, python-format

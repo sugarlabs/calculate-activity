@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 17:39+1100\n"
-"PO-Revision-Date: 2017-03-14 05:02+0000\n"
-"Last-Translator: Chris <cjl@sugarlabs.org>\n"
+"PO-Revision-Date: 2018-02-03 20:19+0000\n"
+"Last-Translator: Besnik_b <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1489467754.000000\n"
+"X-POOTLE-MTIME: 1517689197.000000\n"
 
 #: activity/activity.info:2
 msgid "Calculate"
@@ -24,7 +24,7 @@ msgstr "Llogaritni"
 
 #: functions.py:35
 msgid "add"
-msgstr ""
+msgstr "shto"
 
 #: functions.py:36
 msgid "abs"
@@ -60,11 +60,11 @@ msgstr "dhe"
 
 #: functions.py:44
 msgid "b10bin"
-msgstr ""
+msgstr "b10bin"
 
 #: functions.py:45
 msgid "ceil"
-msgstr ""
+msgstr "ceil"
 
 #: functions.py:46
 msgid "cos"
@@ -87,14 +87,12 @@ msgid "exp"
 msgstr "exp"
 
 #: functions.py:51
-#, fuzzy
 msgid "factorial"
-msgstr "faktoriali"
+msgstr "faktorial"
 
 #: functions.py:52
-#, fuzzy
 msgid "factorize"
-msgstr "faktrional"
+msgstr ""
 
 #: functions.py:53
 msgid "floor"
@@ -118,7 +116,7 @@ msgstr "ln"
 
 #: functions.py:58
 msgid "log10"
-msgstr ""
+msgstr "log10"
 
 #: functions.py:59
 msgid "mul"
@@ -162,7 +160,7 @@ msgstr "sub"
 
 #: functions.py:69
 msgid "square"
-msgstr "katror"
+msgstr "katrore"
 
 #: functions.py:70
 msgid "tan"
@@ -178,20 +176,17 @@ msgstr "xor"
 
 #: functions.py:119
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
-msgstr ""
+msgstr "abs(x), jep vlerën absolute të x-it, që do të thotë -x për x < 0"
 
 #: functions.py:124
 msgid "acos(x) only defined for x E [-1,1]"
 msgstr ""
 
 #: functions.py:128
-#, fuzzy
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
 msgstr ""
-"acos(x), ju jep arc kosinusin e x-it. Ky është një kënd për të cilin "
-"kosinusi është x. I definuar për -1 <= x <= 1"
 
 #: functions.py:135
 msgid ""
@@ -206,20 +201,17 @@ msgstr ""
 
 #: functions.py:151
 msgid "add(x, y), return x + y"
-msgstr ""
+msgstr "add(x, y), jep x + y"
 
 #: functions.py:156
 msgid "asin(x) only defined for x E [-1,1]"
 msgstr ""
 
 #: functions.py:159
-#, fuzzy
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
 msgstr ""
-"asin(x), ju jep arc sinusin e x-it. Ky është një kënd për të cilin sinusi "
-"është x. I definuar për -1 <= x <= 1"
 
 #: functions.py:166
 msgid ""
@@ -256,13 +248,12 @@ msgid "ceil(x), return the smallest integer larger than x."
 msgstr ""
 
 #: functions.py:211
-#, fuzzy
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr ""
 "cos(x), ju jep kosinusin e x-it. Kjo është koordinata x në rrethin "
-"trigonometrik në këndin x"
+"trigonometrik për këndin x"
 
 #: functions.py:218
 msgid ""
@@ -282,10 +273,13 @@ msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
+"gcd(a, b), përcakton përpjesëtuesin më të madh të përbashkët të a-së dhe b-"
+"së. Për shembull, faktori më i madh i përbashkët për numrat 15 dhe 18 është "
+"3."
 
 #: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
-msgstr "exp(x), ju jep eksponentin e x-it. I dhënë nga e^x"
+msgstr "exp(x), jep eksponentin natyral të x-it. LLogaritur sipas e^x"
 
 #: functions.py:262
 msgid "Factorial(x) is only defined for integers x>=0"
@@ -293,7 +287,7 @@ msgstr ""
 
 #: functions.py:265
 msgid "Factorial only defined for integers"
-msgstr ""
+msgstr "Faktorial i përlufizuar vetëm për numra të plotë"
 
 #: functions.py:278
 msgid ""
@@ -320,21 +314,23 @@ msgstr ""
 
 #: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
-msgstr ""
+msgstr "Logarithm(x) i përkufizuar vetëm për x > 0"
 
 #: functions.py:370
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
 msgstr ""
-"ln(x), ju jep logaritmin e x-it. Kjo është vlera për të cilën eksponenti "
-"exp() është i barabartë me x. E përkufizuar për x >= 0."
+"ln(x), ju jep logaritmin natyral të x-it. Kjo është vlera për të cilën "
+"eksponenti exp() është i barabartë me x. E përkufizuar për x >= 0."
 
 #: functions.py:380
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
+"log10(x), jep logaritmin me bazë 10 të x-it. Kjo është vlera y për të cilën "
+"10^y është baras me x-in. I përkufizuar për x >= 0."
 
 #: functions.py:388
 msgid "Can only calculate x modulo <integer>"
@@ -374,10 +370,13 @@ msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
+"rand_int([<maxval>]), jep një numër të plotë kuturu nga 0 deri <maxval>. "
+"<maxval> është një argument opsional dhe, si parazgjedhje, është caktuar "
+"65535."
 
 #: functions.py:445
 msgid "round(x), return the integer nearest to x."
-msgstr ""
+msgstr "round(x), jep numrin e plotë më të afërt të x-it."
 
 #: functions.py:452 functions.py:461
 msgid "Bitwise operations only apply to integers"
@@ -397,7 +396,7 @@ msgid ""
 "the angle x"
 msgstr ""
 "sin(x), ju jep sinusin e x-it. Kjo është koordinata y në rrethin "
-"trigonometrik në këndin x"
+"trigonometrik për këndin x"
 
 #: functions.py:476
 msgid ""
@@ -427,15 +426,14 @@ msgid "sub(x, y), return x - y"
 msgstr "sub(x, y), jep x - y"
 
 #: functions.py:511
-#, fuzzy
 msgid ""
 "tan(x), return the tangent of x. This is the slope of the line from the "
 "origin of the unit circle to the point on the unit circle defined by the "
 "angle x. Given by sin(x) / cos(x)"
 msgstr ""
-"tan(x), kthe tangjentën e x. Kjo është pjerrtësia e vijës nga origjina e "
-"njësisë së rrethit në pikën e origjinës së rrethit të definuar nga krahu x. "
-"i dhënë nga sin(x) / cos(x)"
+"tan(x), ju jep tangjenten e x-it. Kjo është pjerrtësia e vijës nga origjina "
+"e rrethit trigonometrik te pika në rrethin trigonometrik e përkufizuar nga "
+"këndi x. Llogaritet si sin(x) / cos(x)"
 
 #: functions.py:519
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
@@ -494,28 +492,25 @@ msgstr "e në fuqi x"
 
 #: toolbars.py:190
 msgid "x to the power y"
-msgstr "x në fuqinë y"
+msgstr "x në fuqi y"
 
 #: toolbars.py:197
 msgid "Natural logarithm"
 msgstr "Logaritëm natyral"
 
 #: toolbars.py:206
-#, fuzzy
 msgid "Factorial"
-msgstr "Faktoriali"
+msgstr "Faktorial"
 
 #: toolbars.py:220
 msgid "Sine"
 msgstr "Sinusi"
 
 #: toolbars.py:225
-#, fuzzy
 msgid "Cosine"
 msgstr "Kosinusi"
 
 #: toolbars.py:230
-#, fuzzy
 msgid "Tangent"
 msgstr "Tangjente"
 
@@ -608,6 +603,8 @@ msgid ""
 "plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
 "range from a to b"
 msgstr ""
+"plot(eqn, var=-a..b), vizato ekuacionin 'eqn' me ndryshoren 'var' në "
+"intervalin nga a në b"
 
 #: astparser.py:61
 #, python-format
@@ -684,7 +681,7 @@ msgstr "U pikas përsëritje"
 #: astparser.py:539
 #, python-format
 msgid "Function '%s' not defined"
-msgstr "Funksioni '%s' s’është i përkufizuar"
+msgstr "Funksion '%s' i papërkufizuar"
 
 #: astparser.py:541
 #, python-format
@@ -694,7 +691,7 @@ msgstr "Ndryshore '%s' e papërkufizuar"
 #: astparser.py:551
 #, python-format
 msgid "Attribute '%s' does not exist"
-msgstr "Atributi '%s' nuk ekziston"
+msgstr "Atributi '%s' s’ekziston"
 
 #: astparser.py:654
 msgid "Parse error"
@@ -778,7 +775,7 @@ msgstr "Varg Equation.parse() i pavlefshëm (%s)"
 
 #: calculate.py:525
 msgid "Can not assign label: will cause recursion"
-msgstr ""
+msgstr "S’caktohet dot etiketë: do të shkaktojë ripërsëritje"
 
 #: calculate.py:620
 #, python-format
@@ -787,7 +784,7 @@ msgstr "Po shkruhet në ditar (%s)"
 
 #: calculate.py:932
 msgid "button_pressed(): invalid type"
-msgstr ""
+msgstr "button_pressed(): lloj i pavlefshëm"
 
 #, python-format
 #~ msgid "Error at %d"

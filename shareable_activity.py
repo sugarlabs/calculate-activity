@@ -124,7 +124,8 @@ class ShareableActivity(activity.Activity):
         self._tubes_chan = sa.telepathy_tubes_chan
         self._text_chan = sa.telepathy_text_chan
 
-        self._tubes_chan[TelepathyGLib.IFACE_CHANNEL_TYPE_TUBES].connect_to_signal(
+        self._tubes_chan[
+            TelepathyGLib.IFACE_CHANNEL_TYPE_TUBES].connect_to_signal(
             'NewTube', self._new_tube_cb)
 
     def _sa_shared_cb(self, activity):

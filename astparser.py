@@ -73,9 +73,9 @@ class ParseError(ParserError):
         ParserError.__init__(self, msg, start, eqn, end)
 
     def __str__(self):
-        msg = _("Error at '%s', position: %d") % \
-            (self.eqn[self._range[0] - 1: self._range[1] - 1],
-             self._range[0])
+        msg = _("Error at '%(a)', position: %(b)") % \
+            {'a': self.eqn[self._range[0] - 1: self._range[1] - 1],
+             'b': self._range[0]}
         if self._msg is not None and len(self._msg) > 0:
             msg += ": %s" % (self._msg)
         return msg
@@ -107,9 +107,9 @@ class RuntimeError(ParserError):
         ParserError.__init__(self, msg, start, end)
 
     def __str__(self):
-        msg = _("Error at '%s', position: %d") % \
-            (self.eqn[self._range[0] - 1: self._range[1] - 1],
-             self._range[0])
+        msg = _("Error at '%(a)', position: %(b)") % \
+            {'a': self.eqn[self._range[0] - 1: self._range[1] - 1],
+             'b': self._range[0]}
         if self._msg is not None and len(self._msg) > 0:
             msg += ": %s" % (self._msg)
         return msg

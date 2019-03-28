@@ -21,6 +21,7 @@
 #    2007-07-03: rwh, first version
 
 import types
+import os
 from gettext import gettext as _
 import logging
 _logger = logging.getLogger('Calculate')
@@ -644,6 +645,17 @@ class Calculate(ShareableActivity):
             f.write(str(eq))
 
         f.close()
+
+        layout_color = self.layout.layout_bg
+        write_file_path = os.path.join(self.get_activity_root(), 'data', 'bg_color')
+        f = open(write_file_path, 'w')
+        for key, value in layout_color.items():
+            try:
+                colors = value.to_floats()
+            except:
+                colors = value.props.current_color.to_floats()
+            colors = key+' '+str(colors[0])+' '+str(colors[1])+' '+str(colors[2])+'\n'
+            f.write(colors)
 
     def read_file(self, file_path):
         """Read journal entries, version 1.0"""

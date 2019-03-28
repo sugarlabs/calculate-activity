@@ -211,7 +211,32 @@ class AlgebraToolbar(Gtk.Toolbar):
 
         self.show_all()
 
+class ColorToolbar(Gtk.Toolbar):
 
+    def __init__(self, layout):
+        Gtk.Toolbar.__init__(self)
+
+        self._set1_color = ToolButton(icon_name='set1', tooltip=_('Change Set1 Layout color'))
+        self._set1_color.connect('clicked', layout.__change_layout_color_cb, 'set1')
+        self.insert(self._set1_color, -1)
+
+        self._set2_color = ToolButton(icon_name='set2', tooltip=_('Change Set2 Layout color'))
+        self._set2_color.connect('clicked', layout.__change_layout_color_cb, 'set2')
+        self.insert(self._set2_color, -1)
+
+        self._set3_color = ToolButton(icon_name='set3', tooltip=_('Change Set3 Layout color'))
+        self._set3_color.connect('clicked', layout.__change_layout_color_cb, 'set3')
+        self.insert(self._set3_color, -1)
+
+        self._set4_color = ToolButton(icon_name='set4', tooltip=_('Change Set4 Layout color'))
+        self._set4_color.connect('clicked', layout.__change_layout_color_cb, 'set4')
+        self.insert(self._set4_color, -1)
+
+        self._set5_color = ToolButton(icon_name='set5', tooltip=_('Change Set5 Layout color'))
+        self._set5_color.connect('clicked', layout.__change_layout_color_cb, 'set5')
+        self.insert(self._set5_color, -1)
+
+        self.show_all()
 class TrigonometryToolbar(Gtk.Toolbar):
 
     def __init__(self, calc):

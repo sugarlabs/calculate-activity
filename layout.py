@@ -18,6 +18,8 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
+import os
+
 from gettext import gettext as _
 import gi
 gi.require_version('Gtk', '3.0')
@@ -31,14 +33,32 @@ from toolbars import AlgebraToolbar
 from toolbars import TrigonometryToolbar
 from toolbars import BooleanToolbar
 from toolbars import MiscToolbar
+from toolbars import ColorToolbar
 
 try:
     from sugar3.graphics.toolbarbox import ToolbarButton, ToolbarBox
+    from sugar3.graphics.toolbutton import ToolButton
     from sugar3.activity.widgets import ActivityToolbarButton
     from sugar3.activity.widgets import StopButton
+    from sugar3.graphics.alert import NotifyAlert
 except ImportError:
     pass
 
+
+def create_color(rf, gf, bf):
+    return Gdk.Color(int(rf * 0xFFFF), int(gf * 0xFFFF),
+                        int(bf * 0xFFFF))
+
+default_color_constants = {
+    'set1' : create_color(0.49, 1.00, 1.00),
+    'set2' : create_color(0.09, 0.61, 0.87),
+    'set3' : create_color(0.94, 0.27, 0.17),
+    'set4' : create_color(0.88, 0.94, 0.17),
+    'set5' : create_color(0.94, 0.54, 0.00)
+}
+
+def _notify_response_cb(notify, response, activity):
+    activity.remove_alert(notify)
 
 class CalcLayout:
 
@@ -61,7 +81,43 @@ class CalcLayout:
         self._var_textviews = {}
         self.graph_selected = None
 
+        self.layout_bg = None
+        self.font_fg = None
+
+        self.set_layout_bg(parent)
+        self.set_font_fg()
         self.create_dialog()
+
+    def set_layout_bg(self, parent):
+        temp_bg = {}
+        file_path = os.path.join(parent.get_activity_root(), 'data', 'bg_color')
+        try:
+            f = open(file_path, 'r')
+            for each_line in f:
+                each_line = each_line.rstrip('\n')
+                colors = each_line.split(' ')
+                key = colors[0]
+                temp_bg[key]= self.create_color(float(colors[1]), float(colors[2]), float(colors[3]))
+            self.layout_bg = temp_bg
+        except:
+            notify = NotifyAlert()
+            notify.props.title = _('Default Colors')
+            notify.props.msg = _('Loaded default layout colors')
+            notify.connect('response', _notify_response_cb, self._parent)
+            self._parent.add_alert(notify)
+            self.layout_bg = default_color_constants
+
+    def set_font_fg(self):
+        temp_fg = dict()
+        for count in range(1, 6):
+            key = 'set'+str(count)
+            color = self.layout_bg.get(key).to_floats()
+            brightness = (color[0]+color[1]+color[2])/3.0
+            if(brightness < 0.5):
+                temp_fg[key] = self.create_color(1.00, 1.00, 1.00)
+            else:
+                temp_fg[key] = self.create_color(0.00, 0.00, 0.00)
+        self.font_fg = dict(temp_fg)
 
     def create_color(self, rf, gf, bf):
         return Gdk.Color(int(rf * 0xFFFF), int(gf * 0xFFFF),
@@ -76,58 +132,58 @@ class CalcLayout:
         equ_sym = self._parent.ml.equ_sym
 
         self.button_data = [
-            # [x, y, width, label, bgcol, cb]
-            [0, 0, 2, 1, u'\u2190', self.col_gray3,
-                lambda w: self._parent.move_left()],
-            [2, 0, 2, 1, u'\u2192', self.col_gray3,
-                lambda w: self._parent.move_right()],
-            [4, 0, 2, 1, u'\u232B', self.col_gray3,
-                lambda w: self._parent.remove_character(-1)],
+            # [x, y, width, label, bgcol, cb, set]
+            [0, 0, 2, 1, u'\u2190', self.layout_bg.get('set1'),
+                lambda w: self._parent.move_left(), 'set1'],
+            [2, 0, 2, 1, u'\u2192', self.layout_bg.get('set1'),
+                lambda w: self._parent.move_right(), 'set1'],
+            [4, 0, 2, 1, u'\u232B', self.layout_bg.get('set1'),
+                lambda w: self._parent.remove_character(-1), 'set1'],
 
-            [0, 1, 1, 2, '7', self.col_gray2,
-                lambda w: self._parent.add_text('7')],
-            [1, 1, 1, 2, '8', self.col_gray2,
-                lambda w: self._parent.add_text('8')],
-            [2, 1, 1, 2, '9', self.col_gray2,
-                lambda w: self._parent.add_text('9')],
+            [0, 1, 1, 2, '7', self.layout_bg.get('set2'),
+                lambda w: self._parent.add_text('7'), 'set2'],
+            [1, 1, 1, 2, '8', self.layout_bg.get('set2'),
+                lambda w: self._parent.add_text('8'), 'set2'],
+            [2, 1, 1, 2, '9', self.layout_bg.get('set2'),
+                lambda w: self._parent.add_text('9'), 'set2'],
 
-            [0, 3, 1, 2, '4', self.col_gray2,
-                lambda w: self._parent.add_text('4')],
-            [1, 3, 1, 2, '5', self.col_gray2,
-                lambda w: self._parent.add_text('5')],
-            [2, 3, 1, 2, '6', self.col_gray2,
-                lambda w: self._parent.add_text('6')],
+            [0, 3, 1, 2, '4', self.layout_bg.get('set2'),
+                lambda w: self._parent.add_text('4'), 'set2'],
+            [1, 3, 1, 2, '5', self.layout_bg.get('set2'),
+                lambda w: self._parent.add_text('5'), 'set2'],
+            [2, 3, 1, 2, '6', self.layout_bg.get('set2'),
+                lambda w: self._parent.add_text('6'), 'set2'],
 
-            [0, 5, 1, 2, '1', self.col_gray2,
-                lambda w: self._parent.add_text('1')],
-            [1, 5, 1, 2, '2', self.col_gray2,
-                lambda w: self._parent.add_text('2')],
-            [2, 5, 1, 2, '3', self.col_gray2,
-                lambda w: self._parent.add_text('3')],
+            [0, 5, 1, 2, '1', self.layout_bg.get('set2'),
+                lambda w: self._parent.add_text('1'), 'set2'],
+            [1, 5, 1, 2, '2', self.layout_bg.get('set2'),
+                lambda w: self._parent.add_text('2'), 'set2'],
+            [2, 5, 1, 2, '3', self.layout_bg.get('set2'),
+                lambda w: self._parent.add_text('3'), 'set2'],
 
-            [0, 7, 2, 2, '0', self.col_gray2,
-                lambda w: self._parent.add_text('0')],
-            [2, 7, 1, 2, '.', self.col_gray2,
-                lambda w: self._parent.add_text('.')],
+            [0, 7, 2, 2, '0', self.layout_bg.get('set2'),
+                lambda w: self._parent.add_text('0'), 'set2'],
+            [2, 7, 1, 2, '.', self.layout_bg.get('set2'),
+                lambda w: self._parent.add_text('.'), 'set2'],
 
-            [3, 1, 3, 2, _('Clear'), self.col_gray1,
-             lambda w: self._parent.clear()],
+            [3, 1, 3, 2, _('Clear'), self.layout_bg.get('set3'),
+             lambda w: self._parent.clear(), 'set3'],
 
-            [3, 3, 1, 2, '+', self.col_gray3,
-                lambda w: self._parent.add_text('+')],
-            [4, 3, 1, 2, '-', self.col_gray3,
-                lambda w: self._parent.add_text('-')],
-            [5, 3, 1, 2, '(', self.col_gray3,
-             lambda w: self._parent.add_text('(')],
-            [3, 5, 1, 2, mul_sym, self.col_gray3,
-                lambda w: self._parent.add_text(mul_sym)],
-            [4, 5, 1, 2, div_sym, self.col_gray3,
-                lambda w: self._parent.add_text(div_sym)],
-            [5, 5, 1, 2, ')', self.col_gray3,
-                lambda w: self._parent.add_text(')')],
+            [3, 3, 1, 2, '+', self.layout_bg.get('set4'),
+                lambda w: self._parent.add_text('+'), 'set4'],
+            [4, 3, 1, 2, '-', self.layout_bg.get('set4'),
+                lambda w: self._parent.add_text('-'), 'set4'],
+            [5, 3, 1, 2, '(', self.layout_bg.get('set4'),
+             lambda w: self._parent.add_text('('), 'set4'],
+            [3, 5, 1, 2, mul_sym, self.layout_bg.get('set4'),
+                lambda w: self._parent.add_text(mul_sym), 'set4'],
+            [4, 5, 1, 2, div_sym, self.layout_bg.get('set4'),
+                lambda w: self._parent.add_text(div_sym), 'set4'],
+            [5, 5, 1, 2, ')', self.layout_bg.get('set4'),
+                lambda w: self._parent.add_text(')'), 'set4'],
 
-            [3, 7, 3, 2, equ_sym, self.col_gray1,
-                lambda w: self._parent.process()],
+            [3, 7, 3, 2, equ_sym, self.layout_bg.get('set5'),
+                lambda w: self._parent.process(), 'set5'],
         ]
 
     def create_dialog(self):
@@ -172,6 +228,12 @@ class CalcLayout:
         self._stop_separator.set_expand(True)
         self._stop_separator.show()
         self._toolbar_box.toolbar.insert(self._stop_separator, -1)
+
+        append('toolbar-color',
+               _('Change Layout Color'),
+               ColorToolbar(self),
+               -1)
+
         self._stop = StopButton(self._parent)
         self._toolbar_box.toolbar.insert(self._stop, -1)
         self._toolbar_box.show_all()
@@ -238,9 +300,9 @@ class CalcLayout:
         self.pad.set_column_spacing(6)
         self.create_button_data()
         self.buttons = {}
-        for x, y, w, h, cap, bgcol, cb in self.button_data:
+        for x, y, w, h, cap, bgcol, cb, set_key in self.button_data:
             button = self.create_button(
-                _(cap), cb, self.col_white, bgcol, w, h)
+                _(cap), cb, self.font_fg[set_key], bgcol, w, h)
             self.buttons[cap] = button
             self.pad.attach(button, x, y, w, h)
 
@@ -311,6 +373,27 @@ class CalcLayout:
 
         Gdk.Screen.get_default().connect('size-changed',
                                          self._configure_cb)
+
+    def _ColorToolbar__change_layout_color_cb(self, widget, set_index):
+        cdia = Gtk.ColorSelectionDialog("Select Layout Color", self._parent)
+        cdia.set_transient_for(self._parent)
+        cdia.set_modal(1)
+        response = cdia.run()
+        if response == -5:
+            color = cdia.get_color_selection().props.current_color
+            self.layout_bg[set_index] = color
+            self.set_font_fg()
+            for btn in self.button_data:
+                if(btn[7] == set_index):
+                    btn_width = btn[2]
+                    btn_height = btn[3]
+                    btn_label = btn[4]
+                    btn_bgcol = self.layout_bg[set_index]
+                    btn_fgcol = self.font_fg[set_index]
+                    self.modify_button_appearance(self.buttons[btn_label], btn_fgcol, btn_bgcol, btn_width, btn_height)
+            cdia.destroy()
+        elif response == -6:
+            cdia.destroy()
 
     def _configure_cb(self, event):
         # Maybe redo layout

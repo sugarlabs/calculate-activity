@@ -216,25 +216,45 @@ class ColorToolbar(Gtk.Toolbar):
     def __init__(self, layout):
         Gtk.Toolbar.__init__(self)
 
-        self._set1_color = ToolButton(icon_name='set1', tooltip=_('Change Set1 Layout color'))
-        self._set1_color.connect('clicked', layout.__change_layout_color_cb, 'set1')
-        self.insert(self._set1_color, -1)
+        self._0_color = ToolButton(icon_name='0', tooltip=_('Change color of digit 0'))
+        self._0_color.connect('clicked', layout.__change_layout_color_cb, '0')
+        self.insert(self._0_color, -1)
 
-        self._set2_color = ToolButton(icon_name='set2', tooltip=_('Change Set2 Layout color'))
-        self._set2_color.connect('clicked', layout.__change_layout_color_cb, 'set2')
-        self.insert(self._set2_color, -1)
+        self._1_color = ToolButton(icon_name='1', tooltip=_('Change color of digit 1'))
+        self._1_color.connect('clicked', layout.__change_layout_color_cb, '1')
+        self.insert(self._1_color, -1)
 
-        self._set3_color = ToolButton(icon_name='set3', tooltip=_('Change Set3 Layout color'))
-        self._set3_color.connect('clicked', layout.__change_layout_color_cb, 'set3')
-        self.insert(self._set3_color, -1)
+        self._2_color = ToolButton(icon_name='2', tooltip=_('Change color of digit 2'))
+        self._2_color.connect('clicked', layout.__change_layout_color_cb, '2')
+        self.insert(self._2_color, -1)
 
-        self._set4_color = ToolButton(icon_name='set4', tooltip=_('Change Set4 Layout color'))
-        self._set4_color.connect('clicked', layout.__change_layout_color_cb, 'set4')
-        self.insert(self._set4_color, -1)
+        self._3_color = ToolButton(icon_name='3', tooltip=_('Change color of digit 3'))
+        self._3_color.connect('clicked', layout.__change_layout_color_cb, '3')
+        self.insert(self._3_color, -1)
 
-        self._set5_color = ToolButton(icon_name='set5', tooltip=_('Change Set5 Layout color'))
-        self._set5_color.connect('clicked', layout.__change_layout_color_cb, 'set5')
-        self.insert(self._set5_color, -1)
+        self._4_color = ToolButton(icon_name='4', tooltip=_('Change color of digit 4'))
+        self._4_color.connect('clicked', layout.__change_layout_color_cb, '4')
+        self.insert(self._4_color, -1)
+
+        self._5_color = ToolButton(icon_name='5', tooltip=_('Change color of digit 5'))
+        self._5_color.connect('clicked', layout.__change_layout_color_cb, '5')
+        self.insert(self._5_color, -1)
+
+        self._6_color = ToolButton(icon_name='6', tooltip=_('Change color of digit 6'))
+        self._6_color.connect('clicked', layout.__change_layout_color_cb, '6')
+        self.insert(self._6_color, -1)
+
+        self._7_color = ToolButton(icon_name='7', tooltip=_('Change color of digit 7'))
+        self._7_color.connect('clicked', layout.__change_layout_color_cb, '7')
+        self.insert(self._7_color, -1)
+
+        self._8_color = ToolButton(icon_name='8', tooltip=_('Change color of digit 8'))
+        self._8_color.connect('clicked', layout.__change_layout_color_cb, '8')
+        self.insert(self._8_color, -1)
+
+        self._9_color = ToolButton(icon_name='9', tooltip=_('Change color of digit 9'))
+        self._9_color.connect('clicked', layout.__change_layout_color_cb, '9')
+        self.insert(self._9_color, -1)
 
         self.show_all()
 class TrigonometryToolbar(Gtk.Toolbar):

@@ -45,20 +45,29 @@ except ImportError:
     pass
 
 
-def create_color(rf, gf, bf):
-    return Gdk.Color(int(rf * 0xFFFF), int(gf * 0xFFFF),
-                        int(bf * 0xFFFF))
+def create_color(rf, gf, bf, alpha=1):
+    return Gdk.RGBA(rf, gf, bf, alpha)
+
+
+color_digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 default_color_constants = {
-    'set1' : create_color(0.49, 1.00, 1.00),
-    'set2' : create_color(0.09, 0.61, 0.87),
-    'set3' : create_color(0.94, 0.27, 0.17),
-    'set4' : create_color(0.88, 0.94, 0.17),
-    'set5' : create_color(0.94, 0.54, 0.00)
+    1: create_color(0.0, 0.0, 0.0),
+    2: create_color(0.3, 0.0, 0.1),
+    3: create_color(1.0, 0.0, 0.0),
+    4: create_color(1.0, 0.5, 0.0),
+    5: create_color(1.0, 1.0, 0.00),
+    6: create_color(0.0, 1.0, 0.00),
+    7: create_color(0.0, 0.0, 1.00),
+    8: create_color(1.0, 0.0, 1.00),
+    9: create_color(0.8, 0.8, 0.8),
+    0: create_color(1.0, 1.0, 1.00)
 }
+
 
 def _notify_response_cb(notify, response, activity):
     activity.remove_alert(notify)
+
 
 class CalcLayout:
 
@@ -81,14 +90,12 @@ class CalcLayout:
         self._var_textviews = {}
         self.graph_selected = None
 
-        self.layout_bg = None
-        self.font_fg = None
+        self.digit_color = {}
+        self.set_digit_color(parent)
 
-        self.set_layout_bg(parent)
-        self.set_font_fg()
         self.create_dialog()
 
-    def set_layout_bg(self, parent):
+    def set_digit_color(self, parent):
         temp_bg = {}
         file_path = os.path.join(parent.get_activity_root(), 'data', 'bg_color')
         try:
@@ -96,32 +103,17 @@ class CalcLayout:
             for each_line in f:
                 each_line = each_line.rstrip('\n')
                 colors = each_line.split(' ')
-                key = colors[0]
-                temp_bg[key]= self.create_color(float(colors[1]), float(colors[2]), float(colors[3]))
-            self.layout_bg = temp_bg
-        except:
+                num = colors[0]
+                temp_bg[int(num)] = create_color(float(colors[1]),
+                                    float(colors[2]), float(colors[3]))
+            self.digit_color = temp_bg
+        except IOError:
             notify = NotifyAlert()
             notify.props.title = _('Default Colors')
             notify.props.msg = _('Loaded default layout colors')
             notify.connect('response', _notify_response_cb, self._parent)
             self._parent.add_alert(notify)
-            self.layout_bg = default_color_constants
-
-    def set_font_fg(self):
-        temp_fg = dict()
-        for count in range(1, 6):
-            key = 'set'+str(count)
-            color = self.layout_bg.get(key).to_floats()
-            brightness = (color[0]+color[1]+color[2])/3.0
-            if(brightness < 0.5):
-                temp_fg[key] = self.create_color(1.00, 1.00, 1.00)
-            else:
-                temp_fg[key] = self.create_color(0.00, 0.00, 0.00)
-        self.font_fg = dict(temp_fg)
-
-    def create_color(self, rf, gf, bf):
-        return Gdk.Color(int(rf * 0xFFFF), int(gf * 0xFFFF),
-                         int(bf * 0xFFFF))
+            self.digit_color = default_color_constants
 
     def create_button_data(self):
         """Create a list with button information. We need to do that here
@@ -133,57 +125,57 @@ class CalcLayout:
 
         self.button_data = [
             # [x, y, width, label, bgcol, cb, set]
-            [0, 0, 2, 1, u'\u2190', self.layout_bg.get('set1'),
-                lambda w: self._parent.move_left(), 'set1'],
-            [2, 0, 2, 1, u'\u2192', self.layout_bg.get('set1'),
-                lambda w: self._parent.move_right(), 'set1'],
-            [4, 0, 2, 1, u'\u232B', self.layout_bg.get('set1'),
-                lambda w: self._parent.remove_character(-1), 'set1'],
+            [0, 0, 2, 1, u'\u2190', self.col_gray3,
+                lambda w: self._parent.move_left()],
+            [2, 0, 2, 1, u'\u2192', self.col_gray3,
+                lambda w: self._parent.move_right()],
+            [4, 0, 2, 1, u'\u232B', self.col_gray3,
+                lambda w: self._parent.remove_character(-1)],
 
-            [0, 1, 1, 2, '7', self.layout_bg.get('set2'),
-                lambda w: self._parent.add_text('7'), 'set2'],
-            [1, 1, 1, 2, '8', self.layout_bg.get('set2'),
-                lambda w: self._parent.add_text('8'), 'set2'],
-            [2, 1, 1, 2, '9', self.layout_bg.get('set2'),
-                lambda w: self._parent.add_text('9'), 'set2'],
+            [0, 1, 1, 2, '7', self.col_gray2,
+                lambda w: self._parent.add_text('7')],
+            [1, 1, 1, 2, '8', self.col_gray2,
+                lambda w: self._parent.add_text('8')],
+            [2, 1, 1, 2, '9', self.col_gray2,
+                lambda w: self._parent.add_text('9')],
 
-            [0, 3, 1, 2, '4', self.layout_bg.get('set2'),
-                lambda w: self._parent.add_text('4'), 'set2'],
-            [1, 3, 1, 2, '5', self.layout_bg.get('set2'),
-                lambda w: self._parent.add_text('5'), 'set2'],
-            [2, 3, 1, 2, '6', self.layout_bg.get('set2'),
-                lambda w: self._parent.add_text('6'), 'set2'],
+            [0, 3, 1, 2, '4', self.col_gray2,
+                lambda w: self._parent.add_text('4')],
+            [1, 3, 1, 2, '5', self.col_gray2,
+                lambda w: self._parent.add_text('5')],
+            [2, 3, 1, 2, '6', self.col_gray2,
+                lambda w: self._parent.add_text('6')],
 
-            [0, 5, 1, 2, '1', self.layout_bg.get('set2'),
-                lambda w: self._parent.add_text('1'), 'set2'],
-            [1, 5, 1, 2, '2', self.layout_bg.get('set2'),
-                lambda w: self._parent.add_text('2'), 'set2'],
-            [2, 5, 1, 2, '3', self.layout_bg.get('set2'),
-                lambda w: self._parent.add_text('3'), 'set2'],
+            [0, 5, 1, 2, '1', self.col_gray2,
+                lambda w: self._parent.add_text('1')],
+            [1, 5, 1, 2, '2', self.col_gray2,
+                lambda w: self._parent.add_text('2')],
+            [2, 5, 1, 2, '3', self.col_gray2,
+                lambda w: self._parent.add_text('3')],
 
-            [0, 7, 2, 2, '0', self.layout_bg.get('set2'),
-                lambda w: self._parent.add_text('0'), 'set2'],
-            [2, 7, 1, 2, '.', self.layout_bg.get('set2'),
-                lambda w: self._parent.add_text('.'), 'set2'],
+            [0, 7, 2, 2, '0', self.col_gray2,
+                lambda w: self._parent.add_text('0')],
+            [2, 7, 1, 2, '.', self.col_gray2,
+                lambda w: self._parent.add_text('.')],
 
-            [3, 1, 3, 2, _('Clear'), self.layout_bg.get('set3'),
-             lambda w: self._parent.clear(), 'set3'],
+            [3, 1, 3, 2, _('Clear'), self.col_gray1,
+             lambda w: self._parent.clear()],
 
-            [3, 3, 1, 2, '+', self.layout_bg.get('set4'),
-                lambda w: self._parent.add_text('+'), 'set4'],
-            [4, 3, 1, 2, '-', self.layout_bg.get('set4'),
-                lambda w: self._parent.add_text('-'), 'set4'],
-            [5, 3, 1, 2, '(', self.layout_bg.get('set4'),
-             lambda w: self._parent.add_text('('), 'set4'],
-            [3, 5, 1, 2, mul_sym, self.layout_bg.get('set4'),
-                lambda w: self._parent.add_text(mul_sym), 'set4'],
-            [4, 5, 1, 2, div_sym, self.layout_bg.get('set4'),
-                lambda w: self._parent.add_text(div_sym), 'set4'],
-            [5, 5, 1, 2, ')', self.layout_bg.get('set4'),
-                lambda w: self._parent.add_text(')'), 'set4'],
+            [3, 3, 1, 2, '+', self.col_gray3,
+                lambda w: self._parent.add_text('+')],
+            [4, 3, 1, 2, '-', self.col_gray3,
+                lambda w: self._parent.add_text('-')],
+            [5, 3, 1, 2, '(', self.col_gray3,
+             lambda w: self._parent.add_text('(')],
+            [3, 5, 1, 2, mul_sym, self.col_gray3,
+                lambda w: self._parent.add_text(mul_sym)],
+            [4, 5, 1, 2, div_sym, self.col_gray3,
+                lambda w: self._parent.add_text(div_sym)],
+            [5, 5, 1, 2, ')', self.col_gray3,
+                lambda w: self._parent.add_text(')')],
 
-            [3, 7, 3, 2, equ_sym, self.layout_bg.get('set5'),
-                lambda w: self._parent.process(), 'set5'],
+            [3, 7, 3, 2, equ_sym, self.col_gray1,
+                lambda w: self._parent.process()]
         ]
 
     def create_dialog(self):
@@ -229,6 +221,10 @@ class CalcLayout:
         self._stop_separator.show()
         self._toolbar_box.toolbar.insert(self._stop_separator, -1)
 
+        self._reset_button = ToolButton(icon_name='reset', tooltip=_('Reset default color layout'))
+        self._reset_button.connect('clicked', self._reset_default_color_layout)
+        self._toolbar_box.toolbar.insert(self._reset_button, -1)
+
         append('toolbar-color',
                _('Change Layout Color'),
                ColorToolbar(self),
@@ -242,12 +238,12 @@ class CalcLayout:
 # Some layout constants
         self.input_font = Pango.FontDescription('sans bold 12')
         self.button_font = Pango.FontDescription('sans bold 16')
-        self.col_white = self.create_color(1.00, 1.00, 1.00)
-        self.col_gray1 = self.create_color(0.76, 0.76, 0.76)
-        self.col_gray2 = self.create_color(0.50, 0.50, 0.50)
-        self.col_gray3 = self.create_color(0.25, 0.25, 0.25)
-        self.col_black = self.create_color(0.00, 0.00, 0.00)
-        self.col_red = self.create_color(1.00, 0.00, 0.00)
+        self.col_white = create_color(1.00, 1.00, 1.00)
+        self.col_gray1 = create_color(0.76, 0.76, 0.76)
+        self.col_gray2 = create_color(0.50, 0.50, 0.50)
+        self.col_gray3 = create_color(0.25, 0.25, 0.25)
+        self.col_black = create_color(0.00, 0.00, 0.00)
+        self.col_red = create_color(1.00, 0.00, 0.00)
 
 # Big - Table, 16 rows, 10 columns, homogeneously divided
         self.grid = Gtk.Grid()
@@ -260,17 +256,17 @@ class CalcLayout:
         hc1 = Gtk.HBox(False, 10)
         eb = Gtk.EventBox()
         eb.add(hc1)
-        eb.modify_bg(Gtk.StateType.NORMAL, self.col_black)
+        eb.override_background_color(Gtk.StateType.NORMAL, self.col_black)
         eb.set_border_width(12)
         eb2 = Gtk.EventBox()
         eb2.add(eb)
-        eb2.modify_bg(Gtk.StateType.NORMAL, self.col_black)
+        eb2.override_background_color(Gtk.StateType.NORMAL, self.col_black)
         label1 = Gtk.Label(label=_('Label:'))
-        label1.modify_fg(Gtk.StateType.NORMAL, self.col_white)
+        label1.override_color(Gtk.StateType.NORMAL, self.col_white)
         label1.set_alignment(1, 0.5)
         hc1.pack_start(label1, expand=False, fill=False, padding=10)
         self.label_entry = Gtk.Entry()
-        self.label_entry.modify_bg(Gtk.StateType.INSENSITIVE, self.col_black)
+        self.label_entry.override_background_color(Gtk.StateFlags.INSENSITIVE, self.col_black)
         hc1.pack_start(self.label_entry, expand=True, fill=True, padding=0)
         vc1.pack_start(eb2, False, True, 0)
 
@@ -282,14 +278,14 @@ class CalcLayout:
         self.text_entry.set_size_request(-1, 75)
         self.text_entry.connect('key_press_event', self._parent.ignore_key_cb)
         self.text_entry.modify_font(self.input_font)
-        self.text_entry.modify_bg(Gtk.StateType.INSENSITIVE, self.col_black)
+        self.text_entry.override_background_color(Gtk.StateFlags.INSENSITIVE, self.col_black)
         eb = Gtk.EventBox()
         eb.add(self.text_entry)
-        eb.modify_bg(Gtk.StateType.NORMAL, self.col_black)
+        eb.override_background_color(Gtk.StateFlags.NORMAL, self.col_black)
         eb.set_border_width(12)
         eb2 = Gtk.EventBox()
         eb2.add(eb)
-        eb2.modify_bg(Gtk.StateType.NORMAL, self.col_black)
+        eb2.override_background_color(Gtk.StateType.NORMAL, self.col_black)
         vc1.pack_start(eb2, expand=True, fill=True, padding=0)
         self.grid.attach(vc1, 0, 0, 7, 6)
 
@@ -300,15 +296,19 @@ class CalcLayout:
         self.pad.set_column_spacing(6)
         self.create_button_data()
         self.buttons = {}
-        for x, y, w, h, cap, bgcol, cb, set_key in self.button_data:
+        for x, y, w, h, cap, bgcol, cb in self.button_data:
+            if cap in color_digits:
+                fgcol = self.digit_color[int(cap)]
+            else:
+                fgcol = self.col_black
             button = self.create_button(
-                _(cap), cb, self.font_fg[set_key], bgcol, w, h)
+                _(cap), cb, fgcol, bgcol, w, h)
             self.buttons[cap] = button
             self.pad.attach(button, x, y, w, h)
 
         eb = Gtk.EventBox()
         eb.add(self.pad)
-        eb.modify_bg(Gtk.StateType.NORMAL, self.col_black)
+        eb.override_background_color(Gtk.StateType.NORMAL, self.col_black)
         self.grid.attach(eb, 0, 6, 7, 20)
 
 # Right part: container and equation button
@@ -344,9 +344,9 @@ class CalcLayout:
             Gdk.color_parse(xo_color.get_fill_color()).green_float +
             Gdk.color_parse(xo_color.get_fill_color()).blue_float) / 3.0
         if bright < 0.5:
-            self.last_eq.modify_text(Gtk.StateType.NORMAL, self.col_white)
+            self.last_eq.modify_text(Gtk.StateType.NORMAL, self.col_white.to_color())
         else:
-            self.last_eq.modify_text(Gtk.StateType.NORMAL, self.col_black)
+            self.last_eq.modify_text(Gtk.StateType.NORMAL, self.col_black.to_color())
 
         self.grid.attach(self.last_eq, 7, 2, 4, 5)
 
@@ -374,26 +374,36 @@ class CalcLayout:
         Gdk.Screen.get_default().connect('size-changed',
                                          self._configure_cb)
 
-    def _ColorToolbar__change_layout_color_cb(self, widget, set_index):
+    def _ColorToolbar__change_layout_color_cb(self, widget, num):
         cdia = Gtk.ColorSelectionDialog("Select Layout Color", self._parent)
         cdia.set_transient_for(self._parent)
         cdia.set_modal(1)
         response = cdia.run()
         if response == -5:
-            color = cdia.get_color_selection().props.current_color
-            self.layout_bg[set_index] = color
-            self.set_font_fg()
+            color = cdia.get_color_selection().props.current_color.to_floats()
+            self.digit_color[int(num)] = create_color(color[0], color[1], color[2])
             for btn in self.button_data:
-                if(btn[7] == set_index):
+                if(btn[4] == num):
                     btn_width = btn[2]
                     btn_height = btn[3]
                     btn_label = btn[4]
-                    btn_bgcol = self.layout_bg[set_index]
-                    btn_fgcol = self.font_fg[set_index]
+                    btn_bgcol = self.col_gray2
+                    btn_fgcol = self.digit_color[int(num)]
                     self.modify_button_appearance(self.buttons[btn_label], btn_fgcol, btn_bgcol, btn_width, btn_height)
             cdia.destroy()
         elif response == -6:
             cdia.destroy()
+
+    def _reset_default_color_layout(self, button):
+        self.digit_color = default_color_constants
+        for button in self.button_data:
+            label = button[4]
+            if label in color_digits:
+                fg_color = self.digit_color[int(label)]
+                bg_color = self.col_gray2
+                width = button[2]
+                height = button[3]
+                self.modify_button_appearance(self.buttons[label], fg_color, bg_color, width, height)
 
     def _configure_cb(self, event):
         # Maybe redo layout
@@ -430,8 +440,8 @@ class CalcLayout:
             widget.set_visible_window(True)
             widget.set_above_child(True)
             self.graph_selected = widget
-            white = Gdk.color_parse('white')
-            widget.modify_bg(Gtk.StateType.NORMAL, white)
+            white = create_color(1.0, 1.0, 1.0)
+            widget.override_background_color(Gtk.StateType.NORMAL, white)
         else:
             widget.set_visible_window(False)
             self.graph_selected = False
@@ -534,9 +544,9 @@ class CalcLayout:
         height = 50 * height
         button.get_child().set_size_request(width, height)
         button.get_child().modify_font(self.button_font)
-        button.get_child().modify_fg(Gtk.StateType.NORMAL, fgcol)
-        button.modify_bg(Gtk.StateType.NORMAL, bgcol)
-        button.modify_bg(Gtk.StateType.PRELIGHT, bgcol)
+        button.get_child().override_color(Gtk.StateType.NORMAL, fgcol)
+        button.override_background_color(Gtk.StateFlags.NORMAL, bgcol)
+        button.override_background_color(Gtk.StateFlags.PRELIGHT, bgcol)
 
     def _history_filter_cb(self, combo):
         selection = combo.get_active()

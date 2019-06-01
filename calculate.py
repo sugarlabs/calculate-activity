@@ -646,15 +646,12 @@ class Calculate(ShareableActivity):
 
         f.close()
 
-        layout_color = self.layout.layout_bg
+        layout_color = self.layout.digit_color
         write_file_path = os.path.join(self.get_activity_root(), 'data', 'bg_color')
         f = open(write_file_path, 'w')
-        for key, value in layout_color.items():
-            try:
-                colors = value.to_floats()
-            except:
-                colors = value.props.current_color.to_floats()
-            colors = key+' '+str(colors[0])+' '+str(colors[1])+' '+str(colors[2])+'\n'
+        for num, value in layout_color.items():
+            colors = value.to_color().to_floats()
+            colors = str(num) + ' ' + str(colors[0]) + ' ' + str(colors[1]) + ' ' + str(colors[2]) + '\n'
             f.write(colors)
 
     def read_file(self, file_path):

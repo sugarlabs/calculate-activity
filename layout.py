@@ -85,12 +85,14 @@ class CalcLayout:
         self.graph_selected = None
 
         self.digit_color = {}
-        self.set_digit_color(parent)
+        self.set_button_color(parent)
 
         self.create_dialog()
 
-    def set_digit_color(self, parent):
-        temp_bg = {}
+    def set_digit_color(self, bgcol):
+        
+
+    def set_button_color(self, parent):
         file_path = os.path.join(parent.get_activity_root(), 'data', 'bg_color')
         try:
             f = open(file_path, 'r')
@@ -98,9 +100,8 @@ class CalcLayout:
                 each_line = each_line.rstrip('\n')
                 colors = each_line.split(' ')
                 num = colors[0]
-                temp_bg[int(num)] = create_color(float(colors[1]),
+                self.digit_color[int(num)] = create_color(float(colors[1]),
                                     float(colors[2]), float(colors[3]))
-            self.digit_color = temp_bg
         except IOError:
             pass
 
@@ -113,7 +114,7 @@ class CalcLayout:
         equ_sym = self._parent.ml.equ_sym
 
         self.button_data = [
-            # [x, y, width, label, bgcol, cb, set]
+            # [x, y, width, label, bgcol, cb]
             [0, 0, 2, 1, u'\u2190', self.col_gray3,
                 lambda w: self._parent.move_left()],
             [2, 0, 2, 1, u'\u2192', self.col_gray3,
@@ -121,28 +122,28 @@ class CalcLayout:
             [4, 0, 2, 1, u'\u232B', self.col_gray3,
                 lambda w: self._parent.remove_character(-1)],
 
-            [0, 1, 1, 2, '7', self.col_gray2,
+            [0, 1, 1, 2, '7', self.digit_color[7],
                 lambda w: self._parent.add_text('7')],
-            [1, 1, 1, 2, '8', self.col_gray2,
+            [1, 1, 1, 2, '8', self.digit_color[8],
                 lambda w: self._parent.add_text('8')],
-            [2, 1, 1, 2, '9', self.col_gray2,
+            [2, 1, 1, 2, '9', self.digit_color[9],
                 lambda w: self._parent.add_text('9')],
 
-            [0, 3, 1, 2, '4', self.col_gray2,
+            [0, 3, 1, 2, '4', self.digit_color[4],
                 lambda w: self._parent.add_text('4')],
-            [1, 3, 1, 2, '5', self.col_gray2,
+            [1, 3, 1, 2, '5', self.digit_color[5],
                 lambda w: self._parent.add_text('5')],
-            [2, 3, 1, 2, '6', self.col_gray2,
+            [2, 3, 1, 2, '6', self.digit_color[6],
                 lambda w: self._parent.add_text('6')],
 
-            [0, 5, 1, 2, '1', self.col_gray2,
+            [0, 5, 1, 2, '1', self.digit_color[1],
                 lambda w: self._parent.add_text('1')],
-            [1, 5, 1, 2, '2', self.col_gray2,
+            [1, 5, 1, 2, '2', self.digit_color[2],
                 lambda w: self._parent.add_text('2')],
-            [2, 5, 1, 2, '3', self.col_gray2,
+            [2, 5, 1, 2, '3', self.digit_color[3],
                 lambda w: self._parent.add_text('3')],
 
-            [0, 7, 2, 2, '0', self.col_gray2,
+            [0, 7, 2, 2, '0', self.digit_color[0],
                 lambda w: self._parent.add_text('0')],
             [2, 7, 1, 2, '.', self.col_gray2,
                 lambda w: self._parent.add_text('.')],
@@ -204,11 +205,6 @@ class CalcLayout:
                _('Miscellaneous'),
                self._misc_toolbar,
                5)
-        self._stop_separator = Gtk.SeparatorToolItem()
-        self._stop_separator.props.draw = False
-        self._stop_separator.set_expand(True)
-        self._stop_separator.show()
-        self._toolbar_box.toolbar.insert(self._stop_separator, -1)
 
         self._reset_button = ToolButton(icon_name='reset', tooltip=_('Reset default color layout'))
         self._reset_button.connect('clicked', self._reset_default_color_layout)
@@ -218,6 +214,11 @@ class CalcLayout:
                _('Change Layout Color'),
                ColorToolbar(self),
                -1)
+        self._stop_separator = Gtk.SeparatorToolItem()
+        self._stop_separator.props.draw = False
+        self._stop_separator.set_expand(True)
+        self._stop_separator.show()
+        self._toolbar_box.toolbar.insert(self._stop_separator, -1)
 
         self._stop = StopButton(self._parent)
         self._toolbar_box.toolbar.insert(self._stop, -1)
@@ -286,12 +287,8 @@ class CalcLayout:
         self.create_button_data()
         self.buttons = {}
         for x, y, w, h, cap, bgcol, cb in self.button_data:
-            if cap in color_digits:
-                fgcol = self.digit_color[int(cap)]
-            else:
-                fgcol = self.col_black
             button = self.create_button(
-                _(cap), cb, fgcol, bgcol, w, h)
+                _(cap), cb, self.col_white, bgcol, w, h)
             self.buttons[cap] = button
             self.pad.attach(button, x, y, w, h)
 
@@ -376,8 +373,8 @@ class CalcLayout:
                     btn_width = btn[2]
                     btn_height = btn[3]
                     btn_label = btn[4]
-                    btn_bgcol = self.col_gray2
-                    btn_fgcol = self.digit_color[int(num)]
+                    btn_bgcol = self.digit_color[int(num)]
+                    btn_fgcol = self.col_white
                     self.modify_button_appearance(self.buttons[btn_label], btn_fgcol, btn_bgcol, btn_width, btn_height)
             cdia.destroy()
         elif response == -6:
@@ -388,11 +385,10 @@ class CalcLayout:
         for button in self.button_data:
             label = button[4]
             if label in color_digits:
-                fg_color = self.digit_color[int(label)]
-                bg_color = self.col_gray2
+                bg_color = self.digit_color[int(label)]
                 width = button[2]
                 height = button[3]
-                self.modify_button_appearance(self.buttons[label], fg_color, bg_color, width, height)
+                self.modify_button_appearance(self.buttons[label], self.col_white, bg_color, width, height)
 
     def _configure_cb(self, event):
         # Maybe redo layout

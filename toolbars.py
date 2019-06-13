@@ -374,6 +374,7 @@ class MiscToolbar(Gtk.Toolbar):
 
         self._line_separator1 = LineSeparator()
         self._line_separator2 = LineSeparator()
+        self._line_separator3 = LineSeparator()
 
         self._plot_button = IconToolButton(
             'plot', _('Plot'),
@@ -442,6 +443,7 @@ class MiscToolbar(Gtk.Toolbar):
         target_toolbar.insert(self._format_button, -1)
         target_toolbar.insert(self._digits_button, -1)
         target_toolbar.insert(self._base_button, -1)
+        target_toolbar.insert(self._line_separator3, -1)
 
     def _remove_buttons(self, toolbar):
         for item in [self._plot_button, self._line_separator1,

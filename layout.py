@@ -40,7 +40,6 @@ try:
     from sugar3.graphics.toolbutton import ToolButton
     from sugar3.activity.widgets import ActivityToolbarButton
     from sugar3.activity.widgets import StopButton
-    from sugar3.graphics.alert import NotifyAlert
 except ImportError:
     pass
 
@@ -63,11 +62,6 @@ default_color_constants = {
     9: create_color(0.8, 0.8, 0.8),
     0: create_color(1.0, 1.0, 1.00)
 }
-
-
-def _notify_response_cb(notify, response, activity):
-    activity.remove_alert(notify)
-
 
 class CalcLayout:
 
@@ -108,12 +102,7 @@ class CalcLayout:
                                     float(colors[2]), float(colors[3]))
             self.digit_color = temp_bg
         except IOError:
-            notify = NotifyAlert()
-            notify.props.title = _('Default Colors')
-            notify.props.msg = _('Loaded default layout colors')
-            notify.connect('response', _notify_response_cb, self._parent)
-            self._parent.add_alert(notify)
-            self.digit_color = default_color_constants
+            pass
 
     def create_button_data(self):
         """Create a list with button information. We need to do that here

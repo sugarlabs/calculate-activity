@@ -55,12 +55,12 @@ default_color_constants = {
     2: create_color(0.3, 0.0, 0.1),
     3: create_color(1.0, 0.0, 0.0),
     4: create_color(1.0, 0.5, 0.0),
-    5: create_color(1.0, 1.0, 0.00),
-    6: create_color(0.0, 1.0, 0.00),
-    7: create_color(0.0, 0.0, 1.00),
-    8: create_color(1.0, 0.0, 1.00),
+    5: create_color(1.0, 1.0, 0.0),
+    6: create_color(0.0, 1.0, 0.0),
+    7: create_color(0.0, 0.0, 1.0),
+    8: create_color(1.0, 0.0, 1.0),
     9: create_color(0.8, 0.8, 0.8),
-    0: create_color(1.0, 1.0, 1.00)
+    0: create_color(1.0, 1.0, 1.0)
 }
 
 class CalcLayout:
@@ -83,16 +83,19 @@ class CalcLayout:
         self._showing_all_history = True
         self._var_textviews = {}
         self.graph_selected = None
-
         self.digit_color = {}
-        self.set_button_color(parent)
-
+        self.preset_default_color(parent)
         self.create_dialog()
 
     def set_digit_color(self, bgcol):
-        
+        r, g, b = bgcol.to_color().to_floats()
+        bright = (r + g + b) / 3.0
+        if bright < 0.5:
+            return self.col_white
+        else:
+            return self.col_black
 
-    def set_button_color(self, parent):
+    def preset_default_color(self, parent):
         file_path = os.path.join(parent.get_activity_root(), 'data', 'bg_color')
         try:
             f = open(file_path, 'r')
@@ -103,7 +106,8 @@ class CalcLayout:
                 self.digit_color[int(num)] = create_color(float(colors[1]),
                                     float(colors[2]), float(colors[3]))
         except IOError:
-            pass
+            for num in range(0, 10):
+                self.digit_color[num] = create_color(0.50, 0.50, 0.50)
 
     def create_button_data(self):
         """Create a list with button information. We need to do that here
@@ -206,8 +210,12 @@ class CalcLayout:
                self._misc_toolbar,
                5)
 
-        self._reset_button = ToolButton(icon_name='reset', tooltip=_('Reset default color layout'))
-        self._reset_button.connect('clicked', self._reset_default_color_layout)
+        self._preset_button = ToolButton(icon_name='preset', tooltip=_('Set color layout'))
+        self._preset_button.connect('clicked', self._use_preset_color)
+        self._toolbar_box.toolbar.insert(self._preset_button, -1)
+
+        self._reset_button = ToolButton(icon_name='reset', tooltip=_('Revert back to default color layout'))
+        self._reset_button.connect('clicked', self._reset_layout)
         self._toolbar_box.toolbar.insert(self._reset_button, -1)
 
         append('toolbar-color',
@@ -287,8 +295,9 @@ class CalcLayout:
         self.create_button_data()
         self.buttons = {}
         for x, y, w, h, cap, bgcol, cb in self.button_data:
+            fgcol = self.set_digit_color(bgcol)
             button = self.create_button(
-                _(cap), cb, self.col_white, bgcol, w, h)
+                _(cap), cb, fgcol, bgcol, w, h)
             self.buttons[cap] = button
             self.pad.attach(button, x, y, w, h)
 
@@ -374,21 +383,32 @@ class CalcLayout:
                     btn_height = btn[3]
                     btn_label = btn[4]
                     btn_bgcol = self.digit_color[int(num)]
-                    btn_fgcol = self.col_white
+                    btn_fgcol = self.set_digit_color(btn_bgcol)
                     self.modify_button_appearance(self.buttons[btn_label], btn_fgcol, btn_bgcol, btn_width, btn_height)
             cdia.destroy()
         elif response == -6:
             cdia.destroy()
 
-    def _reset_default_color_layout(self, button):
-        self.digit_color = default_color_constants
+    def change_layout_color(self):
         for button in self.button_data:
             label = button[4]
             if label in color_digits:
                 bg_color = self.digit_color[int(label)]
+                if label == '4':
                 width = button[2]
                 height = button[3]
-                self.modify_button_appearance(self.buttons[label], self.col_white, bg_color, width, height)
+                fg_color = self.set_digit_color(bg_color)
+                self.modify_button_appearance(self.buttons[label], fg_color, bg_color, width, height)
+
+    def _reset_layout(self, reset_btn):
+        for num in range(0, 10):
+            self.digit_color[num] = self.col_gray2
+        self.change_layout_color()
+
+    def _use_preset_color(self, preset_btn):
+        for num in range(0, 10):
+            self.digit_color[num] = default_color_constants[num]
+        self.change_layout_color()
 
     def _configure_cb(self, event):
         # Maybe redo layout

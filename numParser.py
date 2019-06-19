@@ -24,16 +24,18 @@ elif locale[0:3] in {'ml_'}:
 else:
     localDic = arabic
 
-standardDic = {v:k for k, v in localDic.items()}
+standardDic = {v: k for k, v in localDic.items()}
+
 
 def local(standardString):
     result = u''
     for c in standardString:
         if c.encode('utf-8') in standardDic:
-            result =  result + standardDic[c]
+            result = result + standardDic[c]
         else:
             result = result + c
     return result
+
 
 def standard(localString):
     localString = localString.decode('utf-8')

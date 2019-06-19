@@ -394,7 +394,6 @@ class CalcLayout:
             label = button[4]
             if label in color_digits:
                 bg_color = self.digit_color[int(label)]
-                if label == '4':
                 width = button[2]
                 height = button[3]
                 fg_color = self.set_digit_color(bg_color)

@@ -371,6 +371,8 @@ class CalcLayout:
 
     def _ColorToolbar__change_layout_color_cb(self, widget, num):
         cdia = Gtk.ColorSelectionDialog("Select Layout Color", self._parent)
+        colorsel = cdia.get_color_selection()
+        colorsel.set_current_rgba(self.digit_color[int(num)])
         cdia.set_transient_for(self._parent)
         cdia.set_modal(1)
         response = cdia.run()

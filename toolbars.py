@@ -211,6 +211,7 @@ class AlgebraToolbar(Gtk.Toolbar):
 
         self.show_all()
 
+
 class ColorToolbar(Gtk.Toolbar):
 
     def __init__(self, layout):
@@ -227,6 +228,8 @@ class ColorToolbar(Gtk.Toolbar):
             self.color_buttons.append(btn)
 
         self.show_all()
+
+
 class TrigonometryToolbar(Gtk.Toolbar):
 
     def __init__(self, calc):

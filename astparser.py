@@ -492,9 +492,6 @@ class AstParser:
                 raise ArgumentError(msg)
 
         elif isinstance(node, ast.Num):
-            if isinstance(node.n, float):
-                val = decimal.Decimal(str(node.n))
-                return val
             return node.n
 
         elif isinstance(node, ast.Str):

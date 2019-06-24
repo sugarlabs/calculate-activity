@@ -52,7 +52,7 @@ except:
 
 
 class MathLib:
-    ANGLE_DEG = Decimal(math.pi / 180)
+    ANGLE_DEG = math.pi / 180
     ANGLE_RAD = 1
     ANGLE_GRAD = 1
 

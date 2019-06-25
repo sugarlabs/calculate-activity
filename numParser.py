@@ -5,10 +5,10 @@ locale = os.getenv('LANG', u'en_US.utf8')
 
 # Define local dicts
 arabic = {u'0': u'0', u'1': u'1', u'2': u'2', u'3': u'3', u'4': u'4', u'5': u'5', u'6': u'6', u'7': u'7', u'8': u'8', u'9': u'9'}
-indic = {u'۰': u'0', u'۱': u'1', u'۲': u'2', u'۳': u'3', u'۴': u'4', u'۵': u'5', u'۶': u'6', u'۷': u'7', u'۸': u'8', u'۹': u'9'}
+indic = {u'۰': u'0', u'۱': u'1', u'٢': u'2', u'٣': u'3', u'۴': u'4', u'۵': u'5', u'۶': u'6', u'۷': u'7', u'۸': u'8', u'۹': u'9'}
 tamil = {u'௦': u'0', u'௧': u'1', u'௨': u'2', u'௩': u'3', u'௪': u'4', u'௫': u'5', u'௬': u'6', u'௭': u'7', u'௮': u'8', u'௯': u'9'}
 devanagari = {u'०': u'0', u'१': u'1', u'२': u'2', u'३': u'3', u'४': u'4', u'५': u'5', u'६': u'6', u'७': u'7', u'८': u'8', u'९': u'9'}
-kannada = {u'0': u'0', u'౧': u'1', u'౨': u'2', u'౩': u'3', u'౪': u'4', u'౫': u'5', u'౬': u'6', u'౭': u'7', u'౮': u'8', u'౯': u'9'}
+kannada = {u'೦': u'0', u'౧': u'1', u'೨': u'2', u'೩': u'3', u'౪': u'4', u'೫': u'5', u'೬': u'6', u'೭': u'7', u'౮': u'8', u'౯': u'9'}
 malayam = {u'൦': u'0', u'൧': u'1', u'൨': u'2', u'൩': u'3', u'൪': u'4', u'൫': u'5', u'൬': u'6', u'൭': u'7', u'൮': u'8', u'൯': u'9'}
 
 if locale in ['ar_SA.utf8', 'ar_YE.utf8', 'ar_AE.utf8', 'ar_SY.utf8', 'ar_OM.utf8', 'ar_JO.utf8', 'ar_IQ.utf8', 'ar_KW.utf8', 'ar_LB.utf8', 'ar_IQ.utf8', 'ar_SD.utf8', 'ar_EG.utf8', 'fa_IR.utf8']:

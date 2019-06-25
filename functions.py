@@ -42,6 +42,7 @@ _FUNCTIONS = [
     _('atanh'),
     _('and'),
     _('b10bin'),
+    _('ceil'),
     _('cos'),
     _('cosh'),
     _('div'),
@@ -59,7 +60,7 @@ _FUNCTIONS = [
     _('or'),
     _('rand_float'),
     _('rand_int'),
-    _('round'),
+    _('round_to_integer'),
     _('sin'),
     _('sinh'),
     _('sinc'),
@@ -69,7 +70,6 @@ _FUNCTIONS = [
     _('tan'),
     _('tanh'),
     _('xor'),
-    _('significant')
 ]
 
 
@@ -223,6 +223,11 @@ def b10bin(x):
 b10bin.__doc__ = _(
     'b10bin(x), interpret a number written in base 10 as binary, e.g.: \
 b10bin(10111) = 23,')
+
+
+def ceil(x):
+    return math.ceil(float(x))
+ceil.__doc__ = _('ceil(x), return the smallest integer larger than x.')
 
 
 def cos(x):
@@ -470,6 +475,11 @@ rand_int.__doc__ = _(
 <maxval> is an optional argument and is set to 65535 by default.')
 
 
+def round_to_integer(x):
+    return int(round(float(x)))
+round_to_integer.__doc__ = _('round_to_integer(x), return the integer nearest to x.')
+
+
 def shift_left(x, y):
     if is_int(x) and is_int(y):
         return _d(int(x) << int(y))
@@ -549,10 +559,10 @@ def tan(x):
         return 0
     x = math.tan(_scale_angle(x))
     n = significant(x)
-    if n > 6:
-        n = 6
     if(n > 15):
         return 'Infinity'
+    if n > 6:
+        n = 6
     return round(x, n)
 tan.__doc__ = _(
     'tan(x), return the tangent of x. This is the slope of the line \
@@ -573,17 +583,18 @@ tanh.__doc__ = _(
 def xor(x, y):
     return x ^ y
 xor.__doc__ = _(
-    'xor(x, y), logical xor. Returns True if either x is True (and y is False) \
-or y is True (and x is False), else returns False')
+    'xor(x, y), logical xor. Returns True if either x is True \
+(and y is False) or y is True (and x is False), else returns False')
 
 
 def significant(x):
     x = str(x)
     if '.' in x:
-        integral, fraction = x.split('.')
+        integer, fraction = x.split('.')
         fraction = fraction.lstrip('0')
-        integral = integral.lstrip('0')
-        return len(integral) + len(fraction)
+        integer = integer.lstrip('0')
+        integer = integer.rstrip('0')
+        return len(integer) + len(fraction)
     else:
         x = x.lstrip('0')
         return len(x)

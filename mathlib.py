@@ -228,8 +228,8 @@ class MathLib:
         elif isinstance(n, int):
             n = self.d(n)
         elif isinstance(n, float):
-            n = self.d(n)
-        elif isinstance(n, int):
+            n = self.d(str(n))
+        elif isinstance(n, long):
             n = self.d(n)
         elif isinstance(n, Rational):
             n = self.d(Decimal(n.n) / Decimal(n.d))

@@ -356,9 +356,10 @@ class MiscToolbar(Gtk.Toolbar):
 
         el = [
             {'icon': 'digits-9', 'html': '9'},
+            {'icon': 'digits-3', 'html': '3'},
+            {'icon': 'digits-6', 'html': '6'},
             {'icon': 'digits-12', 'html': '12'},
             {'icon': 'digits-15', 'html': '15'},
-            {'icon': 'digits-6', 'html': '6'},
         ]
         self._digits_button = IconToggleToolButton(
             el,

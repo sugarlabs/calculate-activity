@@ -125,8 +125,6 @@ def acos(x):
     else:
         x = _inv_scale_angle(math.acos(x))
         n = significant(x)
-        if n > 6:
-            n = 6
         return round(x, n)
 acos.__doc__ = _(
     'acos(x), return the arc cosine of x. This is the angle for which the \
@@ -136,8 +134,6 @@ cosine is x. Defined for -1 <= x < 1')
 def acosh(x):
     x = math.acosh(x)
     n = significant(x)
-    if n > 6:
-        n = 6
     return round(x, n)
 acosh.__doc__ = _(
     'acosh(x), return the arc hyperbolic cosine of x. This is the value y \
@@ -165,8 +161,6 @@ def asin(x):
     else:
         x = _inv_scale_angle(math.asin(x))
         n = significant(x)
-        if n > 6:
-            n = 6
         return round(x, n)
 asin.__doc__ = _(
     'asin(x), return the arc sine of x. This is the angle for which \
@@ -176,8 +170,6 @@ the sine is x. Defined for -1 <= x <= 1')
 def asinh(x):
     x = math.asinh(x)
     n = significant(x)
-    if n > 6:
-        n = 6
     return round(x, n)
 asinh.__doc__ = _(
     'asinh(x), return the arc hyperbolic sine of x. This is the value y for \
@@ -187,8 +179,6 @@ which the hyperbolic sine equals x.')
 def atan(x):
     x = _inv_scale_angle(math.atan(x))
     n = significant(x)
-    if n > 6:
-        n = 6
     return round(x, n)
 atan.__doc__ = _(
     'atan(x), return the arc tangent of x. This is the angle for \
@@ -198,8 +188,6 @@ which the tangent is x. Defined for all x')
 def atanh(x):
     x = math.atanh(x)
     n = significant(x)
-    if n > 6:
-        n = 6
     return round(x, n)
 atanh.__doc__ = _(
     'atanh(x), return the arc hyperbolic tangent of x. \
@@ -235,8 +223,6 @@ def cos(x):
         return 0
     x = math.cos(_scale_angle(x))
     n = significant(x)
-    if n > 6:
-        n = 6
     return round(x, n)
 cos.__doc__ = _(
     'cos(x), return the cosine of x. This is the x-coordinate on \
@@ -246,8 +232,6 @@ the unit circle at the angle x')
 def cosh(x):
     x = math.cosh(x)
     n = significant(x)
-    if n > 6:
-        n = 6
     return round(x, n)
 cosh.__doc__ = _(
     'cosh(x), return the hyperbolic cosine of x.\
@@ -503,8 +487,6 @@ def sin(x):
         return 0
     x = math.sin(_scale_angle(x))
     n = significant(x)
-    if n > 6:
-        n = 6
     return round(x, n)
 sin.__doc__ = _(
     'sin(x), return the sine of x. This is the y-coordinate on the \
@@ -514,8 +496,6 @@ unit circle at the angle x')
 def sinh(x):
     x = math.sinh(x)
     n = significant(x)
-    if n > 6:
-        n = 6
     return round(x, n)
 sinh.__doc__ = _(
     'sinh(x), return the hyperbolic sine of x. \
@@ -527,8 +507,6 @@ def sinc(x):
         return 1
     x = sin(x) / x
     n = significant(x)
-    if n > 6:
-        n = 6
     return round(x, n)
 sinc.__doc__ = _(
     'sinc(x), return the sinc of x. This is given by sin(x) / x.')
@@ -561,8 +539,6 @@ def tan(x):
     n = significant(x)
     if(n > 15):
         return 'Infinity'
-    if n > 6:
-        n = 6
     return round(x, n)
 tan.__doc__ = _(
     'tan(x), return the tangent of x. This is the slope of the line \
@@ -573,8 +549,6 @@ defined by the angle x. Given by sin(x) / cos(x)')
 def tanh(x):
     x = math.tanh(x)
     n = significant(x)
-    if n > 6:
-        n = 6
     return round(x, n)
 tanh.__doc__ = _(
     'tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)')

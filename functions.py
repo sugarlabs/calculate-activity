@@ -564,13 +564,19 @@ xor.__doc__ = _(
 def significant(x):
     x = str(x)
     if '.' in x:
+        sig = 0
         integer, fraction = x.split('.')
-        fraction = fraction.lstrip('0')
-        integer = integer.lstrip('0')
-        integer = integer.rstrip('0')
-        return len(integer) + len(fraction)
+        if(int(integer) == 0):
+            fraction = fraction.lstrip('0')
+            sig += len(fraction)
+        else:
+            integer = integer.lstrip('0')
+            sig += len(integer)
+            sig += len(fraction)
+        return sig
     else:
-        x = x.lstrip('0')
-        return len(x)
+        integer = x.lstrip('0')
+        integer = integer.rstrip('0')
+        return len(integer)
 significant.__doc__ = _(
     'Returns the number of significant digits in x')

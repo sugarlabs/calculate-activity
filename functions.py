@@ -219,7 +219,7 @@ ceil.__doc__ = _('ceil(x), return the smallest integer larger than x.')
 
 
 def cos(x):
-    if(_scale_angle(x) % math.pi/2 == 0 and _scale_angle(x) % math.pi != 0):
+    if(_scale_angle(x) % (math.pi/2) == 0 and _scale_angle(x) % (math.pi) != 0):
         return 0
     x = math.cos(_scale_angle(x))
     n = significant(x)
@@ -483,7 +483,7 @@ shift_right.__doc__ = _(
 
 
 def sin(x):
-    if(_scale_angle(x) % math.pi == 0):
+    if(_scale_angle(x) % (math.pi) == 0):
         return 0
     x = math.sin(_scale_angle(x))
     n = significant(x)
@@ -533,7 +533,7 @@ sub.__doc__ = _('sub(x, y), return x - y')
 
 
 def tan(x):
-    if(_scale_angle(x) % math.pi == 0):
+    if(_scale_angle(x) % (math.pi) == 0):
         return 0
     x = math.tan(_scale_angle(x))
     n = significant(x)

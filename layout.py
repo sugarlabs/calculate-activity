@@ -99,13 +99,22 @@ class CalcLayout:
         file_path = os.path.join(parent.get_activity_root(), 'data', 'bg_color')
         try:
             f = open(file_path, 'r')
+            if os.path.getsize(file_path) == 0:
+                for num in range(0, 10):
+                    self.digit_color[num] = create_color(0.50, 0.50, 0.50)
+                return
+            check_num = 0
             for each_line in f:
                 each_line = each_line.rstrip('\n')
                 colors = each_line.split(' ')
                 num = colors[0]
+                if int(num) == check_sum:
+                    check_sum += 1
+                else:
+                    raise Exception()
                 self.digit_color[int(num)] = create_color(float(colors[1]),
                                     float(colors[2]), float(colors[3]))
-        except IOError:
+        except Exception, IOError:
             for num in range(0, 10):
                 self.digit_color[num] = create_color(0.50, 0.50, 0.50)
 

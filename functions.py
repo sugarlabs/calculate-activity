@@ -60,7 +60,7 @@ _FUNCTIONS = [
     _('or'),
     _('rand_float'),
     _('rand_int'),
-    _('round_to_integer'),
+    _('round'),
     _('sin'),
     _('sinh'),
     _('sinc'),
@@ -123,18 +123,14 @@ def acos(x):
     if x > 1 or x < -1:
         raise ValueError(_('acos(x) only defined for x E [-1,1]'))
     else:
-        x = _inv_scale_angle(math.acos(x))
-        n = significant(x)
-        return round(x, n)
+        return _inv_scale_angle(math.acos(x))
 acos.__doc__ = _(
     'acos(x), return the arc cosine of x. This is the angle for which the \
 cosine is x. Defined for -1 <= x < 1')
 
 
 def acosh(x):
-    x = math.acosh(x)
-    n = significant(x)
-    return round(x, n)
+    return math.acosh(x)
 acosh.__doc__ = _(
     'acosh(x), return the arc hyperbolic cosine of x. This is the value y \
 for which the hyperbolic cosine equals x.')
@@ -158,37 +154,28 @@ add.__doc__ = _('add(x, y), return x + y')
 def asin(x):
     if x > 1 or x < -1:
         raise ValueError(_('asin(x) only defined for x E [-1,1]'))
-    else:
-        x = _inv_scale_angle(math.asin(x))
-        n = significant(x)
-        return round(x, n)
+    return _inv_scale_angle(math.asin(x))
 asin.__doc__ = _(
     'asin(x), return the arc sine of x. This is the angle for which \
 the sine is x. Defined for -1 <= x <= 1')
 
 
 def asinh(x):
-    x = math.asinh(x)
-    n = significant(x)
-    return round(x, n)
+    return math.asinh(x)
 asinh.__doc__ = _(
     'asinh(x), return the arc hyperbolic sine of x. This is the value y for \
 which the hyperbolic sine equals x.')
 
 
 def atan(x):
-    x = _inv_scale_angle(math.atan(x))
-    n = significant(x)
-    return round(x, n)
+    return _inv_scale_angle(math.atan(x))
 atan.__doc__ = _(
     'atan(x), return the arc tangent of x. This is the angle for \
 which the tangent is x. Defined for all x')
 
 
 def atanh(x):
-    x = math.atanh(x)
-    n = significant(x)
-    return round(x, n)
+    return math.atanh(x)
 atanh.__doc__ = _(
     'atanh(x), return the arc hyperbolic tangent of x. \
 This is the value y for which the hyperbolic tangent equals x.')
@@ -219,20 +206,14 @@ ceil.__doc__ = _('ceil(x), return the smallest integer larger than x.')
 
 
 def cos(x):
-    if(_scale_angle(x) % (math.pi/2) == 0 and _scale_angle(x) % (math.pi) != 0):
-        return 0
-    x = math.cos(_scale_angle(x))
-    n = significant(x)
-    return round(x, n)
+    return math.cos(_scale_angle(x))
 cos.__doc__ = _(
     'cos(x), return the cosine of x. This is the x-coordinate on \
 the unit circle at the angle x')
 
 
 def cosh(x):
-    x = math.cosh(x)
-    n = significant(x)
-    return round(x, n)
+    return math.cosh(x)
 cosh.__doc__ = _(
     'cosh(x), return the hyperbolic cosine of x.\
 Given by (exp(x) + exp(-x)) / 2')
@@ -459,9 +440,9 @@ rand_int.__doc__ = _(
 <maxval> is an optional argument and is set to 65535 by default.')
 
 
-def round_to_integer(x):
-    return int(round(float(x)))
-round_to_integer.__doc__ = _('round_to_integer(x), return the integer nearest to x.')
+def round(x):
+    return math.round(float(x))
+round.__doc__ = _('round(x), return the integer nearest to x.')
 
 
 def shift_left(x, y):
@@ -483,20 +464,14 @@ shift_right.__doc__ = _(
 
 
 def sin(x):
-    if(_scale_angle(x) % (math.pi) == 0):
-        return 0
-    x = math.sin(_scale_angle(x))
-    n = significant(x)
-    return round(x, n)
+    return math.sin(_scale_angle(x))
 sin.__doc__ = _(
     'sin(x), return the sine of x. This is the y-coordinate on the \
 unit circle at the angle x')
 
 
 def sinh(x):
-    x = math.sinh(x)
-    n = significant(x)
-    return round(x, n)
+    return math.sinh(x)
 sinh.__doc__ = _(
     'sinh(x), return the hyperbolic sine of x. \
 Given by (exp(x) - exp(-x)) / 2')
@@ -505,9 +480,7 @@ Given by (exp(x) - exp(-x)) / 2')
 def sinc(x):
     if float(x) == 0.0:
         return 1
-    x = sin(x) / x
-    n = significant(x)
-    return round(x, n)
+    return sin(x) / x
 sinc.__doc__ = _(
     'sinc(x), return the sinc of x. This is given by sin(x) / x.')
 
@@ -533,13 +506,7 @@ sub.__doc__ = _('sub(x, y), return x - y')
 
 
 def tan(x):
-    if(_scale_angle(x) % (math.pi) == 0):
-        return 0
-    x = math.tan(_scale_angle(x))
-    n = significant(x)
-    if(n > 15):
-        return 'Infinity'
-    return round(x, n)
+    return math.tan(_scale_angle(x))
 tan.__doc__ = _(
     'tan(x), return the tangent of x. This is the slope of the line \
 from the origin of the unit circle to the point on the unit circle \
@@ -547,9 +514,7 @@ defined by the angle x. Given by sin(x) / cos(x)')
 
 
 def tanh(x):
-    x = math.tanh(x)
-    n = significant(x)
-    return round(x, n)
+    return math.tanh(x)
 tanh.__doc__ = _(
     'tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)')
 
@@ -559,24 +524,3 @@ def xor(x, y):
 xor.__doc__ = _(
     'xor(x, y), logical xor. Returns True if either x is True \
 (and y is False) or y is True (and x is False), else returns False')
-
-
-def significant(x):
-    x = str(x)
-    if '.' in x:
-        sig = 0
-        integer, fraction = x.split('.')
-        if(int(integer) == 0):
-            fraction = fraction.lstrip('0')
-            sig += len(fraction)
-        else:
-            integer = integer.lstrip('0')
-            sig += len(integer)
-            sig += len(fraction)
-        return sig
-    else:
-        integer = x.lstrip('0')
-        integer = integer.rstrip('0')
-        return len(integer)
-significant.__doc__ = _(
-    'Returns the number of significant digits in x')

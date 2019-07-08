@@ -84,7 +84,7 @@ class CalcLayout:
         self._var_textviews = {}
         self.graph_selected = None
         self.digit_color = {}
-        self.preset_default_color(parent)
+        self.preset_default_color()
         self.create_dialog()
 
     def set_digit_color(self, bgcol):
@@ -95,11 +95,10 @@ class CalcLayout:
         else:
             return self.col_black
 
-    def preset_default_color(self, parent):
-        file_path = os.path.join(parent.get_activity_root(), 'data', 'bg_color')
+    def preset_default_color(self):
         try:
-            f = open(file_path, 'r')
-            if os.path.getsize(file_path) == 0:
+            f = open(self._parent.bg_path, 'r')
+            if os.path.getsize(self._parent.bg_path) == 0:
                 for num in range(0, 10):
                     self.digit_color[num] = create_color(0.50, 0.50, 0.50)
                 return
@@ -108,12 +107,12 @@ class CalcLayout:
                 each_line = each_line.rstrip('\n')
                 colors = each_line.split(' ')
                 num = colors[0]
-                if int(num) == check_sum:
-                    check_sum += 1
+                if int(num) == check_num:
+                    check_num += 1
                 else:
                     raise Exception()
                 self.digit_color[int(num)] = create_color(float(colors[1]),
-                                    float(colors[2]), float(colors[3]))
+                                             float(colors[2]), float(colors[3]))
         except Exception, IOError:
             for num in range(0, 10):
                 self.digit_color[num] = create_color(0.50, 0.50, 0.50)
@@ -219,11 +218,13 @@ class CalcLayout:
                self._misc_toolbar,
                5)
 
-        self._preset_button = ToolButton(icon_name='preset', tooltip=_('Set color layout'))
+        self._preset_button = ToolButton(icon_name='preset',
+                              tooltip=_('Set color layout'))
         self._preset_button.connect('clicked', self._use_preset_color)
         self._toolbar_box.toolbar.insert(self._preset_button, -1)
 
-        self._reset_button = ToolButton(icon_name='reset', tooltip=_('Revert back to default color layout'))
+        self._reset_button = ToolButton(icon_name='reset',
+                             tooltip=_('Revert back to default color layout'))
         self._reset_button.connect('clicked', self._reset_layout)
         self._toolbar_box.toolbar.insert(self._reset_button, -1)
 
@@ -344,13 +345,15 @@ class CalcLayout:
         # TODO Fix for old Sugar 0.82 builds, red_float not available
         xo_color = sugar3.profile.get_color()
         bright = (
-            Gdk.color_parse(xo_color.get_fill_color()).red_float +
-            Gdk.color_parse(xo_color.get_fill_color()).green_float +
+            Gdk.color_parse(xo_color.get_fill_color()).red_float + \
+            Gdk.color_parse(xo_color.get_fill_color()).green_float + \
             Gdk.color_parse(xo_color.get_fill_color()).blue_float) / 3.0
         if bright < 0.5:
-            self.last_eq.modify_text(Gtk.StateType.NORMAL, self.col_white.to_color())
+            self.last_eq.modify_text(Gtk.StateType.NORMAL,
+                                     self.col_white.to_color())
         else:
-            self.last_eq.modify_text(Gtk.StateType.NORMAL, self.col_black.to_color())
+            self.last_eq.modify_text(Gtk.StateType.NORMAL,
+                                     self.col_black.to_color())
 
         self.grid.attach(self.last_eq, 7, 2, 4, 5)
 
@@ -387,7 +390,8 @@ class CalcLayout:
         response = cdia.run()
         if response == -5:
             color = cdia.get_color_selection().props.current_color.to_floats()
-            self.digit_color[int(num)] = create_color(color[0], color[1], color[2])
+            self.digit_color[int(num)] = create_color(color[0],
+                                                      color[1], color[2])
             for btn in self.button_data:
                 if(btn[4] == num):
                     btn_width = btn[2]
@@ -395,7 +399,8 @@ class CalcLayout:
                     btn_label = btn[4]
                     btn_bgcol = self.digit_color[int(num)]
                     btn_fgcol = self.set_digit_color(btn_bgcol)
-                    self.modify_button_appearance(self.buttons[btn_label], btn_fgcol, btn_bgcol, btn_width, btn_height)
+                    self.modify_button_appearance(self.buttons[btn_label],
+                                                  btn_fgcol, btn_bgcol, btn_width, btn_height)
             cdia.destroy()
         elif response == -6:
             cdia.destroy()
@@ -408,7 +413,8 @@ class CalcLayout:
                 width = button[2]
                 height = button[3]
                 fg_color = self.set_digit_color(bg_color)
-                self.modify_button_appearance(self.buttons[label], fg_color, bg_color, width, height)
+                self.modify_button_appearance(self.buttons[label],
+                                             fg_color, bg_color, width, height)
 
     def _reset_layout(self, reset_btn):
         for num in range(0, 10):

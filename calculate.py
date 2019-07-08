@@ -361,7 +361,8 @@ class Calculate(ShareableActivity):
         ShareableActivity.__init__(self, handle)
 
         self.old_eqs = []
-
+        self.bg_path = os.path.join(self.get_activity_root(),
+                       'data', 'bg_color')
         self.ml = MathLib()
         self.parser = AstParser(self.ml)
 
@@ -647,11 +648,11 @@ class Calculate(ShareableActivity):
         f.close()
 
         layout_color = self.layout.digit_color
-        write_file_path = os.path.join(self.get_activity_root(), 'data', 'bg_color')
-        f = open(write_file_path, 'w')
+        f = open(self.bg_path, 'w')
         for num, value in layout_color.items():
             colors = value.to_color().to_floats()
-            colors = str(num) + ' ' + str(colors[0]) + ' ' + str(colors[1]) + ' ' + str(colors[2]) + '\n'
+            colors = str(num) + ' ' + str(colors[0]) + \
+                     ' ' + str(colors[1]) + ' ' + str(colors[2]) + '\n'
             f.write(colors)
 
     def read_file(self, file_path):

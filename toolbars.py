@@ -219,14 +219,10 @@ class ColorToolbar(Gtk.Toolbar):
         self.color_buttons = []
         for num in range(0, 10):
             tooltip = 'Change color of digit ' + str(num)
-            btn = ToolButton(tooltip=_(tooltip))
+            btn = ToolButton(icon_name=str(num) ,tooltip=_(tooltip))
             btn.connect('clicked', layout.__change_layout_color_cb, str(num))
-            label = Gtk.Label()
-            label.set_markup('<b><big>' + str(num) + '</big></b>')
-            btn.set_label_widget(label)
             self.insert(btn, -1)
             self.color_buttons.append(btn)
-
         self.show_all()
 
 

@@ -77,11 +77,11 @@ class CalcLayout:
 
         self.button_data = [
             # [x, y, width, label, bgcol, cb]
-            [0, 0, 2, 1, '\u2190', self.col_gray3,
+            [0, 0, 2, 1, u'\u2190', self.col_gray3,
                 lambda w: self._parent.move_left()],
-            [2, 0, 2, 1, '\u2192', self.col_gray3,
+            [2, 0, 2, 1, u'\u2192', self.col_gray3,
                 lambda w: self._parent.move_right()],
-            [4, 0, 2, 1, '\u232B', self.col_gray3,
+            [4, 0, 2, 1, u'\u232B', self.col_gray3,
                 lambda w: self._parent.remove_character(-1)],
 
             [0, 1, 1, 2, '7', self.col_gray2,
@@ -424,7 +424,7 @@ class CalcLayout:
         self.variable_vbox.pack_start(textview, False, True, 0)
 
         # Reorder textviews for a sorted list
-        names = list(self._var_textviews.keys())
+        names = self._var_textviews.keys()
         names.sort()
         for i in range(len(names)):
             self.variable_vbox.reorder_child(self._var_textviews[names[i]], i)

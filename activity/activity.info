@@ -2,7 +2,7 @@
 name = Calculate
 bundle_id = org.laptop.Calculate
 icon = calculate
-exec = sugar-activity3 calculate.Calculate -s
+exec = sugar-activity calculate.Calculate -s
 activity_version = 45
 license = GPLv2+
 max_participants = 10

@@ -169,7 +169,7 @@ class MathLib:
             else:
                 #FIXME: Should this case be handled differently?
                 res = n
-        return str(res)
+        return res
 
     def format_number(self, n):
         if isinstance(n, bool):

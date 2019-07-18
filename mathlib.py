@@ -167,8 +167,7 @@ class MathLib:
             if round_to > 0:
                 res = round(n, round_to)
             else:
-                #FIXME: Should this case be handled differently?
-                res = n
+                res = round(n, self.digit_limit)
         return res
 
     def format_number(self, n):

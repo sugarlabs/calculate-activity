@@ -78,12 +78,12 @@ def _d(val):
 
     if isinstance(val, _Decimal):
         return val
-    elif type(val) in (int, int):
+    elif type(val) in (types.IntType, types.LongType):
         return _Decimal(val)
-    elif isinstance(val, bytes):
+    elif isinstance(val, types.StringType):
         d = _Decimal(val)
         return d.normalize()
-    elif isinstance(val, float) or hasattr(val, '__float__'):
+    elif isinstance(val, types.FloatType) or hasattr(val, '__float__'):
         s = '%.18e' % float(val)
         d = _Decimal(s)
         return d.normalize()
@@ -244,7 +244,7 @@ def _do_gcd(a, b):
 
 
 def gcd(a, b):
-    TYPES = (int, int)
+    TYPES = (types.IntType, types.LongType)
     if type(a) not in TYPES or type(b) not in TYPES:
         raise ValueError(_('Invalid argument'))
     return _do_gcd(a, b)
@@ -263,14 +263,14 @@ def factorial(n):
     if n < 0:
         raise ValueError(_('Factorial(x) is only defined for integers x>=0'))
 
-    if type(n) not in (int, int):
+    if type(n) not in (types.IntType, types.LongType):
         raise ValueError(_('Factorial only defined for integers'))
 
     if n == 0:
         return 1
 
-    n = int(n)
-    res = int(n)
+    n = long(n)
+    res = long(n)
     while n > 2:
         res *= n - 1
         n -= 1
@@ -324,7 +324,7 @@ inv.__doc__ = _('inv(x), return the inverse of x, which is 1 / x')
 
 
 def is_int(n):
-    if type(n) in (int, int):
+    if type(n) in (types.IntType, types.LongType):
         return True
 
     if isinstance(n, _Rational):
@@ -416,7 +416,7 @@ else returns False')
 def pow(x, y):
     if is_int(y):
         if is_int(x):
-            return int(x) ** int(y)
+            return long(x) ** int(y)
         elif hasattr(x, '__pow__'):
             return x ** y
         else:

@@ -229,7 +229,7 @@ class ShareableActivity(activity.Activity):
 
     def _dispatch_message(self, msg, kwargs):
         passkwargs = {}
-        for k, v in kwargs.items():
+        for k, v in kwargs.iteritems():
             passkwargs[str(k)] = v
 
         if msg in self._message_cbs:

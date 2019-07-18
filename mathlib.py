@@ -117,7 +117,7 @@ class MathLib:
     def d(self, val):
         if isinstance(val, Decimal):
             return val
-        elif type(val) in (int, int):
+        elif type(val) in (types.IntType, types.LongType):
             return Decimal(val)
         elif isinstance(val, str):
             d = Decimal(val)
@@ -150,7 +150,7 @@ class MathLib:
     def format_int(self, n, base=None):
         if base is None:
             base = self.integer_base
-        ret = self._BASE_FUNC_MAP[base](int(n))
+        ret = self._BASE_FUNC_MAP[base](long(n))
         return ret.rstrip('L')
 
     def format_decimal(self, n):
@@ -162,6 +162,7 @@ class MathLib:
         (sign, digits, exp) = n.as_tuple()
         if n < 1 and n > -1:
             res = round(n, self.digit_limit)
+
         else:
             round_to = self.digit_limit - (len(digits) + exp)
             if round_to > 0:
@@ -178,7 +179,7 @@ class MathLib:
                 return 'False'
         elif isinstance(n, str):
             return n
-        elif isinstance(n, str):
+        elif isinstance(n, unicode):
             return n
         elif isinstance(n, str):
             return _('Undefined')
@@ -186,7 +187,7 @@ class MathLib:
             n = self.d(n)
         elif isinstance(n, float):
             n = self.d(n)
-        elif isinstance(n, int):
+        elif isinstance(n, long):
             n = self.d(n)
         elif isinstance(n, Rational):
             n = self.d(Decimal(n.n) / Decimal(n.d))
@@ -205,7 +206,7 @@ class MathLib:
         return ret
 
     def is_int(self, n):
-        if isinstance(n, int) or isinstance(n, int):
+        if isinstance(n, int) or isinstance(n, long):
             return True
 
         if not isinstance(n, Decimal):
@@ -219,15 +220,15 @@ class MathLib:
 if __name__ == "__main__":
     ml = MathLib()
     val = 0.99999999999999878
-    print('is_int(%.18e): %s' % (val, ml.is_int(val)))
+    print 'is_int(%.18e): %s' % (val, ml.is_int(val))
     # Beyond float precision
     val = 0.999999999999999999
-    print('is_int(%.18e): %s' % (val, ml.is_int(val)))
+    print 'is_int(%.18e): %s' % (val, ml.is_int(val))
     val = ml.d(0.99999999999999878) ** 2
-    print('is_int(%s): %s' % (val, ml.is_int(val)))
+    print 'is_int(%s): %s' % (val, ml.is_int(val))
     vals = ('0.1230', '12.340', '0.0123', '1230', '123.0', '1.230e17')
     for valstr in vals:
         val = Decimal(valstr)
-        print('Formatted value: %s (from %s)' % (ml.format_number(val), valstr))
+        print 'Formatted value: %s (from %s)' % (ml.format_number(val), valstr)
     for base in (2, 8, 16):
-        print('Format 252 in base %d: %s' % (base, ml.format_int(252, base)))
+        print 'Format 252 in base %d: %s' % (base, ml.format_int(252, base))

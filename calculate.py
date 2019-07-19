@@ -226,11 +226,8 @@ class Equation:
             buf.apply_tag(tagred, eqnstart, eqnend)
         elif not isinstance(self.result, SVGImage):
             resstr = self.ml.format_number(self.result)
-            if '.' in resstr:
-                resstr = str(resstr)
-                resstr = resstr.rstrip('0').rstrip('.')
-            else:
-                pass
+            resstr = str(resstr).rstrip('0').rstrip('.') \
+                if '.' in resstr else resstr
             self.append_with_superscript_tags(buf, resstr, tagbigger,
                                               tagjustright)
 
@@ -283,11 +280,8 @@ class Equation:
         self.append_with_superscript_tags(buf, eqnstr, tagsmall)
 
         resstr = self.ml.format_number(self.result)
-        if '.' in resstr:
-            resstr = str(resstr)
-            resstr = resstr.rstrip('0').rstrip('.')
-        else:
-            pass
+        resstr = str(resstr).rstrip('0').rstrip('.') \
+            if '.' in resstr else resstr
         if len(resstr) > 30:
             restag = tagsmall
         else:

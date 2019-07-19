@@ -136,15 +136,15 @@ class Helper:
             _('This is just a test topic, use help(index) for the index'))
 
     def add_help(self, topic, text):
-        self._topics[str(topic)] = _(text)
-        self._topics[str(_(topic))] = _(text)
+        self._topics[unicode(topic)] = _(text)
+        self._topics[unicode(_(topic))] = _(text)
 
     def get_help(self, topic=None):
         if isinstance(topic, ast.Name):
             topic = topic.id
         elif isinstance(topic, ast.Str):
             topic = topic.s
-        elif type(topic) not in (bytes, str) or \
+        elif type(topic) not in (types.StringType, types.UnicodeType) or \
                 len(topic) == 0:
             return _("Use help(test) for help about 'test',"
                      " or help(index) for the index")
@@ -152,7 +152,7 @@ class Helper:
         # TRANS: This command is descriptive, so can be translated
         if topic in ('index', _('index'), 'topics', _('topics')):
             ret = _('Topics') + ': '
-            topics = list(self._topics.keys())
+            topics = self._topics.keys()
             topics.append('index')
             topics.sort()
             ret += ', '.join(topics)
@@ -172,7 +172,7 @@ class Helper:
             ret += ', '.join(functions)
             return ret
 
-        for (key, val) in self._topics.items():
+        for (key, val) in self._topics.iteritems():
             if topic == key or _(topic) == key:
                 return val
 
@@ -204,14 +204,14 @@ class AstParser:
     '''
 
     OPERATOR_MAP = {
-        '⨯': '*',
-        '×': '*',
-        '÷': '/',
+        u'⨯': '*',
+        u'×': '*',
+        u'÷': '/',
         '^': '**',
     }
 
     DIADIC_OPS = (
-        '+', '-', '*', '⨯', '×', '÷', '/', '^', '**',
+        '+', '-', '*', u'⨯', u'×', u'÷', '/', '^', '**',
         '&', '|', '=', '!=', '<', '>', '<<', '>>', '%',
     )
 
@@ -285,7 +285,7 @@ class AstParser:
         else:
             self.pl = pl
 
-        for key, val in self.BUILTIN_VARS.items():
+        for key, val in self.BUILTIN_VARS.iteritems():
             self.set_var(key, val, immutable=True)
 
         # Help manager
@@ -303,10 +303,10 @@ class AstParser:
         self._load_plugins()
 
         # Redirect operations to registered functions
-        for key, val in self.UNARYOP_MAP.items():
+        for key, val in self.UNARYOP_MAP.iteritems():
             if isinstance(val, str):
                 self.UNARYOP_MAP[key] = self.get_var(val)
-        for key, val in self.BINOP_MAP.items():
+        for key, val in self.BINOP_MAP.iteritems():
             if isinstance(val, str):
                 self.BINOP_MAP[key] = self.get_var(val)
 
@@ -316,7 +316,7 @@ class AstParser:
                 continue
 
             self.set_var(name, item, True)
-            if type(item) in (types.FunctionType, type):
+            if type(item) in (types.FunctionType, types.ClassType):
                 if item.__doc__ is not None:
                     self._helper.add_help(name, item.__doc__)
 
@@ -327,7 +327,7 @@ class AstParser:
                 items = inspect.getmembers(importlib.import_module(plugin))
                 self._load_plugin_items(items)
 
-            except Exception as e:
+            except Exception, e:
                 logging.error('Error loading plugin: %s', e)
 
     def log_debug_info(self):
@@ -338,31 +338,31 @@ class AstParser:
         for name in self.get_function_names():
             logging.debug('    %s', name)
         logging.debug('Unary ops:')
-        for op in list(self.UNARYOP_MAP.keys()):
+        for op in self.UNARYOP_MAP.keys():
             logging.debug('    %s', op)
         logging.debug('Binary ops:')
-        for op in list(self.BINOP_MAP.keys()):
+        for op in self.BINOP_MAP.keys():
             logging.debug('    %s', op)
 
     def set_var(self, name, value, immutable=False):
         '''Set variable <name> to <value>, which could be a function too.'''
-        name = str(name)
+        name = unicode(name)
         if name in self._immutable_vars:
             raise Exception("Cannot redefine a constant")
             return False
-        self._namespace[str(name)] = value
+        self._namespace[unicode(name)] = value
         if immutable:
             self._immutable_vars.append(name)
         return True
 
     def get_var(self, name):
         '''Return variable value, or None if non-existent.'''
-        return self._namespace.get(str(name), None)
+        return self._namespace.get(unicode(name), None)
 
     def _get_names(self, start='', include_vars=True):
         ret = []
-        for key, val in self._namespace.items():
-            if isinstance(val, type):
+        for key, val in self._namespace.iteritems():
+            if isinstance(val, types.ClassType):
                 for key2, val2 in inspect.getmembers(val):
                     if key2.startswith('_'):
                         continue
@@ -387,7 +387,7 @@ class AstParser:
     def get_names(self, start=''):
         '''Return a list with names of all defined variables/functions.'''
         ret = []
-        for key, val in self._namespace.items():
+        for key, val in self._namespace.iteritems():
             if key.startswith(start):
                 ret.append(key)
 
@@ -452,7 +452,7 @@ class AstParser:
             func = self.BINOP_MAP[type(node.op)]
             try:
                 return func(left, right)
-            except Exception as e:
+            except Exception, e:
                 raise RuntimeError(str(e), node.right.col_offset - 1)
 
         elif isinstance(node, ast.UnaryOp):
@@ -487,7 +487,7 @@ class AstParser:
             try:
                 ret = func(*args, **kwargs)
                 return ret
-            except Exception as e:
+            except Exception, e:
                 msg = str(e)
                 raise ArgumentError(msg)
 
@@ -513,7 +513,7 @@ class AstParser:
                     state.branch_vars = copy.copy(state.branch_vars)
 
                     # Update where variable is first used
-                    if node.id not in list(state.used_var_ofs.keys()):
+                    if node.id not in state.used_var_ofs.keys():
                         state.used_var_ofs[node.id] = node.col_offset
                     elif node.col_offset < state.used_var_ofs[node.id]:
                         state.used_var_ofs[node.id] = node.col_offset
@@ -526,7 +526,7 @@ class AstParser:
                         return self._process_node(var.value, state)
                     else:
                         return var
-                except ParserError as e:
+                except ParserError, e:
                     logging.debug('error: %r', e)
                     e.set_range(ofs, ofs + len(node.id))
                     raise e
@@ -544,7 +544,7 @@ class AstParser:
                 try:
                     val = parent.__dict__[node.attr]
                     return val
-                except Exception as e:
+                except Exception, e:
                     msg = _("Attribute '%s' does not exist") % node.value
                     raise RuntimeError(msg, ofs, ofs + len(node.value))
 
@@ -589,7 +589,7 @@ class AstParser:
 
         def func(node, **kwargs):
             spaces = '  ' * kwargs['level']
-            print('%s%s' % (spaces, node))
+            print '%s%s' % (spaces, node)
             return None
 
         self.walk_replace_node(tree, func)
@@ -620,8 +620,8 @@ class AstParser:
         self.walk_replace_node(tree, self._parse_func)
 
     def _preprocess_eqn(self, eqn):
-        eqn = str(eqn)
-        for key, val in self.OPERATOR_MAP.items():
+        eqn = unicode(eqn)
+        for key, val in self.OPERATOR_MAP.iteritems():
             eqn = eqn.replace(key, val)
 
         # Replace =a..b ranges with (a,b)
@@ -639,7 +639,7 @@ class AstParser:
 
         try:
             tree = compile(eqn, '<string>', 'exec', ast.PyCF_ONLY_AST)
-        except SyntaxError as e:
+        except SyntaxError, e:
             # if we don't have an offset, its a SyntaxError
             if e.offset is None:
                 if eqn.startswith('plot'):
@@ -664,7 +664,7 @@ class AstParser:
         Evaluate an equation or parse tree.
         '''
 
-        if type(eqn) in (bytes, str):
+        if type(eqn) in (types.StringType, types.UnicodeType):
             eqn = self.parse(eqn)
 
         state = EvalState()
@@ -673,9 +673,9 @@ class AstParser:
                 ret = self._process_node(eqn.body, state)
             else:
                 ret = self._process_node(eqn, state)
-        except (RuntimeError, ParserError) as e:
+        except (RuntimeError, ParserError), e:
             raise e
-        except Exception as e:
+        except Exception, e:
             logging.error('Internal error (%s): %s', type(e), str(e))
             msg = _('Internal error')
             raise ParseError(msg, 0)
@@ -703,7 +703,7 @@ class AstParser:
         Return the variables that were accessed during the last evaluation
         of an equation tree.
         '''
-        return list(self._used_var_ofs.keys())
+        return self._used_var_ofs.keys()
 
     def get_var_used_ofs(self, varname):
         '''
@@ -724,14 +724,14 @@ if __name__ == '__main__':
 
     eqn = '12 * 1 + 3 * (apples - 1)'
     tree = p.parse(eqn)
-    print('Tree before:')
+    print 'Tree before:'
     p.print_tree(tree)
 #    p.set_var('apples', 123)
     p.parse_symbolic(tree)
 #    num = ast.Num()
 #    num.n = 123
 #    p.replace_variable(tree, 'apples', num)
-    print('Tree after:')
+    print 'Tree after:'
     p.print_tree(tree)
 
     eqns = (
@@ -746,9 +746,9 @@ if __name__ == '__main__':
     )
     for eqn in eqns:
         ret = p.evaluate(eqn)
-        print('Eqn: %s, ret: %s' % (eqn, ret))
+        print 'Eqn: %s, ret: %s' % (eqn, ret)
 
     p.set_var('a', 123)
     eqn = 'a * 5'
     ret = p.evaluate(eqn)
-    print('Eqn: %s, ret: %s' % (eqn, ret))
+    print 'Eqn: %s, ret: %s' % (eqn, ret)

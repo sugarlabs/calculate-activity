@@ -552,11 +552,11 @@ class Calculate(ShareableActivity):
                 tree = self.parser.parse(s2)
                 res = self.parser.evaluate(tree)
 
-
         s = numParser.local(s)
         res = numParser.local(str(res))
 
-        eqn = Equation(label, s, res, self.color, self.get_owner_id(), ml=self.ml)
+        eqn = Equation(label, s, res, self.color,
+                       self.get_owner_id(), ml=self.ml)
 
         if isinstance(res, ParserError):
             self.set_error_equation(eqn)

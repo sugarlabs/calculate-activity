@@ -206,7 +206,7 @@ ceil.__doc__ = _('ceil(x), return the smallest integer larger than x.')
 
 
 def cos(x):
-    if(_scale_angle(x) % (math.pi/2) == 0 and _scale_angle(x) % (math.pi) != 0):
+    if _scale_angle(x) % (math.pi / 2) == 0 and _scale_angle(x) % math.pi != 0:
         return 0
     return math.cos(_scale_angle(x))
 cos.__doc__ = _(
@@ -466,7 +466,7 @@ shift_right.__doc__ = _(
 
 
 def sin(x):
-    if(_scale_angle(x) % (math.pi) == 0):
+    if _scale_angle(x) % math.pi == 0:
         return 0
     return math.sin(_scale_angle(x))
 sin.__doc__ = _(
@@ -510,9 +510,9 @@ sub.__doc__ = _('sub(x, y), return x - y')
 
 
 def tan(x):
-    if(_scale_angle(x) % (math.pi) == 0):
+    if _scale_angle(x) % math.pi == 0:
         return 0
-    if(_scale_angle(x) % (math.pi/2) == 0 and _scale_angle(x) % (math.pi) != 0):
+    if _scale_angle(x) % (math.pi / 2) == 0 and _scale_angle(x) % math.pi != 0:
         return "Infinity"
     return math.tan(_scale_angle(x))
 tan.__doc__ = _(

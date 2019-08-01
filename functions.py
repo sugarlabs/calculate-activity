@@ -206,6 +206,8 @@ ceil.__doc__ = _('ceil(x), return the smallest integer larger than x.')
 
 
 def cos(x):
+    if (_scale_angle(x) + math.pi / 2) % math.pi == 0:
+        return 0
     return math.cos(_scale_angle(x))
 cos.__doc__ = _(
     'cos(x), return the cosine of x. This is the x-coordinate on \
@@ -441,7 +443,7 @@ rand_int.__doc__ = _(
 
 
 def round(x):
-    return math.round(float(x))
+    return int(round(float(x)))
 round.__doc__ = _('round(x), return the integer nearest to x.')
 
 
@@ -464,6 +466,8 @@ shift_right.__doc__ = _(
 
 
 def sin(x):
+    if _scale_angle(x) % math.pi == 0:
+        return 0
     return math.sin(_scale_angle(x))
 sin.__doc__ = _(
     'sin(x), return the sine of x. This is the y-coordinate on the \
@@ -506,6 +510,10 @@ sub.__doc__ = _('sub(x, y), return x - y')
 
 
 def tan(x):
+    if _scale_angle(x) % math.pi == 0:
+        return 0
+    if (_scale_angle(x) + math.pi / 2) % math.pi == 0:
+        return "Infinity"
     return math.tan(_scale_angle(x))
 tan.__doc__ = _(
     'tan(x), return the tangent of x. This is the slope of the line \

@@ -227,7 +227,8 @@ class Equation:
             buf.apply_tag(tagred, eqnstart, eqnend)
         elif not isinstance(self.result, SVGImage):
             resstr = self.ml.format_number(self.result)
-            resstr = str(resstr).rstrip('0').rstrip('.') \
+            resstr = repr(resstr)
+            resstr = resstr.rstrip('0').rstrip('.') \
                 if '.' in resstr else resstr
             self.append_with_superscript_tags(buf, resstr, tagbigger,
                                               tagjustright)
@@ -281,7 +282,8 @@ class Equation:
         self.append_with_superscript_tags(buf, eqnstr, tagsmall)
 
         resstr = self.ml.format_number(self.result)
-        resstr = str(resstr).rstrip('0').rstrip('.') \
+        resstr = repr(resstr)
+        resstr = resstr.rstrip('0').rstrip('.') \
             if '.' in resstr else resstr
         if len(resstr) > 30:
             restag = tagsmall
@@ -550,11 +552,11 @@ class Calculate(ShareableActivity):
                 tree = self.parser.parse(s2)
                 res = self.parser.evaluate(tree)
 
-
         s = numParser.local(s)
         res = numParser.local(str(res))
 
-        eqn = Equation(label, s, res, self.color, self.get_owner_id(), ml=self.ml)
+        eqn = Equation(label, s, res, self.color,
+                       self.get_owner_id(), ml=self.ml)
 
         if isinstance(res, ParserError):
             self.set_error_equation(eqn)

@@ -255,7 +255,7 @@ class CustomPlot(_PlotBase):
             plot_value = min_y + interval
             while plot_value <= max_y - interval:
                 self.add_text((-(0.91 - F * abs(plot_value - min_y) /
-                               abs(max_y - min_y)), 0.10),
+                                 abs(max_y - min_y)), 0.10),
                               format_float(plot_value), rotate=-90)
                 plot_value += interval
             self.add_text((-(0.89 - F), 0.10), format_float(max_y), rotate=-90)
@@ -299,6 +299,7 @@ class MPLPlot(_PlotBase):
         data = StringIO.StringIO()
         fig.savefig(data)
         return data.getvalue()
+
 
 if USE_MPL:
     try:

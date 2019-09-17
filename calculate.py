@@ -106,22 +106,22 @@ class Equation:
         """Parse equation object string representation."""
 
         str = str.rstrip("\r\n")
-        l = str.split(';')
-        if len(l) != 5:
+        k = str.split(';')
+        if len(k) != 5:
             _logger.error(_('Equation.parse() string invalid (%s)'), str)
             return False
 
-        if l[2].startswith("<svg>"):
-            l[2] = SVGImage(data=base64.b64decode(l[2][5:]))
+        if k[2].startswith("<svg>"):
+            k[2] = SVGImage(data=base64.b64decode(k[2][5:]))
 
         # Should figure out how to use MathLib directly in a non-hacky way
         else:
             try:
-                l[2] = Decimal(l[2])
+                k[2] = Decimal(k[2])
             except Exception:
                 pass
 
-        self.set(l[0], l[1], l[2], XoColor(color_string=l[3]), l[4])
+        self.set(k[0], k[1], k[2], XoColor(color_string=k[3]), k[4])
 
     def determine_font_size(self, *tags):
         size = 0
@@ -368,10 +368,8 @@ class Calculate(ShareableActivity):
         # These will result in 'Ans <operator character>' being inserted
         self._chars_ans_diadic = [op[0]
                                   for op in self.parser.get_diadic_operators()]
-        try:
+        if '-' in self._chars_ans_diadic:
             self._chars_ans_diadic.remove('-')
-        except:
-            pass
 
         self.KEYMAP['multiply'] = self.ml.mul_sym
         self.KEYMAP['divide'] = self.ml.div_sym
@@ -654,25 +652,25 @@ class Calculate(ShareableActivity):
 
         f = open(file_path, 'r')
         str = f.readline().rstrip("\r\n")   # chomp
-        l = str.split()
-        if len(l) != 2:
+        k = str.split()
+        if len(k) != 2:
             _logger.error('Unable to determine version')
             return False
 
-        version = l[1]
+        version = k[1]
         if len(version) > 1 and version[0:2] == "1.":
             _logger.info('Reading journal entry (version %s)', version)
 
             str = f.readline().rstrip("\r\n")
-            l = str.split(';')
-            if len(l) != 4:
+            k = str.split(';')
+            if len(k) != 4:
                 _logger.error('State line invalid (%s)', str)
                 return False
 
-            self.text_entry.set_text(l[0])
-            self.text_entry.set_position(int(l[1]))
-            if l[2] != l[3]:
-                self.text_entry.select_region(int(l[2]), int(l[3]))
+            self.text_entry.set_text(k[0])
+            self.text_entry.set_position(int(k[1]))
+            if k[2] != k[3]:
+                self.text_entry.select_region(int(k[2]), int(k[3]))
 
             self.clear_equations()
             for str in f:
@@ -980,6 +978,7 @@ def main():
     Calculate(win)
     Gtk.main()
     return 0
+
 
 if __name__ == "__main__":
     main()

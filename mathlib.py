@@ -30,26 +30,6 @@ _logger = logging.getLogger('MathLib')
 from gettext import gettext as _
 import locale
 
-# Python 2.5 does not have a binary formatter built-in
-# This requires a function b10bin() to interpret the result
-
-
-def format_bin(n):
-    bits = ''
-    while n > 0:
-        if n & 1:
-            bits = '1' + bits
-        else:
-            bits = '0' + bits
-        n >>= 1
-
-    return 'b10bin(%s)' % bits
-
-try:
-    _BIN = bin
-except:
-    _BIN = format_bin
-
 
 class MathLib:
     ANGLE_DEG = math.pi / 180
@@ -142,7 +122,7 @@ class MathLib:
             return None
 
     _BASE_FUNC_MAP = {
-        2: _BIN,
+        2: bin,
         8: oct,
         16: hex,
     }
@@ -258,6 +238,7 @@ class MathLib:
 
         (sign, d, e) = n.normalize().as_tuple()
         return e >= 0
+
 
 if __name__ == "__main__":
     ml = MathLib()

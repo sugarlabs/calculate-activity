@@ -25,6 +25,7 @@ from gi.repository import Gtk
 from gi.repository import Gdk
 from gi.repository import Pango
 import sugar3.profile
+from sugar3.graphics.style import FONT_SIZE
 from sugar3.graphics.combobox import ComboBox
 from toolbars import EditToolbar
 from toolbars import AlgebraToolbar
@@ -44,13 +45,13 @@ except ImportError:
 
 class CalcLayout:
 
-    FONT_SMALL_POINTS = 10
+    FONT_SMALL_POINTS = FONT_SIZE * 2
     FONT_SMALL = "sans %d" % FONT_SMALL_POINTS
     FONT_SMALL_NARROW = "sans italic %d" % FONT_SMALL_POINTS
-    FONT_BIG_POINTS = 14
+    FONT_BIG_POINTS = FONT_SIZE * 2.8
     FONT_BIG = "sans bold %d" % FONT_BIG_POINTS
-    FONT_BIG_NARROW = "sans italic 14"
-    FONT_BIGGER_POINTS = 18
+    FONT_BIG_NARROW = "sans italic %d" % FONT_BIG_POINTS
+    FONT_BIGGER_POINTS = FONT_SIZE * 3.6
     FONT_BIGGER = "sans bold %d" % FONT_BIGGER_POINTS
 
     def __init__(self, parent):
@@ -181,8 +182,10 @@ class CalcLayout:
         self._parent.set_toolbar_box(self._toolbar_box)
 
 # Some layout constants
-        self.input_font = Pango.FontDescription('sans bold 12')
-        self.button_font = Pango.FontDescription('sans bold 16')
+        self.input_font = Pango.FontDescription(
+            'sans bold %d' % (FONT_SIZE * 4))
+        self.button_font = Pango.FontDescription(
+            'sans bold %d' % (FONT_SIZE * 4))
         self.col_white = self.create_color(1.00, 1.00, 1.00)
         self.col_gray1 = self.create_color(0.76, 0.76, 0.76)
         self.col_gray2 = self.create_color(0.50, 0.50, 0.50)
@@ -278,7 +281,6 @@ class CalcLayout:
         self.last_eq.set_border_window_size(Gtk.TextWindowType.TOP, 4)
         self.last_eq.set_border_window_size(Gtk.TextWindowType.BOTTOM, 4)
 
-        # TODO Fix for old Sugar 0.82 builds, red_float not available
         xo_color = sugar3.profile.get_color()
         bright = (
             Gdk.color_parse(xo_color.get_fill_color()).red_float +

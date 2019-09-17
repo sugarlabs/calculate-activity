@@ -72,7 +72,7 @@ class ShareableActivity(activity.Activity):
         '''Get shared_activity object; works for different API versions.'''
         try:
             return self.shared_activity
-        except:
+        except AttributeError:
             return self._shared_activity
 
     def get_owner(self):

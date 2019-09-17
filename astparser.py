@@ -23,7 +23,6 @@ import inspect
 import importlib
 import copy
 import logging
-import decimal
 
 from gettext import gettext as _
 
@@ -372,7 +371,7 @@ class AstParser:
                     if not include_vars:
                         b = not b
                     if b and key2.startswith(start):
-                            ret.append(key2)
+                        ret.append(key2)
 
             else:
                 b = type(val) not in (types.FunctionType, types.MethodType)
@@ -712,6 +711,7 @@ class AstParser:
         if self._used_var_ofs is None:
             return None
         return self._used_var_ofs.get(varname, None)
+
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)

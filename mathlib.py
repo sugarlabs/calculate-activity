@@ -19,7 +19,6 @@
 # Change log:
 #    2007-07-03: rwh, first version
 
-import types
 import math
 from decimal import Decimal
 from rational import Rational
@@ -29,26 +28,6 @@ _logger = logging.getLogger('MathLib')
 
 from gettext import gettext as _
 import locale
-
-# Python 2.5 does not have a binary formatter built-in
-# This requires a function b10bin() to interpret the result
-
-
-def format_bin(n):
-    bits = ''
-    while n > 0:
-        if n & 1:
-            bits = '1' + bits
-        else:
-            bits = '0' + bits
-        n >>= 1
-
-    return 'b10bin(%s)' % bits
-
-try:
-    _BIN = bin
-except:
-    _BIN = format_bin
 
 
 class MathLib:
@@ -142,7 +121,7 @@ class MathLib:
             return None
 
     _BASE_FUNC_MAP = {
-        2: _BIN,
+        2: bin,
         8: oct,
         16: hex,
     }
@@ -259,6 +238,7 @@ class MathLib:
         (sign, d, e) = n.normalize().as_tuple()
         return e >= 0
 
+
 if __name__ == "__main__":
     ml = MathLib()
     val = 0.99999999999999878
@@ -271,6 +251,7 @@ if __name__ == "__main__":
     vals = ('0.1230', '12.340', '0.0123', '1230', '123.0', '1.230e17')
     for valstr in vals:
         val = Decimal(valstr)
-        print('Formatted value: %s (from %s)' % (ml.format_number(val), valstr))
+        print('Formatted value: %s (from %s)' %
+              (ml.format_number(val), valstr))
     for base in (2, 8, 16):
         print('Format 252 in base %d: %s' % (base, ml.format_int(252, base)))

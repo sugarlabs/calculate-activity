@@ -17,7 +17,6 @@
 # Change log:
 #    2007-07-03: rwh, first version
 
-import types
 from decimal import Decimal
 
 import logging
@@ -76,7 +75,7 @@ class Rational:
         if isinstance(rval, Rational):
             ret = Rational(self.n * rval.d + self.d * rval.n, self.d * rval.d)
         elif isinstance(rval, int) or isinstance(rval,
-                                                           int):
+                                                 int):
             ret = Rational(self.n + self.d * rval, self.d)
         else:
             ret = float(self) + rval
@@ -89,7 +88,7 @@ class Rational:
         if isinstance(rval, Rational):
             ret = Rational(self.n * rval.d - self.d * rval.n, self.d * rval.d)
         elif isinstance(rval, int) or isinstance(rval,
-                                                           int):
+                                                 int):
             ret = Rational(self.n - self.d * rval, self.d)
         else:
             ret = float(self) - rval
@@ -102,7 +101,7 @@ class Rational:
         if isinstance(rval, Rational):
             ret = Rational(self.n * rval.n, self.d * rval.d)
         elif isinstance(rval, int) or isinstance(rval,
-                                                           int):
+                                                 int):
             ret = Rational(self.n * rval, self.d)
         elif isinstance(rval, Decimal):
             ret = rval * Decimal(str(float(self)))
@@ -117,7 +116,7 @@ class Rational:
         if isinstance(rval, Rational):
             ret = Rational(self.n * rval.d, self.d * rval.n)
         elif isinstance(rval, int) or isinstance(rval,
-                                                           int):
+                                                 int):
             ret = Rational(self.n, self.d * rval)
         else:
             ret = float(self) / rval

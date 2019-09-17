@@ -513,9 +513,9 @@ class Calculate(ShareableActivity):
     def process(self):
         """Parse the equation entered and show the result."""
 
-        s = str(self.text_entry.get_text())
+        s = self.text_entry.get_text()
         s = numParser.standard(s)
-        label = str(self.label_entry.get_text())
+        label = self.label_entry.get_text()
         _logger.debug('process(): parsing %r, label: %r', s, label)
         try:
             tree = self.parser.parse(s)

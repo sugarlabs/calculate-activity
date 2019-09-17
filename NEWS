@@ -1,3 +1,15 @@
+45.1
+
+* Reduce lower limit of number of digits shown (Swarup N),
+* Add non-arabic numerals depending on locale (Swarup N),
+* Fix unsupported operand type(s) error (Kunal Arora),
+* Remove empty locale files (James Cameron),
+* Remove unnecessary conversion (James Cameron),
+* Fix missing answers (James Cameron),
+* Adjust font sizes depending on org.sugarlabs.font (James Cameron),
+* Use Gdk.Color.from_floats (James Cameron),
+* flake8 fixes (James Cameron),
+
 45
 
 * Regenerate POT file (James Cameron),

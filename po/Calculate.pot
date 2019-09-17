@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-13 05:33+1100\n"
+"POT-Creation-Date: 2019-09-17 15:59+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,105 +27,105 @@ msgid ""
 "limit! You can also explore Algebra, Trigonometry, Boolean and more!"
 msgstr ""
 
-#: astparser.py:40
+#: astparser.py:39
 msgid ""
 "plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
 "range from a to b"
 msgstr ""
 
-#: astparser.py:62
+#: astparser.py:61
 #, python-format
 msgid "Parse error at %d"
 msgstr ""
 
-#: astparser.py:76 astparser.py:110
+#: astparser.py:75 astparser.py:109
 msgid "Error at '%(a)', position: %(b)"
 msgstr ""
 
-#: astparser.py:89
+#: astparser.py:88
 msgid "Syntax Error."
 msgstr ""
 
-#: astparser.py:96
+#: astparser.py:95
 msgid "Syntax Error!"
 msgstr ""
 
-#: astparser.py:136
+#: astparser.py:135
 msgid "This is just a test topic, use help(index) for the index"
 msgstr ""
 
-#: astparser.py:149
+#: astparser.py:148
 msgid "Use help(test) for help about 'test', or help(index) for the index"
 msgstr ""
 
 #. TRANS: This command is descriptive, so can be translated
-#: astparser.py:153
+#: astparser.py:152
 msgid "index"
 msgstr ""
 
-#: astparser.py:153
+#: astparser.py:152
 msgid "topics"
 msgstr ""
 
-#: astparser.py:154
+#: astparser.py:153
 msgid "Topics"
 msgstr ""
 
 #. TRANS: This command is descriptive, so can be translated
-#: astparser.py:162
+#: astparser.py:161
 msgid "variables"
 msgstr ""
 
-#: astparser.py:163
+#: astparser.py:162
 msgid "Variables"
 msgstr ""
 
 #. TRANS: This command is descriptive, so can be translated
-#: astparser.py:169
+#: astparser.py:168
 msgid "functions"
 msgstr ""
 
-#: astparser.py:170
+#: astparser.py:169
 msgid "Functions"
 msgstr ""
 
-#: astparser.py:179
+#: astparser.py:178
 #, python-format
 msgid "No help about '%s' available, use help(index) for the index"
 msgstr ""
 
-#: astparser.py:508
+#: astparser.py:504
 msgid "help"
 msgstr ""
 
-#: astparser.py:515
+#: astparser.py:511
 msgid "Recursion detected"
 msgstr ""
 
-#: astparser.py:539
+#: astparser.py:535
 #, python-format
 msgid "Function '%s' not defined"
 msgstr ""
 
-#: astparser.py:541
+#: astparser.py:537
 #, python-format
 msgid "Variable '%s' not defined"
 msgstr ""
 
-#: astparser.py:551
+#: astparser.py:547
 #, python-format
 msgid "Attribute '%s' does not exist"
 msgstr ""
 
-#: astparser.py:654
+#: astparser.py:650
 msgid "Parse error"
 msgstr ""
 
-#: astparser.py:659
+#: astparser.py:655
 msgid "Multiple statements not supported"
 msgstr ""
 
-#: astparser.py:683
+#: astparser.py:679
 msgid "Internal error"
 msgstr ""
 
@@ -134,475 +134,475 @@ msgstr ""
 msgid "Equation.parse() string invalid (%s)"
 msgstr ""
 
-#: calculate.py:535
+#: calculate.py:533
 msgid "Can not assign label: will cause recursion"
 msgstr ""
 
-#: calculate.py:630
+#: calculate.py:629
 #, python-format
 msgid "Writing to journal (%s)"
 msgstr ""
 
-#: calculate.py:942
+#: calculate.py:941
 msgid "button_pressed(): invalid type"
 msgstr ""
 
-#: functions.py:35
+#: functions.py:34
 msgid "add"
 msgstr ""
 
-#: functions.py:36
+#: functions.py:35
 msgid "abs"
 msgstr ""
 
-#: functions.py:37
+#: functions.py:36
 msgid "acos"
 msgstr ""
 
-#: functions.py:38
+#: functions.py:37
 msgid "acosh"
 msgstr ""
 
-#: functions.py:39
+#: functions.py:38
 msgid "asin"
 msgstr ""
 
-#: functions.py:40
+#: functions.py:39
 msgid "asinh"
 msgstr ""
 
-#: functions.py:41
+#: functions.py:40
 msgid "atan"
 msgstr ""
 
-#: functions.py:42
+#: functions.py:41
 msgid "atanh"
 msgstr ""
 
-#: functions.py:43
+#: functions.py:42
 msgid "and"
 msgstr ""
 
-#: functions.py:44
+#: functions.py:43
 msgid "b10bin"
 msgstr ""
 
-#: functions.py:45
+#: functions.py:44
 msgid "ceil"
 msgstr ""
 
-#: functions.py:46
+#: functions.py:45
 msgid "cos"
 msgstr ""
 
-#: functions.py:47
+#: functions.py:46
 msgid "cosh"
 msgstr ""
 
-#: functions.py:48
+#: functions.py:47
 msgid "div"
 msgstr ""
 
-#: functions.py:49
+#: functions.py:48
 msgid "gcd"
 msgstr ""
 
-#: functions.py:50
+#: functions.py:49
 msgid "exp"
 msgstr ""
 
-#: functions.py:51
+#: functions.py:50
 msgid "factorial"
 msgstr ""
 
-#: functions.py:52
+#: functions.py:51
 msgid "factorize"
 msgstr ""
 
-#: functions.py:53
+#: functions.py:52
 msgid "floor"
 msgstr ""
 
-#: functions.py:54
+#: functions.py:53
 msgid "inv"
 msgstr ""
 
-#: functions.py:55
+#: functions.py:54
 msgid "is_int"
 msgstr ""
 
-#: functions.py:56
+#: functions.py:55
 msgid "is_prime"
 msgstr ""
 
-#: functions.py:57
+#: functions.py:56
 msgid "ln"
 msgstr ""
 
-#: functions.py:58
+#: functions.py:57
 msgid "log10"
 msgstr ""
 
-#: functions.py:59
+#: functions.py:58
 msgid "mul"
 msgstr ""
 
-#: functions.py:60
+#: functions.py:59
 msgid "or"
 msgstr ""
 
-#: functions.py:61
+#: functions.py:60
 msgid "rand_float"
 msgstr ""
 
-#: functions.py:62
+#: functions.py:61
 msgid "rand_int"
 msgstr ""
 
-#: functions.py:63
+#: functions.py:62
 msgid "round"
 msgstr ""
 
-#: functions.py:64
+#: functions.py:63
 msgid "sin"
 msgstr ""
 
-#: functions.py:65
+#: functions.py:64
 msgid "sinh"
 msgstr ""
 
-#: functions.py:66
+#: functions.py:65
 msgid "sinc"
 msgstr ""
 
-#: functions.py:67
+#: functions.py:66
 msgid "sqrt"
 msgstr ""
 
-#: functions.py:68
+#: functions.py:67
 msgid "sub"
 msgstr ""
 
-#: functions.py:69
+#: functions.py:68
 msgid "square"
 msgstr ""
 
-#: functions.py:70
+#: functions.py:69
 msgid "tan"
 msgstr ""
 
-#: functions.py:71
+#: functions.py:70
 msgid "tanh"
 msgstr ""
 
-#: functions.py:72
+#: functions.py:71
 msgid "xor"
 msgstr ""
 
-#: functions.py:119
+#: functions.py:121
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
 msgstr ""
 
-#: functions.py:124
+#: functions.py:126
 msgid "acos(x) only defined for x E [-1,1]"
 msgstr ""
 
-#: functions.py:128
+#: functions.py:132
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
 msgstr ""
 
-#: functions.py:135
+#: functions.py:141
 msgid ""
 "acosh(x), return the arc hyperbolic cosine of x. This is the value y for "
 "which the hyperbolic cosine equals x."
 msgstr ""
 
-#: functions.py:142
+#: functions.py:150
 msgid ""
 "And(x, y), logical and. Returns True if x and y are True,else returns False"
 msgstr ""
 
-#: functions.py:151
+#: functions.py:161
 msgid "add(x, y), return x + y"
 msgstr ""
 
-#: functions.py:156
+#: functions.py:166
 msgid "asin(x) only defined for x E [-1,1]"
 msgstr ""
 
-#: functions.py:159
+#: functions.py:171
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
 msgstr ""
 
-#: functions.py:166
+#: functions.py:180
 msgid ""
 "asinh(x), return the arc hyperbolic sine of x. This is the value y for which "
 "the hyperbolic sine equals x."
 msgstr ""
 
-#: functions.py:173
+#: functions.py:189
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
 msgstr ""
 
-#: functions.py:180
+#: functions.py:198
 msgid ""
 "atanh(x), return the arc hyperbolic tangent of x. This is the value y for "
 "which the hyperbolic tangent equals x."
 msgstr ""
 
-#: functions.py:191
+#: functions.py:209
 msgid "Number does not look binary."
 msgstr ""
 
-#: functions.py:199
+#: functions.py:218
 msgid ""
 "b10bin(x), interpret a number written in base 10 as binary, e.g.: "
 "b10bin(10111) = 23,"
 msgstr ""
 
-#: functions.py:205
+#: functions.py:226
 msgid "ceil(x), return the smallest integer larger than x."
 msgstr ""
 
-#: functions.py:211
+#: functions.py:234
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
 msgstr ""
 
-#: functions.py:218
+#: functions.py:243
 msgid ""
 "cosh(x), return the hyperbolic cosine of x.Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
 
-#: functions.py:224 functions.py:319
+#: functions.py:249 functions.py:354
 msgid "Can not divide by zero"
 msgstr ""
 
-#: functions.py:247
+#: functions.py:272
 msgid "Invalid argument"
 msgstr ""
 
-#: functions.py:250
+#: functions.py:277
 msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
 
-#: functions.py:257
+#: functions.py:286
 msgid "exp(x), return the natural exponent of x. Given by e^x"
 msgstr ""
 
-#: functions.py:262
+#: functions.py:291
 msgid "Factorial(x) is only defined for integers x>=0"
 msgstr ""
 
-#: functions.py:265
+#: functions.py:294
 msgid "Factorial only defined for integers"
 msgstr ""
 
-#: functions.py:278
+#: functions.py:309
 msgid ""
 "factorial(n), return the factorial of n. Given by n * (n - 1) * (n - 2) * ..."
 msgstr ""
 
-#: functions.py:314
+#: functions.py:349
 msgid "floor(x), return the largest integer smaller than x."
 msgstr ""
 
-#: functions.py:321
+#: functions.py:358
 msgid "inv(x), return the inverse of x, which is 1 / x"
 msgstr ""
 
-#: functions.py:356
+#: functions.py:395
 msgid "Argument must be int"
 msgstr ""
 
-#: functions.py:358
+#: functions.py:397
 msgid "Prime numbers is defined for natural numbers"
 msgstr ""
 
-#: functions.py:368 functions.py:378
+#: functions.py:409 functions.py:421
 msgid "Logarithm(x) only defined for x > 0"
 msgstr ""
 
-#: functions.py:370
+#: functions.py:413
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
 msgstr ""
 
-#: functions.py:380
+#: functions.py:425
 msgid ""
 "log10(x), return the base 10 logarithm of x. This is the value y for which "
 "10^y equals x. Defined for x >= 0."
 msgstr ""
 
-#: functions.py:388
+#: functions.py:433
 msgid "Can only calculate x modulo <integer>"
 msgstr ""
 
-#: functions.py:390
+#: functions.py:437
 msgid ""
 "mod(x, y), return the modulus of x with respect to y.This is the remainder "
 "after dividing x by y."
 msgstr ""
 
-#: functions.py:399
+#: functions.py:448
 msgid "mul(x, y), return x * y"
 msgstr ""
 
-#: functions.py:404
+#: functions.py:455
 msgid "negate(x), return -x"
 msgstr ""
 
-#: functions.py:410
+#: functions.py:463
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
 
-#: functions.py:427
+#: functions.py:482
 msgid "pow(x, y), return x to the power y (x**y)"
 msgstr ""
 
-#: functions.py:433
+#: functions.py:490
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
 msgstr ""
 
-#: functions.py:439
+#: functions.py:498
 msgid ""
 "rand_int([<maxval>]), return a random integer between 0 and <maxval>. "
 "<maxval> is an optional argument and is set to 65535 by default."
 msgstr ""
 
-#: functions.py:445
+#: functions.py:506
 msgid "round(x), return the integer nearest to x."
 msgstr ""
 
-#: functions.py:452 functions.py:461
+#: functions.py:513 functions.py:524
 msgid "Bitwise operations only apply to integers"
 msgstr ""
 
-#: functions.py:454
+#: functions.py:517
 msgid "shift_left(x, y), shift x by y bits to the left (multiply by 2 per bit)"
 msgstr ""
 
-#: functions.py:463
+#: functions.py:528
 msgid "shift_right(x, y), shift x by y bits to the right (divide by 2 per bit)"
 msgstr ""
 
-#: functions.py:469
+#: functions.py:536
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
 msgstr ""
 
-#: functions.py:476
+#: functions.py:545
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
 msgstr ""
 
-#: functions.py:485
+#: functions.py:556
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
 msgstr ""
 
-#: functions.py:491
+#: functions.py:564
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
 msgstr ""
 
-#: functions.py:497
+#: functions.py:572
 msgid "square(x), return x * x"
 msgstr ""
 
-#: functions.py:505
+#: functions.py:582
 msgid "sub(x, y), return x - y"
 msgstr ""
 
-#: functions.py:511
+#: functions.py:590
 msgid ""
 "tan(x), return the tangent of x. This is the slope of the line from the "
 "origin of the unit circle to the point on the unit circle defined by the "
 "angle x. Given by sin(x) / cos(x)"
 msgstr ""
 
-#: functions.py:519
+#: functions.py:600
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
 msgstr ""
 
-#: functions.py:525
+#: functions.py:608
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
 msgstr ""
 
-#: layout.py:113
+#: layout.py:116
 msgid "Clear"
 msgstr ""
 
-#: layout.py:148
+#: layout.py:151
 msgid "Edit"
 msgstr ""
 
-#: layout.py:152
+#: layout.py:155
 msgid "Algebra"
 msgstr ""
 
-#: layout.py:156
+#: layout.py:159
 msgid "Trigonometry"
 msgstr ""
 
-#: layout.py:160
+#: layout.py:163
 msgid "Boolean"
 msgstr ""
 
-#: layout.py:167
+#: layout.py:170
 msgid "Miscellaneous"
 msgstr ""
 
-#: layout.py:206
+#: layout.py:211
 msgid "Label:"
 msgstr ""
 
-#: layout.py:255
+#: layout.py:260
 msgid "All equations"
 msgstr ""
 
-#: layout.py:256
+#: layout.py:261
 msgid "My equations"
 msgstr ""
 
-#: layout.py:257
+#: layout.py:262
 msgid "Show variables"
 msgstr ""
 
 #. TRANS: multiplication symbol (default: '×')
-#: mathlib.py:84
+#: mathlib.py:63
 msgid "mul_sym"
 msgstr ""
 
 #. TRANS: division symbol (default: '÷')
-#: mathlib.py:89
+#: mathlib.py:68
 msgid "div_sym"
 msgstr ""
 
 #. TRANS: equal symbol (default: '=')
-#: mathlib.py:94
+#: mathlib.py:73
 msgid "equ_sym"
 msgstr ""
 
-#: mathlib.py:227
+#: mathlib.py:206
 msgid "Undefined"
 msgstr ""
 
-#: mathlib.py:237
+#: mathlib.py:216
 msgid "Error: unsupported type"
 msgstr ""
 
@@ -746,10 +746,10 @@ msgstr ""
 msgid "Exponent / Scientific notation"
 msgstr ""
 
-#: toolbars.py:366
+#: toolbars.py:367
 msgid "Number of shown digits"
 msgstr ""
 
-#: toolbars.py:378
+#: toolbars.py:379
 msgid "Integer formatting base"
 msgstr ""

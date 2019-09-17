@@ -22,8 +22,8 @@
 
 import types
 from gettext import gettext as _
+from numerals import local as _n, standard as _s
 import logging
-import numParser
 _logger = logging.getLogger('Calculate')
 
 import gi
@@ -513,8 +513,7 @@ class Calculate(ShareableActivity):
     def process(self):
         """Parse the equation entered and show the result."""
 
-        s = self.text_entry.get_text()
-        s = numParser.standard(s)
+        s = _s(self.text_entry.get_text())
         label = self.label_entry.get_text()
         _logger.debug('process(): parsing %r, label: %r', s, label)
         try:
@@ -550,15 +549,13 @@ class Calculate(ShareableActivity):
                 tree = self.parser.parse(s2)
                 res = self.parser.evaluate(tree)
 
-
-        s = numParser.local(s)
-        res = numParser.local(str(res))
-
-        eqn = Equation(label, s, res, self.color, self.get_owner_id(), ml=self.ml)
-
         if isinstance(res, ParserError):
+            eqn = Equation(label, _n(s), res, self.color,
+                           self.get_owner_id(), ml=self.ml)
             self.set_error_equation(eqn)
         else:
+            eqn = Equation(label, _n(s), _n(str(res)), self.color,
+                           self.get_owner_id(), ml=self.ml)
             self.add_equation(eqn, drawlasteq=True, tree=tree)
             self.send_message("add_eq", value=str(eqn))
 

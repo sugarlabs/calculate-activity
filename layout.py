@@ -32,7 +32,7 @@ from toolbars import TrigonometryToolbar
 from toolbars import BooleanToolbar
 from toolbars import MiscToolbar
 
-import numParser
+from numerals import local as _n
 
 try:
     from sugar3.graphics.toolbarbox import ToolbarButton, ToolbarBox
@@ -86,32 +86,42 @@ class CalcLayout:
             [4, 0, 2, 1, '\u232B', self.col_gray3,
                 lambda w: self._parent.remove_character(-1)],
 
-            [0, 1, 1, 2, numParser.local('7'), self.col_gray2, lambda w: self._parent.add_text(numParser.local('7'))],
-            [1, 1, 1, 2, numParser.local('8'), self.col_gray2, lambda w: self._parent.add_text(numParser.local('8'))],
-            [2, 1, 1, 2, numParser.local('9'), self.col_gray2, lambda w: self._parent.add_text(numParser.local('9'))],
+            [0, 1, 1, 2, _n('7'), self.col_gray2,
+                lambda w: self._parent.add_text(_n('7'))],
+            [1, 1, 1, 2, _n('8'), self.col_gray2,
+                lambda w: self._parent.add_text(_n('8'))],
+            [2, 1, 1, 2, _n('9'), self.col_gray2,
+                lambda w: self._parent.add_text(_n('9'))],
 
-            [0, 3, 1, 2, numParser.local('4'), self.col_gray2, lambda w: self._parent.add_text(numParser.local('4'))],
-            [1, 3, 1, 2, numParser.local('5'), self.col_gray2, lambda w: self._parent.add_text(numParser.local('5'))],
-            [2, 3, 1, 2, numParser.local('6'), self.col_gray2, lambda w: self._parent.add_text(numParser.local('6'))],
+            [0, 3, 1, 2, _n('4'), self.col_gray2,
+                lambda w: self._parent.add_text(_n('4'))],
+            [1, 3, 1, 2, _n('5'), self.col_gray2,
+                lambda w: self._parent.add_text(_n('5'))],
+            [2, 3, 1, 2, _n('6'), self.col_gray2,
+                lambda w: self._parent.add_text(_n('6'))],
 
-            [0, 5, 1, 2, numParser.local('1'), self.col_gray2, lambda w: self._parent.add_text(numParser.local('1'))],
-            [1, 5, 1, 2, numParser.local('2'), self.col_gray2, lambda w: self._parent.add_text(numParser.local('2'))],
-            [2, 5, 1, 2, numParser.local('3'), self.col_gray2, lambda w: self._parent.add_text(numParser.local('3'))],
+            [0, 5, 1, 2, _n('1'), self.col_gray2,
+                lambda w: self._parent.add_text(_n('1'))],
+            [1, 5, 1, 2, _n('2'), self.col_gray2,
+                lambda w: self._parent.add_text(_n('2'))],
+            [2, 5, 1, 2, _n('3'), self.col_gray2,
+                lambda w: self._parent.add_text(_n('3'))],
 
-            [0, 7, 2, 2, numParser.local('0'), self.col_gray2, lambda w: self._parent.add_text(numParser.local('0'))],
+            [0, 7, 2, 2, _n('0'), self.col_gray2,
+                lambda w: self._parent.add_text(_n('0'))],
 
             [2, 7, 1, 2, '.', self.col_gray2,
                 lambda w: self._parent.add_text('.')],
 
             [3, 1, 3, 2, _('Clear'), self.col_gray1,
-             lambda w: self._parent.clear()],
+                lambda w: self._parent.clear()],
 
             [3, 3, 1, 2, '+', self.col_gray3,
                 lambda w: self._parent.add_text('+')],
             [4, 3, 1, 2, '-', self.col_gray3,
                 lambda w: self._parent.add_text('-')],
             [5, 3, 1, 2, '(', self.col_gray3,
-             lambda w: self._parent.add_text('(')],
+                lambda w: self._parent.add_text('(')],
             [3, 5, 1, 2, mul_sym, self.col_gray3,
                 lambda w: self._parent.add_text(mul_sym)],
             [4, 5, 1, 2, div_sym, self.col_gray3,

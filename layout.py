@@ -67,8 +67,7 @@ class CalcLayout:
         self.create_dialog()
 
     def create_color(self, rf, gf, bf):
-        return Gdk.Color(int(rf * 0xFFFF), int(gf * 0xFFFF),
-                         int(bf * 0xFFFF))
+        return Gdk.Color.from_floats(rf, gf, bf)
 
     def create_button_data(self):
         """Create a list with button information. We need to do that here

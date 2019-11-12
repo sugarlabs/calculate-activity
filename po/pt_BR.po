@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 17:39+1100\n"
-"PO-Revision-Date: 2018-07-05 19:29+0000\n"
+"PO-Revision-Date: 2019-03-08 23:59+0000\n"
 "Last-Translator: Paulo Francisco <slomp@ufrgs.br>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1530818954.000000\n"
+"X-POOTLE-MTIME: 1552089566.000000\n"
 
 #: activity/activity.info:2
 msgid "Calculate"
@@ -222,7 +222,7 @@ msgstr ""
 
 #: functions.py:151
 msgid "add(x, y), return x + y"
-msgstr "adicionar (x,y), retorna x + y"
+msgstr "add(x,y), retorna x + y"
 
 #: functions.py:156
 msgid "asin(x) only defined for x E [-1,1]"
@@ -289,7 +289,7 @@ msgstr ""
 msgid ""
 "cosh(x), return the hyperbolic cosine of x.Given by (exp(x) + exp(-x)) / 2"
 msgstr ""
-"cosh(x), retorna o cosseno hiperbólico de x. Dado por (exp(x) + exp(-x))/2"
+"cosh(x), retorna o cosseno hiperbólico de x. Dado por (exp(x) + exp(-x)) / 2"
 
 #: functions.py:224 functions.py:319
 msgid "Can not divide by zero"
@@ -304,8 +304,8 @@ msgid ""
 "gcd(a, b), determine the greatest common denominator of a and b. For "
 "example, the biggest factor that is shared by the numbers 15 and 18 is 3."
 msgstr ""
-"mdc(a,b), determina o maior denominador comum de a e b. Por exemplo, o maior "
-"fator compartilhado pelos números 15 e 18 é o 3."
+"gcd(a, b), determina o maior denominador comum de a e b. Por exemplo, o "
+"maior fator compartilhado pelos números 15 e 18 é o 3."
 
 #: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
@@ -331,7 +331,7 @@ msgstr "chão(x), retorna o maior inteiro menor que x."
 
 #: functions.py:321
 msgid "inv(x), return the inverse of x, which is 1 / x"
-msgstr "inv(x), retorna o inverso de x, que é 1/x"
+msgstr "inv(x), retorna o inverso de x, que é 1 / x"
 
 #: functions.py:356
 msgid "Argument must be int"
@@ -343,7 +343,7 @@ msgstr "Número primos estão definidos como número naturais"
 
 #: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
-msgstr "Logaritmo(x) só é definido para x>0"
+msgstr "Logarithm(x) só é definido para x > 0"
 
 #: functions.py:370
 msgid ""
@@ -385,12 +385,12 @@ msgstr "negate(x), retornar -x"
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
 msgstr ""
-"or(x, y), disjunção lógica OU (\"or\"). Retorna Verdadeiro se x ou y forem "
-"verdadeiros, senão, retorna Falso"
+"Or(x, y), disjunção lógica ou. Retorna Verdadeiro se x ou y forem "
+"Verdadeiros, senão retorna Falso"
 
 #: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
-msgstr "pow(x, y) retorna x elevado a y (x**y)"
+msgstr "pow(x, y), retorna x na potência y (x**y)"
 
 #: functions.py:433
 msgid "rand_float(), return a random floating point number between 0.0 and 1.0"
@@ -439,7 +439,7 @@ msgstr ""
 
 #: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
-msgstr "sinc(x), retorna o seno cardinal de x. Dado por sen(x)/x."
+msgstr "sinc(x), retorna o seno cardinal de x. Dado por sen(x) / x."
 
 #: functions.py:491
 msgid ""
@@ -478,9 +478,9 @@ msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
 msgstr ""
-"xor(x, y), disjunção exclusiva XOR. Devolve Verdadeiro (\"True\") caso x for "
-"Verdadeiro e y for Falso, ou y for Verdadeiro e x for Falso. Caso contrário "
-"devolve Falso (\"False\")"
+"xor(x, y), disjunção exclusiva xor. Devolve Verdadeiro caso x for Verdadeiro "
+"(e y for Falso) ou y for Verdadeiro (e x for Falso). Caso contrário devolve "
+"Falso"
 
 #: toolbars.py:57
 msgid "Help"
@@ -576,7 +576,7 @@ msgstr "Conjunção lógica E"
 
 #: toolbars.py:282
 msgid "Logical or"
-msgstr "Disjunção lógica OU"
+msgstr "Disjunção lógica ou"
 
 #: toolbars.py:293
 msgid "Equals"
@@ -674,7 +674,7 @@ msgstr "índice"
 
 #: astparser.py:152
 msgid "topics"
-msgstr "Tópicos"
+msgstr "tópicos"
 
 #: astparser.py:153
 msgid "Topics"
@@ -696,12 +696,12 @@ msgstr "funções"
 
 #: astparser.py:169
 msgid "Functions"
-msgstr "funções"
+msgstr "Funções"
 
 #: astparser.py:178
 #, python-format
 msgid "No help about '%s' available, use help(index) for the index"
-msgstr "Não existe ajuda sobre '%s', use ajuda(índice) para ver o índice"
+msgstr "Não existe ajuda sobre '%s', use ajuda(índice) para o índice"
 
 #: astparser.py:508
 msgid "help"
@@ -741,17 +741,17 @@ msgstr "Erro interno"
 #. TRANS: multiplication symbol (default: '×')
 #: mathlib.py:84
 msgid "mul_sym"
-msgstr "×"
+msgstr "mul_sym"
 
 #. TRANS: division symbol (default: '÷')
 #: mathlib.py:89
 msgid "div_sym"
-msgstr "÷"
+msgstr "div_sym"
 
 #. TRANS: equal symbol (default: '=')
 #: mathlib.py:94
 msgid "equ_sym"
-msgstr "="
+msgstr "equ_sym"
 
 #: mathlib.py:227
 msgid "Undefined"
@@ -807,7 +807,7 @@ msgstr "Mostrar variáveis"
 #: calculate.py:109
 #, python-format, python-format
 msgid "Equation.parse() string invalid (%s)"
-msgstr "Equação.parse() string inválida (%s)"
+msgstr "Equation.parse() linha inválida (%s)"
 
 #: calculate.py:525
 msgid "Can not assign label: will cause recursion"

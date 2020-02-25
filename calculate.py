@@ -902,13 +902,13 @@ class Calculate(ShareableActivity):
                 self.text_entry.set_position(end + len(input_str) + 2)
 
         elif str_type == self.TYPE_OP_PRE:
-            if len(sel) is 2:
+            if len(sel) == 2:
                 pos = start
             self.text_entry.insert_text(input_str, pos)
             self.text_entry.set_position(pos + len(input_str))
 
         elif str_type == self.TYPE_OP_POST:
-            if len(sel) is 2:
+            if len(sel) == 2:
                 pos = end
             elif pos == 0:
                 ans = self.format_insert_ans()
@@ -929,7 +929,7 @@ class Calculate(ShareableActivity):
                 self.text_entry.set_text(ans + input_str)
                 self.text_entry.set_position(len(ans) + len(input_str))
                 self.ans_inserted = True
-            elif len(sel) is 2:
+            elif len(sel) == 2:
                 self.text_entry.set_text(text[:start] + input_str + text[end:])
                 self.text_entry.set_position(
                     pos + start - end + len(input_str))

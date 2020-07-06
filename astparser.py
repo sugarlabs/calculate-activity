@@ -653,7 +653,7 @@ class AstParser:
         if isinstance(tree, ast.Module):
             if len(tree.body) != 1:
                 msg = _("Multiple statements not supported")
-                raise ParseError(msg)
+                raise ParseError(msg, 0, eqn)
             return tree.body[0]
 
         return tree

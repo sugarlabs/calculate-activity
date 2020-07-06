@@ -677,7 +677,7 @@ class AstParser:
         except Exception as e:
             logging.error('Internal error (%s): %s', type(e), str(e))
             msg = _('Internal error')
-            raise ParseError(msg, 0)
+            raise ParseError(msg, 0, eqn)
 
         self._used_var_ofs = state.used_var_ofs
 

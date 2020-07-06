@@ -497,8 +497,8 @@ class AstParser:
             return node.s
 
         elif isinstance(node, ast.Tuple):
-            list = [self._process_node(i, state) for i in node.elts]
-            return tuple(list)
+            ls = [self._process_node(i, state) for i in node.elts]
+            return tuple(ls)
 
         elif isinstance(node, ast.Name):
             if not isfunc and node.id in ('help', _('help')):

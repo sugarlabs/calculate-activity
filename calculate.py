@@ -485,7 +485,7 @@ class Calculate(ShareableActivity):
             try:
                 self.parser.set_var(eq.label, tree)
             except Exception, e:
-                eq.result = ParseError(e.message, 0, "")
+                eq.result = ParseError(str(e), 0, "")
                 self.set_error_equation(eq)
                 return
 

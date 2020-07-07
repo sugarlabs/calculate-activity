@@ -295,7 +295,7 @@ class MPLPlot(_PlotBase):
         ax.set_xlabel(kwargs.get('xlabel', ''))
         ax.set_ylabel(kwargs.get('ylabel', ''))
 
-        data = StringIO.StringIO()
+        data = StringIO()
         fig.savefig(data)
         return data.getvalue()
 

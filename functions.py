@@ -26,6 +26,7 @@ import math
 import random
 from decimal import Decimal as _Decimal
 from rational import Rational as _Rational
+from pyround import pyround
 
 from gettext import gettext as _
 
@@ -500,7 +501,7 @@ rand_int.__doc__ = _(
 
 
 def round(x):
-    return math.round(float(x))
+    return pyround(x)
 
 
 round.__doc__ = _('round(x), return the integer nearest to x.')

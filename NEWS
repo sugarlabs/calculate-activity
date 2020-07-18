@@ -1,3 +1,11 @@
+45.2
+
+* New translations,
+* Fix error on toolbar 'pi' and 'e' (Saumya Mishra),
+* Improve error when '=' is pressed without expression (Saumya Mishra),
+* Fix error on logical expressions without values (Saumya Mishra),
+* Fix the 'round()' function (Saumya Mishra).
+
 45.1
 
 * Reduce lower limit of number of digits shown (Swarup N),

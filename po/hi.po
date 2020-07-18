@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: calculate-activity\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 17:39+1100\n"
-"PO-Revision-Date: 2016-03-13 20:49+0000\n"
-"Last-Translator: iamutkarshtiwari <iamutkarshtiwari@gmail.com>\n"
+"PO-Revision-Date: 2019-04-04 22:26+0000\n"
+"Last-Translator: roohan <rizvi.beta@gmail.com>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1457902145.000000\n"
+"X-POOTLE-MTIME: 1554416764.000000\n"
 
 #: activity/activity.info:2
 msgid "Calculate"
@@ -249,7 +249,7 @@ msgstr ""
 
 #: functions.py:191
 msgid "Number does not look binary."
-msgstr ""
+msgstr "संख्या बाइनरी नहीं लगती है।"
 
 #: functions.py:199
 msgid ""
@@ -293,8 +293,9 @@ msgid "exp(x), return the natural exponent of x. Given by e^x"
 msgstr "exp(x), x का नॅचुरल एक्सपोनेंट बताता है. e^x द्वारा दिया जाता है"
 
 #: functions.py:262
+#, fuzzy
 msgid "Factorial(x) is only defined for integers x>=0"
-msgstr ""
+msgstr "क्रमगुणित केवल पूर्णांकों के लिए परिभाषित"
 
 #: functions.py:265
 msgid "Factorial only defined for integers"
@@ -316,12 +317,13 @@ msgstr ""
 "निवेश संबंधी निर्णय निर्माताओं (एक्स), एक्स, जो 1 / एक्स का प्रतिलोम वापसी"
 
 #: functions.py:356
+#, fuzzy
 msgid "Argument must be int"
-msgstr ""
+msgstr "तर्क अंतर होना चाहिए"
 
 #: functions.py:358
 msgid "Prime numbers is defined for natural numbers"
-msgstr ""
+msgstr "अभाज्य संख्याओं को प्राकृतिक संख्याओं के लिए परिभाषित किया जाता है"
 
 #: functions.py:368 functions.py:378
 msgid "Logarithm(x) only defined for x > 0"
@@ -624,11 +626,11 @@ msgstr ""
 
 #: astparser.py:88
 msgid "Syntax Error."
-msgstr ""
+msgstr "वक्य रचना त्रुटि।"
 
 #: astparser.py:95
 msgid "Syntax Error!"
-msgstr ""
+msgstr "वक्य रचना त्रुटि!"
 
 #: astparser.py:135
 msgid "This is just a test topic, use help(index) for the index"

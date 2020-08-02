@@ -72,11 +72,11 @@ class ParseError(ParserError):
         ParserError.__init__(self, msg, start, eqn, end)
 
     def __str__(self):
-        msg = _("Error at %s, position: %s") % \
-              (self.eqn[self._range[0] - 1: self._range[1] - 1],
+        msg = _("Error at \'%s\', position: %s") % \
+              (self.eqn[self._range[0]: self._range[1]] or self.eqn,
                self._range[0])
         if self._msg is not None and len(self._msg) > 0:
-            msg += ": %s" % (self._msg)
+            msg += "\n%s" % (self._msg)
         return msg
 
 
@@ -85,7 +85,7 @@ class WrongSyntaxError(ParserError):
     """Class for reporting syntax errors."""
 
     def __init__(self, module=None, helper=None, start=0, end=0):
-        ParserError.__init__(self, _("Syntax Error."), start, end)
+        ParserError.__init__(self, _("Syntax Error."), start, "", end)
         if module is None and helper is not None:
             self.help_text = helper.get_help(module)
         else:
@@ -103,14 +103,14 @@ class RuntimeError(ParserError):
     """Class for error during executing."""
 
     def __init__(self, msg, start, eqn, end=None):
-        ParserError.__init__(self, msg, start, end)
+        ParserError.__init__(self, msg, start, eqn, end)
 
     def __str__(self):
-        msg = _("Error at %s, position: %s") % \
-              (self.eqn[self._range[0] - 1: self._range[1] - 1],
+        msg = _("Error at \'%s\', position: %s") % \
+              (self.eqn[self._range[0]: self._range[1]] or self.eqn,
                self._range[0])
         if self._msg is not None and len(self._msg) > 0:
-            msg += ": %s" % (self._msg)
+            msg += "\n%s" % (self._msg)
         return msg
 
 
@@ -119,7 +119,7 @@ class ArgumentError(ParserError):
     """Class for error if incorrect arguments are entered."""
 
     def __init__(self, msg, end=None):
-        ParserError.__init__(self, msg, 0, end)
+        ParserError.__init__(self, msg, 0, "", end)
 
     def __str__(self):
         return self._msg
@@ -452,7 +452,7 @@ class AstParser:
             try:
                 return func(left, right)
             except Exception as e:
-                raise RuntimeError(str(e), node.right.col_offset - 1)
+                raise RuntimeError(str(e), node.right.col_offset - 1, "")
 
         elif isinstance(node, ast.UnaryOp):
             operand = self._process_node(node.operand, state)
@@ -508,7 +508,7 @@ class AstParser:
                 if not isfunc:
                     # Check whether variable was already used in this branch
                     if node.id in state.branch_vars:
-                        raise RuntimeError(_('Recursion detected'), ofs)
+                        raise RuntimeError(_('Recursion detected'), ofs, "")
                     state.branch_vars = copy.copy(state.branch_vars)
 
                     # Update where variable is first used
@@ -535,7 +535,7 @@ class AstParser:
                     msg = _("Function '%s' not defined") % (node.id)
                 else:
                     msg = _("Variable '%s' not defined") % (node.id)
-                raise RuntimeError(msg, ofs, ofs + len(node.id))
+                raise RuntimeError(msg, ofs, node.id, ofs + len(node.id))
 
         elif isinstance(node, ast.Attribute):
             parent = self._process_node(node.value, state)
@@ -545,7 +545,8 @@ class AstParser:
                     return val
                 except Exception as e:
                     msg = _("Attribute '%s' does not exist") % node.value
-                    raise RuntimeError(msg, ofs, ofs + len(node.value))
+                    raise RuntimeError(msg, ofs, node.value,
+                                       ofs + len(node.value))
 
             return None
 

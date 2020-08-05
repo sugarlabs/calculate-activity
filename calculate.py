@@ -267,9 +267,9 @@ class Equation:
             Gdk.color_parse(self.color.get_fill_color()).green_float +
             Gdk.color_parse(self.color.get_fill_color()).blue_float) / 3.0
         if bright < 0.5:
-            col = Gdk.color_parse('white')
+            col = 'white'
         else:
-            col = Gdk.color_parse('black')
+            col = 'black'
         tagcolor = buf.create_tag(foreground=col)
 
         # Add label, equation and result

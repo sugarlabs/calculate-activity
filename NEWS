@@ -1,3 +1,16 @@
+47
+
+* Regenerate POT file (Jui Pradhan)
+* Translation Added (Jui Pradhan),
+* Fix Gtk-Warning Don't know color (James Cameron),
+* Fix issues while raising Runtime Error (Shaan subbaiah),
+* Fix Attribute Error (Saumya Mishra),
+* Fix Attribute Error raised while plotting (Saumya Mishra),
+* Fix Error message format (Saumya Mishra),
+* Add missing positional argument: eqn and start(Saumya Mishra),
+* Change built-in variable name list to ls (Saumya Mishra),
+* Fix SyntaxWarnings (James Cameron)
+
 46
 
 * Port to Python 3 (Rahul Bothra),

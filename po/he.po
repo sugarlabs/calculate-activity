@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 17:39+1100\n"
-"PO-Revision-Date: 2018-06-14 13:41+0000\n"
-"Last-Translator: Yaron <sh.yaron@gmail.com>\n"
+"PO-Revision-Date: 2020-08-02 21:13+0000\n"
+"Last-Translator: omeritzics <omeritzicschwartz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1528983690.000000\n"
+"X-POOTLE-MTIME: 1596402800.000000\n"
 
 #: activity/activity.info:2
 msgid "Calculate"
@@ -232,13 +232,12 @@ msgstr ""
 "הסינוס ההיפרבולי שווה ל־x."
 
 #: functions.py:173
-#, fuzzy
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
 msgstr ""
 "atan(x), החזר את ערך הארק-טנגנס של x. זהו הזוית עבורו ערך הטנגנס הוא x. "
-"מוגדר לכל x."
+"מוגדר לכל x"
 
 #: functions.py:180
 msgid ""

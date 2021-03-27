@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 17:39+1100\n"
-"PO-Revision-Date: 2020-08-02 21:13+0000\n"
+"PO-Revision-Date: 2021-02-17 23:16+0000\n"
 "Last-Translator: omeritzics <omeritzicschwartz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1596402800.000000\n"
+"X-POOTLE-MTIME: 1613603774.000000\n"
 
 #: activity/activity.info:2
 msgid "Calculate"
@@ -456,7 +456,7 @@ msgstr "העתקה"
 
 #: toolbars.py:133
 msgid "<ctrl>c"
-msgstr ""
+msgstr "<ctrl>ב"
 
 #: toolbars.py:137
 msgid "Cut"
@@ -464,7 +464,7 @@ msgstr "גזירה"
 
 #: toolbars.py:140
 msgid "<ctrl>x"
-msgstr ""
+msgstr "<ctrl>ס"
 
 #: toolbars.py:148
 msgid "Paste"

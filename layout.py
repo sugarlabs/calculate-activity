@@ -199,8 +199,8 @@ class CalcLayout:
         self.grid.set_column_spacing(4)
 
 # Left part: container and input
-        vc1 = Gtk.VBox(False, 0)
-        hc1 = Gtk.HBox(False, 10)
+        vc1 = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
+        hc1 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
         eb = Gtk.EventBox()
         eb.add(hc1)
         eb.modify_bg(Gtk.StateType.NORMAL, self.col_black)
@@ -255,7 +255,7 @@ class CalcLayout:
         self.grid.attach(eb, 0, 6, 7, 20)
 
 # Right part: container and equation button
-        hc2 = Gtk.HBox()
+        hc2 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
         combo = ComboBox()
         combo.append_item(0, _('All equations'))
         combo.append_item(1, _('My equations'))
@@ -297,17 +297,17 @@ class CalcLayout:
         scrolled_window.set_policy(Gtk.PolicyType.NEVER,
                                    Gtk.PolicyType.AUTOMATIC)
 
-        self.history_vbox = Gtk.VBox()
+        self.history_vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL,
+                                    spacing=4)
         self.history_vbox.set_homogeneous(False)
         self.history_vbox.set_border_width(0)
-        self.history_vbox.set_spacing(4)
 
-        self.variable_vbox = Gtk.VBox()
+        self.variable_vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL,
+                                     spacing=4)
         self.variable_vbox.set_homogeneous(False)
         self.variable_vbox.set_border_width(0)
-        self.variable_vbox.set_spacing(4)
 
-        vbox = Gtk.VBox()
+        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
         vbox.pack_start(self.history_vbox, True, True, 0)
         vbox.pack_start(self.variable_vbox, True, True, 0)
         scrolled_window.add_with_viewport(vbox)

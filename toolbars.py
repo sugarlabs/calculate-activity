@@ -391,13 +391,13 @@ class MiscToolbar(Gtk.Toolbar):
         else:
             target_toolbar = self._target_toolbar
 
-        target_toolbar.insert(self._line_separator1, -1)
-        target_toolbar.insert(self._plot_button, -1)
-        target_toolbar.insert(self._line_separator2, -1)
-        target_toolbar.insert(self._angle_button, -1)
-        target_toolbar.insert(self._format_button, -1)
-        target_toolbar.insert(self._digits_button, -1)
-        target_toolbar.insert(self._base_button, -1)
+        for item in [self._plot_button, self._line_separator1,
+                     self._line_separator2, self._angle_button,
+                     self._format_button, self._digits_button,
+                     self._base_button]:
+            if item.get_parent():
+                item.get_parent().remove(item)
+            target_toolbar.insert(item, -1)
 
     def _remove_buttons(self, toolbar):
         for item in [self._plot_button, self._line_separator1,

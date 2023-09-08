@@ -404,7 +404,8 @@ class MiscToolbar(Gtk.Toolbar):
                      self._line_separator2, self._angle_button,
                      self._format_button, self._digits_button,
                      self._base_button]:
-            toolbar.remove(item)
+            if item.get_parent() == toolbar:
+                toolbar.remove(item)
 
     def update_angle_type(self, text, calc):
         var = calc.parser.get_var('angle_scaling')

@@ -246,6 +246,7 @@ class CalcLayout:
         for x, y, w, h, cap, bgcol, cb in self.button_data:
             button = self.create_button(
                 _(cap), cb, self.col_white, bgcol, w, h)
+            button.set_vexpand(True)
             self.buttons[cap] = button
             self.pad.attach(button, x, y, w, h)
 

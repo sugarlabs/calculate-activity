@@ -391,7 +391,7 @@ class MiscToolbar(Gtk.Toolbar):
         else:
             target_toolbar = self._target_toolbar
 
-        for item in [self._plot_button, self._line_separator1,
+        for item in [self._line_separator1, self._plot_button,
                      self._line_separator2, self._angle_button,
                      self._format_button, self._digits_button,
                      self._base_button]:

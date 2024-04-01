@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 17:39+1100\n"
-"PO-Revision-Date: 2018-02-03 20:19+0000\n"
+"PO-Revision-Date: 2024-02-18 08:59+0000\n"
 "Last-Translator: Besnik_b <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1517689197.000000\n"
+"X-POOTLE-MTIME: 1708246764.000000\n"
 
 #: activity/activity.info:2
 msgid "Calculate"
@@ -235,7 +235,7 @@ msgstr ""
 
 #: functions.py:191
 msgid "Number does not look binary."
-msgstr ""
+msgstr "Numri s’duket dyor."
 
 #: functions.py:199
 msgid ""
@@ -612,17 +612,17 @@ msgid "Parse error at %d"
 msgstr "Gabim përtypjeje te %d"
 
 #: astparser.py:75 astparser.py:109
-#, python-format
+#, fuzzy, python-format
 msgid "Error at '%s', position: %d"
-msgstr ""
+msgstr "Gabim te '%s', pozicioni: %d"
 
 #: astparser.py:88
 msgid "Syntax Error."
-msgstr ""
+msgstr "Gabim Sintakse."
 
 #: astparser.py:95
 msgid "Syntax Error!"
-msgstr ""
+msgstr "Gabim Sintakse!"
 
 #: astparser.py:135
 msgid "This is just a test topic, use help(index) for the index"

@@ -7,15 +7,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 17:39+1100\n"
-"PO-Revision-Date: 2011-02-16 02:43+0200\n"
-"Last-Translator: <arslanilker@windowslive.com>\n"
+"PO-Revision-Date: 2022-12-06 16:50+0000\n"
+"Last-Translator: oblomov <admin@defne.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1670345417.000000\n"
 
 #: activity/activity.info:2
 msgid "Calculate"
@@ -27,16 +28,16 @@ msgstr ""
 
 #: functions.py:36
 msgid "abs"
-msgstr ""
+msgstr "mutlak değer"
 
 #: functions.py:37
 msgid "acos"
-msgstr "acos"
+msgstr "ark cosinus"
 
 #: functions.py:38
 #, fuzzy
 msgid "acosh"
-msgstr "acos"
+msgstr "argcosh fonksiyonu"
 
 #: functions.py:39
 msgid "asin"
@@ -49,12 +50,12 @@ msgstr "asinüs"
 
 #: functions.py:41
 msgid "atan"
-msgstr "atan"
+msgstr "ters tanjant"
 
 #: functions.py:42
 #, fuzzy
 msgid "atanh"
-msgstr "atan"
+msgstr "hiperbolik ters tanjant"
 
 #: functions.py:43
 msgid "and"
@@ -66,11 +67,11 @@ msgstr ""
 
 #: functions.py:45
 msgid "ceil"
-msgstr ""
+msgstr "tavan"
 
 #: functions.py:46
 msgid "cos"
-msgstr "cos"
+msgstr "cosinus"
 
 #: functions.py:47
 msgid "cosh"

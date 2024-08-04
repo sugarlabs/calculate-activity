@@ -453,7 +453,6 @@ class CalcLayout:
     def modify_button_appearance(self, button, fgcol, bgcol, width, height):
         """Modify button style."""
         width = 50 * width
-        height = 50 * height
         button.get_child().set_size_request(width, height)
         button.get_child().modify_font(self.button_font)
         button.get_child().modify_fg(Gtk.StateType.NORMAL, fgcol)

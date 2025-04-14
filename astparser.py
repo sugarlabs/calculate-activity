@@ -221,9 +221,9 @@ class AstParser:
     POST_OPS = (
     )
 
-    FLOAT_REGEXP_STR = '([+-]?[0-9]*\.?[0-9]+([eE][+-]?[0-9]+)?)'
+    FLOAT_REGEXP_STR = r'([+-]?[0-9]*\.?[0-9]+([eE][+-]?[0-9]+)?)'
     FLOAT_REGEXP = re.compile(FLOAT_REGEXP_STR)
-    RANGE_REGEXP = re.compile('=([^,]+)\.\.([^,]+)')
+    RANGE_REGEXP = re.compile(r'=([^,]+)\.\.([^,]+)')
 
     # Unary and binary operator maps.
     # Mappings to a string will be replaced by calls to MathLib functions

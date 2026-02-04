@@ -7,15 +7,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 17:39+1100\n"
-"PO-Revision-Date: 2015-12-15 13:10+0000\n"
-"Last-Translator: sujiniku <qqke6wd9k@apricot.ocn.ne.jp>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-02-04 10:06+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Japanese <http://weblate.sugarlabs.org/projects/"
+"sugar-activities/calculate/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1.1\n"
+"X-Generator: Weblate 5.4.2\n"
 "X-POOTLE-MTIME: 1450185034.000000\n"
 
 #: activity/activity.info:2
@@ -186,7 +187,8 @@ msgstr ""
 msgid ""
 "acos(x), return the arc cosine of x. This is the angle for which the cosine "
 "is x. Defined for -1 <= x < 1"
-msgstr "関数acos(x)はxに対するアークコサインを返します。これは-1<= x <1の範囲にあるxを与えるコサインの角度となります。"
+msgstr "関数acos(x)はxに対するアークコサインを返します。これは-1<= x "
+"<1の範囲にあるxを与えるコサインの角度となります。"
 
 #: functions.py:135
 msgid ""
@@ -212,7 +214,8 @@ msgstr ""
 msgid ""
 "asin(x), return the arc sine of x. This is the angle for which the sine is "
 "x. Defined for -1 <= x <= 1"
-msgstr "関数asin(x)はxに対するアークサインを返します。これは-1<= x <1で定義されるxに対するサインの角度です。"
+msgstr "関数asin(x)はxに対するアークサインを返します。これは-1<= x "
+"<1で定義されるxに対するサインの角度です。"
 
 #: functions.py:166
 msgid ""
@@ -224,7 +227,8 @@ msgstr ""
 msgid ""
 "atan(x), return the arc tangent of x. This is the angle for which the "
 "tangent is x. Defined for all x"
-msgstr "関数atan(x)はxに対するアークタンジェントを返します。これは全てのxに対し、タンジェントを与える角度を返します。"
+msgstr "関数atan(x)はxに対するアークタンジェントを返します。これは全てのxに対し、タン"
+"ジェントを与える角度を返します。"
 
 #: functions.py:180
 msgid ""
@@ -250,7 +254,8 @@ msgstr ""
 msgid ""
 "cos(x), return the cosine of x. This is the x-coordinate on the unit circle "
 "at the angle x"
-msgstr "関数cos(x)はxのコサインを返します。これは単位円における角度xの時のx座標の値です。"
+msgstr "関数cos(x)はxのコサインを返します。これは単位円における角度xの時のx座標の値で"
+"す。"
 
 #: functions.py:218
 msgid ""
@@ -273,7 +278,8 @@ msgstr ""
 
 #: functions.py:257
 msgid "exp(x), return the natural exponent of x. Given by e^x"
-msgstr "関数exp(x)は,xに対する自然に対する指数関数の値を返します。この値はe^xで与えられます。"
+msgstr "関数exp(x)は,xに対する自然に対する指数関数の値を返します。この値はe^xで与えら"
+"れます。"
 
 #: functions.py:262
 msgid "Factorial(x) is only defined for integers x>=0"
@@ -313,7 +319,8 @@ msgstr ""
 msgid ""
 "ln(x), return the natural logarithm of x. This is the value for which the "
 "exponent exp() equals x. Defined for x >= 0."
-msgstr "関数ln(x)はxに対する自然対数を返します。これはx >=0 であるxに対し、exp()がxとなるような値です。"
+msgstr "関数ln(x)はxに対する自然対数を返します。これはx >=0 "
+"であるxに対し、exp()がxとなるような値です。"
 
 #: functions.py:380
 msgid ""
@@ -343,7 +350,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Or(x, y), logical or. Returns True if x or y is True, else returns False"
-msgstr "関数or(x,y)は論理和orです。これはxと／またはyが真のとき真(true)を返し、それ以外は偽(false)を返す関数です。"
+msgstr "関数or(x,y)は論理和orです。これはxと／またはyが真のとき真(true)を返し、それ以"
+"外は偽(false)を返す関数です。"
 
 #: functions.py:427
 msgid "pow(x, y), return x to the power y (x**y)"
@@ -379,12 +387,14 @@ msgstr ""
 msgid ""
 "sin(x), return the sine of x. This is the y-coordinate on the unit circle at "
 "the angle x"
-msgstr "関数sin(x)は、xのサインを返します。これは単位円上の角度xにおけるy座標の値となります。"
+msgstr "関数sin(x)は、xのサインを返します。これは単位円上の角度xにおけるy座標の値とな"
+"ります。"
 
 #: functions.py:476
 msgid ""
 "sinh(x), return the hyperbolic sine of x. Given by (exp(x) - exp(-x)) / 2"
-msgstr "関数sinh(x)はxに対するハイパーボリックサインを返します。これは(exp(x)-exp(-x))/2により与えられます。"
+msgstr "関数sinh(x)はxに対するハイパーボリックサインを返します。これは(exp(x)-exp(-x)"
+")/2により与えられます。"
 
 #: functions.py:485
 msgid "sinc(x), return the sinc of x. This is given by sin(x) / x."
@@ -394,7 +404,8 @@ msgstr ""
 msgid ""
 "sqrt(x), return the square root of x. This is the value for which the square "
 "equals x. Defined for x >= 0."
-msgstr "関数sqrt(x)はxの平方根を与えます。これはx >=0であるようなxに対し、その二乗がxとなるような値です。"
+msgstr "関数sqrt(x)はxの平方根を与えます。これはx "
+">=0であるようなxに対し、その二乗がxとなるような値です。"
 
 #: functions.py:497
 msgid "square(x), return x * x"
@@ -410,21 +421,23 @@ msgid ""
 "origin of the unit circle to the point on the unit circle defined by the "
 "angle x. Given by sin(x) / cos(x)"
 msgstr ""
-"関数tan(x)はxのタンジェントを返します。これは単位円において原点からの直線が角度xで単位円と交わるときの、直線の傾きを与えます。またこれはsin(x"
-")/cos(x)で与えられます。"
+"関数tan(x)はxのタンジェントを返します。これは単位円において原点からの直線が角"
+"度xで単位円と交わるときの、直線の傾きを与えます。またこれはsin(x)/cos(x)で与"
+"えられます。"
 
 #: functions.py:519
 #, fuzzy
 msgid "tanh(x), return the hyperbolic tangent of x. Given by sinh(x) / cosh(x)"
-msgstr "関数sinh(x)はハイパーボリックタンジェントを返します。これはsinh(x)/cosh(x)で与えられます。"
+msgstr "関数sinh(x)はハイパーボリックタンジェントを返します。これはsinh(x)/cosh(x)で"
+"与えられます。"
 
 #: functions.py:525
 msgid ""
 "xor(x, y), logical xor. Returns True if either x is True (and y is False) or "
 "y is True (and x is False), else returns False"
 msgstr ""
-"関数xor(x,y)は排他的論理和を返します。これはxが真でyが偽、もしくはxが偽でyが真の時のみ真(true)となり、それ以外のときは偽(false)と"
-"なるような関数です。"
+"関数xor(x,y)は排他的論理和を返します。これはxが真でyが偽、もしくはxが偽でyが"
+"真の時のみ真(true)となり、それ以外のときは偽(false)となるような関数です。"
 
 #: toolbars.py:57
 msgid "Help"
@@ -580,7 +593,8 @@ msgstr ""
 msgid ""
 "plot(eqn, var=-a..b), plot the equation 'eqn' with the variable 'var' in the "
 "range from a to b"
-msgstr "関数plot(eqn var=-a..b)は、等式'eqn'に対するaからbの範囲の変数'var'について関数を作画します。"
+msgstr "関数plot(eqn var=-a.."
+"b)は、等式'eqn'に対するaからbの範囲の変数'var'について関数を作画します。"
 
 #: astparser.py:61
 #, python-format
@@ -606,7 +620,8 @@ msgstr "単にtestのトピックスです。索引はhelp(index)と入力して
 
 #: astparser.py:148
 msgid "Use help(test) for help about 'test', or help(index) for the index"
-msgstr "'test'についてのヘルプを見るにはhelp(test)と入力してください。索引を見るにはhelp(index)と入力します。"
+msgstr "'test'についてのヘルプを見るにはhelp(test)と入力してください。索引を見るにはh"
+"elp(index)と入力します。"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:152

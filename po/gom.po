@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-07 11:28+0530\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-02-04 10:06+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Konkani (Goan) <http://weblate.sugarlabs.org/projects/"
+"sugar-activities/calculate/gom/>\n"
 "Language: gom\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.2\n"
 
 #: activity/activity.info:2
 msgid "Calculate"
@@ -752,4 +755,9 @@ msgstr ""
 
 #: toolbars.py:379
 msgid "Integer formatting base"
+msgstr ""
+
+#: astparser.py:75 astparser.py:109
+#, python-format
+msgid "Error at '%s', position: %d"
 msgstr ""

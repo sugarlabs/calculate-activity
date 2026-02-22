@@ -141,8 +141,8 @@ class Helper:
     def get_help(self, topic=None):
         if isinstance(topic, ast.Name):
             topic = topic.id
-        elif isinstance(topic, ast.Str):
-            topic = topic.s
+        elif isinstance(topic, ast.Constant):
+            topic = topic.value
         elif type(topic) not in (bytes, str) or \
                 len(topic) == 0:
             return _("Use help(test) for help about 'test',"
@@ -221,9 +221,9 @@ class AstParser:
     POST_OPS = (
     )
 
-    FLOAT_REGEXP_STR = '([+-]?[0-9]*\.?[0-9]+([eE][+-]?[0-9]+)?)'
+    FLOAT_REGEXP_STR = r'([+-]?[0-9]*\.?[0-9]+([eE][+-]?[0-9]+)?)'
     FLOAT_REGEXP = re.compile(FLOAT_REGEXP_STR)
-    RANGE_REGEXP = re.compile('=([^,]+)\.\.([^,]+)')
+    RANGE_REGEXP = re.compile(r'=([^,]+)\.\.([^,]+)')
 
     # Unary and binary operator maps.
     # Mappings to a string will be replaced by calls to MathLib functions
@@ -490,11 +490,11 @@ class AstParser:
                 msg = str(e)
                 raise ArgumentError(msg)
 
-        elif isinstance(node, ast.Num):
-            return node.n
+        elif isinstance(node, ast.Constant):
+            return node.value
 
-        elif isinstance(node, ast.Str):
-            return node.s
+        elif isinstance(node, ast.Constant) and isinstance(node.value, str):
+            return node.value
 
         elif isinstance(node, ast.Tuple):
             ls = [self._process_node(i, state) for i in node.elts]
@@ -596,20 +596,20 @@ class AstParser:
 
     def _parse_func(self, node, level):
         if isinstance(node, ast.BinOp):
-            if isinstance(node.left, ast.Num) and isinstance(node.right,
-                                                             ast.Num):
+            if isinstance(node.left, ast.Constant) and isinstance(node.right,
+                                                             ast.Constant):
                 func = self.BINOP_MAP[type(node.op)]
-                ans = func(node.left.n, node.right.n)
-                ret = ast.Num()
-                ret.n = ans
+                ans = func(node.left.value, node.right.value)
+                ret = ast.Constant()
+                ret.value = ans
                 return ret
             else:
                 return None
         elif isinstance(node, ast.Name):
             if node.id in self._namespace:
                 var = self.get_var(node.id)
-                ret = ast.Num()
-                ret.n = var
+                ret = ast.Constant()
+                ret.value = var
                 return ret
 
     def parse_symbolic(self, tree):

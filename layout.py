@@ -19,14 +19,12 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 from gettext import gettext as _
+import os
 import gi
-gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk
-from gi.repository import Gdk
-from gi.repository import Pango
-import sugar3.profile
-from sugar3.graphics.style import FONT_SIZE
-from sugar3.graphics.combobox import ComboBox
+gi.require_version('Gtk', '4.0')
+from gi.repository import Gtk, Gdk, Pango, GLib
+import sugar4.profile
+from sugar4.graphics.style import FONT_SIZE
 from toolbars import EditToolbar
 from toolbars import AlgebraToolbar
 from toolbars import TrigonometryToolbar
@@ -36,9 +34,9 @@ from toolbars import MiscToolbar
 from numerals import local as _n
 
 try:
-    from sugar3.graphics.toolbarbox import ToolbarButton, ToolbarBox
-    from sugar3.activity.widgets import ActivityToolbarButton
-    from sugar3.activity.widgets import StopButton
+    from sugar4.graphics.toolbarbox import ToolbarButton, ToolbarBox
+    from sugar4.activity.widgets import ActivityToolbarButton
+    from sugar4.activity.widgets import StopButton
 except ImportError:
     pass
 
@@ -67,11 +65,10 @@ class CalcLayout:
         self.create_dialog()
 
     def create_color(self, rf, gf, bf):
-        return Gdk.Color.from_floats(rf, gf, bf)
+        return Gdk.RGBA(rf, gf, bf, 1.0)
 
     def create_button_data(self):
-        """Create a list with button information. We need to do that here
-        because we want to include the lambda functions."""
+        """Create a list with button information."""
 
         mul_sym = self._parent.ml.mul_sym
         div_sym = self._parent.ml.div_sym
@@ -139,52 +136,56 @@ class CalcLayout:
 # Toolbar
         self._toolbar_box = ToolbarBox()
         activity_button = ActivityToolbarButton(self._parent)
-        self._toolbar_box.toolbar.insert(activity_button, 0)
+        self._toolbar_box.get_toolbar().append(activity_button)
 
-        def append(icon_name, label, page, position):
-            toolbar_button = ToolbarButton()
-            toolbar_button.props.page = page
-            toolbar_button.props.icon_name = icon_name
-            toolbar_button.props.label = label
-            self._toolbar_box.toolbar.insert(toolbar_button, position)
-        append('toolbar-edit',
-               _('Edit'),
-               EditToolbar(self._parent),
-               -1)
-        append('toolbar-algebra',
-               _('Algebra'),
-               AlgebraToolbar(self._parent),
-               -1)
-        append('toolbar-trigonometry',
-               _('Trigonometry'),
-               TrigonometryToolbar(self._parent),
-               -1)
-        append('toolbar-boolean',
-               _('Boolean'),
-               BooleanToolbar(self._parent),
-               -1)
+        icons_path = os.path.join(os.environ.get('SUGAR_BUNDLE_PATH',
+                                                  os.getcwd()), 'icons')
+
+        def _resolve_icon(name):
+            local = os.path.join(icons_path, name + '.svg')
+            if os.path.exists(local):
+                return local
+            return name
+
+        def append_toolbar(icon_name, label, page):
+            page.set_hexpand(True)
+            toolbar_button = ToolbarButton(page=page,
+                                           icon_name=_resolve_icon(icon_name))
+            toolbar_button.set_tooltip_text(label)
+            if toolbar_button.page_widget is not None:
+                toolbar_button.page_widget.set_hexpand(True)
+            self._toolbar_box.get_toolbar().append(toolbar_button)
+
+        append_toolbar('toolbar-edit',
+                       _('Edit'),
+                       EditToolbar(self._parent))
+        append_toolbar('toolbar-algebra',
+                       _('Algebra'),
+                       AlgebraToolbar(self._parent))
+        append_toolbar('toolbar-trigonometry',
+                       _('Trigonometry'),
+                       TrigonometryToolbar(self._parent))
+        append_toolbar('toolbar-boolean',
+                       _('Boolean'),
+                       BooleanToolbar(self._parent))
         self._misc_toolbar = MiscToolbar(
             self._parent,
-            target_toolbar=self._toolbar_box.toolbar)
-        append('toolbar-constants',
-               _('Miscellaneous'),
-               self._misc_toolbar,
-               5)
-        self._stop_separator = Gtk.SeparatorToolItem()
-        self._stop_separator.props.draw = False
-        self._stop_separator.set_expand(True)
-        self._stop_separator.show()
-        self._toolbar_box.toolbar.insert(self._stop_separator, -1)
-        self._stop = StopButton(self._parent)
-        self._toolbar_box.toolbar.insert(self._stop, -1)
-        self._toolbar_box.show_all()
-        self._parent.set_toolbar_box(self._toolbar_box)
+            target_toolbar=self._toolbar_box.get_toolbar())
+        append_toolbar('toolbar-constants',
+                       _('Miscellaneous'),
+                       self._misc_toolbar)
 
-# Some layout constants
-        self.input_font = Pango.FontDescription(
-            'sans bold %d' % (FONT_SIZE * 4))
-        self.button_font = Pango.FontDescription(
-            'sans bold %d' % (FONT_SIZE * 4))
+        spacer = Gtk.Box()
+        spacer.set_hexpand(True)
+        self._toolbar_box.get_toolbar().append(spacer)
+
+        stop_button = StopButton(self._parent)
+        self._toolbar_box.get_toolbar().append(stop_button)
+
+        if hasattr(self._parent, 'set_toolbar_box'):
+            self._parent.set_toolbar_box(self._toolbar_box)
+
+        # Layout constants
         self.col_white = self.create_color(1.00, 1.00, 1.00)
         self.col_gray1 = self.create_color(0.76, 0.76, 0.76)
         self.col_gray2 = self.create_color(0.50, 0.50, 0.50)
@@ -192,231 +193,189 @@ class CalcLayout:
         self.col_black = self.create_color(0.00, 0.00, 0.00)
         self.col_red = self.create_color(1.00, 0.00, 0.00)
 
-# Big - Table, 16 rows, 10 columns, homogeneously divided
+
+        # Big - Grid
         self.grid = Gtk.Grid()
         self.grid.set_column_homogeneous(True)
         self.grid.set_row_spacing(0)
         self.grid.set_column_spacing(4)
 
-# Left part: container and input
+        # Left part: container and input
         vc1 = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
         hc1 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
-        eb = Gtk.EventBox()
-        eb.add(hc1)
-        eb.modify_bg(Gtk.StateType.NORMAL, self.col_black)
-        eb.set_border_width(12)
-        eb2 = Gtk.EventBox()
-        eb2.add(eb)
-        eb2.modify_bg(Gtk.StateType.NORMAL, self.col_black)
+        
+        eb = Gtk.Box()
+        eb.add_css_class("calc-display")
+        eb.append(hc1)
+        
+        eb.set_margin_top(4)
+        eb.set_margin_bottom(4)
+        
         label1 = Gtk.Label(label=_('Label:'))
-        label1.modify_fg(Gtk.StateType.NORMAL, self.col_white)
-        label1.set_alignment(1, 0.5)
-        hc1.pack_start(label1, expand=False, fill=False, padding=10)
+        label1.add_css_class("calc-label")
+        label1.set_xalign(1.0)
+        
+        hc1.append(label1)
+        
         self.label_entry = Gtk.Entry()
-        self.label_entry.modify_bg(Gtk.StateType.INSENSITIVE, self.col_black)
-        hc1.pack_start(self.label_entry, expand=True, fill=True, padding=0)
-        vc1.pack_start(eb2, False, True, 0)
+        self.label_entry.set_hexpand(True)
+        hc1.append(self.label_entry)
+        
+        vc1.append(eb)
 
         self.text_entry = Gtk.Entry()
-        try:
-            self.text_entry.props.im_module = 'gtk-im-context-simple'
-        except AttributeError:
-            pass
         self.text_entry.set_size_request(-1, 75)
-        self.text_entry.connect('key_press_event', self._parent.ignore_key_cb)
-        self.text_entry.modify_font(self.input_font)
-        self.text_entry.modify_bg(Gtk.StateType.INSENSITIVE, self.col_black)
-        eb = Gtk.EventBox()
-        eb.add(self.text_entry)
-        eb.modify_bg(Gtk.StateType.NORMAL, self.col_black)
-        eb.set_border_width(12)
-        eb2 = Gtk.EventBox()
-        eb2.add(eb)
-        eb2.modify_bg(Gtk.StateType.NORMAL, self.col_black)
-        vc1.pack_start(eb2, expand=True, fill=True, padding=0)
+        
+        self.text_entry.add_css_class("calc-entry")
+        self.text_entry.add_css_class("calc-display")
+
+        entry_key_controller = Gtk.EventControllerKey()
+        entry_key_controller.connect('key-pressed',
+                                     self._parent.ignore_key_cb)
+        self.text_entry.add_controller(entry_key_controller)
+        
+        vc1.append(self.text_entry)
         self.grid.attach(vc1, 0, 0, 7, 6)
 
-# Left part: buttons
+        # Buttons
         self.pad = Gtk.Grid()
         self.pad.set_column_homogeneous(True)
         self.pad.set_row_spacing(6)
         self.pad.set_column_spacing(6)
+        
         self.create_button_data()
         self.buttons = {}
+        
         for x, y, w, h, cap, bgcol, cb in self.button_data:
             button = self.create_button(
                 _(cap), cb, self.col_white, bgcol, w, h)
             button.set_vexpand(True)
+            button.set_hexpand(True)
             self.buttons[cap] = button
             self.pad.attach(button, x, y, w, h)
+            
+        # Button container style
+        eb_pad = Gtk.Box()
+        eb_pad.add_css_class("calc-display")
+        eb_pad.append(self.pad)
+        
+        self.grid.attach(eb_pad, 0, 6, 7, 20)
 
-        eb = Gtk.EventBox()
-        eb.add(self.pad)
-        eb.modify_bg(Gtk.StateType.NORMAL, self.col_black)
-        self.grid.attach(eb, 0, 6, 7, 20)
-
-# Right part: container and equation button
+        # Right part: Filter Combo
         hc2 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
-        combo = ComboBox()
-        combo.append_item(0, _('All equations'))
-        combo.append_item(1, _('My equations'))
-        combo.append_item(2, _('Show variables'))
+        
+        combo = Gtk.ComboBoxText()
+        combo.append("0", _('All equations'))
+        combo.append("1", _('My equations'))
+        combo.append("2", _('Show variables'))
         combo.set_active(0)
         combo.connect('changed', self._history_filter_cb)
-        hc2.pack_start(combo, True, True, 0)
-        hc2.set_border_width(6)
+        
+        combo.set_hexpand(True)
+        hc2.append(combo)
+        hc2.set_margin_top(6) 
+        hc2.set_margin_bottom(6)
+        
         self.grid.attach(hc2, 7, 0, 4, 2)
 
-# Right part: last equation
+        # Right part: Last Equation TextView
         self.last_eq = Gtk.TextView()
         self.last_eq.set_editable(False)
         self.last_eq.set_wrap_mode(Gtk.WrapMode.WORD_CHAR)
-        self.last_eq.connect('realize', self._textview_realize_cb)
-        self.last_eq.modify_base(Gtk.StateType.NORMAL, Gdk.color_parse(
-                                 sugar3.profile.get_color().get_fill_color()))
-        self.last_eq.modify_bg(Gtk.StateType.NORMAL, Gdk.color_parse(
-                               sugar3.profile.get_color().get_stroke_color()))
-        self.last_eq.set_border_window_size(Gtk.TextWindowType.LEFT, 4)
-        self.last_eq.set_border_window_size(Gtk.TextWindowType.RIGHT, 4)
-        self.last_eq.set_border_window_size(Gtk.TextWindowType.TOP, 4)
-        self.last_eq.set_border_window_size(Gtk.TextWindowType.BOTTOM, 4)
-
-        xo_color = sugar3.profile.get_color()
-        bright = (
-            Gdk.color_parse(xo_color.get_fill_color()).red_float +
-            Gdk.color_parse(xo_color.get_fill_color()).green_float +
-            Gdk.color_parse(xo_color.get_fill_color()).blue_float) / 3.0
-        if bright < 0.5:
-            self.last_eq.modify_text(Gtk.StateType.NORMAL, self.col_white)
-        else:
-            self.last_eq.modify_text(Gtk.StateType.NORMAL, self.col_black)
-
+        self.last_eq.add_css_class("history-view")
+        self.last_eq.set_left_margin(4)
+        self.last_eq.set_right_margin(4)
+        
         self.grid.attach(self.last_eq, 7, 2, 4, 5)
 
-# Right part: history
+        # Right part: History ScrolledWindow
         scrolled_window = Gtk.ScrolledWindow()
-        scrolled_window.set_policy(Gtk.PolicyType.NEVER,
-                                   Gtk.PolicyType.AUTOMATIC)
-
-        self.history_vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL,
-                                    spacing=4)
-        self.history_vbox.set_homogeneous(False)
-        self.history_vbox.set_border_width(0)
-
-        self.variable_vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL,
-                                     spacing=4)
-        self.variable_vbox.set_homogeneous(False)
-        self.variable_vbox.set_border_width(0)
-
+        scrolled_window.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
+        
+        self.history_vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=4)
+        self.variable_vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=4)
+        
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
-        vbox.pack_start(self.history_vbox, True, True, 0)
-        vbox.pack_start(self.variable_vbox, True, True, 0)
-        scrolled_window.add_with_viewport(vbox)
+        vbox.append(self.history_vbox)
+        vbox.append(self.variable_vbox)
+        
+        scrolled_window.set_child(vbox)
         self.grid.attach(scrolled_window, 7, 7, 4, 19)
-
-        Gdk.Screen.get_default().connect('size-changed',
-                                         self._configure_cb)
-
-    def _configure_cb(self, event):
-        # Maybe redo layout
-        self._toolbar_box.toolbar.remove(self._stop)
-        self._toolbar_box.toolbar.remove(self._stop_separator)
-        self._misc_toolbar.update_layout()
-        self._toolbar_box.toolbar.insert(self._stop_separator, -1)
-        self._toolbar_box.toolbar.insert(self._stop, -1)
 
     def show_it(self):
         """Show the dialog."""
         self._parent.set_canvas(self.grid)
-        self._parent.show_all()
         self.show_history()
         self.text_entry.grab_focus()
 
     def showing_history(self):
-        """Return whether we're currently showing the history (or otherwise
-        the list of variables)."""
+        """Return whether we're currently showing the history."""
         return self._showing_history
 
     def show_history(self):
         """Show the history VBox."""
         self._showing_history = True
-        self.variable_vbox.hide()
-        self.history_vbox.show()
+        self.variable_vbox.set_visible(False)
+        self.history_vbox.set_visible(True)
 
     def toggle_select_graph(self, widget, host=None):
+
         # if we have a graph already selected, we must deselect it first
         if self.graph_selected and self.graph_selected != widget:
             self.toggle_select_graph(self.graph_selected)
 
         if not self.graph_selected:
-            widget.set_visible_window(True)
-            widget.set_above_child(True)
             self.graph_selected = widget
-            white = Gdk.color_parse('white')
-            widget.modify_bg(Gtk.StateType.NORMAL, white)
+            
+            # Highlight with CSS
+            widget.add_css_class("selected-graph") 
+            
         else:
-            widget.set_visible_window(False)
-            self.graph_selected = False
+            widget.remove_css_class("selected-graph")
+            self.graph_selected = None
 
     def add_equation(self, textview, own, prepend=False):
         """Add a Gtk.TextView of an equation to the history_vbox."""
 
-        GraphEventBox = None
+        container = None
         if isinstance(textview, Gtk.Image):
-            # Add the image inside the eventBox
-            GraphEventBox = Gtk.EventBox()
-            GraphEventBox.add(textview)
-            GraphEventBox.set_visible_window(False)
-            GraphEventBox.connect(
-                'button_press_event', self.toggle_select_graph)
-            GraphEventBox.show()
+            container = Gtk.Box()
+            container.append(textview)
+            
+            click_gesture = Gtk.GestureClick()
+            click_gesture.set_button(0)
+            click_gesture.connect("pressed", lambda g, n, x, y: self.toggle_select_graph(container))
+            container.add_controller(click_gesture)
+        
+        widget_to_add = container if container else textview
 
         if prepend:
-            if GraphEventBox:
-                self.history_vbox.pack_start(GraphEventBox, False, True, 0)
-                self.history_vbox.reorder_child(GraphEventBox, 0)
-            else:
-                self.history_vbox.pack_start(textview, False, True, 0)
-                self.history_vbox.reorder_child(textview, 0)
+            self.history_vbox.prepend(widget_to_add)
         else:
-            if GraphEventBox:
-                self.history_vbox.pack_end(GraphEventBox, False, True)
-            else:
-                self.history_vbox.pack_end(textview, False, True)
+            self.history_vbox.append(widget_to_add)
 
         if own:
-            if GraphEventBox:
-                self._own_equations.append(GraphEventBox)
-                GraphEventBox.get_child().show()
-            else:
-                self._own_equations.append(textview)
-                textview.show()
+            self._own_equations.append(widget_to_add)
+            widget_to_add.set_visible(True)
         else:
             if self._showing_all_history:
-                if GraphEventBox:
-                    self._other_equations.append(GraphEventBox)
-                    GraphEventBox.get_child().show()
-                else:
-                    self._other_equations.append(textview)
-                    textview.show()
+                self._other_equations.append(widget_to_add)
+                widget_to_add.set_visible(True)
+            else:
+                self._other_equations.append(widget_to_add)
+                widget_to_add.set_visible(False)
 
     def show_all_history(self):
         """Show both owned and other equations."""
         self._showing_all_history = True
         for key in self._other_equations:
-            if isinstance(key, Gtk.EventBox):
-                key.get_child().show()
-            else:
-                key.show()
+            key.set_visible(True)
 
     def show_own_history(self):
         """Show only owned equations."""
         self._showing_all_history = False
         for key in self._other_equations:
-            if isinstance(key, Gtk.EventBox):
-                key.get_child().hide()
-            else:
-                key.hide()
+            key.set_visible(False)
 
     def add_variable(self, varname, textview):
         """Add a Gtk.TextView of a variable to the variable_vbox."""
@@ -426,39 +385,56 @@ class CalcLayout:
             del self._var_textviews[varname]
 
         self._var_textviews[varname] = textview
-        self.variable_vbox.pack_start(textview, False, True, 0)
+        self.variable_vbox.append(textview)
 
         # Reorder textviews for a sorted list
         names = list(self._var_textviews.keys())
         names.sort()
-        for i in range(len(names)):
-            self.variable_vbox.reorder_child(self._var_textviews[names[i]], i)
+        
+        for child in list(self._var_textviews.values()):
+            if child.get_parent() == self.variable_vbox:
+                 self.variable_vbox.remove(child)
+        
+        for name in names:
+             self.variable_vbox.append(self._var_textviews[name])
 
-        textview.show()
+        textview.set_visible(True)
 
     def show_variables(self):
         """Show the variables VBox."""
         self._showing_history = False
-        self.history_vbox.hide()
-        self.variable_vbox.show()
+        self.history_vbox.set_visible(False)
+        self.variable_vbox.set_visible(True)
 
     def create_button(self, cap, cb, fgcol, bgcol, width, height):
         """Create a button that is set up properly."""
-        button = Gtk.Button(_(cap))
+        button = Gtk.Button(label=_(cap))
         self.modify_button_appearance(button, fgcol, bgcol, width, height)
         button.connect("clicked", cb)
-        button.connect("key_press_event", self._parent.ignore_key_cb)
+
+        btn_key_controller = Gtk.EventControllerKey()
+        btn_key_controller.connect('key-pressed',
+                                    self._parent.ignore_key_cb)
+        button.add_controller(btn_key_controller)
+
         return button
 
     def modify_button_appearance(self, button, fgcol, bgcol, width, height):
-        """Modify button style."""
-        width = 50 * width
-        button.get_child().set_size_request(width, height)
-        button.get_child().modify_font(self.button_font)
-        button.get_child().modify_fg(Gtk.StateType.NORMAL, fgcol)
-        button.modify_bg(Gtk.StateType.NORMAL, bgcol)
-        button.modify_bg(Gtk.StateType.PRELIGHT, bgcol)
 
+        button.add_css_class("calc-button")
+
+        # Map color to semantic CSS class
+        color_class_map = {
+            id(self.col_white): "calc-white-btn",
+            id(self.col_gray1): "calc-action-btn",
+            id(self.col_gray2): "calc-numpad-btn",
+            id(self.col_gray3): "calc-operator-btn",
+            id(self.col_red): "calc-danger-btn",
+        }
+        css_class = color_class_map.get(id(bgcol))
+        if css_class:
+            button.add_css_class(css_class)
+        
     def _history_filter_cb(self, combo):
         selection = combo.get_active()
         if selection == 0:
@@ -469,9 +445,3 @@ class CalcLayout:
             self.show_own_history()
         elif selection == 2:
             self.show_variables()
-
-    def _textview_realize_cb(self, widget):
-        '''Change textview properties once window is created.'''
-        win = widget.get_window(Gtk.TextWindowType.TEXT)
-        win.set_cursor(Gdk.Cursor.new(Gdk.CursorType.HAND1))
-        return False

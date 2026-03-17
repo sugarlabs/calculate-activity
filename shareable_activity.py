@@ -221,7 +221,8 @@ class ShareableActivity(activity.Activity):
         '''
         if self._dbus_object is not None:
             _logger.debug('Sending message to %s: %s(%r)', buddy, msg, kwargs)
-            # FIXME: convert to busname
+            # TODO: Convert buddy parameter to busname for D-Bus communication
+            # Current implementation may need busname conversion for proper message routing
             self._dbus_object.SendMessageTo(buddy, msg, kwargs)
         else:
             _logger.debug('Not shared, not sending message %s(%r) to %s',
@@ -256,7 +257,8 @@ class ShareableActivity(activity.Activity):
         kwargs['to'] = to
         self._dispatch_message(msg, kwargs)
 
-    # FIXME: build a standard system to sync state from a single buddy
+    # TODO: Build a standard system to sync state from a single buddy
+    # This would enable proper state synchronization when collaborating with specific users
     def request_sync(self):
         if self._sync_hid is not None:
             return

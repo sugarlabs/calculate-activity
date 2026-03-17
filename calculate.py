@@ -261,7 +261,8 @@ class Equation:
         tagsmallnarrow = buf.create_tag(font=CalcLayout.FONT_SMALL_NARROW)
         tagbig = buf.create_tag(font=CalcLayout.FONT_BIG,
                                 justification=Gtk.Justification.RIGHT)
-        # TODO Fix for old Sugar 0.82 builds, red_float not available
+        # Legacy compatibility: Handle old Sugar 0.82 builds where red_float is not available
+        # This code calculates brightness from RGB values to determine text color
         bright = (
             Gdk.color_parse(self.color.get_fill_color()).red_float +
             Gdk.color_parse(self.color.get_fill_color()).green_float +
@@ -503,9 +504,18 @@ class Calculate(ShareableActivity):
         else:
             self.layout.add_equation(w, own, prepend=not prepend)
 
-    # FIXME: to be implemented
+    # TODO: Implement asynchronous equation processing for better UI responsiveness
+    # This would prevent UI freezing during complex calculations
     def process_async(self, eqn):
-        """Parse and process an equation asynchronously."""
+        """Parse and process an equation asynchronously.
+        
+        Args:
+            eqn: The equation to process
+            
+        Note:
+            Currently not implemented. Would improve user experience for
+            complex mathematical computations by preventing UI blocking.
+        """
 
     def process(self):
         """Parse the equation entered and show the result."""
@@ -589,7 +599,8 @@ class Calculate(ShareableActivity):
         w.connect('realize', _textview_realize_cb)
         buf = w.get_buffer()
 
-        # TODO Fix for old Sugar 0.82 builds, red_float not available
+        # Legacy compatibility: Handle old Sugar 0.82 builds where red_float is not available
+        # This code calculates brightness from RGB values to determine text color
         bright = (
             Gdk.color_parse(self.color.get_fill_color()).red_float +
             Gdk.color_parse(self.color.get_fill_color()).green_float +

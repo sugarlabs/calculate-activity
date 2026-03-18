@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-07 11:28+0530\n"
-"PO-Revision-Date: 2026-02-04 10:06+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-03-18 06:17+0000\n"
+"Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/calculate/ka/>\n"
 "Language: ka\n"
@@ -552,7 +552,7 @@ msgstr ""
 
 #: layout.py:151
 msgid "Edit"
-msgstr ""
+msgstr "ჩასწორება"
 
 #: layout.py:155
 msgid "Algebra"

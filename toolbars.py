@@ -2,29 +2,290 @@
 # toolbars.py, see CalcActivity.py for info
 
 import gi
-gi.require_version('Gtk', '3.0')
+gi.require_version('Gtk', '4.0')
 from gi.repository import Gtk
 from gi.repository import Gdk
 from mathlib import MathLib
-
-from sugar3.graphics.palette import Palette
-from sugar3.graphics.menuitem import MenuItem
-from sugar3.graphics.toolbutton import ToolButton
-from sugar3.graphics.toggletoolbutton import ToggleToolButton
-from sugar3.graphics.style import GRID_CELL_SIZE
 
 import logging
 _logger = logging.getLogger('calc-activity')
 
 from gettext import gettext as _
 
+# Try to import from sugar4, provide GTK4 fallbacks if unavailable
+try:
+    from sugar4.graphics.palette import Palette
+    from sugar4.graphics.menuitem import MenuItem
+    from sugar4.graphics.toolbutton import ToolButton
+    from sugar4.graphics.toggletoolbutton import ToggleToolButton
+    from sugar4.graphics.style import GRID_CELL_SIZE
+except ImportError:
+    # GTK4 replacements for standalone execution
+    GRID_CELL_SIZE = 55
+
+    class Palette(Gtk.Popover):
+        """Palette replacement for standalone execution."""
+        def __init__(self, label):
+            Gtk.Popover.__init__(self)
+            self.menu = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+            self.menu.set_margin_start(6)
+            self.menu.set_margin_end(6)
+            self.menu.set_margin_top(6)
+            self.menu.set_margin_bottom(6)
+            self.set_child(self.menu)
+
+        def show(self):
+            """GTK4 compatibility: show is automatic."""
+            self.set_visible(True)
+
+        def show_all(self):
+            """GTK4 compatibility: shows all children."""
+            self.show()
+            for child in self.menu:
+                if hasattr(child, 'set_visible'):
+                    child.set_visible(True)
+
+    class MenuItem(Gtk.Button):
+        """MenuItem replacement for standalone execution."""
+        def __init__(self, label, icon=None):
+            Gtk.Button.__init__(self, label=label)
+            self.set_halign(Gtk.Align.START)
+
+        def show(self):
+            """GTK4 compatibility: show is automatic."""
+            self.set_visible(True)
+
+        def activate(self):
+            """Simulate activation by emitting clicked signal."""
+            self.emit('clicked')
+
+        def connect(self, signal_name, handler, *args):
+            """Override connect to map 'activate' signal to 'clicked'."""
+            if signal_name == 'activate':
+                signal_name = 'clicked'
+            return Gtk.Button.connect(self, signal_name, handler, *args)
+
+        def set_accelerator(self, accelerator):
+            """Stub method for setting accelerator key."""
+            pass
+
+    class ToolButton(Gtk.Button):
+        """ToolButton replacement for standalone execution."""
+        def __init__(self, icon_name=None):
+            Gtk.Button.__init__(self)
+            self.props = type('obj', (object,), {'icon_name': icon_name})
+            self._label_widget = None
+            self._palette = Palette(_('Palette'))
+            self._icon_name = icon_name
+
+        @property
+        def props(self):
+            return self._props
+
+        @props.setter
+        def props(self, value):
+            self._props = value
+
+        def set_label_widget(self, widget):
+            self._label_widget = widget
+            self.set_child(widget)
+
+        def set_palette(self, palette):
+            """Set the palette for this tool button."""
+            self._palette = palette
+
+        def get_palette(self):
+            """Return the associated Palette."""
+            return self._palette
+
+        def set_accelerator(self, accelerator):
+            """Stub method for setting accelerator key."""
+            pass
+
+        def set_tooltip(self, tooltip):
+            """Stub method for setting tooltip."""
+            self.set_tooltip_text(tooltip)
+
+        def show(self):
+            """GTK4 compatibility: show is automatic."""
+            self.set_visible(True)
+
+    class ToggleToolButton(Gtk.ToggleButton):
+        """ToggleToolButton replacement for standalone execution."""
+        def __init__(self):
+            Gtk.ToggleButton.__init__(self)
+            self.props = type('obj', (object,), {'icon_name': None})
+            self._label_widget = None
+
+        @property
+        def props(self):
+            return self._props
+
+        @props.setter
+        def props(self, value):
+            self._props = value
+
+        def set_label_widget(self, widget):
+            self._label_widget = widget
+            self.set_child(widget)
+
+        def set_tooltip(self, tooltip):
+            """Stub method for setting tooltip."""
+            self.set_tooltip_text(tooltip)
+
+        def show(self):
+            """GTK4 compatibility: show is automatic."""
+            self.set_visible(True)
+
+        def show(self):
+            """GTK4 compatibility: show is automatic."""
+            self.set_visible(True)
+
+    class SeparatorToolItem(Gtk.Separator):
+        """Minimal SeparatorToolItem replacement using Gtk.Separator."""
+        def __init__(self):
+            Gtk.Separator.__init__(self)
+            self.set_orientation(Gtk.Orientation.VERTICAL)
+            self._draw = False
+
+        def set_draw(self, draw):
+            """Stub method for compatibility."""
+            self._draw = draw
+
+        def set_expand(self, expand):
+            """Set expand property for compatibility."""
+            if expand:
+                self.set_hexpand(True)
+                self.set_vexpand(True)
+            else:
+                self.set_hexpand(False)
+                self.set_vexpand(False)
+
+        def show(self):
+            """GTK4 compatibility: show is automatic."""
+            self.set_visible(True)
+
+    # GTK4 Toolbar compatibility shim
+    # Gtk.Toolbar doesn't exist in GTK4, use Gtk.Box instead
+    class Toolbar(Gtk.Box):
+        """Toolbar replacement using Gtk.Box for GTK4 compatibility."""
+        def __init__(self, orientation=Gtk.Orientation.HORIZONTAL):
+            Gtk.Box.__init__(self, orientation=orientation, spacing=6)
+            self.set_margin_start(6)
+            self.set_margin_end(6)
+            self.set_margin_top(3)
+            self.set_margin_bottom(3)
+            self._children_list = []
+
+        def insert(self, widget, position):
+            """Insert a widget at the specified position."""
+            self._children_list.append(widget)
+            if position == -1:
+                self.append(widget)
+            else:
+                self.insert_child_after(widget, self._children_list[position] if position < len(self._children_list) else None)
+
+        def show_all(self):
+            """GTK4 compatibility: show is automatic."""
+            self.set_visible(True)
+            for child in self._children_list:
+                if hasattr(child, 'set_visible'):
+                    child.set_visible(True)
+
+    # Monkeypatch Gtk.Toolbar to use our compatibility class
+    Gtk.Toolbar = Toolbar
+
+
+# Ensure Gtk.Toolbar is available (GTK4 doesn't have it)
+if not hasattr(Gtk, 'Toolbar'):
+    class Toolbar(Gtk.Box):
+        """Toolbar replacement using Gtk.Box for GTK4 compatibility."""
+        def __init__(self, orientation=Gtk.Orientation.HORIZONTAL):
+            Gtk.Box.__init__(self, orientation=orientation, spacing=6)
+            self.set_margin_start(6)
+            self.set_margin_end(6)
+            self.set_margin_top(3)
+            self.set_margin_bottom(3)
+            self._children_list = []
+
+        def insert(self, widget, position):
+            """Insert a widget at the specified position."""
+            self._children_list.append(widget)
+            if position == -1:
+                self.append(widget)
+            else:
+                self.insert_child_after(widget, self._children_list[position] if position < len(self._children_list) else None)
+
+        def show_all(self):
+            """GTK4 compatibility: show is automatic."""
+            self.set_visible(True)
+            for child in self._children_list:
+                if hasattr(child, 'set_visible'):
+                    child.set_visible(True)
+
+    Gtk.Toolbar = Toolbar
+
+# Ensure SeparatorToolItem is available (GTK4 may not have it)
+if not hasattr(Gtk, 'SeparatorToolItem'):
+    class SeparatorToolItem(Gtk.Separator):
+        """SeparatorToolItem replacement for GTK4."""
+        def __init__(self):
+            Gtk.Separator.__init__(self)
+            self.set_orientation(Gtk.Orientation.VERTICAL)
+            self._draw = False
+
+        def set_draw(self, draw):
+            """Stub method for compatibility."""
+            self._draw = draw
+
+        def set_expand(self, expand):
+            """Set expand property for compatibility."""
+            if expand:
+                self.set_hexpand(True)
+                self.set_vexpand(True)
+            else:
+                self.set_hexpand(False)
+                self.set_vexpand(False)
+
+        def show(self):
+            """GTK4 compatibility: show is automatic."""
+            self.set_visible(True)
+
+    Gtk.SeparatorToolItem = SeparatorToolItem
+
 
 def _icon_exists(name):
+    """Check if an icon exists in the current theme (GTK4 compatible)."""
     if name == '':
         return False
 
-    theme = Gtk.IconTheme.get_default()
-    info = theme.lookup_icon(name, 0, 0)
+    # GTK4: Use get_for_display instead of get_default
+    try:
+        from gi.repository import Gdk
+        display = Gdk.Display.get_default()
+        if display is None:
+            # Display not available yet, return False
+            return False
+        theme = Gtk.IconTheme.get_for_display(display)
+    except (AttributeError, NameError, RuntimeError):
+        # Fallback for older GTK versions or when display is unavailable
+        try:
+            theme = Gtk.IconTheme.get_default()
+        except (AttributeError, RuntimeError):
+            return False
+    
+    if theme is None:
+        return False
+    
+    # GTK4: lookup_icon signature changed
+    try:
+        info = theme.lookup_icon(name, Gtk.TextDirection.NONE, 0)
+    except (TypeError, AttributeError, RuntimeError):
+        # Fallback for older GTK versions
+        try:
+            info = theme.lookup_icon(name, 0, 0)
+        except Exception:
+            return False
     if info:
         return True
 
@@ -94,10 +355,10 @@ class IconToggleToolButton(ToggleToolButton):
                 self.callback(but)
 
 
-class TextToggleToolButton(Gtk.ToggleToolButton):
+class TextToggleToolButton(ToggleToolButton):
 
     def __init__(self, items, cb, desc, index=False):
-        Gtk.ToggleToolButton.__init__(self)
+        ToggleToolButton.__init__(self)
         self.items = items
         self.set_label(items[0])
         self.selected = 0
@@ -117,10 +378,10 @@ class TextToggleToolButton(Gtk.ToggleToolButton):
                 self.callback(but)
 
 
-class LineSeparator(Gtk.SeparatorToolItem):
+class LineSeparator(SeparatorToolItem):
 
     def __init__(self):
-        Gtk.SeparatorToolItem.__init__(self)
+        SeparatorToolItem.__init__(self)
         self.set_draw(True)
 
 
@@ -383,7 +644,22 @@ class MiscToolbar(Gtk.Toolbar):
         self.show_all()
 
     def update_layout(self):
-        if Gdk.Screen.width() < 14 * GRID_CELL_SIZE or \
+        # GTK4: Gdk.Screen.width() replaced with display monitor geometry
+        try:
+            display = Gdk.Display.get_default()
+            if display and hasattr(display, 'get_monitors'):
+                monitors = display.get_monitors()
+                if len(monitors) > 0:
+                    geometry = monitors[0].get_geometry()
+                    screen_width = geometry.width
+                else:
+                    screen_width = 1024  # fallback default
+            else:
+                screen_width = 1024  # fallback default
+        except Exception:
+            screen_width = 1024  # fallback default
+        
+        if screen_width < 14 * GRID_CELL_SIZE or \
                 self._target_toolbar is None:
             target_toolbar = self
             if self._target_toolbar is not None:

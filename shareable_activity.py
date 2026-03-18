@@ -1,32 +1,169 @@
 import gi
+gi.require_version('Gtk', '4.0')
 
-import dbus
-gi.require_version('TelepathyGLib', '0.12')
-from gi.repository import GObject
-from gi.repository import TelepathyGLib
-
-from sugar3.activity import activity
-from sugar3.presence import presenceservice
-from sugar3.presence.sugartubeconn import SugarTubeConnection
-
+from gi.repository import Gtk
 import logging
+
 _logger = logging.getLogger('ShareableActivity')
+
+# Try to import from sugar4, provide GTK4/stub fallbacks if unavailable
+try:
+    import dbus
+    gi.require_version('TelepathyGLib', '0.12')
+    from gi.repository import GObject
+    from gi.repository import TelepathyGLib
+    from sugar4.activity import activity
+    from sugar4.presence import presenceservice
+    from sugar4.presence.sugartubeconn import SugarTubeConnection
+except ImportError:
+    # Fallback implementations for standalone execution
+    class GObject:
+        @staticmethod
+        def timeout_add(timeout, callback):
+            return None
+    
+    class TelepathyGLib:
+        class TubeType:
+            DBUS = 1
+        class TubeState:
+            LOCAL_PENDING = 0
+        IFACE_CHANNEL_TYPE_TUBES = 'org.freedesktop.Telepathy.Channel.Type.Tubes'
+        IFACE_CHANNEL_INTERFACE_GROUP = 'org.freedesktop.Telepathy.Channel.Interface.Group'
+    
+    class activity:
+        class Activity:
+            """Minimal Activity base class - wrapper for GTK4 Window."""
+            def __init__(self, handle, *args, **kwargs):
+                self.handle = handle
+                self._canvas = None
+                self.shared_activity = None
+                self._shared_activity = None
+                # Window will be created lazily when needed
+                self._window = None
+            
+            def _ensure_window(self):
+                """Create the window if not already created."""
+                if self._window is None:
+                    self._window = Gtk.Window()
+                    self._window.set_default_size(1024, 768)
+                return self._window
+            
+            def set_child(self, widget):
+                """Set child widget."""
+                self._ensure_window().set_child(widget)
+            
+            def set_canvas(self, widget):
+                self._canvas = widget
+                self.set_child(widget)
+            
+            def set_toolbar_box(self, toolbar):
+                pass
+            
+            def present(self):
+                """Show the window."""
+                self._ensure_window().present()
+            
+            def show_all(self):
+                self._ensure_window().present()
+            
+            def get_bundle_id(self):
+                return "org.sugarlabs.Calculate"
+            
+            def get_id(self):
+                return "calculate-activity"
+            
+            def get_shared(self):
+                return False
+            
+            def connect(self, signal, handler, *args):
+                """Proxy signal connections to window."""
+                if signal == "realize":
+                    # Defer realize signal until window is created
+                    if self._window is None:
+                        self._ensure_window()
+                    return self._window.connect(signal, handler, *args)
+                elif signal in ("destroy", "delete-event"):
+                    self._ensure_window().connect(signal, handler, *args)
+                else:
+                    # Generic signal handler
+                    if self._window is not None:
+                        return self._window.connect(signal, handler, *args)
+                    return None
+            
+            def add_controller(self, controller):
+                """Add event controller."""
+                self._ensure_window().add_controller(controller)
+            
+            def set_margin_start(self, margin):
+                """Set margin."""
+                self._ensure_window().set_margin_start(margin)
+            
+            def get_window(self):
+                """Get the underlying Gtk.Window for app integration."""
+                return self._ensure_window()
+            
+            def close(self):
+                """Close the window."""
+                if self._window is not None:
+                    self._window.close()
+            
+            def __getattr__(self, name):
+                """Proxy any other attribute access to the window."""
+                window = self._ensure_window()
+                return getattr(window, name)
+    
+    class presenceservice:
+        @staticmethod
+        def get_instance():
+            return type('obj', (object,), {
+                'get_owner': lambda self: type('owner', (object,), {
+                    'props': type('props', (object,), {'nick': 'LocalUser'})()
+                })()
+            })()
+    
+    class SugarTubeConnection:
+        def __init__(self, *args, **kwargs):
+            pass
+        
+        def add_signal_receiver(self, *args, **kwargs):
+            pass
+        
+        def get_unique_name(self):
+            return "local"
+    
+    class dbus:
+        class service:
+            class Object:
+                def __init__(self, tube, path):
+                    pass
+            
+            @staticmethod
+            def signal(dbus_interface, signature):
+                def decorator(func):
+                    return func
+                return decorator
 
 IFACE = 'org.laptop.ShareableActivity'
 
+try:
+    class ShareableObject(dbus.service.Object):
 
-class ShareableObject(dbus.service.Object):
+        def __init__(self, tube, path):
+            dbus.service.Object.__init__(self, tube, path)
 
-    def __init__(self, tube, path):
-        dbus.service.Object.__init__(self, tube, path)
+        @dbus.service.signal(dbus_interface=IFACE, signature='sv')
+        def SendMessage(self, msg, kwargs):
+            pass
 
-    @dbus.service.signal(dbus_interface=IFACE, signature='sv')
-    def SendMessage(self, msg, kwargs):
-        pass
-
-    @dbus.service.signal(dbus_interface=IFACE, signature='ssv')
-    def SendMessageTo(self, busname, msg, kwargs):
-        pass
+        @dbus.service.signal(dbus_interface=IFACE, signature='ssv')
+        def SendMessageTo(self, busname, msg, kwargs):
+            pass
+except (AttributeError, NameError):
+    # Fallback for environments without dbus
+    class ShareableObject:
+        """Stub ShareableObject for standalone/test execution."""
+        def __init__(self, tube, path):
+            pass
 
 
 class ShareableActivity(activity.Activity):

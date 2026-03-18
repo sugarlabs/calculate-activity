@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-07 11:28+0530\n"
-"PO-Revision-Date: 2026-03-18 06:17+0000\n"
+"PO-Revision-Date: 2026-03-18 06:28+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/calculate/ka/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: activity/activity.info:2
 msgid "Calculate"
-msgstr ""
+msgstr "გამოთვლა"
 
 #: activity/activity.info:3
 msgid ""
@@ -64,7 +64,7 @@ msgstr ""
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:152
 msgid "index"
-msgstr ""
+msgstr "ინდექსი"
 
 #: astparser.py:152
 msgid "topics"
@@ -72,25 +72,25 @@ msgstr ""
 
 #: astparser.py:153
 msgid "Topics"
-msgstr ""
+msgstr "თემები"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:161
 msgid "variables"
-msgstr ""
+msgstr "ცვლადები"
 
 #: astparser.py:162
 msgid "Variables"
-msgstr ""
+msgstr "ცვლადები"
 
 #. TRANS: This command is descriptive, so can be translated
 #: astparser.py:168
 msgid "functions"
-msgstr ""
+msgstr "ფუნქციები"
 
 #: astparser.py:169
 msgid "Functions"
-msgstr ""
+msgstr "ფუნქციები"
 
 #: astparser.py:178
 #, python-format
@@ -99,7 +99,7 @@ msgstr ""
 
 #: astparser.py:504
 msgid "help"
-msgstr ""
+msgstr "დახმარება"
 
 #: astparser.py:511
 msgid "Recursion detected"
@@ -122,7 +122,7 @@ msgstr ""
 
 #: astparser.py:651
 msgid "Parse error"
-msgstr ""
+msgstr "დამუშავების შეცდომა"
 
 #: astparser.py:656
 msgid "Multiple statements not supported"
@@ -130,7 +130,7 @@ msgstr ""
 
 #: astparser.py:680
 msgid "Internal error"
-msgstr ""
+msgstr "შიდა შეცდომა"
 
 #: calculate.py:110
 #, python-format
@@ -152,35 +152,35 @@ msgstr ""
 
 #: functions.py:35
 msgid "add"
-msgstr ""
+msgstr "დამატება"
 
 #: functions.py:36
 msgid "abs"
-msgstr ""
+msgstr "აბს"
 
 #: functions.py:37
 msgid "acos"
-msgstr ""
+msgstr "acos"
 
 #: functions.py:38
 msgid "acosh"
-msgstr ""
+msgstr "acosh"
 
 #: functions.py:39
 msgid "asin"
-msgstr ""
+msgstr "arcsin"
 
 #: functions.py:40
 msgid "asinh"
-msgstr ""
+msgstr "asinh"
 
 #: functions.py:41
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 #: functions.py:42
 msgid "atanh"
-msgstr ""
+msgstr "atanh"
 
 #: functions.py:43
 msgid "and"
@@ -196,11 +196,11 @@ msgstr ""
 
 #: functions.py:46
 msgid "cos"
-msgstr ""
+msgstr "კოს"
 
 #: functions.py:47
 msgid "cosh"
-msgstr ""
+msgstr "cosh"
 
 #: functions.py:48
 msgid "div"
@@ -220,7 +220,7 @@ msgstr ""
 
 #: functions.py:52
 msgid "factorize"
-msgstr ""
+msgstr "მამრავლებად დაშლა"
 
 #: functions.py:53
 msgid "floor"
@@ -240,11 +240,11 @@ msgstr ""
 
 #: functions.py:57
 msgid "ln"
-msgstr ""
+msgstr "ln"
 
 #: functions.py:58
 msgid "log10"
-msgstr ""
+msgstr "ლოგ10"
 
 #: functions.py:59
 msgid "mul"
@@ -264,15 +264,15 @@ msgstr ""
 
 #: functions.py:63
 msgid "round"
-msgstr ""
+msgstr "დამრგვალება"
 
 #: functions.py:64
 msgid "sin"
-msgstr ""
+msgstr "სინ"
 
 #: functions.py:65
 msgid "sinh"
-msgstr ""
+msgstr "sinh"
 
 #: functions.py:66
 msgid "sinc"
@@ -280,27 +280,27 @@ msgstr ""
 
 #: functions.py:67
 msgid "sqrt"
-msgstr ""
+msgstr "კვფესვი"
 
 #: functions.py:68
 msgid "sub"
-msgstr ""
+msgstr "ქვე"
 
 #: functions.py:69
 msgid "square"
-msgstr ""
+msgstr "კვადრატი"
 
 #: functions.py:70
 msgid "tan"
-msgstr ""
+msgstr "tan"
 
 #: functions.py:71
 msgid "tanh"
-msgstr ""
+msgstr "tanh"
 
 #: functions.py:72
 msgid "xor"
-msgstr ""
+msgstr "არ-ან"
 
 #: functions.py:122
 msgid "abs(x), return absolute value of x, which means -x for x < 0"
@@ -390,7 +390,7 @@ msgstr ""
 
 #: functions.py:273
 msgid "Invalid argument"
-msgstr ""
+msgstr "არასწორი არგუმენტი"
 
 #: functions.py:278
 msgid ""
@@ -548,7 +548,7 @@ msgstr ""
 
 #: layout.py:116
 msgid "Clear"
-msgstr ""
+msgstr "გასუფთავება"
 
 #: layout.py:151
 msgid "Edit"
@@ -560,19 +560,19 @@ msgstr ""
 
 #: layout.py:159
 msgid "Trigonometry"
-msgstr ""
+msgstr "ტრიგონომეტრიული"
 
 #: layout.py:163
 msgid "Boolean"
-msgstr ""
+msgstr "ბულევი"
 
 #: layout.py:170
 msgid "Miscellaneous"
-msgstr ""
+msgstr "სხვადასხვა"
 
 #: layout.py:211
 msgid "Label:"
-msgstr ""
+msgstr "ჭდე:"
 
 #: layout.py:260
 msgid "All equations"
@@ -603,7 +603,7 @@ msgstr ""
 
 #: mathlib.py:206
 msgid "Undefined"
-msgstr ""
+msgstr "აღუწერელია"
 
 #: mathlib.py:216
 msgid "Error: unsupported type"
@@ -611,11 +611,11 @@ msgstr ""
 
 #: toolbars.py:58
 msgid "Help"
-msgstr ""
+msgstr "დახმარება"
 
 #: toolbars.py:133
 msgid "Copy"
-msgstr ""
+msgstr "კოპირება"
 
 #: toolbars.py:134
 msgid "<ctrl>c"
@@ -623,7 +623,7 @@ msgstr ""
 
 #: toolbars.py:138
 msgid "Cut"
-msgstr ""
+msgstr "ამოჭრა"
 
 #: toolbars.py:141
 msgid "<ctrl>x"
@@ -631,19 +631,19 @@ msgstr ""
 
 #: toolbars.py:149
 msgid "Paste"
-msgstr ""
+msgstr "ჩასმა"
 
 #: toolbars.py:161
 msgid "Square"
-msgstr ""
+msgstr "კვადრატი"
 
 #: toolbars.py:168
 msgid "Square root"
-msgstr ""
+msgstr "კვადრატული ფესვი"
 
 #: toolbars.py:175
 msgid "Inverse"
-msgstr ""
+msgstr "უკუ"
 
 #: toolbars.py:184
 msgid "e to the power x"
@@ -655,47 +655,47 @@ msgstr ""
 
 #: toolbars.py:198
 msgid "Natural logarithm"
-msgstr ""
+msgstr "ნატურალური ალგორითმი"
 
 #: toolbars.py:207
 msgid "Factorial"
-msgstr ""
+msgstr "ფაქტორიალი"
 
 #: toolbars.py:221
 msgid "Sine"
-msgstr ""
+msgstr "სინუსიოდი"
 
 #: toolbars.py:226
 msgid "Cosine"
-msgstr ""
+msgstr "კოსინუსი"
 
 #: toolbars.py:231
 msgid "Tangent"
-msgstr ""
+msgstr "მხები"
 
 #: toolbars.py:238
 msgid "Arc sine"
-msgstr ""
+msgstr "არკსინუსი"
 
 #: toolbars.py:243
 msgid "Arc cosine"
-msgstr ""
+msgstr "არკკოსინუსი"
 
 #: toolbars.py:248
 msgid "Arc tangent"
-msgstr ""
+msgstr "არკტანგენსი"
 
 #: toolbars.py:255
 msgid "Hyperbolic sine"
-msgstr ""
+msgstr "ჰიპერბოლური სინუსი"
 
 #: toolbars.py:260
 msgid "Hyperbolic cosine"
-msgstr ""
+msgstr "ჰიპერბოლური კოსინუსი"
 
 #: toolbars.py:265
 msgid "Hyperbolic tangent"
-msgstr ""
+msgstr "ჰიპერბოლური ტანგენსი"
 
 #: toolbars.py:278
 msgid "Logical and"
@@ -707,7 +707,7 @@ msgstr ""
 
 #: toolbars.py:294
 msgid "Equals"
-msgstr ""
+msgstr "უდრის"
 
 #: toolbars.py:298
 msgid "Not equals"
@@ -715,11 +715,11 @@ msgstr ""
 
 #: toolbars.py:311
 msgid "Pi"
-msgstr ""
+msgstr "პი"
 
 #: toolbars.py:317
 msgid "e"
-msgstr ""
+msgstr "e"
 
 #: toolbars.py:321
 msgid "γ"
@@ -727,19 +727,19 @@ msgstr ""
 
 #: toolbars.py:326
 msgid "φ"
-msgstr ""
+msgstr "φ"
 
 #: toolbars.py:334
 msgid "Plot"
-msgstr ""
+msgstr "გრაფიკი"
 
 #: toolbars.py:339
 msgid "Degrees"
-msgstr ""
+msgstr "გრადუსი"
 
 #: toolbars.py:340
 msgid "Radians"
-msgstr ""
+msgstr "რადიანები"
 
 #: toolbars.py:345
 msgid "Degrees / Radians"

@@ -26,13 +26,13 @@ import logging
 _logger = logging.getLogger('Calculate')
 
 import gi
-gi.require_version('Gtk', '3.0')
+gi.require_version('Gtk', '4.0')
 from gi.repository import Gtk
 from gi.repository import Gdk
 import base64
 
-import sugar3.profile
-from sugar3.graphics.xocolor import XoColor
+import sugar4.profile
+from sugar4.graphics.xocolor import XoColor
 
 from shareable_activity import ShareableActivity
 from layout import CalcLayout
@@ -64,8 +64,7 @@ def findchar(text, chars, ofs=0):
 
 def _textview_realize_cb(widget):
     '''Change textview properties once window is created.'''
-    win = widget.get_window(Gtk.TextWindowType.TEXT)
-    win.set_cursor(Gdk.Cursor.new(Gdk.CursorType.HAND1))
+    widget.set_cursor(Gdk.Cursor.new_from_name('pointer', None))
     return False
 
 
@@ -244,16 +243,31 @@ class Equation:
             return self.result.get_image()
 
         w = Gtk.TextView()
-        w.modify_base(
-            Gtk.StateType.NORMAL, Gdk.color_parse(self.color.get_fill_color()))
-        w.modify_bg(
-            Gtk.StateType.NORMAL,
-            Gdk.color_parse(self.color.get_stroke_color()))
+        
+        # Use CSS for styling in GTK4
+        css_provider = Gtk.CssProvider()
+        fill_color = self.color.get_fill_color()
+        stroke_color = self.color.get_stroke_color()
+        css = f"""
+        textview {{
+            background-color: {fill_color};
+        }}
+        textview text {{
+            background-color: {fill_color};
+            color: {stroke_color};
+        }}
+        """
+        css_provider.load_from_data(css.encode())
+        w.get_style_context().add_provider(
+            css_provider, 
+            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+        )
+        
         w.set_wrap_mode(Gtk.WrapMode.WORD_CHAR)
-        w.set_border_window_size(Gtk.TextWindowType.LEFT, 4)
-        w.set_border_window_size(Gtk.TextWindowType.RIGHT, 4)
-        w.set_border_window_size(Gtk.TextWindowType.TOP, 4)
-        w.set_border_window_size(Gtk.TextWindowType.BOTTOM, 4)
+        w.set_left_margin(4)
+        w.set_right_margin(4)
+        w.set_top_margin(4)
+        w.set_bottom_margin(4)
         w.connect('realize', _textview_realize_cb)
         buf = w.get_buffer()
 
@@ -261,11 +275,10 @@ class Equation:
         tagsmallnarrow = buf.create_tag(font=CalcLayout.FONT_SMALL_NARROW)
         tagbig = buf.create_tag(font=CalcLayout.FONT_BIG,
                                 justification=Gtk.Justification.RIGHT)
-        # TODO Fix for old Sugar 0.82 builds, red_float not available
-        bright = (
-            Gdk.color_parse(self.color.get_fill_color()).red_float +
-            Gdk.color_parse(self.color.get_fill_color()).green_float +
-            Gdk.color_parse(self.color.get_fill_color()).blue_float) / 3.0
+        # Calculate brightness to determine text color
+        rgba = Gdk.RGBA()
+        rgba.parse(self.color.get_fill_color())
+        bright = (rgba.red + rgba.green + rgba.blue) / 3.0
         if bright < 0.5:
             col = 'white'
         else:
@@ -374,7 +387,8 @@ class Calculate(ShareableActivity):
         self.KEYMAP['divide'] = self.ml.div_sym
         self.KEYMAP['equal'] = self.ml.equ_sym
 
-        self.clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
+        display = Gdk.Display.get_default()
+        self.clipboard = display.get_clipboard()
         self.select_reason = self.SELECT_SELECT
         self.buffer = ""
         self.showing_version = 0
@@ -382,9 +396,14 @@ class Calculate(ShareableActivity):
         self.ans_inserted = False
         self.show_vars = False
 
-        self.connect("key_press_event", self.keypress_cb)
+        controller = Gtk.EventControllerKey()
+        controller.connect("key-pressed", self.keypress_cb)
+        self.add_controller(controller)
         self.connect("destroy", self.cleanup_cb)
-        self.color = sugar3.profile.get_color()
+        self.color = sugar4.profile.get_color()
+
+        # Set a default window size for proper display
+        self.set_default_size(1200, 900)
 
         self.layout = CalcLayout(self)
         self.label_entry = self.layout.label_entry
@@ -399,7 +418,7 @@ class Calculate(ShareableActivity):
 
         self.parser.log_debug_info()
 
-    def ignore_key_cb(self, widget, event):
+    def ignore_key_cb(self, controller, keyval, keycode, state):
         return True
 
     def cleanup_cb(self, arg):
@@ -427,14 +446,21 @@ class Calculate(ShareableActivity):
     def set_last_equation(self, eqn):
         """Set the 'last equation' TextView."""
 
-        if self.last_eq_sig is not None:
-            self.layout.last_eq.disconnect(self.last_eq_sig)
-            self.last_eq_sig = None
+        if not hasattr(self, "_last_eq_gesture"):
+            self._last_eq_gesture = Gtk.GestureClick()
+            self._last_eq_gesture.connect(
+                "pressed",
+                lambda g, n, x, y: (
+                    self.equation_pressed_cb(self._last_eqn_for_click)
+                    if self._last_eqn_for_click is not None else None
+                ),
+            )
+            self.layout.last_eq.add_controller(self._last_eq_gesture)
 
         if not isinstance(eqn.result, ParserError):
-            self.last_eq_sig = self.layout.last_eq.connect(
-                'button-press-event',
-                lambda a1, a2, e: self.equation_pressed_cb(e), eqn)
+            self._last_eqn_for_click = eqn
+        else:
+            self._last_eqn_for_click = None
 
         self.layout.last_eq.set_buffer(eqn.create_lasteq_textbuf())
 
@@ -490,8 +516,13 @@ class Calculate(ShareableActivity):
 
         own = (eq.owner == self.get_owner_id())
         w = eq.create_history_object()
-        w.connect('button-press-event', lambda w,
-                  e: self.equation_pressed_cb(eq))
+        if isinstance(w, Gtk.TextView):
+            gesture = Gtk.GestureClick()
+            gesture.connect(
+                "pressed",
+                lambda g, n, x, y, _eq=eq: self.equation_pressed_cb(_eq),
+            )
+            w.add_controller(gesture)
         if drawlasteq:
             self.set_last_equation(eq)
 
@@ -576,28 +607,46 @@ class Calculate(ShareableActivity):
         if name in reserved:
             return None
         w = Gtk.TextView()
-        w.modify_base(
-            Gtk.StateType.NORMAL, Gdk.color_parse(self.color.get_fill_color()))
-        w.modify_bg(
-            Gtk.StateType.NORMAL,
-            Gdk.color_parse(self.color.get_stroke_color()))
+        
+        # Use CSS for styling in GTK4
+        css_provider = Gtk.CssProvider()
+        fill_color = self.color.get_fill_color()
+        stroke_color = self.color.get_stroke_color()
+        css = f"""
+        textview {{
+            background-color: {fill_color};
+        }}
+        textview text {{
+            background-color: {fill_color};
+            color: {stroke_color};
+        }}
+        """
+        css_provider.load_from_data(css.encode())
+        w.get_style_context().add_provider(
+            css_provider, 
+            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+        )
+        
         w.set_wrap_mode(Gtk.WrapMode.WORD_CHAR)
-        w.set_border_window_size(Gtk.TextWindowType.LEFT, 4)
-        w.set_border_window_size(Gtk.TextWindowType.RIGHT, 4)
-        w.set_border_window_size(Gtk.TextWindowType.TOP, 4)
-        w.set_border_window_size(Gtk.TextWindowType.BOTTOM, 4)
+        w.set_left_margin(4)
+        w.set_right_margin(4)
+        w.set_top_margin(4)
+        w.set_bottom_margin(4)
         w.connect('realize', _textview_realize_cb)
         buf = w.get_buffer()
 
-        # TODO Fix for old Sugar 0.82 builds, red_float not available
-        bright = (
-            Gdk.color_parse(self.color.get_fill_color()).red_float +
-            Gdk.color_parse(self.color.get_fill_color()).green_float +
-            Gdk.color_parse(self.color.get_fill_color()).blue_float) / 3.0
+        # Parse color for brightness check
+        try:
+            fill_rgba = Gdk.RGBA()
+            fill_rgba.parse(fill_color)
+            bright = (fill_rgba.red + fill_rgba.green + fill_rgba.blue) / 3.0
+        except:
+            bright = 0.5
+        
         if bright < 0.5:
-            col = Gdk.color_parse('white')
+            col = 'white'
         else:
-            col = Gdk.color_parse('black')
+            col = 'black'
 
         tag = buf.create_tag(font=CalcLayout.FONT_SMALL_NARROW,
                              foreground=col)
@@ -821,24 +870,24 @@ class Calculate(ShareableActivity):
         self.text_copy()
         self.remove_character(1)
 
-    def keypress_cb(self, widget, event):
+    def keypress_cb(self, controller, keyval, keycode, state):
         if not self.text_entry.is_focus():
             return
 
-        key = Gdk.keyval_name(event.keyval)
-        if event.hardware_keycode == 219:
-            if (event.get_state() & Gdk.ModifierType.SHIFT_MASK):
+        key = Gdk.keyval_name(keyval)
+        if keycode == 219:
+            if (state & Gdk.ModifierType.SHIFT_MASK):
                 key = 'divide'
             else:
                 key = 'multiply'
         _logger.debug('Key: %s (%r, %r)', key,
-                      event.keyval, event.hardware_keycode)
+                      keyval, keycode)
 
-        if event.get_state() & Gdk.ModifierType.CONTROL_MASK:
+        if state & Gdk.ModifierType.CONTROL_MASK:
             if key in self.CTRL_KEYMAP:
                 f = self.CTRL_KEYMAP[key]
                 return f(self)
-        elif (event.get_state() & Gdk.ModifierType.SHIFT_MASK) and \
+        elif (state & Gdk.ModifierType.SHIFT_MASK) and \
                 key in self.SHIFT_KEYMAP:
             f = self.SHIFT_KEYMAP[key]
             return f(self)
@@ -973,7 +1022,7 @@ class Calculate(ShareableActivity):
 
 
 def main():
-    win = Gtk.Window(Gtk.WindowType.TOPLEVEL)
+    win = Gtk.Window()
     Calculate(win)
     Gtk.main()
     return 0

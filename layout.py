@@ -211,11 +211,14 @@ class CalcLayout:
         label1 = Gtk.Label(label=_('Label:'))
         label1.modify_fg(Gtk.StateType.NORMAL, self.col_white)
         label1.set_alignment(1, 0.5)
-        hc1.pack_start(label1, expand=False, fill=False, padding=10)
+        label1.set_margin_start(10)
+        label1.set_margin_end(10)
+        hc1.append(label1)
         self.label_entry = Gtk.Entry()
         self.label_entry.modify_bg(Gtk.StateType.INSENSITIVE, self.col_black)
-        hc1.pack_start(self.label_entry, expand=True, fill=True, padding=0)
-        vc1.pack_start(eb2, False, True, 0)
+        self.label_entry.set_hexpand(True)
+        hc1.append(self.label_entry)
+        vc1.append(eb2)
 
         self.text_entry = Gtk.Entry()
         try:
@@ -233,7 +236,8 @@ class CalcLayout:
         eb2 = Gtk.EventBox()
         eb2.add(eb)
         eb2.modify_bg(Gtk.StateType.NORMAL, self.col_black)
-        vc1.pack_start(eb2, expand=True, fill=True, padding=0)
+        widget.set_vexpand(True)
+        vc1.append(widget)
         self.grid.attach(vc1, 0, 0, 7, 6)
 
 # Left part: buttons
@@ -263,7 +267,8 @@ class CalcLayout:
         combo.append_item(2, _('Show variables'))
         combo.set_active(0)
         combo.connect('changed', self._history_filter_cb)
-        hc2.pack_start(combo, True, True, 0)
+        combo.set_hexpand(True)
+        hc2.append(combo)
         hc2.set_border_width(6)
         self.grid.attach(hc2, 7, 0, 4, 2)
 

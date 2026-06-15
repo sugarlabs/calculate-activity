@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-07 11:28+0530\n"
-"PO-Revision-Date: 2026-06-15 04:31+0000\n"
+"PO-Revision-Date: 2026-06-15 07:48+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/calculate/ka/>\n"
@@ -68,7 +68,7 @@ msgstr "ინდექსი"
 
 #: astparser.py:152
 msgid "topics"
-msgstr ""
+msgstr "თემები"
 
 #: astparser.py:153
 msgid "Topics"
@@ -188,11 +188,11 @@ msgstr "და"
 
 #: functions.py:44
 msgid "b10bin"
-msgstr ""
+msgstr "b10bin"
 
 #: functions.py:45
 msgid "ceil"
-msgstr ""
+msgstr "ceil"
 
 #: functions.py:46
 msgid "cos"
@@ -204,19 +204,19 @@ msgstr "cosh"
 
 #: functions.py:48
 msgid "div"
-msgstr ""
+msgstr "div"
 
 #: functions.py:49
 msgid "gcd"
-msgstr ""
+msgstr "gcd"
 
 #: functions.py:50
 msgid "exp"
-msgstr ""
+msgstr "exp"
 
 #: functions.py:51
 msgid "factorial"
-msgstr ""
+msgstr "ფაქტორიალი"
 
 #: functions.py:52
 msgid "factorize"
@@ -224,19 +224,19 @@ msgstr "მამრავლებად დაშლა"
 
 #: functions.py:53
 msgid "floor"
-msgstr ""
+msgstr "floor"
 
 #: functions.py:54
 msgid "inv"
-msgstr ""
+msgstr "inv"
 
 #: functions.py:55
 msgid "is_int"
-msgstr ""
+msgstr "is_int"
 
 #: functions.py:56
 msgid "is_prime"
-msgstr ""
+msgstr "is_prime"
 
 #: functions.py:57
 msgid "ln"
@@ -248,7 +248,7 @@ msgstr "ლოგ10"
 
 #: functions.py:59
 msgid "mul"
-msgstr ""
+msgstr "mul"
 
 #: functions.py:60
 msgid "or"
@@ -256,11 +256,11 @@ msgstr "ან"
 
 #: functions.py:61
 msgid "rand_float"
-msgstr ""
+msgstr "rand_float"
 
 #: functions.py:62
 msgid "rand_int"
-msgstr ""
+msgstr "rand_int"
 
 #: functions.py:63
 msgid "round"
@@ -276,7 +276,7 @@ msgstr "sinh"
 
 #: functions.py:66
 msgid "sinc"
-msgstr ""
+msgstr "sinc"
 
 #: functions.py:67
 msgid "sqrt"
@@ -556,7 +556,7 @@ msgstr "ჩასწორება"
 
 #: layout.py:155
 msgid "Algebra"
-msgstr ""
+msgstr "ალგებრა"
 
 #: layout.py:159
 msgid "Trigonometry"
@@ -589,17 +589,17 @@ msgstr ""
 #. TRANS: multiplication symbol (default: '×')
 #: mathlib.py:63
 msgid "mul_sym"
-msgstr ""
+msgstr "×"
 
 #. TRANS: division symbol (default: '÷')
 #: mathlib.py:68
 msgid "div_sym"
-msgstr ""
+msgstr "÷"
 
 #. TRANS: equal symbol (default: '=')
 #: mathlib.py:73
 msgid "equ_sym"
-msgstr ""
+msgstr "="
 
 #: mathlib.py:206
 msgid "Undefined"
@@ -619,7 +619,7 @@ msgstr "კოპირება"
 
 #: toolbars.py:134
 msgid "<ctrl>c"
-msgstr ""
+msgstr "<ctrl>c"
 
 #: toolbars.py:138
 msgid "Cut"
@@ -627,7 +627,7 @@ msgstr "ამოჭრა"
 
 #: toolbars.py:141
 msgid "<ctrl>x"
-msgstr ""
+msgstr "<ctrl>x"
 
 #: toolbars.py:149
 msgid "Paste"
@@ -723,7 +723,7 @@ msgstr "e"
 
 #: toolbars.py:321
 msgid "γ"
-msgstr ""
+msgstr "γ"
 
 #: toolbars.py:326
 msgid "φ"

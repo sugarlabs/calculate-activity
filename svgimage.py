@@ -20,6 +20,9 @@
 import logging
 _logger = logging.getLogger('SVGImage')
 
+import gi
+gi.require_version('Rsvg', '2.0')
+
 from gi.repository import Gtk
 from gi.repository import Rsvg
 
@@ -43,7 +46,9 @@ class SVGImage:
         self._pixbuf = self._handle.get_pixbuf()
         self._image = Gtk.Image()
         self._image.set_from_pixbuf(self._pixbuf)
-        self._image.set_alignment(0.5, 0)
+        # GTK4: set_alignment is deprecated, use halign/valign properties
+        self._image.set_halign(Gtk.Align.CENTER)
+        self._image.set_valign(Gtk.Align.START)
         return self._image
 
     def load(self, fn):

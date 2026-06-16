@@ -1,13 +1,14 @@
 import gi
 
 import dbus
+import dbus.service
 gi.require_version('TelepathyGLib', '0.12')
 from gi.repository import GObject
 from gi.repository import TelepathyGLib
 
-from sugar3.activity import activity
-from sugar3.presence import presenceservice
-from sugar3.presence.sugartubeconn import SugarTubeConnection
+from sugar4.activity.activity import Activity
+from sugar4.presence import presenceservice
+from sugar4.presence.sugartubeconn import SugarTubeConnection
 
 import logging
 _logger = logging.getLogger('ShareableActivity')
@@ -29,7 +30,7 @@ class ShareableObject(dbus.service.Object):
         pass
 
 
-class ShareableActivity(activity.Activity):
+class ShareableActivity(Activity):
 
     '''
     A shareable activity.
@@ -47,7 +48,7 @@ class ShareableActivity(activity.Activity):
             service_path
         '''
 
-        activity.Activity.__init__(self, handle, *args, **kwargs)
+        Activity.__init__(self, handle, *args, **kwargs,application=None)
 
         self._sync_hid = None
         self._message_cbs = {}

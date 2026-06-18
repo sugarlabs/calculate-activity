@@ -151,8 +151,8 @@ class CustomPlot(_PlotBase):
         self.svg_data += '" />\n'
 
     def add_text(self, c, text, rotate=0):
-        if isinstance(text, str):
-            text = text.encode('utf-8')
+        if isinstance(text, bytes):
+            text = text.decode('utf-8')
         c = self.rcoords_to_coords(c)
 
         self.svg_data += '<text x="%f" y="%f"' % (c[0], c[1])
@@ -227,10 +227,10 @@ class CustomPlot(_PlotBase):
         min_x = min(x_coords)
 
         # X axis
-        interval = len(val) / (NOL - 1)
+        interval = max(1, len(val) // (NOL - 1))
         self.plot_line((0.11, 0.89), (0.92, 0.89), "black")
         if max_x != min_x:
-            self.add_text((0.11 + min_x + F * 0, 0.93), format_float(min_x))
+            self.add_text((0.11 + F * 0, 0.93), format_float(min_x))
             plot_index = interval
             while plot_index <= len(val) - interval:
                 self.add_text((0.11 + F * abs(x_coords[plot_index] - min_x) /
@@ -297,6 +297,7 @@ class MPLPlot(_PlotBase):
 
         data = StringIO()
         fig.savefig(data)
+        pylab.close(fig)
         return data.getvalue()
 
 

@@ -20,36 +20,64 @@
 import logging
 _logger = logging.getLogger('SVGImage')
 
-from gi.repository import Gtk
-from gi.repository import Rsvg
+from gi.repository import Gtk, Gdk, GdkPixbuf
 
 
 class SVGImage:
 
     def __init__(self, fn=None, data=None):
+        self._svg_data = None
         if fn is not None:
             self.load(fn)
         elif data is not None:
             self.load_data(data)
 
     def get_image(self):
-        return self._image
+        return getattr(self, '_image', None)
 
     def get_svg_data(self):
         return self._svg_data
-
+    
     def render_svg(self):
-        self._handle = Rsvg.Handle.new_from_data(self._svg_data)
-        self._pixbuf = self._handle.get_pixbuf()
-        self._image = Gtk.Image()
-        self._image.set_from_pixbuf(self._pixbuf)
-        self._image.set_alignment(0.5, 0)
+        b_data = self._svg_data.encode('utf-8') if isinstance(self._svg_data, str) else self._svg_data
+        
+        pixbuf = None
+        
+        try:
+            loader = GdkPixbuf.PixbufLoader.new_with_type('svg')
+            loader.write(b_data)
+            loader.close()
+            pixbuf = loader.get_pixbuf()
+        except Exception as e:
+            _logger.error("Failed to load SVG with PixbufLoader: %s", e)
+        
+        if not pixbuf:
+            _logger.error("Could not render SVG to pixbuf.")
+            return None
+
+        _logger.debug("SVG rendered to pixbuf: %dx%d",
+                       pixbuf.get_width(), pixbuf.get_height())
+
+        texture = Gdk.Texture.new_for_pixbuf(pixbuf)
+        
+        self._image = Gtk.Picture()
+        self._image.set_paintable(texture)
+
+        self._image.set_size_request(pixbuf.get_width(),
+                                     pixbuf.get_height())
+        try:
+            self._image.set_can_shrink(False)
+        except AttributeError:
+            pass
+        
+        self._image.set_halign(Gtk.Align.CENTER)
+        self._image.set_valign(Gtk.Align.START)
+        
         return self._image
 
     def load(self, fn):
-        f = open(fn, 'rb')
-        self._svg_data = f.read()
-        f.close()
+        with open(fn, 'rb') as f:
+            self._svg_data = f.read()
         return self.render_svg()
 
     def load_data(self, svgdat):

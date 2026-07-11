@@ -46,7 +46,8 @@ class ParserError(Exception):
 
     def __init__(self, msg, start, eqn, end=None):
         self._msg = msg
-        self.eqn = eqn
+        # Handle non-string/bytes eqn values gracefully in Python 3.14+ AST exceptions
+        self.eqn = eqn if isinstance(eqn, (str, bytes)) else ""
         self.set_range(start, end)
 
     def get_range(self):
@@ -141,8 +142,9 @@ class Helper:
     def get_help(self, topic=None):
         if isinstance(topic, ast.Name):
             topic = topic.id
-        elif isinstance(topic, ast.Str):
-            topic = topic.s
+        # ast.Str was removed in Python 3.14, so we use ast.Constant
+        elif isinstance(topic, ast.Constant) and isinstance(topic.value, str):
+            topic = topic.value
         elif type(topic) not in (bytes, str) or \
                 len(topic) == 0:
             return _("Use help(test) for help about 'test',"
@@ -421,8 +423,8 @@ class AstParser:
             if val == self._ARG_STRING:
                 if isinstance(arg, ast.Name):
                     return arg.id
-                elif isinstance(arg, ast.Str):
-                    return arg.s
+                elif isinstance(arg, ast.Constant) and isinstance(arg.value, str):
+                    return arg.value
                 else:
                     logging.error('Unable to resolve special arg %r', arg)
         else:
@@ -490,11 +492,8 @@ class AstParser:
                 msg = str(e)
                 raise ArgumentError(msg)
 
-        elif isinstance(node, ast.Num):
-            return node.n
-
-        elif isinstance(node, ast.Str):
-            return node.s
+        elif isinstance(node, ast.Constant):
+            return node.value
 
         elif isinstance(node, ast.Tuple):
             ls = [self._process_node(i, state) for i in node.elts]
@@ -596,21 +595,22 @@ class AstParser:
 
     def _parse_func(self, node, level):
         if isinstance(node, ast.BinOp):
-            if isinstance(node.left, ast.Num) and isinstance(node.right,
-                                                             ast.Num):
-                func = self.BINOP_MAP[type(node.op)]
-                ans = func(node.left.n, node.right.n)
-                ret = ast.Num()
-                ret.n = ans
-                return ret
-            else:
-                return None
+            # ast.Num was removed in Python 3.14; use ast.Constant instead.
+            # We must ensure values are numeric, as ast.Constant can hold any type.
+            if (isinstance(node.left, ast.Constant) and
+                    isinstance(node.right, ast.Constant)):
+                if (isinstance(node.left.value, (int, float, complex)) and
+                        isinstance(node.right.value, (int, float, complex))):
+                    func = self.BINOP_MAP[type(node.op)]
+                    ans = func(node.left.value, node.right.value)
+                    return ast.Constant(value=ans)
+            return None
         elif isinstance(node, ast.Name):
             if node.id in self._namespace:
                 var = self.get_var(node.id)
-                ret = ast.Num()
-                ret.n = var
-                return ret
+                # ast.Num was removed in Python 3.14; returning ast.Constant.
+                if isinstance(var, (int, float, complex)):
+                    return ast.Constant(value=var)
 
     def parse_symbolic(self, tree):
         '''
@@ -677,8 +677,8 @@ class AstParser:
             raise e
         except Exception as e:
             logging.error('Internal error (%s): %s', type(e), str(e))
-            msg = _('Internal error')
-            raise ParseError(msg, 0, eqn)
+            msg = _('Internal error: %s') % str(e)
+            raise ParseError(msg, 0, "")
 
         self._used_var_ofs = state.used_var_ofs
 
@@ -729,9 +729,6 @@ if __name__ == '__main__':
     p.print_tree(tree)
 #    p.set_var('apples', 123)
     p.parse_symbolic(tree)
-#    num = ast.Num()
-#    num.n = 123
-#    p.replace_variable(tree, 'apples', num)
     print('Tree after:')
     p.print_tree(tree)
 

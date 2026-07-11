@@ -1,0 +1,65 @@
+/* Calculate Activity - Custom Styles */
+
+.calc-button {
+    /* Remove default background gradients so custom background-color takes effect */
+    background-image: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Originally col_gray1: 0.76, 0.76, 0.76 */
+.calc-action-btn {
+    background-color: #c2c2c2; 
+}
+.calc-action-btn:hover {
+    background-color: #d2d2d2;
+}
+
+/* Originally col_gray2: 0.50, 0.50, 0.50 */
+.calc-numpad-btn {
+    background-color: #808080;
+}
+.calc-numpad-btn:hover {
+    background-color: #909090;
+}
+
+/* Originally col_gray3: 0.25, 0.25, 0.25 */
+.calc-operator-btn {
+    background-color: #404040;
+}
+.calc-operator-btn:hover {
+    background-color: #505050;
+}
+
+.calc-danger-btn {
+    background-color: #ff0000;
+}
+.calc-danger-btn:hover {
+    background-color: #ff3333;
+}
+
+.calc-white-btn {
+    background-color: #ffffff;
+    color: #000000;
+}
+.calc-white-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Original eb.modify_bg(Gtk.StateType.NORMAL, self.col_black) */
+.calc-display {
+    background-color: #000000;
+}
+
+/* Original label1.modify_fg(Gtk.StateType.NORMAL, self.col_white) */
+.calc-label {
+    color: #ffffff;
+}
+
+/* Original text_entry.modify_bg(Gtk.StateType.INSENSITIVE, self.col_black) */
+.calc-entry {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+}
+

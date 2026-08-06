@@ -11,3 +11,7 @@ Calculate is part of the Sugar desktop.  Please refer to;
 * [How to Get Sugar on sugarlabs.org](https://sugarlabs.org/),
 * [How to use Sugar](https://help.sugarlabs.org/),
 * [How to use Calculate](https://help.sugarlabs.org/calculate.html)
+
+
+## Contribution Notes
+* Local development environment initialized successfully by vivyeager.

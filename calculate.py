@@ -956,7 +956,7 @@ class Calculate(ShareableActivity):
             self.clear_equations()
             for eq_str in value:
                 _logger.debug('receive_message: %s', str(eq_str))
-                self.add_equation(Equation(eqnstr=str(eq_str)), ml=self.ml)
+                self.add_equation(Equation(eqnstr=str(eq_str), ml=self.ml))
 
     def _joined_cb(self, gobj):
         _logger.debug('Requesting synchronization')

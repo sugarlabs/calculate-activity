@@ -133,6 +133,7 @@ class MathLib:
         return ret.rstrip('L')
 
     def format_decimal(self, n):
+        n= round(n, self.digit_limit)
         a = int(n)
         if a == n:
             return str(n)
